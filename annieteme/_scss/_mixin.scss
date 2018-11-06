@@ -1,0 +1,285 @@
+/*
+
+	viewport settings
+
+**************************************************/
+
+@mixin for-size($range) {
+	$phone-upper-boundary: 600px;
+	$tablet-portrait-upper-boundary: 900px;
+	$tablet-landscape-upper-boundary: 1200px;
+	$desktop-upper-boundary: 1800px;
+
+	@if $range == phone-only {
+		@media (max-width: #{$phone-upper-boundary - 1}) { @content; }
+	} @else if $range == tablet-portrait-up {
+		@media (min-width: $phone-upper-boundary) { @content; }
+	} @else if $range == tablet-landscape-up {
+		@media (min-width: $tablet-portrait-upper-boundary) { @content; }
+	} @else if $range == desktop-up {
+		@media (min-width: $tablet-landscape-upper-boundary) { @content; }
+	} @else if $range == big-desktop-up {
+		@media (min-width: $desktop-upper-boundary) { @content; }
+	}
+}
+
+
+/*
+
+	color settings
+
+*************************************************/
+
+
+@mixin link-color($color) {
+	color: $color;
+	&:hover, &:active, &:focus {
+		color: lighten($color, .6);
+		text-decoration: none;
+	}
+}
+
+@mixin link-color2($color) {
+	color: $mainTxt;
+	text-decoration: none;
+	&:hover, &:active, &:focus {
+		color: lighten($color, .6);
+		text-decoration: underline;
+	}
+}
+
+
+@mixin grd--blue {
+	display: inline-block;
+	font-weight: normal;
+	font-style: normal;
+	color: $mainTxt;
+	transition: all .7s ease-out;
+	background: linear-gradient(270deg, rgba(#226cb7,1), rgba(#004a95,1), rgba(black, 0), rgba(black, 0));
+	background-position: 1% 50% ;
+	background-size: 300% 300%;
+	text-decoration: none;
+	&:hover {
+		color: $white;
+		background-position: 99% 50%;
+		border: solid 1px rgba(0,0,0,0);
+	}
+}
+
+
+/*
+
+	font settings
+
+**************************************************/
+@mixin fts($fts, $lin: 24) {
+	$rem: $fts / 10;
+	$linS: $lin / $fts;
+	font-size: #{$fts}px;
+	font-size: #{$rem}rem;
+	line-height: $linS;
+}
+
+@mixin font-jp {
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "source-han-sans-japanese","Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+@mixin font-en {
+	font-family:  'Montserrat', sans-serif;
+}
+
+@media all and (-ms-high-contrast: none) {
+	body {
+		@include font-jp;
+	}
+}
+
+@font-face {
+	font-family: "Yu Gothic";
+	src: local("Yu Gothic Medium");
+	font-weight: 100;
+}
+@font-face {
+	font-family: "Yu Gothic";
+	src: local("Yu Gothic Medium");
+	font-weight: 200;
+}
+@font-face {
+	font-family: "Yu Gothic";
+	src: local("Yu Gothic Medium");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Yu Gothic";
+	src: local("Yu Gothic Medium");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Yu Gothic";
+	src: local("Yu Gothic Bold");
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Helvetica Neue";
+	src: local("Helvetica Neue Regular");
+	font-weight: 100;
+}
+@font-face {
+	font-family: "Helvetica Neue";
+	src: local("Helvetica Neue Regular");
+	font-weight: 200;
+}
+
+
+/*
+
+	title settings
+
+**************************************************/
+@mixin mainTitle($position: center) {
+	width: 100%;
+	@include fts(24,28);
+	@include for-size(phone-only){
+		@include fts(16,20);
+	}
+	text-align: $position;
+	letter-spacing: 0.2rem;
+	margin: 0;
+}
+
+
+/*
+
+	clearfix settings
+
+**************************************************/
+
+@mixin clearfix(){
+	zoom:1;
+	&:after{ content:""; display:block; clear:both; }
+}
+
+/*
+
+	boxsizing settings
+
+**************************************************/
+
+@mixin box-sizing($type) {
+	-webkit-box-sizing:$type;
+	-moz-box-sizing:$type;
+	box-sizing:$type;
+}
+
+/*
+
+	opacity settings
+
+**************************************************/
+
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	filter: alpha(opacity=($opacity * 100));
+}
+
+/*
+
+	block centering settings
+
+**************************************************/
+@mixin block-width($left,$right){
+	margin-left: $left;
+	margin-right: $right;
+}
+
+/*
+
+	border-radius settings
+
+**************************************************/
+
+@mixin border-radius ($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius:    $radius;
+	border-radius:         $radius;
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+@mixin border-radiuses ($topright,$bottomright,$bottomleft,$topleft) {
+	-webkit-border-top-right-radius:    $topright;
+	-webkit-border-bottom-right-radius: $bottomright;
+	-webkit-border-bottom-left-radius:  $bottomleft;
+	-webkit-border-top-left-radius:     $topleft;
+	-moz-border-radius-topright:        $topright;
+	-moz-border-radius-bottomright:     $bottomright;
+	-moz-border-radius-bottomleft:      $bottomleft;
+	-moz-border-radius-topleft:         $topleft;
+	border-top-right-radius:            $topright;
+	border-bottom-right-radius:         $bottomright;
+	border-bottom-left-radius:          $bottomleft;
+	border-top-left-radius:             $topleft;
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+/*
+
+	drop shadow settings
+
+**************************************************/
+@mixin box-shadow ($x, $y, $blur, $color) {
+	box-shadow: $arguments;
+	-moz-box-shadow: $arguments;
+	-webkit-box-shadow: $arguments;
+}
+
+
+/*
+
+	vertical align setting
+
+**************************************************/
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/*
+
+	table layout setting
+
+**************************************************/
+
+@mixin cell-box(){
+	display: table;
+	width: 100%;
+}
+
+@mixin cell-box-item($align){
+	display: table-cell;
+	vertical-align: $align;
+}
+
+/*
+
+	flexbox layout setting
+
+**************************************************/
+@mixin flexbox($justify,$align-items){
+	display: flex;
+	display: -webkit-flex;
+	justify-content: $justify;
+	align-items: $align-items;
+}
+
+@function flexbox_num($width,$value) {
+	@return ceil($width / $value);
+}
+
+
+

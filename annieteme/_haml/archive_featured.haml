@@ -1,0 +1,28 @@
+
+<?php /** *  Template Name:  特集一覧ページ */ ?>
+<?php include('head.php'); ?>
+%body
+  %section.featured-page.pages
+    .outer
+      <?php include('components-php/header.php'); ?>
+      .outer__inner.column-12
+        <?php include('components-php/breadcrumb.php'); ?>
+        .featured.flexbox--v-center
+          .column-6
+            <?php include('components-php/featured-box.php'); ?>
+          .column-6.featured-text
+            %p.featured-text__header
+              BOHOスタイルとは。
+            %p.featured-text__read
+              ぶらぶらぶらぶらぶらぶらぶらぶらぶらぶらぶらぶらぶらぶらぶ
+              ぶらぶらぶらぶらぶらぶらぶらぶらぶらぶらぶらぶららぶらぶ
+              ぶらぶらぶらぶらぶらぶらぶらぶらぶらぶらぶらぶらぶらぶららぶら
+
+        <?php include('components-php/featured_articles.php'); ?>
+        <?php include('components-php/more-search-article.php'); ?>
+        .column-6.margin-center
+          <?php include('components-php/sns-box.php'); ?>
+        .column-8.margin-center
+          <?php include('components-php/shopping-box.php'); ?>
+  <?php include('components-php/footer.php'); ?>
+

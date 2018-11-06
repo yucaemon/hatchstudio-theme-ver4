@@ -1,0 +1,64 @@
+-#%dl.news-list
+  %dt
+    .header-img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/news.svg">
+  %dd.news-list__content.flexbox
+    .news-list__number-img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/1.svg">
+    .news-list__thumb-img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/side-test1.png">
+    %p.news-list__title
+      bohoスタイルの火付け役『アンソロジー』のゆるふあチェックカーデが可愛い。
+  %dd.news-list__content.flexbox
+    .news-list__number-img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/2.svg">
+    .news-list__thumb-img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/side-test1.png">
+    %p.news-list__title
+      bohoスタイルの火付け役『アンソロジー』のゆるふあチェックカーデが可愛い。
+  %dd.news-list__content.flexbox
+    .news-list__number-img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/3.svg">
+    .news-list__thumb-img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/side-test1.png">
+    %p.news-list__title
+      bohoスタイルの火付け役『アンソロジー』のゆるふあチェックカーデが可愛い。
+  %dd.news-list__content.flexbox
+    .news-list__number-img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/4.svg">
+    .news-list__thumb-img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/side-test1.png">
+    %p.news-list__title
+      bohoスタイルの火付け役『アンソロジー』のゆるふあチェックカーデが可愛い。
+  %dd.news-list__content.flexbox
+    .news-list__number-img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/5.svg">
+    .news-list__thumb-img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/side-test1.png">
+    %p.news-list__title
+      bohoスタイルの火付け役『アンソロジー』のゆるふあチェックカーデが可愛い。
+%dl.news-list
+  %dt
+    .header-img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/news.svg">
+  .news-list__container
+    :plain
+      <?php
+      $posts = get_posts(array(
+      'posts_per_page' => 5, // 表示件数
+      ));
+      ?>
+      <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
+
+      <!--表示する内容が入ります。-->
+      <dd class="news-list__content flexbox">
+        <div class="news-list__thumb-img">
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+        </div>
+        <p class="news-list__title">
+          <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        </p>
+      </dd>
+      <!--表示する内容ここまで-->
+
+      <?php endforeach; endif; ?>

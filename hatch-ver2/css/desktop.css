@@ -1,0 +1,643 @@
+/* initialize */
+html {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.post h1.entry-title{
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    pointer-events:none;
+}
+
+
+h2 {
+    font-size: 26px;
+    margin: 0 0;
+}
+
+
+h3 {
+    font-size: 24px;
+    padding: 9px 0 12px 0;
+    letter-spacing: 0px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+/*CSS Document */
+
+/* PAGE LAYOUT */
+
+body {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* 全囲みdiv*/
+#container {
+    width: 1200px;
+    margin: 76px auto 0 auto;
+}
+
+/*middle div*/
+
+#contents {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* 記事一覧 部分*/
+
+/*
+#contents.default-layout > div:first-child{
+        float: left;
+    width: 815px;
+    padding-right: 20px;
+    margin-top: 5px;
+    border-right: solid 1px rgba(216, 216, 216, 0.63);
+
+}
+*/
+
+#index-page{
+    float: left;
+    width: 775px;
+    padding: 0 20px;
+    margin-top: 5px;
+    border-right: solid 1px rgba(216, 216, 216, 0.63);
+}
+
+
+/* SIDE 部分*/
+#side-bar-1 {
+    float: left;
+    width: 328px;
+    height: auto;
+    padding: 0 25px;
+
+}
+
+#contents:after{
+    content: ""; display: block; visibility: hidden; clear: both;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #contents {
+        width: 785px !important;
+    }
+}
+
+
+
+.contents-container {
+    margin: 0 auto;
+}
+
+/* COMMON STYLES */
+
+.sub-title {
+    font-size: 10px;
+}
+
+/* NAVI */
+
+.navbar-brand {
+    padding: 10px 2em 0 24px;
+}
+
+.navbar img {
+    display: block;
+}
+
+.navbar-nav > li > a {
+    line-height: 29px;
+}
+
+ul.nav li {
+    text-align: center;
+}
+
+ul.nav.category > li {
+    margin-right: 2em;
+}
+
+ul.nav.social {
+    padding-right: 3em;
+}
+
+ul.nav .ranking {
+    display: none;
+}
+
+.category li:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+/* default(index page) HEADER */
+
+.default .header{
+  width:1200px;
+  background-repeat: repeat-x;
+}
+
+.default .header:after{
+
+    content: ""; display: block; visibility: hidden; clear: both;
+}
+
+
+.site-character {
+    margin: 0 auto;
+    width: 260px;
+    padding-top: 17px;
+}
+
+
+ul.important-notice a{
+    font-size: 1.2em;
+    color: #181818;
+    font-weight: bold;
+}
+
+#index-page p.date {
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding: 21px 0;
+}
+
+#index-page .event {
+    font-size: 11px;
+    clear: both;
+    padding: 37px 0;
+
+}
+
+
+
+#index-page .event li {
+    padding-bottom: 10px;
+}
+
+
+.about-us {
+    float: right;
+    position: relative;
+    top: -26%;
+    right: 7%;
+}
+
+
+/* INDEX BODY */
+
+
+
+.articles{
+    width: 775px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+/* AUTHOR BODY
+
+#author-page .pickup-authors {
+    display: none;
+}
+
+#author-page .list-of-articles .post-text {
+
+    width: 410px;
+
+}
+*/
+/* list-of-articles */
+
+.list-of-articles {
+    margin-bottom: 20px;
+}
+
+.list-of-articles li {
+    padding: 3em 0 3em 0;
+    clear: both;
+
+}
+
+.list-of-articles .pickup-img {
+    float: left;
+    width: 282px;
+    padding-right: 2em;
+}
+
+.list-of-articles .pickup-img img {
+    width: 100%;
+    height: auto;
+    max-height: 210px;
+}
+
+.list-of-articles .pickup-img .attachment-post-thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.wp-post-image {
+    border: 1px solid #e0e0e0;
+}
+
+.list-of-articles .pickup-text {
+    margin: 0 0;
+    overflow: hidden;
+}
+
+.list-of-articles .pickup-text h3 {
+    margin: 0 0;
+    font-size: 22px;
+    padding: 13px 0 16px 0;
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+
+.list-of-articles .pickup-text h4 {
+    padding: 0;
+}
+
+.list-of-articles .post-text {
+    font-size: 0.8em;
+    line-height: 170%;
+    float: left;
+    width: 385px;
+}
+
+.list-of-articles .pickup-text .mini-info {
+    width: 300px;
+
+}
+
+.pickup-authors img {
+     width: 45px;
+     height: 45px;
+     -webkit-border-radius: 45px;
+     border-radius: 45px;
+    margin: -24px auto 0 auto;
+    display: block;
+ }
+
+.pickup-authors  {
+  float:right;
+  padding-right: 14px;
+}
+/* POST */
+
+.entry-content {
+    font-size: 17px;
+    line-height: 180%;
+}
+
+.entry-content img, .entry-content {
+    height: auto;
+    margin: 25px 0;
+    max-width: 720px;
+}
+
+.entry-content h2 {
+    line-height: 180%;
+}
+
+.navi-pager {
+    font-size: 14px;
+    text-align: center;
+    width: 217px;
+    padding-left: 256px;
+    padding-bottom: 59px;
+    clear: both;
+}
+
+.entry-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+
+.post .entry-thumbnail {
+   padding-top:10px;
+}
+.post .mini-info{
+    color: #FFC0C0;
+    font-size: 1px;
+    letter-spacing: 1px;
+    padding: 15px 0;
+    line-height: 2;
+}
+
+/* authors-content（postの一番下のミニAuthor情報） */
+
+
+.post .authors-content .author-excerpt{
+    float: left;
+    width: 600px;
+}
+
+.post .authors-content .author-photo{
+    float: left;
+    width: 60px;
+    margin-top: 36px;
+}
+
+.post .author-photo img{
+    width: 35px;
+    height: 35px;
+    -webkit-border-radius: 45px;
+    border-radius: 45px;
+    display: block;
+
+}
+
+/* post-sub-informations */
+
+.post .sub-text-content .time{
+    font-size: 15px;
+}
+
+
+
+
+
+.popular .popular-header .title {
+    padding-top: 10px;
+    font-size: 0.9em;
+    letter-spacing: 0.04em;
+    display: block;
+    width: 179px;
+}
+
+.post-related {
+    width: 650px;
+    margin: 0 36px;
+}
+
+.post-related h3 {
+    font-size: 16px;
+    margin: 0 0 4px 0;
+}
+
+.post-related .relatedthumb {
+    margin: 30px 14px 0 1px !important;
+    height: 142px !important;
+    padding: 19px 13px 20px 13px !important;
+
+}
+
+/* ABOUT */
+
+/* AUTHORS */
+
+.authors img {
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin: 19px 0 0 9px;
+}
+
+.authors {
+    margin-bottom: 4em;
+}
+
+.authors ul li:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+.authors dl {
+    width: 85%;
+    padding-left: 26px;
+}
+
+.authors .author-social-icons {
+    float: right;
+    padding-bottom: -1px;
+}
+
+.authors .position {
+    padding-left: 8px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+
+#side-bar-1 .twitter {
+    width: 290px;
+    padding: 35px 10px;
+}
+
+
+#side-bar-1 .side-fb-box {
+    padding: 40px 0;
+    border-bottom: dotted 1px #D8CFCF;
+}
+
+/* SIDE BAR POPULAR */
+
+#side-bar-1 .popular .popular-header {
+    width: 60%;
+    float: left;
+}
+
+#side-bar-1 .popular .popular-header .author {
+    font-size: 1.1em;
+}
+
+#side-bar-1 .popular .popular-header .views {
+    font-size: 0.9em;
+}
+
+#side-bar-1 .popular-side img {
+    height: 73px;
+    display: block;
+}
+
+#side-bar-1 .popular-side {
+   padding-top:27px;
+}
+/*
+
+#side-bar-1 .title{
+    float:right;
+}
+
+#side-bar-1 .popular .popular-header .views{
+    float:right;
+}
+
+
+.popular-header:after{
+    content: ""; display: block; visibility: hidden; clear: both;
+
+}
+*/
+
+/* FOOTER */
+#footer-content {
+    width: 500px;
+}
+
+/* SOCIAL */
+.fb-comments {
+    padding: 80px 0 0 35px;
+}
+
+.wp-pagenavi { padding: 40px 0; !important;}
+
+/* インタビュー */
+
+.entry-content .post-interview img{
+    max-width: 616px;
+}
+
+.post-interview .comment{
+    font-size: 16px;
+     max-width: 600px;
+}
+
+
+.post-interview table{
+    width: 600px !important;
+    margin-left: 92px !important;
+    font-size: 13px !important;
+}
+
+
+/*single-page-layout and list-page-layout*/
+
+.single #contents, .list-page #contents{
+    float: left;
+    width: 720px;
+    padding-right: 30px;
+    padding-left: 50px;
+}
+
+.single #side-bar-1, .list-page #side-bar-1 {
+    float: left;
+    width: 335px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.single:after, .list-page:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+/* headerのアイコンの位置をdisktopの時にだけ、位置を設定する*/
+
+.header {
+    height: 335px;
+    padding-top: 60px;
+
+}
+
+.header-twitterbird {
+    /* position: absolute; */
+    position: absolute;
+    left: 1000px;
+    top: 123px;
+    /* top: 47px; */
+}
+
+.header-sun {
+    position: absolute;
+    top: 103px;
+    left: 129px;
+
+}
+
+/* 1600px 以上サイズの時、headerのアイコンの位置を戻す*/
+@media screen and (min-width: 1600px) {
+    .header-sun{
+        position: static;
+    }
+
+    .header {
+        height: 411px;
+        padding-top: 0;
+
+    }
+    .header-twitterbird {
+
+        position: static;
+
+    }
+
+    .header-sun {
+        position: static;
+
+
+    }
+}
+
+/* postのリストをカオデビさんの占い仕様にカスタマイズ*/
+
+.entry-content .floating-list img{
+    border: none;
+}
+
+
+.floating-list ul {
+    padding:40px 0;
+
+}
+
+.floating-list li {
+    width: 720px;
+    padding: 15px 0;
+
+}
+
+.floating-list li{
+    border-top: solid 1px rgba(173, 173, 173, 0.21);
+}
+
+.entry-content .floating-list img.wp-image-13432{
+    width:190px;
+}
+
+
+.entry-content .floating-list li img{
+    width:190px;
+    float: left;
+    border: none;
+}
+
+.entry-content .floating-list li p{
+    padding-left: 20px;
+    width: 500px;
+    float: left;
+    padding-top: 30px;
+    font-size: 15px;
+}
+
+.floating-list li:after {
+    content: ""; display: block; visibility: hidden; clear: both;
+}
+
+.mobile-banner{
+    display: none;
+}

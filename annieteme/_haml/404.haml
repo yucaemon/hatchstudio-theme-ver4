@@ -1,0 +1,26 @@
+<?php /** *  Template Name:  404ページ */ ?>
+<?php include('head.php'); ?>
+%body
+  %section.pages.error-page
+    .outer
+      <?php include('components-php/header02.php'); ?>
+      <?php include('components-php/header-sp.php'); ?>
+      .notice-bar
+      .outer__inner
+        .pages__container
+          .notfind__img
+            <img src="<?php echo get_template_directory_uri(); ?>/images/notfind.svg">
+          %p.notfind__text
+            お探しのページが見つかりませんでした。
+          .notfind__btn
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップページへ戻る</a>
+        <?php include('components-php/news-articles.php'); ?>
+        <?php include('components-php/more-search-article.php'); ?>
+        .column-6.margin-center
+          <?php include('components-php/sns-box.php'); ?>
+        .column-8.margin-center
+          <?php include('components-php/shopping-box.php'); ?>
+        <?php include('chatbox.php'); ?>
+<?php include('components-php/footer.php'); ?>
+<?php include('components-php/footer-sp.php'); ?>
+

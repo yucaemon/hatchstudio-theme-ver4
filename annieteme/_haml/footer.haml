@@ -1,0 +1,66 @@
+%footer.footer
+  .outer__foot.footer__bottom-content
+    .footer__top-content.flexbox
+      .footer__sns-icons.flexbox
+        <a href="https://www.facebook.com/Annie-Jene-226289061241623/"><img src="<?php echo get_template_directory_uri(); ?>/images/white-facebook.svg"></a>
+        <a href="https://twitter.com/bohostyle_love"><img src="<?php echo get_template_directory_uri(); ?>/images/white-twitter.svg"></a>
+        <a href="https://www.instagram.com/annie_jene/"><img src="<?php echo get_template_directory_uri(); ?>/images/white-instagram.svg"></a>
+      .footer__logo-img
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/white-logo.svg" width="50"></a>
+      %p.footer__about-detail-text
+        ANNIEは、ポートランドから 最新の『boho(ボーホー)』ファッション＆スタイルをお届けする、WEBマガジンです。
+    .footer__bottom-content.flexbox--h-center
+      .footer__container
+        %dl
+          %dt
+            お問い合わせ
+          %dd
+            %ul
+              %li
+                <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">> アニーについて</a>
+              %li
+                > annie.jane@gmail.com
+      .footer__container
+        %dl
+          %dt
+            カテゴリー
+          %dd
+            %ul.flexbox
+              .footer__box1
+                %li
+                  <a href="<?php echo esc_url( home_url( '/category/fashion/' ) ); ?>">> ファッション</a>
+                %li
+                  <a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>">> お出かけ/グルメ</a>
+              .footer__box2
+                %li
+                  <a href="<?php echo esc_url( home_url( '/category/lifestyle/' ) ); ?>">> ライフ/DIY</a>
+                %li
+                  <a href="<?php echo esc_url( home_url( '/category/cosmetics/' ) ); ?>">> 美容/コスメ</a>
+      .footer__container
+        %dl
+          %dt
+            アイテム
+          %dd
+            %ul.flexbox
+              .footer__box1
+                %li
+                  <a href="<?php echo esc_url( home_url( '/tag/organic/' ) ); ?>">> オーガニック</a>
+                %li
+                  <a href="<?php echo esc_url( home_url( '/tag/ethical/' ) ); ?>">> エシカル</a>
+              .footer__box2
+                %li
+                  <a href="<?php echo esc_url( home_url( '/tag/fairtrade/' ) ); ?>">> フェアトレード</a>
+                %li
+                  <a href="<?php echo esc_url( home_url( '/tag/local/' ) ); ?>">> ローカル</a>
+      .footer__container
+        %dl
+          %dt
+            利用について
+          %dd
+            %ul
+              %li
+                <a href="<?php echo esc_url( home_url( '/rules/' ) ); ?>">> 利用規約</a>
+              %li
+                <a href="<?php echo esc_url( home_url( '/policy/' ) ); ?>">> プライバシーポリシー</a>
+  .copyright
+    © ANNIE JENE. All Rights Reserved.

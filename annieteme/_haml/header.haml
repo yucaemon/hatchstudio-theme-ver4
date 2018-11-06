@@ -1,0 +1,23 @@
+%header.outer__header.header
+  .flexbox--spacebetween
+    .sns-icons.flexbox
+      .sns-icons__icon
+        <a href="https://www.facebook.com/Annie-Jene-226289061241623/"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-icon.svg"></a>
+      .sns-icons__icon
+        <a href="https://twitter.com/bohostyle_love"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon.svg"></a>
+      .sns-icons__icon
+        <a href="https://www.instagram.com/annie_jene/"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon.svg"></a>
+    .info
+      %ul.nav-menu.flexbox
+        %li
+          <a title="Annieについて | ANNE [アニー] " href="<?php echo esc_url( home_url( '/about/' ) ); ?>">Annieについて</a>
+        %li
+          ポートランドオレゴン州
+      .search__box
+        .search__form
+          <?php get_search_form(); ?>
+  .logofind
+    .logo__img
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/annie-logo.svg" width="250"></a>
+  %h1.sub-title
+    旅するように暮らそう。『BOHO(ボーホー)』スタイルをお届け。

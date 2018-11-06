@@ -1,0 +1,19 @@
+.items
+  .header-img
+    <img src="<?php echo get_template_directory_uri(); ?>/images/ltem.svg">
+  %ul.items__content
+    %li.items__list
+      %i.fa.fa-angle-right
+      <a href="<?php bloginfo('url'); ?>/tag/tops/" <?php if(is_tag('tops')) echo 'class="iscurrent"'; ?>>トップス</a>
+    %li.items__list
+      %i.fa.fa-angle-right
+      <a href="<?php bloginfo('url'); ?>/tag/bottoms/" <?php if(is_tag('bottoms')) echo 'class="iscurrent"'; ?>>ボトムス</a>
+    %li.items__list
+      %i.fa.fa-angle-right
+      <a href="<?php bloginfo('url'); ?>/tag/dresses/" <?php if(is_tag('dresses')) echo 'class="iscurrent"'; ?>>ドレス</a>
+    %li.items__list
+      %i.fa.fa-angle-right
+      <a href="<?php bloginfo('url'); ?>/tag/accessories/" <?php if(is_tag('accessories')) echo 'class="iscurrent"'; ?>>アクセサリー</a>
+    %li.items__list
+      %i.fa.fa-angle-right
+      <a href="<?php bloginfo('url'); ?>/tag/lingerie/" <?php if(is_tag('lingerie')) echo 'class="iscurrent"'; ?>>ランジェリー</a>

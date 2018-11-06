@@ -1,0 +1,39 @@
+<?php /** *  Template Name:  aboutページ */ ?>
+<?php include('head.php'); ?>
+%body
+  %section.about-page.pages
+    .outer
+      <?php include('components-php/header02.php'); ?>
+      <?php include('components-php/header-sp.php'); ?>
+      .notice-bar
+      .breadcrumb-container
+        <?php include('breadcrumb.php'); ?>
+      .outer__inner
+        .pages__container
+          .logo__img
+            <img src="<?php echo get_template_directory_uri(); ?>/images/annie-logo.svg">
+          .mission
+            %h1.pages__header
+              ”旅するように暮らそう。自分らしく『自由奔放』を楽しもう。”
+            %p.pages__read
+              遊牧民ように自由気まま。自分らしく、着飾ることなく『自分の好きなことを探求し続ける』ことが難しい時代だからこそ、『自分の道を行く自由奔放な姿。』『これから自分さがしの旅に出るそんな姿。』
+              そして、『自分を取り戻しさせてくれる自分自身のあるべき姿』そんな空間や姿をAnnie jene（アニージーン）を通して、お届けできたらと思います。
+            .yuka-sign__img
+              <img src="<?php echo get_template_directory_uri(); ?>/images/yuka-sign.svg">
+            .pages__date-info
+              %p
+                2018年 8月 11日
+              %p
+                Portland, Oregon USA
+
+        <?php include('components-php/news-articles.php'); ?>
+        <?php include('components-php/more-search-article.php'); ?>
+        .column-6.margin-center
+          <?php include('components-php/sns-box.php'); ?>
+        .column-8.margin-center
+          <?php include('components-php/shopping-box.php'); ?>
+        <?php include('chatbox.php'); ?>
+
+<?php include('components-php/footer.php'); ?>
+<?php include('components-php/footer-sp.php'); ?>
+

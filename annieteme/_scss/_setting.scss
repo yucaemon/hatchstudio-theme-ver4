@@ -1,0 +1,44 @@
+// ページ全体の横幅
+$base_width: 1170px; // PC
+$tab_width: 680px; // タブレット
+$sp_width: 480px;  // スマホ
+
+
+// 要素の基本下マージン
+$base_margin: 30px;
+
+
+// メインカラー（ベースカラー）
+$main_color: #f2716e;
+
+// サブカラー
+$sub_color: #ffede9;
+
+
+// ベーステキストカラー
+$font_color: #333;
+
+// サブテキストカラー
+$font_sub_color: #dcdcdc;
+$font_sub_glay_color: #9c9c9c;
+
+
+// borderカラー
+$border_color: #dcdcdc;
+
+
+
+// ベースリンクカラー
+$link_color: #f2716e;
+
+
+// font-family
+$font_family_jp : Arial,Helvetica,"游ゴシック",YuGothic,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+$font_family_en : 'Oswald', sans-serif;
+$font_family_en_robot: 'Roboto', sans-serif;
+
+
+// google-font
+@import url('https://fonts.googleapis.com/css?family=Dosis:700');
+
+
