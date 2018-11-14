@@ -3,9 +3,8 @@
 <div class='outer index'>
 <?php include('components-php/header.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
-<section class='section'>
-<div class='outer__inner'>
-<div class='flexbox'>
+<section class='section first-section'>
+<div class='outer__inner flexbox'>
 <div class='middle-contain'>
 <ul class='post-lists article-list'>
   <?php $args = array(
@@ -41,9 +40,8 @@
 <?php include('components-php/news-list.php'); ?>
 </div>
 </div>
-</div>
 </section>
-<div class='ad-banner hatching-house zigzag'>
+<section class='section ad-banner hatching-house zigzag'>
 <div class='hatching-house__header'>
 <div class='hatching-house__header--jp'>
 初渡米！女性一人旅でも安心なハウス
@@ -93,7 +91,43 @@ SFバークレーシェアハウス
 </div>
 </div>
 </div>
+</section>
+<section class='section second-section'>
+<div class='outer__inner flexbox'>
+  <ul class='post-lists article-list flexbox'>
+    <?php $args = array(
+      'posts_per_page' => 6,                //表示（取得）する記事の数
+      'post_type' => 'post'    //投稿タイプの指定
+    );
+    $posts = get_posts( $args );
+      if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
+          <li class=''>
+            <div class='post-lists__img article-list__img'>
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+            </div>
+            <div class='post-lists__text article-list__text'>
+              <h3 class='post-lists__title list-title'>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              </h3>
+            </div>
+          </li>
+      <?php endforeach; ?>
+      <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+      <?php else : //記事が無い場合 ?>
+        <li><p>記事はまだありません。</p></li>
+      <?php endif;
+      wp_reset_postdata(); //クエリのリセット ?>
+  </ul>
+<div class='more-page'>
+<div class='more-page__btn big-btn'>
+<a href="<?php echo esc_url( home_url( '/archive/' ) ); ?>">> 記事一覧ページへ</a>>
 </div>
+</div>
+<div class='side-contain'>
+<?php include('components-php/keywords.php'); ?>
+</div>
+</div>
+</section>
 <div class='side-contain'>
 <?php include('components-php/news-list.php'); ?>
 <?php include('components-php/keywords.php'); ?>

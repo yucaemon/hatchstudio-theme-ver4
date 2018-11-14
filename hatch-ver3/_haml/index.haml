@@ -3,41 +3,40 @@
   .outer.index
     <?php include('components-php/header.php'); ?>
     <?php include('components-php/header-sp.php'); ?>
-    %section.section
-      .outer__inner
-        .flexbox
-          .middle-contain
-            :plain
-              <ul class='post-lists article-list'>
-                <?php $args = array(
-                  'posts_per_page' => 6,                //表示（取得）する記事の数
-                  'post_type' => 'post'    //投稿タイプの指定
-                );
-                $posts = get_posts( $args );
-                  if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
-                      <li class=''>
-                        <div class='post-lists__img article-list__img'>
-                          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                        </div>
-                        <div class='post-lists__text article-list__text'>
-                          <h3 class='post-lists__title list-title'>
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                          </h3>
-                        </div>
-                      </li>
-                  <?php endforeach; ?>
-                  <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
-                  <?php else : //記事が無い場合 ?>
-                    <li><p>記事はまだありません。</p></li>
-                  <?php endif;
-                  wp_reset_postdata(); //クエリのリセット ?>
-              </ul>
-            .more-page
-              .more-page__btn.big-btn
-                <a href="<?php echo esc_url( home_url( '/archive/' ) ); ?>">> 記事一覧ページへ</a>>
-          .side-contain
-            <?php include('components-php/news-list.php'); ?>
-    .ad-banner.hatching-house.zigzag
+    %section.section.first-section
+      .outer__inner.flexbox
+        .middle-contain
+          :plain
+            <ul class='post-lists article-list'>
+              <?php $args = array(
+                'posts_per_page' => 6,                //表示（取得）する記事の数
+                'post_type' => 'post'    //投稿タイプの指定
+              );
+              $posts = get_posts( $args );
+                if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
+                    <li class=''>
+                      <div class='post-lists__img article-list__img'>
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                      </div>
+                      <div class='post-lists__text article-list__text'>
+                        <h3 class='post-lists__title list-title'>
+                          <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        </h3>
+                      </div>
+                    </li>
+                <?php endforeach; ?>
+                <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+                <?php else : //記事が無い場合 ?>
+                  <li><p>記事はまだありません。</p></li>
+                <?php endif;
+                wp_reset_postdata(); //クエリのリセット ?>
+            </ul>
+          .more-page
+            .more-page__btn.big-btn
+              <a href="<?php echo esc_url( home_url( '/archive/' ) ); ?>">> 記事一覧ページへ</a>>
+        .side-contain
+          <?php include('components-php/news-list.php'); ?>
+    %section.section.ad-banner.hatching-house.zigzag
       .hatching-house__header
         .hatching-house__header--jp
           初渡米！女性一人旅でも安心なハウス
@@ -68,6 +67,39 @@
             お問い合わせはこちら
           .hatching-house__btn--img
             <img src="<?php echo get_template_directory_uri(); ?>/images/pink-guy.svg">
+    %section.section.second-section
+      .outer__inner.flexbox
+        :plain
+            <ul class='post-lists article-list flexbox'>
+              <?php $args = array(
+                'posts_per_page' => 6,                //表示（取得）する記事の数
+                'post_type' => 'post'    //投稿タイプの指定
+              );
+              $posts = get_posts( $args );
+                if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
+                    <li class=''>
+                      <div class='post-lists__img article-list__img'>
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                      </div>
+                      <div class='post-lists__text article-list__text'>
+                        <h3 class='post-lists__title list-title'>
+                          <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        </h3>
+                      </div>
+                    </li>
+                <?php endforeach; ?>
+                <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+                <?php else : //記事が無い場合 ?>
+                  <li><p>記事はまだありません。</p></li>
+                <?php endif;
+                wp_reset_postdata(); //クエリのリセット ?>
+            </ul>
+        .more-page
+          .more-page__btn.big-btn
+            <a href="<?php echo esc_url( home_url( '/archive/' ) ); ?>">> 記事一覧ページへ</a>>
+        .side-contain
+          <?php include('components-php/keywords.php'); ?>
+
 
 
 
