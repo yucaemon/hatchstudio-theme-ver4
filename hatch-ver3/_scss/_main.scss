@@ -125,7 +125,7 @@ a:hover img { opacity: 0.5 ; }
 }
 
 .outer__inner {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 
@@ -262,27 +262,70 @@ a:hover img { opacity: 0.5 ; }
 .background-draw__left {
   position: absolute;
   left: 145px;
-  top: 199px;
+  top: 175px;
 }
 
 .background-daw__right {
   position: absolute;
   left: 842px;
-  top: 199px;
+  top: 183px;
 }
 
 
+.header-bar {
 
-.notice-bar {
-  text-align: center;
-  background-color: #e8e8e8;
-  margin-top: 15px;
-  @include fts(6, 6);
-  color: #fff;
-  height: 0.8px;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
+  height: 66px;
+  background: #f9b19d;
+  padding: 0 40px;
+
+  &__logo {
+    width: 300px;
+    display: flex;
+    align-items: center;
+      margin: 0 auto 0 0;
+      padding: 23px 0 25px;
+      height: 21px;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+  }
+
+  .logo{
+    &__img-h img{
+      width: 26px;
+    }
+    &__title {
+      padding-left: 10px;
+    }
+
+  }
+
+  .header-bar__nav__list {
+    display: flex;
+  }
+
+  &__nav__item {
+    padding: 10px 16px;
+    a{
+      display: block;
+    }
+  }
+
+  &__nav__text {
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+  }
+
+  &__nav__text--en {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+  }
+
+
 }
+
 
 
 
@@ -360,28 +403,39 @@ a:hover img { opacity: 0.5 ; }
 
   }
 
-  .header-img {
-    padding: 20px 0;
-  }
   .news-list {
-    dd + dd {
-      padding-top: 18px;
-    }
-    &__number-img img {
-      width: 19px;
-      padding-right: 10px;
-      object-fit: cover;
-    }
-
     &__title {
-      padding-left: 12px;
-      padding-top: 3px;
-      width: 180px;
-      font-weight: bold;
-      @include fts(7,7);
-      line-height: 1.5;
+      width: 222px;
+      font-size: 13px;
+      padding-left: 10px;
+    }
+    &__content{
+      padding-bottom: 20px;
     }
   }
+  .header-side{
+    padding-bottom: 20px;
+    justify-content: center;
+    &__img {
+      width: 25px;
+    }
+    &__txt {
+      &--en{
+        font-size: 17px;
+        letter-spacing: 1px;
+        padding: 2px 8px 0 15px;
+        color: #333;
+        font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+      }
+      &--jp {
+        padding-right:15px;
+        padding-top: 6px;
+        font-size: 11px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
 
   .recommend-list {
     dd + dd {
@@ -402,6 +456,7 @@ a:hover img { opacity: 0.5 ; }
       @include fts(7, 9);
       font-weight: bold;
     }
+
   }
 
 
@@ -544,7 +599,7 @@ a:hover img { opacity: 0.5 ; }
 *************************************************/
 
 .middle-contain {
-  margin: 0 40px;
+  margin: 0 30px;
 
   .bg-thumb-img {
     margin-bottom: 30px;
@@ -552,12 +607,13 @@ a:hover img { opacity: 0.5 ; }
 
   .article-list {
     li {
-      height: 123px;
       padding-bottom: 14px;
+      width: 380px;
     }
+
     &__img {
-      width: 200px;
-      height: 109px;
+      width: auto;
+      height: auto;
       object-fit: cover;
       img {
         width: 100%;
@@ -567,16 +623,15 @@ a:hover img { opacity: 0.5 ; }
       }
     }
     &__text {
-      width: 447px;
-      padding-left: 13px;
       word-wrap: break-word;
 
       .list-title {
-        @include fts(9, 11);
+        @include fts(12, 18);
         font-weight: bold;
         padding-bottom: 6px;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
       }
+
       p.list-read {
         @include fts(5, 5);
         letter-spacing: 1px;
@@ -603,6 +658,112 @@ a:hover img { opacity: 0.5 ; }
     width: 250px;
     }
   }
+
+.section{
+  padding-bottom:50px;
+}
+.ad-banner {
+  height: 400px;
+  padding-left:50px;
+  padding-top: 35px;
+}
+
+
+.zigzag {
+  position: relative;
+  background: #bee4e6;
+}
+.zigzag::after {
+  height: 20px;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.zigzag::before {
+  top: -20px;
+  background: linear-gradient(45deg, #fff 10px, transparent 0), linear-gradient(315deg, #fff 10px, transparent 0);
+  background-size: 20px 20px;
+}
+.zigzag::after {
+  bottom: -20px;
+  background: linear-gradient(135deg, #bee4e6 10px, transparent 0), linear-gradient(225deg, #bee4e6 10px, transparent 0);
+  background-size: 20px 20px;
+}
+
+button.btn.btn-round-white{
+    background : #FFFFFF;
+    padding:10px 20px;
+    font-size: 14px;
+    box-shadow: 3px 3px #b2b2b2;
+    background : rgba(255, 255, 255, 1);
+    border-style : Solid;
+    border-color : #10100F;
+    border-color : rgba(16, 16, 15, 1);
+    border-radius : 12px;
+    -moz-border-radius : 12px;
+    -webkit-border-radius : 12px;
+}
+
+
+
+
+
+.hatching-house{
+  background-color: #bee4e6;
+  &__header{
+    padding-bottom: 40px;
+    &--jp {
+      color: #87b2bd;
+      font-size: 22px;
+      letter-spacing: 3px;
+      padding-bottom: 10px;
+    }
+    &--en {
+      align-items: center;
+    }
+    &--txt {
+      width: 710px;
+    }
+    &--icon {
+      width: 80px;
+      padding-right: 20px;
+    }
+  }
+
+  &__pictures {
+    li{
+      margin-right:30px;
+    }
+    .hatching-house {
+      &--img{
+        height: 171px;
+      }
+      &--img img{
+        width: 250px;
+        height: 172px !important;
+      }
+      &--txt {
+        background-color: #fff;
+        padding:  10px 20px;
+        font-size: 13px;
+        letter-spacing: 2px;
+      }
+
+    }
+  }
+
+
+  &__btn {
+    button {
+     margin-top: 10px;
+    }
+    &--img {
+      width: 100px;
+    }
+  }
+}
+
 
 
 /*

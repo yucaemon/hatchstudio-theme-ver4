@@ -39,13 +39,21 @@
       bohoスタイルの火付け役『アンソロジー』のゆるふあチェックカーデが可愛い。
 %dl.news-list
   %dt
-    .header-img
-      <img src="<?php echo get_template_directory_uri(); ?>/images/news.svg">
+    .header-side.flexbox
+      .header-side__img
+        <img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-left.svg">
+      .header-side__txt--en
+        POPULOR
+      .header-side__txt--jp
+        人気ランキング
+      .header-side__img
+        <img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-right.svg">
+
   .news-list__container
     :plain
       <?php
       $posts = get_posts(array(
-      'posts_per_page' => 5, // 表示件数
+      'posts_per_page' => 10, // 表示件数
       ));
       ?>
       <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>

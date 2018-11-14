@@ -23,7 +23,7 @@
 </div>
 </div>
 <h1 class='sub-title'>
-アメリカ現地からお届け！面白ろまがじん。
+”ワクワク”をお届け！アメリカ面白まがじん
 </h1>
 <div class='background-draw'>
 <div class='background-draw__left'>
@@ -34,3 +34,81 @@
 </div>
 </div>
 </header>
+<div class='header-bar'>
+<div class='header-bar__inner flexbox--spacebetween'>
+<div class='header-bar__logo logo'>
+<span class='logo__img-h'>
+<a href="https://www.instagram.com/annie_jene/"><img src="<?php echo get_template_directory_uri(); ?>/images/eight-icon.svg"></a>
+</span>
+<span class='logo__title'>
+はっちすたじお
+</span>
+</div>
+<div class='header-bar__menu'>
+<nav class='header-bar__nav'>
+<ul class='header-bar__nav__list'>
+<li class='header-bar__nav__item'>
+<a class='header-bar__nav__text'>
+<span class='header-bar__nav__text--en'>
+BLOG
+</span>
+</a>
+<a class='header-bar__nav__text'>
+<span class='header-bar__nav__text--jp'>
+ブログ
+</span>
+</a>
+</li>
+<li class='header-bar__nav__item'>
+<a class='header-bar__nav__text'>
+<span class='header-bar__nav__text--en'>
+SVICE
+</span>
+</a>
+<a class='header-bar__nav__text'>
+<span class='header-bar__nav__text--jp'>
+サービス
+</span>
+</a>
+</li>
+<li class='header-bar__nav__item'>
+<a class='header-bar__nav__text'>
+<span class='header-bar__nav__text--en'>
+RECRUIT
+</span>
+</a>
+<a class='header-bar__nav__text'>
+<span class='header-bar__nav__text--jp'>
+採用
+</span>
+</a>
+</li>
+<li class='header-bar__nav__item'>
+<a class='header-bar__nav__text'>
+<span class='header-bar__nav__text--en'>
+ABOUT
+</span>
+</a>
+<a class='header-bar__nav__text'>
+<span class='header-bar__nav__text--jp'>
+会社案内
+</span>
+</a>
+</li>
+<li class='header-bar__nav__item'>
+<a class='header-bar__nav__text'>
+<span class='header-bar__nav__text--en'>
+CONTACT
+</span>
+</a>
+<a class='header-bar__nav__text'>
+<span class='header-bar__nav__text--jp'>
+お問い合わせ
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
