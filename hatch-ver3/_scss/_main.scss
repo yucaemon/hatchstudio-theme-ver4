@@ -180,7 +180,6 @@ a:hover img { opacity: 0.5 ; }
 
 .pages {
   .breadcrumbs {
-    //padding: 20px 0 0 30px;
   }
   .outer__inner {
     margin: 0 auto;
@@ -205,6 +204,17 @@ a:hover img { opacity: 0.5 ; }
     width: 32px;
     padding-right: 10px;
   }
+}
+
+.category-icon{
+  padding: 3px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #f2695d;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 12px !important;
 }
 
 /*
@@ -517,6 +527,33 @@ a:hover img { opacity: 0.5 ; }
 
   }
 
+  .keywords{
+    .tag-cloud-link {
+      padding: 2px;
+      display: inline-block;
+      margin-bottom: 6px;
+      color: #333;
+      letter-spacing: 1px;
+      font-size: 18px !important;
+    }
+    a:before {
+      color:#f2695d;
+    }
+  }
+
+  .keywords-category{
+    .this-page__tags a ,.tag-cloud-link{
+      padding: 8px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 10px;
+      background-color:  #f2695d;;
+      color: #fff;;
+      letter-spacing: 1px;
+      font-size:12px !important;
+    }
+  }
+
 }
 
 /*
@@ -632,12 +669,7 @@ a:hover img { opacity: 0.5 ; }
         letter-spacing: 3px;
       }
 
-      p.list-read {
-        @include fts(5, 5);
-        letter-spacing: 1px;
-        color: $font_sub_glay_color;
-        padding-bottom: 9px;
-      }
+
       .icons {
         .icons__tag {
           background-color: $main_color;
@@ -661,11 +693,6 @@ a:hover img { opacity: 0.5 ; }
 
 .section{
   padding-bottom:50px;
-}
-.ad-banner {
-  height: 400px;
-  padding-left:50px;
-  padding-top: 35px;
 }
 
 
@@ -705,12 +732,24 @@ button.btn.btn-round-white{
     -webkit-border-radius : 12px;
 }
 
+.second-section {
+  .middle-contain .article-list li {
+    width:auto;
+  }
 
-
-
+  .middle-contain .article-list__text {
+    word-wrap: break-word;
+    width: 530px;
+    padding-left: 20px;
+  }
+}
 
 .hatching-house{
   background-color: #bee4e6;
+  height: 400px;
+  padding-left:50px;
+  padding-top: 35px;
+
   &__header{
     padding-bottom: 40px;
     &--jp {
@@ -760,10 +799,126 @@ button.btn.btn-round-white{
      padding-right:20px;
     }
     &--img {
-      width: 100px;
+      width: 88px;
+      padding-top: 83px;
     }
   }
 }
+
+.annie {
+  background-color: #fbcccc;
+  height: 215px;
+  height: 297px;
+  &-img{
+    width: 42%;
+    img {
+      width: 139%;
+      height: 347px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+  .annie-content {
+    padding-left: 267px;
+    padding-top: 85px;
+    text-align: center;
+  }
+
+  &-header-main {
+    font-size: 36px;
+    color: #fff;
+  }
+
+  &-header-sub {
+    letter-spacing: 3px;
+  }
+
+  &-header-txt {
+    font-size: 14px;
+    padding-bottom: 20px;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+
+
+}
+
+.blogger {
+  background-color: #ffe198;
+  height: 390px;
+
+
+  &__header{
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    padding: 40px 0;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+
+
+  &__header--img{
+    position: absolute;
+    left: 114px;
+    z-index: 101;
+    top: 3233px;
+    width: 100px;
+  }
+
+
+  &__box{
+    text-align: center;
+    width: 149px;
+    padding-top: 30px;
+
+    img{
+      width: 60px;
+    }
+  }
+
+  .cross-img {
+    width: 27px;
+    vertical-align: middle;
+    padding-top: 48px;
+  }
+
+  &__container {
+    width: 1210px;
+    margin: 0 auto;
+  }
+
+  &__box__name {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #b3a37c;
+  }
+
+}
+
+
+
+.circle img{
+  border-radius: 50%;
+}
+
+
+
+.sns-container{
+  .sns-icons{
+    width: 465px;
+    margin: 0 auto;
+  }
+
+  .sns-icons__img {
+    width: 131px;
+    padding: 12px;
+  }
+
+}
+
+
 
 
 
@@ -1564,16 +1719,6 @@ button.btn.btn-round-white{
 
 *************************************************/
 
-.this-page__tags a ,.tag-cloud-link{
-    padding: 8px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-bottom: 10px;
-    background-color: #ffede9;
-    color: #ffa5a5;
-    letter-spacing: 1px;
-    font-size:12px !important;
-}
 
 .tag-cloud-link{
   margin-right: 10px;

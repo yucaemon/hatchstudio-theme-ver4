@@ -73,6 +73,27 @@
 
 
 
+  .second-section{
+    ul.post-lists.article-list {
+      display:block;
+      width: 800px;
+    }
+    .post-lists__img.article-list__img img {
+      width: 250px;
+      height: 150px;
+    }
+
+    h3.post-lists__title.list-title {
+      font-size: 18px;
+    }
+
+    p.list-read {
+      font-size: 10px;
+    }
+  }
+
+
+
 
   /*
 
