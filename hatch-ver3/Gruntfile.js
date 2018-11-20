@@ -51,6 +51,8 @@ module.exports = function (grunt) {
                     'components-php/recommend-list.php': '_haml/recommend-list.haml',
                     'components-php/side-menu-list.php': '_haml/side-menu-list.haml',
                     'components-php/shopping-box.php': '_haml/shopping-box.haml',
+                    'components-php/ad-post-lists.php': '_haml/ad-post-lists.haml',
+
 
                     'components-php/wrote-models-box.php': '_haml/wrote-models-box.haml',
                     'components-php/article-sns-btns.php': '_haml/article-sns-btns.haml',

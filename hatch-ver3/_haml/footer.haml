@@ -1,66 +1,76 @@
 %footer.footer
-  .outer__foot.footer__bottom-content
-    .footer__top-content.flexbox
-      .footer__sns-icons.flexbox
-        <a href="https://www.facebook.com/Annie-Jene-226289061241623/"><img src="<?php echo get_template_directory_uri(); ?>/images/white-facebook.svg"></a>
-        <a href="https://twitter.com/bohostyle_love"><img src="<?php echo get_template_directory_uri(); ?>/images/white-twitter.svg"></a>
-        <a href="https://www.instagram.com/annie_jene/"><img src="<?php echo get_template_directory_uri(); ?>/images/white-instagram.svg"></a>
-      .footer__logo-img
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/white-logo.svg" width="50"></a>
-      %p.footer__about-detail-text
-        ANNIEは、ポートランドから 最新の『boho(ボーホー)』ファッション＆スタイルをお届けする、WEBマガジンです。
-    .footer__bottom-content.flexbox--h-center
-      .footer__container
+  .outer__foot
+    .footer__content.flexbox
+      .footer__box
         %dl
-          %dt
-            お問い合わせ
-          %dd
-            %ul
-              %li
-                <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">> アニーについて</a>
-              %li
-                > annie.jane@gmail.com
-      .footer__container
-        %dl
-          %dt
-            カテゴリー
-          %dd
+          %dt.footer__box__title
+            BLOG
+          %dd.footer__box__lists
             %ul.flexbox
-              .footer__box1
+              .footer__nimi-box
                 %li
-                  <a href="<?php echo esc_url( home_url( '/category/fashion/' ) ); ?>">> ファッション</a>
+                  <a href="<?php echo esc_url( home_url( '/category/fashion/' ) ); ?>"> ニューヨーク</a>
                 %li
-                  <a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>">> お出かけ/グルメ</a>
-              .footer__box2
+                  <a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>"> サンフランシスコ</a>
                 %li
-                  <a href="<?php echo esc_url( home_url( '/category/lifestyle/' ) ); ?>">> ライフ/DIY</a>
+                  <a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>"> ポートランド</a>
+
+              .footer__mini-box
                 %li
-                  <a href="<?php echo esc_url( home_url( '/category/cosmetics/' ) ); ?>">> 美容/コスメ</a>
-      .footer__container
+                  <a href="<?php echo esc_url( home_url( '/category/lifestyle/' ) ); ?>"> ライフ/DIY</a>
+                %li
+                  <a href="<?php echo esc_url( home_url( '/category/cosmetics/' ) ); ?>"> 美容/コスメ</a>
+                %li
+                  <a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>"> お出かけ/グルメ</a>
+      .footer__box
         %dl
-          %dt
-            アイテム
-          %dd
+          %dt.footer__box__title
+            OUR SERVICE
+          %dd.footer__box__lists
             %ul.flexbox
-              .footer__box1
+              .footer__nimi-box
                 %li
-                  <a href="<?php echo esc_url( home_url( '/tag/organic/' ) ); ?>">> オーガニック</a>
+                  <a href="<?php echo esc_url( home_url( '/category/fashion/' ) ); ?>"> ファッション</a>
                 %li
-                  <a href="<?php echo esc_url( home_url( '/tag/ethical/' ) ); ?>">> エシカル</a>
-              .footer__box2
+                  <a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>"> お出かけ/グルメ</a>
                 %li
-                  <a href="<?php echo esc_url( home_url( '/tag/fairtrade/' ) ); ?>">> フェアトレード</a>
+                  <a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>"> お出かけ/グルメ</a>
+
+              .footer__mini-box
                 %li
-                  <a href="<?php echo esc_url( home_url( '/tag/local/' ) ); ?>">> ローカル</a>
-      .footer__container
+                  <a href="<?php echo esc_url( home_url( '/category/lifestyle/' ) ); ?>"> ライフ/DIY</a>
+                %li
+                  <a href="<?php echo esc_url( home_url( '/category/cosmetics/' ) ); ?>"> 美容/コスメ</a>
+                %li
+                  <a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>"> お出かけ/グルメ</a>
+
+      .footer__box
         %dl
-          %dt
-            利用について
-          %dd
-            %ul
-              %li
-                <a href="<?php echo esc_url( home_url( '/rules/' ) ); ?>">> 利用規約</a>
-              %li
-                <a href="<?php echo esc_url( home_url( '/policy/' ) ); ?>">> プライバシーポリシー</a>
+          %dt.footer__box__title
+            ABOUT
+          %dd.footer__box__lists
+            %ul.flexbox
+              .footer__nimi-box
+                %li
+                  <a href="<?php echo esc_url( home_url( '/tag/organic/' ) ); ?>"> 会社概要</a>
+                %li
+                  <a href="<?php echo esc_url( home_url( '/tag/ethical/' ) ); ?>"> 採用</a>
+              .footer__nimi-box
+                %li
+                  <a href="<?php echo esc_url( home_url( '/tag/fairtrade/' ) ); ?>"> ポリシー</a>
+                %li
+                  <a href="<?php echo esc_url( home_url( '/tag/local/' ) ); ?>"> セキュリティー</a>
+
+      .footer__box
+        .footer__logo__img
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-sky.svg" width="250"></a>
+        .footer__logo__txt
+          はっちすたじおは、ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。
+        .footer__sns-icons.flexbox--h-center
+          <a href="https://www.facebook.com/Anie-Jene-226289061241623/"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon-sky.svg"></a>
+          <a href="https://twitter.com/bohostyle_love"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon-sky.svg"></a>
+
   .copyright
-    © ANNIE JENE. All Rights Reserved.
+    © HATCH STUDIO. All Rights Reserved.
+
+
