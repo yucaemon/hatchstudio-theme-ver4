@@ -141,17 +141,7 @@ SFバークレーシェアハウス
 </div>
 </section>
 <section class='section sns-container'>
-<div class='sns-icons flexbox'>
-<div class='sns-icons__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/share-facebook-icon.svg">
-</div>
-<div class='sns-icons__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/share-twitter-icon.svg">
-</div>
-<div class='sns-icons__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/share-pokect-icon.svg">
-</div>
-</div>
+<?php include('components-php/sns-btns.php'); ?>
 </section>
 <section class='section ad-banner blogger'>
 <div class='blogger__container'>
@@ -358,25 +348,7 @@ YOU
 </div>
 </div>
 </section>
-<section class='section ad-banner annie flexbox'>
-<div class='annie-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/annie-banner.jpg">
-</div>
-<div class='annie-content'>
-<div class='annie-header-sub'>
-姉妹サイトOPEN!!
-</div>
-<div class='annie-header-main'>
-旅するように暮らそう。
-</div>
-<div class='annie-header-txt'>
-オーガニックで自由な暮らしをお届けするマガジン
-</div>
-<button class='btn btn-round-white'>
-サイトはこちらから
-</button>
-</div>
-</section>
+<?php include('components-php/annie-banner.php'); ?>
 </div>
 </body>
 <?php include('components-php/footer.php'); ?>

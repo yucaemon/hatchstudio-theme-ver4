@@ -1,9 +1,10 @@
-<dl class='category-popular'>
-<dt>
-<div class='header-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/category-popular.svg">
+<div class='category-popular'>
+<div class='header-side'>
+<div class='header-side__title'>
+『買ってみる』カテゴリー記事
 </div>
-</dt>
+</div>
+<div class='category-popular__body flexbox'>
 <?php
 $post_id = get_the_ID();
 foreach((get_the_category()) as $cat) {
@@ -21,7 +22,7 @@ if(have_posts()) :
 ?>
 <?php while (have_posts()) : the_post(); ?>
   <!--表示する内容が入ります。-->
-  <dd class="category-popular__content flexbox">
+  <dd class="category-popular__content">
     <div class="category-popular__thumb-img">
       <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
     </div>
@@ -33,4 +34,5 @@ if(have_posts()) :
 <?php endwhile; ?>
 <?php endif; ?>
 <?php wp_reset_query(); ?>
-</dl>
+</div>
+</div>

@@ -5,12 +5,14 @@
     $user = wp_get_current_user();
     if ( $user ) :
     ?>
-    <div class="wrote-models-lists__header">CREATED BY </div>
+    <div class="wrote-models-lists__header">これを書いた人 </div>
     <div class="wrote-models-lists__img"><?php echo get_avatar( get_the_author_id(), 100 ); ?></div>
+    <div class="wrote-models-lists__name"><?php echo get_the_author(); ?></div>
     <div class="author-profile content-bottom-widgets">
       <div class="author-profile-description">
+
         <div class="author-profile-sns">
-          <a href="<?php echo get_the_author_meta( 'twitter' ); ?>">instagramフォローする</a>
+          <a href="<?php echo get_the_author_meta( 'twitter' ); ?>">この人の記事をもっと見る</a>
         </div>
       </div>
     </div>

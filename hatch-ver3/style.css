@@ -398,7 +398,7 @@ a:hover img {
 .pages .outer__inner {
   margin: 0 auto; }
 
-.components-title {
+.components-title, .single-page .single__container__bottom .header-side {
   font-size: 10px;
   font-size: 1rem;
   line-height: 1;
@@ -508,6 +508,9 @@ a:hover img {
     color: #fff;
     font-size: 15px;
     font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif; }
+
+.header02 .logo__img img {
+  width: 26%; }
 
 /*
 
@@ -660,6 +663,67 @@ a:hover img {
   color: #fff;
   letter-spacing: 1px;
   font-size: 12px !important; }
+
+.annie-ad-side .annie-img img {
+  width: 238%;
+  height: 298px;
+  object-fit: cover;
+  display: block; }
+.annie-ad-side .annie-content {
+  margin: 0 auto 40px 0;
+  height: 200px;
+  text-align: center;
+  background-color: #fbcccc;
+  padding: 10px 33px; }
+.annie-ad-side .annie-header-main {
+  font-size: 24px;
+  padding-bottom: 3px;
+  color: #fff; }
+.annie-ad-side .annie-header-txt {
+  font-size: 14px;
+  line-height: 1.4;
+  padding-bottom: 20px;
+  color: #fff;
+  letter-spacing: 3px; }
+
+.house-ad-side .house-img {
+  padding-bottom: 30px; }
+  .house-ad-side .house-img img {
+    width: 100%;
+    object-fit: cover;
+    display: block; }
+.house-ad-side .house-content {
+  margin: 0 auto 40px 0;
+  height: 538px;
+  text-align: center;
+  background-color: #bee4e6; }
+.house-ad-side .house-header {
+  width: 273px;
+  margin: 0 auto;
+  padding-bottom: 20px; }
+.house-ad-side .house-header-sub {
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #87b2bd;
+  padding: 30px 0 10px 0; }
+
+.business-ad-side .business-img {
+  width: 88px;
+  position: absolute;
+  top: 5008px;
+  right: 323px; }
+.business-ad-side .business-content {
+  background-color: #ffde8d;
+  height: 158px;
+  text-align: center;
+  padding: 29px; }
+.business-ad-side .business-header-txt {
+  font-size: 21px;
+  color: #ee9b2d;
+  font-weight: bold;
+  padding-bottom: 21px;
+  letter-spacing: 1px;
+  line-height: 1.5; }
 
 /*
 
@@ -850,7 +914,7 @@ button.btn.btn-round-white {
     width: 42%; }
     .annie-img img {
       width: 139%;
-      height: 347px;
+      height: 298px;
       object-fit: cover;
       display: block; }
   .annie .annie-content {
@@ -931,23 +995,46 @@ button.btn.btn-round-white {
 	single.page
 
 *************************************************/
-.single-page .sub-title {
-  display: none; }
+.single-page__container {
+  width: 1200px; }
 .single-page__head-title {
   font-weight: bold;
-  font-size: 15px;
-  font-size: 1.5rem;
-  line-height: 1;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.38889;
   letter-spacing: 1px;
-  padding-bottom: 15px;
-  line-height: 31px; }
-.single-page__tags, .single-page__dates {
-  font-size: 7px;
-  font-size: 0.7rem;
+  line-height: 31px;
+  margin-bottom: 20px; }
+.single-page__tags {
+  font-size: 10px;
+  font-size: 1rem;
   line-height: 1;
   color: #9c9c9c;
   padding-bottom: 15px;
   letter-spacing: 0.5px; }
+  .single-page__tags span {
+    border: solid 1px #f9b19d;
+    padding: 6px;
+    border-radius: 5px; }
+.single-page__sns-icons {
+  width: auto; }
+  .single-page__sns-icons .sns-icons__img {
+    width: 100px;
+    padding: 10px 10px 0 0; }
+.single-page__post-down__sns-icons {
+  padding-bottom: 20px; }
+  .single-page__post-down__sns-icons img {
+    width: 312px; }
+.single-page__detail {
+  align-items: center; }
+.single-page__author__img img {
+  width: 52px;
+  border: solid 1px #000000; }
+.single-page__post-info {
+  align-items: center; }
+.single-page__dates {
+  padding-right: 10px;
+  color: #9c9c9c; }
 .single-page__entry-content p {
   font-size: 10px;
   font-size: 1rem;
@@ -1109,6 +1196,56 @@ button.btn.btn-round-white {
   padding-bottom: 10px; }
   .single-page .sourcelink a {
     color: #b5b5b5; }
+.single-page .affiliate-ad {
+  margin: 0 auto;
+  width: 336px;
+  padding-bottom: 30px; }
+.single-page .single__container__bottom .news-list {
+  margin-right: 50px; }
+  .single-page .single__container__bottom .news-list__thumb-img img {
+    width: 125px;
+    height: auto;
+    object-fit: contain; }
+  .single-page .single__container__bottom .news-list__title {
+    width: 172px;
+    font-size: 13px;
+    padding-left: 15px; }
+  .single-page .single__container__bottom .news-list__content {
+    padding-bottom: 20px; }
+.single-page .single__container__bottom .category-popular {
+  width: 654px; }
+  .single-page .single__container__bottom .category-popular__content {
+    width: 230px;
+    padding-bottom: 20px; }
+  .single-page .single__container__bottom .category-popular__title {
+    font-size: 13px; }
+  .single-page .single__container__bottom .category-popular__thumb-img img {
+    width: 230px;
+    height: 140px;
+    object-fit: contain; }
+
+.paging-nav {
+  width: auto;
+  background-color: #fbcccc; }
+  .paging-nav__container {
+    padding: 20px; }
+  .paging-nav__head {
+    padding-bottom: 10px;
+    line-height: 2.3; }
+    .paging-nav__head__img {
+      width: 39px; }
+    .paging-nav__head__txt {
+      padding: 0 10px; }
+  .paging-nav__body__img img {
+    width: 120px; }
+  .paging-nav__body__read {
+    width: 161px;
+    font-size: 11px;
+    padding: 0 10px; }
+  .paging-nav__next .paging-nav__head {
+    justify-content: flex-end; }
+  .paging-nav__next .paging-nav__body__read {
+    text-align: right; }
 
 /*
 
@@ -1614,6 +1751,11 @@ button.btn.btn-round-white {
       color: #ffa5a5;
       font-size: 10px;
       padding: 10px; }
+  .wrote-models-lists__name {
+    padding-right: 15px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #9c9c9c; }
 
 .instagram-widget {
   padding-bottom: 50px; }
@@ -1629,7 +1771,7 @@ button.btn.btn-round-white {
 @media (min-width: 1025px) {
   .outer__header {
     margin: 20px auto;
-    width: 1246px; }
+    padding: 0 40px; }
   .outer__inner {
     margin: 0 auto;
     width: 1246px; }
@@ -1693,12 +1835,12 @@ button.btn.btn-round-white {
 
 *************************************************/
   .single-page .breadcrumb-container {
-    padding-bottom: 20px; }
+    padding: 15px 40px; }
   .single-page .header .logo__img {
     padding-bottom: 20px; }
   .single-page .middle-contain {
     width: 644px;
-    margin: 0 60px; }
+    margin-right: 60px; }
   .single-page__eyecatch-img img {
     width: 644px;
     height: 380px;

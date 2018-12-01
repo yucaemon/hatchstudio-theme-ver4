@@ -115,13 +115,7 @@
           <?php include('components-php/keywords.php'); ?>
 
     %section.section.sns-container
-      .sns-icons.flexbox
-        .sns-icons__img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/share-facebook-icon.svg">
-        .sns-icons__img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/share-twitter-icon.svg">
-        .sns-icons__img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/share-pokect-icon.svg">
+      <?php include('components-php/sns-btns.php'); ?>
 
     %section.section.ad-banner.blogger
       .blogger__container
@@ -278,20 +272,7 @@
         .side-contain
           <?php include('components-php/news-list.php'); ?>
 
-
-
-    %section.section.ad-banner.annie.flexbox
-      .annie-img
-        <img src="<?php echo get_template_directory_uri(); ?>/images/annie-banner.jpg">
-      .annie-content
-        .annie-header-sub
-          姉妹サイトOPEN!!
-        .annie-header-main
-          旅するように暮らそう。
-        .annie-header-txt
-          オーガニックで自由な暮らしをお届けするマガジン
-        %button.btn.btn-round-white
-          サイトはこちらから
+    <?php include('components-php/annie-banner.php'); ?>
 
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>

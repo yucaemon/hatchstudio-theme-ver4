@@ -52,10 +52,19 @@ module.exports = function (grunt) {
                     'components-php/side-menu-list.php': '_haml/side-menu-list.haml',
                     'components-php/shopping-box.php': '_haml/shopping-box.haml',
                     'components-php/ad-post-lists.php': '_haml/ad-post-lists.haml',
+                    'components-php/affiliate-ad.php': '_haml/affiliate-ad.haml',
+                    'components-php/paging-nav.php': '_haml/paging-nav.haml',
+                    'components-php/annie-banner.php': '_haml/annie-banner.haml',
+                    'components-php/annie-ad-side.php': '_haml/annie-ad-side.haml',
+                    'components-php/house-ad-side.php': '_haml/house-ad-side.haml',
+                    'components-php/business-ad-side.php': '_haml/business-ad-side.haml',
+                    'components-php/bt-category-popular.php': '_haml/bt-category-popular.haml',
+                    'components-php/bt-news-list.php': '_haml/bt-news-list.haml',
+
 
 
                     'components-php/wrote-models-box.php': '_haml/wrote-models-box.haml',
-                    'components-php/article-sns-btns.php': '_haml/article-sns-btns.haml',
+                    'components-php/sns-btns.php': '_haml/sns-btns.haml',
                     'components-php/related-article.php': '_haml/related-article.haml',
                     'components-php/more-search-article.php': '_haml/more-search-article.haml',
                     'components-php/sns-box.php': '_haml/sns-box.haml',
