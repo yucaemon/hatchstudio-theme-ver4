@@ -4,7 +4,7 @@
 『買ってみる』カテゴリー記事
 </div>
 </div>
-<div class='category-popular__body flexbox'>
+<div class='category-popular__body flexbox--spacebetween'>
 <?php
 $post_id = get_the_ID();
 foreach((get_the_category()) as $cat) {
@@ -14,7 +14,7 @@ break ;
 query_posts(
 array(
 'cat' => $cat_id,
-'showposts' => 5,
+'showposts' => 9,
 'post__not_in' => array($post_id)
 )
 );

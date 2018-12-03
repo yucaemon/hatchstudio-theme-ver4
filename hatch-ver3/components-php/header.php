@@ -37,12 +37,17 @@
 <div class='header-bar'>
 <div class='header-bar__inner flexbox--spacebetween'>
 <div class='header-bar__logo logo'>
-<span class='logo__img-h'>
+<div class='logo__img-h'>
 <a href="https://www.instagram.com/annie_jene/"><img src="<?php echo get_template_directory_uri(); ?>/images/eight-icon.svg"></a>
-</span>
-<span class='logo__title'>
-はっちすたじお
-</span>
+</div>
+<div class='logo__title'>
+アメリカ面白まがじん
+</div>
+<div class='search__box'>
+<div class='search__form'>
+<?php get_search_form(); ?>
+</div>
+</div>
 </div>
 <div class='header-bar__menu'>
 <nav class='header-bar__nav'>

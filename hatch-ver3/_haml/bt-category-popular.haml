@@ -2,7 +2,8 @@
   .header-side
     .header-side__title
       『買ってみる』カテゴリー記事
-  .category-popular__body.flexbox
+  .category-popular__body.flexbox--spacebetween
+
     :plain
       <?php
       $post_id = get_the_ID();
@@ -13,7 +14,7 @@
       query_posts(
       array(
       'cat' => $cat_id,
-      'showposts' => 5,
+      'showposts' => 9,
       'post__not_in' => array($post_id)
       )
       );

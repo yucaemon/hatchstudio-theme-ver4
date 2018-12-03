@@ -18,6 +18,23 @@ $('document').ready(function() {
 });
 
 
+//ヘッダーの固定
+
+    // masthead scroll
+    var header = $('.header-bar'); // fixed DOM
+    var adclass = 'scrolled'; // add css class
+    var scrollY = 180; // scroll
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > scrollY) {
+            header.addClass(adclass);
+            $('.header-bar .search__box').show();
+        } else {
+            header.removeClass(adclass);
+            $('.header-bar .search__box').hide();
+        }
+    });
+
 
 //モバイル時のハンバーグナビの処理
 
@@ -31,6 +48,11 @@ $(".textArea").hide();
         );
 
     });
+
+
+
+
+
 
 
 
