@@ -82,6 +82,7 @@
 <?php include('components-php/annie-ad-side.php'); ?>
 <?php include('components-php/house-ad-side.php'); ?>
 <?php include('components-php/business-ad-side.php'); ?>
+<div class='side-fixed-area'></div>
 </div>
 </div>
 </div>

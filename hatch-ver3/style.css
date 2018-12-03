@@ -359,6 +359,11 @@ a:hover img {
 .outer__inner {
   padding-top: 50px; }
 
+.side-fixed-content {
+  position: fixed;
+  top: 15%;
+  width: 277px; }
+
 ::-moz-selection {
   background: #ffe0e0; }
 
@@ -454,12 +459,13 @@ body {
     display: none; }
   .header-bar .header-bar__inner {
     padding: 0 40px; }
-  .header-bar.scrolled {
-    position: fixed;
-    padding: 0;
-    top: 0;
-    left: 0;
-    z-index: 1; }
+
+.scrolled {
+  position: fixed;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: 1; }
 
 /*
 
@@ -492,12 +498,12 @@ body {
 .background-draw__left {
   position: absolute;
   left: 136px;
-  top: 144px; }
+  top: 175px; }
 
 .background-daw__right {
   position: absolute;
   left: 842px;
-  top: 151px; }
+  top: 183px; }
 
 .header-bar__logo {
   width: auto;
@@ -529,7 +535,7 @@ body {
   font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif; }
 
 .header02 .logo__img img {
-  width: 26%; }
+  width: 31%; }
 
 /*
 
@@ -728,12 +734,10 @@ body {
 
 .business-ad-side .business-img {
   width: 88px;
-  position: absolute;
-  top: 5008px;
-  right: 323px; }
+  padding-right: 10px; }
 .business-ad-side .business-content {
   background-color: #ffde8d;
-  height: 158px;
+  height: 128px;
   text-align: center;
   padding: 29px; }
 .business-ad-side .business-header-txt {
