@@ -27,43 +27,77 @@
 
 
     .header-bar__menu
-      %nav.header-bar__nav
-        %ul.header-bar__nav__list
+      %nav.header-bar__nav.gnav-wrapper
+        %ul.header-bar__nav__list.gnav.main-wrapper
           %li.header-bar__nav__item
             %a.header-bar__nav__text
               %span.header-bar__nav__text--en
                 BLOG
-            %a.header-bar__nav__text
+            .megamenu
+              %ul.megamenu-inner.main-wrapper
+                %li
+                  %a.megamenu-inner-text
+                    %i.fas.arrow-alt-circle-right
+                    バークレー
+                %li
+                  %a.megamenu-inner-text
+                    サンフランシスコ
+                %li
+                  %a.megamenu-inner-text
+                    ポートランド
+                %li
+                  %a.megamenu-inner-text
+                    ハワイ
+                %li
+                  %a.megamenu-inner-text
+                    バークレー
+                %li
+                  %a.megamenu-inner-text
+                    サンフランシスコ
+                %li
+                  %a.megamenu-inner-text
+                    ポートランド
+                %li
+                  %a.megamenu-inner-text
+                    ハワイ
+
+
+
+
+
+
+            %a.header-bar__nav__text.c-link.c-link--bold
               %span.header-bar__nav__text--jp
                 ブログ
           %li.header-bar__nav__item
             %a.header-bar__nav__text
               %span.header-bar__nav__text--en
                 SVICE
-            %a.header-bar__nav__text
+            %a.header-bar__nav__text.c-link.c-link--bold
               %span.header-bar__nav__text--jp
                 サービス
           %li.header-bar__nav__item
             %a.header-bar__nav__text
               %span.header-bar__nav__text--en
                 RECRUIT
-            %a.header-bar__nav__text
+            %a.header-bar__nav__text.c-link.c-link--bold
               %span.header-bar__nav__text--jp
                 採用
           %li.header-bar__nav__item
             %a.header-bar__nav__text
               %span.header-bar__nav__text--en
                 ABOUT
-            %a.header-bar__nav__text
+            %a.header-bar__nav__text.c-link.c-link--bold
               %span.header-bar__nav__text--jp
                 会社案内
           %li.header-bar__nav__item
             %a.header-bar__nav__text
               %span.header-bar__nav__text--en
                 CONTACT
-            %a.header-bar__nav__text
+            %a.header-bar__nav__text.c-link.c-link--bold
               %span.header-bar__nav__text--jp
                 お問い合わせ
+
 .notice-bar
 .breadcrumb-container
   breadcrumb-test

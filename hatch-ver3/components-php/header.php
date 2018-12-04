@@ -59,7 +59,7 @@ BLOG
 </span>
 </a>
 <a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--jp'>
+<span class='header-bar__nav__text--jp c-link c-link--bold'>
 ブログ
 </span>
 </a>
@@ -71,7 +71,7 @@ SVICE
 </span>
 </a>
 <a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--jp'>
+<span class='header-bar__nav__text--jp c-link c-link--bold'>
 サービス
 </span>
 </a>
@@ -83,7 +83,7 @@ RECRUIT
 </span>
 </a>
 <a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--jp'>
+<span class='header-bar__nav__text--jp c-link c-link--bold'>
 採用
 </span>
 </a>
@@ -95,7 +95,7 @@ ABOUT
 </span>
 </a>
 <a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--jp'>
+<span class='header-bar__nav__text--jp c-link c-link--bold'>
 会社案内
 </span>
 </a>
@@ -107,7 +107,7 @@ CONTACT
 </span>
 </a>
 <a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--jp'>
+<span class='header-bar__nav__text--jp c-link c-link--bold'>
 お問い合わせ
 </span>
 </a>

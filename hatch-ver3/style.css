@@ -259,6 +259,78 @@ input[type="text"]:focus {
 .column-15 {
   width: 1225px; }
 
+.header-bar__nav__list ul li {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0; }
+
+.c-link {
+  transition: all .3s;
+  position: relative; }
+  .c-link:hover {
+    text-decoration: none; }
+
+.c-link--bold {
+  overflow: hidden;
+  display: inline-block; }
+  .c-link--bold span {
+    position: relative;
+    display: inline-block;
+    transition: all .3s; }
+    .c-link--bold span:before {
+      position: absolute;
+      top: 100%;
+      left: 38%;
+      font-size: 10px;
+      content: "●";
+      color: #ffde8d;
+      transform: translate3d(0, 0, 0); }
+  .c-link--bold:hover span {
+    transform: translateY(-100%); }
+
+.gnav {
+  display: flex;
+  justify-content: space-between; }
+
+.gnav a {
+  padding: 0 10px; }
+
+.gnav > li:hover .megamenu {
+  width: 100%;
+  max-height: 9999px;
+  opacity: 1; }
+  .gnav > li:hover .megamenu a.megamenu-inner-text {
+    color: #a9a9a9; }
+
+.megamenu {
+  background: #ffe4e4;
+  max-height: 0;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  top: 256px;
+  left: 0;
+  transition: all .2s ease-in;
+  z-index: 999;
+  font-size: 13px; }
+
+.megamenu-inner {
+  display: flex;
+  flex-wrap: wrap; }
+
+.megamenu-inner li {
+  width: calc( (100% / 5) );
+  padding: 0; }
+
+.megamenu-inner a {
+  border-left: none; }
+
+.megamenu-inner-img {
+  margin: 0 0 10px; }
+
+.megamenu-inner-text img {
+  margin: 0 5px 0 0; }
+
 /*未完成コンテンツ 現在非表示*/
 /*今日のおすすめラインナップ*/
 .shopping-banner {
@@ -466,6 +538,9 @@ body {
   top: 0;
   left: 0;
   z-index: 1; }
+  .scrolled .megamenu {
+    position: absolute;
+    top: 66px; }
 
 /*
 
