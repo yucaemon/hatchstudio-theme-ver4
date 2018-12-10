@@ -36,34 +36,7 @@
               <a href="<?php echo esc_url( home_url( '/archive/' ) ); ?>">> 記事一覧ページへ</a>>
         .side-contain
           <?php include('components-php/news-list.php'); ?>
-    %section.section.ad-banner.hatching-house.zigzag
-      .hatching-house__header
-        .hatching-house__header--jp
-          初渡米！女性一人旅でも安心なハウス
-        .hatching-house__header--en.flexbox
-          .hatching-house__header--icon
-            <img src="<?php echo get_template_directory_uri(); ?>/images/house-text-usa.svg">
-          .hatching-house__header--txt
-            <img src="<?php echo get_template_directory_uri(); ?>/images/house-txt.svg">
-      .hatching-house__container.flexbox
-        %ul.hatching-house__pictures.flexbox
-          %li.hatching-house--berkeley
-            .hatching-house--img
-              <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-berkeley.jpg">
-            .hatching-house--txt
-              UCバークレー家探しサポート
-          %li.hatching-house--concord
-            .hatching-house--img
-              <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg">
-            .hatching-house--txt
-              ポートランド宿泊ゲストハウス
-          %li.hatching-house--portland
-            .hatching-house--img
-              <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-sf.jpg">
-            .hatching-house--txt
-              SFバークレーシェアハウス
-        .hatching-house__btn--img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/pink-guy.svg">
+    <?php include('components-php/share-house-ad.php'); ?>
     %section.section.second-section
       .outer__inner.flexbox
         .middle-contain
@@ -117,126 +90,8 @@
     %section.section.sns-container
       <?php include('components-php/sns-btns.php'); ?>
 
-    %section.section.ad-banner.blogger
-      .blogger__container
-        .blogger__header--img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/yman.svg">
-        .blogger__header
-          これまでのコラボしたブロガー＆メディア＆企業さん
-
-        .blogger__body.flexbox
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/popo.jpg">
-            .blogger__box__name
-              365日おいしいものだけ
-          .cross-img
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-
-
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/yuno.jpg">
-            .blogger__box__name
-              ゾニーとキッズ☆アメリカ4コマ物語☆
-          .cross-img
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/theuslife.jpg">
-            .blogger__box__name
-              THE US LIFE
-          .cross-img
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/panera.jpg">
-            .blogger__box__name
-              Happy California Life♪
-          .cross-img
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/kaodebi.jpg">
-            .blogger__box__name
-              バークレーからこんにちは。
-
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/yuko.jpg">
-            .blogger__box__name
-              アメリカ国際結婚バツイチアラサー
-          .cross-img
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/motto.jpg">
-            .blogger__box__name
-              もっとサンフランシスコ
-          .cross-img
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/takagi.jpg">
-            .blogger__box__name
-              世界中で暮らす。
-          .cross-img
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/miki.png">
-            .blogger__box__name
-              アラサー女子のシリコンバレー奮闘記
-          .cross-img
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/freerider.jpg">
-            .blogger__box__name
-              フリーライダー(YOUTUBER)
-
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/EF.jpg">
-            .blogger__box__name
-              EF エデュケーション
-          .cross-img
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/theintern.jpg">
-            .blogger__box__name
-              The Intern
-          .cross-img
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/hanterbook.png">
-            .blogger__box__name
-              hanter book
-          .cross-img
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-
-          .blogger__box
-            .blogger__box__img.circle
-              <img src="<?php echo get_template_directory_uri(); ?>/images/you.png">
-            .blogger__box__name
-              YOU
-    %section.section.ad-banner.business
-      .business__container.flexbox
-        %p.business-txt
-          広告掲載＆コラボ、記事広告のご依頼、ご相談はこちら。
-        %button.btn.btn-round-white
-          お問い合わせはこちら
-
+    <?php include('components-php/sponsor-blogger.php'); ?>
+    <?php include('components-php/business.php'); ?>
 
     %section.section.third-section
       .outer__inner.flexbox

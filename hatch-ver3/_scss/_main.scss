@@ -908,6 +908,12 @@ button.btn.btn-round-white{
   }
 }
 
+/*
+
+	components
+
+*************************************************/
+
 .hatching-house{
   background-color: #bee4e6;
   height: 400px;
@@ -969,6 +975,8 @@ button.btn.btn-round-white{
   }
 }
 
+
+
 .annie {
   background-color: #fbcccc;
   height: 297px;
@@ -983,7 +991,7 @@ button.btn.btn-round-white{
   }
   .annie-content {
     padding-left: 267px;
-    padding-top: 85px;
+    padding-top: 60px;
     text-align: center;
   }
 
@@ -1006,6 +1014,8 @@ button.btn.btn-round-white{
 
 }
 
+
+
 .blogger {
   background-color: #ffe198;
   height: 520px;
@@ -1025,7 +1035,6 @@ button.btn.btn-round-white{
   &__header--img{
     position: absolute;
     left: 166px;
-    z-index: 101;
     top: 3208px;
     width: 93px;
   }
@@ -1078,6 +1087,67 @@ button.btn.btn-round-white{
   }
 }
 
+.our-service{
+  background-color: #ebd4a4;;
+  height: 283px;
+  padding-left:50px;
+  padding-top: 35px;
+
+  &__header{
+    padding-bottom: 15px;
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+
+    &--en {
+      @include fts(33, 38);
+      color: #fff;
+
+    }
+    &--jp {
+      color: #808080;
+      padding-left: 22px;
+      @include fts(12, 12);
+      line-height: 3.5;
+      padding-bottom: 17px;
+    }
+
+    &--txt {
+      width: 710px;
+    }
+
+  }
+
+  &__pictures {
+    li{
+      margin-right: 32px;
+    }
+    .our-service {
+      &--img{
+        height: 137px;
+      }
+      &--img img{
+        width: 200px;
+        height: 137px !important;
+        object-fit: cover;
+      }
+      &--txt {
+        background-color: #fff;
+        padding:  10px 20px;
+        @include fts(10, 10);
+        letter-spacing: 2px;
+        text-align: center;
+        width: 160px;
+      }
+
+    }
+  }
+
+  .btn-round-white{
+    margin-top: 10px;
+    margin-left: 40px;
+
+  }
+
+}
 
 
 .circle img{
@@ -1156,7 +1226,7 @@ button.btn.btn-round-white{
   }
 
   &__author__img img {
-    width: 52px;
+    width: 45px;
     border: solid 1px #000000;
   }
   &__post-info {

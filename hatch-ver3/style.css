@@ -967,6 +967,11 @@ button.btn.btn-round-white {
   width: 530px;
   padding-left: 20px; }
 
+/*
+
+	components
+
+*************************************************/
 .hatching-house {
   background-color: #bee4e6;
   height: 400px;
@@ -1017,7 +1022,7 @@ button.btn.btn-round-white {
       display: block; }
   .annie .annie-content {
     padding-left: 267px;
-    padding-top: 85px;
+    padding-top: 60px;
     text-align: center; }
   .annie-header-main {
     font-size: 36px;
@@ -1043,7 +1048,6 @@ button.btn.btn-round-white {
   .blogger__header--img {
     position: absolute;
     left: 166px;
-    z-index: 101;
     top: 3208px;
     width: 93px; }
   .blogger__box {
@@ -1077,6 +1081,50 @@ button.btn.btn-round-white {
     color: #cc6e45;
     letter-spacing: 1px;
     font-weight: bold; }
+
+.our-service {
+  background-color: #ebd4a4;
+  height: 283px;
+  padding-left: 50px;
+  padding-top: 35px; }
+  .our-service__header {
+    padding-bottom: 15px;
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif; }
+    .our-service__header--en {
+      font-size: 33px;
+      font-size: 3.3rem;
+      line-height: 1.15152;
+      color: #fff; }
+    .our-service__header--jp {
+      color: #808080;
+      padding-left: 22px;
+      font-size: 12px;
+      font-size: 1.2rem;
+      line-height: 1;
+      line-height: 3.5;
+      padding-bottom: 17px; }
+    .our-service__header--txt {
+      width: 710px; }
+  .our-service__pictures li {
+    margin-right: 32px; }
+  .our-service__pictures .our-service--img {
+    height: 137px; }
+  .our-service__pictures .our-service--img img {
+    width: 200px;
+    height: 137px !important;
+    object-fit: cover; }
+  .our-service__pictures .our-service--txt {
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 160px; }
+  .our-service .btn-round-white {
+    margin-top: 10px;
+    margin-left: 40px; }
 
 .circle img {
   border-radius: 50%; }
@@ -1126,7 +1174,7 @@ button.btn.btn-round-white {
 .single-page__detail {
   align-items: center; }
 .single-page__author__img img {
-  width: 52px;
+  width: 45px;
   border: solid 1px #000000; }
 .single-page__post-info {
   align-items: center; }

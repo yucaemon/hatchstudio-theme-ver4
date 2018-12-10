@@ -76,6 +76,15 @@ module.exports = function (grunt) {
                     'components-php/breadcrumb.php': '_haml/breadcrumb.haml',
                     'components-php/header-sp.php': '_haml/header-sp.haml',
                     'components-php/footer-sp.php': '_haml/footer-sp.haml',
+                    'components-php/share-house-ad.php': '_haml/share-house-ad.haml',
+                    'components-php/sponsor-blogger.php': '_haml/sponsor-blogger.haml',
+                    'components-php/business.php': '_haml/business.haml',
+                    'components-php/service.php': '_haml/service.haml',
+
+
+
+
+
 
 
 

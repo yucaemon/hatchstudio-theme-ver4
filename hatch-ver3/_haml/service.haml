@@ -1,0 +1,37 @@
+%section.section.our-service
+  .our-service__header.flexbox
+    .our-service__txt.flexbox
+      .our-service__header--en
+        Our Service
+      .our-service__header--jp
+        アメリカ現地からお届け!サービス
+    %button.btn.btn-round-white
+      サービスの詳細はこちら
+
+  .our-service__container.flexbox
+    %ul.our-service__pictures.flexbox
+      %li.our-service--web
+        .our-service--img
+          <img src="<?php echo get_template_directory_uri(); ?>/images/service-web.jpg">
+        .our-service--txt
+          WEB/動画制作
+      %li.our-service--contents
+        .our-service--img
+          <img src="<?php echo get_template_directory_uri(); ?>/images/service-contens.jpg">
+        .our-service--txt
+          コンテンツ制作
+      %li.our-service--guesthouse
+        .our-service--img
+          <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg">
+        .our-service--txt
+          ゲストハウス
+      %li.our-service--translate
+        .our-service--img
+          <img src="<?php echo get_template_directory_uri(); ?>/images/service-translate.jpg">
+        .our-service--txt
+          英語/中国翻訳
+      %li.our-service--housing
+        .our-service--img
+          <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-berkeley.jpg">
+        .our-service--txt
+          不動産サポート
