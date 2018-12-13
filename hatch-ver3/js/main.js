@@ -45,7 +45,7 @@ $('document').ready(function() {
         // 要素を固定させる位置を取得
         var fixed = $('.side-fixed-area').offset().top -200;
         // 要素を解除する位置
-        var footer = $('.single__container__bottom').offset().top -320;
+        var footer = $('.articles__container__bottom').offset().top -320;
         // 以下の条件分岐で使用する位置の状態を取得
         var windowScrollTop = $(window).scrollTop();
         var footerArea = windowScrollTop > footer;
@@ -78,10 +78,26 @@ $(".textArea").hide();
 
     });
 
+//トップベージへ戻るボタンの実装
 
-
-
-
+    var TopBtn = $('#PageTopBtn');
+    TopBtn.hide();
+    // スクロール位置が100でボタンを表示
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            TopBtn.fadeIn();
+        }
+        else {
+            TopBtn.fadeOut();
+        }
+    });
+    // ボタンを押下するとトップへ移動
+    TopBtn.click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 300);
+        return false;
+    });
 
 
 

@@ -243,6 +243,61 @@ a:hover img { opacity: 0.5 ; }
   margin: 0 6px;
 }
 
+
+/*
+
+	トップページへ戻る
+
+*************************************************/
+
+/* パソコン・スマホ共通のCSS */
+#PageTopBtn {
+  position: fixed; /*ボタンの配置場所を固定*/
+  right: 20px;
+  bottom: 50px !important;
+}
+#PageTopBtn a {
+  display: block; /*配置の調整*/
+  text-decoration: none; /*文字の下線を消す*/
+  color: #fff; /*文字の色*/
+  background: #333; /*ボタンの背景色*/
+  text-align: center; /*文字を中央に配置*/
+  border-radius: 50%; /*ボタンの角を少し丸くする*/
+  outline: none; /*クリックしたときの黒い枠を消す*/
+  line-height: 5.6;
+  letter-spacing: 2.2px;
+  font-size: 10px;
+}
+#PageTopBtn a:hover {
+  text-decoration: none;
+  background: #aeaeae; /*マウスオーバー時の背景色*/
+}
+
+/* パソコンで表示する場合のCSS */
+@media (min-width: 768px) {
+  #PageTopBtn {
+    font-size: 13px; /*文字のサイズ*/
+  }
+  #PageTopBtn a {
+    width: 56px; /*ボタンの幅*/
+    height: 56px; /*ボタンの高さ*/
+  }
+}
+
+/* スマホで表示する場合のCSS */
+@media (max-width: 767px) {
+  #PageTopBtn {
+    font-size: 10px;
+  }
+  #PageTopBtn a {
+    width: 56px;
+    height: 56px;
+    padding: 17px 0;
+  }
+}
+
+
+
 /*
 
 	スクロールのheader固定
@@ -1088,6 +1143,7 @@ button.btn.btn-round-white{
 }
 
 .our-service{
+  margin-top: 80px;
   background-color: #ebd4a4;;
   height: 283px;
   padding-left:50px;
@@ -1195,15 +1251,17 @@ button.btn.btn-round-white{
     margin-bottom: 20px;
   }
   &__tags{
-    @include fts(10, 10);
-    color: $font_sub_glay_color;
-    padding-bottom: 15px;
-    letter-spacing: 0.5px;
-    span{
+    a{
       border: solid 1px #f9b19d;
       padding: 6px;
       border-radius: 5px;
     }
+    @include fts(10, 10);
+    color: $font_sub_glay_color;
+    padding-bottom: 15px;
+    letter-spacing: 0.5px;
+
+
   }
 
   &__sns-icons{
@@ -1418,57 +1476,6 @@ button.btn.btn-round-white{
     width: 336px;
     padding-bottom: 30px;
   }
-  .single__container__bottom {
-
-    .header-side{
-      @extend .components-title;
-    }
-
-    .news-list {
-       margin-right:50px;
-
-      &__thumb-img img {
-        width: 125px;
-        height: auto;
-        object-fit: contain;
-      }
-      &__title {
-        width: 172px;
-        font-size: 13px;
-        padding-left: 15px;
-      }
-
-      &__content {
-        padding-bottom: 20px;
-      }
-
-    }
-
-    .category-popular {
-      width: 654px;
-
-      &__content {
-        width: 200px;
-        padding-bottom: 20px;
-      }
-
-      &__title {
-        font-size: 13px;
-      }
-
-      &__thumb-img img {
-        width: 200px;
-        height: 140px;
-        object-fit: contain;
-      }
-
-
-    }
-
-
-
-
-  }
 
 }
 
@@ -1521,6 +1528,59 @@ button.btn.btn-round-white{
 	components
 
 *************************************************/
+
+.articles__container__bottom {
+
+  .header-side{
+    @extend .components-title;
+  }
+
+
+  .news-list {
+    margin-right:50px;
+
+    &__thumb-img img {
+      width: 125px;
+      height: auto;
+      object-fit: contain;
+    }
+    &__title {
+      width: 172px;
+      font-size: 13px;
+      padding-left: 15px;
+    }
+
+    &__content {
+      padding-bottom: 20px;
+    }
+
+  }
+
+  .category-popular {
+    width: 654px;
+
+    &__content {
+      width: 200px;
+      padding-bottom: 20px;
+    }
+
+    &__title {
+      font-size: 13px;
+    }
+
+    &__thumb-img img {
+      width: 200px;
+      height: 140px;
+      object-fit: contain;
+    }
+
+
+  }
+
+
+
+
+}
 
 .more-search-article {
 
@@ -1764,34 +1824,11 @@ button.btn.btn-round-white{
 
 /*
 
-	archive page
+	category-page
 
 *************************************************/
 
-.archive-banner {
 
-
-  &__header {
-    color: $font_sub_glay_color;
-    text-transform: uppercase;
-    font-family: 'Dosis', sans-serif;
-    //@include fts(15, 15);
-    letter-spacing: 1px;
-  }
-  &__lists {
-    @include fts(8,8);
-    letter-spacing: 1.2px;
-    padding-top: 15px;
-  }
-  &__list{
-    background-color: #fff;
-    border-radius: 3px;
-    padding:10px;
-    display: inline-block;
-    margin: 0;
-  }
-
-}
 
 /*
 
@@ -1800,11 +1837,20 @@ button.btn.btn-round-white{
 *************************************************/
 
 
-.search-content {
-  &__header {
-    border-bottom: solid 1px $border_color;
-    padding-bottom: 20px;
-    margin-bottom: 25px;
+.search-page {
+  .middle-contain .article-list__img {
+    width: 250px;
+    height: 155px;
+    object-fit: cover;
+  }
+  .middle-contain .article-list li {
+    width: auto;
+    padding-bottom: 37px;
+  }
+  .article-list__txt {
+    width: 549px;
+    padding-left: 20px;
+    font-size: 12px;
   }
 }
 
@@ -2176,14 +2222,3 @@ button.btn.btn-round-white{
   padding-bottom:50px;
 }
 
-/*
-
-	category-pag
-
-*************************************************/
-
-.category-page{
-  .article-list {
-    padding-bottom: 30px;
-  }
-}

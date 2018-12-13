@@ -1,77 +1,80 @@
 <?php /** *  Template Name: カテゴリーページ */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='outer category-page'>
-<?php include('components-php/header03.php'); ?>
+<div class='category-page category outer'>
+<?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
-<div class='notice-bar'></div>
 <div class='outer__inner'>
-<div class='flexbox--spacearound'>
-<?php include('components-php/side-menu-list.php'); ?>
-<div class='column-6 middle-contain'>
+<div class='category__container'>
+<div class='category__container__body flexbox--h-center'>
+<div class='middle-contain'>
 <h1 class='components-title'>
-<?php echo get_the_archive_title(); ?> に関する記事一覧
-</h1>
-<?php if ( is_category( 'lifestyle' ) ) : ?>
-  <div class="archive-banner__keyword">
-    <div class="keywords">
-      <ul class="archive-banner__lists">
-        <li class="archive-banner__list"><a href="<?php echo get_tag_link(83); ?>">雑貨</a></li>
-        <li class="archive-banner__list"><a href="<?php echo get_tag_link(83); ?>">ガーデニング</a></li>
-        <li class="archive-banner__list"><a href="<?php echo get_tag_link(83); ?>">DIY</a></li>
-        <li class="archive-banner__list"><a href="<?php echo get_tag_link(83); ?>">ライフスタイル</a></li>
-    </div>
-  </div>
-<?php endif; ?>
-<div class="search-content__header">
 『 <?php echo get_the_archive_title(); ?> 』の関連記事一覧
-</div>
-<ul class="article-list">
-<?php
-  $cat = get_the_category();
-  $cat_name = $cat[0]->cat_name; // カテゴリー名
-  $cat_slug  = $cat[0]->category_nicename; // カテゴリースラッグ
-  $args = array(
-    'post_type' => 'post', //投稿を表示
-    'posts_per_page' => -1, //表示する件数
-    'category_name' => $cat_slug,
+</h1>
+<ul class='post-lists article-list flexbox'>
+  <?php $args = array(
+    'posts_per_page' => 14,                //表示（取得）する記事の数
+    'post_type' => 'post'    //投稿タイプの指定
   );
-  $the_query = new WP_Query( $args );
-  if ( $the_query->have_posts() ) :
-  ?>
-  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-        <li class='flexbox'>
-            <?php if (has_post_thumbnail()) : ?>
-              <a href="<?php the_permalink(); ?>">
-               <?php the_post_thumbnail( 'post-thumbnails', array('class' => 'article-list__img') ); ?>
-              </a>
-            <?php else : ?>
-            <?php endif ; ?>
-            <div class="article-list__text">
-              <a href="<?php the_permalink(); ?>">
-                <h3 class="list-title"><?php echo mb_substr($post->post_title, 0, 20).'…'; ?></h3>
-               <p class='list-read'><?php echo mb_substr(strip_tags($post-> post_content),0,100) ; ?></p>
-              </a>
-            </div>
+  $posts = get_posts( $args );
+    if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
+        <li class=''>
+          <div class='post-lists__img article-list__img'>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+          </div>
+          <div class='post-lists__text article-list__text'>
+            <h3 class='post-lists__title list-title'>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </h3>
+          </div>
         </li>
-    <?php endwhile; ?>
-    <?php endif; ?>
-    <?php wp_reset_postdata(); ?>
-   </ul>
-<?php include('components-php/more-search-article.php'); ?>
-<?php include('components-php/sns-box.php'); ?>
-<?php include('components-php/shopping-box.php'); ?>
+    <?php endforeach; ?>
+    <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+    <?php else : //記事が無い場合 ?>
+      <li><p>記事はまだありません。</p></li>
+    <?php endif;
+    wp_reset_postdata(); //クエリのリセット ?>
+</ul>
+<div class='more-page'>
+<div class='more-page__btn big-btn'>
+<a href="<?php echo esc_url( home_url( '/archive/' ) ); ?>">> 記事一覧ページへ</a>>
+</div>
+</div>
 </div>
 <div class='column-4 side-contain'>
-<?php include('components-php/featured-box.php'); ?>
+<!-- 広告 -->
+<!-- 四角はっち公告 -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+  style="display:inline-block;width:336px;height:280px"
+  data-ad-client="ca-pub-1574488309106788"
+  data-ad-slot="5136876359"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- 広告 -->
+<?php include('components-php/news-list.php'); ?>
 <?php include('components-php/news-list.php'); ?>
 <?php include('components-php/keywords.php'); ?>
-<?php include('components-php/models-lists.php'); ?>
-<?php include('chatbox.php'); ?>
+<?php include('components-php/house-ad-side.php'); ?>
+<?php include('components-php/business-ad-side.php'); ?>
+<div class='side-fixed-area'></div>
 </div>
+</div>
+</div>
+</div>
+<div class='outer__inner'>
+<div class='articles__container__bottom flexbox--h-center'>
+<?php include('components-php/bt-news-list.php'); ?>
+<?php include('components-php/bt-category-popular.php'); ?>
 </div>
 </div>
 </div>
 </body>
+<p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
+<div class='bottom-container'>
+<?php include('components-php/service.php'); ?>
+<?php include('components-php/annie-banner.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
+</div>

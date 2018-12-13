@@ -60,6 +60,7 @@ module.exports = function (grunt) {
                     'components-php/business-ad-side.php': '_haml/business-ad-side.haml',
                     'components-php/bt-category-popular.php': '_haml/bt-category-popular.haml',
                     'components-php/bt-news-list.php': '_haml/bt-news-list.haml',
+                    'components-php/article-sns-btns.php': '_haml/article-sns-btns.haml',
 
 
 

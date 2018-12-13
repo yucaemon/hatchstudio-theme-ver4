@@ -475,7 +475,7 @@ a:hover img {
 .pages .outer__inner {
   margin: 0 auto; }
 
-.components-title, .single-page .single__container__bottom .header-side {
+.components-title, .articles__container__bottom .header-side {
   font-size: 10px;
   font-size: 1rem;
   line-height: 1;
@@ -515,6 +515,62 @@ a:hover img {
   padding: 0;
   margin: 0 6px; }
 
+/*
+
+	トップページへ戻る
+
+*************************************************/
+/* パソコン・スマホ共通のCSS */
+#PageTopBtn {
+  position: fixed;
+  /*ボタンの配置場所を固定*/
+  right: 20px;
+  bottom: 50px !important; }
+
+#PageTopBtn a {
+  display: block;
+  /*配置の調整*/
+  text-decoration: none;
+  /*文字の下線を消す*/
+  color: #fff;
+  /*文字の色*/
+  background: #333;
+  /*ボタンの背景色*/
+  text-align: center;
+  /*文字を中央に配置*/
+  border-radius: 50%;
+  /*ボタンの角を少し丸くする*/
+  outline: none;
+  /*クリックしたときの黒い枠を消す*/
+  line-height: 5.6;
+  letter-spacing: 2.2px;
+  font-size: 10px; }
+
+#PageTopBtn a:hover {
+  text-decoration: none;
+  background: #aeaeae;
+  /*マウスオーバー時の背景色*/ }
+
+/* パソコンで表示する場合のCSS */
+@media (min-width: 768px) {
+  #PageTopBtn {
+    font-size: 13px;
+    /*文字のサイズ*/ }
+
+  #PageTopBtn a {
+    width: 56px;
+    /*ボタンの幅*/
+    height: 56px;
+    /*ボタンの高さ*/ } }
+/* スマホで表示する場合のCSS */
+@media (max-width: 767px) {
+  #PageTopBtn {
+    font-size: 10px; }
+
+  #PageTopBtn a {
+    width: 56px;
+    height: 56px;
+    padding: 17px 0; } }
 /*
 
 	スクロールのheader固定
@@ -1083,6 +1139,7 @@ button.btn.btn-round-white {
     font-weight: bold; }
 
 .our-service {
+  margin-top: 80px;
   background-color: #ebd4a4;
   height: 283px;
   padding-left: 50px;
@@ -1158,7 +1215,7 @@ button.btn.btn-round-white {
   color: #9c9c9c;
   padding-bottom: 15px;
   letter-spacing: 0.5px; }
-  .single-page__tags span {
+  .single-page__tags a {
     border: solid 1px #f9b19d;
     padding: 6px;
     border-radius: 5px; }
@@ -1346,29 +1403,6 @@ button.btn.btn-round-white {
   margin: 0 auto;
   width: 336px;
   padding-bottom: 30px; }
-.single-page .single__container__bottom .news-list {
-  margin-right: 50px; }
-  .single-page .single__container__bottom .news-list__thumb-img img {
-    width: 125px;
-    height: auto;
-    object-fit: contain; }
-  .single-page .single__container__bottom .news-list__title {
-    width: 172px;
-    font-size: 13px;
-    padding-left: 15px; }
-  .single-page .single__container__bottom .news-list__content {
-    padding-bottom: 20px; }
-.single-page .single__container__bottom .category-popular {
-  width: 654px; }
-  .single-page .single__container__bottom .category-popular__content {
-    width: 200px;
-    padding-bottom: 20px; }
-  .single-page .single__container__bottom .category-popular__title {
-    font-size: 13px; }
-  .single-page .single__container__bottom .category-popular__thumb-img img {
-    width: 200px;
-    height: 140px;
-    object-fit: contain; }
 
 .paging-nav {
   width: auto;
@@ -1398,6 +1432,30 @@ button.btn.btn-round-white {
 	components
 
 *************************************************/
+.articles__container__bottom .news-list {
+  margin-right: 50px; }
+  .articles__container__bottom .news-list__thumb-img img {
+    width: 125px;
+    height: auto;
+    object-fit: contain; }
+  .articles__container__bottom .news-list__title {
+    width: 172px;
+    font-size: 13px;
+    padding-left: 15px; }
+  .articles__container__bottom .news-list__content {
+    padding-bottom: 20px; }
+.articles__container__bottom .category-popular {
+  width: 654px; }
+  .articles__container__bottom .category-popular__content {
+    width: 200px;
+    padding-bottom: 20px; }
+  .articles__container__bottom .category-popular__title {
+    font-size: 13px; }
+  .articles__container__bottom .category-popular__thumb-img img {
+    width: 200px;
+    height: 140px;
+    object-fit: contain; }
+
 .more-search-article__btn {
   padding: 10px;
   width: 117px;
@@ -1581,36 +1639,25 @@ button.btn.btn-round-white {
 
 /*
 
-	archive page
+	category-page
 
 *************************************************/
-.archive-banner__header {
-  color: #9c9c9c;
-  text-transform: uppercase;
-  font-family: 'Dosis', sans-serif;
-  letter-spacing: 1px; }
-.archive-banner__lists {
-  font-size: 8px;
-  font-size: 0.8rem;
-  line-height: 1;
-  letter-spacing: 1.2px;
-  padding-top: 15px; }
-.archive-banner__list {
-  background-color: #fff;
-  border-radius: 3px;
-  padding: 10px;
-  display: inline-block;
-  margin: 0; }
-
 /*
 
 	search page
 
 *************************************************/
-.search-content__header {
-  border-bottom: solid 1px #dcdcdc;
-  padding-bottom: 20px;
-  margin-bottom: 25px; }
+.search-page .middle-contain .article-list__img {
+  width: 250px;
+  height: 155px;
+  object-fit: cover; }
+.search-page .middle-contain .article-list li {
+  width: auto;
+  padding-bottom: 37px; }
+.search-page .article-list__txt {
+  width: 549px;
+  padding-left: 20px;
+  font-size: 12px; }
 
 /*
 
@@ -1906,14 +1953,6 @@ button.btn.btn-round-white {
 .instagram-widget {
   padding-bottom: 50px; }
 
-/*
-
-	category-pag
-
-*************************************************/
-.category-page .article-list {
-  padding-bottom: 30px; }
-
 @media (min-width: 1025px) {
   .outer__header {
     margin: 20px auto;
@@ -1985,10 +2024,10 @@ button.btn.btn-round-white {
   .single-page .header .logo__img {
     padding-bottom: 20px; }
   .single-page .middle-contain {
-    width: 644px;
+    width: 820px;
     margin-right: 60px; }
   .single-page__eyecatch-img img {
-    width: 644px;
+    width: 820px;
     height: 380px;
     object-fit: cover; }
   .single-page__eyecatch-img {

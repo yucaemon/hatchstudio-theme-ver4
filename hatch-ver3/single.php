@@ -11,10 +11,8 @@
 <?php the_title_attribute(); ?>
 </h1>
 <div class='single-page__tags'>
-<?php the_tags( '分類タグ : ',' 　' ); ?>
-<span>
-<?php $slug_name = basename(get_permalink()); ?>タグ
-</span>
+<?php the_category( '  ',' 　' ); ?>
+<?php $slug_name = basename(get_permalink()); ?>
 </div>
 <div class='single-page__detail flexbox--spacebetween'>
 <div class='single-page__sns-icons flexbox'>
@@ -49,14 +47,6 @@
 <?php endif; ?>
 </div>
 <?php include('components-php/wrote-models-box.php'); ?>
-<div class='single-page__post-down__sns-icons flexbox--spacebetween'>
-<div class='sns-icons__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/facebook-long-btn.svg">
-</div>
-<div class='sns-icons__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/twitter-long-btn.svg">
-</div>
-</div>
 <?php include('components-php/affiliate-ad.php'); ?>
 <?php include('components-php/article-sns-btns.php'); ?>
 <?php include('components-php/related-article.php'); ?>
@@ -88,14 +78,17 @@
 </div>
 </div>
 <div class='outer__inner'>
-<div class='single__container__bottom flexbox--h-center'>
+<div class='articles__container__bottom flexbox--h-center'>
 <?php include('components-php/bt-news-list.php'); ?>
 <?php include('components-php/bt-category-popular.php'); ?>
 </div>
 </div>
 </div>
 </body>
+<p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
+<div class='bottom-container'>
 <?php include('components-php/service.php'); ?>
 <?php include('components-php/annie-banner.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
+</div>
