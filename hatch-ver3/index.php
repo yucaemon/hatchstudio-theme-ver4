@@ -139,7 +139,6 @@
 </div>
 </section>
 <?php include('components-php/annie-banner.php'); ?>
-<?php include('components-php/annie-banner.php'); ?>
 </div>
 </body>
 <?php include('components-php/footer.php'); ?>
