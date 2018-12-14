@@ -1752,6 +1752,21 @@ button.btn.btn-round-white {
     padding-bottom: 10px; }
 .pages .related-article__content {
   width: 23%; }
+.pages .table-info {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #b1b1b1; }
+  .pages .table-info table {
+    width: 1016px;
+    border: solid #c3c3c3 0.5px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0; }
+    .pages .table-info table td {
+      width: 5px;
+      padding: 20px 1px 20px 19px; }
+    .pages .table-info table tr {
+      border: solid #c3c3c3 0.5px; }
 
 /*
 
@@ -1772,21 +1787,6 @@ button.btn.btn-round-white {
   position: absolute;
   top: 285px;
   right: 308px; }
-.about-page .company-info {
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: #b1b1b1; }
-  .about-page .company-info table {
-    width: 1016px;
-    border: solid #c3c3c3 0.5px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    border-spacing: 0; }
-    .about-page .company-info table td {
-      width: 5px;
-      padding: 20px 1px 20px 19px; }
-    .about-page .company-info table tr {
-      border: solid #c3c3c3 0.5px; }
 
 /*
 

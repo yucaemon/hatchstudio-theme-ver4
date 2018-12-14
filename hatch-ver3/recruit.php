@@ -1,32 +1,18 @@
-<?php /** *  Template Name:  aboutページ */ ?>
+<?php /** *  Template Name:  採用ページ */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='about-page pages outer'>
+<div class='recruit-page pages outer'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
 <div class='outer__inner'>
 <div class='pages__container'>
 <div class='mission'>
 <h1 class='pages__header'>
-”アメリカから『ワクワク』をいっぱいお届けしたい。”
+”わくわくできる人と働きたい。”
 </h1>
-<div class='mission__icon__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/pink-guy.svg">
-</div>
 <p class='pages__read'>
 はっちすたじおSan Franciscoとは主にバークレーを拠点とした、北カリフォルニアで暮らす頑張る若者達が、分け隔てなく自由に出会えて遊べる場所があったらなーと思って作ったすたじおです。 そんな仲間たちが情報をシェアする為に日々の生活情報を発信すれば、楽しんじゃね？便利じゃね？って感じのただの好奇心から作りました。 ここアメリカから、たくさんの”新しいおもしろ情報”を日本や現地のみんなに発信！お届けできたら嬉しいです。
 </p>
-<div class='yuka-sign__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/yuka-sign.svg">
-</div>
-<div class='pages__date-info'>
-<p>
-2014年 6月 28日
-</p>
-<p>
-Portland, Oregon USA
-</p>
-</div>
 </div>
 </div>
 </div>
@@ -34,62 +20,34 @@ Portland, Oregon USA
 <table>
 <tr>
 <td>
-会社名
+エンジニア
 </td>
 <td>
-Hatchistud inc
-</td>
-</tr>
-<tr>
-<td>
-設立
-</td>
-<td>
-2014年 6月26日
+現在採用はしておりません。
 </td>
 </tr>
 <tr>
 <td>
-所在地
+編集者
 </td>
 <td>
-Portland USA
-</td>
-</tr>
-<tr>
-<td>
-最高経営責任者
-</td>
-<td>
-yuca suzuki
+現在採用はしておりません。
 </td>
 </tr>
 <tr>
 <td>
-業務内容
+シェアハウス管理人
 </td>
 <td>
-Webサイト制作事業（企画/マーケティング/ブランディング/デザイン/システム開発）
-<br>
-自社メディア運用事業
-<br>
-コンテンツ制作事業
-<br>
-地方創生事業「おもしろ！JAPAN」
-<br>
-シェアオフィス・コワーキングスペース「いいオフィス」運営
-<br>
-デジタルハリウッドスタジオ「STUDIO 上野 by LIG」運営
-<br>
-ゲストハウス「LAMP」運営
-<br>
-アウトドアスクール「サンデープラニング」運営
-<br>
-英会話スクール「START-UP ENGLISH 上野校 by LIG」運営
-<br>
-飲食店「鯛茶STAND」 / 「IL LAGO」運営
-<br>
-LIGアート事業
+現在採用はしておりません。
+</td>
+</tr>
+<tr>
+<td>
+インターン
+</td>
+<td>
+現在採用はしておりません。
 </td>
 </tr>
 </table>

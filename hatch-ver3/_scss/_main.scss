@@ -1968,6 +1968,29 @@ button.btn.btn-round-white{
     width: 23%;
   }
 
+  .table-info {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #b1b1b1;
+
+
+    table {
+      width: 1016px;
+      border: solid #c3c3c3 0.5px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      border-spacing: 0;
+      td {
+        width: 5px;
+        padding: 20px 1px 20px 19px;
+      }
+      tr {
+        border: solid #c3c3c3 0.5px;
+      }
+    }
+
+  }
+
 }
 
 /*
@@ -2000,30 +2023,6 @@ button.btn.btn-round-white{
 
    }
 
-
-  }
-
-  .company-info {
-
-      font-size: 15px;
-      letter-spacing: 1px;
-      color: #b1b1b1;
-
-
-    table {
-      width: 1016px;
-      border: solid #c3c3c3 0.5px;
-      margin: 0 auto;
-      border-collapse: collapse;
-      border-spacing: 0;
-      td {
-        width: 5px;
-        padding: 20px 1px 20px 19px;
-      }
-      tr {
-        border: solid #c3c3c3 0.5px;
-      }
-    }
 
   }
 

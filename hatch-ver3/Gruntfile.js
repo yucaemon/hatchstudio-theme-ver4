@@ -101,7 +101,9 @@ module.exports = function (grunt) {
                     'security.php': '_haml/security.haml',
                     'tag.php': '_haml/tag.haml',
                     'single-featured.php': '_haml/single-featured.haml',
-                    '404.php': '_haml/404.haml'
+                    '404.php': '_haml/404.haml',
+                    'recruit.php': '_haml/recruit.haml'
+
 
                 }
             }
