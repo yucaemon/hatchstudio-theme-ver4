@@ -2055,15 +2055,27 @@ button.btn.btn-round-white{
 *************************************************/
 
 .error-page{
-  .notfind__img{
-    width: 300px;
+  .notfind__header {
+    padding-bottom: 35px;
+
+    &__img {
+      width: 300px;
+      margin: 0 auto;
+      padding-bottom: 10px;
+    }
+    &__txt {
+      color: #bdbdbd;
+      @include fts(9, 9);
+      letter-spacing: 1.1px;
+      text-align: center;
+    }
+  }
+
+  .notfind__body__img {
+    width: 192px;
     margin: 0 auto;
   }
-  p.notfind__text{
-    color: #bdbdbd;
-    @include fts(9, 9);
-    letter-spacing: 1.1px;
-  }
+
   .notfind__btn {
     margin: 30px auto;
     width: 150px;
@@ -2073,12 +2085,13 @@ button.btn.btn-round-white{
     font-size: 13px;
     letter-spacing: 2px;
     border-radius: 5px;
+
+    a{
+      color: #fff;
+      text-underline: none;
+    }
   }
 
-  .search__box {
-    width: 222px;
-    margin: 0 auto;
-  }
 }
 
 /*

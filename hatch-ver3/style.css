@@ -1807,15 +1807,22 @@ button.btn.btn-round-white {
 	404page
 
 *************************************************/
-.error-page .notfind__img {
-  width: 300px;
+.error-page .notfind__header {
+  padding-bottom: 35px; }
+  .error-page .notfind__header__img {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 10px; }
+  .error-page .notfind__header__txt {
+    color: #bdbdbd;
+    font-size: 9px;
+    font-size: 0.9rem;
+    line-height: 1;
+    letter-spacing: 1.1px;
+    text-align: center; }
+.error-page .notfind__body__img {
+  width: 192px;
   margin: 0 auto; }
-.error-page p.notfind__text {
-  color: #bdbdbd;
-  font-size: 9px;
-  font-size: 0.9rem;
-  line-height: 1;
-  letter-spacing: 1.1px; }
 .error-page .notfind__btn {
   margin: 30px auto;
   width: 150px;
@@ -1825,9 +1832,9 @@ button.btn.btn-round-white {
   font-size: 13px;
   letter-spacing: 2px;
   border-radius: 5px; }
-.error-page .search__box {
-  width: 222px;
-  margin: 0 auto; }
+  .error-page .notfind__btn a {
+    color: #fff;
+    text-underline: none; }
 
 /*
 
@@ -2015,14 +2022,8 @@ button.btn.btn-round-white {
 
 *************************************************/
   .error-page .pages__container {
-    padding: 100px 0;
-    margin-bottom: 0; }
-
-  .this-page {
-    padding-bottom: 20px; }
-
-  .articles.related-article {
-    padding-bottom: 20px; } }
+    padding: 20px 0;
+    margin-bottom: 0; } }
 /*
 
 	mobile settings windowサイズが680以下になった時の処理
