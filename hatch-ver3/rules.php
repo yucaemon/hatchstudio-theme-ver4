@@ -1,19 +1,11 @@
 <?php /** *  Template Name:  利用規約 */ ?>
 <?php include('head.php'); ?>
 <body>
-<section class='pages rules-page'>
-<div class='outer'>
+<div class='pages rules-page'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
-<div class='notice-bar'></div>
-<div class='breadcrumb-container'>
-<?php include('breadcrumb.php'); ?>
-</div>
 <div class='outer__inner'>
 <div class='pages__container'>
-<div class='logo__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/annie-logo.svg">
-</div>
 <div class='security-policy'>
 <h1 class='pages__header'>
 利用規約
@@ -23,7 +15,7 @@
 利用規約について
 </h2>
 <p>
-このウェブサイトは Annie Jene (以下、「当社」という)が運営しています。以下の各事項をご了承の上、当ウェブサイトをご利用ください。また、当ウェブサ イトのポリシーは改善の必要性に応じて予告なく改訂する場合があることをご了承ください。
+このウェブサイトは Hatchsutudio inc (以下、「当社」という)が運営しています。以下の各事項をご了承の上、当ウェブサイトをご利用ください。また、当ウェブサ イトのポリシーは改善の必要性に応じて予告なく改訂する場合があることをご了承ください。
 </p>
 <h2 class='pages__header'>
 リンクについて
@@ -90,10 +82,10 @@
 </div>
 <div class='pages__date-info'>
 <p>
-2018年 8月 11日
+2014年 6月 28日
 </p>
 <p>
-Annie Jene
+Hatchstudio inc
 </p>
 <p>
 Portland, Oregon USA
@@ -101,18 +93,19 @@ Portland, Oregon USA
 </div>
 </div>
 </div>
-<?php include('components-php/news-articles.php'); ?>
-<?php include('components-php/more-search-article.php'); ?>
-<div class='column-6 margin-center'>
-<?php include('components-php/sns-box.php'); ?>
 </div>
-<div class='column-8 margin-center'>
-<?php include('components-php/shopping-box.php'); ?>
-</div>
-<?php include('chatbox.php'); ?>
+<div class='outer__inner'>
+<div class='articles__container__bottom flexbox--h-center'>
+<?php include('components-php/bt-news-list.php'); ?>
+<?php include('components-php/bt-category-popular.php'); ?>
 </div>
 </div>
-</section>
+</div>
 </body>
+<p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
+<div class='bottom-container'>
+<?php include('components-php/service.php'); ?>
+<?php include('components-php/annie-banner.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
+</div>

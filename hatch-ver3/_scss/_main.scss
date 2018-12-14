@@ -1909,6 +1909,7 @@ button.btn.btn-round-white{
    h1.pages__header{
      @include fts(10, 10);
      color: #8c8c8c;
+     text-align: center;
 
    }
    h2.pages__header{
@@ -1976,6 +1977,11 @@ button.btn.btn-round-white{
 *************************************************/
 
 .about-page {
+
+  .pages__container {
+    margin-top: 70px;
+  }
+
   .mission {
     .yuka-sign__img {
       width: 105px;
@@ -1986,103 +1992,41 @@ button.btn.btn-round-white{
         width: 100%;
       }
     }
+   &__icon__img img{
+     width: 85px;
+     position: absolute;
+     top: 285px;
+     right: 308px;
+
+   }
+
 
   }
-  .lists-container {
-    margin-bottom: 100px;
-    padding-bottom: 100px;
-    border-bottom: solid 1px $border_color;
 
-    &__header {
-      width: 190px;
-    }
-    &__txt {
-      margin-left: 15px;
-      @include fts(7, 7);
-      padding-bottom: 6px;
-      letter-spacing: 1.0px;
-    }
-    &__btn {
-      width: 100px;
-      margin-left: 15px;
-      font-size: 10px;
+  .company-info {
+
+      font-size: 15px;
       letter-spacing: 1px;
-      color: $main_color;
-      border: solid 1px $main_color;
-      padding: 7px;
-      border-radius: 5px;
-    }
-    &__lists {
-      width: 700px;
-      margin-left: auto;
-      li {
-        width: 145px;
-        padding-left: 30px;
-        padding-bottom: 23px;
-        @include fts(8, 8);
-        color: $font_sub_glay_color;
+      color: #b1b1b1;
+
+
+    table {
+      width: 1016px;
+      border: solid #c3c3c3 0.5px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      border-spacing: 0;
+      td {
+        width: 5px;
+        padding: 20px 1px 20px 19px;
       }
-    }
-    &__lists_lang_eng:before {
-      content: ">";
-      padding-right: 10px;
-    }
-    &__lists_lang_eng {
-      padding-bottom: 10px;
-    }
-
-    &__lists_lang_jan {
-      padding-left: 19px;
-      @include fts(5, 5);
-    }
-
-    .brands {
-      &-h-img {
-        width: 200px;
-        img {
-          width: 100%;
-
-        }
-      }
-    }
-    .portland-h-img {
-      width: 245px;
-      img {
-        width: 100%;
-
+      tr {
+        border: solid #c3c3c3 0.5px;
       }
     }
 
-    .models {
-      &__lists li {
-        width: 203px;
-      }
-      &__img img {
-        @include border-radius(50%);
-        height: 65%;
-        width: 65%;
-        padding: 0;
-
-      }
-
-      &__name:before {
-        content: "@";
-        color: $main_color;
-      }
-      &__name {
-        @include fts(8, 8);
-        line-height: 1;
-        text-transform: capitalize;
-        padding-bottom: 5px;
-        color: $font_color;
-        letter-spacing: 1px;
-      }
-      &__info {
-        @include fts(6, 6);
-        letter-spacing: 1px;
-      }
-    }
   }
+
 
 }
 

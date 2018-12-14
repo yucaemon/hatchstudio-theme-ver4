@@ -1703,7 +1703,8 @@ button.btn.btn-round-white {
   font-size: 10px;
   font-size: 1rem;
   line-height: 1;
-  color: #8c8c8c; }
+  color: #8c8c8c;
+  text-align: center; }
 .pages h2.pages__header {
   padding-bottom: 11px;
   color: #8c8c8c;
@@ -1757,6 +1758,8 @@ button.btn.btn-round-white {
 	about page
 
 *************************************************/
+.about-page .pages__container {
+  margin-top: 70px; }
 .about-page .mission .yuka-sign__img {
   width: 105px;
   margin-left: auto;
@@ -1764,86 +1767,26 @@ button.btn.btn-round-white {
   padding-bottom: 13px; }
   .about-page .mission .yuka-sign__img img {
     width: 100%; }
-.about-page .lists-container {
-  margin-bottom: 100px;
-  padding-bottom: 100px;
-  border-bottom: solid 1px #dcdcdc; }
-  .about-page .lists-container__header {
-    width: 190px; }
-  .about-page .lists-container__txt {
-    margin-left: 15px;
-    font-size: 7px;
-    font-size: 0.7rem;
-    line-height: 1;
-    padding-bottom: 6px;
-    letter-spacing: 1.0px; }
-  .about-page .lists-container__btn {
-    width: 100px;
-    margin-left: 15px;
-    font-size: 10px;
-    letter-spacing: 1px;
-    color: #f2716e;
-    border: solid 1px #f2716e;
-    padding: 7px;
-    border-radius: 5px; }
-  .about-page .lists-container__lists {
-    width: 700px;
-    margin-left: auto; }
-    .about-page .lists-container__lists li {
-      width: 145px;
-      padding-left: 30px;
-      padding-bottom: 23px;
-      font-size: 8px;
-      font-size: 0.8rem;
-      line-height: 1;
-      color: #9c9c9c; }
-  .about-page .lists-container__lists_lang_eng:before {
-    content: ">";
-    padding-right: 10px; }
-  .about-page .lists-container__lists_lang_eng {
-    padding-bottom: 10px; }
-  .about-page .lists-container__lists_lang_jan {
-    padding-left: 19px;
-    font-size: 5px;
-    font-size: 0.5rem;
-    line-height: 1; }
-  .about-page .lists-container .brands-h-img {
-    width: 200px; }
-    .about-page .lists-container .brands-h-img img {
-      width: 100%; }
-  .about-page .lists-container .portland-h-img {
-    width: 245px; }
-    .about-page .lists-container .portland-h-img img {
-      width: 100%; }
-  .about-page .lists-container .models__lists li {
-    width: 203px; }
-  .about-page .lists-container .models__img img {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    height: 65%;
-    width: 65%;
-    padding: 0; }
-  .about-page .lists-container .models__name:before {
-    content: "@";
-    color: #f2716e; }
-  .about-page .lists-container .models__name {
-    font-size: 8px;
-    font-size: 0.8rem;
-    line-height: 1;
-    line-height: 1;
-    text-transform: capitalize;
-    padding-bottom: 5px;
-    color: #333;
-    letter-spacing: 1px; }
-  .about-page .lists-container .models__info {
-    font-size: 6px;
-    font-size: 0.6rem;
-    line-height: 1;
-    letter-spacing: 1px; }
+.about-page .mission__icon__img img {
+  width: 85px;
+  position: absolute;
+  top: 285px;
+  right: 308px; }
+.about-page .company-info {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #b1b1b1; }
+  .about-page .company-info table {
+    width: 1016px;
+    border: solid #c3c3c3 0.5px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0; }
+    .about-page .company-info table td {
+      width: 5px;
+      padding: 20px 1px 20px 19px; }
+    .about-page .company-info table tr {
+      border: solid #c3c3c3 0.5px; }
 
 /*
 
