@@ -1144,7 +1144,7 @@ button.btn.btn-round-white{
 
 .our-service{
   margin-top: 80px;
-  background-color: #ebd4a4;;
+  background-color: $yellow_01;
   height: 283px;
   padding-left:50px;
   padding-top: 35px;
@@ -2167,3 +2167,69 @@ button.btn.btn-round-white{
   padding-bottom:50px;
 }
 
+
+
+/*
+
+service-page
+
+*************************************************/
+
+.service-page{
+
+  &__header {
+    background-color: $yellow_01;
+    height: 130px;
+    padding-left: 40px;
+    @include fts(20, 20);
+    letter-spacing: 1px;
+    line-height: 4.4;
+    color: $White_01;
+  }
+
+    &__list {
+      padding-bottom: 30px;
+    }
+
+    &__list__header {
+      font-size: 22px;
+      letter-spacing: 1px;
+      border-bottom: solid 1px $border_color;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+
+    &__list__body {
+      color: $font_sub_glay_color;
+      letter-spacing: 2px;
+    }
+
+
+  &__web{
+    &__bg-img{
+      background-image: url(./images/service-web-bg.JPG);
+      height: 446px;
+      background-size: cover;
+      background-position: 7px -675px;
+    }
+  }
+
+  &__translate{
+    &__bg-img{
+      background-image: url(./images/service-translate-bg.JPG);
+      height: 446px;
+      background-size: cover;
+      background-position: 6px -645px;
+    }
+  }
+
+  &__contens{
+    &__bg-img{
+      background-image: url(./images/service-contens-bg.JPG);
+      height: 446px;
+      background-size: cover;
+      background-position: 6px -249px;
+    }
+  }
+
+}

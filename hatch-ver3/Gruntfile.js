@@ -102,8 +102,11 @@ module.exports = function (grunt) {
                     'tag.php': '_haml/tag.haml',
                     'single-featured.php': '_haml/single-featured.haml',
                     '404.php': '_haml/404.haml',
-                    'recruit.php': '_haml/recruit.haml'
-
+                    'recruit.php': '_haml/recruit.haml',
+                    'contact.php': '_haml/contact.haml',
+                    'service-web.php': '_haml/service-web.haml',
+                    'service-translate.php': '_haml/service-translate.haml',
+                    'service-contens.php': '_haml/service-contens.haml'
 
                 }
             }

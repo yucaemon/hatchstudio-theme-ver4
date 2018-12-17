@@ -1,5 +1,7 @@
 <?php
 
+
+
 //　アイキャッチ機能を追加
 add_theme_support('post-thumbnails');
 
@@ -245,5 +247,4 @@ function my_enqueue_scripts() {
 
     wp_enqueue_script('jquery');
 }
-
 
