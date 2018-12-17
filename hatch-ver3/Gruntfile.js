@@ -106,7 +106,9 @@ module.exports = function (grunt) {
                     'contact.php': '_haml/contact.haml',
                     'service-web.php': '_haml/service-web.haml',
                     'service-translate.php': '_haml/service-translate.haml',
-                    'service-contens.php': '_haml/service-contens.haml'
+                    'service-contens.php': '_haml/service-contens.haml',
+                    'hatching-house-pdx.php': '_haml/hatching-house-pdx.haml',
+                    'hatching-real-estate.php': '_haml/hatching-real-estate.haml'
 
                 }
             }

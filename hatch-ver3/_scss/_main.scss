@@ -2233,3 +2233,83 @@ service-page
   }
 
 }
+
+
+/*
+
+house-page
+
+*************************************************/
+
+.house-page{
+
+  &__header {
+    background-color: $blue_01;
+    height: 144px;
+    padding-left: 40px;
+    @include fts(20, 20);
+    letter-spacing: 1px;
+    line-height: 4.4;
+    color: $White_01;
+
+
+
+    &--jp {
+      height: 16px;
+      padding: 0;
+      font-size: 22px;
+      color: #4c8b96;
+      font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    }
+    &--en {
+      @include fts(30, 30);
+      line-height: 3;
+      font-weight: bold;
+    }
+    .sub-txt{
+      font-size: 17px;
+      vertical-align: middle;
+      border: solid #333 1px;
+      padding: 7px;
+      background-color: #fff;
+      text-align: center;
+      margin: 10px;
+      color: $link_color;
+    }
+  }
+
+  &__body {
+    &__img img {
+      width: 323px;
+      height: 250px;
+      object-fit: cover;
+      padding-bottom: 50px;
+    }
+    &__header {
+      font-size: 28px;
+      letter-spacing: 1px;
+      padding-bottom: 40px;
+    }
+  }
+
+
+  &__share-house{
+    &__bg-img{
+      background-image: url(./images/hatching-house-pdx-bg.jpg);
+      height: 446px;
+      background-size: cover;
+      background-position: 2px -284px;
+    }
+  }
+
+  &__real-estate{
+    &__bg-img{
+      background-image: url(./images/hatching-real-estate-bg.jpg);
+      height: 446px;
+      background-size: cover;
+      background-position: 2px -127px;
+    }
+  }
+
+}
+
