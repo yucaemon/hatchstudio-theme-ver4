@@ -46,6 +46,7 @@ hatchstudioinc は、以下のとおり情報セキュリティ基本方針を�
 </div>
 </div>
 </div>
+<?php include('components-php/contact-form.php'); ?>
 </div>
 </body>
 <div class='bottom-container'>

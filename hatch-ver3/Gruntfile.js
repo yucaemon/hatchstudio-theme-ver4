@@ -81,7 +81,7 @@ module.exports = function (grunt) {
                     'components-php/sponsor-blogger.php': '_haml/sponsor-blogger.haml',
                     'components-php/business.php': '_haml/business.haml',
                     'components-php/service.php': '_haml/service.haml',
-
+                    'components-php/contact-form.php': '_haml/contact-form.haml',
 
 
 

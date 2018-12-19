@@ -40,6 +40,7 @@
 </div>
 </div>
 </div>
+<?php include('components-php/contact-form.php'); ?>
 </div>
 </body>
 <div class='bottom-container'>

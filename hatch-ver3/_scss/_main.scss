@@ -686,7 +686,7 @@ body {
       margin: 0 auto 40px 0;
       height: 200px;
       text-align: center;
-      background-color: #fbcccc;
+      background-color: $pink_01;
       padding: 10px 33px;
 
     }
@@ -915,10 +915,7 @@ body {
 }
 
 
-.zigzag {
-  position: relative;
-  background: #bee4e6;
-}
+
 .zigzag::after {
   height: 20px;
   content: "";
@@ -931,11 +928,36 @@ body {
   background: linear-gradient(45deg, #fff 10px, transparent 0), linear-gradient(315deg, #fff 10px, transparent 0);
   background-size: 20px 20px;
 }
-.zigzag::after {
+
+
+
+.zigzag-blue {
+  position: relative;
+  background: #bee4e6;
+}
+
+.zigzag-blue::after {
   bottom: -20px;
   background: linear-gradient(135deg, #bee4e6 10px, transparent 0), linear-gradient(225deg, #bee4e6 10px, transparent 0);
   background-size: 20px 20px;
 }
+
+
+.zigzag-pink {
+  position: relative;
+  background: $pink_01;
+}
+
+.zigzag-pink::after {
+  bottom: -20px;
+  background: linear-gradient(135deg, $pink_01 10px, transparent 0), linear-gradient(225deg, $pink_01 10px, transparent 0);
+  background-size: 20px 20px;
+}
+
+
+
+
+
 
 button.btn.btn-round-white{
     background : #FFFFFF;
@@ -1033,7 +1055,7 @@ button.btn.btn-round-white{
 
 
 .annie {
-  background-color: #fbcccc;
+  background-color: $pink_01;
   height: 297px;
   &-img{
     width: 42%;
@@ -1482,7 +1504,7 @@ button.btn.btn-round-white{
 
 .paging-nav {
   width: auto;
-  background-color: #fbcccc;
+  background-color: $pink_01;
 
   &__container {
     padding: 20px;
@@ -2313,3 +2335,94 @@ house-page
 
 }
 
+/*
+
+contact-form (コンポーネンツ)
+
+*************************************************/
+
+
+.contact-form{
+  margin-top: 80px;
+  &__form {
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  &__header {
+    background-color: $pink_01;
+    height: 144px;
+    padding-left: 40px;
+    @include fts(20, 20);
+    letter-spacing: 1px;
+    line-height: 4.4;
+    color: $White_01;
+
+    &--jp {
+      height: 19px;
+      padding: 0;
+      font-size: 22px;
+      color: #ffffff;
+
+    }
+    &--en {
+      @include fts(30, 30);
+      line-height: 3;
+      font-weight: bold;
+    }
+
+  }
+
+  .form-group {
+    margin-bottom: 2rem;
+    text-align: right;
+  }
+
+  .submit-btn {
+    color: #fff;
+    letter-spacing: 2px;
+    background-color: $pink_02;
+    border: #7c7c80;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    box-shadow: 3px 3px #d4d4d4;
+  }
+
+
+  .contact-form__img img {
+    width: 109px;
+  }
+
+  .notice-box {
+    padding: 20px;
+    background-color: #bdbdbd33;
+    width: 930px;
+    margin: 0 auto;
+
+    &__header {
+      text-align: center;
+      padding-bottom: 20px;
+      color: $pink_02;
+    }
+
+    &__body{
+      color: #797979;
+      padding-bottom: 20px;
+      margin: 0 auto;
+      width: 750px;
+      letter-spacing: 0.4px;
+
+      span.contact-mailto a {
+        color: $pink_02;
+      }
+    }
+
+
+  }
+
+
+
+
+}

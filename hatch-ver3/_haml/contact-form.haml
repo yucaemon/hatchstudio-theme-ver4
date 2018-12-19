@@ -1,0 +1,58 @@
+.contact-form
+  .contact-form__header.zigzag.zigzag-pink
+    .contact-form__header--jp
+      お問い合わせフォーム
+    .contact-form__header--en
+      CONTCT FORM
+
+  .outer__inner
+    %form.contact-form__form{action:"https://docs.google.com/forms/d/e/1FAIpQLScWcZ3TzAexAWFCokTMijAW8fB4dS_tcY17ikhwf7p-voj4EQ/formResponse"}
+      :plain
+          <div class="form-group row">
+            <label for="exampleFormControlSelect1" class="col-sm-3 col-form-label">ご相談内容</label>
+            <div class="col-sm-4">
+              <select class="form-control selectpicker">
+                <option>一つ選択してください ▼</option>
+                <option data-value="WEB/動画制作ついて">WEB/動画制作ついて</option>
+                <option data-value="コンテンツ制作/広告掲載について">コンテンツ制作/広告掲載について</option>
+                <option data-value="通訳/翻訳サービスについて">通訳/翻訳サービスについて</option>
+                <option data-value="宿泊ゲストハウスPDX(ポートランド)について">宿泊ゲストハウスPDX(ポートランド)について</option>
+                <option data-value="SFバークレー不動産サポートについて">SFバークレー不動産サポートについて</option>
+                 <option data-value="その他">その他</option>
+              </select>
+            </div>
+          </div>
+
+      .form-group.row
+        %label{for: "staticEmail", class:"col-sm-3 col-form-label"}
+          会社名/個人名
+        .col-sm-6
+          %input{ name: "entry.113712413", class:"form-control form-control-lg"}
+      .form-group.row
+        %label{for: "email", class:"col-sm-3 col-form-label"}
+          メールアドレス
+        .col-sm-6
+          %input{name: "entry.1029886822", class:"form-control form-control-lg"}
+      .form-group.row
+        %label{for: "tel", class:"col-sm-3 col-form-label"}
+          電話番号
+        .col-sm-6
+          %input{name: "entry.1671593021", class:"form-control form-control-lg"}
+      .form-group.row
+        %label{for: "consultation", class:"col-sm-3 col-form-label"}
+          ご相談内容
+        .col-sm-6
+          %textarea{class: "form-control", name: "entry.986471514", id:"exampleFormControlTextarea1", rows:"5"}
+        .col-sm-1
+          .contact-form__img
+            <img src="<?php echo get_template_directory_uri(); ?>/images/pink-guy02.svg">
+      %button.submit-btn
+        お問い合わせを送信する
+
+    .contact-form__form__notice-box.notice-box
+      .notice-box__header
+        ご注意事項
+      .notice-box__body
+        お急ぎの場合や３日以上経過してもこちらからのご連絡がない場合は、<span class="contact-mailto"><a href="mailto:hatchstudio8@gmail.com">hatchstudio8@gmail.com</a></span> に再度、直接ご連絡いただけますようよろしくお願いいたします。
+
+

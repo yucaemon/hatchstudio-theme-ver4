@@ -16,6 +16,7 @@
     "grunt-haml2html": "^0.3.1"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "grunt-contrib": "^0.11.0"
   }
 }
