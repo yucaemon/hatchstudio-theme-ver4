@@ -8,9 +8,6 @@ Our Service
 アメリカ現地からお届け!サービス
 </div>
 </div>
-<button class='btn btn-round-white'>
-サービスの詳細はこちら
-</button>
 </div>
 <div class='our-service__container flexbox'>
 <ul class='our-service__pictures flexbox'>

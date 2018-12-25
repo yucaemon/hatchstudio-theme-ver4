@@ -4,6 +4,9 @@
 <div class='recruit-page pages outer'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
+<div class='service-page__header'>
+仲間募集/採用
+</div>
 <div class='outer__inner'>
 <div class='pages__container'>
 <div class='mission'>

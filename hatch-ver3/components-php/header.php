@@ -23,7 +23,7 @@
 </div>
 </div>
 <h1 class='sub-title'>
-”ワクワク”をお届け！アメリカ面白まがじん
+”ワクワク”な体験をお届け！アメリカ面白まがじん
 </h1>
 <div class='background-draw'>
 <div class='background-draw__left'>
@@ -49,71 +49,6 @@
 </div>
 </div>
 </div>
-<div class='header-bar__menu'>
-<nav class='header-bar__nav'>
-<ul class='header-bar__nav__list'>
-<li class='header-bar__nav__item'>
-<a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--en'>
-BLOG
-</span>
-</a>
-<a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--jp c-link c-link--bold'>
-ブログ
-</span>
-</a>
-</li>
-<li class='header-bar__nav__item'>
-<a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--en'>
-SVICE
-</span>
-</a>
-<a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--jp c-link c-link--bold'>
-サービス
-</span>
-</a>
-</li>
-<li class='header-bar__nav__item'>
-<a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--en'>
-RECRUIT
-</span>
-</a>
-<a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--jp c-link c-link--bold'>
-採用
-</span>
-</a>
-</li>
-<li class='header-bar__nav__item'>
-<a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--en'>
-ABOUT
-</span>
-</a>
-<a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--jp c-link c-link--bold'>
-会社案内
-</span>
-</a>
-</li>
-<li class='header-bar__nav__item'>
-<a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--en'>
-CONTACT
-</span>
-</a>
-<a class='header-bar__nav__text'>
-<span class='header-bar__nav__text--jp c-link c-link--bold'>
-お問い合わせ
-</span>
-</a>
-</li>
-</ul>
-</nav>
-</div>
+<?php include('header-bar-menu.php'); ?>
 </div>
 </div>

@@ -1,7 +1,7 @@
 <footer class='footer'>
 <div class='outer__foot'>
 <div class='footer__content flexbox'>
-<div class='footer__box'>
+<div class='footer__box page__links'>
 <dl>
 <dt class='footer__box__title'>
 BLOG
@@ -34,7 +34,7 @@ BLOG
 </dd>
 </dl>
 </div>
-<div class='footer__box'>
+<div class='footer__box page__links'>
 <dl>
 <dt class='footer__box__title'>
 OUR SERVICE
@@ -67,7 +67,7 @@ OUR SERVICE
 </dd>
 </dl>
 </div>
-<div class='footer__box'>
+<div class='footer__box page__links'>
 <dl>
 <dt class='footer__box__title'>
 ABOUT

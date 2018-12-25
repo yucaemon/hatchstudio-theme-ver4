@@ -82,8 +82,7 @@ module.exports = function (grunt) {
                     'components-php/business.php': '_haml/business.haml',
                     'components-php/service.php': '_haml/service.haml',
                     'components-php/contact-form.php': '_haml/contact-form.haml',
-
-
+                    'components-php/header-bar-menu.php': '_haml/header-bar-menu.haml',
 
 
 

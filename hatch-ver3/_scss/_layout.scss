@@ -71,6 +71,7 @@
 
 //くるっと回るナビゲーションのフォーバーCSS処理
 
+
 .header-bar__nav__list ul li{
 	text-align: center;
 	margin: 0;
@@ -134,39 +135,72 @@
 	}
 }
 
-.megamenu {
-	background: #ffe4e4;
-	max-height: 0;
-	overflow: hidden;
-	width: 100%;
-	position: absolute;
-	top: 256px;
-	left: 0;
-	transition: all .2s ease-in;
-	z-index: 999;
-	font-size: 13px;
+	.megamenu {
+		background: #ffe4e4;
+		max-height: 0;
+		overflow: hidden;
+		width: 100%;
+		position: absolute;
+		top: 253px;
+		left: 0;
+		transition: all .2s ease-in;
+		z-index: 999;
+		font-size: 13px;
+	}
 
+	.scrolled .megamenu {
+		position: absolute;
+		top: 70px;
+		left: 0;
+	}
+
+
+.index {
+	.megamenu {
+		position: absolute;
+		top: 339px !important;
+		left: 0;
+	}
+	.scrolled .megamenu {
+		position: absolute;
+		top: 70px !important;
+		left: 0;
+	}
 
 }
 
-.megamenu-inner {
-	display: flex;
-	flex-wrap: wrap;
+.pages{
+	.megamenu {
+		position: absolute;
+		top: 253px !important;
+		left: 0;
+	}
+	.scrolled .megamenu {
+		position: absolute;
+		top: 70px !important;
+		left: 0;
+	}
 }
 
-.megamenu-inner li {
-	width: calc( (100% / 5) );
-	padding: 0;
-}
 
-.megamenu-inner a {
-	border-left: none;
-}
+	.megamenu-inner {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-.megamenu-inner-img {
-	margin: 0 0 10px;
-}
+	.megamenu-inner li {
+		width: calc( (100% / 5) );
+		padding: 0;
+	}
 
-.megamenu-inner-text img {
-	margin: 0 5px 0 0;
-}
+	.megamenu-inner a {
+		border-left: none;
+	}
+
+	.megamenu-inner-img {
+		margin: 0 0 10px;
+	}
+
+	.megamenu-inner-text img {
+		margin: 0 5px 0 0;
+	}

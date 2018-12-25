@@ -132,11 +132,8 @@ a:hover img { opacity: 0.5 ; }
 .side-fixed-content{
   position: fixed;
   top: 15%;
-  width: 277px;
+  width: 334px;
 }
-
-
-
 
 
 //Firefox
@@ -145,38 +142,37 @@ a:hover img { opacity: 0.5 ; }
 }
 
 .search__box {
+
   #searchsubmit {
     display: none;
   }
   form#searchform {
-    background-color: white;
-    width: 200px;
-    height: 30px;
-    border: 1px $main_color solid;
-    border-radius: 10px;
-    color:$main_color;
-    padding: 2px 12px;
+    margin: 10px;
     #s {
       input {
-        width: 190px;
-        vertical-align: top;
-        margin: 0px;
-        height: 100%;
-        box-sizing: border-box;
-        background-color: transparent;
+        width: 190px !important;
+        vertical-align: top !important;
+        margin: 0 !important;
+        height: 100% !important;
+        box-sizing: border-box !important;
+        background-color: transparent !important;
       }
-      border: none;
-      margin-left: 3px;
-      background-image: url(../-images/sarch-icon.svg);
-      background-position: right;
-      background-size: auto 73%;
+      border: solid 1px #ff846a;
+      padding: 11px 24px 10px 24px;
+      border-radius: 9px;
+      font-size: 13px;
       background-repeat: no-repeat;
-      width: 173px;
+      background-image: url(./images/search-icon-pk.svg);
+      background-position: 11px center;
+      background-size: 21px;
+      padding-left: 44px;
+
     }
   }
 }
 
 .breadcrumbs {
+  padding-left: 13px !important;
   font-size: 10px;
   color: #a5a5a5;
   letter-spacing: 1px;
@@ -185,11 +181,14 @@ a:hover img { opacity: 0.5 ; }
   }
 }
 
+.breadcrumb {
+  margin-bottom: 0 !important;
+}
+
+
 
 
 .pages {
-  .breadcrumbs {
-  }
   .outer__inner {
     margin: 0 auto;
   }
@@ -210,7 +209,7 @@ a:hover img { opacity: 0.5 ; }
 .sns-icons {
   width: 300px;
   &__icon {
-    width: 32px;
+    width: 43px;
     padding-right: 10px;
   }
 }
@@ -312,7 +311,7 @@ body {
 
 .header-bar {
   width: 100%;
-  height: 66px;
+  height: 70px;
   background: #f9b19d;
   .search__box{
     display: none;
@@ -332,10 +331,6 @@ body {
   left: 0;
   z-index: 1;
 
-  .megamenu {
-    position: absolute;
-    top: 66px;
-  }
 
 
 
@@ -354,7 +349,7 @@ body {
   padding-bottom: 30px;
   text-align: center;
   font-weight: bold;
-  color: #353535;
+  color: #737373;
   letter-spacing: 1px;
   padding-top: 43px;
 }
@@ -379,17 +374,15 @@ body {
 .background-draw__left {
   position: absolute;
   left: 136px;
-  top: 175px;
-  //left: 136px;
-  //top: 144px;
+  top: 168px;
+
 }
 
 .background-daw__right {
   position: absolute;
   left: 842px;
-  top: 183px;
-  //left: 842px;
-  //top: 151px;
+  top: 175px;
+
 }
 
 
@@ -397,23 +390,25 @@ body {
 .header-bar {
 
   &__logo {
-    width: auto;
-    display: flex;
-    align-items: center;
-      margin: 0 auto 0 0;
-      padding: 23px 0 25px;
-      height: 21px;
-      color: #fff;
-      font-size: 14px;
-      letter-spacing: 0.5px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    height: 72px;
+    display: table;
   }
 
   .logo{
-    &__img-h img{
-      width: 26px;
+    &__img-h {
+      img {
+        width: 26px;
+      }
+      display: table-cell;
+      vertical-align: middle;
     }
     &__title {
       padding:0 10px;
+      display: table-cell;
+      vertical-align: middle;
     }
 
   }
@@ -441,6 +436,9 @@ body {
     font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
   }
 
+  &__nav__text--jp {
+    color: #fff !important;
+  }
 
 }
 
@@ -754,7 +752,7 @@ body {
     }
     &-content {
       background-color: #ffde8d;
-      height: 128px;
+      height: 190px;
       text-align: center;
       padding: 29px;
 
@@ -794,9 +792,16 @@ body {
       padding-left: 39px;
     }
 
+
+    .page__links{
+      padding-top: 20px;
+    }
+
+
     .footer__box{
         font-size: 14px;
         letter-spacing: 1px;
+
       &__title{
         font-size: 18px;
         font-weight: bold;
@@ -817,19 +822,20 @@ body {
       .footer__logo {
         &__img {
           text-align: center;
-          padding-bottom: 10px;
+          padding-bottom: 23px;
           img{
-            width: 132px;
+            width: 120px;
           }
         }
         &__txt{
           width: 342px;
           font-size: 11px;
+          padding-bottom: 28px;
         }
       }
 
       .footer__sns-icons img {
-        width: 20px;
+        width: 40px;
         padding: 0px 7px;
       }
 
@@ -864,15 +870,16 @@ body {
   .article-list {
     li {
       padding-bottom: 14px;
-      width: 380px;
+      width: 370px;
     }
+
 
     &__img {
       width: auto;
       height: auto;
       object-fit: cover;
       img {
-        width: 100%;
+        width: 350px;
         height: 100%;
         object-fit: cover;
 
@@ -980,7 +987,7 @@ button.btn.btn-round-white{
 
   .middle-contain .article-list__text {
     word-wrap: break-word;
-    width: 530px;
+    width: 500px;
     padding-left: 20px;
   }
 }
@@ -993,7 +1000,7 @@ button.btn.btn-round-white{
 
 .hatching-house{
   background-color: #bee4e6;
-  height: 400px;
+  height: 460px;
   padding-left:50px;
   padding-top: 35px;
 
@@ -1095,7 +1102,7 @@ button.btn.btn-round-white{
 
 .blogger {
   background-color: #ffe198;
-  height: 520px;
+  height: 580px;
 
 
   &__header{
@@ -1112,7 +1119,7 @@ button.btn.btn-round-white{
   &__header--img{
     position: absolute;
     left: 166px;
-    top: 3208px;
+    top: 3144px;
     width: 93px;
   }
 
@@ -1150,11 +1157,15 @@ button.btn.btn-round-white{
 .business{
   background-color: #fcb751;
   height: 92px;
+  position: relative;
   &__container{
     width: 850px;
     margin: 0 auto;
-    padding-top: 49px;
-    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
   }
   &-txt {
     font-size: 22px;
@@ -1167,7 +1178,7 @@ button.btn.btn-round-white{
 .our-service{
   margin-top: 80px;
   background-color: $yellow_01;
-  height: 283px;
+  height: 360px;
   padding-left:50px;
   padding-top: 35px;
 
@@ -1213,7 +1224,6 @@ button.btn.btn-round-white{
         @include fts(10, 10);
         letter-spacing: 2px;
         text-align: center;
-        width: 160px;
       }
 
     }
@@ -1297,6 +1307,8 @@ button.btn.btn-round-white{
 
   &__post-down__sns-icons {
     padding-bottom: 20px;
+    width: 650px;
+    margin: 0 auto;
     img {
       width: 312px;
     }
@@ -1349,8 +1361,9 @@ button.btn.btn-round-white{
     img {
       padding: 30px 0;
       display: block;
-      max-width: 644px;
-      height: auto;
+      max-width: 750px;
+      height: 500px;
+      object-fit: cover;
     }
     .detail-box01 {
       border: solid 1px $border_color;
@@ -1579,20 +1592,21 @@ button.btn.btn-round-white{
   }
 
   .category-popular {
-    width: 654px;
+    width: 770px;
 
     &__content {
-      width: 200px;
+      width: 250px;
       padding-bottom: 20px;
     }
 
     &__title {
-      font-size: 13px;
+      font-size: 16px;
+      font-weight: bold;
     }
 
     &__thumb-img img {
-      width: 200px;
-      height: 140px;
+      width: 258px;
+      height: 155px;
       object-fit: contain;
     }
 
@@ -1870,7 +1884,7 @@ button.btn.btn-round-white{
     padding-bottom: 37px;
   }
   .article-list__txt {
-    width: 549px;
+    width: 500px;
     padding-left: 20px;
     font-size: 12px;
   }
@@ -1942,10 +1956,15 @@ button.btn.btn-round-white{
   }
 
   .outer__inner{
-    width: 1016px;
+    width: 1246px;
     margin: 0 auto;
   }
 
+  &__container {
+    width: 1010px;
+    margin: 0 auto 80px auto;
+
+  }
 
   &__header {
     @include fts(10, 10);
@@ -1960,6 +1979,8 @@ button.btn.btn-round-white{
     color: #b1b1b1;
     text-align: left;
     padding-bottom: 40px;
+    width: 943px;
+    margin: 0 auto;
 
     p{
       padding-bottom: 15px;
@@ -1994,10 +2015,12 @@ button.btn.btn-round-white{
     font-size: 15px;
     letter-spacing: 1px;
     color: #b1b1b1;
+    background-color: #fff !important;
+
 
 
     table {
-      width: 1016px;
+      width: 940px;
       border: solid #c3c3c3 0.5px;
       margin: 0 auto;
       border-collapse: collapse;
@@ -2028,6 +2051,7 @@ button.btn.btn-round-white{
   }
 
   .mission {
+    padding-top: 40px;
     .yuka-sign__img {
       width: 105px;
       margin-left: auto;
@@ -2099,7 +2123,8 @@ button.btn.btn-round-white{
 
   .notfind__btn {
     margin: 30px auto;
-    width: 150px;
+    width: 200px;
+    text-align: center;
     padding: 10px;
     background-color: $main_color;
     color: #fff;
@@ -2160,7 +2185,7 @@ button.btn.btn-round-white{
 
   .author-profile-sns{
     line-height: 5px;
-    height: 11px;
+    height: 24px;
     vertical-align: middle;
     padding: 8px;
     border-radius: 5px;
@@ -2291,12 +2316,15 @@ house-page
     .sub-txt{
       font-size: 17px;
       vertical-align: middle;
-      border: solid #333 1px;
+      border: solid #bdbdbd 0.5px;
       padding: 7px;
+      vertical-align: middle;
       background-color: #fff;
+      padding-right: 1px;
+      margin-right: 10px;
+      line-height: 6;
       text-align: center;
-      margin: 10px;
-      color: $link_color;
+      color: $pink_02;
     }
   }
 
@@ -2343,7 +2371,6 @@ contact-form (コンポーネンツ)
 
 
 .contact-form{
-  margin-top: 80px;
   &__form {
     padding-top: 40px;
     text-align: center;

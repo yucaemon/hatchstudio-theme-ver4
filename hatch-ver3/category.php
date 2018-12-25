@@ -11,7 +11,7 @@
 <h1 class='components-title'>
 『 <?php echo get_the_archive_title(); ?> 』の関連記事一覧
 </h1>
-<ul class='post-lists article-list flexbox'>
+<ul class='post-lists article-list flexbox--spacebetween'>
   <?php $args = array(
     'posts_per_page' => 14,                //表示（取得）する記事の数
     'post_type' => 'post'    //投稿タイプの指定
