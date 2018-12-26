@@ -15,27 +15,48 @@
 <div class='hatching-house__container flexbox'>
 <ul class='hatching-house__pictures flexbox'>
 <li class='hatching-house--berkeley'>
-<div class='hatching-house--img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/house-img-berkeley.jpg">
-</div>
-<div class='hatching-house--txt'>
-UCバークレー家探しサポート
-</div>
+<a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>" class="megamenu-inner-text">
+  <figure class="hatching-house--img">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-berkeley.jpg">
+    <figcaption>
+      <p>
+        もっと詳しく見る
+        <i class="fas fa-angle-double-right"></i>
+      </p>
+    </figcaption>
+  </figure>
+  <div class="hatching-house--txt">
+    UCバークレー家探しサポート
+  </div>
+</a>
 </li>
 <li class='hatching-house--concord'>
-<div class='hatching-house--img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg">
-</div>
-<div class='hatching-house--txt'>
-ポートランド宿泊ゲストハウス
-</div>
+<a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>" class="megamenu-inner-text">
+  <figure class="hatching-house--img">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg">
+    <figcaption>
+      <p>
+        もっと詳しく見る
+        <i class="fas fa-angle-double-right"></i>
+      </p>
+    </figcaption>
+  </figure>
+  <div class="hatching-house--txt">
+    ポートランド宿泊ゲストハウス
+  </div>
+</a>
 </li>
 <li class='hatching-house--portland'>
-<div class='hatching-house--img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/house-img-sf.jpg">
-</div>
-<div class='hatching-house--txt'>
-SFバークレーシェアハウス
+<figure class="hatching-house--img">
+  <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-sf.jpg">
+  <figcaption>
+    <p>
+      COMMINEG SOON!
+    </p>
+  </figcaption>
+</figure>
+<div class="hatching-house--txt">
+ SFバークレーシェアハウス
 </div>
 </li>
 </ul>

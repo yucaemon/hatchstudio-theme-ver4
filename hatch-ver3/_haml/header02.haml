@@ -13,13 +13,14 @@
   .logofind
     .logo__img
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-bk.svg" width="250"></a>
+
 .header-bar
   .header-bar__inner.flexbox--spacebetween
     .header-bar__logo.logo
       %span.logo__img-h
-        <a href="https://www.instagram.com/annie_jene/"><img src="<?php echo get_template_directory_uri(); ?>/images/eight-icon.svg"></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/eight-icon.svg"></a>
       %span.logo__title
-        アメリカ面白まがじん
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">アメリカ面白まがじん</a>
       .search__box
         .search__form
           <?php get_search_form(); ?>

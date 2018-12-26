@@ -14,7 +14,7 @@
   $posts = get_posts( $args );
     if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
         <li class=''>
-          <div class='post-lists__img article-list__img'>
+          <div class='post-lists__img article-list__img imgWrap'>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
           </div>
           <div class='post-lists__text article-list__text'>
@@ -23,6 +23,7 @@
             </h3>
           </div>
         </li>
+
     <?php endforeach; ?>
     <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
     <?php else : //記事が無い場合 ?>
@@ -111,7 +112,7 @@
   $posts = get_posts( $args );
     if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
         <li class=''>
-          <div class='post-lists__img article-list__img'>
+          <div class='post-lists__img article-list__img imgWrap'>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
           </div>
           <div class='post-lists__text article-list__text'>

@@ -8,27 +8,87 @@
   .our-service__container.flexbox
     %ul.our-service__pictures.flexbox
       %li.our-service--web
-        .our-service--img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/service-web.jpg">
-        .our-service--txt
-          WEB/動画制作
+        :plain
+          <a href="<?php echo esc_url( home_url( '/web' ) ); ?>" class="megamenu-inner-text">
+            <figure class="our-service--img">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/service-web.jpg">
+              <figcaption>
+                <p>
+                  もっと詳しく見る
+                  <i class="fas fa-angle-double-right"></i>
+                </p>
+              </figcaption>
+            </figure>
+            <div class="our-service--txt">
+             WEB/動画制作
+            </div>
+          </a>
+
       %li.our-service--contents
-        .our-service--img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/service-contens.jpg">
-        .our-service--txt
-          コンテンツ制作
+        :plain
+          <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+            <figure class="our-service--img">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/service-contens.jpg">
+              <figcaption>
+                <p>
+                  もっと詳しく見る
+                  <i class="fas fa-angle-double-right"></i>
+                </p>
+              </figcaption>
+            </figure>
+            <div class="our-service--txt">
+             コンテンツ制作
+            </div>
+          </a>
+
+
       %li.our-service--guesthouse
-        .our-service--img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg">
-        .our-service--txt
-          ゲストハウス
+        :plain
+          <a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>" class="megamenu-inner-text">
+            <figure class="our-service--img">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg">
+              <figcaption>
+                <p>
+                  もっと詳しく見る
+                  <i class="fas fa-angle-double-right"></i>
+                </p>
+              </figcaption>
+            </figure>
+            <div class="our-service--txt">
+             ゲストハウス
+            </div>
+          </a>
+
       %li.our-service--translate
-        .our-service--img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/service-translate.jpg">
-        .our-service--txt
-          英語/中国翻訳
+        :plain
+          <a href="<?php echo esc_url( home_url( '/translate' ) ); ?>" class="megamenu-inner-text">
+            <figure class="our-service--img">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/service-translate.jpg">
+              <figcaption>
+                <p>
+                  もっと詳しく見る
+                  <i class="fas fa-angle-double-right"></i>
+                </p>
+              </figcaption>
+            </figure>
+            <div class="our-service--txt">
+             英語/中国翻訳
+            </div>
+          </a>
+
       %li.our-service--housing
-        .our-service--img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-berkeley.jpg">
-        .our-service--txt
-          不動産サポート
+        :plain
+          <a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>" class="megamenu-inner-text">
+            <figure class="our-service--img">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-berkeley.jpg">
+              <figcaption>
+                <p>
+                  もっと詳しく見る
+                  <i class="fas fa-angle-double-right"></i>
+                </p>
+              </figcaption>
+            </figure>
+            <div class="our-service--txt">
+             不動産サポート
+            </div>
+          </a>

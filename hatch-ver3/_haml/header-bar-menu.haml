@@ -8,31 +8,47 @@
         .megamenu
           %ul.megamenu-inner.main-wrapper
             %li
-              %a.megamenu-inner-text
-                %i.fas.arrow-alt-circle-right
-                バークレー
+              :plain
+                <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                  サンフランシスコ/バークレー
+                </a>
             %li
-              %a.megamenu-inner-text
-                サンフランシスコ
+              :plain
+                <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                   ニューヨーク
+                </a>
             %li
-              %a.megamenu-inner-text
-                ポートランド
+              :plain
+                <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                   ポートランド
+                </a>
             %li
-              %a.megamenu-inner-text
-                ハワイ
+              :plain
+                <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                   ハワイ
+                </a>
             %li
-              %a.megamenu-inner-text
-                バークレー
+              :plain
+                <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                   UCバークレー大学
+                </a>
             %li
-              %a.megamenu-inner-text
-                サンフランシスコ
+              :plain
+                <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                   お知らせ/募集
+                </a>
             %li
-              %a.megamenu-inner-text
-                ポートランド
-            %li
-              %a.megamenu-inner-text
-                ハワイ
-
+              :plain
+                <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                   シェアハウス
+                </a>
         %a.header-bar__nav__text.c-link.c-link--bold
           %span.header-bar__nav__text--jp
             ブログ
@@ -40,27 +56,68 @@
         %a.header-bar__nav__text
           %span.header-bar__nav__text--en
             SVICE
+
+        .megamenu
+          %ul.megamenu-inner.main-wrapper
+            %li
+              :plain
+                <a href="<?php echo esc_url( home_url( '/web' ) ); ?>" class="megamenu-inner-text">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                  WEB/動画制作
+                </a>
+            %li
+              :plain
+                <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                  コンテンツ制作
+                </a>
+            %li
+              :plain
+                <a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>" class="megamenu-inner-text">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                  ゲストハウス
+                </a>
+
+            %li
+              :plain
+                <a href="<?php echo esc_url( home_url( '/translate' ) ); ?>" class="megamenu-inner-text">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                  英語/中国翻訳
+                </a>
+
+            %li
+              :plain
+                <a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>" class="megamenu-inner-text">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                  不動産サポート
+                </a>
+
         %a.header-bar__nav__text.c-link.c-link--bold
           %span.header-bar__nav__text--jp
             サービス
       %li.header-bar__nav__item
-        %a.header-bar__nav__text
-          %span.header-bar__nav__text--en
-            RECRUIT
-        %a.header-bar__nav__text.c-link.c-link--bold
-          %span.header-bar__nav__text--jp
-            採用
+        :plain
+          <a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>" class="header-bar__nav__text">
+            <span class="header-bar__nav__text--en">RECRUIT</span>
+          </a>
+          <a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>" class="header-bar__nav__text c-link c-link--bold">
+            <span class="header-bar__nav__text--jp">採用</span>
+          </a>
+
       %li.header-bar__nav__item
-        %a.header-bar__nav__text
-          %span.header-bar__nav__text--en
-            ABOUT
-        %a.header-bar__nav__text.c-link.c-link--bold
-          %span.header-bar__nav__text--jp
-            会社案内
+        :plain
+          <a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="header-bar__nav__text">
+            <span class="header-bar__nav__text--en">ABOUT</span>
+          </a>
+          <a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="header-bar__nav__text c-link c-link--bold">
+            <span class="header-bar__nav__text--jp">会社案内</span>
+          </a>
+
       %li.header-bar__nav__item
-        %a.header-bar__nav__text
-          %span.header-bar__nav__text--en
-            CONTACT
-        %a.header-bar__nav__text.c-link.c-link--bold
-          %span.header-bar__nav__text--jp
-            お問い合わせ
+        :plain
+          <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="header-bar__nav__text">
+            <span class="header-bar__nav__text--en">CONTACT</span>
+          </a>
+          <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="header-bar__nav__text c-link c-link--bold">
+            <span class="header-bar__nav__text--jp">お問い合わせ</span>
+          </a>

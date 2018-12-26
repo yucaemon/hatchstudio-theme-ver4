@@ -10,24 +10,41 @@ BLOG
 <ul class='flexbox'>
 <div class='footer__nimi-box'>
 <li>
-<a href="<?php echo esc_url( home_url( '/category/fashion/' ) ); ?>"> ニューヨーク</a>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+  サンフランシスコ
+</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>"> サンフランシスコ</a>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+   ニューヨーク
+</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>"> ポートランド</a>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+   ポートランド
+</a>
+</li>
+<li>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+   ハワイ
+</a>
 </li>
 </div>
 <div class='footer__mini-box'>
 <li>
-<a href="<?php echo esc_url( home_url( '/category/lifestyle/' ) ); ?>"> ライフ/DIY</a>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+   UCバークレー大学
+</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/category/cosmetics/' ) ); ?>"> 美容/コスメ</a>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+   お知らせ/募集
+</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>"> お出かけ/グルメ</a>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+   シェアハウス
+</a>
 </li>
 </div>
 </ul>
@@ -43,24 +60,31 @@ OUR SERVICE
 <ul class='flexbox'>
 <div class='footer__nimi-box'>
 <li>
-<a href="<?php echo esc_url( home_url( '/category/fashion/' ) ); ?>"> ファッション</a>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+  WEB/動画制作
+</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>"> お出かけ/グルメ</a>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+  コンテンツ制作
+</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>"> お出かけ/グルメ</a>
+<a href="<?php echo esc_url( home_url( '/translate' ) ); ?>" class="megamenu-inner-text">
+  英語/中国翻訳
+</a>
 </li>
 </div>
 <div class='footer__mini-box'>
 <li>
-<a href="<?php echo esc_url( home_url( '/category/lifestyle/' ) ); ?>"> ライフ/DIY</a>
+<a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>" class="megamenu-inner-text">
+  ゲストハウス
+</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/category/cosmetics/' ) ); ?>"> 美容/コスメ</a>
-</li>
-<li>
-<a href="<?php echo esc_url( home_url( '/category/gourmet/' ) ); ?>"> お出かけ/グルメ</a>
+<a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>" class="megamenu-inner-text">
+  不動産サポート
+</a>
 </li>
 </div>
 </ul>
@@ -76,18 +100,31 @@ ABOUT
 <ul class='flexbox'>
 <div class='footer__nimi-box'>
 <li>
-<a href="<?php echo esc_url( home_url( '/tag/organic/' ) ); ?>"> 会社概要</a>
+<a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="megamenu-inner-text">
+  会社概要
+</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/tag/ethical/' ) ); ?>"> 採用</a>
+<a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>" class="megamenu-inner-text">
+  採用
+</a>
 </li>
 </div>
 <div class='footer__nimi-box'>
 <li>
-<a href="<?php echo esc_url( home_url( '/tag/fairtrade/' ) ); ?>"> ポリシー</a>
+<a href="<?php echo esc_url( home_url( '/rule' ) ); ?>" class="megamenu-inner-text">
+  利用規約
+</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/tag/local/' ) ); ?>"> セキュリティー</a>
+<a href="<?php echo esc_url( home_url( '/policy' ) ); ?>" class="megamenu-inner-text">
+  ポリシー
+</a>
+</li>
+<li>
+<a href="<?php echo esc_url( home_url( '/security' ) ); ?>" class="megamenu-inner-text">
+ セキュリティー
+</a>
 </li>
 </div>
 </ul>
@@ -109,6 +146,6 @@ ABOUT
 </div>
 </div>
 <div class='copyright'>
-© HATCH STUDIO. All Rights Reserved.
+© HATCHSTUDIO INC. All Rights Reserved.
 </div>
 </footer>

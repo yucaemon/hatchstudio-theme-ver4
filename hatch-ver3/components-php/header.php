@@ -23,7 +23,7 @@
 </div>
 </div>
 <h1 class='sub-title'>
-”ワクワク”な体験をお届け！アメリカ面白まがじん
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>">”ワクワク”な体験をお届け！アメリカ面白まがじん</a>
 </h1>
 <div class='background-draw'>
 <div class='background-draw__left'>

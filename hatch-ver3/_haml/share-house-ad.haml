@@ -10,19 +10,53 @@
   .hatching-house__container.flexbox
     %ul.hatching-house__pictures.flexbox
       %li.hatching-house--berkeley
-        .hatching-house--img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-berkeley.jpg">
-        .hatching-house--txt
-          UCバークレー家探しサポート
+        :plain
+          <a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>" class="megamenu-inner-text">
+            <figure class="hatching-house--img">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-berkeley.jpg">
+              <figcaption>
+                <p>
+                  もっと詳しく見る
+                  <i class="fas fa-angle-double-right"></i>
+                </p>
+              </figcaption>
+            </figure>
+            <div class="hatching-house--txt">
+              UCバークレー家探しサポート
+            </div>
+          </a>
+
       %li.hatching-house--concord
-        .hatching-house--img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg">
-        .hatching-house--txt
-          ポートランド宿泊ゲストハウス
+        :plain
+          <a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>" class="megamenu-inner-text">
+            <figure class="hatching-house--img">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg">
+              <figcaption>
+                <p>
+                  もっと詳しく見る
+                  <i class="fas fa-angle-double-right"></i>
+                </p>
+              </figcaption>
+            </figure>
+            <div class="hatching-house--txt">
+              ポートランド宿泊ゲストハウス
+            </div>
+          </a>
+
       %li.hatching-house--portland
-        .hatching-house--img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-sf.jpg">
-        .hatching-house--txt
-          SFバークレーシェアハウス
+        :plain
+          <figure class="hatching-house--img">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-sf.jpg">
+            <figcaption>
+              <p>
+                COMMINEG SOON!
+              </p>
+            </figcaption>
+          </figure>
+          <div class="hatching-house--txt">
+           SFバークレーシェアハウス
+          </div>
+
+
     .hatching-house__btn--img
       <img src="<?php echo get_template_directory_uri(); ?>/images/pink-guy.svg">
