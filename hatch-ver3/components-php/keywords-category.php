@@ -5,6 +5,7 @@
 </div>
 <div class='header-side__txt--en'>
 CATEGORY
+<i class="fas fa-bookmark"></i>
 </div>
 <div class='header-side__txt--jp'>
 カテゴリーキーワード

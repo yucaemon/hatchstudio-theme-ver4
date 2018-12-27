@@ -521,19 +521,36 @@ body {
   .keywords {
     &__content {
       margin-bottom: 20px;
+      width: 300px;
+      margin: 0 auto;
 
     }
 
   }
 
+
   .news-list {
-    &__title {
-      width: 222px;
-      font-size: 13px;
+    &__header{
       padding-left: 10px;
+    }
+    &__title {
+      width: 252px;
+      font-size: 13px;
+      font-weight: bold;
     }
     &__content{
       padding-bottom: 20px;
+    }
+
+    span.views{
+      display: inline-block;
+      font-size: 13px;
+      color: #f2695d;
+      background-color: #fff5f5;
+      padding: 3px 10px;
+      letter-spacing: 1px;
+      border-radius: 6px;
+      margin-bottom: 10px;
     }
   }
   .header-side{
@@ -642,12 +659,16 @@ body {
 
   .keywords{
     .tag-cloud-link {
-      padding: 2px;
       display: inline-block;
-      margin-bottom: 6px;
-      color: #333;
-      letter-spacing: 1px;
-      font-size: 18px !important;
+      margin-bottom: 10px;
+      color: #6d6d6d;
+      letter-spacing: 0.2px;
+      font-size: 15px !important;
+      background-color: #fff5f5;
+      padding: 5px 10px;
+      border-radius: 9px;
+      margin: 6px 7px;
+
     }
     a:before {
       color:#f2695d;
@@ -873,6 +894,14 @@ body {
       width: 370px;
     }
 
+    .newMark {
+      position: absolute;
+      background: $pink_02;
+      color: #fff;
+      padding: 8px 20px;
+      letter-spacing: 3px;
+      font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    }
 
     &__img {
       width: auto;
@@ -886,13 +915,15 @@ body {
       }
     }
     &__text {
-      word-wrap: break-word;
+      //word-wrap: break-word;
 
       .list-title {
-        @include fts(12, 18);
+        @include fts(10, 10);
         font-weight: bold;
         padding-bottom: 6px;
         letter-spacing: 3px;
+        line-height: 25px;
+
       }
 
 
@@ -1176,7 +1207,6 @@ button.btn.btn-round-white{
 }
 
 .our-service{
-  margin-top: 80px;
   background-color: $yellow_01;
   height: 360px;
   padding-left:50px;
@@ -1276,10 +1306,11 @@ button.btn.btn-round-white{
   }
 
   &__head-title {
+    font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
     font-weight: bold;
-    @include fts(18, 25);
-    letter-spacing: 1px;
-    line-height: 31px;
+    @include fts(18, 28);
+    letter-spacing: 3px;
+    line-height: 41px;
     margin-bottom: 20px;
   }
   &__tags{
@@ -1334,6 +1365,11 @@ button.btn.btn-round-white{
 
 
   &__entry-content {
+
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
     p {
       @include fts(10, 10);
       line-height: 22px;
@@ -1565,6 +1601,7 @@ button.btn.btn-round-white{
 *************************************************/
 
 .articles__container__bottom {
+  padding-bottom: 80px;
 
   .header-side{
     @extend .components-title;
@@ -1580,7 +1617,7 @@ button.btn.btn-round-white{
       object-fit: contain;
     }
     &__title {
-      width: 172px;
+      width: 252px;
       font-size: 13px;
       padding-left: 15px;
     }
@@ -1731,6 +1768,7 @@ button.btn.btn-round-white{
     letter-spacing: 1px;
     font-weight: bold;
     line-height: 17px;
+    font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
   }
 }
 
@@ -1973,13 +2011,13 @@ button.btn.btn-round-white{
   }
   &__read {
     padding-top: 65px;
-    @include fts(8, 8);
-    letter-spacing: 1px;
-    line-height: 1.4;
+    @include fts(10, 10);
+    letter-spacing: 2.3px;
+    line-height: 1.5;
     color: #b1b1b1;
     text-align: left;
     padding-bottom: 40px;
-    width: 835px;
+    width: 886px;
     margin: 0 auto;
 
     p{
@@ -2036,6 +2074,10 @@ button.btn.btn-round-white{
 
   }
 
+  .mission {
+    padding:50px 0;
+  }
+
 }
 
 /*
@@ -2051,9 +2093,10 @@ button.btn.btn-round-white{
   }
 
   .mission {
-    padding-top: 40px;
+
+    padding-top: 20px;
     .yuka-sign__img {
-      width: 105px;
+      width: 149px;
       margin-left: auto;
       padding-right: 46px;
       padding-bottom: 13px;
@@ -2145,11 +2188,6 @@ button.btn.btn-round-white{
 	components-parts.php
 
 *************************************************/
-
-
-.tag-cloud-link{
-  margin-right: 10px;
-}
 
 
 
@@ -2371,6 +2409,7 @@ contact-form (コンポーネンツ)
 
 
 .contact-form{
+  padding-bottom: 80px;
   &__form {
     padding-top: 40px;
     text-align: center;
@@ -2445,11 +2484,21 @@ contact-form (コンポーネンツ)
         color: $pink_02;
       }
     }
-
-
   }
+}
 
+/*
 
+contact-form (コンポーネンツ)
 
+*************************************************/
 
+.card-body.text-dark {
+  padding: 1.25rem;
+}
+
+.card-footer {
+  background-color: #fff;
+  font-size: 12px;
+  color: #9e9e9e;
 }

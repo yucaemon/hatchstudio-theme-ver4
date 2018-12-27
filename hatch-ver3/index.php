@@ -7,13 +7,29 @@
 <div class='outer__inner flexbox'>
 <div class='middle-contain'>
 <ul class='post-lists article-list'>
-  <?php $args = array(
+  <?php
+
+
+     $args = array(
     'posts_per_page' => 6,                //表示（取得）する記事の数
     'post_type' => 'post'    //投稿タイプの指定
   );
   $posts = get_posts( $args );
     if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
         <li class=''>
+          <?php
+            $days = 7;  // NEWマークを表示する日数
+            $now = date_i18n('U');  // 今の時間
+            $entry = get_the_time('U');  // 投稿日の時間
+            $term = date('U',($now - $entry)) / 86400;
+            if( $days > $term ){
+              echo '<div class="newMark">NEW</div>';
+            }
+          ?>
+
+
+
+
           <div class='post-lists__img article-list__img imgWrap'>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
           </div>
@@ -31,14 +47,9 @@
     <?php endif;
     wp_reset_postdata(); //クエリのリセット ?>
 </ul>
-<div class='more-page'>
-<div class='more-page__btn big-btn'>
-<a href="<?php echo esc_url( home_url( '/archive/' ) ); ?>">> 記事一覧ページへ</a>>
-</div>
-</div>
 </div>
 <div class='side-contain'>
-<?php include('components-php/news-list.php'); ?>
+<?php include('components-php/lists-popular-total.php'); ?>
 </div>
 </div>
 </section>
@@ -49,7 +60,8 @@
   <ul class='post-lists article-list flexbox'>
     <?php $args = array(
       'posts_per_page' => 6,                //表示（取得）する記事の数
-      'post_type' => 'post'    //投稿タイプの指定
+      'post_type' => 'post',    //投稿タイプの指定
+      'offset' => 6
     );
     $posts = get_posts( $args );
       if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
@@ -74,11 +86,6 @@
       wp_reset_postdata(); //クエリのリセット ?>
   </ul>
 </div>
-<div class='more-page'>
-<div class='more-page__btn big-btn'>
-<a href="<?php echo esc_url( home_url( '/archive/' ) ); ?>">> 記事一覧ページへ</a>>
-</div>
-</div>
 <div class='side-contain'>
 <!-- 広告 -->
 <!-- 四角はっち公告 -->
@@ -91,13 +98,9 @@
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <!-- 広告 -->
-<?php include('components-php/keywords-category.php'); ?>
 <?php include('components-php/keywords.php'); ?>
 </div>
 </div>
-</section>
-<section class='section sns-container'>
-<?php include('components-php/sns-btns.php'); ?>
 </section>
 <?php include('components-php/sponsor-blogger.php'); ?>
 <?php include('components-php/business.php'); ?>
@@ -107,7 +110,8 @@
 <ul class='post-lists article-list'>
   <?php $args = array(
     'posts_per_page' => 6,                //表示（取得）する記事の数
-    'post_type' => 'post'    //投稿タイプの指定
+    'post_type' => 'post',    //投稿タイプの指定
+    'offset' => 12
   );
   $posts = get_posts( $args );
     if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
@@ -128,19 +132,16 @@
     <?php endif;
     wp_reset_postdata(); //クエリのリセット ?>
 </ul>
-<div class='more-page'>
-<div class='more-page__btn big-btn'>
-<a href="<?php echo esc_url( home_url( '/archive/' ) ); ?>">> 記事一覧ページへ</a>>
-</div>
-</div>
 </div>
 <div class='side-contain'>
-<?php include('components-php/news-list.php'); ?>
+<?php include('components-php/lists-popular-month.php'); ?>
 </div>
 </div>
 </section>
-<?php include('components-php/annie-banner.php'); ?>
 </div>
 </body>
+<p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
+<?php include('components-php/annie-banner.php'); ?>
+<?php include('components-php/service.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>

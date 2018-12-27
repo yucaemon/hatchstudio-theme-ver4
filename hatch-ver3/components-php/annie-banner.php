@@ -13,7 +13,7 @@
 オーガニックで自由な暮らしをお届けするマガジン
 </div>
 <button class='btn btn-round-white'>
-サイトはこちらから
+<a href="https://anniejene.com//">サイトはこちらから</a>
 </button>
 </div>
 </div>

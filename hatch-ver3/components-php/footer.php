@@ -139,8 +139,8 @@ ABOUT
 はっちすたじおは、ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。
 </div>
 <div class='footer__sns-icons flexbox--h-center'>
-<a href="https://www.facebook.com/Anie-Jene-226289061241623/"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon-sky.svg"></a>
-<a href="https://twitter.com/bohostyle_love"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon-sky.svg"></a>
+<a href="https://www.facebook.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon-sky.svg"></a>
+<a href="https://twitter.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon-sky.svg"></a>
 </div>
 </div>
 </div>

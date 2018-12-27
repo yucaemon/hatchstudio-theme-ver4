@@ -17,43 +17,117 @@
 はっちすたじおSan Franciscoとは主にバークレーを拠点とした、北カリフォルニアで暮らす頑張る若者達が、分け隔てなく自由に出会えて遊べる場所があったらなーと思って作ったすたじおです。 そんな仲間たちが情報をシェアする為に日々の生活情報を発信すれば、楽しんじゃね？便利じゃね？って感じのただの好奇心から作りました。 ここアメリカから、たくさんの”新しいおもしろ情報”を日本や現地のみんなに発信！お届けできたら嬉しいです。
 </p>
 </div>
+<div class='row'>
+<div class='col-sm-3'>
+<div class='card border-primary'>
+<div class='card-header'>
+バックエンドエンジニア
+</div>
+<div class='card-body text-dark'>
+<div class='card-title'>
+急募（リモート）
+</div>
+<p class='card-text'>
+ith supporting text below as a natural lead-in to additional content.
+</p>
+</div>
+<div class='card-footer'>
+勤務地：ポートランド
 </div>
 </div>
-<div class='table-info'>
-<table>
-<tr>
-<td>
-エンジニア
-</td>
-<td>
-現在採用はしておりません。
-</td>
-</tr>
-<tr>
-<td>
-編集者
-</td>
-<td>
-現在採用はしておりません。
-</td>
-</tr>
-<tr>
-<td>
+</div>
+<div class='col-sm-3'>
+<div class='card border-primary'>
+<div class='card-header'>
+UX/UX デザイナー
+</div>
+<div class='card-body text-dark'>
+<div class='card-title'>
+現在募集なし
+</div>
+<p class='card-text'>
+th supporting text below as a natural lead-in to additional content.
+</p>
+</div>
+<div class='card-footer'>
+勤務地：ポートランド
+</div>
+</div>
+</div>
+<div class='col-sm-3'>
+<div class='card border-primary'>
+<div class='card-header'>
+記事校生
+</div>
+<div class='card-body text-dark'>
+<div class='card-title'>
+急募（インターン）
+</div>
+<p class='card-text'>
+With supporting text below as a natural lead-in to additional content.
+</p>
+</div>
+<div class='card-footer'>
+勤務地：ポートランド
+</div>
+</div>
+</div>
+<div class='col-sm-3'>
+<div class='card border-primary'>
+<div class='card-header'>
 シェアハウス管理人
-</td>
-<td>
-現在採用はしておりません。
-</td>
-</tr>
-<tr>
-<td>
-インターン
-</td>
-<td>
-現在採用はしておりません。
-</td>
-</tr>
-</table>
+</div>
+<div class='card-body text-dark'>
+<div class='card-title'>
+住み込み
+</div>
+<p class='card-text'>
+With supporting text below as a natural lead-in to additional content.
+</p>
+</div>
+<div class='card-footer'>
+勤務地：ポートランド,サンフランシスコ
+</div>
+</div>
+</div>
+<div class='col-sm-3'>
+<div class='card border-primary'>
+<div class='card-header'>
+翻訳
+</div>
+<div class='card-body text-dark'>
+<div class='card-title'>
+現在募集なし
+</div>
+<p class='card-text'>
+With supporting text below as a natural lead-in to additional content.
+</p>
+</div>
+<div class='card-footer'>
+勤務地：ポートランド,サンフランシスコ
+</div>
+</div>
+</div>
+<div class='col-sm-3'>
+<div class='card border-primary'>
+<div class='card-header'>
+事務
+</div>
+<div class='card-body text-dark'>
+<div class='card-title'>
+現在募集なし
+</div>
+<p class='card-text'>
+With supporting text below as a natural lead-in to additional content.
+</p>
+</div>
+<div class='card-footer'>
+勤務地：日本
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class='outer__inner'>
