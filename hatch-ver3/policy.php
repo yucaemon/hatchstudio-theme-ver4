@@ -95,7 +95,7 @@
 担当窓口
 </h2>
 <p>
-個人情報保護の方針に関するお問い合わせは、以下の窓口よりご連絡下さい。お問い合わせ窓口: annie.jane@gmail.com
+個人情報保護の方針に関するお問い合わせは、以下の窓口よりご連絡下さい。お問い合わせ窓口: hatchstudio8@gmail.com
 </p>
 </div>
 <div class='pages__date-info'>
@@ -106,7 +106,7 @@
 Hatchstudio inc
 </p>
 <p>
-Berkeley, CA USA
+Berkeley, California USA
 </p>
 </div>
 </div>
@@ -114,8 +114,8 @@ Berkeley, CA USA
 </div>
 <div class='outer__inner'>
 <div class='articles__container__bottom flexbox--h-center'>
-<?php include('components-php/bt-news-list.php'); ?>
-<?php include('components-php/bt-category-popular.php'); ?>
+<?php include('components-php/bt-news-lists.php'); ?>
+<?php include('components-php/bt-popular-month.php'); ?>
 </div>
 </div>
 </div>

@@ -172,7 +172,7 @@ a:hover img { opacity: 0.5 ; }
 }
 
 .breadcrumbs {
-  padding-left: 13px !important;
+  padding-left: 24px !important;
   font-size: 10px;
   color: #a5a5a5;
   letter-spacing: 1px;
@@ -1635,7 +1635,9 @@ button.btn.btn-round-white{
 *************************************************/
 
 .articles__container__bottom {
-  padding-bottom: 80px;
+  padding-bottom: 30px;
+  width: 1093px;
+  margin: 0 auto;
 
   .header-side{
     @extend .components-title;
@@ -1652,36 +1654,37 @@ button.btn.btn-round-white{
       object-fit: contain;
     }
     &__title {
-      width: 252px;
-      font-size: 13px;
+      width: 186px;
+      font-size: 12px;
       padding-left: 15px;
+      font-weight: bold;
     }
 
     &__content {
-      padding-bottom: 50px;
+      padding-bottom: 15px;
     }
   }
 
 
-  .category-popular {
-    width: 770px;
+  .bottom-popular{
+    width: 720px;
 
     &__content {
-      width: 250px;
+      width: 208px;
       padding-bottom: 20px;
     }
 
     &__title {
-      font-size: 16px;
+      font-size: 13px;
       font-weight: bold;
     }
 
     &__thumb-img img {
-      width: 258px;
-      height: 155px;
+      width: 207px;
+
+      height: 129px;
       object-fit: contain;
     }
-
 
   }
 
@@ -2034,8 +2037,8 @@ button.btn.btn-round-white{
   }
 
   &__container {
-    width: 1010px;
-    margin: 0 auto 80px auto;
+    width: 1085px;
+    margin: 0 auto 80px auto
 
   }
 

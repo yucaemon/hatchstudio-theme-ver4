@@ -47,7 +47,6 @@ module.exports = function (grunt) {
                     'components-php/keywords-category.php': '_haml/keywords-category.haml',
                     'components-php/items.php': '_haml/items.haml',
                     'components-php/models-lists.php': '_haml/models-lists.haml',
-                    'components-php/news-list.php': '_haml/news-list.haml',
                     'components-php/recommend-list.php': '_haml/recommend-list.haml',
                     'components-php/side-menu-list.php': '_haml/side-menu-list.haml',
                     'components-php/shopping-box.php': '_haml/shopping-box.haml',
@@ -59,7 +58,6 @@ module.exports = function (grunt) {
                     'components-php/house-ad-side.php': '_haml/house-ad-side.haml',
                     'components-php/business-ad-side.php': '_haml/business-ad-side.haml',
                     'components-php/bt-category-popular.php': '_haml/bt-category-popular.haml',
-                    'components-php/bt-news-list.php': '_haml/bt-news-list.haml',
                     'components-php/article-sns-btns.php': '_haml/article-sns-btns.haml',
 
 
@@ -85,7 +83,9 @@ module.exports = function (grunt) {
                     'components-php/header-bar-menu.php': '_haml/header-bar-menu.haml',
                     'components-php/lists-popular-total.php': '_haml/lists-popular-total.haml',
                     'components-php/lists-popular-month.php': '_haml/lists-popular-month.haml',
-
+                    'components-php/lists-news.php': '_haml/lists-news.haml',
+                    'components-php/bt-popular-month.php': '_haml/bt-popular-month.haml',
+                    'components-php/bt-news-lists.php': '_haml/bt-news-lists.haml',
 
 
 

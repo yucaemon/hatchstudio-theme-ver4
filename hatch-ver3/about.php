@@ -21,7 +21,7 @@
 2014年 6月 28日
 </p>
 <p>
-Portland, Oregon USA
+Berkeley CA USA
 </p>
 </div>
 </div>
@@ -42,12 +42,12 @@ Hatchistud inc
 設立
 </td>
 <td>
-2014年 6月26日
+2014年 6月26日 Berkeley CA USA
 </td>
 </tr>
 <tr>
 <td>
-所在地
+現所在地
 </td>
 <td>
 Portland USA
@@ -94,8 +94,8 @@ LIGアート事業
 </div>
 <div class='outer__inner'>
 <div class='articles__container__bottom flexbox--h-center'>
-<?php include('components-php/bt-news-list.php'); ?>
-<?php include('components-php/bt-category-popular.php'); ?>
+<?php include('components-php/bt-news-lists.php'); ?>
+<?php include('components-php/bt-popular-month.php'); ?>
 </div>
 </div>
 </body>

@@ -1,24 +1,14 @@
-<dl class='news-list'>
-<dt>
-<div class='header-side flexbox'>
-<div class='header-side__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-left.svg">
-</div>
-<div class='header-side__txt--en'>
-POPULOR
-</div>
-<div class='header-side__txt--jp'>
-人気ランキング
-</div>
-<div class='header-side__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-right.svg">
+<div class='news-list column-4'>
+<div class='header-side'>
+<div class='header-side__title'>
+最新記事
+<i class="fas fa-arrow-up"></i>
 </div>
 </div>
-</dt>
 <div class='news-list__container'>
 <?php
 $posts = get_posts(array(
-'posts_per_page' => 6, // 表示件数
+'posts_per_page' => 8, // 表示件数
 ));
 ?>
 <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
@@ -36,4 +26,4 @@ $posts = get_posts(array(
 
 <?php endforeach; endif; ?>
 </div>
-</dl>
+</div>

@@ -1,8 +1,8 @@
-.category-popular
+.bottom-popular
   .header-side
     .header-side__title
       『買ってみる』カテゴリー記事
-  .category-popular__body.flexbox--spacebetween
+  .bottom-popular__body.flexbox--spacebetween
 
     :plain
       <?php
@@ -22,11 +22,11 @@
       ?>
       <?php while (have_posts()) : the_post(); ?>
         <!--表示する内容が入ります。-->
-        <dd class="category-popular__content">
-          <div class="category-popular__thumb-img">
+        <dd class="bottom-popular__content">
+          <div class="bottom-popular__thumb-img">
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
           </div>
-          <p class="category-popular__title">
+          <p class="bottom-popular__title">
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
           </p>
         </dd>

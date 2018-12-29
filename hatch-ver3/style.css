@@ -7150,7 +7150,7 @@ a:hover img {
       background-color: transparent !important; }
 
 .breadcrumbs {
-  padding-left: 13px !important;
+  padding-left: 24px !important;
   font-size: 10px;
   color: #a5a5a5;
   letter-spacing: 1px; }
@@ -8188,7 +8188,9 @@ button.btn.btn-round-white {
 
 *************************************************/
 .articles__container__bottom {
-  padding-bottom: 80px; }
+  padding-bottom: 30px;
+  width: 1093px;
+  margin: 0 auto; }
   .articles__container__bottom .news-list {
     margin-right: 50px;
     padding-bottom: 50px; }
@@ -8197,22 +8199,23 @@ button.btn.btn-round-white {
       height: auto;
       object-fit: contain; }
     .articles__container__bottom .news-list__title {
-      width: 252px;
-      font-size: 13px;
-      padding-left: 15px; }
-    .articles__container__bottom .news-list__content {
-      padding-bottom: 50px; }
-  .articles__container__bottom .category-popular {
-    width: 770px; }
-    .articles__container__bottom .category-popular__content {
-      width: 250px;
-      padding-bottom: 20px; }
-    .articles__container__bottom .category-popular__title {
-      font-size: 16px;
+      width: 186px;
+      font-size: 12px;
+      padding-left: 15px;
       font-weight: bold; }
-    .articles__container__bottom .category-popular__thumb-img img {
-      width: 258px;
-      height: 155px;
+    .articles__container__bottom .news-list__content {
+      padding-bottom: 15px; }
+  .articles__container__bottom .bottom-popular {
+    width: 720px; }
+    .articles__container__bottom .bottom-popular__content {
+      width: 208px;
+      padding-bottom: 20px; }
+    .articles__container__bottom .bottom-popular__title {
+      font-size: 13px;
+      font-weight: bold; }
+    .articles__container__bottom .bottom-popular__thumb-img img {
+      width: 207px;
+      height: 129px;
       object-fit: contain; }
 
 .more-search-article__btn {
@@ -8475,7 +8478,7 @@ button.btn.btn-round-white {
   width: 1246px;
   margin: 0 auto; }
 .pages__container {
-  width: 1010px;
+  width: 1085px;
   margin: 0 auto 80px auto; }
 .pages__header {
   font-size: 10px;
