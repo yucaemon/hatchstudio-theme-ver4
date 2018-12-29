@@ -1,26 +1,36 @@
 .paging-nav
-  .paging-nav__container.flexbox--spacebetween
-    .paging-nav__pre
-      .paging-nav__head.flexbox
-        .paging-nav__head__img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/paging-img-right.svg">
-        .paging-nav__head__txt
-          前の記事へ
-      .paging-nav__body.flexbox
-        .paging-nav__body__img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/test-img.jpg">
-        .paging-nav__body__read
-          4コマ劇場『ホストマザーとの出会いとアメリカの緑茶の衝撃。』7話
+  :plain
+    <div class="paging-nav__container flexbox--spacebetween">
 
-    .paging-nav__next
-      .paging-nav__head.flexbox
-        .paging-nav__head__txt
-          次の記事へ
-        .paging-nav__head__img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/paging-img-left.svg">
+    <?php
+    $prevpost = get_adjacent_post(false, '', true); //前の記事
+    $nextpost = get_adjacent_post(false, '', false); //次の記事
+    if( $prevpost or $nextpost ){ //前の記事、次の記事いずれか存在しているとき
+    ?>
+    <?php
+    if ( $nextpost ) { //前の記事が存在しているとき
+    echo '<a href="' . get_permalink($nextpost->ID) . '" title="'. get_the_title($nextpost->ID) . '" id="next" class="clearfix">
+    <div class="paging-nav__head flexbox"><div class="paging-nav__head__txt flexbox"><i class="fas fa-angle-left"></i><div class="next_title">前の記事へ</div></div></div>
+    <div class="paging-nav__body flexbox">
+    <div class="paging-nav__body__img">' . get_the_post_thumbnail($nextpost->ID, array(100,100)) . '</div>
+    <p class="paging-nav__body__read">'. get_the_title($nextpost->ID) . '</p>
+    </div></a>';
+    } else { //次の記事が存在しないとき
+    echo '<div id="next_no"><a href="' .home_url('/'). '"><div id="prev_next_home"><i class="fa fa-home"></i>
+    </div></a></div>';
+    }
+    if ( $prevpost ) { //次の記事が存在しているとき
+    echo '<a href="' . get_permalink($prevpost->ID) . '" title="' . get_the_title($prevpost->ID) . '" id="prev" class="clearfix">
+    <div class="paging-nav__head flexbox--h-bottom"><div class="paging-nav__head__txt flexbox"><div class="next_title">前の記事へ</div><i class="fas fa-angle-right"></i></div></div>
+    <div class="paging-nav__body flexbox">
+    <p class="paging-nav__body__read">' . get_the_title($prevpost->ID) . '</p>
+    <div class="paging-nav__body__img">' . get_the_post_thumbnail($prevpost->ID, array(100,100)) . '</div>
+    </div></a>';
+    } else { //前の記事が存在しないとき
+    echo  '<div id="prev_no"><a href="' .home_url('/'). '"><div id="prev_next_home"><i class="fa fa-home"></i>
+    </div></a></div>';
+    }
 
-      .paging-nav__body.flexbox
-        .paging-nav__body__read
-          4コマ劇場『ホストマザーとの出会いとアメリカの緑茶の衝撃。』7話
-        .paging-nav__body__img
-          <img src="<?php echo get_template_directory_uri(); ?>/images/test-img.jpg">
+    ?>
+    <?php } ?>
+    </div>

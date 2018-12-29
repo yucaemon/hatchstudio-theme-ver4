@@ -9,7 +9,7 @@ POPULOR
 <i class="far fa-clock"></i>
 </div>
 <div class='header-side__txt--jp'>
-トレンド週間ランキング
+週間ランキング
 </div>
 <div class='header-side__img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-right.svg">

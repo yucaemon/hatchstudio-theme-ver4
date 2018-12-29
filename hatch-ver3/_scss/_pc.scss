@@ -52,9 +52,7 @@
     width: 750px;
   }
 
-  .side-contain {
-    width: 400px;
-  }
+
 
 
 
@@ -64,6 +62,12 @@
   index.page
 
 *************************************************/
+
+  .index {
+    .side-contain {
+      width: 400px;
+    }
+  }
 
   ul.post-lists.article-list {
     display: flex;

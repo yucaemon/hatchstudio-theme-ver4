@@ -50,6 +50,7 @@
 <?php include('components-php/affiliate-ad.php'); ?>
 <?php include('components-php/article-sns-btns.php'); ?>
 <?php include('components-php/related-article.php'); ?>
+<?php include('components-php/this-page-tags.php'); ?>
 <?php include('components-php/paging-nav.php'); ?>
 </div>
 <div class='column-4 side-contain'>
@@ -64,11 +65,9 @@
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <!-- 広告 -->
-<?php include('components-php/keywords-category.php'); ?>
+<?php include('components-php/lists-popular-total.php'); ?>
+<?php include('components-php/lists-popular-month.php'); ?>
 <?php include('components-php/keywords.php'); ?>
-<?php include('components-php/news-list.php'); ?>
-<?php include('components-php/news-list.php'); ?>
-<?php include('components-php/keywords-category.php'); ?>
 <?php include('components-php/annie-ad-side.php'); ?>
 <?php include('components-php/house-ad-side.php'); ?>
 <?php include('components-php/business-ad-side.php'); ?>

@@ -132,7 +132,7 @@ a:hover img { opacity: 0.5 ; }
 .side-fixed-content{
   position: fixed;
   top: 15%;
-  width: 334px;
+  width: 313px;
 }
 
 
@@ -530,6 +530,9 @@ body {
 
 
   .news-list {
+    &__container{
+      padding-bottom:50px;
+    }
     &__header{
       padding-left: 10px;
     }
@@ -658,6 +661,7 @@ body {
   }
 
   .keywords{
+    padding-bottom: 50px;
     .tag-cloud-link {
       display: inline-block;
       margin-bottom: 10px;
@@ -703,10 +707,10 @@ body {
     }
     &-content {
       margin: 0 auto 40px 0;
-      height: 200px;
+      height: 250px;
       text-align: center;
       background-color: $pink_01;
-      padding: 10px 33px;
+      padding: 25px 24px
 
     }
     &-header-main {
@@ -767,24 +771,28 @@ body {
 .business-ad-side {
   .business {
     &-img {
-      width: 88px;
+      width: 85px;
       padding-right: 10px;
 
     }
     &-content {
       background-color: #ffde8d;
-      height: 190px;
+      height: 175px;
       text-align: center;
       padding: 29px;
 
     }
     &-header-txt {
-      font-size: 21px;
+      font-size: 19px;
       color: #ee9b2d;
       font-weight: bold;
       padding-bottom: 21px;
       letter-spacing: 1px;
       line-height: 1.5;
+    }
+
+    button.btn.btn-round-white{
+      margin-top: 17px;
     }
   }
 }
@@ -1288,6 +1296,24 @@ button.btn.btn-round-white{
 }
 
 
+.this-page {
+  padding-bottom: 30px;
+
+  &__tags a, .tag-cloud-link {
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: #ffede9;
+    color: #ffa5a5;
+    letter-spacing: 1px;
+    font-size: 12px !important;
+  }
+
+
+}
+
+
 
 
 
@@ -1299,6 +1325,7 @@ button.btn.btn-round-white{
 
 
 .single-page {
+
 
 
   &__container {
@@ -1548,6 +1575,16 @@ button.btn.btn-round-white{
     padding-bottom: 30px;
   }
 
+  .side-contain{
+    .news-list__title {
+      width: 162px;
+      font-size: 11px;
+    }
+    .header-side__img {
+      width: 21px;
+    }
+  }
+
 }
 
 
@@ -1561,13 +1598,18 @@ button.btn.btn-round-white{
 
   &__head {
     padding-bottom: 10px;
-    line-height: 2.3;
-    &__img {
-      width: 39px;
-    }
+    line-height: 3;
 
     &__txt {
-      padding: 0 10px;
+      .next_title {
+        padding: 0 15px;
+      }
+    }
+    i {
+      background-color: $pink_02;
+      color: #fff;
+      font-size: 37px;
+      padding: 6px 9px;
     }
   }
 
@@ -1576,18 +1618,10 @@ button.btn.btn-round-white{
       width: 120px;
     }
     &__read {
-      width: 161px;
+      width: 170px;
       font-size: 11px;
       padding: 0 10px;
-    }
-  }
-
-  &__next {
-    .paging-nav__head {
-      justify-content: flex-end;
-    }
-    .paging-nav__body__read{
-    text-align: right;
+      font-weight: bold;
     }
   }
 
@@ -1610,6 +1644,7 @@ button.btn.btn-round-white{
 
   .news-list {
     margin-right:50px;
+    padding-bottom: 50px;
 
     &__thumb-img img {
       width: 125px;
@@ -1623,10 +1658,10 @@ button.btn.btn-round-white{
     }
 
     &__content {
-      padding-bottom: 20px;
+      padding-bottom: 50px;
     }
-
   }
+
 
   .category-popular {
     width: 770px;
@@ -1746,9 +1781,9 @@ button.btn.btn-round-white{
 
 .related-article {
   &__content {
-    padding-top: 10px;
+    padding-bottom: 20px;
   }
-  .related-article__container::after{
+  &__container::after{
     content:"";
     display: block;
     width:30%;
@@ -1756,18 +1791,18 @@ button.btn.btn-round-white{
 
   &__img {
     img {
-      width: 200px;
+      width: 235px;
       height: 150px;
       object-fit: cover;
     }
   }
   &__text {
     @include fts(8, 8);
-    width: 200PX;
-    padding: 10px 0;
+    width: 235px;
+    padding-bottom: 10px;
     letter-spacing: 1px;
     font-weight: bold;
-    line-height: 17px;
+    line-height: 21px;
     font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
   }
 }
