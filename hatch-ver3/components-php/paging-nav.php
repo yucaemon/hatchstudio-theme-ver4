@@ -15,7 +15,7 @@ echo '<a href="' . get_permalink($nextpost->ID) . '" title="'. get_the_title($ne
 <p class="paging-nav__body__read">'. get_the_title($nextpost->ID) . '</p>
 </div></a>';
 } else { //次の記事が存在しないとき
-echo '<div id="next_no"><a href="' .home_url('/'). '"><div id="prev_next_home"><i class="fa fa-home"></i>
+echo '<div id="next_no"><a href="' .home_url('/'). '"><div id="prev_next_home"></i>
 </div></a></div>';
 }
 if ( $prevpost ) { //次の記事が存在しているとき
@@ -26,7 +26,7 @@ echo '<a href="' . get_permalink($prevpost->ID) . '" title="' . get_the_title($p
 <div class="paging-nav__body__img">' . get_the_post_thumbnail($prevpost->ID, array(100,100)) . '</div>
 </div></a>';
 } else { //前の記事が存在しないとき
-echo  '<div id="prev_no"><a href="' .home_url('/'). '"><div id="prev_next_home"><i class="fa fa-home"></i>
+echo  '<div id="prev_no"><a href="' .home_url('/'). '"><div id="prev_next_home">
 </div></a></div>';
 }
 

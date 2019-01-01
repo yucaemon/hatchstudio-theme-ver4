@@ -7043,6 +7043,9 @@ figure:hover figcaption {
   margin-bottom: 50px;
   background-size: contain; }
 
+.youtube-container {
+  padding: 20px 0; }
+
 .youtube-video {
   position: relative;
   width: 100%;
@@ -7830,10 +7833,8 @@ button.btn.btn-round-white {
     font-weight: bold;
     letter-spacing: 3px; }
   .blogger__header--img {
-    position: absolute;
-    left: 166px;
-    top: 3144px;
-    width: 93px; }
+    width: 93px;
+    margin-right: 30px; }
   .blogger__box {
     text-align: center;
     width: 160px;
@@ -7942,11 +7943,12 @@ button.btn.btn-round-white {
 .single-page__container {
   width: 1200px; }
 .single-page__head-title {
-  font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+  color: #222;
   font-weight: bold;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.55556;
+  line-height: 1;
   letter-spacing: 3px;
   line-height: 41px;
   margin-bottom: 20px; }
@@ -7961,6 +7963,12 @@ button.btn.btn-round-white {
     border: solid 1px #f9b19d;
     padding: 6px;
     border-radius: 5px; }
+.single-page__views {
+  line-height: 1;
+  padding-right: 20px;
+  font-weight: bold; }
+  .single-page__views i {
+    color: #ff846a; }
 .single-page__sns-icons {
   width: auto; }
   .single-page__sns-icons .sns-icons__img {
@@ -7983,28 +7991,51 @@ button.btn.btn-round-white {
   padding-right: 10px;
   color: #9c9c9c; }
 .single-page__entry-content {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1;
+  line-height: 1.6em;
+  word-wrap: break-word;
+  padding-bottom: 25px;
   margin-bottom: 20px;
-  text-align: left; }
+  display: block;
+  color: #222;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif; }
   .single-page__entry-content p {
-    font-size: 10px;
-    font-size: 1rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 1;
-    line-height: 22px;
+    line-height: 1.6em;
     word-wrap: break-word;
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    display: block;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif; }
   .single-page__entry-content .headline-second {
-    font-size: 13.5px;
-    font-size: 1.35rem;
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    color: #222;
+    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1;
     font-weight: bold;
-    border-bottom: solid 3px #f2716e;
+    border-bottom: solid 3px #ffcf6e;
     padding: 10px 0;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    line-height: 1.3; }
+    margin: 20px 0;
+    letter-spacing: 3px;
+    line-height: 41px; }
   .single-page__entry-content .headline-third {
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 1;
+    line-height: 7px;
+    font-weight: bold;
+    background-color: #ffcf6e;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin: 20px 0; }
+  .single-page__entry-content .headline-fourth {
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    color: #222;
     font-size: 12px;
     font-size: 1.2rem;
     line-height: 1;
@@ -8013,7 +8044,7 @@ button.btn.btn-round-white {
     padding: 10px 0 10px 20px;
     margin-bottom: 20px;
     margin-top: 20px;
-    border-left: solid 6px #f2716e; }
+    border-left: solid 6px #ffcf6e; }
   .single-page__entry-content img {
     padding: 30px 0;
     display: block;
@@ -8028,6 +8059,8 @@ button.btn.btn-round-white {
     padding: 20px;
     margin: 30px 0; }
     .single-page__entry-content .detail-box01__title {
+      color: #222;
+      font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
       border-bottom: solid 1px #d4d4d4;
       margin-bottom: 20px;
       font-size: 10px;
@@ -8044,7 +8077,7 @@ button.btn.btn-round-white {
       color: #9c9c9c;
       padding-bottom: 11px;
       line-height: 1.5; }
-      .single-page__entry-content .detail-box01__contain p i.fa {
+      .single-page__entry-content .detail-box01__contain p i {
         font-size: 9px;
         font-size: 0.9rem;
         line-height: 1;
@@ -8054,10 +8087,10 @@ button.btn.btn-round-white {
         font-size: 0.8rem;
         line-height: 1;
         color: #9c9c9c; }
-  .single-page__entry-content .detail-box02, .single-page__entry-content .detail-box03 {
+  .single-page__entry-content .detail-box02, .single-page__entry-content .detail-box03, .single-page__entry-content .detail-author-box {
     border: solid 1px #d4d4d4;
     margin: 30px 0; }
-    .single-page__entry-content .detail-box02 a, .single-page__entry-content .detail-box03 a {
+    .single-page__entry-content .detail-box02 a, .single-page__entry-content .detail-box03 a, .single-page__entry-content .detail-author-box a {
       color: #333; }
     .single-page__entry-content .detail-box02__img {
       width: 21%;
@@ -8080,7 +8113,7 @@ button.btn.btn-round-white {
       font-weight: bold;
       letter-spacing: 1px;
       line-height: 20px; }
-    .single-page__entry-content .detail-box02 img, .single-page__entry-content .detail-box03 img {
+    .single-page__entry-content .detail-box02 img, .single-page__entry-content .detail-box03 img, .single-page__entry-content .detail-author-box img {
       padding: 0;
       width: 100%;
       height: 100%;
@@ -8141,14 +8174,90 @@ button.btn.btn-round-white {
     color: #9c9c9c; }
   .single-page__entry-content .detail-box03 i.fa {
     padding-right: 6px; }
-.single-page .sourcelink {
+  .single-page__entry-content .detail-author-box__img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 25px; }
+  .single-page__entry-content .detail-author-box__txt {
+    width: 500px;
+    font-size: 16px;
+    line-height: 1.4; }
+  .single-page__entry-content .detail-author-box__title {
+    color: #222;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 19px;
+    letter-spacing: 0.9px; }
+  .single-page__entry-content .detail-author-box__read {
+    color: #b5b5b5;
+    font-size: 13px;
+    padding-bottom: 15px; }
+  .single-page__entry-content .detail-author-box i {
+    font-size: 20px;
+    color: #fff; }
+  .single-page__entry-content .detail-author-box .facebook__btn__small {
+    background-color: #3d9bff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 10px; }
+  .single-page__entry-content .detail-author-box .twitter__btn__small {
+    background-color: #98e8ec;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0; }
+  .single-page__entry-content .detail-author-box .web__btn__small {
+    background-color: #ff846a;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0; }
+.single-page .sourcelink, .single-page .photo-info {
   font-size: 7px;
   font-size: 0.7rem;
   line-height: 1;
   color: #b5b5b5;
-  padding-bottom: 10px; }
-  .single-page .sourcelink a {
+  padding-bottom: 20px; }
+  .single-page .sourcelink a, .single-page .photo-info a {
     color: #b5b5b5; }
+.single-page .external-link {
+  padding: 20px;
+  border: solid 1px #dadada;
+  margin-bottom: 20px;
+  color: #a7a7a7;
+  font-size: 17px; }
+  .single-page .external-link i {
+    padding-right: 10px; }
+  .single-page .external-link__title {
+    font-size: 17px;
+    color: #222;
+    font-weight: bold;
+    padding-bottom: 10px; }
+.single-page .detail-balloon-box {
+  padding-bottom: 30px;
+  padding-left: 30px; }
+  .single-page .detail-balloon-box__img img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: solid 2px #ffcf6e;
+    border-radius: 50%;
+    padding: 0; }
+  .single-page .detail-balloon-box__title {
+    text-align: center;
+    font-size: 11px;
+    width: 80px;
+    line-height: 1.2;
+    padding-top: 7px; }
+  .single-page .detail-balloon-box__read {
+    width: 591px;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 20px;
+    color: #222; }
 .single-page .affiliate-ad {
   margin: 0 auto;
   width: 336px;

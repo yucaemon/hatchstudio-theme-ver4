@@ -107,31 +107,6 @@ add_filter('posts_search', 'my_posy_search');
 
 //　ショートコード
 
-function h2Func( $atts, $content = null ) {
-    return '<h2 class="headline-second">' . $content . '</h2>';
-}
-add_shortcode('見出し2', 'h2Func');
-
-
-function h3Func( $atts, $content = null ) {
-    return '<h3 class="headline-second">' . $content . '</h3>';
-}
-add_shortcode('見出し3', 'h3Func');
-
-
-
-function box2Func( $atts, $content = null ) {
-    return '<div class="detail-box02 flexbox">' . $content . '</div>';
-}
-add_shortcode('画像入りbox2', 'box2Func');
-
-function box3Func( $atts, $content = null ) {
-    return '<div class="detail-box03 flexbox">' . $content . '</div>';
-}
-add_shortcode('商品box', 'box3Func');
-
-
-
 
 //見出しのショートコード
 function titleFunc( $atts, $content = null ) {
@@ -144,6 +119,43 @@ function titleFunc( $atts, $content = null ) {
 add_shortcode('title', 'titleFunc');
 
 
+function h2Func( $atts, $content = null ) {
+    return '<h2 class="headline-second">' . $content . '</h2>';
+}
+add_shortcode('見出し2', 'h2Func');
+
+
+function h3Func( $atts, $content = null ) {
+    return '<h3 class="headline-third">' . $content . '</h3>';
+}
+add_shortcode('見出し3', 'h3Func');
+
+
+function h4Func( $atts, $content = null ) {
+    return '<h4 class="headline-fourth">' . $content . '</h4>';
+}
+add_shortcode('見出し4', 'h4Func');
+
+//ユーチューブのショートコード
+function youtubeFunc( $atts, $content = null ) {
+    return '<div class="youtube-container">' . $content . '</div>';
+}
+add_shortcode('ユーチューブ', 'youtubeFunc');
+
+
+//boxのショートコード
+function box2Func( $atts, $content = null ) {
+    return '<div class="detail-box02 flexbox">' . $content . '</div>';
+}
+add_shortcode('画像入りbox2', 'box2Func');
+
+function box3Func( $atts, $content = null ) {
+    return '<div class="detail-box03 flexbox">' . $content . '</div>';
+}
+add_shortcode('商品box', 'box3Func');
+
+
+
 //出典のショートコード
 function sourceFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
@@ -151,6 +163,15 @@ function sourceFunc( $atts, $content = null ) {
     return '<div class="sourcelink">出典 <a href="' . $content . '" target="_blank">' . $content . '</a></div>';
 }
 add_shortcode('出典', 'sourceFunc');
+
+
+//写真説明のショートコード
+function photoinfoFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+    ), $atts ) );
+    return '<div class="photo-info">' . $content . '</div>';
+}
+add_shortcode('写真説明', 'photoinfoFunc');
 
 
 //お店詳細のショートコード
@@ -161,7 +182,7 @@ function shopBoxFunc( $atts, $content = null ) {
         'address' => '不明',
         'website' => '不明'
     ), $atts ) );
-    return '<div class="detail-box01"><div class="detail-box01__title">' . $name . '</div><div class="detail-box01__contain"><p><i class="fa fa-map-marker" aria-hidden="true"></i>' . $address . '</p><p><i class="fa fa-clock-o" aria-hidden="true"></i>' . $time . '</a></p><p><a href="' . $website . '" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>WEBサイト</a></p></div></div>';
+    return '<div class="detail-box01"><div class="detail-box01__title">' . $name . '</div><div class="detail-box01__contain"><p><i class="fas fa-map-marker-alt"></i>' . $address . '</p><p><i class="fa fa-clock-o" aria-hidden="true"></i>' . $time . '</a></p><p><a href="' . $website . '" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>WEBサイト</a></p></div></div>';
 }
 add_shortcode('お店詳細', 'shopBoxFunc');
 
@@ -188,6 +209,45 @@ function relatedLinksBoxFunc( $atts, $content = null ) {
     return '<div class="detail-box02 flexbox"><div class="detail-box02__img"><a href="' . $url . '" target="_blank"><img src="' . $img . '"/></a></div><div class="detail-box02__txt"><p>＞関連記事リンク</p><div class="detail-box02__title"><a href="' . $url . '" target="_blank">' . $title . '<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>';
 }
 add_shortcode('関連リンク', 'relatedLinksBoxFunc');
+
+
+//外部リンクのショートコード
+function externallinkFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+       'txt' => '不明',
+       'url' => '不明'
+    ), $atts ) );
+    return '<div class="external-link"><p class="external-link__title">' . $txt . '</p><i class="fas fa-link"></i><a href="' . $url . '" target="_blank">' . $url . '</a></div>';
+}
+add_shortcode('外部リンク', 'externallinkFunc');
+
+
+//記者紹介のショートコード
+function authorinfoFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'img' => '不明',
+        'author_name' => '不明',
+        'read' => '不明',
+        'weblink' => '不明',
+        'facebooklink' => '不明',
+        'twitterlink' => '不明'
+
+    ), $atts ) );
+    return '<div class="detail-author-box flexbox--v-center"><div class="detail-author-box__img"><img src="' . $img . '"/></div><div class="detail-author-box__txt"><div class="detail-author-box__title">' . $author_name . '</div><div class="detail-author-box__read">' . $read . '</div><div class="flexbox"><a href="' . $weblink . '" target="_blank"><div class="web__btn__small" target="_blank"><i class="fas fa-external-link-alt"></i></a></div><a href="' . $facebooklink . '" target="_blank"><div class="facebook__btn__small" target="_blank"><i class="fab fa-facebook-f"></i></div></a><a href="' . $twitterlink . '" target="_blank"><div class="twitter__btn__small" target="_blank"><i class="fab fa-twitter"></i></div></a></div></div></div>';
+}
+add_shortcode('記者紹介', 'authorinfoFunc');
+
+//吹き出しのショートコード
+function balloonFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'img' => '不明',
+        'author_name' => '不明',
+        'read' => '不明'
+
+    ), $atts ) );
+    return '<div class="detail-balloon-box flexbox--v-center"><div><div class="detail-balloon-box__img"><img src="' . $img . '"/></div><div class="detail-balloon-box__title">' . $author_name . '</div></div><div class="detail-balloon-box__txt"><div class="detail-balloon-box__read">' . $read . '</div></div></div>';
+}
+add_shortcode('吹き出し', 'balloonFunc');
 
 
 

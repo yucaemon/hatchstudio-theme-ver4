@@ -1,5 +1,5 @@
 <section class='section ad-banner blogger'>
-<div class='blogger__container'>
+<div class='blogger__container flexbox'>
 <div class='blogger__header--img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/yman.svg">
 </div>

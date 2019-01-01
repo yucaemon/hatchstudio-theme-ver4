@@ -10,20 +10,33 @@
 <h1 class='single-page__head-title'>
 <?php the_title_attribute(); ?>
 </h1>
+<div class='flexbox'>
+<div class='single-page__views'>
+<i class="fas fa-heart"></i>
+<?php if(function_exists('the_views')) {
+  the_views();
+} ?>
+</div>
 <div class='single-page__tags'>
 <?php the_category( '  ',' 　' ); ?>
 <?php $slug_name = basename(get_permalink()); ?>
 </div>
+</div>
 <div class='single-page__detail flexbox--spacebetween'>
 <div class='single-page__sns-icons flexbox'>
 <div class='sns-icons__img'>
+<a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&t=<?php echo get_the_title(); ?>">
 <img src="<?php echo get_template_directory_uri(); ?>/images/share-facebook-icon.svg">
+</a>
 </div>
 <div class='sns-icons__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/share-twitter-icon.svg">
+<a class="btn--twitter" href="http://twitter.com/share?url=<?php the_permalink();?>&text=<?php echo get_the_title(); ?>&via=hatchstudioinc&tw_p=tweetbutton&related=hatchstudioinc">
+<img src="<?php echo get_template_directory_uri(); ?>/images/share-twitter-icon.svg"></a>
 </div>
 <div class='sns-icons__img'>
+<a class="btn--pocket" href="http://getpocket.com/edit?url=<?php the_permalink();?>&title=<?php echo get_the_title;?>">
 <img src="<?php echo get_template_directory_uri(); ?>/images/share-pokect-icon.svg">
+</a>
 </div>
 </div>
 <div class='single-page__post-info flexbox'>
