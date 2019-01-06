@@ -66,7 +66,7 @@
 <div class='outer__inner'>
 <div class='articles__container__bottom flexbox--h-center'>
 <?php include('components-php/bt-news-lists.php'); ?>
-<?php include('components-php/bt-category-month.php'); ?>
+<?php include('components-php/bt-popular-month.php'); ?>
 </div>
 </div>
 </div>
