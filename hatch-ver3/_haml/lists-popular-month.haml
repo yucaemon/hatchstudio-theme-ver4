@@ -13,8 +13,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-right.svg">
 
   .news-list__container
-  :plain
-
+    :plain
       <?php
       $last_month = date('Y-m-d', strtotime('-10 months'));
       $results = $wpdb->get_results("
@@ -40,19 +39,13 @@
         $this_post = get_post( $this_post_id );
       ?>
 
-        <dd class="news-list__content">
-          <div class="iv class="news-list__thumb-img"">
+        <dd class="news-list__content flexbox">
+          <div class="news-list__thumb-img">
             <a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo get_the_post_thumbnail( $this_post->ID, 'thumbnail' ); ?></a>
           </div>
           <div class="news-list__header">
-            <p class="news-list__title><a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo $this_post->post_title; ?></a></p>
+            <p class="news-list__title"><a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo $this_post->post_title; ?></a></p>
           </div>
         </dd>
 
       <?php } ?>
-
-
-
-
-
-
