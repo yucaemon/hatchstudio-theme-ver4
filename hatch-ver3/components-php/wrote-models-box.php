@@ -10,7 +10,7 @@ if ( $user ) :
   <div class="author-profile-description">
 
     <div class="author-profile-sns">
-      <a href="<?php echo get_the_author_meta( 'twitter' ); ?>">この人の記事をもっと見る</a>
+      <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">この人の記事をもっと見る</a>
     </div>
   </div>
 </div>

@@ -7067,7 +7067,7 @@ figure:hover figcaption {
 #douga iframe {
   position: relative;
   left: 0 !important;
-  top: -316px !important;
+  top: -315px !important;
   width: 100% !important;
   height: 300% !important; }
 
@@ -8742,7 +8742,6 @@ button.btn.btn-round-white {
   .wrote-models-lists__img {
     padding-right: 17px; }
     .wrote-models-lists__img img {
-      margin-top: 9px;
       height: 45px;
       width: 45px;
       -webkit-border-radius: 50%;

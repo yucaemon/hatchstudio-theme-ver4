@@ -111,7 +111,10 @@ module.exports = function (grunt) {
                     'service-translate.php': '_haml/service-translate.haml',
                     'service-contens.php': '_haml/service-contens.haml',
                     'hatching-house-pdx.php': '_haml/hatching-house-pdx.haml',
-                    'hatching-real-estate.php': '_haml/hatching-real-estate.haml'
+                    'hatching-real-estate.php': '_haml/hatching-real-estate.haml',
+                    'author.php': '_haml/author.haml'
+
+
 
                 }
             }
