@@ -92,6 +92,7 @@ a:hover img { opacity: 0.5 ; }
   a:before {
     content: "#";
     padding-right: 3px;
+    color: #f2695d;
   }
 }
 
@@ -809,7 +810,7 @@ body {
 .footer,.footer-sp {
   a {
     text-decoration: none;
-    color: #fff;
+    color: #57bac5;
   }
   a:hover{
     text-decoration: underline;
@@ -817,7 +818,7 @@ body {
 
   &__content {
     background-color: #bee4e6;
-    color: #fff;
+    color: #57bac5;
     padding: 50px;
 
     .footer__box + .footer__box{
@@ -1306,7 +1307,7 @@ button.btn.btn-round-white{
     display: inline-block;
     margin-bottom: 10px;
     background-color: #ffede9;
-    color: #ffa5a5;
+    color: $font_color_head;
     letter-spacing: 1px;
     font-size: 12px !important;
   }

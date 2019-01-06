@@ -7092,7 +7092,8 @@ a:hover img {
 
 .keywords a:before {
   content: "#";
-  padding-right: 3px; }
+  padding-right: 3px;
+  color: #f2695d; }
 
 ::selection {
   background: #ffe0e0; }
@@ -7599,12 +7600,12 @@ body {
 *************************************************/
 .footer a, .footer-sp a {
   text-decoration: none;
-  color: #fff; }
+  color: #57bac5; }
 .footer a:hover, .footer-sp a:hover {
   text-decoration: underline; }
 .footer__content, .footer-sp__content {
   background-color: #bee4e6;
-  color: #fff;
+  color: #57bac5;
   padding: 50px; }
   .footer__content .footer__box + .footer__box, .footer-sp__content .footer__box + .footer__box {
     padding-left: 39px; }
@@ -7931,7 +7932,7 @@ button.btn.btn-round-white {
     display: inline-block;
     margin-bottom: 10px;
     background-color: #ffede9;
-    color: #ffa5a5;
+    color: #222;
     letter-spacing: 1px;
     font-size: 12px !important; }
 
