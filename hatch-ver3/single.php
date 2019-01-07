@@ -64,6 +64,7 @@
 <?php include('components-php/article-sns-btns.php'); ?>
 <?php include('components-php/related-article.php'); ?>
 <?php include('components-php/this-page-tags.php'); ?>
+<?php include('components-php/category-keywords.php'); ?>
 <?php include('components-php/paging-nav.php'); ?>
 </div>
 <div class='column-4 side-contain'>

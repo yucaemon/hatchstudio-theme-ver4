@@ -39,7 +39,11 @@ while(have_posts()): the_post();
 </li>
 
 <?php endwhile; endif; else: ?>
-  <h1 class='components-title'><i class="fa fa-search"></i>『 <?php echo $search_query; ?> 』 に一致する情報は見つかりませんでした。</span></h1>
+  <div class="search__not-find">
+    <h1 class='components-title'><i class="fa fa-search"></i>『 <?php echo $search_query; ?> 』 に一致する情報は見つかりませんでした。</span></h1>
+    <div class="search__not-find__body"><i class="fas fa-exclamation-triangle"></i></div>
+    <?php include('components-php/category-keywords.php'); ?>
+  </div>
 <?php endif; ?>
 </ul>
 <?php include('components-php/affiliate-ad.php'); ?>

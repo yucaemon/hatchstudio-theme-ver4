@@ -86,6 +86,8 @@ module.exports = function (grunt) {
                     'components-php/lists-news.php': '_haml/lists-news.haml',
                     'components-php/bt-popular-month.php': '_haml/bt-popular-month.haml',
                     'components-php/bt-news-lists.php': '_haml/bt-news-lists.haml',
+                    'components-php/category-keywords.php': '_haml/category-keywords.haml',
+
 
 
 

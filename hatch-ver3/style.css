@@ -7176,7 +7176,8 @@ a:hover img {
   margin-bottom: 30px;
   letter-spacing: 0.9px;
   color: #737373;
-  background-color: #ffede9; }
+  background-color: #ffede9;
+  width: 100%; }
 
 .sns-icons {
   width: 300px; }
@@ -7516,9 +7517,9 @@ body {
     color: #6d6d6d;
     letter-spacing: 0.2px;
     font-size: 15px !important;
-    background-color: #fff5f5;
+    background-color: #ffede9;
     padding: 5px 10px;
-    border-radius: 9px;
+    border-radius: 5px;
     margin: 6px 7px; }
   .side-contain .keywords a:before {
     color: #f2695d; }
@@ -8522,6 +8523,13 @@ button.btn.btn-round-white {
 	search page
 
 *************************************************/
+.search__not-find__body {
+  text-align: center; }
+  .search__not-find__body i.fa-exclamation-triangle {
+    font-size: 66px;
+    color: #6d6d6d;
+    margin-bottom: 30px; }
+
 /*
 
 	featured page
