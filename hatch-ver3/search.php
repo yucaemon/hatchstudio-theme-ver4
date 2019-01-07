@@ -13,43 +13,35 @@
   $search_query = get_search_query();
 ?>
 <div class='middle-contain'>
-<h1 class='components-title'>
-<i class="fa fa-search"></i>『<?php echo $search_query; ?>』の関連記事が<span>（<?php echo $total_results; ?>件）あります</span>
-</h1>
-<ul class="article-list">
 <?php if ( $total_results >0 ) : ?>
+  <h1 class='components-title'><i class="fa fa-search"></i>『<?php echo $search_query; ?>』の関連記事が<span>（<?php echo $total_results; ?>件）あります。</span></h1>
 <?php endif; ?>
+
+<ul class='post-lists article-list flexbox--spacebetween'>
 <?php
 if( $total_results >0 ):
 if(have_posts()):
 while(have_posts()): the_post();
 ?>
-
-<li class='flexbox'>
-  <div class='article-list__img'>
+<li class=''>
+  <div class='post-lists__img article-list__img'>
     <a href="<?php the_permalink(); ?>">
-      <?php the_post_thumbnail( 'post-thumbnails', array('class' => 'article-list__img') ); ?>
+      <?php the_post_thumbnail( 'post-thumbnails', array('class' => 'post-lists__img article-list__img') ); ?>
     </a>
   </div>
-  <div class='article-list__txt'>
+  <div class='post-lists__text article-list__text'>
     <a href="<?php the_permalink(); ?>">
       <div class="article-list__text">
-      <h3 class="list-title"><?php echo mb_substr($post->post_title, 0, 20).'…'; ?></h3>
-      <p class='list-read'><?php echo mb_substr(strip_tags($post-> post_content),0,100) ; ?></p>
+      <h3 class='post-lists__title list-title'><?php the_title(); ?></h3>
       </div>
     </a>
   </div>
 </li>
 
 <?php endwhile; endif; else: ?>
-『 <?php echo $search_query; ?> 』 に一致する情報は見つかりませんでした。
+  <h1 class='components-title'><i class="fa fa-search"></i>『 <?php echo $search_query; ?> 』 に一致する情報は見つかりませんでした。</span></h1>
 <?php endif; ?>
 </ul>
-<div class='more-page'>
-<div class='more-page__btn big-btn'>
-<a href="<?php echo esc_url( home_url( '/archive/' ) ); ?>">> 記事一覧ページへ</a>>
-</div>
-</div>
 <?php include('components-php/affiliate-ad.php'); ?>
 <?php include('components-php/article-sns-btns.php'); ?>
 </div>

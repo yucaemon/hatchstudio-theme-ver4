@@ -105,7 +105,67 @@ add_filter('posts_search', 'my_posy_search');
 
 
 
-//　ショートコード
+//　検索フォームフィルタ（タイトル内のみ検索）
+function wpse_11826_search_by_title( $search, $wp_query ) {
+    if ( ! empty( $search ) && ! empty( $wp_query->query_vars['search_terms'] ) ) {
+        global $wpdb;
+
+        $q = $wp_query->query_vars;
+        $n = ! empty( $q['exact'] ) ? '' : '%';
+
+        $search = array();
+
+        foreach ( ( array ) $q['search_terms'] as $term )
+            $search[] = $wpdb->prepare( "$wpdb->posts.post_title LIKE %s", $n . $wpdb->esc_like( $term ) . $n );
+
+        if ( ! is_user_logged_in() )
+            $search[] = "$wpdb->posts.post_password = ''";
+
+        $search = ' AND ' . implode( ' AND ', $search );
+    }
+
+    return $search;
+}
+
+add_filter( 'posts_search', 'wpse_11826_search_by_title', 10, 2 );
+
+
+//検索フォームフィルタ（タグ内からも検索する機能を追加）
+function custom_search_where($where){
+  global $wpdb;
+  if (is_search())
+    $where .= "OR (t.name LIKE '%".get_search_query()."%' AND {$wpdb->posts}.post_status = 'publish')";
+  return $where;
+}
+
+function custom_search_join($join){
+  global $wpdb;
+  if (is_search())
+    $join .= "LEFT JOIN {$wpdb->term_relationships} tr ON {$wpdb->posts}.ID = tr.object_id INNER JOIN {$wpdb->term_taxonomy} tt ON tt.term_taxonomy_id=tr.term_taxonomy_id INNER JOIN {$wpdb->terms} t ON t.term_id = tt.term_id";
+  return $join;
+}
+
+function custom_search_groupby($groupby){
+  global $wpdb;
+
+  // we need to group on post ID
+  $groupby_id = "{$wpdb->posts}.ID";
+  if(!is_search() || strpos($groupby, $groupby_id) !== false) return $groupby;
+
+  // groupby was empty, use ours
+  if(!strlen(trim($groupby))) return $groupby_id;
+
+  // wasn't empty, append ours
+  return $groupby.", ".$groupby_id;
+}
+
+add_filter('posts_where','custom_search_where');
+add_filter('posts_join', 'custom_search_join');
+add_filter('posts_groupby', 'custom_search_groupby');
+
+
+
+
 
 
 //見出しのショートコード
