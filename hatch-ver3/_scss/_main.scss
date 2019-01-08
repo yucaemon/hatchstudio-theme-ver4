@@ -416,6 +416,9 @@ body {
       padding:0 10px;
       display: table-cell;
       vertical-align: middle;
+      a{
+        color: #fff;
+      }
     }
 
   }
@@ -1015,24 +1018,6 @@ body {
 }
 
 
-
-
-
-
-button.btn.btn-round-white{
-    background : #FFFFFF;
-    padding:10px 20px;
-    font-size: 14px;
-    box-shadow: 3px 3px #b2b2b2;
-    background : rgba(255, 255, 255, 1);
-    border-style : Solid;
-    border-color : #10100F;
-    border-color : rgba(16, 16, 15, 1);
-    border-radius : 12px;
-    -moz-border-radius : 12px;
-    -webkit-border-radius : 12px;
-}
-
 .second-section {
   .middle-contain .article-list li {
     width:auto;
@@ -1139,6 +1124,7 @@ button.btn.btn-round-white{
 
   &-header-sub {
     letter-spacing: 3px;
+    padding-bottom: 10px;
   }
 
   &-header-txt {
@@ -2351,18 +2337,15 @@ button.btn.btn-round-white{
   .notfind__body__img {
     width: 192px;
     margin: 0 auto;
+    padding-bottom: 25px;
   }
 
   .notfind__btn {
-    margin: 30px auto;
     width: 200px;
     text-align: center;
-    padding: 10px;
-    background-color: $main_color;
-    color: #fff;
     font-size: 13px;
-    letter-spacing: 2px;
-    border-radius: 5px;
+    height: 48px;
+    line-height: 42px;
 
     a{
       color: #fff;
@@ -2631,17 +2614,6 @@ contact-form (コンポーネンツ)
   .form-group {
     margin-bottom: 2rem;
     text-align: right;
-  }
-
-  .submit-btn {
-    color: #fff;
-    letter-spacing: 2px;
-    background-color: $pink_02;
-    border: #7c7c80;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 20px;
-    box-shadow: 3px 3px #d4d4d4;
   }
 
 

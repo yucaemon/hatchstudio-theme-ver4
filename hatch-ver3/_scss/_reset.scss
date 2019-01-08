@@ -61,6 +61,13 @@ select::-ms-expand {
   display: none;
 }
 
-input[type="text"]:focus {
-  outline: 0;
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    outline: none ;
+}
+*:focus {
+outline: none ;
 }

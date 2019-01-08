@@ -163,7 +163,10 @@ figure:hover figcaption {
 	opacity: 1;
 
 	a.megamenu-inner-text{
-		color: #a9a9a9;
+	color: #666;
+	}
+	a.megamenu-inner-text:hover{
+		text-decoration: underline;
 	}
 }
 

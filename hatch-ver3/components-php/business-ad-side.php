@@ -7,8 +7,8 @@
 <div class='business-img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/yman.svg">
 </div>
-<button class='btn btn-round-white'>
-サイトはこちらから
+<button class='btn btn-round-white-02'>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>">依頼はこちら</a>
 </button>
 </div>
 </div>

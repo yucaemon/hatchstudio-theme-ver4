@@ -6809,8 +6809,65 @@ select {
 select::-ms-expand {
   display: none; }
 
-input[type="text"]:focus {
-  outline: 0; }
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  outline: none; }
+
+*:focus {
+  outline: none; }
+
+.button-pink-01 {
+  display: block;
+  width: 250px;
+  height: 70px;
+  line-height: 65px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ff846a;
+  /*ボタン色*/
+  border-bottom: solid 6px #ec6c00;
+  /*下線色*/
+  border-radius: 5px;
+  /*角丸*/
+  margin: 0 auto; }
+
+.button-pink-01:hover {
+  background-color: #fdc33a;
+  /*ボタン色*/
+  border-bottom: solid 6px #f39800;
+  /*下線色*/ }
+
+.button-pink-01:active {
+  margin-top: 6px;
+  border-bottom: none; }
+
+.btn-round-white-02 {
+  background: #FFFFFF;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: white;
+  border-style: Solid;
+  border-color: #5f5f5f;
+  border-color: #10100f;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  box-shadow: 3px 3px #bbbbbb; }
+  .btn-round-white-02 a {
+    text-decoration: none;
+    color: #222; }
+  .btn-round-white-02 a:hover {
+    color: #222; }
+
+.btn-round-white-02:hover {
+  box-shadow: 3px 3px #828282; }
+
+.btn-round-white-02:active {
+  margin-top: 3px;
+  box-shadow: none; }
 
 .margin-center {
   margin: 0 auto; }
@@ -6966,7 +7023,9 @@ figure:hover figcaption {
   max-height: 9999px;
   opacity: 1; }
   .gnav > li:hover .megamenu a.megamenu-inner-text {
-    color: #a9a9a9; }
+    color: #666; }
+  .gnav > li:hover .megamenu a.megamenu-inner-text:hover {
+    text-decoration: underline; }
 
 .megamenu {
   background: #ffe4e4;
@@ -7347,6 +7406,8 @@ body {
   padding: 0 10px;
   display: table-cell;
   vertical-align: middle; }
+  .header-bar .logo__title a {
+    color: #fff; }
 .header-bar .header-bar__nav__list {
   display: flex; }
 .header-bar__nav__item {
@@ -7745,19 +7806,6 @@ body {
   background: linear-gradient(135deg, #f6cdc4 10px, transparent 0), linear-gradient(225deg, #f6cdc4 10px, transparent 0);
   background-size: 20px 20px; }
 
-button.btn.btn-round-white {
-  background: #FFFFFF;
-  padding: 10px 20px;
-  font-size: 14px;
-  box-shadow: 3px 3px #b2b2b2;
-  background: white;
-  border-style: Solid;
-  border-color: #10100F;
-  border-color: #10100f;
-  border-radius: 12px;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px; }
-
 .second-section .middle-contain .article-list li {
   width: auto; }
 .second-section .middle-contain .article-list__text {
@@ -7826,7 +7874,8 @@ button.btn.btn-round-white {
     font-size: 36px;
     color: #fff; }
   .annie-header-sub {
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    padding-bottom: 10px; }
   .annie-header-txt {
     font-size: 14px;
     padding-bottom: 20px;
@@ -8710,17 +8759,14 @@ button.btn.btn-round-white {
     text-align: center; }
 .error-page .notfind__body__img {
   width: 192px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 25px; }
 .error-page .notfind__btn {
-  margin: 30px auto;
   width: 200px;
   text-align: center;
-  padding: 10px;
-  background-color: #f2716e;
-  color: #fff;
   font-size: 13px;
-  letter-spacing: 2px;
-  border-radius: 5px; }
+  height: 48px;
+  line-height: 42px; }
   .error-page .notfind__btn a {
     color: #fff;
     text-underline: none; }
@@ -8916,15 +8962,6 @@ contact-form (コンポーネンツ)
   .contact-form .form-group {
     margin-bottom: 2rem;
     text-align: right; }
-  .contact-form .submit-btn {
-    color: #fff;
-    letter-spacing: 2px;
-    background-color: #ff846a;
-    border: #7c7c80;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 20px;
-    box-shadow: 3px 3px #d4d4d4; }
   .contact-form .contact-form__img img {
     width: 109px; }
   .contact-form .notice-box {

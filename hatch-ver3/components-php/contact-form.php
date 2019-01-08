@@ -60,7 +60,7 @@ CONTCT FORM
 </div>
 </div>
 </div>
-<button class='submit-btn'>
+<button class='button-pink-01'>
 お問い合わせを送信する
 </button>
 </form>

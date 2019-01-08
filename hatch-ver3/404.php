@@ -17,9 +17,9 @@
 <div class='notfind__body__img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/404-img.svg">
 </div>
-<div class='notfind__btn'>
+<button class='notfind__btn button-pink-01'>
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップページへ戻る</a>
-</div>
+</button>
 </div>
 </div>
 <div class='outer__inner'>

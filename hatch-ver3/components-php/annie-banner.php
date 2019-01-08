@@ -12,7 +12,7 @@
 <div class='annie-header-txt'>
 オーガニックで自由な暮らしをお届けするマガジン
 </div>
-<button class='btn btn-round-white'>
+<button class='btn btn-round-white-02'>
 <a href="https://anniejene.com//">サイトはこちらから</a>
 </button>
 </div>

@@ -53,3 +53,58 @@ $font_family_en_robot: 'Roboto', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Dosis:700');
 
 
+//ボタンエフェクトスタイル
+.button-pink-01{
+     display:block;
+     width: 250px;
+     height:70px;
+     line-height: 65px;
+     color: #FFF;
+     text-decoration: none;
+     text-align: center;
+     background-color: $pink_02; /*ボタン色*/
+     border-bottom: solid 6px #ec6c00; /*下線色*/
+     border-radius: 5px; /*角丸*/
+     margin: 0 auto;
+}
+.button-pink-01:hover{
+     background-color: #fdc33a;/*ボタン色*/
+     border-bottom: solid 6px #f39800; /*下線色*/
+}
+.button-pink-01:active {
+     margin-top: 6px;
+     border-bottom: none;
+}
+
+
+
+.btn-round-white-02{
+    background : #FFFFFF;
+    padding:10px 20px;
+    font-size: 14px;
+    background : rgba(255, 255, 255, 1);
+    border-style : Solid;
+    border-color: #5f5f5f;
+    border-color : rgba(16, 16, 15, 1);
+    border-radius : 12px;
+    -moz-border-radius : 12px;
+    -webkit-border-radius : 12px;
+    box-shadow: 3px 3px #bbbbbb;
+
+      a{
+        text-decoration: none;
+        color: $font-color_head;
+      }
+      a:hover{
+        color: $font-color_head;
+      }
+}
+
+.btn-round-white-02:hover{
+     box-shadow: 3px 3px #828282;
+
+}
+.btn-round-white-02:active {
+     margin-top: 3px;
+     box-shadow: none;
+}

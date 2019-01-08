@@ -9,8 +9,8 @@
 <div class='house-img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg">
 </div>
-<button class='btn btn-round-white'>
-サイトはこちらから
+<button class='btn btn-round-white-02'>
+<a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>">詳細はこちら</a>
 </button>
 </div>
 </div>
