@@ -17,7 +17,7 @@
   <h1 class='components-title'><i class="fa fa-search"></i>『<?php echo $search_query; ?>』の関連記事が<span>（<?php echo $total_results; ?>件）あります。</span></h1>
 <?php endif; ?>
 
-<ul class='post-lists article-list flexbox--spacebetween'>
+<ul class='post-lists article-list box-list flexbox--spacebetween'>
 <?php
 if( $total_results >0 ):
 if(have_posts()):

@@ -11,7 +11,7 @@
 <h1 class='components-title'>
 『 <?php echo get_the_archive_title(); ?> 』の関連記事一覧
 </h1>
-<ul class='post-lists article-list flexbox--spacebetween'>
+<ul class='post-lists article-list box-list flexbox--spacebetween'>
   <?php if(have_posts()): while(have_posts()):the_post(); ?>
     <li class=''>
       <div class='post-lists__img article-list__img'>

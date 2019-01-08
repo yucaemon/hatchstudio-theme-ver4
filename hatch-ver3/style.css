@@ -7663,10 +7663,11 @@ body {
   margin: 0 30px; }
   .middle-contain .bg-thumb-img {
     margin-bottom: 30px; }
+  .middle-contain .box-list li {
+    height: 339px; }
   .middle-contain .article-list li {
     padding-bottom: 14px;
-    width: 353px;
-    height: 350px; }
+    width: 353px; }
   .middle-contain .article-list .newMark {
     position: absolute;
     background: #ff846a;

@@ -6,7 +6,7 @@
 <section class='section first-section'>
 <div class='outer__inner flexbox'>
 <div class='middle-contain'>
-<ul class='post-lists article-list'>
+<ul class='post-lists article-list box-list'>
   <?php
 
 
@@ -107,7 +107,7 @@
 <section class='section third-section'>
 <div class='outer__inner flexbox'>
 <div class='middle-contain'>
-<ul class='post-lists article-list'>
+<ul class='post-lists article-list box-list'>
   <?php $args = array(
     'posts_per_page' => 6,                //表示（取得）する記事の数
     'post_type' => 'post',    //投稿タイプの指定

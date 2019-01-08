@@ -902,11 +902,14 @@ body {
     margin-bottom: 30px;
   }
 
+
+  .box-list li {
+      height: 339px;
+  }
   .article-list {
     li {
       padding-bottom: 14px;
       width: 353px;
-      height: 350px;
     }
 
     .newMark {
