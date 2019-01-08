@@ -7087,10 +7087,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #666; }
+  color: #222; }
 
 a:hover {
-  text-decoration: underline; }
+  text-decoration: none;
+  color: #666; }
 
 a:hover img {
   opacity: 0.5; }
@@ -8942,7 +8943,8 @@ contact-form (コンポーネンツ)
       width: 750px;
       letter-spacing: 0.4px; }
       .contact-form .notice-box__body span.contact-mailto a {
-        color: #ff846a; }
+        color: #ff846a;
+        text-decoration: underline; }
 
 /*
 

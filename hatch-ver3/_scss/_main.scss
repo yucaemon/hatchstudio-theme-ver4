@@ -79,11 +79,12 @@ body{
 
 a {
   text-decoration: none;
-  color: #666;
+  color: $font-color_head;
 }
 
 a:hover{
-  text-decoration: underline;
+  text-decoration: none;
+  color: #666;
 }
 
 a:hover img { opacity: 0.5 ; }
@@ -2669,6 +2670,7 @@ contact-form (コンポーネンツ)
 
       span.contact-mailto a {
         color: $pink_02;
+        text-decoration: underline;
       }
     }
   }
