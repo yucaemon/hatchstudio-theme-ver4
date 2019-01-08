@@ -238,3 +238,9 @@ figure:hover figcaption {
 		margin: 0 0 10px;
 	}
 
+  //一覧ページのflexboxの最後のboxを左寄せにする方法
+	.post-lists.article-list::after{
+  content:"";
+  display: block;
+  width: 52%;
+}

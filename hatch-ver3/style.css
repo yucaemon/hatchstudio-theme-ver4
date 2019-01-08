@@ -7019,6 +7019,11 @@ figure:hover figcaption {
 .megamenu-inner-img {
   margin: 0 0 10px; }
 
+.post-lists.article-list::after {
+  content: "";
+  display: block;
+  width: 52%; }
+
 /*未完成コンテンツ 現在非表示*/
 /*今日のおすすめラインナップ*/
 .shopping-banner {
