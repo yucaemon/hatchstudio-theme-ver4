@@ -14,7 +14,7 @@
 </div>
 <div class="wrote-models-lists__name"><?php echo get_the_author(); ?></div>
 </h1>
-<ul class='post-lists article-list flexbox--spacebetween'>
+<ul class='post-lists article-list box-list flexbox--spacebetween'>
   <?php $author = get_query_var('author'); $paged = get_query_var('paged'); $posts = query_posts('posts_per_page=20&author=' . $author . '&paged=' . $paged); ?>
   <?php foreach($posts as $post): setup_postdata($post); ?>
        <li class=''>
