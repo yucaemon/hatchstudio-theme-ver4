@@ -3,8 +3,10 @@
 <p class='business-txt'>
 広告掲載＆コラボ、記事広告のご依頼、ご相談はこちら。
 </p>
-<button class='btn btn-round-white'>
-お問い合わせはこちら
+<div>
+<button class='btn btn-round-white-02'>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>">お問い合わせはこちら</a>
 </button>
+</div>
 </div>
 </section>
