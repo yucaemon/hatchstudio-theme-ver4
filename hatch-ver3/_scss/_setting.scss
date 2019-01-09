@@ -108,3 +108,12 @@ $font_family_en_robot: 'Roboto', sans-serif;
      margin-top: 3px;
      box-shadow: none;
 }
+
+//bootstrap修正
+.card {
+  li {
+      font-size: 13px;
+      padding-bottom: 10px;
+      color: #929292;
+  }
+}
