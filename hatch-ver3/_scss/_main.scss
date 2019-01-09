@@ -2174,7 +2174,7 @@ body {
   }
 
   &__container {
-    width: 879px;
+    width: 1010px;
     margin: 0 auto 80px auto
 
   }
@@ -2225,6 +2225,7 @@ body {
   }
 
   .table-info {
+    margin-bottom: 30px;
     font-size: 15px;
     letter-spacing: 1px;
     color: #b1b1b1;
@@ -2262,13 +2263,11 @@ body {
 *************************************************/
 
 .about-page {
-
   .pages__container {
-    margin-top: 70px;
+    width: 879px;
   }
 
   .mission {
-
     padding-top: 20px;
     .yuka-sign__img {
       width: 110px;

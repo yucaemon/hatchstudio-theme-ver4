@@ -136,7 +136,8 @@ ABOUT
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-sky.svg" width="250"></a>
 </div>
 <div class='footer__logo__txt'>
-はっちすたじおは、ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。ぶらぶらぶら。
+はっちすたじおは、アメリカから『ワクワクな体験』
+をお届けするおもしろ情報まがじんサイトです。
 </div>
 <div class='footer__sns-icons flexbox--h-center'>
 <a href="https://www.facebook.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon-sky.svg"></a>
