@@ -2497,6 +2497,7 @@ house-page
 
 .house-page{
 
+
   &__header {
     background-color: $blue_01;
     height: 144px;
@@ -2546,6 +2547,9 @@ house-page
       font-size: 28px;
       letter-spacing: 1px;
       padding-bottom: 40px;
+    }
+    &__read {
+        padding-bottom: 50px;
     }
   }
 

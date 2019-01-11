@@ -6869,10 +6869,24 @@ select {
   margin-top: 3px;
   box-shadow: none; }
 
-.card li {
-  font-size: 13px;
-  padding-bottom: 10px;
-  color: #929292; }
+.card-box-container .card-box-header {
+  padding-bottom: 14px;
+  color: #9e9e9e; }
+.card-box-container .card-box-body li {
+  width: 320px;
+  border: solid 1px #dcdcdc;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 30px; }
+.card-box-container .card-box-body h3 {
+  margin: 0 20px 20px 20px;
+  border-bottom: solid 1px #c7c7c7;
+  padding-bottom: 15px;
+  font-size: 22px; }
+.card-box-container .card-box-body p {
+  margin: 4px 20px;
+  color: #a0a0a0;
+  font-size: 14px; }
 
 .margin-center {
   margin: 0 auto; }
@@ -8921,6 +8935,8 @@ house-page
   font-size: 28px;
   letter-spacing: 1px;
   padding-bottom: 40px; }
+.house-page__body__read {
+  padding-bottom: 50px; }
 .house-page__share-house__bg-img {
   background-image: url(./images/hatching-house-pdx-bg.jpg);
   height: 446px;

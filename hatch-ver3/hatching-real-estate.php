@@ -6,9 +6,9 @@
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
 <div class='house-page__header'>
-<div class='house-page__header--jp'>
+<h1 class='house-page__header--jp'>
 SFバークレー不動産サポート
-</div>
+</h1>
 <div class='house-page__header--en'>
 <span class='sub-txt'>
 USA
@@ -19,9 +19,9 @@ HATCHING HOUSE
 <div class='house-page__real-estate__bg-img'></div>
 <div class='outer__inner'>
 <div class='house-page__body pages__container'>
-<div class='house-page__body__header'>
-ポートランドで旅するように暮らせる『宿泊ゲストハウス』
-</div>
+<h2 class='house-page__body__header'>
+バークレー周辺のお部屋探しをお手伝いします。
+</h2>
 <div class='house-page__body__container'>
 <div class='house-page__body__container__pics flexbox--spacebetween'>
 <div class='house-page__body__img'>
@@ -35,12 +35,240 @@ HATCHING HOUSE
 </div>
 </div>
 <div class='house-page__body__read'>
-hatchstudioinc は、以下のとおり情報セキュリティ基本方針を定め、個人情報保護の仕組みを構築し、 全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進いたします。
-当社は、ISO27001：2013 および関連するその他の法令・規範を遵守します。また当社は、情報セキュリティマネジメントシステムを着実に実施・維持し、継続的な改善に努めます。
-当社は、取り扱う情報資産を適切に管理する体制を確立するとともに、当社規程を全従業員に周知し、その遵守徹底に努めます。
-当社は、取り扱う情報資産を特定し、情報資産の取得・利用にあたっては、社内規範に従い適切に行います。また、当社はお客様からお預かりした情報資産を、お客様の同意がある場合または、正当な理由がある場合を除き、第三者に開示または提供しません。
-当社は、情報資産への不正アクセス、情報資産の漏えい、滅失、き損等の予防に努め、情報セキュリティの向上、是正を継続的に実施します。
-当社は、お客様からの情報資産に関するお問い合わせに誠実かつ迅速に対応します。
+はっちすたじおは、「バークレーで家が見つからない」「日本から時期に合わせて見つけるのが大変」「英語、時差がネックで大家さんとうまくやり取り出来ない、返事がこない。」　などの声にお答えするため、地元の繋がりで、サンフランシスコ、UCバークレー大学周辺に３０以上の物件を持つ、地元のローカルの不動産屋さんと提携することに成功、優先的に格安で家の紹介、アメリカでの物件探しが困難な日本人の方へ物件のサポートをしていきます。
+</div>
+<div class='house-page__body__container__houses'>
+<div class='card-box'>
+<div class='card-box-container'>
+<div class='card-box-header'>
+紹介物件の一部
+</div>
+<ul class='card-box-body flexbox--spacebetween'>
+<li>
+<h3>
+[アパート/部屋シェア]
+</h3>
+<p>
+<i class='fas fa-angle-right'></i>
+家賃 月$700
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+center street
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+バークレー駅から徒歩5分
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+ネット、ガス、電気は別
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+短期可能
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+セキュリティデポジット　家賃2ヶ月分
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+シェアOK
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+只今満室のため、空き待ち
+</p>
+</li>
+<li>
+<h3>
+[ワンルーム/STUDIO]
+</h3>
+<p>
+<i class='fas fa-angle-right'></i>
+家賃 月 $1200
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+center street
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+バークレー駅から徒歩5分
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+ネット、ガス、電気は別
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+短期可能
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+セキュリティデポジット　家賃2ヶ月分
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+シェアOK
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+只今満室のため、空き待ちリスト
+</p>
+</li>
+<li>
+<h3>
+[ワンルーム/アパート]
+</h3>
+<p>
+<i class='fas fa-angle-right'></i>
+家賃 月$950
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+ノースバークレー駅から徒歩10分
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+ノースバークレー
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+ネット、ガス、電気は別
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+短期可能
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+セキュリティデポジット　家賃2ヶ月分
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+シェアOK
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+只今満室のため、空き待ちリスト
+</p>
+</li>
+<li>
+<h3>
+[ワンルーム/一軒家]
+</h3>
+<p>
+<i class='fas fa-angle-right'></i>
+家賃 月/$3100〜(水道、ゴミ代込み)
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+center street
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+バークレー駅から徒歩5分
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+ネット、ガス、電気は別
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+基本一年契約（延長可）
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+セキュリティデポジット　家賃2ヶ月分
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+シェアOK
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+只今満室の為、空き待ち
+</p>
+</li>
+<li>
+<h3>
+[1LDK/一軒家]
+</h3>
+<p>
+<i class='fas fa-angle-right'></i>
+家賃 月 $3000〜 水道、ゴミ代込み
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+walnut street
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+バークレー大学/バークレー駅から徒歩15分
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+ネット、ガス、電気は別
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+コインランドリー
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+セキュリティデポジット　家賃2ヶ月分
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+シェアOK
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+只今満室のため、空き待ち
+</p>
+</li>
+<li>
+<h3>
+[2LDK/一軒家]
+</h3>
+<p>
+<i class='fas fa-angle-right'></i>
+家賃 月 $3600〜 水道、ゴミ代込み
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+walnut street
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+バークレー大学/バークレー駅から徒歩15分
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+ネット、ガス、電気は別
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+コインランドリー
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+セキュリティデポジット　家賃2ヶ月分
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+シェアOK
+</p>
+<p>
+<i class='fas fa-angle-right'></i>
+只今満室のため、空き待ち
+</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 </div>
