@@ -6,9 +6,9 @@
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
 <div class='house-page__header'>
-<div class='house-page__header--jp'>
+<h1 class='house-page__header--jp'>
 初渡米！女性一人旅でも安心なゲストハウス
-</div>
+</h1>
 <div class='house-page__header--en'>
 <span class='sub-txt'>
 USA
@@ -19,11 +19,11 @@ HATCHING HOUSE
 <div class='house-page__share-house__bg-img'></div>
 <div class='outer__inner'>
 <div class='house-page__body pages__container'>
-<div class='house-page__body__header'>
-ポートランドで旅するように暮らせる『宿泊ゲストハウス』
-</div>
 <div class='house-page__body__container'>
-<div class='house-page__body__container__pics flexbox--spacebetween'>
+<h2 class='house-page__body__header'>
+ポートランドで旅するように暮らせる『宿泊ゲストハウス』
+</h2>
+<div class='house-page__body__pics flexbox--spacebetween'>
 <div class='house-page__body__img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-01.jpg">
 </div>
@@ -35,13 +35,93 @@ HATCHING HOUSE
 </div>
 </div>
 <div class='house-page__body__read'>
-hatchstudioinc は、以下のとおり情報セキュリティ基本方針を定め、個人情報保護の仕組みを構築し、 全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進いたします。
-当社は、ISO27001：2013 および関連するその他の法令・規範を遵守します。また当社は、情報セキュリティマネジメントシステムを着実に実施・維持し、継続的な改善に努めます。
-当社は、取り扱う情報資産を適切に管理する体制を確立するとともに、当社規程を全従業員に周知し、その遵守徹底に努めます。
-当社は、取り扱う情報資産を特定し、情報資産の取得・利用にあたっては、社内規範に従い適切に行います。また、当社はお客様からお預かりした情報資産を、お客様の同意がある場合または、正当な理由がある場合を除き、第三者に開示または提供しません。
-当社は、情報資産への不正アクセス、情報資産の漏えい、滅失、き損等の予防に努め、情報セキュリティの向上、是正を継続的に実施します。
-当社は、お客様からの情報資産に関するお問い合わせに誠実かつ迅速に対応します。
+ポートランドの暮らしは、自然の中に、都会的な洗練されたおしゃれなカフェがひっそりとあるような。ちょうどいい田舎暮らしをしている中にも何かワクワクするような新しいことが起こるような。自然の美しさと人間の作り出アートがうまく調和されている街。
+英語ができなくても、女性ひとり旅でも、安心して、ポートランドで暮らす現地のシェアハウスのみんなと同じように『ひとつのお家』で暮らしてほしい。旅を満喫してほしい。との願い込めて作った『宿泊ゲストハウス Hatching House ポートランド』
+ポートランドの魅力を存分に感じながら、女性旅行者も安心して気軽に宿泊できるゲストハウスを目指して、たくさんの人に出会えることを楽しみにしています。
 </div>
+<button class='btn btn-round-white-02'>
+<a href="http://hatchstudioinc.com/archives/23197"><i class="fas fa-sign-out-alt"></i>『宿泊ゲストハウス ポートランド』日常の暮らし様子はこちら</a>
+</button>
+</div>
+<div class='house-page__body__container'>
+<h2 class='house-page__body__header'>
+ロケーション場所
+</h2>
+<div class='house-page__body__pics flexbox--spacebetween'>
+<div class='house-page__body__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-04.jpg">
+</div>
+<div class='house-page__body__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-05.jpg">
+</div>
+<div class='house-page__body__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-06.jpg">
+</div>
+</div>
+<div class='house-page__body__read'>
+ゲストハウスのすぐ目の前には、四季を楽しめる並木道。自然も十分に楽しめる安全な住宅街、ポートランドのSEエリアという場所にあります。ポートランドの市内までは、車で１５分、バス一本、乗り換えなしで38分くらいの場所あり、近くにはリード大学があります。
+家から徒歩2分と13分のところにバス停があり、車がなくてもどこにでも行けて観光者にとっても便利です。ポートランドの交通機関は、とても発展しており、車内がとても綺麗で安全で、夜中12時まで走っています。女性一人でも安心して乗れます。
+</div>
+</div>
+<div class='house-page__body__container'>
+<h2 class='house-page__body__header'>
+宿泊費用とアメニティ・設備
+</h2>
+<div class='house-page__body__pics flexbox--spacebetween'>
+<div class='house-page__body__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-07.jpg">
+</div>
+<div class='house-page__body__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-08.jpg">
+</div>
+<div class='house-page__body__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-09.jpg">
+</div>
+</div>
+<div class='house-page__body__read'>
+<ul class='house-page__body__detail'>
+<li>
+<i class="fas fa-bed"></i>
+家具付き
+</li>
+<li>
+<i class="fas fa-tint"></i>
+洗濯機、乾燥機
+</li>
+<li>
+<i class="fas fa-mug-hot"></i>
+タオル、ドライヤー
+</li>
+<li>
+<i class="fas fa-smoking-ban"></i>
+禁煙
+</li>
+<li>
+<i class="fas fa-utensils"></i>
+シェア共同キッチン
+</li>
+<li>
+<i class="fab fa-cc-paypal"></i>
+paypal、日本円での支払いOK
+</li>
+<li>
+<i class="fas fa-car"></i>
+オプション 送迎あり
+</li>
+</ul>
+<p>
+※現在、プライベート個室（大）空き予定がありません。
+</p>
+<p>
+※写真イメージは、個室（大）のお部屋の写真になります。
+</p>
+<p>
+※お部屋のご予約、ご質問等などお気軽に以下のお問い合わせフォームにて、ご相談ください。
+</p>
+</div>
+<button class='btn btn-round-white-02'>
+<a href="http://hatchstudioinc.com/archives/23197"><i class="fas fa-sign-out-alt"></i>『宿泊ゲストハウス ポートランド』日常の暮らし様子はこちら</a>
+</button>
 </div>
 </div>
 </div>

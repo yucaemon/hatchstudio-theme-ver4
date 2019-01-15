@@ -2537,6 +2537,14 @@ house-page
   }
 
   &__body {
+    &__container {
+    text-align: center;
+    padding-bottom: 50px;
+    }
+    &__container+&__container{
+      border-top: solid 1px #d4d4d4;
+    }
+
     &__img img {
       width: 323px;
       height: 250px;
@@ -2544,12 +2552,13 @@ house-page
       padding-bottom: 50px;
     }
     &__header {
+      padding: 40px;
       font-size: 28px;
       letter-spacing: 1px;
-      padding-bottom: 40px;
     }
     &__read {
         padding-bottom: 50px;
+        text-align: start;
     }
   }
 
@@ -2571,7 +2580,12 @@ house-page
       background-position: 2px -127px;
     }
   }
-
+  &__body__detail {
+    border: solid 1px #dadada;
+    padding: 30px;
+    margin-bottom: 33px;
+    background-color: #f9f9f9;
+}
 }
 
 /*
