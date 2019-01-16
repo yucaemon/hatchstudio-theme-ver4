@@ -205,6 +205,34 @@ OPTビザサポート有
 </div>
 </div>
 </div>
+<div class='col-sm-3'>
+<div class='card border-primary'>
+<div class='card-header'>
+女性モデル
+</div>
+<div class='card-body text-dark'>
+<div class='card-title'>
+急募
+</div>
+<p class='card-text'>
+<ol>
+<li>
+アメリカ在住の方
+</li>
+<li>
+モデル経験5年以上
+</li>
+<li>
+23才以上
+</li>
+</ol>
+</p>
+</div>
+<div class='card-footer'>
+勤務地：アメリカ国内
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
