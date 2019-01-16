@@ -8870,7 +8870,8 @@ service-page
   margin-bottom: 20px; }
 .service-page__list__body {
   color: #9c9c9c;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  margin-bottom: 30px; }
 .service-page__web__bg-img {
   background-image: url(./images/service-web-bg.JPG);
   height: 446px;
@@ -8953,7 +8954,7 @@ house-page
   height: 446px;
   background-size: cover;
   background-position: 2px -127px; }
-.house-page__body__detail {
+.house-page__body__detail, .service-page__list__detail {
   border: solid 1px #dadada;
   padding: 30px;
   margin-bottom: 33px;

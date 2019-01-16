@@ -2443,6 +2443,10 @@ service-page
 
     &__list {
       padding-bottom: 30px;
+
+      &__detail{
+        @extend.house-page__body__detail
+      }
     }
 
     &__list__header {
@@ -2456,6 +2460,7 @@ service-page
     &__list__body {
       color: $font_sub_glay_color;
       letter-spacing: 2px;
+      margin-bottom: 30px;
     }
 
 
@@ -2485,6 +2490,7 @@ service-page
       background-position: 6px -249px;
     }
   }
+
 
 }
 
