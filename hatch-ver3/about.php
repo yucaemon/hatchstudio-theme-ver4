@@ -43,7 +43,7 @@ Hatchstudio inc
 設立
 </td>
 <td>
-2014年 6月26日 Berkeley CA USA
+2019年 1月30日
 </td>
 </tr>
 <tr>
