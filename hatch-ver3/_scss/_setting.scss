@@ -7,7 +7,6 @@ $sp_width: 480px;  // スマホ
 // 要素の基本下マージン
 $base_margin: 30px;
 
-
 // メインカラー（ベースカラー）
 $main_color: #f2716e;
 
@@ -45,7 +44,7 @@ $pink_02:#ff846a;
 
 // font-family
 $font_family_jp : Arial,Helvetica,"游ゴシック",YuGothic,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
-$font_family_en : 'Oswald', sans-serif;
+$font_family_en : "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 $font_family_en_robot: 'Roboto', sans-serif;
 
 
@@ -115,7 +114,7 @@ $font_family_en_robot: 'Roboto', sans-serif;
   .card-box-header{
    padding-bottom: 14px;
    color: #9e9e9e;}
-   
+
 
   .card-box-body{
    li{

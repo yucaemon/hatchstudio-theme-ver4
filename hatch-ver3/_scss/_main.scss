@@ -1,70 +1,3 @@
-/*未完成コンテンツ 現在非表示*/
-
-/*今日のおすすめラインナップ*/
-.shopping-banner{
-  display: none;
-}
-/*一覧ページへのリンク*/
-.more-page{
-  display: none;
-
-}
-/*おすすめ一覧*/
-.recommend-list{
-  display: none;
-}
-
-/*記者一覧*/
-.models-lists{
-  display: none;
-
-}
-
-#douga{
-  height: 422px;
-  overflow: hidden;
-  background: url(images/index-top-banner02.png) no-repeat;
-  margin-bottom: 50px;
-  background-size: contain;
-
-}
-
-.youtube-container{
-  padding: 20px 0;
-}
-
-
-.youtube-video{
-  position:relative;
-  width:100%;
-  padding-top:56.25%;
-}
-.youtube-video iframe{
-  position:absolute;
-  top:0;
-  right:0;
-  width:100%;
-  height:100%;
-}
-
-
-.douga{
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  z-index: 1000;
-}
-
-#douga iframe{
-  position: relative;
-  left: 0 !important;
-  top: -315px !important;
-  width: 100% !important;
-  height: 300% !important;
-
-}
-
-
 /*
 
 	common
@@ -76,7 +9,6 @@ body{
   color: #545b63;
 }
 
-
 a {
   text-decoration: none;
   color: $font-color_head;
@@ -87,67 +19,46 @@ a:hover{
   color: #666;
 }
 
-a:hover img { opacity: 0.5 ; }
-
-.keywords {
-  a:before {
-    content: "#";
-    padding-right: 3px;
-    color: #f2695d;
-  }
+a:hover img { opacity: 0.5 ;
 }
 
 ::selection {
   background: #ffe0e0;
 }
 
-
-.big-btn {
-  background: $main_color;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  height: 43px;
-  width: 250px;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  margin-bottom: 20px;
-  color: #fff !important;
-  transition: .2s;
-
-  a {
-    color: #ffff;
-  }
-  a:hover{
-    text-decoration:none;
-  }
-
+//Firefox
+::-moz-selection {
+  background: #ffe0e0;
 }
-.big-btn:hover {
-  background: #ffdcdb;
-  color: $main_color !important;
+
+
+/*
+
+	layout
+*************************************************/
+
+body {
+  margin: 0;
 }
 
 .outer__inner {
   padding-top: 50px;
 }
 
-
-.side-fixed-content{
-  position: fixed;
-  top: 15%;
-  width: 313px;
+.pages {
+  .outer__inner {
+    margin: 0 auto;
+  }
 }
 
 
-//Firefox
-::-moz-selection {
-  background: #ffe0e0;
-}
+/*
+
+	header
+
+*************************************************/
 
 .search__box {
-
   #searchsubmit {
     display: none;
   }
@@ -176,41 +87,17 @@ a:hover img { opacity: 0.5 ; }
   }
 }
 
-.breadcrumbs {
-  padding-left: 24px !important;
-  font-size: 10px;
-  color: #a5a5a5;
-  letter-spacing: 1px;
-  .fa-home {
-    font-size: 16px;
-  }
-}
-
 .breadcrumb {
   margin-bottom: 0 !important;
-}
-
-
-
-
-.pages {
-  .outer__inner {
-    margin: 0 auto;
+  .breadcrumbs {
+    padding-left: 24px !important;
+    font-size: 10px;
+    color: #a5a5a5;
+    letter-spacing: 1px;
+    .fa-home {
+      font-size: 16px;
+    }
   }
-}
-
-
-.components-title {
-  @include fts(10, 10);
-  padding: 20px 0;
-  text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: 0.9px;
-  color: #737373;
-  background-color: #ffede9;
-  width: 100%;
-
-
 }
 
 .sns-icons {
@@ -231,24 +118,6 @@ a:hover img { opacity: 0.5 ; }
   letter-spacing: 1px;
   font-size: 12px !important;
 }
-
-/*
-
-	js(Flexboxで全体を中央に配置しつつ最後の行を左揃えにする):more-search-articleで使用
-
-*************************************************/
-
-.grid {
-  flex-flow: row wrap;
-}
-
-
-.cell.is-empty {
-  height: 0;
-  padding: 0;
-  margin: 0 6px;
-}
-
 
 /*
 
@@ -302,19 +171,9 @@ a:hover img { opacity: 0.5 ; }
   }
 }
 
-
-
 /*
-
 	スクロールのheader固定
-
 *************************************************/
-
-
-body {
-  margin: 0;
-}
-
 
 .header-bar {
   width: 100%;
@@ -323,7 +182,6 @@ body {
   .search__box{
     display: none;
   }
-
 
   .header-bar__inner{
     padding: 0 40px;
@@ -337,18 +195,8 @@ body {
   top: 0;
   left: 0;
   z-index: 1000;
-
-
-
-
 }
 
-
-/*
-
-	header
-
-*************************************************/
 
 .sub-title{
   @include fts(8.3, 9);
@@ -361,7 +209,6 @@ body {
   padding-top: 43px;
 }
 
-
 .logo__img {
   width: 45%;
   text-align: center;
@@ -370,8 +217,6 @@ body {
   img {
     padding-bottom: 30px;
   }
-
-
 }
 
 .background-draw img {
@@ -382,25 +227,21 @@ body {
   position: absolute;
   left: 136px;
   top: 168px;
-
 }
 
 .background-daw__right {
   position: absolute;
   left: 842px;
   top: 175px;
-
 }
 
 
-
 .header-bar {
-
   &__logo {
     color: #fff;
     font-size: 14px;
     letter-spacing: 0.5px;
-    height: 72px;
+    height: 71px;
     display: table;
   }
 
@@ -443,7 +284,7 @@ body {
   &__nav__text--en {
     color: #fff;
     font-size: 15px;
-    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    font-family: $font_family_en;
   }
 
   &__nav__text--jp {
@@ -459,85 +300,26 @@ body {
 
 }
 
-
-
-
-
 /*
 
 	side
 
 *************************************************/
 
-
-.side-menu-list li a {
-  display: block;
-  padding: 8px 0 8px 10px;
-  font-size: 13px;
-
-
-}
-
-.side-menu-list li a:hover {
-  background-color: #f5f5f5;
-  text-decoration: none;
-
-}
-
-
-
-.side-menu-list {
-
-  a.iscurrent {
-    background-color: #f5f5f5;
-  }
-
-  @include fts(9, 20);
-  width: 169px;
-  &__title {
-    border-bottom: solid 1px #dcdcdc;
-    height: 36px;
-    line-height: 7px;
-    padding-left: 5px;
-  }
-  li {
-    list-style: none;
-    .japanese {
-      @include fts(5, 5);
-      padding-left: 13px;
-    }
-  }
-  li a:before {
-    content: ">";
-    color: #dcdcdc;
-    padding-right: 5px;
-  }
-
-  .side-menu-list__li {
-    padding-bottom: 50px;
-  }
-  .arrow {
-    color: $font_sub_color;
-  }
-
-  i.fa{
-    color: #ff9999;
-  }
-
+.side-fixed-content{
+  position: fixed;
+  top: 15%;
+  width: 313px;
 }
 
 .side-contain {
-
   .keywords {
     &__content {
       margin-bottom: 20px;
       width: 300px;
       margin: 0 auto;
-
     }
-
   }
-
 
   .news-list {
     &__container{
@@ -548,13 +330,12 @@ body {
     }
     &__title {
       width: 252px;
-      font-size: 13px;
-      font-weight: bold;
+      @include listsTitle(9,1.4);
+
     }
     &__content{
       padding-bottom: 20px;
     }
-
     span.views{
       display: inline-block;
       font-size: 13px;
@@ -570,7 +351,7 @@ body {
     padding-bottom: 20px;
     justify-content: center;
     &__img {
-      width: 25px;
+      width: 21px;
     }
     &__txt {
       &--en{
@@ -578,7 +359,7 @@ body {
         letter-spacing: 1px;
         padding: 2px 8px 0 15px;
         color: #333;
-        font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+        font-family: $font_family_en;
       }
       &--jp {
         padding-right:15px;
@@ -589,12 +370,10 @@ body {
     }
   }
 
-
   .recommend-list {
     dd + dd {
       padding-top: 18px;
     }
-
     &__thumb-img {
       padding-right: 18px;
       img {
@@ -609,16 +388,12 @@ body {
       @include fts(7, 9);
       font-weight: bold;
     }
-
   }
-
-
   .items {
     &__content {
       @include fts(8, 8);
       padding-left: 10px;
       letter-spacing: 0.7px;
-
     }
     &__list {
       padding: 13px 0;
@@ -628,46 +403,6 @@ body {
         padding-right: 10px;
       }
     }
-  }
-
-  .models-lists {
-    padding-bottom: 50px;
-    dd {
-      padding-bottom: 20px;
-    }
-    dd + dd {
-      border-top: solid $border_color 1px;
-      padding-top: 20px;
-    }
-    &__text {
-      padding-top: 7px;
-      padding-left: 10px;
-      .model-name:before {
-        content: "@";
-        color: $main_color;
-      }
-      .model-name {
-        @include fts(8, 10);
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        padding-bottom: 6px;
-      }
-      .model-info {
-        @include fts(7, 7);
-        color: $font_sub_glay_color;
-      }
-    }
-  }
-  .models-lists__prof-img {
-
-    img {
-      margin-top: 9px;
-      height: 35px;
-      width: 35px;
-      object-fit: cover;
-      @include border-radius(50%);
-    }
-
   }
 
   .keywords{
@@ -701,7 +436,6 @@ body {
       font-size:12px !important;
     }
   }
-
 }
 
 
@@ -736,13 +470,8 @@ body {
       color: #fff;
       letter-spacing: 3px;
     }
-
-
   }
-
-
 }
-
 
 .house-ad-side {
   .house {
@@ -760,22 +489,18 @@ body {
       text-align: center;
       background-color: #bee4e6;
     }
-
     &-header {
       width: 273px;
       margin: 0 auto;
       padding-bottom: 20px;
     }
-
     &-header-sub {
       font-size: 17px;
       letter-spacing: 1px;
       color: #87b2bd;
       padding: 30px 0 10px 0;
     }
-
   }
-
 }
 
 .business-ad-side {
@@ -783,14 +508,12 @@ body {
     &-img {
       width: 85px;
       padding-right: 10px;
-
     }
     &-content {
       background-color: #ffde8d;
       height: 175px;
       text-align: center;
       padding: 29px;
-
     }
     &-header-txt {
       font-size: 19px;
@@ -800,7 +523,6 @@ body {
       letter-spacing: 1px;
       line-height: 1.5;
     }
-
     button.btn.btn-round-white{
       margin-top: 17px;
     }
@@ -821,33 +543,25 @@ body {
   a:hover{
     text-decoration: underline;
   }
-
   &__content {
     background-color: #bee4e6;
     color: #57bac5;
     padding: 50px;
-
     .footer__box + .footer__box{
       padding-left: 39px;
     }
-
-
     .page__links{
       padding-top: 20px;
     }
-
-
     .footer__box{
         font-size: 14px;
         letter-spacing: 1px;
-
       &__title{
         font-size: 18px;
         font-weight: bold;
         letter-spacing: 2px;
         padding-bottom: 10px;
       }
-
       &__lists{
         padding-bottom: 4px;
         li{
@@ -857,7 +571,6 @@ body {
           padding-right: 14px;
         }
       }
-
       .footer__logo {
         &__img {
           text-align: center;
@@ -872,112 +585,45 @@ body {
           padding-bottom: 28px;
         }
       }
-
       .footer__sns-icons img {
         width: 40px;
         padding: 0px 7px;
       }
-
     }
   }
 }
 
 .copyright {
-
   padding: 15px 0;
   @include fts(4, 4);
   width: 100%;
   text-align: center;
   color: $font_sub_glay_color;
   letter-spacing: 2px;
-
 }
 
 /*
 
-	index.page
-
+	components
 *************************************************/
-
-.middle-contain {
-  margin: 0 30px;
-
-  .bg-thumb-img {
-    margin-bottom: 30px;
+.keywords {
+  a:before {
+    content: "#";
+    padding-right: 3px;
+    color: #f2695d;
   }
-
-
-  .box-list li {
-      height: 339px;
-  }
-  .article-list {
-    li {
-      padding-bottom: 14px;
-      width: 353px;
-    }
-
-    .newMark {
-      position: absolute;
-      background: $pink_02;
-      color: #fff;
-      padding: 8px 20px;
-      letter-spacing: 3px;
-      font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
-    }
-
-    &__img {
-      width: auto;
-      height: auto;
-      object-fit: cover;
-      img {
-        width: 350px;
-        height: 200px;
-        object-fit: cover;
-
-      }
-    }
-    &__text {
-      //word-wrap: break-word;
-
-      .list-title {
-            color: $font-color_head;
-            font-weight: bold;
-            word-wrap: break-word;
-            font-size: 22px;
-            padding-top: 10px;
-            letter-spacing: -0.04em;
-            line-height: 1.3em;
-            font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
-
-      }
-
-
-      .icons {
-        .icons__tag {
-          background-color: $main_color;
-          margin-right: 10px;
-          color: #fff;
-          @include fts(3, 3);
-          @include border-radius(2px);
-          padding: 4px 7px;
-        }
-      }
-
-    }
-  }
-
-  .more-page{
-    display: block;
-    margin: 0 auto;
-    width: 250px;
-    }
-  }
-
-.section{
-  padding-bottom:50px;
 }
 
-
+.components-title {
+  @include fts(10, 10);
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 0.9px;
+  color: #737373;
+  background-color: #ffede9;
+  width: 100%;
+}
 
 .zigzag::after {
   height: 20px;
@@ -991,38 +637,98 @@ body {
   background: linear-gradient(45deg, #fff 10px, transparent 0), linear-gradient(315deg, #fff 10px, transparent 0);
   background-size: 20px 20px;
 }
-
-
-
 .zigzag-blue {
   position: relative;
   background: #bee4e6;
 }
-
 .zigzag-blue::after {
   bottom: -20px;
   background: linear-gradient(135deg, #bee4e6 10px, transparent 0), linear-gradient(225deg, #bee4e6 10px, transparent 0);
   background-size: 20px 20px;
 }
-
-
 .zigzag-pink {
   position: relative;
   background: $pink_01;
 }
-
 .zigzag-pink::after {
   bottom: -20px;
   background: linear-gradient(135deg, $pink_01 10px, transparent 0), linear-gradient(225deg, $pink_01 10px, transparent 0);
   background-size: 20px 20px;
 }
 
+.circle img{
+  border-radius: 50%;
+}
+
+.btn-round-white{
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+/*
+
+	index.page
+
+*************************************************/
+
+.section{
+  padding-bottom:50px;
+}
+
+.middle-contain {
+  margin: 0 30px;
+  .bg-thumb-img {
+    margin-bottom: 30px;
+  }
+  .box-list li {
+      height: 339px;
+  }
+  .article-list {
+    li {
+      padding-bottom: 14px;
+      width: 353px;
+    }
+    .newMark {
+      position: absolute;
+      background: $pink_02;
+      color: #fff;
+      padding: 8px 20px;
+      letter-spacing: 3px;
+      font-family: $font_family_en;
+    }
+    &__img {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+      img {
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+    &__text {
+      .list-title {
+        @include listsTitle(12,1.4);
+        padding-bottom: 10px;
+      }
+      .icons {
+        .icons__tag {
+          background-color: $main_color;
+          margin-right: 10px;
+          color: #fff;
+          @include fts(3, 3);
+          @include border-radius(2px);
+          padding: 4px 7px;
+        }
+      }
+    }
+  }
+}
 
 .second-section {
   .middle-contain .article-list li {
     width:auto;
   }
-
   .middle-contain .article-list__text {
     word-wrap: break-word;
     width: 500px;
@@ -1030,18 +736,11 @@ body {
   }
 }
 
-/*
-
-	components
-
-*************************************************/
-
 .hatching-house{
   background-color: #bee4e6;
   height: 460px;
   padding-left:50px;
   padding-top: 35px;
-
   &__header{
     padding-bottom: 40px;
     &--jp {
@@ -1061,7 +760,6 @@ body {
       padding-right: 20px;
     }
   }
-
   &__pictures {
     li{
       margin-right:88px;
@@ -1080,11 +778,8 @@ body {
         font-size: 13px;
         letter-spacing: 2px;
       }
-
     }
   }
-
-
   &__btn {
     button {
      margin-top: 70px;
@@ -1096,8 +791,6 @@ body {
     }
   }
 }
-
-
 
 .annie {
   background-color: $pink_01;
@@ -1116,34 +809,25 @@ body {
     padding-top: 60px;
     text-align: center;
   }
-
   &-header-main {
     font-size: 36px;
     color: #fff;
   }
-
   &-header-sub {
     letter-spacing: 3px;
     padding-bottom: 10px;
   }
-
   &-header-txt {
     font-size: 14px;
     padding-bottom: 20px;
     color: #fff;
     letter-spacing: 3px;
   }
-
-
 }
-
-
 
 .blogger {
   background-color: #ffe198;
   height: 580px;
-
-
   &__header{
     text-align: center;
     font-size: 26px;
@@ -1152,44 +836,33 @@ body {
     font-weight: bold;
     letter-spacing: 3px;
   }
-
-
-
   &__header--img{
     width: 93px;
     margin-right: 30px;
   }
-
-
   &__box{
     text-align: center;
     width: 160px;
     padding-top: 30px;
-
     img{
       width: 60px;
     }
   }
-
   .cross-img {
     width: 27px;
     vertical-align: middle;
     padding-top: 48px;
   }
-
   &__container {
     width: 985px;
     margin: 0 auto;
   }
-
   &__box__name {
     font-size: 10px;
     letter-spacing: 1px;
     color: #b3a37c;
   }
-
 }
-
 
 .business{
   background-color: #fcb751;
@@ -1202,7 +875,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-
   }
   &-txt {
     font-size: 22px;
@@ -1217,30 +889,26 @@ body {
   height: 360px;
   padding-left:50px;
   padding-top: 35px;
-
   &__header{
     padding-bottom: 15px;
-    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
-
     &--en {
       @include fts(33, 38);
       color: #fff;
-
+      font-family: $font_family_en;
     }
     &--jp {
-      color: #808080;
+      color: $font-color_head;
       padding-left: 22px;
       @include fts(12, 12);
       line-height: 3.5;
       padding-bottom: 17px;
-    }
+      font-family: $font_family_jp;
 
+    }
     &--txt {
       width: 710px;
     }
-
   }
-
   &__pictures {
     li{
       margin-right: 32px;
@@ -1261,112 +929,40 @@ body {
         letter-spacing: 2px;
         text-align: center;
       }
-
     }
   }
-
-  .btn-round-white{
-    margin-top: 10px;
-    margin-left: 40px;
-
-  }
-
 }
-
-
-.circle img{
-  border-radius: 50%;
-}
-
-
-
-.sns-container{
-  .sns-icons{
-    width: 465px;
-    margin: 0 auto;
-  }
-
-  .sns-icons__img {
-    width: 131px;
-    padding: 12px;
-  }
-
-}
-
-
-.this-page {
-  padding-bottom: 30px;
-
-  &__tags a, .tag-cloud-link {
-    padding: 8px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-bottom: 10px;
-    background-color: #ffede9;
-    color: $font_color_head;
-    letter-spacing: 1px;
-    font-size: 12px !important;
-  }
-
-
-}
-
-
-
-
 
 /*
 
 	single.page
 
 *************************************************/
-
-
 .single-page {
-
-
-
   &__container {
     width: 1200px;
   }
-
-  &__head-title {
-    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
-    color: $font_color_head;
-    font-weight: bold;
-    @include fts(18, 18);
-    letter-spacing: 3px;
-    line-height: 41px;
-    margin-bottom: 20px;
-  }
-  &__tags{
-    a{
-      border: solid 1px #f9b19d;
-      padding: 6px;
-      border-radius: 5px;
-    }
-    @include fts(10, 10);
-    color: $font_sub_glay_color;
-    padding-bottom: 15px;
-    letter-spacing: 0.5px;
-  }
   &__views {
-    line-height: 1;
+    line-height: 1.8;
     padding-right: 20px;
     font-weight: bold;
     i{
       color: $pink_02;
     }
   }
+  &__tags {
+    /* line-height: 1; */
+    border: solid $pink_02 1px;
+    border-radius: 4px;
+    padding: 0 10px;
+   }
   &__sns-icons{
     width: auto;
     .sns-icons__img{
       width:100px;
       padding: 10px 10px 0 0;
     }
-
   }
-
   &__post-down__sns-icons {
     padding-bottom: 20px;
     width: 650px;
@@ -1378,7 +974,6 @@ body {
   &__detail{
     align-items: center;
   }
-
   &__author__img img {
     width: 45px;
     border: solid 1px #000000;
@@ -1386,68 +981,46 @@ body {
   &__post-info {
     align-items: center;
   }
-
   &__dates {
     padding-right: 10px;
     color: #9c9c9c;
-
   }
-
-
-
+  &__head-title {
+    @include mainTitle(18,1.4);
+  }
   &__entry-content {
-    @include fts(12, 12);
-    line-height: 1.6em;
+    @include fts(11, 11);
     word-wrap: break-word;
     padding-bottom: 25px;
     margin-bottom: 20px;
     display: block;
+    line-height: 1.6em;
     color: $font_color_head;
-    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
-
     p {
-      @include fts(12, 12);
-      line-height: 1.6em;
+      @include fts(11, 11);
       word-wrap: break-word;
       padding-bottom: 25px;
+      margin-bottom: 20px;
       display: block;
-      font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+      line-height: 1.6em;
+      color: $font_color_head;
     }
     .headline-second {
-      font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
-      color: $font_color_head;
-      @include fts(18, 18);
-      font-weight: bold;
+      @include mainTitle(17,1);
       border-bottom: solid 3px $yellow_02;
-      padding: 10px 0;
-      margin: 20px 0;
-      letter-spacing: 3px;
-      line-height: 41px;
+      padding: 20px 0;
     }
     .headline-third {
-      font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
-      @include fts(13, 13);
-      line-height: 7px;
-      font-weight: bold;
+      @include mainTitle(13,0.5);
       background-color: $yellow_02;
       border-radius: 5px;
       padding: 20px 20px;
-      margin: 20px 0;
     }
-
     .headline-fourth {
-      font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
-      color: #222;
-      @include fts(12, 12);
-      line-height: 7px;
-      font-weight: bold;
+      @include mainTitle(12,1);
       padding: 10px 0 10px 20px;
-      margin-bottom: 20px;
-      margin-top: 20px;
       border-left: solid 6px $yellow_02;
     }
-
-
     img {
       padding: 30px 0;
       display: block;
@@ -1455,20 +1028,15 @@ body {
       height: 500px;
       object-fit: cover;
     }
+
     .detail-box01 {
       border: solid 1px $border_color;
       @include fts(10, 10);
       padding: 20px;
       margin: 30px 0;
       &__title {
-        color: $font-color_head;
-        font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
-        border-bottom: solid 1px $border_color;
+       @include listsTitle(11,1.4);
         margin-bottom: 20px;
-        @include fts(10, 10);
-        padding-bottom: 15px;
-        letter-spacing: 2.2px;
-        font-weight: bold;
       }
       &__contain p {
         letter-spacing: 1.2px;
@@ -1507,12 +1075,8 @@ body {
       }
       }
       &__title {
-        @include fts(9, 9);
-        color: $font_color;
+        @include listsTitle(11,1.4);
         padding: 7px 0;
-        font-weight: bold;
-        letter-spacing: 1px;
-        line-height: 20px;
 
       }
       img {
@@ -1526,7 +1090,6 @@ body {
       a {
         color: #f5f2f2;
       }
-
       @extend .detail-box02;
       &__img {
         width: 40%;
@@ -1536,11 +1099,8 @@ body {
         padding: 35px 48px 0 48px;
       }
       &__title {
-        @include fts(10,10);
-        font-weight: bold;
-        letter-spacing: 1px;
+        @include listsTitle(10,1.4);
         padding-bottom: 20px;
-        line-height: 1.4;
       }
       &__price {
         @extend .detail-box03__title;
@@ -1580,11 +1140,9 @@ body {
         padding-top: 14px;
         color: $font_sub_glay_color;
       }
-
       i.fa{
         padding-right: 6px;
       }
-
     }
 
     .detail-author-box{
@@ -1600,15 +1158,10 @@ body {
         font-size: 16px;
         line-height: 1.4;
       }
-
       &__title {
-        color: $font_color_head;
-        font-weight: bold;
+        @include listsTitle(10,1.4);
         padding-bottom: 10px;
-        font-size: 19px;
-        letter-spacing: 0.9px;
       }
-
       &__read {
         color: #b5b5b5;
         font-size: 13px;
@@ -1641,14 +1194,9 @@ body {
         border-radius: 3px;
         text-align: center;
         padding: 10px 0;
-
       }
-
-
     }
-
   }
-
   .sourcelink {
     @include fts(7,7);
     color: #b5b5b5;
@@ -1657,14 +1205,9 @@ body {
       color: #b5b5b5;
     }
   }
-
-
-
   .photo-info {
     @extend .sourcelink;
-
   }
-
   .external-link {
     padding: 20px;
     border: solid 1px #dadada;
@@ -1675,13 +1218,10 @@ body {
       padding-right: 10px;
     }
     &__title {
-      font-size: 17px;
-      color: #222;
-      font-weight: bold;
+      @include listsTitle(10,1.4);
       padding-bottom: 10px;
     }
   }
-
   .detail-balloon-box {
     padding-bottom:30px;
     padding-left: 30px;
@@ -1702,79 +1242,144 @@ body {
     }
     &__read {
       width: 591px;
-      font-size: 16px;
-      line-height: 1.5;
       padding-left: 20px;
-      color: $font_color_head;
     }
   }
-
-
-
-
-
   .affiliate-ad {
     margin: 0 auto;
     width: 336px;
     padding-bottom: 30px;
   }
-
-  .side-contain{
-    .news-list__title {
-      width: 162px;
-      font-size: 11px;
+  .paging-nav {
+    width: auto;
+    background-color: $pink_01;
+    &__container {
+      padding: 20px;
     }
-    .header-side__img {
-      width: 21px;
-    }
-  }
-
-}
-
-
-.paging-nav {
-  width: auto;
-  background-color: $pink_01;
-
-  &__container {
-    padding: 20px;
-  }
-
-  &__head {
-    padding-bottom: 10px;
-    line-height: 3;
-
-    &__txt {
-      .next_title {
-        padding: 0 15px;
+    &__head {
+      padding-bottom: 10px;
+      line-height: 3;
+      &__txt {
+        .next_title {
+          padding: 0 15px;
+        }
+      }
+      i {
+        background-color: $pink_02;
+        color: #fff;
+        font-size: 37px;
+        padding: 6px 9px;
       }
     }
-    i {
-      background-color: $pink_02;
-      color: #fff;
-      font-size: 37px;
-      padding: 6px 9px;
+    &__body {
+      &__img img {
+        width: 120px;
+      }
+      &__read {
+        width: 170px;
+        font-size: 11px;
+        padding: 0 10px;
+        font-weight: bold;
+      }
+    }
+  }
+  .wrote-models-lists{
+    padding: 30px 0;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $border_color;
+    border-bottom: 1px solid $border_color;
+    &__header {
+      @include fts(8,8);
+      color: $font_sub_glay_color;
+      letter-spacing: 1px;
+      padding-right: 10px;
+    }
+  &__img {
+    padding-right: 17px;
+    img {
+      height: 45px;
+      width: 45px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+    }
+  }
+    .author-profile-sns{
+      line-height: 5px;
+      height: 24px;
+      vertical-align: middle;
+      padding: 8px;
+      border-radius: 5px;
+      display: inline-block;
+      background-color: #ffede9;
+      color: #ffede9;
+      letter-spacing: 1px;
+      font-size: 15px;
+      a {
+        color: #ffa5a5;
+        font-size: 10px;
+        padding: 10px;
+      }
+    }
+    &__name {
+      padding-right: 15px;
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: #9c9c9c;
     }
   }
 
-  &__body {
-    &__img img {
-      width: 120px;
-    }
-    &__read {
-      width: 170px;
-      font-size: 11px;
-      padding: 0 10px;
-      font-weight: bold;
+  .this-page {
+    padding-bottom: 30px;
+    &__tags a, .tag-cloud-link {
+      padding: 8px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 10px;
+      background-color: #ffede9;
+      color: $font_color_head;
+      letter-spacing: 1px;
+      font-size: 12px !important;
     }
   }
-
+  .related-article {
+    &__content {
+      padding-bottom: 20px;
+    }
+    &__container::after{
+      content:"";
+      display: block;
+      width:30%;
+    }
+    &__img {
+      img {
+        width: 235px;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+    &__text {
+      @include listsTitle(10,1.4);
+      width: 235px;
+    }
+  }
+.news-list{
+  &__title {
+    width: 157px;
+    @include listsTitle(8,1.4);
+    }
+  }
 }
-
 
 /*
 
-	components
+	bottom
 
 *************************************************/
 
@@ -1782,16 +1387,12 @@ body {
   padding-bottom: 30px;
   width: 1093px;
   margin: 0 auto;
-
   .header-side{
     @extend .components-title;
   }
-
-
   .news-list {
     margin-right:50px;
     padding-bottom: 50px;
-
     &__thumb-img img {
       width: 125px;
       height: auto;
@@ -1799,290 +1400,62 @@ body {
     }
     &__title {
       width: 186px;
-      font-size: 12px;
       padding-left: 15px;
-      font-weight: bold;
+      @include listsTitle(8.5,1.4);
     }
-
     &__content {
       padding-bottom: 15px;
     }
   }
-
-
   .bottom-popular{
     width: 720px;
-
     &__content {
       width: 208px;
       padding-bottom: 20px;
     }
-
     &__title {
-      font-size: 13px;
-      font-weight: bold;
+      @include listsTitle(10,1.4);
     }
-
     &__thumb-img img {
       width: 207px;
-
       height: 129px;
       object-fit: contain;
     }
-
   }
-
-
-
-
-}
-
-.more-search-article {
-
-  &__btn{
-    padding: 10px;
-    width: 117px;
-    font-size: 13px;
-    border: 4px solid #fff0ed;
-    margin-bottom: 12px;
-    //margin-right: 14px;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: .2s;
-  }
-  &__btn:hover{
-    background: #fff0ed;
-    text-decoration: none;
-  }
-  .fa-angle-right {
-    color: #dcdcdc;
-    padding-right: 3px;
-    @include fts(10, 10);
-
-  }f
-
-  .more-search-article__lists::before{
-    content:"";
-    display: block;
-    width:23%;
-    order:1;
-  }
-  .more-search-article__lists::after{
-    content:"";
-    display: block;
-    width:23%;
-  }
-}
-
-.instagram-models-lists {
-  border-top: solid 1px $border_color;
-  border-bottom: solid 1px $border_color;
-  margin-top: 50px;
-  padding: 30px 0;
-  position: relative;
-  width: 100%;
-  height: 120px;
-  margin-bottom: 20px;
-
-  &__container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  &__header {
-    font-size: 14px;
-    color: $font_sub_glay_color;
-    padding-bottom: 25px;
-  }
-  &__models {
-    text-align: center;
-    display: inline-block;
-
-    img {
-      @include border-radius(50%);
-      height: 80%;
-      width: 80%;
-      padding: 0;
-
+  .news-articles {
+    &__content {
+      padding-top: 10px;
+      width:23%;
     }
-  }
-}
-
-.article-sns-btns {
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-.article-sns-btns img {
-  width: 90px;
-  padding-right: 5px;
-}
-
-
-
-
-
-.related-article {
-  &__content {
-    padding-bottom: 20px;
-  }
-  &__container::after{
-    content:"";
-    display: block;
-    width:30%;
-  }
-
-  &__img {
-    img {
-      width: 235px;
-      height: 150px;
-      object-fit: cover;
+    &__container::before{
+      content:"";
+      display: block;
+      width:23%;
+      order:1;
     }
-  }
-  &__text {
-    @include fts(8, 8);
-    width: 235px;
-    padding-bottom: 10px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    line-height: 21px;
-    font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
-  }
-}
-
-
-
-.news-articles {
-  &__content {
-    padding-top: 10px;
-    width:23%;
-  }
-
-  &__container::before{
-    content:"";
-    display: block;
-    width:23%;
-    order:1;
-  }
-  &__container::after{
-    content:"";
-    display: block;
-    width:23%;
-  }
-
-  &__img {
-    img {
-      width: 226px;
-      height: 150px;
-      object-fit: cover;
+    &__container::after{
+      content:"";
+      display: block;
+      width:23%;
     }
-  }
-  &__text {
-    @include fts(8, 8);
-    padding: 10px 0;
-    letter-spacing: 1px;
-    font-weight: bold;
-    line-height: 17px;
-  }
-}
-
-.featured-articles {
-  &__content {
-    padding-top: 10px;
-    padding-right: 14px;
-  }
-  &__img {
-    img {
-      width: 200px;
-      height: 150px;
-      object-fit: cover;
+    &__img {
+      img {
+        width: 226px;
+        height: 150px;
+        object-fit: cover;
+      }
     }
-  }
-  &__text {
-    @include fts(8, 8);
-    width: 200PX;
-    padding: 10px 0;
-    letter-spacing: 1px;
-    font-weight: bold;
-    line-height: 17px;
-  }
-}
-
-
-.sns-area {
-  border: solid 1px $font_sub_color;
-  margin: 50px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-  .sns-area__img {
-    width: 50%;
-  }
-
-  .sns-area__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  &__info {
-    text-align: center;
-    width: 50%;
-
-  }
-  &__title {
-    padding: 9px 0;
-    @include fts(7, 10);
-    width: 152px;
-    margin: 0 auto;
-    letter-spacing: 2px;
-  }
-  .sns-icons {
-    width: 197px;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    img {
-      width: 15%;
+    &__text {
+      @include fts(8, 8);
+      padding: 10px 0;
+      letter-spacing: 1px;
+      font-weight: bold;
+      line-height: 17px;
     }
   }
 }
 
 
-
-.shopping-banner {
-  margin-bottom: 50px;
-}
-
-.featured-box {
-
-  &__header {
-    @include fts(9, 9);
-    padding: 10px 0;
-    font-weight: bold;
-    line-height: 1.3;
-  }
-  .featured-img {
-    img {
-      width: 100%;
-      height: 178px;
-      object-fit: cover;
-    }
-  }
-}
-
-/*
-
-	category-page
-
-*************************************************/
 
 
 
@@ -2091,7 +1464,6 @@ body {
 	search page
 
 *************************************************/
-
 .search__not-find{
 &__body{
   text-align: center;
@@ -2103,86 +1475,26 @@ body {
 }
 }
 
-
-/*
-
-	featured page
-
-*************************************************/
-
-.featured-page {
-  .related-article__content {
-    width: 23%;
-  }
-  .featured {
-    &-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    &-img {
-      padding: 10px 0;
-      width: 426px;
-    }
-    &-box__header {
-      @include fts(15, 15);
-      letter-spacing: 2px;
-      line-height: 1.3;
-    }
-
-    &-text {
-      text-align: center;
-      &__header {
-        font-size: 22px;
-        letter-spacing: 1px;
-        padding-bottom: 30px;
-      }
-      &__read {
-        width: 76%;
-        @include fts(7, 7);
-        color: $font_sub_glay_color;
-        margin: 0 auto;
-        line-height: 1.4;
-      }
-    }
-  }
-}
-
 /*
 
 	pages
 
 *************************************************/
-
 .pages {
-   h1.pages__header{
-     @include fts(10, 10);
-     color: #8c8c8c;
-     text-align: center;
-
-   }
-   h2.pages__header{
-     padding-bottom: 11px;
-     color: #8c8c8c;
-     @include fts(8, 8);
-
-  }
-
   .outer__inner{
     width: 1246px;
     margin: 0 auto;
   }
-
   &__container {
     width: 1010px;
     margin: 0 auto 80px auto
-
   }
-
   &__header {
-    @include fts(10, 10);
+    @include fts(12, 12);
+    text-align: center;
+    font-family: $font_family_jp;
     font-weight: bold;
-    letter-spacing: 0.8px;
+    color: $font-color_head;
   }
   &__read {
     padding-top: 65px;
@@ -2190,11 +1502,11 @@ body {
     letter-spacing: 2.3px;
     line-height: 1.5;
     color: #b1b1b1;
+    font-family: $font_family_jp;
     text-align: left;
     padding-bottom: 40px;
     width: 886px;
     margin: 0 auto;
-
     p{
       padding-bottom: 15px;
       color: #b1b1b1;
@@ -2206,7 +1518,6 @@ body {
       color: #b1b1b1;
     }
   }
-
   &__date-info {
     width: 300px;
     margin-left: auto;
@@ -2219,20 +1530,16 @@ body {
       padding-bottom:10px;
     }
   }
-
   .related-article__content {
     width: 23%;
   }
-
   .table-info {
     margin-bottom: 30px;
-    font-size: 15px;
+    @include fts(10, 10);
+    font-family: $font_family_jp;
     letter-spacing: 1px;
     color: #b1b1b1;
     background-color: #fff !important;
-
-
-
     table {
       width: 940px;
       border: solid #c3c3c3 0.5px;
@@ -2242,18 +1549,16 @@ body {
       td {
         width: 5px;
         padding: 20px 1px 20px 19px;
+        line-height: 34px;
       }
       tr {
         border: solid #c3c3c3 0.5px;
       }
     }
-
   }
-
   .mission {
     padding:50px 0;
   }
-
 }
 
 /*
@@ -2261,12 +1566,10 @@ body {
 	about page
 
 *************************************************/
-
 .about-page {
   .pages__container {
     width: 879px;
   }
-
   .mission {
     padding-top: 50px;
     .yuka-sign__img {
@@ -2282,13 +1585,8 @@ body {
      position: absolute;
      top: 285px;
      right: 308px;
-
    }
-
-
   }
-
-
 }
 
 /*
@@ -2296,12 +1594,10 @@ body {
 	security page
 
 *************************************************/
-
 .security-policy {
   border: solid 1px #d2d1d1;
   padding: 90px;
   text-align: center;
-
   p.pages__read {
     line-height: 1.6;
     letter-spacing: 1.5px;
@@ -2311,14 +1607,12 @@ body {
 
 /*
 
-	404page
+	error-page/404
 
 *************************************************/
-
 .error-page{
   .notfind__header {
     padding-bottom: 35px;
-
     &__img {
       width: 300px;
       margin: 0 auto;
@@ -2331,106 +1625,30 @@ body {
       text-align: center;
     }
   }
-
   .notfind__body__img {
     width: 192px;
     margin: 0 auto;
     padding-bottom: 25px;
   }
-
   .notfind__btn {
     width: 200px;
     text-align: center;
     font-size: 13px;
     height: 48px;
     line-height: 42px;
-
     a{
       color: #fff;
       text-underline: none;
     }
   }
-
 }
 
 /*
 
-	components-parts.php
+service-page/ web & translate & contens
 
 *************************************************/
-
-
-
-.wrote-models-lists{
-  padding: 30px 0;
-  margin: 30px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid $border_color;
-  border-bottom: 1px solid $border_color;
-
-  &__header {
-    @include fts(8,8);
-    color: $font_sub_glay_color;
-    letter-spacing: 1px;
-    padding-right: 10px;
-  }
-&__img {
-  padding-right: 17px;
-  img {
-    height: 45px;
-    width: 45px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-  }
-}
-
-  .author-profile-sns{
-    line-height: 5px;
-    height: 24px;
-    vertical-align: middle;
-    padding: 8px;
-    border-radius: 5px;
-    display: inline-block;
-    background-color: #ffede9;
-    color: #ffede9;
-    letter-spacing: 1px;
-    font-size: 15px;
-    a {
-      color: #ffa5a5;
-      font-size: 10px;
-      padding: 10px;
-    }
-  }
-
-  &__name {
-    padding-right: 15px;
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: #9c9c9c;
-  }
-}
-
-
-.instagram-widget{
-  padding-bottom:50px;
-}
-
-
-
-/*
-
-service-page
-
-*************************************************/
-
 .service-page{
-
   &__header {
     background-color: $yellow_01;
     height: 130px;
@@ -2440,30 +1658,26 @@ service-page
     line-height: 4.4;
     color: $White_01;
   }
-
     &__list {
       padding-bottom: 30px;
-
       &__detail{
         @extend.house-page__body__detail
       }
     }
-
     &__list__header {
-      font-size: 22px;
+      @include fts(16, 16);
       letter-spacing: 1px;
       border-bottom: solid 1px $border_color;
       padding: 10px 0;
       margin-bottom: 20px;
+      font-family: $font_family_jp;
+      color:$font-color_head;
     }
-
     &__list__body {
       color: $font_sub_glay_color;
       letter-spacing: 2px;
       margin-bottom: 30px;
     }
-
-
   &__web{
     &__bg-img{
       background-image: url(./images/service-web-bg.JPG);
@@ -2472,7 +1686,6 @@ service-page
       background-position: 7px -675px;
     }
   }
-
   &__translate{
     &__bg-img{
       background-image: url(./images/service-translate-bg.JPG);
@@ -2481,7 +1694,6 @@ service-page
       background-position: 6px -645px;
     }
   }
-
   &__contens{
     &__bg-img{
       background-image: url(./images/service-contens-bg.JPG);
@@ -2490,58 +1702,47 @@ service-page
       background-position: 6px -249px;
     }
   }
-
-
 }
-
 
 /*
 
-house-page
+house-page/share-house＆real-estate
 
 *************************************************/
-
 .house-page{
-
-
   &__header {
     background-color: $blue_01;
-    height: 144px;
-    padding-left: 40px;
     @include fts(20, 20);
     letter-spacing: 1px;
-    line-height: 4.4;
+    padding: 30px 0 30px 40px;
     color: $White_01;
-
-
-
     &--jp {
-      height: 16px;
-      padding: 0;
-      font-size: 22px;
-      color: #4c8b96;
-      font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+      line-height: 1.7;
+      @include fts(12, 12);
+      color: #607071;
+      margin-bottom: 5px;
+      font-family: $font_family_jp;
     }
     &--en {
       @include fts(30, 30);
-      line-height: 3;
-      font-weight: bold;
+      line-height: 1;
+      font-family: $font_family_en;
     }
     .sub-txt{
+      width: 73px;
       font-size: 17px;
-      vertical-align: middle;
       border: solid #bdbdbd 0.5px;
       padding: 7px;
       vertical-align: middle;
       background-color: #fff;
-      padding-right: 1px;
-      margin-right: 10px;
-      line-height: 6;
       text-align: center;
-      color: $pink_02;
+      color: #ff846a;
+    }
+    .main-txt {
+    font-size: 3rem;
+    padding-left: 15px;
     }
   }
-
   &__body {
     &__container {
     text-align: center;
@@ -2550,7 +1751,6 @@ house-page
     &__container+&__container{
       border-top: solid 1px #d4d4d4;
     }
-
     &__img img {
       width: 323px;
       height: 250px;
@@ -2559,16 +1759,17 @@ house-page
     }
     &__header {
       padding: 40px;
-      font-size: 28px;
       letter-spacing: 1px;
+      @include fts(18, 18);
+      font-family: $font_family_jp;
+      color:$font-color_head;
+      text-align: center;
     }
     &__read {
         padding-bottom: 50px;
         text-align: start;
     }
   }
-
-
   &__share-house{
     &__bg-img{
       background-image: url(./images/hatching-house-pdx-bg.jpg);
@@ -2577,7 +1778,6 @@ house-page
       background-position: 2px -284px;
     }
   }
-
   &__real-estate{
     &__bg-img{
       background-image: url(./images/hatching-real-estate-bg.jpg);
@@ -2596,11 +1796,9 @@ house-page
 
 /*
 
-contact-form (コンポーネンツ)
+contact-form/comprnets
 
 *************************************************/
-
-
 .contact-form{
   padding-bottom: 80px;
   &__form {
@@ -2608,7 +1806,6 @@ contact-form (コンポーネンツ)
     text-align: center;
     padding-bottom: 50px;
   }
-
   &__header {
     background-color: $pink_01;
     height: 144px;
@@ -2617,51 +1814,42 @@ contact-form (コンポーネンツ)
     letter-spacing: 1px;
     line-height: 4.4;
     color: $White_01;
-
     &--jp {
       height: 19px;
       padding: 0;
       font-size: 22px;
       color: #ffffff;
-
+      font-family: $font_family_jp;
     }
     &--en {
       @include fts(30, 30);
       line-height: 3;
-      font-weight: bold;
+      font-family: $font_family_en;
     }
-
   }
-
   .form-group {
     margin-bottom: 2rem;
     text-align: right;
   }
-
-
   .contact-form__img img {
     width: 109px;
   }
-
   .notice-box {
     padding: 20px;
     background-color: #bdbdbd33;
     width: 930px;
     margin: 0 auto;
-
     &__header {
       text-align: center;
       padding-bottom: 20px;
       color: $pink_02;
     }
-
     &__body{
       color: #797979;
       padding-bottom: 20px;
       margin: 0 auto;
       width: 750px;
       letter-spacing: 0.4px;
-
       span.contact-mailto a {
         color: $pink_02;
         text-decoration: underline;
@@ -2672,14 +1860,13 @@ contact-form (コンポーネンツ)
 
 /*
 
-contact-form (コンポーネンツ)
+bootstrap/comprnets
 
 *************************************************/
 
 .card-body.text-dark {
   padding: 1.25rem;
 }
-
 .card-footer {
   background-color: #fff;
   font-size: 12px;

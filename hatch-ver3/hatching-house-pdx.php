@@ -9,11 +9,13 @@
 <h1 class='house-page__header--jp'>
 初渡米！女性一人旅でも安心なゲストハウス
 </h1>
-<div class='house-page__header--en'>
-<span class='sub-txt'>
+<div class='house-page__header--en flexbox--v-center'>
+<div class='sub-txt'>
 USA
-</span>
+</div>
+<div class='main-txt'>
 HATCHING HOUSE
+</div>
 </div>
 </div>
 <div class='house-page__share-house__bg-img'></div>

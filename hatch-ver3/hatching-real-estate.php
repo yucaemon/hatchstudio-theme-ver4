@@ -9,11 +9,13 @@
 <h1 class='house-page__header--jp'>
 SFバークレー不動産サポート
 </h1>
-<div class='house-page__header--en'>
-<span class='sub-txt'>
+<div class='house-page__header--en flexbox--v-center'>
+<div class='sub-txt'>
 USA
-</span>
+</div>
+<div class='main-txt'>
 HATCHING HOUSE
+</div>
 </div>
 </div>
 <div class='house-page__real-estate__bg-img'></div>
