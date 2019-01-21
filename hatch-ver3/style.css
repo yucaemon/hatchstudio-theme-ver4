@@ -7173,6 +7173,8 @@ body {
   color: #fff;
   letter-spacing: 1px;
   font-size: 12px !important; }
+  .category-icon a {
+    color: #fff; }
 
 /*
 
@@ -8193,11 +8195,11 @@ body {
   .single-page .wrote-models-lists__img {
     padding-right: 17px; }
     .single-page .wrote-models-lists__img img {
-      height: 45px;
-      width: 45px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
+      height: 45px !important;
+      width: 45px !important;
+      -webkit-border-radius: 50% !important;
+      -moz-border-radius: 50% !important;
+      border-radius: 50% !important;
       -moz-background-clip: padding;
       -webkit-background-clip: padding-box;
       background-clip: padding-box; }

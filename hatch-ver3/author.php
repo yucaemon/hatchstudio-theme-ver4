@@ -30,11 +30,6 @@
   <?php endforeach; ?>
 
 </ul>
-<div class='more-page'>
-<div class='more-page__btn big-btn'>
-<a href="<?php echo esc_url( home_url( '/archive/' ) ); ?>">>記事一覧ページへ</a>
-</div>
-</div>
 </div>
 <div class='column-4 side-contain'>
 <!-- 広告 -->

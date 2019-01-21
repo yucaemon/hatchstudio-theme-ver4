@@ -44,7 +44,7 @@
 <?php the_time('Y/m/d'); ?>
 </div>
 <div class='single-page__author__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/popo.jpg">
+<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/popo.jpg"></a>
 </div>
 </div>
 </div>

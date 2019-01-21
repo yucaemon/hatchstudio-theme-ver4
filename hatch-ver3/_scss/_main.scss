@@ -117,6 +117,9 @@ body {
   color: #fff;
   letter-spacing: 1px;
   font-size: 12px !important;
+  a{
+    color: #fff;
+  }
 }
 
 /*
@@ -1300,16 +1303,17 @@ body {
   &__img {
     padding-right: 17px;
     img {
-      height: 45px;
-      width: 45px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
+      height: 45px !important;
+      width: 45px !important;
+      -webkit-border-radius: 50% !important;
+      -moz-border-radius: 50% !important;
+      border-radius: 50% !important;
       -moz-background-clip: padding;
       -webkit-background-clip: padding-box;
       background-clip: padding-box;
     }
   }
+  
     .author-profile-sns{
       line-height: 5px;
       height: 24px;
