@@ -68,17 +68,9 @@
 <?php include('components-php/paging-nav.php'); ?>
 </div>
 <div class='column-4 side-contain'>
-<!-- 広告 -->
-<!-- 四角はっち公告 -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-  style="display:inline-block;width:336px;height:280px"
-  data-ad-client="ca-pub-1574488309106788"
-  data-ad-slot="5136876359"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- 広告 -->
+<div class='side-amazon-ad'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg">
+</div>
 <?php include('components-php/lists-popular-total.php'); ?>
 <?php include('components-php/lists-popular-month.php'); ?>
 <?php include('components-php/keywords.php'); ?>

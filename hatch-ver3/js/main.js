@@ -5,19 +5,6 @@
 jQuery(document).ready(function($) {
 
 
-
-//youtube動画の読み込み
-
-$('document').ready(function() {
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        $('#douga').remove();
-    }
-
-    var options = { videoId: 'iNAHMHkKCn4'};
-    $('#douga').tubular(options);
-});
-
-
 //ヘッダーの固定
 
     // masthead scroll
@@ -56,6 +43,7 @@ $('document').ready(function() {
             $('.business-content').removeClass('side-fixed-content');
         } else if ( fixedArea ) {
             $('.business-content').addClass('side-fixed-content');
+        }
         }
     });
 

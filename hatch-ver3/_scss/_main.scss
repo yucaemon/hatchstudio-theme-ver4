@@ -309,6 +309,16 @@ body {
 
 *************************************************/
 
+.side-amazon-ad {
+  width: 300px;
+  margin: 0 auto;
+  img {
+      width: 300px;
+      margin-bottom: 50px;
+  }
+}
+
+
 .side-fixed-content{
   position: fixed;
   top: 15%;
@@ -1313,7 +1323,7 @@ body {
       background-clip: padding-box;
     }
   }
-  
+
     .author-profile-sns{
       line-height: 5px;
       height: 24px;

@@ -7326,6 +7326,13 @@ body {
 	side
 
 *************************************************/
+.side-amazon-ad {
+  width: 300px;
+  margin: 0 auto; }
+  .side-amazon-ad img {
+    width: 300px;
+    margin-bottom: 50px; }
+
 .side-fixed-content {
   position: fixed;
   top: 15%;
