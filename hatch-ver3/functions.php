@@ -1,7 +1,5 @@
 <?php
 
-
-
 //　アイキャッチ機能を追加
 add_theme_support('post-thumbnails');
 
@@ -178,12 +176,10 @@ function titleFunc( $atts, $content = null ) {
 }
 add_shortcode('title', 'titleFunc');
 
-
 function h2Func( $atts, $content = null ) {
     return '<h2 class="headline-second">' . $content . '</h2>';
 }
 add_shortcode('見出し2', 'h2Func');
-
 
 function h3Func( $atts, $content = null ) {
     return '<h3 class="headline-third">' . $content . '</h3>';
@@ -406,3 +402,46 @@ function get_popular_args($range= "weekly", $limit = 8){
 
   return $args;
 }
+
+//h2の見出しに広告を挿入
+
+function ads_unit($content){
+    if(!is_single()){
+        return $content;
+    }else{
+/* 設定 */
+        $adsCode1=<<<EOC
+<!-- Adsense Code Start -->
+広告大
+<!-- Adsense Code End -->
+EOC;
+
+        $adsCode2=<<<EOC
+<!-- Adsense Code Start -->
+記事広告
+<!-- Adsense Code End -->
+EOC;
+        $dmt='<h2';
+        $pos1=array(1);
+        $pos2=array(2,4,6,7);
+/* 設定END 以降は変更しない！ */
+        $content = preg_replace('/<!--[\s\S]*?-->/s', '', $content);
+        $paragraphs=explode($dmt,$content);
+        foreach($paragraphs as $pg){
+            if($c>=1){
+                if(in_array($c,$pos1)){
+                    $customContent.=$adsCode1.$dmt.$pg;
+                }if(in_array($c,$pos2)){
+                    $customContent.=$adsCode2.$dmt.$pg;
+                }else{
+                    $customContent.=$dmt.$pg;
+                }
+            }else{
+                $customContent.=$pg;
+            }
+            $c++;
+        }
+        return $customContent;
+    }
+}
+add_filter('the_content','ads_unit');

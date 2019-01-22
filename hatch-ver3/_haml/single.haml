@@ -80,8 +80,12 @@
 
     .outer__inner
       .articles__container__bottom.flexbox--h-center
-        <?php include('components-php/bt-news-lists.php'); ?>
-        <?php include('components-php/bt-popular-month.php'); ?>
+        .bt-left
+          <?php include('components-php/bt-news-lists.php'); ?>
+        .bt-right
+          <?php include('components-php/affiliate-ad-article.php'); ?>
+          <?php include('components-php/bt-popular-month.php'); ?>
+
 
 
 

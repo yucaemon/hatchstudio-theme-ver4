@@ -44,7 +44,6 @@ jQuery(document).ready(function($) {
         } else if ( fixedArea ) {
             $('.business-content').addClass('side-fixed-content');
         }
-        }
     });
 
 

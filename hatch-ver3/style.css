@@ -7108,6 +7108,9 @@ a:hover img {
 ::-moz-selection {
   background: #ffe0e0; }
 
+iframe {
+  margin-bottom: 20px; }
+
 /*
 
 	layout

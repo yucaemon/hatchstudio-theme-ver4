@@ -8,7 +8,7 @@
 <div class='news-list__container'>
 <?php
 $posts = get_posts(array(
-'posts_per_page' => 8, // 表示件数
+'posts_per_page' => 20, // 表示件数
 ));
 ?>
 <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
