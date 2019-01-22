@@ -8163,8 +8163,8 @@ body {
     padding-left: 20px; }
 .single-page .affiliate-ad {
   margin: 0 auto;
-  width: 336px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  width: 750px; }
 .single-page .paging-nav {
   width: auto;
   background-color: #f6cdc4; }
@@ -8181,7 +8181,9 @@ body {
       font-size: 37px;
       padding: 6px 9px; }
   .single-page .paging-nav__body__img img {
-    width: 120px; }
+    width: 120px;
+    height: 75px;
+    object-fit: cover; }
   .single-page .paging-nav__body__read {
     width: 170px;
     font-size: 11px;
@@ -8289,8 +8291,8 @@ body {
     padding-bottom: 50px; }
     .articles__container__bottom .news-list__thumb-img img {
       width: 125px;
-      height: auto;
-      object-fit: contain; }
+      height: 80px;
+      object-fit: cover; }
     .articles__container__bottom .news-list__title {
       width: 186px;
       padding-left: 15px;

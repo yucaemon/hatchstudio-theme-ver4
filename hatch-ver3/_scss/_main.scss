@@ -1263,8 +1263,8 @@ body {
   }
   .affiliate-ad {
     margin: 0 auto;
-    width: 336px;
     padding-bottom: 30px;
+    width: 750px;
   }
   .paging-nav {
     width: auto;
@@ -1290,6 +1290,8 @@ body {
     &__body {
       &__img img {
         width: 120px;
+        height: 75px;
+        object-fit: cover;
       }
       &__read {
         width: 170px;
@@ -1412,8 +1414,8 @@ body {
     padding-bottom: 50px;
     &__thumb-img img {
       width: 125px;
-      height: auto;
-      object-fit: contain;
+      height: 80px;
+      object-fit: cover;
     }
     &__title {
       width: 186px;

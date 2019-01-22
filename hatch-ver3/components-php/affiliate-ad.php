@@ -1,13 +1,11 @@
-<div class='affiliate-ad test'>
-<!-- 広告 -->
+<div class='affiliate-ad flexbox--spacearound'>
+<!-- レンダリング（大）２並び広告 -->
 <!-- 四角はっち公告 -->
-<!-- script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-  style="display:inline-block;width:336px;height:280px"
-  data-ad-client="ca-pub-1574488309106788"
-  data-ad-slot="5136876359"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script -->
-<!-- 広告 -->
+<div>
+  <!-- レンダリング（大）336 280　入れる -->
+</div>
+<!-- 四角はっち公告 -->
+<div>
+  <!-- レンダリング（大）336 280　入れる -->
+</div>
 </div>

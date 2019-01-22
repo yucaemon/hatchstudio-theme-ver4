@@ -2,7 +2,7 @@
 <div class='header-side'>
 <div class='header-side__title'>
 おすすめ
-<i class="fas fa-fire"></i>
+<i class="fas fa-heart"></i>
 関連記事
 </div>
 </div>
