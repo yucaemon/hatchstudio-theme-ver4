@@ -8,8 +8,6 @@
 <div class='middle-contain'>
 <ul class='post-lists article-list box-list'>
   <?php
-
-
      $args = array(
     'posts_per_page' => 6,                //表示（取得）する記事の数
     'post_type' => 'post'    //投稿タイプの指定
@@ -26,8 +24,6 @@
               echo '<div class="newMark">NEW</div>';
             }
           ?>
-
-
 
 
           <div class='post-lists__img article-list__img imgWrap'>
@@ -90,7 +86,7 @@
   </ul>
 </div>
 <div class='side-contain'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg">
+<?php include('components-php/affiliate-ad-one.php'); ?>
 <?php include('components-php/keywords.php'); ?>
 </div>
 </div>
@@ -127,6 +123,7 @@
 </ul>
 </div>
 <div class='side-contain'>
+<?php include('components-php/affiliate-ad-one.php'); ?>
 <?php include('components-php/lists-popular-month.php'); ?>
 </div>
 </div>

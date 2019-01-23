@@ -7618,6 +7618,10 @@ body {
 	index.page
 
 *************************************************/
+.affiliate-ad-one {
+  width: 336px;
+  margin: 0 auto 30px auto; }
+
 .section {
   padding-bottom: 50px; }
 

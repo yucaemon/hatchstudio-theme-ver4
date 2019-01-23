@@ -75,6 +75,7 @@ module.exports = function (grunt) {
                     'components-php/bt-news-lists.php': '_haml/bt-news-lists.haml',
                     'components-php/category-keywords.php': '_haml/category-keywords.haml',
                     'components-php/affiliate-ad-article.php': '_haml/affiliate-ad-article.haml',
+                    'components-php/affiliate-ad-one.php': '_haml/affiliate-ad-one.haml',
 
 
                     'index.php': '_haml/index.haml',
