@@ -11,10 +11,10 @@
 <div class='pages__container'>
 <div class='mission'>
 <h1 class='pages__header'>
-楽しく仕事ができる人と働きたい。
+幸せを追求しながら、仕事ができる人と働きたい。
 </h1>
 <p class='pages__read'>
-はっちすたじおは、人が好きで常に新しいこと、楽しいことを探しながら、楽しい職場を意識しながら働ける人を歓迎します。また、自分のしっかり価値観を持ちながら、他人の価値観も受け入れ成長できる人と働けるたらいいな。と思っています。
+はっちすたじおは、人が好きで、楽しい職場を常に意識しながら働ける人を歓迎します。また、自分の『幸せ』の価値観をしっかり持ちながら、他人の価値観も受け入れ、成長し続けられる人と働けるたらいいな。と思っています。
 </p>
 </div>
 <div class='row'>
@@ -208,7 +208,7 @@ OPTビザサポート有
 <div class='col-sm-3'>
 <div class='card border-primary'>
 <div class='card-header'>
-女性モデル
+モデル
 </div>
 <div class='card-body text-dark'>
 <div class='card-title'>
@@ -217,10 +217,10 @@ OPTビザサポート有
 <p class='card-text'>
 <ol>
 <li>
-アメリカ在住の方
+アメリカ在住の女性の方
 </li>
 <li>
-モデル経験5年以上
+モデル経験3年以上
 </li>
 <li>
 23才以上
