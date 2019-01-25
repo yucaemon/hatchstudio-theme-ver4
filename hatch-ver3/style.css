@@ -8333,9 +8333,9 @@ body {
       line-height: 1;
       line-height: 1.4; }
     .articles__container__bottom .bottom-popular__thumb-img img {
-      width: 207px;
+      width: 100%;
       height: 129px;
-      object-fit: contain; }
+      object-fit: cover; }
   .articles__container__bottom .news-articles__content {
     padding-top: 10px;
     width: 23%; }

@@ -1451,9 +1451,9 @@ body {
       @include listsTitle(10,1.4);
     }
     &__thumb-img img {
-      width: 207px;
+      width: 100%;
       height: 129px;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
   .news-articles {
