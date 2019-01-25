@@ -76,6 +76,8 @@ module.exports = function (grunt) {
                     'components-php/category-keywords.php': '_haml/category-keywords.haml',
                     'components-php/affiliate-ad-article.php': '_haml/affiliate-ad-article.haml',
                     'components-php/affiliate-ad-one.php': '_haml/affiliate-ad-one.haml',
+                    'components-php/affiliate-ad-sky.php': '_haml/affiliate-ad-sky.haml',
+
 
 
                     'index.php': '_haml/index.haml',

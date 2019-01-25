@@ -313,10 +313,10 @@ body {
 *************************************************/
 
 .side-amazon-ad {
-  width: 300px;
+  width: 312px;
   margin: 0 auto;
   img {
-      width: 300px;
+      width: 312px;
       margin-bottom: 50px;
   }
 }
@@ -325,6 +325,12 @@ body {
 .side-fixed-content{
   position: fixed;
   top: 15%;
+  width: 313px;
+}
+
+.side-fixed-content02{
+  position: fixed;
+  top: 48%;
   width: 313px;
 }
 
@@ -530,6 +536,7 @@ body {
       height: 175px;
       text-align: center;
       padding: 29px;
+      margin-bottom: 35px;
     }
     &-header-txt {
       font-size: 19px;

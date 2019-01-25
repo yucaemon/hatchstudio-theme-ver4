@@ -14,7 +14,7 @@
 <ul class='post-lists article-list box-list flexbox--spacebetween'>
 
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
-  <?php if($countblock == 1 or $countblock == 8 or $countblock == 12) : ?>
+  <?php if($countblock == 5 or $countblock == 8 or $countblock == 12) : ?>
   //ここに広告のコードor画像など//
   <?php endif; ?>
 
@@ -33,13 +33,15 @@
 <?php include('components-php/affiliate-ad.php'); ?>
 </div>
 <div class='column-4 side-contain'>
-<div class='side-amazon-ad'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg">
-</div>
+<?php include('components-php/affiliate-ad-sky.php'); ?>
 <?php include('components-php/keywords.php'); ?>
 <?php include('components-php/annie-ad-side.php'); ?>
 <?php include('components-php/house-ad-side.php'); ?>
 <?php include('components-php/business-ad-side.php'); ?>
+<div class='side-amazon-ad'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg">
+</div>
+<div class='side-fixed-area'></div>
 </div>
 </div>
 </div>

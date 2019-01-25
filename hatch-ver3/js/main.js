@@ -32,7 +32,7 @@ jQuery(document).ready(function($) {
         // 要素を固定させる位置を取得
         var fixed = $('.side-fixed-area').offset().top -200;
         // 要素を解除する位置
-        var footer = $('.articles__container__bottom').offset().top -320;
+        var footer = $('.articles__container__bottom').offset().top -520;
         // 以下の条件分岐で使用する位置の状態を取得
         var windowScrollTop = $(window).scrollTop();
         var footerArea = windowScrollTop > footer;
@@ -44,8 +44,12 @@ jQuery(document).ready(function($) {
         } else if ( fixedArea ) {
             $('.business-content').addClass('side-fixed-content');
         }
+        if( footerArea || beforeFixedArea ) {
+            $('.side-amazon-ad').removeClass('side-fixed-content02');
+        } else if ( fixedArea ) {
+            $('.side-amazon-ad').addClass('side-fixed-content02');
+        }
     });
-
 
 
 

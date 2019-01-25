@@ -7330,15 +7330,20 @@ body {
 
 *************************************************/
 .side-amazon-ad {
-  width: 300px;
+  width: 312px;
   margin: 0 auto; }
   .side-amazon-ad img {
-    width: 300px;
+    width: 312px;
     margin-bottom: 50px; }
 
 .side-fixed-content {
   position: fixed;
   top: 15%;
+  width: 313px; }
+
+.side-fixed-content02 {
+  position: fixed;
+  top: 48%;
   width: 313px; }
 
 .side-contain .keywords__content {
@@ -7489,7 +7494,8 @@ body {
   background-color: #ffde8d;
   height: 175px;
   text-align: center;
-  padding: 29px; }
+  padding: 29px;
+  margin-bottom: 35px; }
 .business-ad-side .business-header-txt {
   font-size: 19px;
   color: #ee9b2d;
