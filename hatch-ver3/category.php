@@ -12,7 +12,12 @@
 『 <?php echo get_the_archive_title(); ?> 』の関連記事一覧
 </h1>
 <ul class='post-lists article-list box-list flexbox--spacebetween'>
-  <?php if(have_posts()): while(have_posts()):the_post(); ?>
+
+  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
+  <?php if($countblock == 1 or $countblock == 8 or $countblock == 12) : ?>
+  //ここに広告のコードor画像など//
+  <?php endif; ?>
+
     <li class=''>
       <div class='post-lists__img article-list__img'>
         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
@@ -25,22 +30,14 @@
     </li>
   <?php endwhile; endif; ?>
 </ul>
+<?php include('components-php/affiliate-ad.php'); ?>
 </div>
 <div class='column-4 side-contain'>
-<!-- 広告 -->
-<!-- 四角はっち公告 -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-  style="display:inline-block;width:336px;height:280px"
-  data-ad-client="ca-pub-1574488309106788"
-  data-ad-slot="5136876359"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- 広告 -->
-<?php include('components-php/news-list.php'); ?>
-<?php include('components-php/news-list.php'); ?>
+<div class='side-amazon-ad'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg">
+</div>
 <?php include('components-php/keywords.php'); ?>
+<?php include('components-php/annie-ad-side.php'); ?>
 <?php include('components-php/house-ad-side.php'); ?>
 <?php include('components-php/business-ad-side.php'); ?>
 <div class='side-fixed-area'></div>

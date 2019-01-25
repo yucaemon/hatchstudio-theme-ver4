@@ -16,7 +16,6 @@ query_posts($args); ?>
     <p class="bottom-popular__title"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></p>
   </dd>
 
-
 <?php endwhile; else : ?>
 <li>該当なし</li>
 <?php endif;
