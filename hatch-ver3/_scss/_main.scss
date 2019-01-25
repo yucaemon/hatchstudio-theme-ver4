@@ -446,6 +446,7 @@ body {
     }
   }
 
+
   .keywords-category{
     .this-page__tags a ,.tag-cloud-link{
       padding: 8px;
@@ -1367,6 +1368,9 @@ body {
 
   .this-page {
     padding-bottom: 30px;
+    .tag {
+    margin-right: 12px;
+    }
     &__tags a, .tag-cloud-link {
       padding: 8px;
       border-radius: 5px;

@@ -8247,6 +8247,8 @@ body {
     color: #9c9c9c; }
 .single-page .this-page {
   padding-bottom: 30px; }
+  .single-page .this-page .tag {
+    margin-right: 12px; }
   .single-page .this-page__tags a, .single-page .this-page .tag-cloud-link {
     padding: 8px;
     border-radius: 5px;
