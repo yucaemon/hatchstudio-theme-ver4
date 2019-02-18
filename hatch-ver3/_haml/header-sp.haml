@@ -3,78 +3,10 @@
     .drawer.drawer--left
       %btn.drawer-toggle.drawer-hamburger
         %i.fa.fa-align-justify
-      .drawer-nav
-        .drawer-nav__container
-          .drawer-nav__title
-            %i.fa.fa-home
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">ホームに戻る</a>
-          .drawer-nav__title
-            %i.fa.fa-list-ul
-            カテゴリーから探す
-          %ul.drawer-menu
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/category/fashion/">ファション</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/category/gourmet/">お出かけ/グルメ</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/category/lifestyle/">ライフ/DIY</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/category/cosmetics/">美容/コスメ</a>
-
-          .drawer-nav__title
-            %i.fa.fa-globe
-            キーワードから探す
-          %ul.drawer-menu
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/organic/">オーガニック</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/ethical/">エシカル</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/fairtrade/">フェアトレード</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/local/">ローカル</a>
-
-          .drawer-nav__title
-            %i.fa.fa-leaf
-            アイテムから探す
-          %ul.drawer-menu
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/tops/">トップス</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/bottoms/">ボトムス</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/dresses/">ドレス</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/accessories/">アクセサリー</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/lingerie/">ランジェリー</a>
-
-          .drawer-nav__title
-            %i.fa.fa-bookmark
-            ブランドから探す
-          %ul.drawer-menu
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/anthropologie-co/">Anthropologie & Co.</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/madewell/">Madewell</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/free-people/">Free People</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/pendleton/">Pendleton</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/poler/">POLeR</a>
-            %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/portland-gear/">Portland Gear</a>
 
     .search
       %btn.search-icon
         %i.fa.fa-search
-      .search__box.textArea
-        .search__form
-          <?php get_search_form(); ?>
-  .logo
-    .logo__img
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/annie-logo.svg" width="250"></a>
-    %h1.sub-title
-      旅するように暮らそう。『BOHO(ボーホー)』スタイルをお届け。
 
+  .logo__img
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-bk.svg" width="250"></a>

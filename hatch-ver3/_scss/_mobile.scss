@@ -4,24 +4,31 @@
 
 **************************************************/
 
+
 @media (max-width: 680px) {
   /*要素を消す*/
 
   /*indexページ*/
 
-  .sns-icons {
+  .header{
     display: none;
+  }
+  .header-bar{
+    display: none;
+  }
+  .side-contain .header-side{
+    display: none;
+  }
 
-  }
-  #douga {
+  .header-side__img{
     display: none;
+    &--sp {
+    width: 350px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    }
   }
-  .header {
-    display: none;
-  }
-  .header02{
-    display: none;
-  }
+
   .pages__container{
     padding: 30px;
     .logo__img{
@@ -97,7 +104,8 @@
   .header-sp {
     display: block;
     height: 132px;
-    padding-bottom: 20px;
+    padding: 20px 0;
+    border-bottom: solid 2px $pink_01;
 
     .logo__img {
       width: 100%;
@@ -107,7 +115,7 @@
       img {
         margin: 0;
         padding: 0;
-        width: 235px;
+        width: 110px;
       }
     }
 
@@ -202,24 +210,24 @@
   .middle-contain {
     margin: 0;
     width: 100%;
+    padding-bottom: 30px;
 
     .article-list {
-      padding: 30px 20px;
-      //width: 100% !important;
-
+      padding: 0 20px;
       &__img {
-        width: 137px;
-        height: 88px;
-        object-fit: cover;
+        img {
+         width: 373px;
+         height: 215px;
+         object-fit: cover;
+        }
       }
-
       li {
-        height: 110px;
+        height: auto;
         padding-bottom: 0;
-       // margin-bottom: 25px;
       }
       &__text {
-        width: 165px;
+        width: 377px;
+        margin-bottom: 20px;
       }
     }
     .more-page {
@@ -229,7 +237,6 @@
 
   .side-contain {
     width: 100%;
-
     .featured-box {
       padding: 0;
 
@@ -264,15 +271,7 @@
     }
   }
 
-  .post-lists {
-    padding: 30px 20px;
-    &__img {
-      width: 44% !important;
-      height: 88px;
-      object-fit: cover;
-    }
 
-  }
 
   .footer-sp {
     .sns-info {
@@ -314,7 +313,7 @@
     }
     .middle-contain {
       width: 100%;
-      //display: flex;
+
 
       .article-sns-btns {
         display: none;

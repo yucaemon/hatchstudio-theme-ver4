@@ -343,54 +343,7 @@ body {
     }
   }
 
-  .news-list {
-    &__container{
-      padding-bottom:50px;
-    }
-    &__header{
-      padding-left: 10px;
-    }
-    &__title {
-      width: 252px;
-      @include listsTitle(9,1.4);
 
-    }
-    &__content{
-      padding-bottom: 20px;
-    }
-    span.views{
-      display: inline-block;
-      font-size: 13px;
-      color: #f2695d;
-      background-color: #fff5f5;
-      padding: 3px 10px;
-      letter-spacing: 1px;
-      border-radius: 6px;
-      margin-bottom: 10px;
-    }
-  }
-  .header-side{
-    padding-bottom: 20px;
-    justify-content: center;
-    &__img {
-      width: 21px;
-    }
-    &__txt {
-      &--en{
-        font-size: 17px;
-        letter-spacing: 1px;
-        padding: 2px 8px 0 15px;
-        color: #333;
-        font-family: $font_family_en;
-      }
-      &--jp {
-        padding-right:15px;
-        padding-top: 6px;
-        font-size: 11px;
-        letter-spacing: 1px;
-      }
-    }
-  }
 
   .recommend-list {
     dd + dd {
@@ -704,55 +657,6 @@ body {
   padding-bottom:50px;
 }
 
-.middle-contain {
-  margin: 0 30px;
-  .bg-thumb-img {
-    margin-bottom: 30px;
-  }
-  .box-list li {
-      height: 339px;
-  }
-  .article-list {
-    li {
-      padding-bottom: 14px;
-      width: 353px;
-    }
-    .newMark {
-      position: absolute;
-      background: $pink_02;
-      color: #fff;
-      padding: 8px 20px;
-      letter-spacing: 3px;
-      font-family: $font_family_en;
-    }
-    &__img {
-      width: auto;
-      height: auto;
-      object-fit: cover;
-      img {
-        width: 350px;
-        height: 200px;
-        object-fit: cover;
-      }
-    }
-    &__text {
-      .list-title {
-        @include listsTitle(12,1.4);
-        padding-bottom: 10px;
-      }
-      .icons {
-        .icons__tag {
-          background-color: $main_color;
-          margin-right: 10px;
-          color: #fff;
-          @include fts(3, 3);
-          @include border-radius(2px);
-          padding: 4px 7px;
-        }
-      }
-    }
-  }
-}
 
 .second-section {
   .middle-contain .article-list li {

@@ -1,5 +1,8 @@
 <dl class='news-list'>
 <dt>
+<div class='header-side__img--sp'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/popular-baner.svg">
+</div>
 <div class='header-side flexbox'>
 <div class='header-side__img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-left.svg">
