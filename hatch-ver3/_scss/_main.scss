@@ -306,6 +306,28 @@ body {
 
 }
 
+.eyecatch{
+position: relative;
+}
+.eyechatchlabel{
+  position: absolute;
+  color: #fff;
+  top: 0px;
+  padding: 5px 10px;
+}
+//カテゴリー別にラベルの色を変える
+.eyechatchlabel.cook{
+  background-color: $pink_01;
+}
+.eyechatchlabel.sanfrancisco{
+  background-color: $yellow_01;
+}
+.eyechatchlabel.ucberkeley{
+  background-color: $blue_01;
+}
+
+
+
 /*
 
 	side

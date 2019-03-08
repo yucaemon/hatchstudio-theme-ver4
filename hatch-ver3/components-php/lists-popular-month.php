@@ -1,5 +1,8 @@
 <dl class='news-list'>
 <dt>
+<div class='header-side__img--sp'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/recomend-baner.svg">
+</div>
 <div class='header-side flexbox'>
 <div class='header-side__img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-left.svg">
@@ -16,7 +19,7 @@ POPULOR
 </div>
 </div>
 </dt>
-<div class='news-list__container'>
+<div class='news-list__container two-column-sp'>
 <?php
 $last_month = date('Y-m-d', strtotime('-10 months'));
 $results = $wpdb->get_results("
@@ -42,10 +45,14 @@ $view_ordered_post_ids = array_keys( $average_views )
   $this_post = get_post( $this_post_id );
 ?>
 
-  <dd class="news-list__content flexbox">
+  <dd class="news-list__content eyecatch flexbox">
     <div class="news-list__thumb-img">
       <a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo get_the_post_thumbnail( $this_post->ID, 'thumbnail' ); ?></a>
     </div>
+    <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
+      <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+    </p>
+
     <div class="news-list__header">
       <p class="news-list__title"><a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo $this_post->post_title; ?></a></p>
     </div>

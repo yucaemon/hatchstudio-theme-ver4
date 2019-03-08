@@ -7,8 +7,15 @@
 
 @media (max-width: 680px) {
   /*要素を消す*/
+  html {
+    margin-top: 0 !important;
+  }
 
   /*indexページ*/
+
+  .outer__inner {
+    padding-top: 0;
+}
 
   .header{
     display: none;
@@ -27,6 +34,10 @@
     padding-bottom: 30px;
     margin: 0 auto;
     }
+  }
+
+  .hatching-house{
+    display: none;
   }
 
   .pages__container{
@@ -80,8 +91,29 @@
   .search-content__header{
     //display: none;
   }
+  .blogger{
+    display: none;
+  }
+  .business{
+    display: none;
+  }
+  .annie{
+    display: none;
+  }
+  .sns-info{
+    display: none;
+  }
 
 
+  .affiliate-ad-sp {
+    width: 250px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+  }
+
+  .section {
+    padding-bottom: 0;
+  }
 
   .outer {
     &__header {
@@ -103,26 +135,36 @@
 
   .header-sp {
     display: block;
-    height: 132px;
-    padding: 20px 0;
-    border-bottom: solid 2px $pink_01;
+    padding: 0;
+    margin-bottom: 35px;
+
+    .drawer-hamburger{
+      position: static;
+    }
+
+    &__container{
+      width: 398px;
+      margin: 0 auto;
+    }
 
     .logo__img {
-      width: 100%;
-      height: 0;
-      margin-bottom:  20%;
-      padding-top: 3%;
+      height: auto;
+      padding-bottom: 15px;
       img {
         margin: 0;
         padding: 0;
         width: 110px;
       }
     }
+    &__txt{
+      @include fts(6,6);
+      text-align: center;
+      letter-spacing: 1px;
+    }
 
     .search {
       padding-top: 15px;
       padding-right: 13px;
-
       &__box {
         position: absolute;
         top: 0;
@@ -168,11 +210,6 @@
 
 
     }
-    .drawer-hamburger {
-      position: absolute;
-      z-index: 300;
-
-    }
     .drawer-nav {
       &__container {
         padding: 20px 0;
@@ -203,10 +240,7 @@
     height: 260px;
     background: url("images/index-top-banner02.png") no-repeat;
     background-size: cover;
-
   }
-
-
   .middle-contain {
     margin: 0;
     width: 100%;
@@ -274,34 +308,77 @@
 
 
   .footer-sp {
-    .sns-info {
-      text-align: center;
-      font-size: 16px;
-      padding-bottom: 20px;
-      padding-top: 50px;
-    }
-    &__sns-icons img {
-      width: 40px;
-      height: 40px;
-    }
-    &__bottom-content {
-      background-color: #f2716e;
-      padding-bottom: 50px;
-      color: #fff;
-      text-align: center;
-      padding-top: 30px;
-    }
-    &__container {
-      text-align: left;
-      color: #fff;
-      padding-left: 30px;
-      li {
-        padding-bottom: 10px;
+    &__header{
+      .background-draw{
+       justify-content: space-around;
+       padding-top: 30px;
+       height: 77px;
+      &__left {
+        position: static;
+        img{
+         width: 140px;
+        }
       }
-
+      &__right{
+        position: static;
+        img{
+          width: 150px;
+        }
+      }
+     }
     }
-    &__logo-img {
-      padding-bottom: 20px;
+
+    &__bottom{
+      padding: 30px 0;
+      background-color: #bee4e6;
+      color: #fff;
+
+      &__container{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:0 auto;
+        width: 370px;
+
+        .footer-sp__logo{
+          &-img {
+             img{
+                 width: 115px;
+             }
+             padding-bottom:5px;
+          }
+          &-txt {
+            @include fts(7,7);
+            color: #52bcbc;
+            letter-spacing: 1px;
+          }
+        }
+        .footer-sp__info{
+          width: 200px;
+          &__heder{
+            @include fts(13,13);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-family: $font_family_jp;
+            padding-bottom: 10px;
+            font-weight: bold;
+          }
+          &__body{
+            @include fts(5,5);
+            letter-spacing: 1px;
+            padding-bottom: 11px;
+            color: #a7a7a7;
+            font-weight: bold;
+          }
+          .sns-icons{
+            width: 300px;
+            justify-content: center;
+          }
+
+
+        }
+      }
     }
 
   }
@@ -393,7 +470,6 @@
 
   .middle-contain .article-list li+li {
     border-top: solid 1px #eaeaea;
-    padding-top: 30px;
   }
 
 
@@ -406,7 +482,7 @@
   .side-contain {
     .news-list {
       &__thumb-img {
-        padding-right: 3px;
+        //padding-right: 3px;
         img {
           width: 137px;
           height: 88px;
@@ -418,11 +494,11 @@
       }
       &__container {
         .news-list__content{
-        height: 110px;
+        height: auto;
       }
         .news-list__content + .news-list__content {
-            border-top: solid 1px #eaeaea;
-            padding-top: 30px;
+            //border-top: solid 1px #eaeaea;
+            //padding-top: 30px;
 
         }
       }
@@ -431,6 +507,77 @@
     }
 
   }
+
+.two-column-sp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 373px;
+    margin: 0 auto;
+  .views{
+    display: none !important;
+  }
+  .news-list{
+    &__content{
+      display: block;
+      //align-items: center;
+      width: 170px;
+    }
+    &__thumb-img{
+    //width: 175px;
+    img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      }
+    }
+    &__title {
+    font-size: 0.9em;
+    line-height: 1.44444;
+    width: auto;
+    }
+    &__header{
+      padding-left: 0;
+    }
+  }
+  .article-list{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 373px;
+    &__img{
+      img{
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+      }
+    }
+    li {
+      width: 170px !important;
+  }
+  &__text {
+    word-wrap: break-word;
+    width: auto !important;
+    padding-left: 0 !important;
+    }
+  li + li{
+    border-top: none;
+    padding-top: 0;
+    }
+    .list-title {
+      font-size: 0.9em;
+      line-height: 1.44444;
+      width: auto;
+      font-weight: bold;
+  }
+  .category-icon{
+    display: none;
+  }
+  }
+
+
+}
 
 /*
 
@@ -676,6 +823,67 @@ related-article(関連記事)
 
   .pages .notice-bar {
     display: block;
+  }
+
+/*components part*/
+  .our-service{
+      padding: 0;
+      height: 600px;
+    &__header {
+    padding: 15px 0;
+    width: 356px;
+    margin: 0 auto;
+    }
+    &__txt{
+      display: block;
+    }
+    &__header--en{
+        @include fts(20,20);
+        padding-bottom: 10px;
+    }
+    &__header--jp{
+        padding-left: 0;
+        @include fts(10,10);
+    }
+    &__pictures::after {
+        content:"";
+        display: block;
+        width:48%;
+    }
+    &__pictures {
+      width: 370px;
+      margin: 0 auto;
+      justify-content: space-around;
+    li {
+    width: 170px;
+    margin-right:0;
+    margin-bottom: 25px;
+    }
+    .our-service--img{
+      height: 100px;
+    img{
+        width: 100%;
+    }
+  }
+  }
+  }
+  .business-sp{
+    background-color: #fcb751;
+    padding: 30px 0;
+    text-align: center;
+    &__container{
+      position: static;
+      display: block;
+      width: 370px;
+      margin: 0 auto;
+    }
+    &__txt{
+      @include fts(9,9);
+      color: #cc6e45;
+      letter-spacing: 1px;
+      font-weight: bold;
+      padding-bottom: 15px;
+    }
   }
 
 }

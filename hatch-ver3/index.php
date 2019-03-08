@@ -14,7 +14,7 @@
   );
   $posts = get_posts( $args );
     if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
-        <li class=''>
+        <li class='eyecatch'>
           <?php
             $days = 7;  // NEWマークを表示する日数
             $now = date_i18n('U');  // 今の時間
@@ -29,6 +29,10 @@
           <div class='post-lists__img article-list__img imgWrap'>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
           </div>
+          <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
+            <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+          </p>
+
           <div class='post-lists__text article-list__text'>
             <h3 class='post-lists__title list-title'>
               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -52,20 +56,27 @@
 </div>
 </div>
 </section>
+<?php include('components-php/affiliate-ad-sp.php'); ?>
 <?php include('components-php/share-house-ad.php'); ?>
 <section class='section second-section'>
+<div class='header-side__img--sp'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/news-baner.svg">
+</div>
 <div class='outer__inner flexbox'>
-<div class='middle-contain'>
+<div class='middle-contain two-column-sp'>
   <ul class='post-lists article-list flexbox'>
     <?php query_posts('posts_per_page=5&offset=6' ); ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
     <?php if($countblock == 3 or $countblock == 8 or $countblock == 12) : ?>
     //ここに広告のコードor画像など//
     <?php endif; ?>
-        <li class='flexbox'>
+        <li class='flexbox eyecatch'>
           <div class='post-lists__img article-list__img'>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
           </div>
+          <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
+            <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+          </p>
           <div class='post-lists__text article-list__text'>
             <h3 class='post-lists__title list-title'>
               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -85,18 +96,19 @@
 </div>
 </div>
 </section>
+<?php include('components-php/affiliate-ad-sp.php'); ?>
 <?php include('components-php/sponsor-blogger.php'); ?>
 <?php include('components-php/business.php'); ?>
 <section class='section third-section'>
 <div class='outer__inner flexbox'>
-<div class='middle-contain'>
+<div class='middle-contain two-column-sp'>
 <ul class='post-lists article-list box-list'>
   <?php query_posts('posts_per_page=5&offset=11' ); ?>
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
   <?php if($countblock == 3 or $countblock == 8 or $countblock == 12) : ?>
   //ここに広告のコードor画像など//
   <?php endif; ?>
-        <li class=''>
+        <li class='eyecatch'>
           <div class='post-lists__img article-list__img imgWrap'>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
           </div>
@@ -105,6 +117,10 @@
               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </h3>
           </div>
+          <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
+            <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+          </p>
+
         </li>
       <?php endwhile; endif;
       wp_reset_postdata(); //クエリのリセット ?>
@@ -122,6 +138,8 @@
 <div class='bottom-container'>
 <?php include('components-php/annie-banner.php'); ?>
 <?php include('components-php/service.php'); ?>
+<?php include('components-php/business-sp.php'); ?>
+<?php include('components-php/annie-sp.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>
