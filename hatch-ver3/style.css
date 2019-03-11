@@ -8661,10 +8661,16 @@ bootstrap/comprnets
   .footer-sp {
     display: none; }
 
+  .affiliate-ad-sp {
+    display: none; }
+
   .header-side__img--sp {
     display: none; }
 
   .business-sp {
+    display: none; }
+
+  .annie-sp {
     display: none; }
 
   .alternate-banner {
@@ -8743,6 +8749,8 @@ bootstrap/comprnets
     justify-content: space-around;
     flex-wrap: wrap; }
 
+  .second-section .eyechatchlabel {
+    display: none; }
   .second-section ul.post-lists.article-list {
     display: block; }
   .second-section .post-lists__img.article-list__img img {
@@ -8780,6 +8788,8 @@ bootstrap/comprnets
 	recomend-list-part
 
 *************************************************/
+  .side-contain .news-list .eyechatchlabel {
+    display: none; }
   .side-contain .news-list__thumb-img {
     padding-right: 3px; }
     .side-contain .news-list__thumb-img img {
@@ -9027,20 +9037,20 @@ bootstrap/comprnets
         right: 7px;
         top: 2px;
         z-index: 1000; }
-    .header-sp .drawer-nav__container {
-      padding: 20px 0; }
     .header-sp .drawer-nav .drawer-menu {
       padding: 5px 43px; }
       .header-sp .drawer-nav .drawer-menu__li {
         padding-bottom: 20px;
-        font-size: 10px;
-        font-size: 1rem;
+        font-size: 9px;
+        font-size: 0.9rem;
         line-height: 1;
-        color: #808080; }
+        color: #7d7b7b; }
     .header-sp .drawer-nav__title {
-      padding: 0 20px 20px 20px; }
+      padding: 20px 20px;
+      margin-bottom: 20px;
+      background-color: #fff4df; }
       .header-sp .drawer-nav__title i.fa {
-        color: #f2716e; }
+        color: #fcb751; }
 
   .notice-bar {
     margin: 0; }
@@ -9491,7 +9501,32 @@ related-article(関連記事)
       color: #cc6e45;
       letter-spacing: 1px;
       font-weight: bold;
-      padding-bottom: 15px; } }
+      padding-bottom: 15px; }
+
+  .annie-sp {
+    background-color: #f6cdc4; }
+    .annie-sp .annie-img {
+      width: auto; }
+      .annie-sp .annie-img img {
+        width: 225px;
+        height: 133px;
+        object-fit: cover;
+        display: block; }
+    .annie-sp .annie-header-main {
+      margin-bottom: 10px;
+      font-size: 12px;
+      text-align: center;
+      color: #fff; }
+    .annie-sp .annie-content {
+      width: 189px; }
+      .annie-sp .annie-content__container {
+        margin: 10px 15px;
+        text-align: center; }
+        .annie-sp .annie-content__container .annie-header-sub {
+          padding-bottom: 0;
+          padding-top: 10px; }
+        .annie-sp .annie-content__container .btn-round-white-02 {
+          font-size: 10px; } }
 /*
 
 	mobile settings windowサイズが1024以下- 680以上になった時の処理

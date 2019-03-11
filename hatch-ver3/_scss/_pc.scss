@@ -30,6 +30,9 @@
   .footer-sp {
     display: none;
   }
+  .affiliate-ad-sp{
+    display: none;
+  }
 
   .header-side__img--sp{
     display: none;
@@ -38,6 +41,9 @@
     display: none;
   }
 
+  .annie-sp{
+    display: none;
+  }
 
   .alternate-banner {
     display: none;
@@ -133,6 +139,9 @@
 
 
   .second-section{
+    .eyechatchlabel{
+      display: none;
+    }
     ul.post-lists.article-list {
       display:block;
     }
@@ -201,6 +210,9 @@
 *************************************************/
   .side-contain {
     .news-list {
+      .eyechatchlabel{
+        display: none;
+      }
       &__thumb-img {
         padding-right: 3px;
         img {

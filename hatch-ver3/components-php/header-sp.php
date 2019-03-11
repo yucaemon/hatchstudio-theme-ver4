@@ -8,83 +8,56 @@
 <div class='drawer-nav__container'>
 <div class='drawer-nav__title'>
 <i class='fa fa-list-ul'></i>
-カテゴリーから探す
+ブログコンテンツ
 </div>
 <ul class='drawer-menu'>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/category/fashion/">ファション</a>
+<a href="<?php bloginfo('url'); ?>/category/fashion/">サンフランシスコ</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/category/gourmet/">お出かけ/グルメ</a>
+<a href="<?php bloginfo('url'); ?>/category/gourmet/">ニューヨーク</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/category/lifestyle/">ライフ/DIY</a>
+<a href="<?php bloginfo('url'); ?>/category/lifestyle/">ポートランド</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/category/cosmetics/">美容/コスメ</a>
+<a href="<?php bloginfo('url'); ?>/category/cosmetics/">ハワイ</a>
 </li>
 </ul>
 <div class='drawer-nav__title'>
 <i class='fa fa-globe'></i>
-キーワードから探す
+サービス
 </div>
 <ul class='drawer-menu'>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/organic/">オーガニック</a>
+<a href="<?php bloginfo('url'); ?>/tag/organic/">WEB/動画制作</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/ethical/">エシカル</a>
+<a href="<?php bloginfo('url'); ?>/tag/ethical/">コンテンツ制作</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/fairtrade/">フェアトレード</a>
+<a href="<?php bloginfo('url'); ?>/tag/fairtrade/">ゲストハウス</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/local/">ローカル</a>
+<a href="<?php bloginfo('url'); ?>/tag/local/">英語/中国語翻訳</a>
 </li>
 </ul>
 <div class='drawer-nav__title'>
-<i class='fa fa-leaf'></i>
-アイテムから探す
+<i class='fa fa-building'></i>
+会社について
 </div>
 <ul class='drawer-menu'>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/tops/">トップス</a>
+<a href="<?php bloginfo('url'); ?>/tag/dresses/">会社概要</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/bottoms/">ボトムス</a>
+<a href="<?php bloginfo('url'); ?>/tag/accessories/">採用</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/dresses/">ドレス</a>
+<a href="<?php bloginfo('url'); ?>/tag/tops/">プライバシーポリシー</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/accessories/">アクセサリー</a>
-</li>
-<li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/lingerie/">ランジェリー</a>
-</li>
-</ul>
-<div class='drawer-nav__title'>
-<i class='fa fa-bookmark'></i>
-ブランドから探す
-</div>
-<ul class='drawer-menu'>
-<li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/anthropologie-co/">Anthropologie & Co.</a>
-</li>
-<li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/madewell/">Madewell</a>
-</li>
-<li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/free-people/">Free People</a>
-</li>
-<li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/pendleton/">Pendleton</a>
-</li>
-<li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/poler/">POLeR</a>
-</li>
-<li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/portland-gear/">Portland Gear</a>
+<a href="<?php bloginfo('url'); ?>/tag/bottoms/">利用規約</a>
 </li>
 </ul>
 </div>
