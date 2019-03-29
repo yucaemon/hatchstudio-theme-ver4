@@ -12,7 +12,7 @@ POPULOR
 <i class="far fa-clock"></i>
 </div>
 <div class='header-side__txt--jp'>
-おすすめランキング
+月間人気ランキング
 </div>
 <div class='header-side__img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-right.svg">

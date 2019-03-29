@@ -8032,28 +8032,23 @@ body {
     color: #b5b5b5;
     font-size: 13px;
     padding-bottom: 15px; }
+  .single-page__entry-content .detail-author-box__sns {
+    align-items: center; }
   .single-page__entry-content .detail-author-box i {
     font-size: 20px;
     color: #fff; }
-  .single-page__entry-content .detail-author-box .facebook__btn__small {
-    background-color: #3d9bff;
-    width: 150px;
+  .single-page__entry-content .detail-author-box .author-box__btn {
+    width: 30%;
     border-radius: 3px;
     text-align: center;
     padding: 10px 0;
-    margin: 0 10px; }
+    margin-right: 10px; }
+  .single-page__entry-content .detail-author-box .facebook__btn__small {
+    background-color: #3d9bff; }
   .single-page__entry-content .detail-author-box .twitter__btn__small {
-    background-color: #98e8ec;
-    width: 150px;
-    border-radius: 3px;
-    text-align: center;
-    padding: 10px 0; }
+    background-color: #98e8ec; }
   .single-page__entry-content .detail-author-box .web__btn__small {
-    background-color: #ff846a;
-    width: 150px;
-    border-radius: 3px;
-    text-align: center;
-    padding: 10px 0; }
+    background-color: #ff846a; }
 .single-page .sourcelink, .single-page .photo-info {
   font-size: 7px;
   font-size: 0.7rem;
@@ -8877,12 +8872,8 @@ bootstrap/comprnets
     font-size: 11px;
     letter-spacing: 1px; }
 
-/*
-
-	mobile settings windowサイズが680以下になった時の処理
-
-**************************************************/
-@media (max-width: 680px) {
+/* 	mobile settings windowサイズが680以下になった時の処理 */
+@media (max-width: 479px) {
   /*要素を消す*/
   html {
     margin-top: 0 !important; }
@@ -8890,6 +8881,9 @@ bootstrap/comprnets
   /*indexページ*/
   .outer__inner {
     padding-top: 0; }
+
+  .PageTopBtn {
+    display: none !important; }
 
   .header {
     display: none; }
@@ -8903,8 +8897,7 @@ bootstrap/comprnets
   .header-side__img {
     display: none; }
     .header-side__img--sp {
-      width: 350px;
-      padding-bottom: 30px;
+      padding: 20px 20px;
       margin: 0 auto; }
 
   .hatching-house {
@@ -8918,6 +8911,9 @@ bootstrap/comprnets
       padding: 30px; }
 
   .footer {
+    display: none; }
+
+  .detail-author-box__img {
     display: none; }
 
   .sub-title {
@@ -8965,6 +8961,41 @@ bootstrap/comprnets
   .sns-info {
     display: none; }
 
+  .header02 {
+    display: none; }
+
+  /*YouTubeレスポンシブサイズ*/
+  .youtube {
+    position: relative;
+    max-width: 100%;
+    padding-top: 56.25%;
+    margin-bottom: 20px; }
+
+  .youtube iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; }
+
+  .bt-right {
+    display: none; }
+
+  .footer-sp {
+    display: block; }
+
+  .annie-sp {
+    display: block; }
+
+  .business-sp {
+    display: block; }
+
+  .eyechatchlabel {
+    font-size: 8px;
+    font-size: 0.8rem;
+    line-height: 1;
+    padding: 10px 10px; }
+
   .affiliate-ad-sp {
     width: 250px;
     margin: 0 auto 50px auto;
@@ -8991,7 +9022,7 @@ bootstrap/comprnets
     .header-sp .drawer-hamburger {
       position: static; }
     .header-sp__container {
-      width: 398px;
+      width: auto;
       margin: 0 auto; }
     .header-sp .logo__img {
       height: auto;
@@ -9068,14 +9099,14 @@ bootstrap/comprnets
     .middle-contain .article-list {
       padding: 0 20px; }
       .middle-contain .article-list__img img {
-        width: 373px;
+        max-width: 100%;
         height: 215px;
         object-fit: cover; }
       .middle-contain .article-list li {
         height: auto;
         padding-bottom: 0; }
       .middle-contain .article-list__text {
-        width: 377px;
+        width: auto;
         margin-bottom: 20px; }
     .middle-contain .more-page {
       margin: 0 auto 50px auto; }
@@ -9104,6 +9135,52 @@ bootstrap/comprnets
       width: 50%;
       padding-left: 13px;
       word-wrap: break-word; }
+    .side-contain .annie-ad-side .annie-img img {
+      width: 238%;
+      height: 153px;
+      object-fit: cover;
+      display: block; }
+    .side-contain .annie-ad-side .annie-content {
+      margin: 0 auto 40px 0;
+      height: 160px;
+      text-align: center;
+      background-color: #f6cdc4;
+      padding: 14px 24px; }
+      .side-contain .annie-ad-side .annie-content .annie-header-txt {
+        display: none; }
+    .side-contain .house-ad-side {
+      margin: 0; }
+      .side-contain .house-ad-side .house-img {
+        padding-bottom: 20px; }
+      .side-contain .house-ad-side .house-content {
+        height: auto;
+        padding-bottom: 20px; }
+        .side-contain .house-ad-side .house-content .house-img img {
+          width: 100%;
+          height: 153px;
+          object-fit: cover;
+          display: block; }
+
+  .post-lists.article-list {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; }
+    .post-lists.article-list li {
+      width: 46%; }
+
+  .second-section ul.post-lists.article-list {
+    display: flex;
+    justify-content: space-between; }
+  .second-section .post-lists__img.article-list__img img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover; }
+  .second-section .middle-contain .article-list li {
+    width: 47%; }
+  .second-section h3.post-lists__title.list-title {
+    font-size: 0.9em;
+    line-height: 1.44444;
+    width: auto; }
 
   .footer-sp__header .background-draw {
     justify-content: space-around;
@@ -9127,7 +9204,8 @@ bootstrap/comprnets
       justify-content: space-around;
       align-items: center;
       margin: 0 auto;
-      width: 370px; }
+      width: auto;
+      padding: 0 20px; }
       .footer-sp__bottom__container .footer-sp__logo-img {
         padding-bottom: 5px; }
         .footer-sp__bottom__container .footer-sp__logo-img img {
@@ -9139,7 +9217,7 @@ bootstrap/comprnets
         color: #52bcbc;
         letter-spacing: 1px; }
       .footer-sp__bottom__container .footer-sp__info {
-        width: 200px; }
+        width: 48%; }
         .footer-sp__bottom__container .footer-sp__info__heder {
           font-size: 13px;
           font-size: 1.3rem;
@@ -9164,6 +9242,10 @@ bootstrap/comprnets
   /*シングルページ*/
   .single-page .single__container {
     padding: 0 20px; }
+    .single-page .single__container .two-column-sp {
+      padding: 0; }
+    .single-page .single__container .side-amazon-ad {
+      padding: 0 0 20px 0; }
   .single-page .middle-contain {
     width: 100%; }
     .single-page .middle-contain .article-sns-btns {
@@ -9185,6 +9267,8 @@ bootstrap/comprnets
     width: 50%; }
   .single-page__entry-content .detail-box02__img {
     width: 40%; }
+  .single-page__entry-content .detail-box02 p, .single-page__entry-content .detail-box03 p, .single-page__entry-content .detail-author-box p {
+    margin-bottom: 0; }
   .single-page__entry-content .detail-box02__title {
     font-size: 7px;
     font-size: 0.7rem;
@@ -9205,10 +9289,39 @@ bootstrap/comprnets
     display: none; }
   .single-page__entry-content .detail-box03__shipping {
     display: none; }
+  .single-page__entry-content .headline-second {
+    font-size: 1.4rem; }
+  .single-page__entry-content .detail-box01__contain p {
+    padding-bottom: 0; }
+  .single-page__entry-content .detail-author-box {
+    padding: 10px; }
+    .single-page__entry-content .detail-author-box .author-box__btn {
+      width: 65px; }
   .single-page__entry-content .headline-third {
-    line-height: 28px;
-    padding: 0 0 0 1em;
+    line-height: 45px;
+    padding: 0 0 0 2em;
     text-indent: -1em; }
+  .single-page__post-down__sns-icons {
+    width: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    display: inherit; }
+  .single-page .detail-balloon-box {
+    display: block;
+    padding-left: 0; }
+    .single-page .detail-balloon-box__read {
+      width: auto;
+      padding: 30px 10px;
+      margin: 20px 0;
+      background-color: #f7f7f7; }
+  .single-page .wrote-models-lists {
+    display: block;
+    text-align: center;
+    width: 100%; }
+    .single-page .wrote-models-lists__header {
+      padding-bottom: 10px; }
+  .single-page .affiliate-ad {
+    width: auto; }
 
   .archive-banner {
     margin-top: 0;
@@ -9237,16 +9350,27 @@ bootstrap/comprnets
     height: auto; }
 
   .two-column-sp {
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 373px;
-    margin: 0 auto; }
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px; }
     .two-column-sp .views {
       display: none !important; }
+    .two-column-sp .related-article__content {
+      display: block;
+      width: 48%; }
+    .two-column-sp .related-article__thumb-img img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover; }
+    .two-column-sp .related-article__title {
+      font-size: 0.9em;
+      line-height: 1.44444;
+      width: auto; }
     .two-column-sp .news-list__content {
       display: block;
-      width: 170px; }
+      width: 48%; }
     .two-column-sp .news-list__thumb-img img {
       width: 100%;
       height: 120px;
@@ -9261,14 +9385,11 @@ bootstrap/comprnets
       padding: 0;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
-      width: 373px; }
+      justify-content: space-around; }
       .two-column-sp .article-list__img img {
         width: 100%;
         height: 120px;
         object-fit: cover; }
-      .two-column-sp .article-list li {
-        width: 170px !important; }
       .two-column-sp .article-list__text {
         word-wrap: break-word;
         width: auto !important;
@@ -9450,11 +9571,10 @@ related-article(関連記事)
 
   /*components part*/
   .our-service {
-    padding: 0;
+    padding: 0 20px;
     height: 600px; }
     .our-service__header {
       padding: 15px 0;
-      width: 356px;
       margin: 0 auto; }
     .our-service__txt {
       display: block; }
@@ -9473,17 +9593,18 @@ related-article(関連記事)
       display: block;
       width: 48%; }
     .our-service__pictures {
-      width: 370px;
       margin: 0 auto;
       justify-content: space-around; }
       .our-service__pictures li {
-        width: 170px;
+        width: 45%;
         margin-right: 0;
         margin-bottom: 25px; }
       .our-service__pictures .our-service--img {
         height: 100px; }
         .our-service__pictures .our-service--img img {
           width: 100%; }
+    .our-service .our-service--txt {
+      font-size: 0.8rem !important; }
 
   .business-sp {
     background-color: #fcb751;
@@ -9492,7 +9613,8 @@ related-article(関連記事)
     .business-sp__container {
       position: static;
       display: block;
-      width: 370px;
+      width: auto;
+      padding: 0 20px;
       margin: 0 auto; }
     .business-sp__txt {
       font-size: 9px;
@@ -9504,11 +9626,20 @@ related-article(関連記事)
       padding-bottom: 15px; }
 
   .annie-sp {
-    background-color: #f6cdc4; }
+    background-color: #f6cdc4;
+    display: flex; }
+    .annie-sp .annie-content {
+      width: 50%; }
+      .annie-sp .annie-content__container {
+        margin: 0 auto;
+        text-align: center; }
+      .annie-sp .annie-content .annie-header-sub {
+        padding-top: 15px;
+        padding-bottom: 0; }
     .annie-sp .annie-img {
-      width: auto; }
+      width: 50%; }
       .annie-sp .annie-img img {
-        width: 225px;
+        width: 100%;
         height: 133px;
         object-fit: cover;
         display: block; }
@@ -9517,16 +9648,26 @@ related-article(関連記事)
       font-size: 12px;
       text-align: center;
       color: #fff; }
-    .annie-sp .annie-content {
-      width: 189px; }
-      .annie-sp .annie-content__container {
-        margin: 10px 15px;
-        text-align: center; }
-        .annie-sp .annie-content__container .annie-header-sub {
-          padding-bottom: 0;
-          padding-top: 10px; }
-        .annie-sp .annie-content__container .btn-round-white-02 {
-          font-size: 10px; } }
+    .annie-sp .btn-round-white-02 {
+      font-size: 5px;
+      font-size: 0.5rem;
+      line-height: 1; }
+
+  .articles__container__bottom {
+    width: auto; }
+    .articles__container__bottom .bt-left {
+      width: auto; }
+      .articles__container__bottom .bt-left .news-list {
+        width: 100%; }
+        .articles__container__bottom .bt-left .news-list__content {
+          padding: 0 20px; }
+
+  .side-amazon-ad {
+    padding: 0 20px 20px 20px;
+    width: auto; }
+    .side-amazon-ad img {
+      width: 100%;
+      margin: 0 auto; } }
 /*
 
 	mobile settings windowサイズが1024以下- 680以上になった時の処理

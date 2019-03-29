@@ -20,19 +20,19 @@
         the_post();
     ?>
         <?php if( !$relatedpost_count ): /* 最初の記事の場合、ヘッダを付与 */ ?>
-            <ul class="related-article__container flexbox--spacebetween">
+            <ul class="related-article__container flexbox--spacebetween two-column-sp">
         <?php endif; ?>
-                  <a href="<?php echo get_permalink(); ?>" target="_blank" class="hover_fade" style="cursor: pointer;">
                     <li class="related-article__content">
-
-                        <div class="related-article__img">
+                      <a href="<?php echo get_permalink(); ?>" target="_blank" class="hover_fade" style="cursor: pointer;">
+                        <div class="related-article__img related-article__thumb-img">
                           <?php the_post_thumbnail(); ?>
                         </div>
-                        <div class="related-article__text">
+                        <div class="related-article__text related-article__title">
                           <?php the_title(); ?>
                         </div>
+                      </a>
                     </li>
-                   </a>
+
 
     <?php
         $relatedpost_count++;   //記事を出力した数を加算

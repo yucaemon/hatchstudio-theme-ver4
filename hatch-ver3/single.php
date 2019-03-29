@@ -70,7 +70,7 @@
 <div class='column-4 side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
 <?php include('components-php/lists-popular-total.php'); ?>
-<?php include('components-php/lists-popular-month.php'); ?>
+<?php include('components-php/lists-category-total.php'); ?>
 <?php include('components-php/keywords.php'); ?>
 <?php include('components-php/annie-ad-side.php'); ?>
 <?php include('components-php/house-ad-side.php'); ?>
@@ -96,9 +96,10 @@
 </div>
 </div>
 </body>
-<p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
+<p class="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
 <?php include('components-php/service.php'); ?>
+<?php include('components-php/business-sp.php'); ?>
 <?php include('components-php/annie-banner.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>

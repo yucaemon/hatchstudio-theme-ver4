@@ -5,7 +5,7 @@
 <?php include('components-php/header-sp.php'); ?>
 <section class='section first-section'>
 <div class='outer__inner flexbox'>
-<div class='middle-contain'>
+<div class='middle-contain two-column-sp'>
 <ul class='post-lists article-list box-list'>
   <?php
      $args = array(
@@ -64,13 +64,13 @@
 </div>
 <div class='outer__inner flexbox'>
 <div class='middle-contain two-column-sp'>
-  <ul class='post-lists article-list flexbox'>
+  <ul class='post-lists article-list'>
     <?php query_posts('posts_per_page=5&offset=6' ); ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
     <?php if($countblock == 3 or $countblock == 8 or $countblock == 12) : ?>
     //ここに広告のコードor画像など//
     <?php endif; ?>
-        <li class='flexbox eyecatch'>
+        <li class='article-list__content flexbox eyecatch'>
           <div class='post-lists__img article-list__img'>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
           </div>

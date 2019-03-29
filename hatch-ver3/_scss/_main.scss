@@ -1121,33 +1121,28 @@ position: relative;
         font-size: 13px;
         padding-bottom: 15px;
       }
+      &__sns {
+        align-items: center;
+      }
       i{
         font-size: 20px;
         color: #fff;
       }
-      .facebook__btn__small {
-        background-color: #3d9bff;
-        width: 150px;
+      .author-box__btn{
+        width: 30%;
         border-radius: 3px;
         text-align: center;
         padding: 10px 0;
-
-        margin: 0 10px;
+        margin-right: 10px;
+      }
+      .facebook__btn__small {
+        background-color: #3d9bff;
       }
       .twitter__btn__small {
         background-color: #98e8ec;
-        width: 150px;
-        border-radius: 3px;
-        text-align: center;
-        padding: 10px 0;
-
       }
       .web__btn__small {
         background-color: $pink_02;
-        width: 150px;
-        border-radius: 3px;
-        text-align: center;
-        padding: 10px 0;
       }
     }
   }

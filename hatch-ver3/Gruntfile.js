@@ -80,6 +80,7 @@ module.exports = function (grunt) {
                     'components-php/affiliate-ad-sp.php': '_haml/affiliate-ad-sp.haml',
                     'components-php/business-sp.php': '_haml/business-sp.haml',
                     'components-php/annie-sp.php': '_haml/annie-sp.haml',
+                    'components-php/lists-category-total.php': '_haml/lists-category-total.haml',
 
                     'index.php': '_haml/index.haml',
                     'single.php': '_haml/single.haml',
