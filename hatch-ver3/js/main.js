@@ -26,8 +26,6 @@ jQuery(document).ready(function($) {
 
 
 //サイドバーの広告固定
-
-
     $(window).on('load scroll', function(){
         // 要素を固定させる位置を取得
         var fixed = $('.side-fixed-area').offset().top -200;
@@ -51,26 +49,7 @@ jQuery(document).ready(function($) {
         }
     });
 
-
-
-
-
-
-//モバイル時のハンバーグナビの処理
-
-$('.drawer').drawer();
-$(".textArea").hide();
-
-    $(".search-icon").click(function(){
-        $($(this).next(".textArea")).animate(
-            {height: "toggle", opacity: "toggle"},
-            "nomal"
-        );
-
-    });
-
-//トップベージへ戻るボタンの実装
-
+    //トップベージへ戻るボタンの実装
     var TopBtn = $('#PageTopBtn');
     TopBtn.hide();
     // スクロール位置が100でボタンを表示
@@ -89,6 +68,18 @@ $(".textArea").hide();
         }, 300);
         return false;
     });
+
+//モバイル時のハンバーグナビの処理
+//$('.drawer').drawer();
+$(".textArea").hide();
+    $(".search-icon").click(function(){
+        $($(this).next(".textArea")).animate(
+            {height: "toggle", opacity: "toggle"},
+            "nomal"
+        );
+
+    });
+
 
 
 

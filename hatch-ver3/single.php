@@ -96,7 +96,7 @@
 </div>
 </div>
 </body>
-<p class="PageTopBtn"><a href="#wrap">TOPへ</a></p>
+<p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
 <?php include('components-php/service.php'); ?>
 <?php include('components-php/business-sp.php'); ?>
