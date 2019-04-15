@@ -59,27 +59,13 @@
 <?php else : ?>
 <?php endif; ?>
 </div>
-<div class='wrote-models-lists'>
 <?php include('components-php/wrote-models-box.php'); ?>
-</div>
-<div class='affiliate-ad'>
 <?php include('components-php/affiliate-ad.php'); ?>
-</div>
-<div class='single-page__post-down__sns-icons'>
 <?php include('components-php/article-sns-btns.php'); ?>
-</div>
-<div class='related-article'>
 <?php include('components-php/related-article.php'); ?>
-</div>
-<div class='this-page'>
 <?php include('components-php/this-page-tags.php'); ?>
-</div>
-<div class='this-page'>
 <?php include('components-php/category-keywords.php'); ?>
-</div>
-<div class='paging-nav'>
 <?php include('components-php/paging-nav.php'); ?>
-</div>
 </div>
 <div class='column-4 side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
