@@ -36,6 +36,7 @@
 <?php include('components-php/affiliate-ad-sky.php'); ?>
 <?php include('components-php/keywords.php'); ?>
 <?php include('components-php/annie-ad-side.php'); ?>
+<?php include('components-php/annie-sp.php'); ?>
 <?php include('components-php/house-ad-side.php'); ?>
 <?php include('components-php/business-ad-side.php'); ?>
 <div class='side-amazon-ad'>

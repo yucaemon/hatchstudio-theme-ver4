@@ -289,16 +289,7 @@ function authorinfoFunc( $atts, $content = null ) {
         'twitterlink' => '不明'
 
     ), $atts ) );
-    return '<div class="detail-author-box flexbox--v-center"><div class="detail-author-box__img"><img src="' . $img . '"/></div><div class="detail-author-box__txt"><div class="detail-author-box__title">' . $author_name . '</div><div class="detail-author-box__read">' . $read . '</div>
-    <div class="detail-author-box__sns flexbox">
-    <a href="' . $weblink . '" target="_blank">
-    <div class="author-box__btn web__btn__small" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
-    <div class="author-box__btn" target="_blank">
-    <a href="' . $facebooklink . '" target="_blank"><div class="author-box__btn facebook__btn__small "target="_blank"><i class="fab fa-facebook-f"></i></div></a></div>
-    <div class="author-box__btn" target="_blank">
-    <a href="' . $twitterlink . '" target="_blank"><div class="author-box__btn twitter__btn__small" target="_blank"><i class="fab fa-twitter"></i>
-    </a></div></div>
-    </div></div></div></div>';
+    return '<div class="detail-author-box flexbox--v-center"><div class="detail-author-box__img"><img src="' . $img . '"/></div><div class="detail-author-box__txt"><div class="detail-author-box__title">' . $author_name . '</div><div class="detail-author-box__read">' . $read . '</div><div class="detail-author-box__sns flexbox"><div class="author-box__btn" target="_blank"><a href="' . $weblink . '" target="_blank"><div class="author-box__btn web__btn__small" target="_blank"><i class="fas fa-external-link-  alt"></i></div></a></div>　<div class="author-box__btn" target="_blank"><a href="' . $facebooklink . '" target="_blank"><div class="author-box__btn facebook__btn__small "target="_blank"><i class="fab fa-facebook-f"></i></div></a></div><div class="author-box__btn" target="_blank"><a href="' . $twitterlink . '" target="_blank"><div class="author-box__btn twitter__btn__small" target="_blank"><i class="fab fa-twitter"></i></div></a></div></div></div></div>';
 }
 add_shortcode('記者紹介', 'authorinfoFunc');
 

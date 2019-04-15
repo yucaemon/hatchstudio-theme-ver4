@@ -8038,7 +8038,7 @@ body {
     font-size: 20px;
     color: #fff; }
   .single-page__entry-content .detail-author-box .author-box__btn {
-    width: 30%;
+    width: 120px;
     border-radius: 3px;
     text-align: center;
     padding: 10px 0;
@@ -8958,6 +8958,12 @@ bootstrap/comprnets
   .annie {
     display: none; }
 
+  .annie-ad-side {
+    display: none; }
+
+  .house-ad-side {
+    display: none; }
+
   .sns-info {
     display: none; }
 
@@ -9100,7 +9106,7 @@ bootstrap/comprnets
       padding: 0 20px; }
       .middle-contain .article-list__img img {
         max-width: 100%;
-        height: 215px;
+        height: 120px;
         object-fit: cover; }
       .middle-contain .article-list li {
         height: auto;
