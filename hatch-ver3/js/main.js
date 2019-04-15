@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
     });
 
 //モバイル時のハンバーグナビの処理
-//$('.drawer').drawer();
+$('.drawer').drawer();
 $(".textArea").hide();
     $(".search-icon").click(function(){
         $($(this).next(".textArea")).animate(
