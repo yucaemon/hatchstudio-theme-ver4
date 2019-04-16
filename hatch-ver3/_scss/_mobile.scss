@@ -558,13 +558,27 @@
       .headline-second{
         font-size: 1.4rem;
       }
-      .detail-box01__contain p{
+      .detail-box01{
+
+      &__contain p{
         padding-bottom: 0;
       }
+      &__title{
+      text-align: center;
+      }
+    }
+
+
       .detail-author-box{
         padding: 10px;
+        text-align: center;
         .author-box__btn{
           width: 65px;
+          letter-spacing: 0;
+        }
+        &__sns{
+          justify-content: center;
+          letter-spacing: -1em;
         }
       }
 

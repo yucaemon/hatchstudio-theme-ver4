@@ -9299,10 +9299,17 @@ bootstrap/comprnets
     font-size: 1.4rem; }
   .single-page__entry-content .detail-box01__contain p {
     padding-bottom: 0; }
+  .single-page__entry-content .detail-box01__title {
+    text-align: center; }
   .single-page__entry-content .detail-author-box {
-    padding: 10px; }
+    padding: 10px;
+    text-align: center; }
     .single-page__entry-content .detail-author-box .author-box__btn {
-      width: 65px; }
+      width: 65px;
+      letter-spacing: 0; }
+    .single-page__entry-content .detail-author-box__sns {
+      justify-content: center;
+      letter-spacing: -1em; }
   .single-page__entry-content .headline-third {
     line-height: 45px;
     padding: 0 0 0 2em;
