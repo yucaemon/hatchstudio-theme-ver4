@@ -48,9 +48,6 @@ $results = $wpdb->get_results("
     <div class="eyecatch">
       <div class="news-list__thumb-img"><a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo get_the_post_thumbnail( $this_post->ID,
         'thumbnail' ); ?><img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg"></a></div>
-      <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
-        <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
-      </p>
     </div>
 
 
