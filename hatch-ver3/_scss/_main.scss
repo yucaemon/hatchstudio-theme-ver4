@@ -110,7 +110,13 @@ body {
     padding-right: 10px;
   }
 }
-
+.newMark {
+  position: absolute;
+  background: $pink_02;
+  z-index: 99;
+  color: #fff;
+  font-family: $font_family_en;
+}
 .category-icon{
   padding: 3px;
   border-radius: 5px;

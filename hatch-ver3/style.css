@@ -7167,6 +7167,13 @@ body {
     width: 43px;
     padding-right: 10px; }
 
+.newMark {
+  position: absolute;
+  background: #ff846a;
+  z-index: 99;
+  color: #fff;
+  font-family: "Montserrat", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
+
 .category-icon {
   padding: 3px;
   border-radius: 5px;
@@ -8693,12 +8700,8 @@ bootstrap/comprnets
       padding-bottom: 14px;
       width: 353px; }
     .middle-contain .article-list .newMark {
-      position: absolute;
-      background: #ff846a;
-      color: #fff;
       padding: 8px 20px;
-      letter-spacing: 3px;
-      font-family: "Montserrat", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
+      letter-spacing: 3px; }
     .middle-contain .article-list__img {
       width: auto;
       height: auto;
