@@ -273,7 +273,7 @@ function externallinkFunc( $atts, $content = null ) {
        'txt' => '不明',
        'url' => '不明'
     ), $atts ) );
-    return '<div class="external-link"><p class="external-link__title">' . $txt . '</p><i class="fas fa-link"></i><a href="' . $url . '" target="_blank">' . $url . '</a></div>';
+    return '<div class="external-link"><a href="' . $url . '" target="_blank"><p class="external-link__title"><i class="fas fa-external-link-alt"></i>' . $txt . '</p></a></div>';
 }
 add_shortcode('外部リンク', 'externallinkFunc');
 

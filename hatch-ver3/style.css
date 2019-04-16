@@ -8060,7 +8060,7 @@ body {
 .single-page .external-link {
   padding: 20px;
   border: solid 1px #dadada;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   color: #a7a7a7;
   font-size: 17px; }
   .single-page .external-link i {
