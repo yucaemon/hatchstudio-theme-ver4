@@ -39,9 +39,14 @@
       padding: 30px;
     }
   }
+  #PageTopBtn a {
+    padding:0;
+  }
+
   .footer {
     display: none;
   }
+
   .detail-author-box__img {
     display: none;
   }
@@ -451,9 +456,9 @@
           }
         }
         .footer-sp__info{
-          width: 48%;
+
           &__heder{
-            @include fts(13,13);
+            @include fts(10,10);
             letter-spacing: 4px;
             text-transform: uppercase;
             font-family: $font_family_jp;
@@ -461,11 +466,7 @@
             font-weight: bold;
           }
           &__body{
-            @include fts(5,5);
-            letter-spacing: 1px;
-            padding-bottom: 11px;
-            color: #a7a7a7;
-            font-weight: bold;
+             display: none;
           }
           .sns-icons{
             width: 300px;
@@ -1097,13 +1098,11 @@ related-article(関連記事)
 
   .articles__container__bottom{
       width: auto;
+      padding: 0 20px;
     .bt-left{
       width: auto;
       .news-list {
       width: 100%;
-      &__content{
-        padding: 0 20px;
-      }
       }
     }
   }

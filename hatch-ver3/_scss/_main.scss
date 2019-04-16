@@ -136,6 +136,7 @@ body {
   position: fixed; /*ボタンの配置場所を固定*/
   right: 20px;
   bottom: 50px !important;
+  z-index: 100;
 }
 #PageTopBtn a {
   display: block; /*配置の調整*/

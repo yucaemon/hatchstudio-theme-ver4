@@ -7189,7 +7189,8 @@ body {
   position: fixed;
   /*ボタンの配置場所を固定*/
   right: 20px;
-  bottom: 50px !important; }
+  bottom: 50px !important;
+  z-index: 100; }
 
 #PageTopBtn a {
   display: block;
@@ -8910,6 +8911,9 @@ bootstrap/comprnets
     .pages__container .security-policy {
       padding: 30px; }
 
+  #PageTopBtn a {
+    padding: 0; }
+
   .footer {
     display: none; }
 
@@ -9222,28 +9226,20 @@ bootstrap/comprnets
         line-height: 1;
         color: #52bcbc;
         letter-spacing: 1px; }
-      .footer-sp__bottom__container .footer-sp__info {
-        width: 48%; }
-        .footer-sp__bottom__container .footer-sp__info__heder {
-          font-size: 13px;
-          font-size: 1.3rem;
-          line-height: 1;
-          letter-spacing: 4px;
-          text-transform: uppercase;
-          font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
-          padding-bottom: 10px;
-          font-weight: bold; }
-        .footer-sp__bottom__container .footer-sp__info__body {
-          font-size: 5px;
-          font-size: 0.5rem;
-          line-height: 1;
-          letter-spacing: 1px;
-          padding-bottom: 11px;
-          color: #a7a7a7;
-          font-weight: bold; }
-        .footer-sp__bottom__container .footer-sp__info .sns-icons {
-          width: 300px;
-          justify-content: center; }
+      .footer-sp__bottom__container .footer-sp__info__heder {
+        font-size: 10px;
+        font-size: 1rem;
+        line-height: 1;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+        padding-bottom: 10px;
+        font-weight: bold; }
+      .footer-sp__bottom__container .footer-sp__info__body {
+        display: none; }
+      .footer-sp__bottom__container .footer-sp__info .sns-icons {
+        width: 300px;
+        justify-content: center; }
 
   /*シングルページ*/
   .single-page .single__container {
@@ -9667,13 +9663,12 @@ related-article(関連記事)
       line-height: 1; }
 
   .articles__container__bottom {
-    width: auto; }
+    width: auto;
+    padding: 0 20px; }
     .articles__container__bottom .bt-left {
       width: auto; }
       .articles__container__bottom .bt-left .news-list {
         width: 100%; }
-        .articles__container__bottom .bt-left .news-list__content {
-          padding: 0 20px; }
 
   .side-amazon-ad {
     padding: 0 20px 20px 20px;
