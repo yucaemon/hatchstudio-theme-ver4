@@ -8060,7 +8060,7 @@ body {
 .single-page .external-link {
   padding: 20px;
   border: solid 1px #dadada;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   color: #a7a7a7;
   font-size: 17px; }
   .single-page .external-link i {
@@ -8074,7 +8074,7 @@ body {
     font-size: 1rem;
     line-height: 1;
     line-height: 1.4;
-    padding-bottom: 10px; }
+    padding-bottom: 0; }
 .single-page .detail-balloon-box {
   padding-bottom: 30px;
   padding-left: 30px; }

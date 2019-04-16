@@ -1160,7 +1160,7 @@ position: relative;
   .external-link {
     padding: 20px;
     border: solid 1px #dadada;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     color: #a7a7a7;
     font-size: 17px;
     i{
@@ -1168,7 +1168,7 @@ position: relative;
     }
     &__title {
       @include listsTitle(10,1.4);
-      padding-bottom: 10px;
+      padding-bottom: 0;
     }
   }
   .detail-balloon-box {
