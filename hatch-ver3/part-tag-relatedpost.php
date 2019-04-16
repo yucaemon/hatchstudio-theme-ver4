@@ -47,14 +47,14 @@
         $posts = get_posts(array(
         ));
         ?>
-        <ul class="related-article__container flexbox--spacebetween">
+        <ul class="related-article__container flexbox--spacebetween two-column-sp">
           <?php if($posts): foreach((array)$posts as $post): setup_postdata($post); ?>
-              <!--表示する内容が入ります。-->
+              <!--もし、一致する関連するタグがない場合、最新記事表示する内容が入ります。-->
               <li class="related-article__content">
-                <div class="related-article__img">
+                <div class="related-article__img related-article__thumb-img">
                   <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                 </div>
-                <div class="related-article__text">
+                <div class="related-article__text related-article__title">
                   <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                 </div>
               </li>
