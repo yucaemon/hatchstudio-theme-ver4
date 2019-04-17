@@ -9127,7 +9127,8 @@ bootstrap/comprnets
       margin: 0 auto 50px auto; }
 
   .side-contain {
-    width: 100%; }
+    width: 100%;
+    padding: 0 20px; }
     .side-contain .featured-box {
       padding: 0; }
       .side-contain .featured-box__content {
@@ -9255,8 +9256,6 @@ bootstrap/comprnets
     padding: 0 20px; }
     .single-page .single__container .two-column-sp {
       padding: 0; }
-    .single-page .single__container .side-amazon-ad {
-      padding: 0 0 20px 0; }
   .single-page .middle-contain {
     width: 100%; }
     .single-page .middle-contain .article-sns-btns {
@@ -9543,9 +9542,6 @@ related-article(関連記事)
  .category-page (カテゴリーページ)
 
 *********** **************************************/
-  .category-page .news-list__container {
-    padding: 20px; }
-
   /*
 
  .about-page (アバウトページ)
@@ -9680,8 +9676,8 @@ related-article(関連記事)
         width: 100%; }
 
   .side-amazon-ad {
-    padding: 0 20px 20px 20px;
-    width: auto; }
+    width: auto;
+    padding-bottom: 20px; }
     .side-amazon-ad img {
       width: 100%;
       margin: 0 auto; } }

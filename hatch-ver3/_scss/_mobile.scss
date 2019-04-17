@@ -304,6 +304,8 @@
 
   .side-contain {
     width: 100%;
+    padding: 0 20px;
+
     .featured-box {
       padding: 0;
 
@@ -487,14 +489,9 @@
   .single-page {
     .single__container{
       padding:0 20px;
-
       .two-column-sp{
         padding: 0;
       }
-
-    .side-amazon-ad {
-      padding: 0 0 20px 0;
-    }
     }
     .middle-contain {
       width: 100%;
@@ -935,9 +932,7 @@ related-article(関連記事)
 *********** **************************************/
 
   .category-page{
-    .news-list__container {
-      padding: 20px;
-    }
+
   }
 
   /*
@@ -1110,8 +1105,8 @@ related-article(関連記事)
     }
   }
   .side-amazon-ad {
-      padding: 0 20px 20px 20px;
       width: auto;
+      padding-bottom: 20px;
     img{
       width: 100%;
       margin: 0 auto;

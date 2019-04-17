@@ -36,7 +36,6 @@
 <?php include('components-php/affiliate-ad-sky.php'); ?>
 <?php include('components-php/keywords.php'); ?>
 <?php include('components-php/annie-ad-side.php'); ?>
-<?php include('components-php/annie-sp.php'); ?>
 <?php include('components-php/house-ad-side.php'); ?>
 <?php include('components-php/business-ad-side.php'); ?>
 <div class='side-amazon-ad'>
@@ -49,8 +48,13 @@
 </div>
 <div class='outer__inner'>
 <div class='articles__container__bottom flexbox--h-center'>
+<div class='bt-left'>
 <?php include('components-php/bt-news-lists.php'); ?>
+</div>
+<div class='bt-right'>
+<!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
 <?php include('components-php/bt-popular-month.php'); ?>
+</div>
 </div>
 </div>
 </div>
@@ -58,6 +62,7 @@
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
 <?php include('components-php/service.php'); ?>
+<?php include('components-php/business-sp.php'); ?>
 <?php include('components-php/annie-banner.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
