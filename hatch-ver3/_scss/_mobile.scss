@@ -243,6 +243,7 @@
       }
     }
     .drawer-nav {
+      z-index: 2000;
       .drawer-menu {
         padding: 5px 43px;
         &__li {

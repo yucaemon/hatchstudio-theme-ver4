@@ -9081,20 +9081,22 @@ bootstrap/comprnets
         right: 7px;
         top: 2px;
         z-index: 1000; }
-    .header-sp .drawer-nav .drawer-menu {
-      padding: 5px 43px; }
-      .header-sp .drawer-nav .drawer-menu__li {
-        padding-bottom: 20px;
-        font-size: 9px;
-        font-size: 0.9rem;
-        line-height: 1;
-        color: #7d7b7b; }
-    .header-sp .drawer-nav__title {
-      padding: 20px 20px;
-      margin-bottom: 20px;
-      background-color: #fff4df; }
-      .header-sp .drawer-nav__title i.fa {
-        color: #fcb751; }
+    .header-sp .drawer-nav {
+      z-index: 2000; }
+      .header-sp .drawer-nav .drawer-menu {
+        padding: 5px 43px; }
+        .header-sp .drawer-nav .drawer-menu__li {
+          padding-bottom: 20px;
+          font-size: 9px;
+          font-size: 0.9rem;
+          line-height: 1;
+          color: #7d7b7b; }
+      .header-sp .drawer-nav__title {
+        padding: 20px 20px;
+        margin-bottom: 20px;
+        background-color: #fff4df; }
+        .header-sp .drawer-nav__title i.fa {
+          color: #fcb751; }
 
   .notice-bar {
     margin: 0; }
