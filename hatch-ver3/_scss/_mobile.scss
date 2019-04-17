@@ -455,7 +455,7 @@
           }
         }
         .footer-sp__info{
-
+          width: 130px;
           &__heder{
             @include fts(10,10);
             letter-spacing: 4px;
@@ -470,6 +470,9 @@
           .sns-icons{
             width: 300px;
             justify-content: center;
+            &__icon{
+              padding: 0 5px;
+            }
           }
 
 

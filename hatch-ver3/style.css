@@ -9229,20 +9229,24 @@ bootstrap/comprnets
         line-height: 1;
         color: #52bcbc;
         letter-spacing: 1px; }
-      .footer-sp__bottom__container .footer-sp__info__heder {
-        font-size: 10px;
-        font-size: 1rem;
-        line-height: 1;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
-        padding-bottom: 10px;
-        font-weight: bold; }
-      .footer-sp__bottom__container .footer-sp__info__body {
-        display: none; }
-      .footer-sp__bottom__container .footer-sp__info .sns-icons {
-        width: 300px;
-        justify-content: center; }
+      .footer-sp__bottom__container .footer-sp__info {
+        width: 130px; }
+        .footer-sp__bottom__container .footer-sp__info__heder {
+          font-size: 10px;
+          font-size: 1rem;
+          line-height: 1;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+          padding-bottom: 10px;
+          font-weight: bold; }
+        .footer-sp__bottom__container .footer-sp__info__body {
+          display: none; }
+        .footer-sp__bottom__container .footer-sp__info .sns-icons {
+          width: 300px;
+          justify-content: center; }
+          .footer-sp__bottom__container .footer-sp__info .sns-icons__icon {
+            padding: 0 5px; }
 
   /*シングルページ*/
   .single-page .single__container {
