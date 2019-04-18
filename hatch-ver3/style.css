@@ -9420,6 +9420,9 @@ bootstrap/comprnets
   *************************************************/
   .search-page .side-contain .news-list__container {
     padding: 0 20px; }
+  .search-page .components-title, .search-page .articles__container__bottom .header-side, .articles__container__bottom .search-page .header-side {
+    padding: 15px;
+    line-height: 1.5em; }
 
   /*
 
