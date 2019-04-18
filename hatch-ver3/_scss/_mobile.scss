@@ -1120,4 +1120,18 @@ related-article(関連記事)
       margin: 0 auto;
     }
   }
+  .service-page{
+    .pages__container{
+      width: auto;
+    }
+    .contact-form {
+      .notice-box{
+        width: auto;
+      }
+      .notice-box__body{
+        width: auto;
+      }
+    }
+
+  }
 }

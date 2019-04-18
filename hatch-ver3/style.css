@@ -9680,7 +9680,14 @@ related-article(関連記事)
     padding-bottom: 20px; }
     .side-amazon-ad img {
       width: 100%;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+
+  .service-page .pages__container {
+    width: auto; }
+  .service-page .contact-form .notice-box {
+    width: auto; }
+  .service-page .contact-form .notice-box__body {
+    width: auto; } }
 /*
 
 	mobile settings windowサイズが1024以下- 680以上になった時の処理
