@@ -277,10 +277,10 @@
   .middle-contain {
     margin: 0;
     width: 100%;
-    padding-bottom: 30px;
+    padding: 0 20px 30px 20px;
 
     .article-list {
-      padding: 0 20px;
+      //padding: 0 20px;
       &__img {
         img {
          max-width: 100%;
@@ -381,7 +381,7 @@
   }
 
   .post-lists.article-list{
-    padding: 0 20px;
+    //padding: 0 20px;
     display: flex;
     justify-content: space-between;
     li{
@@ -399,8 +399,8 @@
       height: 120px;
       object-fit: cover;
     }
-    .middle-contain .article-list li {
-      width: 47%;
+     .article-list li {
+      width: 47% !important;
     }
     h3.post-lists__title.list-title{
       font-size: 0.9em;
@@ -488,7 +488,6 @@
   /*シングルページ*/
   .single-page {
     .single__container{
-      padding:0 20px;
       .two-column-sp{
         padding: 0;
       }
@@ -625,10 +624,6 @@
     margin-bottom: 20px;
   }
 
-  .category-page .middle-contain .article-list {
-    padding: 20px 20px
-
-  }
 
   .middle-contain .article-list li+li {
     border-top: solid 1px #eaeaea;
@@ -676,7 +671,7 @@
     justify-content: space-between;
     //width: 373px;
     margin: 0 auto;
-    padding: 0 20px;
+    //padding: 0 20px;
   .views{
     display: none !important;
   }

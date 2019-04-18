@@ -9110,19 +9110,17 @@ bootstrap/comprnets
   .middle-contain {
     margin: 0;
     width: 100%;
-    padding-bottom: 30px; }
-    .middle-contain .article-list {
-      padding: 0 20px; }
-      .middle-contain .article-list__img img {
-        max-width: 100%;
-        height: 120px;
-        object-fit: cover; }
-      .middle-contain .article-list li {
-        height: auto;
-        padding-bottom: 0; }
-      .middle-contain .article-list__text {
-        width: auto;
-        margin-bottom: 20px; }
+    padding: 0 20px 30px 20px; }
+    .middle-contain .article-list__img img {
+      max-width: 100%;
+      height: 120px;
+      object-fit: cover; }
+    .middle-contain .article-list li {
+      height: auto;
+      padding-bottom: 0; }
+    .middle-contain .article-list__text {
+      width: auto;
+      margin-bottom: 20px; }
     .middle-contain .more-page {
       margin: 0 auto 50px auto; }
 
@@ -9178,7 +9176,6 @@ bootstrap/comprnets
           display: block; }
 
   .post-lists.article-list {
-    padding: 0 20px;
     display: flex;
     justify-content: space-between; }
     .post-lists.article-list li {
@@ -9191,8 +9188,8 @@ bootstrap/comprnets
     width: 100%;
     height: 120px;
     object-fit: cover; }
-  .second-section .middle-contain .article-list li {
-    width: 47%; }
+  .second-section .article-list li {
+    width: 47% !important; }
   .second-section h3.post-lists__title.list-title {
     font-size: 0.9em;
     line-height: 1.44444;
@@ -9252,10 +9249,8 @@ bootstrap/comprnets
             padding: 0 5px; }
 
   /*シングルページ*/
-  .single-page .single__container {
-    padding: 0 20px; }
-    .single-page .single__container .two-column-sp {
-      padding: 0; }
+  .single-page .single__container .two-column-sp {
+    padding: 0; }
   .single-page .middle-contain {
     width: 100%; }
     .single-page .middle-contain .article-sns-btns {
@@ -9344,9 +9339,6 @@ bootstrap/comprnets
     margin-top: 0;
     margin-bottom: 20px; }
 
-  .category-page .middle-contain .article-list {
-    padding: 20px 20px; }
-
   .middle-contain .article-list li + li {
     border-top: solid 1px #eaeaea; }
 
@@ -9370,8 +9362,7 @@ bootstrap/comprnets
     display: flex !important;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 0 20px; }
+    margin: 0 auto; }
     .two-column-sp .views {
       display: none !important; }
     .two-column-sp .related-article__content {
