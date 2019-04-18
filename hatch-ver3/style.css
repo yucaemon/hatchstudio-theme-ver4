@@ -9522,6 +9522,12 @@ related-article(関連記事)
   .error-page p.notfind__text {
     font-size: 0.7rem;
     padding-top: 7px; }
+  .error-page .pages__container {
+    width: auto; }
+  .error-page .notfind__header__img {
+    width: 55%; }
+  .error-page .notfind__body__img {
+    width: 45%; }
 
   /*
 
