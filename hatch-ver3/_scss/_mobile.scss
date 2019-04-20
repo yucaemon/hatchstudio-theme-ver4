@@ -1120,7 +1120,7 @@ related-article(関連記事)
       margin: 0 auto;
     }
   }
-  
+
   .pages{
     &__container{
       width: 100%;
@@ -1172,6 +1172,9 @@ related-article(関連記事)
       font-size: 1.4rem;
       line-height: 3.9;
       padding: 0 30px;
+    }
+    &__translate__bg-img{
+      display: none;
     }
   }
   .house-page{
