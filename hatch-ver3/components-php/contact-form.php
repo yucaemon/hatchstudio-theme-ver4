@@ -4,7 +4,7 @@
 お問い合わせフォーム
 </div>
 <div class='contact-form__header--en'>
-CONTCT FORM
+CONTACT FORM
 </div>
 </div>
 <div class='outer__inner'>
