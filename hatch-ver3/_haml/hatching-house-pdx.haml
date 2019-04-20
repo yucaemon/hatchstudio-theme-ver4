@@ -17,6 +17,9 @@
             HATCHING HOUSE
       .house-page__share-house__bg-img
 
+      .house-page__share-house-sp
+        <img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-bg.jpg">
+
       .outer__inner
         .house-page__body.pages__container
           .house-page__body__container
@@ -25,8 +28,6 @@
             .house-page__body__pics.flexbox--spacebetween
               .house-page__body__img
                 <img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-01.jpg">
-              .house-page__body__img
-                <img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-02.jpg">
               .house-page__body__img
                 <img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-03.jpg">
 
@@ -80,10 +81,7 @@
                   禁煙
                 %li
                   <i class="fas fa-utensils"></i>
-                  シェア共同キッチン
-                %li
-                  <i class="fab fa-cc-paypal"></i>
-                  paypal、日本円での支払いOK
+                  共同キッチン
                 %li
                   <i class="fas fa-car"></i>
                   オプション 送迎あり
@@ -99,8 +97,13 @@
 
     <?php include('components-php/contact-form.php'); ?>
 
+<p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 .bottom-container
-  <?php include('components-php/service.php'); ?>
   <?php include('components-php/annie-banner.php'); ?>
+  <?php include('components-php/service.php'); ?>
+
+  <?php include('components-php/business-sp.php'); ?>
+  <?php include('components-php/annie-sp.php'); ?>
+
   <?php include('components-php/footer.php'); ?>
   <?php include('components-php/footer-sp.php'); ?>

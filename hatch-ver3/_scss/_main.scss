@@ -1672,6 +1672,9 @@ house-page/share-house＆real-estate
 
 *************************************************/
 .house-page{
+  &__share-house-sp{
+    display: none;
+  }
   &__header {
     background-color: $blue_01;
     @include fts(20, 20);

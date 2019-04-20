@@ -19,6 +19,9 @@ HATCHING HOUSE
 </div>
 </div>
 <div class='house-page__share-house__bg-img'></div>
+<div class='house-page__share-house-sp'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-bg.jpg">
+</div>
 <div class='outer__inner'>
 <div class='house-page__body pages__container'>
 <div class='house-page__body__container'>
@@ -28,9 +31,6 @@ HATCHING HOUSE
 <div class='house-page__body__pics flexbox--spacebetween'>
 <div class='house-page__body__img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-01.jpg">
-</div>
-<div class='house-page__body__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-02.jpg">
 </div>
 <div class='house-page__body__img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-03.jpg">
@@ -100,11 +100,7 @@ HATCHING HOUSE
 </li>
 <li>
 <i class="fas fa-utensils"></i>
-シェア共同キッチン
-</li>
-<li>
-<i class="fab fa-cc-paypal"></i>
-paypal、日本円での支払いOK
+共同キッチン
 </li>
 <li>
 <i class="fas fa-car"></i>
@@ -131,9 +127,12 @@ paypal、日本円での支払いOK
 <?php include('components-php/contact-form.php'); ?>
 </div>
 </body>
+<p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
-<?php include('components-php/service.php'); ?>
 <?php include('components-php/annie-banner.php'); ?>
+<?php include('components-php/service.php'); ?>
+<?php include('components-php/business-sp.php'); ?>
+<?php include('components-php/annie-sp.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>

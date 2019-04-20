@@ -1120,10 +1120,17 @@ related-article(関連記事)
       margin: 0 auto;
     }
   }
-  .service-page{
-    .pages__container{
-      width: auto;
+  
+  .pages{
+    &__container{
+      width: 100%;
     }
+    .btn-round-white-02{
+      width: 100%;
+      white-space: pre-wrap;
+      display: flex;
+    }
+
     .contact-form {
       .contact-form__img{
         display: none;
@@ -1145,6 +1152,12 @@ related-article(関連記事)
         }
       }
     }
+  }
+
+  .service-page{
+    .pages__container{
+      width: auto;
+    }
     &__web__bg-img{
       display: none;
     }
@@ -1160,7 +1173,48 @@ related-article(関連記事)
       line-height: 3.9;
       padding: 0 30px;
     }
-
-
   }
+  .house-page{
+    &__share-house__bg-img{
+      display: none;
+    }
+    &__share-house-sp {
+      display: block;
+    }
+    &__body__img img{
+      width: 100%;
+    }
+    &__share-house-sp img{
+      width: 100%;
+    }
+    &__header{
+      padding: 10px 30px;
+      flex-wrap: wrap;
+      display: flex;
+      height: 70%;
+
+      .house-page__header--jp{
+        font-size: 0.7rem;
+      }
+      .sub-txt{
+        display: none;
+      }
+      .main-txt{
+        font-size: 1.8rem;
+        padding-left: 0;
+      }
+
+    }
+    &__body__header{
+      padding: 0 0 20px 0;
+      line-height: 1.6;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+    }
+    .house-page__body__container + .house-page__body__container{
+      border-top:none;
+    }
+  }
+
+
 }
