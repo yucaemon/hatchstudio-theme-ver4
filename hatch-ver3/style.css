@@ -9631,8 +9631,8 @@ related-article(関連記事)
       padding: 0 20px;
       margin: 0 auto; }
     .business-sp__txt {
-      font-size: 9px;
-      font-size: 0.9rem;
+      font-size: 8px;
+      font-size: 0.8rem;
       line-height: 1;
       color: #cc6e45;
       letter-spacing: 1px;
@@ -9684,10 +9684,24 @@ related-article(関連記事)
 
   .service-page .pages__container {
     width: auto; }
+  .service-page .contact-form .contact-form__img {
+    display: none; }
   .service-page .contact-form .notice-box {
     width: auto; }
   .service-page .contact-form .notice-box__body {
-    width: auto; } }
+    width: auto; }
+  .service-page .contact-form__form {
+    width: 74%;
+    margin: 0 auto; }
+    .service-page .contact-form__form .col-form-label {
+      text-align: center; }
+    .service-page .contact-form__form .selectpicker {
+      width: 251px; }
+  .service-page__web__bg-img {
+    height: 200px;
+    background-position: 7px -925px; }
+  .service-page__list__header {
+    line-height: 1.35; } }
 /*
 
 	mobile settings windowサイズが1024以下- 680以上になった時の処理
