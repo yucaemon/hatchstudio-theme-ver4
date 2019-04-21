@@ -9,10 +9,8 @@
       .pages__container
         .security-policy
           %h1.pages__header
-            プライバシーポリシー
+            プライバシーおよび個人情報の保護に関する方針
           .pages__read
-            %h2.pages__header
-              プライバシーおよび個人情報の保護に関する方針
             %p
               以下の個人情報保護方針は、Hatchstudio inc (以下、「当社」という) が当社管轄のウェブサイトやサービス、および他の協業会社経由で入手した個人情報に対して 適用されるものです。リンクされている外部のウェブサイトには適用されませんのでご注意ください。
             %h2.pages__header
@@ -68,7 +66,10 @@
             %h2.pages__header
               担当窓口
             %p
-              個人情報保護の方針に関するお問い合わせは、以下の窓口よりご連絡下さい。お問い合わせ窓口: hatchstudio8@gmail.com
+              個人情報保護の方針に関するお問い合わせは、以下の窓口よりご連絡下さい。
+              %br
+              お問い合わせ窓口:
+              <a href="mailto:hatchstudio8@gmail.com">hatchstudio8@gmail.com</a>
 
           .pages__date-info
             %p
@@ -78,18 +79,22 @@
             %p
               Berkeley, California USA
 
-
     .outer__inner
       .articles__container__bottom.flexbox--h-center
-        <?php include('components-php/bt-news-lists.php'); ?>
-        <?php include('components-php/bt-popular-month.php'); ?>
-
+        .bt-left
+          <?php include('components-php/bt-news-lists.php'); ?>
+        .bt-right
+          <!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
+          <?php include('components-php/bt-popular-month.php'); ?>
 
 
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 .bottom-container
-  <?php include('components-php/service.php'); ?>
   <?php include('components-php/annie-banner.php'); ?>
+  <?php include('components-php/service.php'); ?>
+
+  <?php include('components-php/business-sp.php'); ?>
+  <?php include('components-php/annie-sp.php'); ?>
+
   <?php include('components-php/footer.php'); ?>
   <?php include('components-php/footer-sp.php'); ?>
-
