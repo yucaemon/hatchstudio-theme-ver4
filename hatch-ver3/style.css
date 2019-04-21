@@ -9549,19 +9549,25 @@ related-article(関連記事)
  .about-page (アバウトページ)
 
 *********** **************************************/
+  .about-page .mission {
+    padding-top: 0; }
   .about-page .mission .yuka-sign__img {
     width: 25%;
     margin-left: auto;
     padding-right: 25px;
     padding-bottom: 0; }
   .about-page .pages__container {
-    padding-top: 30px; }
+    padding-top: 30px;
+    width: 100%; }
   .about-page .pages__header {
     letter-spacing: 0.3px;
     font-size: 15px !important;
     line-height: 1.5 !important; }
   .about-page .pages__read {
+    width: 100%;
     padding-top: 42px; }
+  .about-page .table-info {
+    display: none; }
 
   .featured-articles {
     padding-bottom: 20px; }
@@ -9676,6 +9682,8 @@ related-article(関連記事)
       width: auto; }
       .articles__container__bottom .bt-left .news-list {
         width: 100%; }
+        .articles__container__bottom .bt-left .news-list__title {
+          width: 55%; }
 
   .side-amazon-ad {
     width: auto;
@@ -9684,6 +9692,8 @@ related-article(関連記事)
       width: 100%;
       margin: 0 auto; }
 
+  .pages .mission {
+    padding: 0; }
   .pages__container {
     width: 100%; }
   .pages .btn-round-white-02 {

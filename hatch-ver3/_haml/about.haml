@@ -31,7 +31,7 @@
           %td
             設立
           %td
-            2019年 1月30日
+            2019年 5月5日
         %tr
           %td
             現所在地
@@ -63,13 +63,20 @@
 
   .outer__inner
     .articles__container__bottom.flexbox--h-center
-      <?php include('components-php/bt-news-lists.php'); ?>
-      <?php include('components-php/bt-popular-month.php'); ?>
+      .bt-left
+        <?php include('components-php/bt-news-lists.php'); ?>
+      .bt-right
+        <!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
+        <?php include('components-php/bt-popular-month.php'); ?>
 
 
-
+<p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 .bottom-container
-  <?php include('components-php/service.php'); ?>
   <?php include('components-php/annie-banner.php'); ?>
+  <?php include('components-php/service.php'); ?>
+
+  <?php include('components-php/business-sp.php'); ?>
+  <?php include('components-php/annie-sp.php'); ?>
+
   <?php include('components-php/footer.php'); ?>
   <?php include('components-php/footer-sp.php'); ?>
