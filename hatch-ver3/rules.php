@@ -11,9 +11,6 @@
 利用規約
 </h1>
 <div class='pages__read'>
-<h2 class='pages__header'>
-利用規約について
-</h2>
 <p>
 このウェブサイトは Hatchsutudio inc (以下、「当社」という)が運営しています。以下の各事項をご了承の上、当ウェブサイトをご利用ください。また、当ウェブサ イトのポリシーは改善の必要性に応じて予告なく改訂する場合があることをご了承ください。
 </p>
@@ -77,7 +74,10 @@
 担当窓口
 </h2>
 <p>
-利用規約に関するお問い合わせは、以下の窓口よりご連絡下さい。お問い合わせ窓口: hatchstudio8@gmail.com
+利用規約に関するお問い合わせは、以下の窓口よりご連絡下さい。
+<br>
+お問い合わせ窓口:
+<a href="mailto:hatchstudio8@gmail.com">hatchstudio8@gmail.com</a>
 </p>
 </div>
 <div class='pages__date-info'>
@@ -96,16 +96,23 @@ Berkeley, California USA
 </div>
 <div class='outer__inner'>
 <div class='articles__container__bottom flexbox--h-center'>
+<div class='bt-left'>
 <?php include('components-php/bt-news-lists.php'); ?>
-<?php include('components-php/bt-popular-month.php'); ?>sss
+</div>
+<div class='bt-right'>
+<!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
+<?php include('components-php/bt-popular-month.php'); ?>
+</div>
 </div>
 </div>
 </div>
 </body>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
-<?php include('components-php/service.php'); ?>
 <?php include('components-php/annie-banner.php'); ?>
+<?php include('components-php/service.php'); ?>
+<?php include('components-php/business-sp.php'); ?>
+<?php include('components-php/annie-sp.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>
