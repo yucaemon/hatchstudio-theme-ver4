@@ -23,16 +23,23 @@ Hatchstudio incは、以下のとおり情報セキュリティ基本方針を�
 </div>
 <div class='outer__inner'>
 <div class='articles__container__bottom flexbox--h-center'>
+<div class='bt-left'>
 <?php include('components-php/bt-news-lists.php'); ?>
+</div>
+<div class='bt-right'>
+<!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
 <?php include('components-php/bt-popular-month.php'); ?>
+</div>
 </div>
 </div>
 </div>
 </body>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
-<?php include('components-php/service.php'); ?>
 <?php include('components-php/annie-banner.php'); ?>
+<?php include('components-php/service.php'); ?>
+<?php include('components-php/business-sp.php'); ?>
+<?php include('components-php/annie-sp.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>

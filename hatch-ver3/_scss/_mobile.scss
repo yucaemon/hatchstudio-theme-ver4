@@ -32,10 +32,10 @@
   }
   .pages__container{
     padding: 20px;
-    
+
    .pages__read{
        width: 100%;
-       padding-top: 40px;
+       padding-top: 0;
        p{
         word-wrap: break-word;
        }
@@ -982,6 +982,7 @@ related-article(関連記事)
       width: 100%;
     }
     .pages__header{
+      text-align: center;
       letter-spacing: 0.3px;
       font-size: 15px !important;
       line-height: 1.5 !important;
@@ -989,6 +990,7 @@ related-article(関連記事)
     .table-info{
       display: none;
     }
+
   }
 
   .featured-articles {
@@ -1018,6 +1020,7 @@ related-article(関連記事)
       width: 177px;
       padding-left: 12px;
     }
+
 
   }
 
@@ -1148,6 +1151,9 @@ related-article(関連記事)
   .pages{
     .mission{
       padding: 0;
+      .pages__header{
+        text-align: center;
+      }
     }
     &__container{
       width: 100%;
