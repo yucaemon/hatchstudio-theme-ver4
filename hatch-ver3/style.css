@@ -9177,6 +9177,10 @@ bootstrap/comprnets
           object-fit: cover;
           display: block; }
 
+  .business-ad-side .business-content {
+    height: 210px;
+    margin-bottom: 67px; }
+
   .post-lists.article-list {
     display: flex;
     justify-content: space-between; }
