@@ -9746,7 +9746,9 @@ related-article(関連記事)
     font-size: 1.3rem;
     letter-spacing: 1px; }
   .house-page .house-page__body__container + .house-page__body__container {
-    border-top: none; } }
+    border-top: none; }
+  .house-page__real-estate__bg-img {
+    display: none; } }
 /*
 
 	mobile settings windowサイズが1024以下- 680以上になった時の処理

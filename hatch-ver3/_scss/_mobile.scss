@@ -1206,7 +1206,6 @@ related-article(関連記事)
         font-size: 1.8rem;
         padding-left: 0;
       }
-
     }
     &__body__header{
       padding: 0 0 20px 0;
@@ -1217,7 +1216,11 @@ related-article(関連記事)
     .house-page__body__container + .house-page__body__container{
       border-top:none;
     }
+
+    &__real-estate__bg-img{
+      display: none;
+    }
+
   }
-
-
+  
 }
