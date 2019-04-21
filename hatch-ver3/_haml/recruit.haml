@@ -92,13 +92,11 @@
                     %li
                       住み込みできる方
                     %li
-                      人が好きで愛がある方
-                    %li
-                      お世話好きな方
+                      人が好きな方
                     %li
                       責任感がある方
                     %li
-                      シェアハウス経験ある方
+                      アメリカでシェアハウス経験ある方
                     %li
                       英語でのコミュニケーションができる方
               .card-footer
@@ -151,7 +149,7 @@
                     %li
                       モデル経験3年以上
                     %li
-                      23才以上
+                      25才以上
               .card-footer
                 勤務地：アメリカ国内
 
@@ -160,13 +158,19 @@
 
   .outer__inner
     .articles__container__bottom.flexbox--h-center
-      <?php include('components-php/bt-news-lists.php'); ?>
-      <?php include('components-php/bt-popular-month.php'); ?>
+      .bt-left
+        <?php include('components-php/bt-news-lists.php'); ?>
+      .bt-right
+        <!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
+        <?php include('components-php/bt-popular-month.php'); ?>
 
-
-
+<p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 .bottom-container
-  <?php include('components-php/service.php'); ?>
   <?php include('components-php/annie-banner.php'); ?>
+  <?php include('components-php/service.php'); ?>
+
+  <?php include('components-php/business-sp.php'); ?>
+  <?php include('components-php/annie-sp.php'); ?>
+
   <?php include('components-php/footer.php'); ?>
   <?php include('components-php/footer-sp.php'); ?>

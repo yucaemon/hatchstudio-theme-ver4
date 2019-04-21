@@ -8911,6 +8911,9 @@ bootstrap/comprnets
 
   .pages__container {
     padding: 30px; }
+    .pages__container .pages__read {
+      width: 100%;
+      padding-top: 40px; }
     .pages__container .logo__img {
       display: none; }
     .pages__container .security-policy {
@@ -9476,6 +9479,8 @@ related-article(関連記事)
 　シングルページ .page
 
 *************************************************/
+  .pages__header {
+    line-height: 1.5; }
   .pages__container {
     padding-top: 30px;
     margin-bottom: 30px; }
@@ -9492,6 +9497,8 @@ related-article(関連記事)
     color: #a5a5a5;
     letter-spacing: 1px;
     padding: 20px 11px; }
+  .pages .card {
+    margin-bottom: 40px; }
 
   /*
 
@@ -9567,9 +9574,6 @@ related-article(関連記事)
     letter-spacing: 0.3px;
     font-size: 15px !important;
     line-height: 1.5 !important; }
-  .about-page .pages__read {
-    width: 100%;
-    padding-top: 42px; }
   .about-page .table-info {
     display: none; }
 

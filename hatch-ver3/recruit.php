@@ -127,16 +127,13 @@ OPTビザサポート有
 住み込みできる方
 </li>
 <li>
-人が好きで愛がある方
-</li>
-<li>
-お世話好きな方
+人が好きな方
 </li>
 <li>
 責任感がある方
 </li>
 <li>
-シェアハウス経験ある方
+アメリカでシェアハウス経験ある方
 </li>
 <li>
 英語でのコミュニケーションができる方
@@ -223,7 +220,7 @@ OPTビザサポート有
 モデル経験3年以上
 </li>
 <li>
-23才以上
+25才以上
 </li>
 </ol>
 </p>
@@ -239,14 +236,22 @@ OPTビザサポート有
 </div>
 <div class='outer__inner'>
 <div class='articles__container__bottom flexbox--h-center'>
+<div class='bt-left'>
 <?php include('components-php/bt-news-lists.php'); ?>
+</div>
+<div class='bt-right'>
+<!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
 <?php include('components-php/bt-popular-month.php'); ?>
 </div>
 </div>
+</div>
 </body>
+<p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
-<?php include('components-php/service.php'); ?>
 <?php include('components-php/annie-banner.php'); ?>
+<?php include('components-php/service.php'); ?>
+<?php include('components-php/business-sp.php'); ?>
+<?php include('components-php/annie-sp.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>

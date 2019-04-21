@@ -32,6 +32,10 @@
   }
   .pages__container{
     padding: 30px;
+   .pages__read{
+       width: 100%;
+       padding-top: 40px;
+    }
     .logo__img{
       display: none
     }
@@ -379,7 +383,7 @@
 
   .business-ad-side .business-content{
     height: 210px;
-    margin-bottom: 67px;  
+    margin-bottom: 67px;
   }
 
   .post-lists.article-list{
@@ -834,11 +838,14 @@ related-article(関連記事)
 *************************************************/
 
   .pages {
-  &__container {
-    padding-top: 30px;
-    margin-bottom: 30px;
-  }
-    .outer__inner {
+    &__header{
+      line-height: 1.5;
+    }
+    &__container {
+      padding-top: 30px;
+      margin-bottom: 30px;
+    }
+      .outer__inner {
       width: 100%;
       margin: 0 auto;
       padding-top: 0;
@@ -858,6 +865,10 @@ related-article(関連記事)
       color: #a5a5a5;
       letter-spacing: 1px;
       padding: 20px 11px;
+    }
+
+    .card {
+      margin-bottom: 40px;
     }
 
   }
@@ -970,10 +981,6 @@ related-article(関連記事)
       letter-spacing: 0.3px;
       font-size: 15px !important;
       line-height: 1.5 !important;
-    }
-    .pages__read {
-      width: 100%;
-      padding-top: 42px;
     }
     .table-info{
       display: none;
