@@ -7,6 +7,11 @@
 <div class='drawer-nav'>
 <div class='drawer-nav__container'>
 <div class='drawer-nav__title'>
+<i class='fa fa-home'>
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME ホーム</a>
+</i>
+</div>
+<div class='drawer-nav__title'>
 <i class='fa fa-list-ul'></i>
 ブログコンテンツ
 </div>

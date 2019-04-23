@@ -9109,6 +9109,11 @@ bootstrap/comprnets
         background-color: #fff4df; }
         .header-sp .drawer-nav__title i.fa {
           color: #fcb751; }
+    .header-sp .drawer-nav__title:first-child {
+      background-color: #fddd9e;
+      margin-bottom: 0; }
+      .header-sp .drawer-nav__title:first-child a {
+        color: #fcb751; }
 
   .notice-bar {
     margin: 0; }
