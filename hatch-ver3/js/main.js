@@ -73,14 +73,12 @@ jQuery(document).ready(function($) {
 $('.drawer').drawer();
 $(".textArea").hide();
     $(".search-icon").click(function(){
+        console.log('クリックされました');
         $($(this).next(".textArea")).animate(
             {height: "toggle", opacity: "toggle"},
             "nomal"
         );
 
+
     });
-
-
-
-
 });

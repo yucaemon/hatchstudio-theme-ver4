@@ -229,25 +229,31 @@
           }
         }
 
+        form#searchform{
+          width: auto;
+          padding:0;
+        }
         form#searchform #s{
-            font-size: 24px;
-             width: auto;
-          }
+          font-size: 24px;
+          width: 98%;
+          background-image: none;
+          padding: 12px 24px 12px 24px;
+        }
+
 
       }
 
       &__form {
         width: 100%;
         margin: 0 auto;
-        padding-top: 50px;
+        padding-top: 31px;
       }
 
       .search-icon {
         position: relative;
-        right: 7px;
-        top: 2px;
+        right: 13px;
+        top: 1px;
         z-index: 1000;
-
       }
     }
     .drawer-nav {
@@ -626,6 +632,9 @@
 
     .affiliate-ad {
      width: auto;
+    }
+    &__post-down__sns-icons img{
+    width: 100%;
     }
   }
 

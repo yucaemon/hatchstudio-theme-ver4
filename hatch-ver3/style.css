@@ -9076,17 +9076,22 @@ bootstrap/comprnets
           .header-sp .search__box form#searchform .fa {
             font-size: 33px;
             padding-right: 10px; }
+        .header-sp .search__box form#searchform {
+          width: auto;
+          padding: 0; }
         .header-sp .search__box form#searchform #s {
           font-size: 24px;
-          width: auto; }
+          width: 98%;
+          background-image: none;
+          padding: 12px 24px 12px 24px; }
       .header-sp .search__form {
         width: 100%;
         margin: 0 auto;
-        padding-top: 50px; }
+        padding-top: 31px; }
       .header-sp .search .search-icon {
         position: relative;
-        right: 7px;
-        top: 2px;
+        right: 13px;
+        top: 1px;
         z-index: 1000; }
     .header-sp .drawer-nav {
       z-index: 2000; }
@@ -9345,6 +9350,8 @@ bootstrap/comprnets
       padding-bottom: 10px; }
   .single-page .affiliate-ad {
     width: auto; }
+  .single-page__post-down__sns-icons img {
+    width: 100%; }
 
   .archive-banner {
     margin-top: 0;
