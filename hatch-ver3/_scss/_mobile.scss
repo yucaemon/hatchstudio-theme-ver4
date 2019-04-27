@@ -11,6 +11,9 @@
   .PageTopBtn{
     display: none !important;
   }
+  .breadcrumb .breadcrumbs{
+    padding-left: 0 !important;
+  }
   .header{
     display: none;
   }
@@ -540,6 +543,8 @@
     &__entry-content {
       img {
         width: 100%;
+        height: 230px;
+        object-fit: cover;
       }
       .detail-box02__txt {
         padding-top: 10px;
@@ -910,8 +915,7 @@ related-article(関連記事)
     .breadcrumbs {
       font-size: 10px;
       color: #a5a5a5;
-      letter-spacing: 1px;
-      padding: 20px 11px;
+      letter-spacing: 0;
     }
 
     .card {

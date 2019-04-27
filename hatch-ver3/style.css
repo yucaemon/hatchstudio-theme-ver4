@@ -8891,6 +8891,9 @@ bootstrap/comprnets
   .PageTopBtn {
     display: none !important; }
 
+  .breadcrumb .breadcrumbs {
+    padding-left: 0 !important; }
+
   .header {
     display: none; }
 
@@ -9287,7 +9290,9 @@ bootstrap/comprnets
     padding: 20px 0 !important;
     object-fit: cover; }
   .single-page__entry-content img {
-    width: 100%; }
+    width: 100%;
+    height: 230px;
+    object-fit: cover; }
   .single-page__entry-content .detail-box02__txt {
     padding-top: 10px;
     width: 50%; }
@@ -9523,8 +9528,7 @@ related-article(関連記事)
   .pages .breadcrumbs {
     font-size: 10px;
     color: #a5a5a5;
-    letter-spacing: 1px;
-    padding: 20px 11px; }
+    letter-spacing: 0; }
   .pages .card {
     margin-bottom: 40px; }
 
