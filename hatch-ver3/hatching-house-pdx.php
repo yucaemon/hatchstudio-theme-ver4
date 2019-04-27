@@ -35,6 +35,9 @@ HATCHING HOUSE
 <div class='house-page__body__img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-03.jpg">
 </div>
+<div class='house-page__body__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-02.jpg">
+</div>
 </div>
 <div class='house-page__body__read'>
 ポートランドの暮らしは、自然の中に、都会的な洗練されたおしゃれなカフェがひっそりとあるような。ちょうどいい田舎暮らしをしている中にも何かワクワクするような新しいことが起こるような。自然の美しさと人間の作り出アートがうまく調和されている街。
@@ -71,13 +74,13 @@ HATCHING HOUSE
 </h2>
 <div class='house-page__body__pics flexbox--spacebetween'>
 <div class='house-page__body__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-07.jpg">
+<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-09.jpg">
 </div>
 <div class='house-page__body__img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-08.jpg">
 </div>
 <div class='house-page__body__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-09.jpg">
+<img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-07.jpg">
 </div>
 </div>
 <div class='house-page__body__read'>
@@ -96,7 +99,7 @@ HATCHING HOUSE
 </li>
 <li>
 <i class="fas fa-smoking-ban"></i>
-禁煙
+禁煙(外の庭でのみ喫煙可能)
 </li>
 <li>
 <i class="fas fa-utensils"></i>
@@ -108,10 +111,13 @@ HATCHING HOUSE
 </li>
 </ul>
 <p>
-※現在、プライベート個室（大）空き予定がありません。
+※写真イメージは、個室（大）のお部屋の写真になります。
 </p>
 <p>
-※写真イメージは、個室（大）のお部屋の写真になります。
+※写真イメージは、個室（大）お部屋には、プライベート用のシャワー、トイレがつきますが、個室(A)(B)のお部屋は、シャワー、トイレは共同になります。
+</p>
+<p>
+※個室(B)のお部屋は、お家の一部をお部屋のように改造して作った為、格安のお部屋です。ご了承いただける方のみご予約の方お願いいたします。お部屋の写真を見たい方は、お問い合わせください。
 </p>
 <p>
 ※お部屋のご予約、ご質問等などお気軽に以下のお問い合わせフォームにて、ご相談ください。
