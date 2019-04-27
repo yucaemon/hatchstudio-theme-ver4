@@ -9357,6 +9357,20 @@ bootstrap/comprnets
     width: auto; }
   .single-page__post-down__sns-icons img {
     width: 100%; }
+  .single-page .paging-nav__content {
+    width: 100%; }
+  .single-page .paging-nav__body__read {
+    width: 64%;
+    padding: 0; }
+  .single-page .paging-nav__body__img img {
+    width: 63%;
+    height: 100px; }
+  .single-page .paging-nav__content-second .paging-nav__body {
+    justify-content: flex-end; }
+    .single-page .paging-nav__content-second .paging-nav__body__img {
+      text-align: end; }
+    .single-page .paging-nav__content-second .paging-nav__body__read {
+      order: 1; }
 
   .archive-banner {
     margin-top: 0;
