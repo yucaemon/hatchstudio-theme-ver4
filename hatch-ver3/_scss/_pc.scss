@@ -1,8 +1,7 @@
+/* 	mobile settings windowサイズが1025px以下になった時の処理 */
 @media (min-width: 1025px) {
-
   .outer {
     &__header {
-      margin: 20px auto;
       padding: 0 40px;
     }
     &__inner {
@@ -15,7 +14,6 @@
     }
 
   }
-
   .footer {
     &__sns-icons img {
       width: 30px;
@@ -24,12 +22,6 @@
 
   }
 
-  .header-sp {
-    display: none;
-  }
-  .footer-sp {
-    display: none;
-  }
   .affiliate-ad-sp{
     display: none;
   }
@@ -247,27 +239,11 @@
     }
   }
 
-
-
-  /*
-
-   page
-
-*************************************************/
-
-  .pages {
-
-
-
-  }
-
   /*
 
    error-page
 
 *************************************************/
-
-
   .error-page{
     .pages__container{
       padding:20px 0;
@@ -275,61 +251,57 @@
     }
   }
 
+/*
 
-}
-
-
-  /*
-
-   side-part
-
+     side-part
 *************************************************/
-.side-contain {
-  .news-list {
-    &__container{
-      padding-bottom:50px;
-    }
-    &__header{
-      padding-left: 10px;
-    }
-    &__title {
-      width: 164px;
-      @include listsTitle(9,1.4);
-
-    }
-    &__content{
-      padding-bottom: 20px;
-    }
-    span.views{
-      display: inline-block;
-      font-size: 13px;
-      color: #f2695d;
-      background-color: #fff5f5;
-      padding: 3px 10px;
-      letter-spacing: 1px;
-      border-radius: 6px;
-      margin-bottom: 10px;
-    }
-  }
-  .header-side{
-    padding-bottom: 20px;
-    justify-content: center;
-    &__img {
-      width: 21px;
-    }
-    &__txt {
-      &--en{
-        font-size: 17px;
-        letter-spacing: 1px;
-        padding: 2px 8px 0 15px;
-        color: #333;
-        font-family: $font_family_en;
+  .side-contain {
+    .news-list {
+      &__container{
+        padding-bottom:50px;
       }
-      &--jp {
-        padding-right:15px;
-        padding-top: 6px;
-        font-size: 11px;
+      &__header{
+        padding-left: 10px;
+      }
+      &__title {
+        width: 164px;
+        @include listsTitle(9,1.4);
+
+      }
+      &__content{
+        padding-bottom: 20px;
+      }
+      span.views{
+        display: inline-block;
+        font-size: 13px;
+        color: #f2695d;
+        background-color: #fff5f5;
+        padding: 3px 10px;
         letter-spacing: 1px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+    }
+    .header-side{
+      padding-bottom: 20px;
+      justify-content: center;
+      &__img {
+        width: 21px;
+      }
+      &__txt {
+        &--en{
+          font-size: 17px;
+          letter-spacing: 1px;
+          padding: 2px 8px 0 15px;
+          color: #333;
+          font-family: $font_family_en;
+        }
+        &--jp {
+          padding-right:15px;
+          padding-top: 6px;
+          font-size: 11px;
+          letter-spacing: 1px;
+        }
       }
     }
   }

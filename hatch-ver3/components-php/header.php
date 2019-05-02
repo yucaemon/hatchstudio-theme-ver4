@@ -17,19 +17,19 @@
 </div>
 </div>
 </div>
-<div class='logofind'>
+<div class='header__pic flexbox'>
+<div class='background-draw background-draw__left'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/header-img-left.svg">
+</div>
+<div class='header__pic-logo'>
 <div class='logo__img'>
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-bk.svg" width="250"></a>
-</div>
 </div>
 <h1 class='sub-title'>
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">”ワクワク”な体験をお届け！アメリカ面白まがじん</a>
 </h1>
-<div class='background-draw'>
-<div class='background-draw__left'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/header-img-left.svg">
 </div>
-<div class='background-daw__right'>
+<div class='background-draw background-daw__right'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/header-img-right.svg">
 </div>
 </div>

@@ -40,6 +40,12 @@ iframe {
 	layout
 *************************************************/
 
+.outer {
+  &__header {
+    margin: 20px auto 0 auto;
+  }
+}
+
 body {
   margin: 0;
 }
@@ -53,7 +59,12 @@ body {
     margin: 0 auto;
   }
 }
-
+.header-sp {
+  display: none;
+}
+.footer-sp {
+  display: none;
+}
 
 /*
 
@@ -223,7 +234,6 @@ body {
 }
 
 .logo__img {
-  width: 45%;
   text-align: center;
   margin:0 auto;
   height: 78px;
@@ -232,21 +242,24 @@ body {
   }
 }
 
-.background-draw img {
-  width: 300px;
+.header__pic{
+    width: 1100px;
+    margin: 0 auto;
+}
+.header__pic-logo{
+  width: 500px;
+}
+.background-draw{
+  display: flex;
+  margin-top: auto;
+  img {
+    width: 300px;
+  }
+  &__left{
+    margin-bottom: -3px;
+  }
 }
 
-.background-draw__left {
-  position: absolute;
-  left: 136px;
-  top: 168px;
-}
-
-.background-daw__right {
-  position: absolute;
-  left: 842px;
-  top: 175px;
-}
 
 
 .header-bar {
