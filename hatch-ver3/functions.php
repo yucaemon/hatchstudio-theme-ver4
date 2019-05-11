@@ -18,6 +18,7 @@ add_action('wp_footer', 'my_load_widget_scripts');
 /* アイキャッチ 設定 */
 add_theme_support('post-thumbnails');
 
+
 /* カスタム投稿タイプ 設定 */
 add_action( 'init', 'create_post_type' );
 function create_post_type() {

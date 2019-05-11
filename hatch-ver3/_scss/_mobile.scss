@@ -5,6 +5,11 @@
     margin-top: 0 !important;
   }
   /*indexページ*/
+  .index{
+    .side-contain{
+      width: 100%;
+     }
+  }
   .ggmap {
   position: relative;
   padding-bottom: 56.25%;
@@ -23,7 +28,7 @@
   height: 100%;
   }
   .outer__inner {
-    padding-top: 0;
+    padding: 0;
   }
   .PageTopBtn{
     display: none !important;

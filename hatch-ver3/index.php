@@ -4,12 +4,13 @@
 <?php include('components-php/header.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
 <section class='section first-section'>
-<div class='outer__inner flexbox'>
+<div class='outer__inner'>
+<div class='outer__inner__container flexbox--spacebetween'>
 <div class='middle-contain two-column-sp'>
 <ul class='post-lists article-list box-list'>
   <?php
      $args = array(
-    'posts_per_page' => 6,                //表示（取得）する記事の数
+    'posts_per_page' => 12,                //表示（取得）する記事の数
     'post_type' => 'post'    //投稿タイプの指定
   );
   $posts = get_posts( $args );
@@ -27,7 +28,7 @@
 
 
           <div class='post-lists__img article-list__img imgWrap'>
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
           </div>
           <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
             <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
@@ -55,9 +56,10 @@
 <?php include('components-php/lists-popular-total.php'); ?>
 </div>
 </div>
-</section>
+</div>
 <?php include('components-php/affiliate-ad-sp.php'); ?>
 <?php include('components-php/share-house-ad.php'); ?>
+</section>
 <section class='section second-section'>
 <div class='header-side__img--sp'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/news-baner.svg">
@@ -65,7 +67,7 @@
 <div class='outer__inner flexbox'>
 <div class='middle-contain two-column-sp'>
   <ul class='post-lists article-list'>
-    <?php query_posts('posts_per_page=5&offset=6' ); ?>
+    <?php query_posts('posts_per_page=5&offset=12' ); ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
     <?php if($countblock == 3 or $countblock == 8 or $countblock == 12) : ?>
     //ここに広告のコードor画像など//
@@ -103,7 +105,7 @@
 <div class='outer__inner flexbox'>
 <div class='middle-contain two-column-sp'>
 <ul class='post-lists article-list box-list'>
-  <?php query_posts('posts_per_page=5&offset=11' ); ?>
+  <?php query_posts('posts_per_page=5&offset=17' ); ?>
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
   <?php if($countblock == 3 or $countblock == 8 or $countblock == 12) : ?>
   //ここに広告のコードor画像など//

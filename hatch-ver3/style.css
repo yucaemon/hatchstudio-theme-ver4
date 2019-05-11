@@ -7291,17 +7291,17 @@ body {
     padding-bottom: 30px; }
 
 .header__pic {
-  width: 1100px;
+  width: auto;
   margin: 0 auto; }
 
 .header__pic-logo {
-  width: 500px; }
+  width: 36%; }
 
 .background-draw {
   display: flex;
   margin-top: auto; }
   .background-draw img {
-    width: 300px; }
+    width: 100%; }
   .background-draw__left {
     margin-bottom: -3px; }
 
@@ -7340,7 +7340,7 @@ body {
   color: #fff !important; }
 
 .header02 .logo__img img {
-  width: 31%; }
+  width: 13%; }
 
 .eyecatch {
   position: relative; }
@@ -7366,11 +7366,8 @@ body {
 
 *************************************************/
 .side-amazon-ad {
-  width: 312px;
-  margin: 0 auto; }
-  .side-amazon-ad img {
-    width: 312px;
-    margin-bottom: 50px; }
+  width: 100%;
+  padding-bottom: 40px; }
 
 .side-fixed-content {
   position: fixed;
@@ -8655,227 +8652,225 @@ bootstrap/comprnets
   font-size: 12px;
   color: #9e9e9e; }
 
-/* 	mobile settings windowサイズが1025px以下になった時の処理 */
-@media (min-width: 1025px) {
-  .outer__header {
-    padding: 0 40px; }
-  .outer__inner {
-    margin: 0 auto;
-    width: 1246px; }
-  .outer__foot {
+/*
+
+index
+
+*************************************************/
+.outer__header {
+  padding: 0 40px; }
+.outer__inner {
+  padding: 40px; }
+.outer__foot {
+  width: 100%;
+  margin: 0 auto; }
+
+.footer__sns-icons img {
+  width: 30px;
+  height: 30px; }
+
+.affiliate-ad-sp {
+  display: none; }
+
+.header-side__img--sp {
+  display: none; }
+
+.business-sp {
+  display: none; }
+
+.annie-sp {
+  display: none; }
+
+.alternate-banner {
+  display: none; }
+
+.pages .news-articles__title {
+  display: none; }
+
+.news-articles__container {
+  padding-bottom: 15px; }
+
+.container {
+  padding: 30px;
+  min-width: 1170px; }
+
+.middle-contain {
+  width: 70%; }
+  .middle-contain .bg-thumb-img {
+    margin-bottom: 30px; }
+  .middle-contain .box-list li {
+    height: 100%; }
+  .middle-contain .article-list li {
+    padding-bottom: 38px;
+    width: 30%; }
+  .middle-contain .article-list .newMark {
+    padding: 8px 20px;
+    letter-spacing: 3px; }
+  .middle-contain .article-list__img img {
     width: 100%;
-    margin: 0 auto; }
-
-  .footer__sns-icons img {
-    width: 30px;
-    height: 30px; }
-
-  .affiliate-ad-sp {
-    display: none; }
-
-  .header-side__img--sp {
-    display: none; }
-
-  .business-sp {
-    display: none; }
-
-  .annie-sp {
-    display: none; }
-
-  .alternate-banner {
-    display: none; }
-
-  .pages .news-articles__title {
-    display: none; }
-
-  .news-articles__container {
-    padding-bottom: 15px; }
-
-  .container {
-    padding: 30px;
-    min-width: 1170px; }
-
-  .middle-contain {
-    width: 750px;
-    margin: 0 30px; }
-    .middle-contain .bg-thumb-img {
-      margin-bottom: 30px; }
-    .middle-contain .box-list li {
-      height: 339px; }
-    .middle-contain .article-list li {
-      padding-bottom: 14px;
-      width: 353px; }
-    .middle-contain .article-list .newMark {
-      padding: 8px 20px;
-      letter-spacing: 3px; }
-    .middle-contain .article-list__img {
-      width: auto;
-      height: auto;
-      object-fit: cover; }
-      .middle-contain .article-list__img img {
-        width: 350px;
-        height: 200px;
-        object-fit: cover; }
-    .middle-contain .article-list__text .list-title {
-      font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
-      color: #222;
-      font-weight: bold;
-      word-wrap: break-word;
-      font-size: 12px;
-      font-size: 1.2rem;
-      line-height: 1;
-      line-height: 1.4;
-      padding-bottom: 10px; }
-    .middle-contain .article-list__text .icons .icons__tag {
-      background-color: #f2716e;
-      margin-right: 10px;
-      color: #fff;
-      font-size: 3px;
-      font-size: 0.3rem;
-      line-height: 1;
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      border-radius: 2px;
-      -moz-background-clip: padding;
-      -webkit-background-clip: padding-box;
-      background-clip: padding-box;
-      padding: 4px 7px; }
-
-  /*
-
-  index.page
-
-*************************************************/
-  .index .side-contain {
-    width: 400px; }
-
-  ul.post-lists.article-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-
-  .second-section .eyechatchlabel {
-    display: none; }
-  .second-section ul.post-lists.article-list {
-    display: block; }
-  .second-section .post-lists__img.article-list__img img {
-    width: 250px;
-    height: 150px; }
-  .second-section h3.post-lists__title.list-title {
-    font-size: 18px; }
-  .second-section p.list-read {
-    font-size: 10px; }
-
-  /*
-
-	single.page
-
-*************************************************/
-  .single-page .header .logo__img {
-    padding-bottom: 20px; }
-  .single-page .middle-contain {
-    width: 750px;
-    margin-right: 60px; }
-  .single-page__eyecatch-img img {
-    width: 750px;
-    height: 380px;
+    height: 100%;
     object-fit: cover; }
-  .single-page__eyecatch-img {
-    padding: 30px 0; }
-  .single-page__entry-content .detail-box02__title {
-    font-size: 9px;
-    font-size: 0.9rem;
-    line-height: 1;
-    line-height: 21px; }
-
-  /*
-
-	recomend-list-part
-
-*************************************************/
-  .side-contain .news-list .eyechatchlabel {
-    display: none; }
-  .side-contain .news-list__thumb-img {
-    padding-right: 3px; }
-    .side-contain .news-list__thumb-img img {
-      width: 135px;
-      height: 100px;
-      object-fit: cover; }
-  .side-contain__title {
-    font-size: 8px;
-    font-size: 0.8rem;
-    line-height: 1.125;
-    width: 164px; }
-
-  .recommend-list__thumb-img {
-    width: 100px; }
-    .recommend-list__thumb-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-
-  /*
-
-  category-page
-
-*************************************************/
-  .category-page .logo__img, .tag-page .logo__img {
-    padding-bottom: 30px; }
-
-  /*
-
-   error-page
-
-*************************************************/
-  .error-page .pages__container {
-    padding: 20px 0;
-    margin-bottom: 0; }
-
-  /*
-  
-       side-part
-  *************************************************/
-  .side-contain .news-list__container {
-    padding-bottom: 50px; }
-  .side-contain .news-list__header {
-    padding-left: 10px; }
-  .side-contain .news-list__title {
-    width: 164px;
+  .middle-contain .article-list__text .list-title {
     font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
     color: #222;
     font-weight: bold;
     word-wrap: break-word;
-    font-size: 9px;
-    font-size: 0.9rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 1;
-    line-height: 1.4; }
-  .side-contain .news-list__content {
-    padding-bottom: 20px; }
-  .side-contain .news-list span.views {
-    display: inline-block;
-    font-size: 13px;
-    color: #f2695d;
-    background-color: #fff5f5;
-    padding: 3px 10px;
+    line-height: 1.4;
+    padding-bottom: 10px; }
+  .middle-contain .article-list__text .icons .icons__tag {
+    background-color: #f2716e;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 3px;
+    font-size: 0.3rem;
+    line-height: 1;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding: 4px 7px; }
+
+/*
+
+index.page
+
+*************************************************/
+.index .side-contain {
+  width: 27%; }
+
+ul.post-lists.article-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.second-section .eyechatchlabel {
+  display: none; }
+.second-section ul.post-lists.article-list {
+  display: block; }
+.second-section .post-lists__img.article-list__img img {
+  width: 250px;
+  height: 150px; }
+.second-section h3.post-lists__title.list-title {
+  font-size: 18px; }
+.second-section p.list-read {
+  font-size: 10px; }
+
+/*
+
+single.page
+
+*************************************************/
+.single-page .header .logo__img {
+  padding-bottom: 20px; }
+.single-page .middle-contain {
+  width: 750px;
+  margin-right: 60px; }
+.single-page__eyecatch-img img {
+  width: 750px;
+  height: 380px;
+  object-fit: cover; }
+.single-page__eyecatch-img {
+  padding: 30px 0; }
+.single-page__entry-content .detail-box02__title {
+  font-size: 9px;
+  font-size: 0.9rem;
+  line-height: 1;
+  line-height: 21px; }
+
+/*
+
+recomend-list-part
+
+*************************************************/
+.side-contain .news-list .eyechatchlabel {
+  display: none; }
+.side-contain .news-list__thumb-img {
+  padding-right: 3px; }
+  .side-contain .news-list__thumb-img img {
+    width: 135px;
+    height: 100px;
+    object-fit: cover; }
+.side-contain__title {
+  font-size: 8px;
+  font-size: 0.8rem;
+  line-height: 1.125;
+  width: 164px; }
+
+.recommend-list__thumb-img {
+  width: 100px; }
+  .recommend-list__thumb-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+/*
+
+category-page
+
+*************************************************/
+.category-page .logo__img, .tag-page .logo__img {
+  padding-bottom: 30px; }
+
+/*
+
+ error-page
+
+*************************************************/
+.error-page .pages__container {
+  padding: 20px 0;
+  margin-bottom: 0; }
+
+/*
+
+   side-part
+*************************************************/
+.side-contain .news-list__container {
+  padding-bottom: 50px; }
+.side-contain .news-list__header {
+  padding-left: 10px; }
+.side-contain .news-list__title {
+  width: 164px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+  color: #222;
+  font-weight: bold;
+  word-wrap: break-word;
+  font-size: 9px;
+  font-size: 0.9rem;
+  line-height: 1;
+  line-height: 1.4; }
+.side-contain .news-list__content {
+  padding-bottom: 20px; }
+.side-contain .news-list span.views {
+  display: inline-block;
+  font-size: 13px;
+  color: #f2695d;
+  background-color: #fff5f5;
+  padding: 3px 10px;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  margin-bottom: 10px; }
+.side-contain .header-side {
+  padding-bottom: 20px;
+  justify-content: center; }
+  .side-contain .header-side__img {
+    width: 21px; }
+  .side-contain .header-side__txt--en {
+    font-size: 17px;
     letter-spacing: 1px;
-    border-radius: 6px;
-    margin-bottom: 10px; }
-  .side-contain .header-side {
-    padding-bottom: 20px;
-    justify-content: center; }
-    .side-contain .header-side__img {
-      width: 21px; }
-    .side-contain .header-side__txt--en {
-      font-size: 17px;
-      letter-spacing: 1px;
-      padding: 2px 8px 0 15px;
-      color: #333;
-      font-family: "Montserrat", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
-    .side-contain .header-side__txt--jp {
-      padding-right: 15px;
-      padding-top: 6px;
-      font-size: 11px;
-      letter-spacing: 1px; } }
+    padding: 2px 8px 0 15px;
+    color: #333;
+    font-family: "Montserrat", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
+  .side-contain .header-side__txt--jp {
+    padding-right: 15px;
+    padding-top: 6px;
+    font-size: 11px;
+    letter-spacing: 1px; }
+
 /* 	mobile settings windowサイズが680以下になった時の処理 */
 @media (max-width: 680px) {
   /*要素を消す*/
@@ -8883,6 +8878,9 @@ bootstrap/comprnets
     margin-top: 0 !important; }
 
   /*indexページ*/
+  .index .side-contain {
+    width: 100%; }
+
   .ggmap {
     position: relative;
     padding-bottom: 56.25%;
@@ -8901,7 +8899,7 @@ bootstrap/comprnets
     height: 100%; }
 
   .outer__inner {
-    padding-top: 0; }
+    padding: 0; }
 
   .PageTopBtn {
     display: none !important; }
@@ -9822,5 +9820,8 @@ related-article(関連記事)
 	mobile settings windowサイズが1024以下- 680以上になった時の処理
 
 **************************************************/
+@media (min-width: 680px) and (max-width: 1024px) {
+  .background-draw img {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

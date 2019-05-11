@@ -17,7 +17,7 @@
 </div>
 </div>
 </div>
-<div class='header__pic flexbox'>
+<div class='header__pic flexbox--spacebetween'>
 <div class='background-draw background-draw__left'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/header-img-left.svg">
 </div>
