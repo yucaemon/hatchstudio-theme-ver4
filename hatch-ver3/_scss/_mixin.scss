@@ -127,10 +127,12 @@
 @mixin listsTitle($fontsize,$line-hight) {
 	    @include font-jp;
 			color: $font-color_head;
-			font-weight: bold;
 			word-wrap: break-word;
 			@include fts($fontsize,$fontsize);
 			line-height: $line-hight;
+			font-weight: 600;
+      letter-spacing: .05em;
+      line-height: 1.6;
 }
 
 

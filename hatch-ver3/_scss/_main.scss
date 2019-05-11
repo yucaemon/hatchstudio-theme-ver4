@@ -1,6 +1,6 @@
 /*
-
 	common
+  （モバイルとタブレット以外のサイズ）
 
 *************************************************/
 
@@ -1932,7 +1932,7 @@ index
     }
     &__text {
       .list-title {
-        @include listsTitle(12,1.4);
+        @include listsTitle(11,11);
         padding-bottom: 10px;
       }
       .icons {
