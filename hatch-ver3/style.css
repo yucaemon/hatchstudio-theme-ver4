@@ -7343,7 +7343,8 @@ body {
   width: 13%; }
 
 .eyecatch {
-  position: relative; }
+  position: relative;
+  width: 40%; }
 
 .eyechatchlabel {
   position: absolute;
@@ -7366,7 +7367,6 @@ body {
 
 *************************************************/
 .side-amazon-ad {
-  width: 100%;
   padding-bottom: 40px; }
 
 .side-fixed-content {
@@ -7632,9 +7632,8 @@ body {
 
 .hatching-house {
   background-color: #bee4e6;
-  height: 460px;
-  padding-left: 50px;
-  padding-top: 35px; }
+  padding: 30px 40px;
+  height: 100%; }
   .hatching-house__header {
     padding-bottom: 40px; }
     .hatching-house__header--jp {
@@ -7650,23 +7649,16 @@ body {
       width: 80px;
       padding-right: 20px; }
   .hatching-house__pictures li {
-    margin-right: 88px; }
-  .hatching-house__pictures .hatching-house--img {
-    height: 171px; }
+    width: 30%; }
   .hatching-house__pictures .hatching-house--img img {
-    width: 250px;
-    height: 172px !important; }
+    width: 100%; }
   .hatching-house__pictures .hatching-house--txt {
     background-color: #fff;
     padding: 10px 20px;
     font-size: 13px;
     letter-spacing: 2px; }
-  .hatching-house__btn button {
-    margin-top: 70px;
-    padding-right: 20px; }
   .hatching-house__btn--img {
-    width: 88px;
-    padding-top: 83px; }
+    width: 7%; }
 
 .annie {
   background-color: #f6cdc4;
@@ -8812,8 +8804,7 @@ recomend-list-part
 .side-contain .news-list__thumb-img {
   padding-right: 3px; }
   .side-contain .news-list__thumb-img img {
-    width: 135px;
-    height: 100px;
+    width: 100%;
     object-fit: cover; }
 .side-contain__title {
   font-size: 8px;
@@ -8852,9 +8843,10 @@ category-page
 .side-contain .news-list__container {
   padding-bottom: 50px; }
 .side-contain .news-list__header {
-  padding-left: 10px; }
+  padding-left: 10px;
+  width: 60%; }
 .side-contain .news-list__title {
-  width: 164px;
+  width: 100%;
   font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
   color: #222;
   word-wrap: break-word;
@@ -8864,12 +8856,13 @@ category-page
   line-height: 1.4;
   font-weight: 600;
   letter-spacing: .05em;
-  line-height: 1.6; }
+  line-height: 1.6;
+  font-size: 0.8rem; }
 .side-contain .news-list__content {
   padding-bottom: 20px; }
 .side-contain .news-list span.views {
   display: inline-block;
-  font-size: 13px;
+  font-size: 0.7em;
   color: #f2695d;
   background-color: #fff5f5;
   padding: 3px 10px;
@@ -9846,7 +9839,15 @@ related-article(関連記事)
   .background-draw img {
     display: none; }
 
+  .header-bar .logo__title {
+    display: none; }
+
   .middle-contain .article-list__text .list-title {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+
+  .side-contain .header-side__txt--jp {
+    display: none; }
+  .side-contain .news-list__title {
+    font-size: 0.6rem; } }
 
 /*# sourceMappingURL=style.css.map */

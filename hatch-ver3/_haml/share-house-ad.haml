@@ -1,14 +1,17 @@
 %section.section.ad-banner.hatching-house.zigzag.zigzag-blue
-  .hatching-house__header
-    .hatching-house__header--jp
-      初渡米！女性一人旅でも安心なハウス
-    .hatching-house__header--en.flexbox
-      .hatching-house__header--icon
-        <img src="<?php echo get_template_directory_uri(); ?>/images/house-text-usa.svg">
-      .hatching-house__header--txt
-        <img src="<?php echo get_template_directory_uri(); ?>/images/house-txt.svg">
-  .hatching-house__container.flexbox
-    %ul.hatching-house__pictures.flexbox
+  .flexbox
+    .hatching-house__header
+      .hatching-house__header--jp
+        初渡米！女性一人旅でも安心なハウス
+      .hatching-house__header--en.flexbox
+        .hatching-house__header--icon
+          <img src="<?php echo get_template_directory_uri(); ?>/images/house-text-usa.svg">
+        .hatching-house__header--txt
+          <img src="<?php echo get_template_directory_uri(); ?>/images/house-txt.svg">
+    .hatching-house__btn--img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/pink-guy.svg">
+  .hatching-house__container
+    %ul.hatching-house__pictures.flexbox--spacebetween
       %li.hatching-house--berkeley
         :plain
           <a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>" class="megamenu-inner-text">
@@ -56,7 +59,3 @@
           <div class="hatching-house--txt">
            SFバークレーシェアハウス
           </div>
-
-
-    .hatching-house__btn--img
-      <img src="<?php echo get_template_directory_uri(); ?>/images/pink-guy.svg">

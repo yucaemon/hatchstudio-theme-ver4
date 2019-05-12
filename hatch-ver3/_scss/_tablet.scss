@@ -8,7 +8,24 @@
   .background-draw img {
     display: none;
   }
+  .header-bar{
+    .logo__title{
+      display: none;
+    }
+  }
   .middle-contain .article-list__text .list-title{
     font-size: 0.9rem;
+  }
+  .side-contain {
+   .header-side__txt--jp{
+    display: none;
+   }
+  .news-list{
+  &__title{
+    font-size: 0.6rem;
+    }
+
+  }
+
   }
 }
