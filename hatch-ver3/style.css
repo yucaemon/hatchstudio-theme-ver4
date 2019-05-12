@@ -7635,7 +7635,8 @@ body {
   padding: 30px 40px;
   height: 100%; }
   .hatching-house__header {
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    padding-right: 25px; }
     .hatching-house__header--jp {
       color: #87b2bd;
       font-size: 22px;
