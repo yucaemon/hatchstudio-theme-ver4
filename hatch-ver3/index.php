@@ -64,7 +64,8 @@
 <div class='header-side__img--sp'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/news-baner.svg">
 </div>
-<div class='outer__inner flexbox'>
+<div class='outer__inner'>
+<div class='outer__inner__container flexbox--spacebetween'>
 <div class='middle-contain two-column-sp'>
   <ul class='post-lists article-list'>
     <?php query_posts('posts_per_page=5&offset=12' ); ?>
@@ -94,6 +95,7 @@
 <div class='side-contain'>
 <?php include('components-php/affiliate-ad-one.php'); ?>
 <?php include('components-php/keywords.php'); ?>
+</div>
 </div>
 </div>
 </section>
