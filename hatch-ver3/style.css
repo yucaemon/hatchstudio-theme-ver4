@@ -7184,14 +7184,13 @@ body {
   font-family: "Montserrat", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
 
 .category-icon {
-  padding: 3px;
+  padding: 3px 10px;
   border-radius: 5px;
-  margin-top: 10px;
   display: inline-block;
   background-color: #f2695d;
   color: #fff;
   letter-spacing: 1px;
-  font-size: 12px !important; }
+  font-size: 0.9em; }
   .category-icon a {
     color: #fff; }
 
@@ -8715,7 +8714,7 @@ index
   .middle-contain .box-list li {
     height: 100%; }
   .middle-contain .article-list li {
-    padding-bottom: 38px;
+    padding-bottom: 2%;
     width: 30%; }
   .middle-contain .article-list .newMark {
     padding: 8px 20px;
@@ -8766,15 +8765,20 @@ ul.post-lists.article-list {
 
 .second-section .eyechatchlabel {
   display: none; }
-.second-section ul.post-lists.article-list {
-  display: block; }
-.second-section .post-lists__img.article-list__img img {
-  width: 250px;
-  height: 150px; }
-.second-section h3.post-lists__title.list-title {
-  font-size: 18px; }
-.second-section p.list-read {
-  font-size: 10px; }
+.second-section .post-lists {
+  width: 100%; }
+  .second-section .post-lists .article-list {
+    display: block; }
+    .second-section .post-lists .article-list__text {
+      width: 70%; }
+  .second-section .post-lists__img.article-list__img {
+    width: 30%;
+    height: 90%; }
+    .second-section .post-lists__img.article-list__img img {
+      width: 100%;
+      height: 100%; }
+  .second-section .post-lists__title.list-title {
+    font-size: 1.3em; }
 
 /*
 
@@ -9866,7 +9870,12 @@ related-article(関連記事)
   .hatching-house__pictures .hatching-house--txt {
     font-size: 0.9em; }
   .hatching-house__header--txt {
-    width: 550px; } }
+    width: 550px; }
+
+  .second-section .middle-contain .article-list__text .list-title {
+    font-size: 1.1rem; }
+  .second-section .middle-contain .article-list__text .category-icon {
+    font-size: 0.7em; } }
 @media (max-width: 850px) {
   .header-bar .header-bar__nav__item {
     padding: 10px 5px; }
@@ -9876,6 +9885,11 @@ related-article(関連記事)
     width: 15%; }
 
   .header__pic--logo {
-    width: 46%; } }
+    width: 46%; }
+
+  .second-section .middle-contain .article-list__text .list-title {
+    font-size: 0.9rem; }
+  .second-section .middle-contain .article-list__text .category-icon {
+    font-size: 0.6em; } }
 
 /*# sourceMappingURL=style.css.map */
