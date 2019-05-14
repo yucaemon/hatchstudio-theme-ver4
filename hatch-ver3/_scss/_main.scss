@@ -223,22 +223,20 @@ body {
 
 
 .sub-title{
-  @include fts(8.3, 9);
+  @include fts(8.0, 9);
   line-height: 1;
-  padding-bottom: 30px;
   text-align: center;
   font-weight: bold;
   color: #737373;
   letter-spacing: 1px;
-  padding-top: 43px;
+  padding-bottom: 16%;
 }
 
 .logo__img {
-  text-align: center;
-  margin:0 auto;
-  height: 78px;
+    text-align: center;
+    padding: 0 30px 4% 30px;
   img {
-    padding-bottom: 30px;
+    width: 60%;
   }
 }
 
@@ -246,8 +244,8 @@ body {
     width: auto;
     margin: 0 auto;
 }
-.header__pic-logo{
-  width: 36%;
+.header__pic--logo{
+  width: 37%;
 }
 .background-draw{
   display: flex;
@@ -335,6 +333,7 @@ width: 40%;
   color: #fff;
   top: 0px;
   padding: 5px 10px;
+  font-size: 1.1em;
 }
 //カテゴリー別にラベルの色を変える
 .eyechatchlabel.cook{
@@ -734,22 +733,29 @@ width: 40%;
   &__pictures {
     li{
       width: 30%;
+      height: 100%;
     }
     .hatching-house {
-      &--img img{
-            width: 100%;
+      &--img{
+        img{
+          width: 100%;
+          display: block;
+        }
       }
       &--txt {
         background-color: #fff;
         padding:  10px 20px;
-        font-size: 13px;
-        letter-spacing: 2px;
+        font-size: 1.1em;
+        font-weight: bold;
+        letter-spacing: 0.10em;
+        font-family: $font_family_jp;
+
       }
     }
   }
   &__btn {
     &--img {
-      width: 7%;
+      width: 100px;
     }
   }
 }

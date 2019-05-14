@@ -21,7 +21,7 @@
 <div class='background-draw background-draw__left'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/header-img-left.svg">
 </div>
-<div class='header__pic-logo'>
+<div class='header__pic--logo'>
 <div class='logo__img'>
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-bk.svg" width="250"></a>
 </div>

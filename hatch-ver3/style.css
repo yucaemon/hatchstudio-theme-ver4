@@ -6975,7 +6975,7 @@ figcaption {
   opacity: 1;
   color: #fff;
   text-align: center;
-  padding-top: 25%; }
+  padding-top: 32%; }
 
 figure:hover figcaption {
   top: 0;
@@ -7272,30 +7272,28 @@ body {
   z-index: 1000; }
 
 .sub-title {
-  font-size: 8.3px;
-  font-size: 0.83rem;
-  line-height: 1.08434;
+  font-size: 8px;
+  font-size: 0.8rem;
+  line-height: 1.125;
   line-height: 1;
-  padding-bottom: 30px;
   text-align: center;
   font-weight: bold;
   color: #737373;
   letter-spacing: 1px;
-  padding-top: 43px; }
+  padding-bottom: 16%; }
 
 .logo__img {
   text-align: center;
-  margin: 0 auto;
-  height: 78px; }
+  padding: 0 30px 4% 30px; }
   .logo__img img {
-    padding-bottom: 30px; }
+    width: 60%; }
 
 .header__pic {
   width: auto;
   margin: 0 auto; }
 
-.header__pic-logo {
-  width: 36%; }
+.header__pic--logo {
+  width: 37%; }
 
 .background-draw {
   display: flex;
@@ -7350,7 +7348,8 @@ body {
   position: absolute;
   color: #fff;
   top: 0px;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  font-size: 1.1em; }
 
 .eyechatchlabel.cook {
   background-color: #f6cdc4; }
@@ -7650,16 +7649,20 @@ body {
       width: 80px;
       padding-right: 20px; }
   .hatching-house__pictures li {
-    width: 30%; }
+    width: 30%;
+    height: 100%; }
   .hatching-house__pictures .hatching-house--img img {
-    width: 100%; }
+    width: 100%;
+    display: block; }
   .hatching-house__pictures .hatching-house--txt {
     background-color: #fff;
     padding: 10px 20px;
-    font-size: 13px;
-    letter-spacing: 2px; }
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.10em;
+    font-family: "Montserrat", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif; }
   .hatching-house__btn--img {
-    width: 7%; }
+    width: 100px; }
 
 .annie {
   background-color: #f6cdc4;
@@ -9836,12 +9839,19 @@ related-article(関連記事)
 	mobile settings windowサイズが1024以下- 680以上になった時の処理
 
 **************************************************/
-@media (min-width: 680px) and (max-width: 1024px) {
-  .background-draw img {
+@media (min-width: 680px) and (max-width: 1050px) {
+  .header__pic .background-draw img {
     display: none; }
+  .header__pic--logo .sub-title {
+    font-size: 0.65rem; }
 
   .header-bar .logo__title {
     display: none; }
+  .header-bar__menu {
+    width: 66%; }
+
+  .eyechatchlabel {
+    font-size: 0.5em; }
 
   .middle-contain .article-list__text .list-title {
     font-size: 0.9rem; }
@@ -9849,6 +9859,23 @@ related-article(関連記事)
   .side-contain .header-side__txt--jp {
     display: none; }
   .side-contain .news-list__title {
-    font-size: 0.6rem; } }
+    font-size: 0.6rem; }
+
+  .hatching-house__btn--img {
+    display: none; }
+  .hatching-house__pictures .hatching-house--txt {
+    font-size: 0.9em; }
+  .hatching-house__header--txt {
+    width: 550px; } }
+@media (max-width: 850px) {
+  .header-bar .header-bar__nav__item {
+    padding: 10px 5px; }
+  .header-bar__logo .search__form {
+    display: none; }
+  .header-bar__logo .header-bar__inner {
+    width: 15%; }
+
+  .header__pic--logo {
+    width: 46%; } }
 
 /*# sourceMappingURL=style.css.map */

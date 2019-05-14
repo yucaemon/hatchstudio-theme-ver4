@@ -4,17 +4,34 @@
 
 **************************************************/
 
-@media (min-width: 680px) and (max-width: 1024px){
-  .background-draw img {
-    display: none;
+@media (min-width: 680px) and (max-width: 1050px){
+  .header__pic{
+    .background-draw img {
+      display: none;
+    }
+    &--logo{
+      //width: 37%;
+      .sub-title{
+        font-size: 0.65rem;
+      }
+    }
   }
   .header-bar{
     .logo__title{
       display: none;
     }
+    &__menu {
+    width: 66%;
+    }
   }
-  .middle-contain .article-list__text .list-title{
-    font-size: 0.9rem;
+
+  .eyechatchlabel{
+    font-size: 0.5em;
+  }
+  .middle-contain{
+     .article-list__text .list-title{
+      font-size: 0.9rem;
+    }
   }
   .side-contain {
    .header-side__txt--jp{
@@ -24,8 +41,45 @@
   &__title{
     font-size: 0.6rem;
     }
-
+  }
   }
 
+  .hatching-house{
+     &__btn--img{
+       display: none;
+    }
+    &__pictures{
+      .hatching-house--txt{
+        font-size: 0.9em;
+      }
+    }
+    &__header--txt{
+        width: 550px;
+    }
   }
+}
+
+@media (max-width:850px) {
+  .header-bar{
+    .header-bar__nav__item {
+      padding: 10px 5px;
+    }
+     &__logo{
+      .search__form{
+        display: none;
+      }
+
+      .header-bar{
+        &__inner{
+          width: 15%;
+        }
+      }
+    }
+  }
+  .header__pic{
+    &--logo{
+     width: 46%;
+    }
+  }
+
 }
