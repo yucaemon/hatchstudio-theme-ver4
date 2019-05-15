@@ -34,14 +34,20 @@
     }
   }
   .side-contain {
-   .header-side__txt--jp{
-    display: none;
-   }
-  .news-list{
-  &__title{
-    font-size: 0.6rem;
+    .header-side__txt--jp{
+      display: none;
+     }
+    .news-list{
+    &__title{
+      font-size: 0.6rem;
+      }
+    span.views{
+      font-size: 0.3em;
+      }
     }
-  }
+    .keywords .tag-cloud-link{
+      font-size: 0.68em !important;
+    }
   }
 
   .hatching-house{
@@ -69,6 +75,20 @@
       }
     }
   }
+  .blogger{
+    &__header--txt{
+      font-size: 1.7em;
+      padding:0;
+    }
+    &__header--img{
+      display: none;
+    }
+    &__box__name{
+      font-size: 0.7em;
+    }
+
+  }
+
 }
 
 @media (max-width:850px) {
@@ -103,6 +123,14 @@
             font-size: 0.6em;
           }
       }
+    }
+    .header-side__txt--jp{
+      display: none;
+     }
+  }
+  .blogger{
+    &__header--img{
+      display: none;
     }
   }
 

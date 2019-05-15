@@ -1,12 +1,14 @@
 <section class='section ad-banner blogger'>
 <div class='blogger__container flexbox'>
+<div class='blogger__header flexbox--h-center'>
 <div class='blogger__header--img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/yman.svg">
 </div>
-<div class='blogger__header'>
-これまでのコラボしたブロガー＆メディア＆企業さん
+<div class='blogger__header--txt'>
+コラボしたブロガー＆メディア＆企業さん
 </div>
-<div class='blogger__body flexbox'>
+</div>
+<div class='blogger__body flexbox--spacearound'>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/popo.jpg">
@@ -14,9 +16,6 @@
 <div class='blogger__box__name'>
 365日おいしいものだけ
 </div>
-</div>
-<div class='cross-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
@@ -26,9 +25,6 @@
 ゾニーとキッズ☆アメリカ4コマ物語☆
 </div>
 </div>
-<div class='cross-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-</div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/theuslife.jpg">
@@ -37,9 +33,6 @@
 THE US LIFE
 </div>
 </div>
-<div class='cross-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-</div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/panera.jpg">
@@ -47,9 +40,6 @@ THE US LIFE
 <div class='blogger__box__name'>
 Happy California Life♪
 </div>
-</div>
-<div class='cross-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
@@ -67,9 +57,6 @@ Happy California Life♪
 アメリカ国際結婚バツイチアラサー
 </div>
 </div>
-<div class='cross-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-</div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/motto.jpg">
@@ -77,9 +64,6 @@ Happy California Life♪
 <div class='blogger__box__name'>
 もっとサンフランシスコ
 </div>
-</div>
-<div class='cross-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
@@ -89,9 +73,6 @@ Happy California Life♪
 世界中で暮らす。
 </div>
 </div>
-<div class='cross-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-</div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/miki.png">
@@ -99,9 +80,6 @@ Happy California Life♪
 <div class='blogger__box__name'>
 アラサー女子のシリコンバレー奮闘記
 </div>
-</div>
-<div class='cross-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
@@ -119,9 +97,6 @@ Happy California Life♪
 EF エデュケーション
 </div>
 </div>
-<div class='cross-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-</div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/theintern.jpg">
@@ -130,9 +105,6 @@ EF エデュケーション
 The Intern
 </div>
 </div>
-<div class='cross-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
-</div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/hanterbook.png">
@@ -140,9 +112,6 @@ The Intern
 <div class='blogger__box__name'>
 hanter book
 </div>
-</div>
-<div class='cross-img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/bathu.svg">
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>

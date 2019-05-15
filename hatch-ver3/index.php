@@ -75,7 +75,7 @@
     <?php endif; ?>
         <li class='article-list__content flexbox eyecatch'>
           <div class='post-lists__img article-list__img'>
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 )); ?></a>
           </div>
           <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
             <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
@@ -103,7 +103,8 @@
 <?php include('components-php/sponsor-blogger.php'); ?>
 <?php include('components-php/business.php'); ?>
 <section class='section third-section'>
-<div class='outer__inner flexbox'>
+<div class='outer__inner'>
+<div class='outer__inner__container flexbox--spacebetween'>
 <div class='middle-contain two-column-sp'>
 <ul class='post-lists article-list box-list'>
   <?php query_posts('posts_per_page=5&offset=17' ); ?>
@@ -132,6 +133,7 @@
 <div class='side-contain'>
 <?php include('components-php/affiliate-ad-one.php'); ?>
 <?php include('components-php/lists-popular-month.php'); ?>
+</div>
 </div>
 </div>
 </section>

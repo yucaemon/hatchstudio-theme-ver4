@@ -43,10 +43,9 @@
     display: none;
   }
   .side-contain .header-side{
-    display: none;
+    //display: none;
   }
   .header-side__img{
-    display: none;
     &--sp {
     padding: 20px 20px;
     margin: 0 auto;
@@ -443,10 +442,14 @@
         display: flex;
         justify-content: space-between;
     }
-    .post-lists__img.article-list__img img {
+    .post-lists__img.article-list__img{
       width: 100%;
       height: 120px;
       object-fit: cover;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
      .article-list li {
       width: 47% !important;
@@ -731,15 +734,16 @@
       }
       &__container {
         .news-list__content{
-        height: auto;
-      }
-        .news-list__content + .news-list__content {
-            //border-top: solid 1px #eaeaea;
-            //padding-top: 30px;
-
+          width: 48%;
         }
       }
-
+      &__header{
+        width: 100%;
+      }
+      .eyecatch{
+         position:static;
+         width: 100%;
+      }
 
     }
 
@@ -757,9 +761,9 @@
   }
 
   .related-article{
+
     &__content{
-      display: block;
-      width: 48%;
+      width: 46%;
     }
     &__thumb-img{
     img {
@@ -778,7 +782,7 @@
   .news-list{
     &__content{
       display: block;
-      width: 48%;
+      width: 36%;
     }
     &__thumb-img{
     img {
@@ -807,6 +811,8 @@
         width: 100%;
         height: 120px;
         object-fit: cover;
+        display: block;
+        padding-bottom: 10px;
       }
     }
   &__text {
@@ -1210,7 +1216,7 @@ related-article(関連記事)
   }
   .side-amazon-ad {
       width: auto;
-      padding-bottom: 20px;
+      padding: 10%;
     img{
       width: 100%;
       margin: 0 auto;

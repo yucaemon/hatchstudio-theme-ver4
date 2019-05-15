@@ -4,18 +4,12 @@
 <img src="<?php echo get_template_directory_uri(); ?>/images/popular-baner.svg">
 </div>
 <div class='header-side flexbox'>
-<div class='header-side__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-left.svg">
-</div>
 <div class='header-side__txt--en'>
 POPULOR
 <i class="fas fa-crown"></i>
 </div>
 <div class='header-side__txt--jp'>
-総合TOPランキング
-</div>
-<div class='header-side__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-right.svg">
+総合ランキング
 </div>
 </div>
 </dt>
@@ -47,7 +41,7 @@ $results = $wpdb->get_results("
   <dd class="news-list__content flexbox">
     <div class="eyecatch">
       <div class="news-list__thumb-img"><a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo get_the_post_thumbnail( $this_post->ID,
-        'thumbnail' ); ?><img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg"></a></div>
+        array( 230, 230 ) ); ?><img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg"></a></div>
       <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
         <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
       </p>
@@ -55,7 +49,7 @@ $results = $wpdb->get_results("
 
 
     <div class="news-list__header">
-      <span class="views"><?php echo $this_post_views ?> views</span></i>
+      <span class="views"><i class="far fa-eye"></i> <?php echo $this_post_views ?></span></i>
       <p class="news-list__title"><a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo $this_post->post_title; ?></a></p>
     </div>
   </dd>

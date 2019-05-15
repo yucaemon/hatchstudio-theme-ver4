@@ -4,18 +4,12 @@
 <img src="<?php echo get_template_directory_uri(); ?>/images/recomend-baner.svg">
 </div>
 <div class='header-side flexbox'>
-<div class='header-side__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-left.svg">
-</div>
 <div class='header-side__txt--en'>
 POPULOR
 <i class="far fa-clock"></i>
 </div>
 <div class='header-side__txt--jp'>
 月間人気ランキング
-</div>
-<div class='header-side__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-right.svg">
 </div>
 </div>
 </dt>
@@ -45,18 +39,21 @@ $view_ordered_post_ids = array_keys( $average_views )
   $this_post = get_post( $this_post_id );
 ?>
 
-  <dd class="news-list__content eyecatch flexbox">
-    <div class="news-list__thumb-img">
-      <a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo get_the_post_thumbnail( $this_post->ID, 'thumbnail' ); ?></a>
+  <dd class="news-list__content flexbox">
+    <div class="eyecatch">
+      <div class="news-list__thumb-img">
+        <a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo get_the_post_thumbnail( $this_post->ID, array( 230, 230 ) ); ?></a>
+      </div>
+      <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
+        <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+      </p>
     </div>
-    <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
-      <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
-    </p>
-
+    
     <div class="news-list__header">
       <p class="news-list__title"><a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo $this_post->post_title; ?></a></p>
     </div>
   </dd>
+
 
 <?php } ?>
 </div>
