@@ -276,6 +276,18 @@ walnut street
 </div>
 </div>
 </div>
+<section class='section ad-banner business'>
+<div class='business__container'>
+<p class='business-txt'>
+物件の掲載依頼、仲介業務提携については、お問い合わせください。
+</p>
+<div>
+<button class='btn btn-round-white-02'>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>">お問い合わせはこちら</a>
+</button>
+</div>
+</div>
+</section>
 <?php include('components-php/contact-form.php'); ?>
 </div>
 </body>
