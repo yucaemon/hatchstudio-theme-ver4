@@ -7675,7 +7675,8 @@ body {
   .annie .annie-content {
     margin: 0 auto; }
   .annie .annie-header {
-    text-align: center; }
+    text-align: center;
+    padding-top: 15%; }
   .annie-header-main {
     font-size: 36px;
     color: #fff; }
@@ -8899,7 +8900,7 @@ category-page
     letter-spacing: 1px; }
 
 /* 	mobile settings windowサイズが680以下になった時の処理 */
-@media (max-width: 750px) {
+@media (max-width: 680px) {
   /*要素を消す*/
   html {
     margin-top: 0 !important; }
@@ -9851,7 +9852,7 @@ related-article(関連記事)
 	mobile settings windowサイズが1024以下- 680以上になった時の処理
 
 **************************************************/
-@media (min-width: 750px) and (max-width: 1050px) {
+@media (min-width: 680px) and (max-width: 1050px) {
   .header__pic .background-draw img {
     display: none; }
   .header__pic--logo .sub-title {
@@ -9895,7 +9896,18 @@ related-article(関連記事)
   .blogger__header--img {
     display: none; }
   .blogger__box__name {
-    font-size: 0.7em; } }
+    font-size: 0.7em; }
+
+  .annie {
+    height: 200px; }
+    .annie-img {
+      width: 50%; }
+    .annie .annie-header {
+      padding-top: 5%; }
+      .annie .annie-header-main {
+        font-size: 1.6em; }
+      .annie .annie-header-txt {
+        font-size: 0.7em; } }
 @media (max-width: 850px) {
   .header-bar .header-bar__nav__item {
     padding: 10px 5px; }
