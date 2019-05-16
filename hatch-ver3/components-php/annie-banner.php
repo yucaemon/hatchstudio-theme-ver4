@@ -3,6 +3,7 @@
 <img src="<?php echo get_template_directory_uri(); ?>/images/annie-banner.jpg">
 </div>
 <div class='annie-content'>
+<div class='annie-header'>
 <div class='annie-header-sub'>
 姉妹サイトOPEN!!
 </div>
@@ -15,5 +16,6 @@
 <button class='btn btn-round-white-02'>
 <a href="https://anniejene.com//">サイトはこちらから</a>
 </button>
+</div>
 </div>
 </div>
