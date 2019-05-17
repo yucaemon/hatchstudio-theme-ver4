@@ -1,4 +1,5 @@
 <section class='section our-service'>
+<div class='our-service__container'>
 <div class='our-service__header flexbox'>
 <div class='our-service__txt flexbox'>
 <div class='our-service__header--en'>
@@ -9,7 +10,7 @@ Our Service
 </div>
 </div>
 </div>
-<div class='our-service__container flexbox'>
+<div class='our-service__body flexbox'>
 <ul class='our-service__pictures flexbox'>
 <li class='our-service--web'>
 <a href="<?php echo esc_url( home_url( '/web' ) ); ?>" class="megamenu-inner-text">
@@ -92,5 +93,6 @@ Our Service
 </a>
 </li>
 </ul>
+</div>
 </div>
 </section>

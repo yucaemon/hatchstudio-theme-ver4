@@ -865,9 +865,11 @@ width: 40%;
 
 .our-service{
   background-color: $yellow_01;
-  height: 360px;
-  padding-left:50px;
-  padding-top: 35px;
+  padding: 4% 0;
+  &__container{
+    width: 90%;
+    margin: 0 auto;
+  }
   &__header{
     padding-bottom: 15px;
     &--en {
@@ -890,16 +892,20 @@ width: 40%;
   }
   &__pictures {
     li{
-      margin-right: 32px;
+      margin-right: 3%;
+      width: 17%;
+      height: 14%;
     }
     .our-service {
       &--img{
-        height: 137px;
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
       }
       &--img img{
-        width: 200px;
-        height: 137px !important;
-        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        display: block;
       }
       &--txt {
         background-color: #fff;

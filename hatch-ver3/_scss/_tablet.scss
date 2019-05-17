@@ -102,9 +102,21 @@
         font-size: 0.7em;
         }
     }
-
   }
-
+  .our-service__pictures{
+    .our-service{
+      &--txt{
+      font-size: 0.70em;
+      }
+      &--img{
+      height: 80px;
+      }
+    }
+    figcaption {
+      font-size: 0.7em;
+      padding-top: 24%;
+    }
+  }
 }
 
 @media (max-width:850px) {
@@ -147,6 +159,13 @@
   .blogger{
     &__header--img{
       display: none;
+    }
+  }
+  .our-service__pictures{
+    .our-service{
+      &--txt{
+      font-size: 0.5em;
+      }
     }
   }
 }
