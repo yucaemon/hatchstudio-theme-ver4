@@ -7510,36 +7510,31 @@ body {
   background-color: #bee4e6;
   color: #57bac5;
   padding: 50px; }
-  .footer__content .footer__box + .footer__box, .footer-sp__content .footer__box + .footer__box {
-    padding-left: 39px; }
-  .footer__content .page__links, .footer-sp__content .page__links {
-    padding-top: 20px; }
   .footer__content .footer__box, .footer-sp__content .footer__box {
-    font-size: 14px;
-    letter-spacing: 1px; }
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    width: 22%;
+    padding-right: 5%; }
     .footer__content .footer__box__title, .footer-sp__content .footer__box__title {
-      font-size: 18px;
+      font-size: 1.35em;
       font-weight: bold;
       letter-spacing: 2px;
       padding-bottom: 10px; }
-    .footer__content .footer__box__lists, .footer-sp__content .footer__box__lists {
+    .footer__content .footer__box__lists li, .footer-sp__content .footer__box__lists li {
       padding-bottom: 4px; }
-      .footer__content .footer__box__lists li, .footer-sp__content .footer__box__lists li {
-        padding-bottom: 4px; }
-      .footer__content .footer__box__lists .footer__nimi-box, .footer-sp__content .footer__box__lists .footer__nimi-box {
-        padding-right: 14px; }
     .footer__content .footer__box .footer__logo__img, .footer-sp__content .footer__box .footer__logo__img {
       text-align: center;
-      padding-bottom: 23px; }
+      padding-bottom: 6%; }
       .footer__content .footer__box .footer__logo__img img, .footer-sp__content .footer__box .footer__logo__img img {
-        width: 120px; }
+        width: 52%; }
     .footer__content .footer__box .footer__logo__txt, .footer-sp__content .footer__box .footer__logo__txt {
-      width: 342px;
-      font-size: 11px;
-      padding-bottom: 28px; }
+      font-size: 0.9em;
+      padding-bottom: 6%; }
     .footer__content .footer__box .footer__sns-icons img, .footer-sp__content .footer__box .footer__sns-icons img {
       width: 40px;
       padding: 0px 7px; }
+  .footer__content .footer__logo__box, .footer-sp__content .footer__logo__box {
+    width: 34%; }
 
 .copyright {
   padding: 15px 0;
@@ -9925,7 +9920,14 @@ related-article(関連記事)
     height: 80px; }
   .our-service__pictures figcaption {
     font-size: 0.7em;
-    padding-top: 24%; } }
+    padding-top: 24%; }
+
+  .footer__content .footer__box {
+    font-size: 0.7em; }
+    .footer__content .footer__box__title {
+      font-size: 1.3em; }
+  .footer__content .footer__logo__box {
+    width: 34%; } }
 @media (max-width: 850px) {
   .header-bar .header-bar__nav__item {
     padding: 10px 5px; }

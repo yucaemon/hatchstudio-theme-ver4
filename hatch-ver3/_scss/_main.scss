@@ -560,48 +560,42 @@ width: 40%;
     background-color: #bee4e6;
     color: #57bac5;
     padding: 50px;
-    .footer__box + .footer__box{
-      padding-left: 39px;
-    }
-    .page__links{
-      padding-top: 20px;
-    }
     .footer__box{
-        font-size: 14px;
+        font-size: 0.9em;
         letter-spacing: 1px;
+        width: 22%;
+        padding-right: 5%;
       &__title{
-        font-size: 18px;
+        font-size: 1.35em;
         font-weight: bold;
         letter-spacing: 2px;
         padding-bottom: 10px;
       }
       &__lists{
-        padding-bottom: 4px;
         li{
           padding-bottom:4px;
          }
-        .footer__nimi-box {
-          padding-right: 14px;
-        }
       }
       .footer__logo {
         &__img {
           text-align: center;
-          padding-bottom: 23px;
+          padding-bottom: 6%;
           img{
-            width: 120px;
+            width: 52%;
           }
         }
         &__txt{
-          width: 342px;
-          font-size: 11px;
-          padding-bottom: 28px;
+          font-size: 0.9em;
+          padding-bottom: 6%;
         }
       }
       .footer__sns-icons img {
         width: 40px;
         padding: 0px 7px;
       }
+    }
+    .footer__logo__box{
+      width: 34%;
     }
   }
 }

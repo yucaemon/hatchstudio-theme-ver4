@@ -7,7 +7,7 @@
 BLOG
 </dt>
 <dd class='footer__box__lists'>
-<ul class='flexbox'>
+<ul>
 <div class='footer__nimi-box'>
 <li>
 <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
@@ -29,8 +29,6 @@ BLOG
    ハワイ
 </a>
 </li>
-</div>
-<div class='footer__mini-box'>
 <li>
 <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
    UCバークレー大学
@@ -57,7 +55,7 @@ BLOG
 OUR SERVICE
 </dt>
 <dd class='footer__box__lists'>
-<ul class='flexbox'>
+<ul>
 <div class='footer__nimi-box'>
 <li>
 <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
@@ -74,8 +72,6 @@ OUR SERVICE
   英語/中国翻訳
 </a>
 </li>
-</div>
-<div class='footer__mini-box'>
 <li>
 <a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>" class="megamenu-inner-text">
   ゲストハウス
@@ -97,7 +93,7 @@ OUR SERVICE
 ABOUT
 </dt>
 <dd class='footer__box__lists'>
-<ul class='flexbox'>
+<ul>
 <div class='footer__nimi-box'>
 <li>
 <a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="megamenu-inner-text">
@@ -109,8 +105,6 @@ ABOUT
   採用
 </a>
 </li>
-</div>
-<div class='footer__nimi-box'>
 <li>
 <a href="<?php echo esc_url( home_url( '/rule' ) ); ?>" class="megamenu-inner-text">
   利用規約
@@ -131,7 +125,7 @@ ABOUT
 </dd>
 </dl>
 </div>
-<div class='footer__box'>
+<div class='footer__box footer__logo__box'>
 <div class='footer__logo__img'>
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-sky.svg" width="250"></a>
 </div>

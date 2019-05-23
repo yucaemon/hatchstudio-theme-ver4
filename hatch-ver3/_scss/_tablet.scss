@@ -117,6 +117,20 @@
       padding-top: 24%;
     }
   }
+
+  .footer{
+    &__content {
+      .footer__box{
+          font-size: 0.7em;
+        &__title{
+          font-size: 1.3em;
+        }
+      }
+      .footer__logo__box{
+        width: 34%;
+      }
+    }
+  }
 }
 
 @media (max-width:850px) {

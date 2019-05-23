@@ -6,7 +6,7 @@
           %dt.footer__box__title
             BLOG
           %dd.footer__box__lists
-            %ul.flexbox
+            %ul
               .footer__nimi-box
                 %li
                   :plain
@@ -28,8 +28,6 @@
                     <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
                        ハワイ
                     </a>
-
-              .footer__mini-box
                 %li
                   :plain
                     <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
@@ -50,7 +48,7 @@
           %dt.footer__box__title
             OUR SERVICE
           %dd.footer__box__lists
-            %ul.flexbox
+            %ul
               .footer__nimi-box
                 %li
                   :plain
@@ -67,10 +65,6 @@
                     <a href="<?php echo esc_url( home_url( '/translate' ) ); ?>" class="megamenu-inner-text">
                       英語/中国翻訳
                     </a>
-
-
-
-              .footer__mini-box
                 %li
                   :plain
                     <a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>" class="megamenu-inner-text">
@@ -87,7 +81,7 @@
           %dt.footer__box__title
             ABOUT
           %dd.footer__box__lists
-            %ul.flexbox
+            %ul
               .footer__nimi-box
                 %li
                   :plain
@@ -99,7 +93,6 @@
                     <a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>" class="megamenu-inner-text">
                       採用
                     </a>
-              .footer__nimi-box
                 %li
                   :plain
                     <a href="<?php echo esc_url( home_url( '/rule' ) ); ?>" class="megamenu-inner-text">
@@ -117,7 +110,7 @@
                     </a>
 
 
-      .footer__box
+      .footer__box.footer__logo__box
         .footer__logo__img
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-sky.svg" width="250"></a>
         .footer__logo__txt
