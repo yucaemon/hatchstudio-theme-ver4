@@ -9266,15 +9266,19 @@ category-page
   .footer-sp__header .background-draw {
     justify-content: space-around;
     padding-top: 30px;
-    height: 77px; }
+    margin-bottom: -2px; }
     .footer-sp__header .background-draw__left {
-      position: static; }
+      width: 29%;
+      margin: 0; }
       .footer-sp__header .background-draw__left img {
-        width: 140px; }
+        width: 100%;
+        display: block; }
     .footer-sp__header .background-draw__right {
-      position: static; }
+      width: 29%;
+      margin: 0; }
       .footer-sp__header .background-draw__right img {
-        width: 150px; }
+        width: 100%;
+        display: block; }
   .footer-sp__bottom {
     padding: 30px 0;
     background-color: #bee4e6;

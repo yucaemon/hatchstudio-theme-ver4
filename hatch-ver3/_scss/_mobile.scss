@@ -466,17 +466,23 @@
       .background-draw{
        justify-content: space-around;
        padding-top: 30px;
-       height: 77px;
+       margin-bottom: -2px;
       &__left {
-        position: static;
+        //position: static;
+        width: 29%;
+        margin:0;
         img{
-         width: 140px;
+         width: 100%;
+         display: block;
         }
       }
       &__right{
-        position: static;
+        //position: static;
+        width: 29%;
+        margin:0;
         img{
-          width: 150px;
+          width: 100%;
+          display: block;
         }
       }
      }
