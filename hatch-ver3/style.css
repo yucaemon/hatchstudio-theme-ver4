@@ -7692,17 +7692,17 @@ body {
   .blogger__header {
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 2%; }
+    padding-bottom: 4%; }
     .blogger__header--txt {
       text-align: center;
-      font-size: 2em;
+      font-size: 2.3em;
       color: #fff;
       padding: 40px 0;
       font-weight: bold;
       letter-spacing: 3px; }
     .blogger__header--img {
-      width: 7.5%;
-      margin-right: 2%; }
+      width: 9%;
+      margin-right: 3%; }
   .blogger__box {
     text-align: center;
     width: 13%;
@@ -7710,7 +7710,7 @@ body {
     .blogger__box img {
       width: 100%; }
   .blogger__box__img.circle {
-    width: 44%;
+    width: 57%;
     margin: 0 auto;
     display: block; }
   .blogger__container {
