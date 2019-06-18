@@ -1128,15 +1128,10 @@ width: 40%;
     }
 
     .detail-author-box{
+      padding: 30px;
       @extend .detail-box02;
-      &__img img{
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        margin-right: 25px;
-      }
       &__txt {
-        width: 500px;
+        width: 100%;
         font-size: 16px;
         line-height: 1.4;
       }
