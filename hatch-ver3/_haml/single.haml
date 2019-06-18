@@ -6,7 +6,7 @@
 
     .outer__inner
       .single__container
-        .single__container__body.flexbox--h-center
+        .single__container__body.flexbox--spacebetween
           .middle-contain
             %h1.single-page__head-title
               <?php the_title_attribute(); ?>
@@ -57,7 +57,7 @@
             <?php include('components-php/category-keywords.php'); ?>
             <?php include('components-php/paging-nav.php'); ?>
 
-          .column-4.side-contain
+          .side-contain
             <?php include('components-php/affiliate-ad-sky.php'); ?>
             <?php include('components-php/lists-popular-total.php'); ?>
             <?php include('components-php/lists-category-total.php'); ?>
@@ -70,7 +70,7 @@
             .side-fixed-area
 
     .outer__inner
-      .articles__container__bottom.flexbox--h-center
+      .articles__container__bottom.flexbox--spacebetween
         .bt-left
           <?php include('components-php/bt-news-lists.php'); ?>
         .bt-right

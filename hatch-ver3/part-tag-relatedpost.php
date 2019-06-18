@@ -20,17 +20,22 @@
         the_post();
     ?>
         <?php if( !$relatedpost_count ): /* 最初の記事の場合、ヘッダを付与 */ ?>
-            <ul class="related-article__container flexbox--spacebetween two-column-sp">
+            <ul class="post-lists article-list box-list">
         <?php endif; ?>
-                    <li class="related-article__content">
-                      <a href="<?php echo get_permalink(); ?>" target="_blank" class="hover_fade" style="cursor: pointer;">
-                        <div class="related-article__img related-article__thumb-img">
-                          <?php the_post_thumbnail(); ?>
-                        </div>
-                        <div class="related-article__text related-article__title">
-                          <?php the_title(); ?>
-                        </div>
-                      </a>
+
+                    <li class='eyecatch'>
+                      <div class='post-lists__img article-list__img imgWrap'>
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
+                      </div>
+                      <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
+                        <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+                      </p>
+
+                      <div class='post-lists__text article-list__text'>
+                        <h3 class='post-lists__title list-title'>
+                          <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        </h3>
+                      </div>
                     </li>
 
 
@@ -43,24 +48,31 @@
     if( $relatedpost_count ):   ?>
             </ul><!--id:related_post_wrap close-->
     <?php else : ?>
+    <ul class="post-lists article-list box-list">
         <?php
-        $posts = get_posts(array(
-        ));
-        ?>
-        <ul class="related-article__container flexbox--spacebetween two-column-sp">
-          <?php if($posts): foreach((array)$posts as $post): setup_postdata($post); ?>
-              <!--もし、一致する関連するタグがない場合、最新記事表示する内容が入ります。-->
-              <li class="related-article__content">
-                <div class="related-article__img related-article__thumb-img">
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+           $args = array(
+          'posts_per_page' => 9,       //表示（取得）する記事の数
+          'post_type' => 'post'    //投稿タイプの指定
+        );
+        $posts = get_posts( $args );
+          if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
+              <li class='eyecatch'>
+                <div class='post-lists__img article-list__img imgWrap'>
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
                 </div>
-                <div class="related-article__text related-article__title">
-                  <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
+                  <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+                </p>
+
+                <div class='post-lists__text article-list__text'>
+                  <h3 class='post-lists__title list-title'>
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?>ttt</a>
+                  </h3>
                 </div>
               </li>
-              <!--表示する内容ここまで-->
-          <?php endforeach; endif; ?>
-         </ul>
+
+        <?php endforeach; endif; ?>
+     </ul>
     　　　
     <?php
     endif;

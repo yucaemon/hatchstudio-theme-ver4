@@ -455,7 +455,7 @@ width: 40%;
   .annie{
     &-img {
       img {
-        width: 238%;
+        width: 172%;
         height: 298px;
         object-fit: cover;
         display: block;
@@ -463,7 +463,6 @@ width: 40%;
     }
     &-content {
       margin: 0 auto 40px 0;
-      height: 250px;
       text-align: center;
       background-color: $pink_01;
       padding: 25px 24px
@@ -518,12 +517,11 @@ width: 40%;
 .business-ad-side {
   .business {
     &-img {
-      width: 85px;
+      width: 30%;
       padding-right: 10px;
     }
     &-content {
       background-color: #ffde8d;
-      height: 175px;
       text-align: center;
       padding: 29px;
       margin-bottom: 35px;
@@ -671,6 +669,7 @@ width: 40%;
   margin-top: 10px;
   margin-left: 40px;
 }
+
 
 /*
 
@@ -944,7 +943,7 @@ width: 40%;
   }
   &__post-down__sns-icons {
     padding-bottom: 50px;
-    width: 650px;
+    width: 100%;
     margin: 0 auto;
     img {
       width: 312px;
@@ -1021,7 +1020,7 @@ width: 40%;
         letter-spacing: 1.2px;
         @include fts(8, 8);
         color: $font_sub_glay_color;
-        padding-bottom: 11px;
+        padding-bottom: 1%;
         line-height: 1.5;
         i{
           @include fts(9, 9);
@@ -1043,15 +1042,19 @@ width: 40%;
       &__img {
         width: 21%;
         padding-right: 15px;
+        height: 105px;
       }
       &__txt {
-        padding-top: 10px;
-        width: 492px;
+        width: 75%;
       p{
         color: $font_sub_color;
         @include fts(7, 12);
         padding-bottom: 0;
       }
+      }
+      &__sub-title{
+        font-size: 0.7em;
+        color: $font_sub_glay_color;
       }
       &__title {
         @include listsTitle(11,1.4);
@@ -1197,8 +1200,9 @@ width: 40%;
     }
   }
   .detail-balloon-box {
-    padding-bottom:30px;
-    padding-left: 30px;
+    width: 100%;
+    padding-bottom: 10%;
+    padding-left: 5%;
     &__img img {
       width: 80px;
       height: 80px;
@@ -1214,9 +1218,11 @@ width: 40%;
       line-height: 1.2;
       padding-top: 7px;
     }
-    &__read {
-      width: 591px;
-      padding-left: 20px;
+    &__icon{
+      padding-right: 6%;
+    }
+    &__txt{
+      width: 70%;
     }
   }
   .affiliate-ad {
@@ -1229,6 +1235,9 @@ width: 40%;
     background-color: $pink_01;
     &__container {
       padding: 20px;
+    }
+    &__content{
+      width: 50%;
     }
     &__head {
       padding-bottom: 10px;
@@ -1246,13 +1255,16 @@ width: 40%;
       }
     }
     &__body {
-      &__img img {
-        width: 120px;
-        height: 75px;
-        object-fit: cover;
+      &__img{
+        width: 28%;
+        img {
+          width: 100%;
+          height: 75px;
+          object-fit: cover;
+        }
       }
       &__read {
-        width: 170px;
+        width: 66%;
         font-size: 11px;
         padding: 0 10px;
         font-weight: bold;
@@ -1328,33 +1340,6 @@ width: 40%;
       font-size: 12px !important;
     }
   }
-  .related-article {
-    &__content {
-      padding-bottom: 20px;
-    }
-    &__container::after{
-      content:"";
-      display: block;
-      width:30%;
-    }
-    &__img {
-      img {
-        width: 235px;
-        height: 150px;
-        object-fit: cover;
-      }
-    }
-    &__text {
-      @include listsTitle(10,1.4);
-      width: 235px;
-    }
-  }
-.news-list{
-  &__title {
-    width: 157px;
-    @include listsTitle(8,1.4);
-    }
-  }
 }
 
 /*
@@ -1365,32 +1350,20 @@ width: 40%;
 
 .articles__container__bottom {
   padding-bottom: 30px;
-  width: 1093px;
+  width: 100%;
   margin: 0 auto;
   .header-side{
     @extend .components-title;
   }
-  .news-list {
-    margin-right:50px;
-    padding-bottom: 50px;
-    &__thumb-img img {
-      width: 125px;
-      height: 80px;
-      object-fit: cover;
-    }
-    &__title {
-      width: 186px;
-      padding-left: 15px;
-      @include listsTitle(8.5,1.4);
-    }
-    &__content {
-      padding-bottom: 15px;
-    }
+  .bt-left {
+    width: 27%;
   }
+  .bt-right {
+    width: 70%;
+  }
+
   .bottom-popular{
-    width: 720px;
     &__content {
-      width: 208px;
       padding-bottom: 20px;
     }
     &__title {
@@ -1915,8 +1888,9 @@ index
   min-width: $base_width;
 }
 
-.middle-contain {
-    width: 70%;
+  .middle-contain {
+      width: 70%;
+  }
   .bg-thumb-img {
     margin-bottom: 30px;
   }
@@ -1956,7 +1930,8 @@ index
       }
     }
   }
-}
+
+
 
 
 
@@ -2028,13 +2003,15 @@ single.page
   }
 
   .middle-contain {
-    width: 750px;
-    margin-right: 60px;
+    width: 70%;
+  }
+  .side-contain{
+    width: 27%;
   }
 
 
   &__eyecatch-img img {
-    width: 750px;
+    width: 100%;
     height: 380px;
     object-fit: cover;
   }
@@ -2059,19 +2036,6 @@ recomend-list-part
 
 *************************************************/
 .side-contain {
-  .news-list {
-    .eyechatchlabel{
-      display: none;
-    }
-    &__thumb-img {
-      padding-right: 3px;
-      img {
-        width: 100%;
-        height: 20%;
-        object-fit: cover;
-      }
-    }
-  }
   &__title {
     @include fts(8, 9);
     width: 164px;
@@ -2115,10 +2079,21 @@ category-page
 
 /*
 
-   side-part
+   parts
 *************************************************/
-.side-contain {
+
   .news-list {
+    .eyechatchlabel{
+      display: none;
+    }
+    &__thumb-img {
+      padding-right: 3px;
+      img {
+        width: 100%;
+        height: 20%;
+        object-fit: cover;
+      }
+    }
     &__container{
       padding-bottom:50px;
     }
@@ -2164,4 +2139,3 @@ category-page
       }
     }
   }
-}

@@ -250,7 +250,7 @@ function detailBoxFunc( $atts, $content = null ) {
         'title' => '不明',
         'detail' => '不明'
     ), $atts ) );
-    return '<div class="detail-box01"><div class="detail-box01__title">' . $title . '</div><div class="detail-box01__contain"><p>' . $detail . '<p></div></div>';
+    return '<div class="detail-box01"><div class="detail-box01__title">' . $title . '</div><div class="detail-box01__contain"><p>' . $detail . '</p></div></div>';
 }
 add_shortcode('詳細テンプレ', 'detailBoxFunc');
 
@@ -263,7 +263,7 @@ function relatedLinksBoxFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="detail-box02 flexbox"><div class="detail-box02__img"><a href="' . $url . '" target="_blank"><img src="' . $img . '"/></a></div><div class="detail-box02__txt"><p>＞関連記事リンク</p><div class="detail-box02__title"><a href="' . $url . '" target="_blank">' . $title . '<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>';
+    return '<div class="detail-box02 flexbox"><div class="detail-box02__img"><a href="' . $url . '" target="_blank"><img src="' . $img . '"/></a></div><div class="detail-box02__txt"><div class="detail-box02__sub-title">＞関連記事リンク</div><div class="detail-box02__title"><a href="' . $url . '" target="_blank">' . $title . '<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>';
 }
 add_shortcode('関連リンク', 'relatedLinksBoxFunc');
 
@@ -302,7 +302,7 @@ function balloonFunc( $atts, $content = null ) {
         'read' => '不明'
 
     ), $atts ) );
-    return '<div class="detail-balloon-box flexbox--v-center"><div><div class="detail-balloon-box__img"><img src="' . $img . '"/></div><div class="detail-balloon-box__title">' . $author_name . '</div></div><div class="detail-balloon-box__txt"><div class="detail-balloon-box__read">' . $read . '</div></div></div>';
+    return '<div class="detail-balloon-box flexbox"><div class="detail-balloon-box__icon"><div class="detail-balloon-box__img"><img src="' . $img . '"/></div><div class="detail-balloon-box__title">' . $author_name . '</div></div><div class="detail-balloon-box__txt"><div class="detail-balloon-box__read">' . $read . '</div></div></div>';
 }
 add_shortcode('吹き出し', 'balloonFunc');
 

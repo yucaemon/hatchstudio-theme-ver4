@@ -22,7 +22,7 @@ echo '<div id="next_no"><a href="' .home_url('/'). '"><div id="prev_next_home"><
 if ( $prevpost ) { //次の記事が存在しているとき
 echo '<div class="paging-nav__content paging-nav__content-second"><a href="' . get_permalink($prevpost->ID) . '" title="' . get_the_title($prevpost->ID) . '" id="prev" class="clearfix">
 <div class="paging-nav__head flexbox--h-bottom"><div class="paging-nav__head__txt flexbox"><div class="next_title">前の記事へ</div><i class="fas fa-angle-right"></i></div></div>
-<div class="paging-nav__body flexbox">
+<div class="paging-nav__body flexbox--h-bottom">
 <p class="paging-nav__body__read">' . get_the_title($prevpost->ID) . '</p>
 <div class="paging-nav__body__img">' . get_the_post_thumbnail($prevpost->ID, array(100,100)) . '</div>
 </div></a></div>';

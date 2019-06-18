@@ -5,7 +5,7 @@
 <?php include('components-php/header-sp.php'); ?>
 <div class='outer__inner'>
 <div class='single__container'>
-<div class='single__container__body flexbox--h-center'>
+<div class='single__container__body flexbox--spacebetween'>
 <div class='middle-contain'>
 <h1 class='single-page__head-title'>
 <?php the_title_attribute(); ?>
@@ -67,7 +67,7 @@
 <?php include('components-php/category-keywords.php'); ?>
 <?php include('components-php/paging-nav.php'); ?>
 </div>
-<div class='column-4 side-contain'>
+<div class='side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
 <?php include('components-php/lists-popular-total.php'); ?>
 <?php include('components-php/lists-category-total.php'); ?>
@@ -84,7 +84,7 @@
 </div>
 </div>
 <div class='outer__inner'>
-<div class='articles__container__bottom flexbox--h-center'>
+<div class='articles__container__bottom flexbox--spacebetween'>
 <div class='bt-left'>
 <?php include('components-php/bt-news-lists.php'); ?>
 </div>

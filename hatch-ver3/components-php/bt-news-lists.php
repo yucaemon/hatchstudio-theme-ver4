@@ -1,4 +1,4 @@
-<div class='news-list column-4'>
+<div class='news-list'>
 <div class='header-side'>
 <div class='header-side__title'>
 最新記事
@@ -13,12 +13,17 @@
 <?php endif; ?>
   <!--表示する内容が入ります。-->
   <dd class="news-list__content flexbox">
-    <div class="news-list__thumb-img">
-      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+    <div class="eyecatch">
+      <div class="news-list__thumb-img">
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($this_post->ID,
+          array( 230, 230 )); ?></a>
+      </div>
     </div>
-    <p class="news-list__title">
-      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-    </p>
+    <div class="news-list__header">
+      <p class="news-list__title">
+        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      </p>
+    </div>
   </dd>
   <!--表示する内容ここまで-->
 
