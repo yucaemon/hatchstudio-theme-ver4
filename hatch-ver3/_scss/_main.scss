@@ -1437,7 +1437,7 @@ width: 40%;
     margin: 0 auto;
   }
   &__container {
-    width: 1010px;
+    width: 100%;
     margin: 0 auto 80px auto
   }
   &__header {
@@ -1508,6 +1508,7 @@ width: 40%;
     }
   }
   .mission {
+    text-align: center;
     padding:50px 0;
   }
 }

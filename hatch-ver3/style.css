@@ -8290,7 +8290,7 @@ body {
   width: 100%;
   margin: 0 auto; }
 .pages__container {
-  width: 1010px;
+  width: 100%;
   margin: 0 auto 80px auto; }
 .pages__header {
   font-size: 12px;
@@ -8357,6 +8357,7 @@ body {
     .pages .table-info table tr {
       border: solid #c3c3c3 0.5px; }
 .pages .mission {
+  text-align: center;
   padding: 50px 0; }
 
 /*
@@ -9747,7 +9748,10 @@ related-article(関連記事)
   .pages .mission {
     padding: 0; }
     .pages .mission .pages__header {
-      text-align: center; }
+      text-align: center;
+      font-size: 1em; }
+    .pages .mission .pages__read {
+      font-size: 0.8rem; }
   .pages__container {
     width: 100%; }
   .pages .btn-round-white-02 {
