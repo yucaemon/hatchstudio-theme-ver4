@@ -209,6 +209,9 @@ body {
   .header-bar__inner{
     padding: 0 40px;
   }
+  &__menu{
+    width: 56%;
+  }
 
 }
 
@@ -318,7 +321,7 @@ body {
 
 .header02{
   .logo__img img{
-    width: 13%;
+    width: 180px;
   }
 
 }
@@ -1430,7 +1433,7 @@ width: 40%;
 *************************************************/
 .pages {
   .outer__inner{
-    width: 1246px;
+    width: 100%;
     margin: 0 auto;
   }
   &__container {
@@ -1489,7 +1492,7 @@ width: 40%;
     color: #b1b1b1;
     background-color: #fff !important;
     table {
-      width: 940px;
+      width: 90%;
       border: solid #c3c3c3 0.5px;
       margin: 0 auto;
       border-collapse: collapse;
@@ -1516,9 +1519,10 @@ width: 40%;
 *************************************************/
 .about-page {
   .pages__container {
-    width: 879px;
+    width: 90%;
   }
   .mission {
+    text-align: center;
     padding-top: 50px;
     .yuka-sign__img {
       width: 110px;

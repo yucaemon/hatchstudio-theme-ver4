@@ -1053,6 +1053,9 @@ related-article(関連記事)
   .about-page {
     .mission{
        padding-top:0;
+       .pages__read{
+          font-size: 0.8rem;
+       }
      }
     .mission .yuka-sign__img {
       width: 25%;

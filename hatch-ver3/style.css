@@ -7262,6 +7262,8 @@ body {
     display: none; }
   .header-bar .header-bar__inner {
     padding: 0 40px; }
+  .header-bar__menu {
+    width: 56%; }
 
 .scrolled {
   position: fixed;
@@ -7337,7 +7339,7 @@ body {
   color: #fff !important; }
 
 .header02 .logo__img img {
-  width: 13%; }
+  width: 180px; }
 
 .eyecatch {
   position: relative;
@@ -8285,7 +8287,7 @@ body {
 
 *************************************************/
 .pages .outer__inner {
-  width: 1246px;
+  width: 100%;
   margin: 0 auto; }
 .pages__container {
   width: 1010px;
@@ -8343,7 +8345,7 @@ body {
   color: #b1b1b1;
   background-color: #fff !important; }
   .pages .table-info table {
-    width: 940px;
+    width: 90%;
     border: solid #c3c3c3 0.5px;
     margin: 0 auto;
     border-collapse: collapse;
@@ -8363,8 +8365,9 @@ body {
 
 *************************************************/
 .about-page .pages__container {
-  width: 879px; }
+  width: 90%; }
 .about-page .mission {
+  text-align: center;
   padding-top: 50px; }
   .about-page .mission .yuka-sign__img {
     width: 110px;
@@ -9603,6 +9606,8 @@ related-article(関連記事)
 *********** **************************************/
   .about-page .mission {
     padding-top: 0; }
+    .about-page .mission .pages__read {
+      font-size: 0.8rem; }
   .about-page .mission .yuka-sign__img {
     width: 25%;
     margin-left: auto;
