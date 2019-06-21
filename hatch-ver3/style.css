@@ -8608,7 +8608,7 @@ contact-form/comprnets
       color: #797979;
       padding-bottom: 20px;
       margin: 0 auto;
-      width: 750px;
+      width: 100%;
       letter-spacing: 0.4px; }
       .contact-form .notice-box__body span.contact-mailto a {
         color: #ff846a;
