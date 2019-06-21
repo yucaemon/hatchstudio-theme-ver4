@@ -1299,6 +1299,9 @@ related-article(関連記事)
     }
   }
   .house-page{
+    &__body__img {
+    height: 175px;
+    }
     &__share-house__bg-img{
       display: none;
     }
@@ -1316,16 +1319,19 @@ related-article(関連記事)
       flex-wrap: wrap;
       display: flex;
       height: 70%;
+      .main-txt {
+        font-size: 3rem;
+      }
 
       .house-page__header--jp{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
       }
       .sub-txt{
         display: none;
       }
       .main-txt{
-        font-size: 1.8rem;
-        padding-left: 0;
+        font-size:3rem;
+        padding:0;
       }
     }
     &__body__header{

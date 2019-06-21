@@ -8521,11 +8521,14 @@ house-page/share-house＆real-estate
   padding-bottom: 50px; }
 .house-page__body__container + .house-page__body__container {
   border-top: solid 1px #d4d4d4; }
-.house-page__body__img img {
-  width: 323px;
-  height: 250px;
-  object-fit: cover;
-  padding-bottom: 50px; }
+.house-page__body__img {
+  width: 30%;
+  height: 255px; }
+  .house-page__body__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 50px; }
 .house-page__body__header {
   padding: 40px;
   letter-spacing: 1px;
@@ -8595,7 +8598,7 @@ contact-form/comprnets
   .contact-form .notice-box {
     padding: 20px;
     background-color: #bdbdbd33;
-    width: 930px;
+    width: 100%;
     margin: 0 auto; }
     .contact-form .notice-box__header {
       text-align: center;
@@ -9788,6 +9791,8 @@ related-article(関連記事)
   .service-page__translate__bg-img {
     display: none; }
 
+  .house-page__body__img {
+    height: 175px; }
   .house-page__share-house__bg-img {
     display: none; }
   .house-page__share-house-sp {
@@ -9801,13 +9806,15 @@ related-article(関連記事)
     flex-wrap: wrap;
     display: flex;
     height: 70%; }
+    .house-page__header .main-txt {
+      font-size: 3rem; }
     .house-page__header .house-page__header--jp {
-      font-size: 0.7rem; }
+      font-size: 0.9rem; }
     .house-page__header .sub-txt {
       display: none; }
     .house-page__header .main-txt {
-      font-size: 1.8rem;
-      padding-left: 0; }
+      font-size: 3rem;
+      padding: 0; }
   .house-page__body__header {
     padding: 0 0 20px 0;
     line-height: 1.6;
