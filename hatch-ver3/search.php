@@ -48,8 +48,8 @@ while(have_posts()): the_post();
 </div>
 <div class='side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
+<?php include('components-php/lists-news.php'); ?>
 <?php include('components-php/lists-popular-total.php'); ?>
-<?php include('components-php/lists-category-total.php'); ?>
 <?php include('components-php/keywords.php'); ?>
 <?php include('components-php/annie-ad-side.php'); ?>
 <?php include('components-php/house-ad-side.php'); ?>
