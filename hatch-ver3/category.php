@@ -6,7 +6,7 @@
 <?php include('components-php/header-sp.php'); ?>
 <div class='outer__inner'>
 <div class='category__container'>
-<div class='category__container__body flexbox--h-center'>
+<div class='category__container__body flexbox--spacebetween'>
 <div class='middle-contain'>
 <h1 class='components-title'>
 『 <?php echo get_the_archive_title(); ?> 』の関連記事一覧
@@ -20,7 +20,7 @@
 
     <li class=''>
       <div class='post-lists__img article-list__img'>
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
       </div>
       <div class='post-lists__text article-list__text'>
         <h3 class='post-lists__title list-title'>
@@ -32,8 +32,10 @@
 </ul>
 <?php include('components-php/affiliate-ad.php'); ?>
 </div>
-<div class='column-4 side-contain'>
+<div class='side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
+<?php include('components-php/lists-popular-total.php'); ?>
+<?php include('components-php/lists-category-total.php'); ?>
 <?php include('components-php/keywords.php'); ?>
 <?php include('components-php/annie-ad-side.php'); ?>
 <?php include('components-php/house-ad-side.php'); ?>
@@ -61,10 +63,9 @@
 </body>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
-<?php include('components-php/annie-banner.php'); ?>
 <?php include('components-php/service.php'); ?>
 <?php include('components-php/business-sp.php'); ?>
-<?php include('components-php/annie-sp.php'); ?>
+<?php include('components-php/annie-banner.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>
