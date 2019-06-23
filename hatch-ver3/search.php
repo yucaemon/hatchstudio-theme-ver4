@@ -6,7 +6,7 @@
 <?php include('components-php/header-sp.php'); ?>
 <div class='outer__inner'>
 <div class='search__container'>
-<div class='search__container__body flexbox--h-center'>
+<div class='search__container__body flexbox--spacebetween'>
 <?php
   global $wp_query;
   $total_results = $wp_query->found_posts;
@@ -25,9 +25,7 @@ while(have_posts()): the_post();
 ?>
 <li class=''>
   <div class='post-lists__img article-list__img'>
-    <a href="<?php the_permalink(); ?>">
-      <?php the_post_thumbnail( 'post-thumbnails', array('class' => 'post-lists__img article-list__img') ); ?>
-    </a>
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
   </div>
   <div class='post-lists__text article-list__text'>
     <a href="<?php the_permalink(); ?>">
@@ -48,8 +46,11 @@ while(have_posts()): the_post();
 </ul>
 <?php include('components-php/affiliate-ad.php'); ?>
 </div>
-<div class='column-4 side-contain'>
+<div class='side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
+<?php include('components-php/lists-popular-total.php'); ?>
+<?php include('components-php/lists-category-total.php'); ?>
+<?php include('components-php/keywords.php'); ?>
 <?php include('components-php/annie-ad-side.php'); ?>
 <?php include('components-php/house-ad-side.php'); ?>
 <?php include('components-php/business-ad-side.php'); ?>

@@ -7,7 +7,7 @@
 
     .outer__inner
       .search__container
-        .search__container__body.flexbox--h-center
+        .search__container__body.flexbox--spacebetween
           :plain
             <?php
               global $wp_query;
@@ -28,9 +28,7 @@
               ?>
               <li class=''>
                 <div class='post-lists__img article-list__img'>
-                  <a href="<?php the_permalink(); ?>">
-                    <?php the_post_thumbnail( 'post-thumbnails', array('class' => 'post-lists__img article-list__img') ); ?>
-                  </a>
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
                 </div>
                 <div class='post-lists__text article-list__text'>
                   <a href="<?php the_permalink(); ?>">
@@ -52,9 +50,11 @@
 
             <?php include('components-php/affiliate-ad.php'); ?>
 
-          .column-4.side-contain
+          .side-contain
             <?php include('components-php/affiliate-ad-sky.php'); ?>
-
+            <?php include('components-php/lists-popular-total.php'); ?>
+            <?php include('components-php/lists-category-total.php'); ?>
+            <?php include('components-php/keywords.php'); ?>
             <?php include('components-php/annie-ad-side.php'); ?>
             <?php include('components-php/house-ad-side.php'); ?>
             <?php include('components-php/business-ad-side.php'); ?>
