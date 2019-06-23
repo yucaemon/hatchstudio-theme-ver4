@@ -41,8 +41,7 @@ if(have_posts()) :
   <dd class="news-list__content flexbox">
     <div class="eyecatch">
       <div class="news-list__thumb-img">
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($this_post->ID,
-          array( 230, 230 )); ?></a>
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
       </div>
     </div>
 

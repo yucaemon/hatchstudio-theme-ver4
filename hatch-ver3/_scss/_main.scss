@@ -1852,6 +1852,14 @@ index
   }
 
 }
+
+.middle-contain {
+  width: 70%;
+}
+.side-contain{
+  width: 27%;
+}
+
 .footer {
   &__sns-icons img {
     width: 30px;
@@ -2005,14 +2013,6 @@ single.page
       padding-bottom: 20px;
     }
   }
-
-  .middle-contain {
-    width: 70%;
-  }
-  .side-contain{
-    width: 27%;
-  }
-
 
   &__eyecatch-img img {
     width: 100%;
