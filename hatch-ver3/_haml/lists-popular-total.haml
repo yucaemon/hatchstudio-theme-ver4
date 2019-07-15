@@ -38,7 +38,7 @@
         <dd class="news-list__content flexbox">
           <div class="eyecatch">
             <div class="news-list__thumb-img"><a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo get_the_post_thumbnail( $this_post->ID,
-              array( 230, 230 ) ); ?><img src="<?php echo get_template_directory_uri(); ?>/images/house-img-portland.jpg"></a></div>
+              array( 230, 230 ) ); ?></a></div>
             <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
               <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
             </p>
