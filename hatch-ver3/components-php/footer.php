@@ -120,6 +120,11 @@ ABOUT
  セキュリティー
 </a>
 </li>
+<li>
+<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="megamenu-inner-text">
+  お問い合わせ
+</a>
+</li>
 </div>
 </ul>
 </dd>
