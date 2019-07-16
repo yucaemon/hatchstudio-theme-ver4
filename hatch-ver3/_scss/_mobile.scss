@@ -4,6 +4,7 @@
   html {
     margin-top: 0 !important;
   }
+
   /*indexページ*/
   .index{
     .side-contain{
@@ -71,10 +72,10 @@
       padding: 30px;
     }
   }
-  #PageTopBtn a {
-    padding:0;
-  }
 
+  #PageTopBtn a {
+    padding: 2px 0;
+  }
   .footer {
     display: none;
   }

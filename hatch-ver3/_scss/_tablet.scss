@@ -5,6 +5,7 @@
 **************************************************/
 
 @media (min-width: 680px) and (max-width: 1050px){
+
   /*YouTubeレスポンシブサイズ*/
   .youtube {
       position: relative;
@@ -38,6 +39,10 @@
     &__menu {
     width: 66%;
     }
+  }
+
+  #PageTopBtn a {
+    padding: 2px 0;
   }
 
   .eyechatchlabel{

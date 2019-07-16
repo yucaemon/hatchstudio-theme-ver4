@@ -8924,7 +8924,7 @@ category-page
       padding: 30px; }
 
   #PageTopBtn a {
-    padding: 0; }
+    padding: 2px 0; }
 
   .footer {
     display: none; }
@@ -9855,6 +9855,9 @@ related-article(関連記事)
     display: none; }
   .header-bar__menu {
     width: 66%; }
+
+  #PageTopBtn a {
+    padding: 2px 0; }
 
   .eyechatchlabel {
     font-size: 0.5em; }
