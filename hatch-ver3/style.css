@@ -7372,7 +7372,8 @@ body {
 .side-fixed-content02 {
   position: fixed;
   top: 48%;
-  width: 313px; }
+  width: 313px;
+  margin-top: 30px; }
 
 .side-contain .keywords__content {
   margin-bottom: 20px;
