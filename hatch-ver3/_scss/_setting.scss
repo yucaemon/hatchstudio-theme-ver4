@@ -43,7 +43,7 @@ $pink_02:#ff846a;
 
 
 // font-family
-$font_family_jp : "Montserrat","游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;      
+$font_family_jp : "Montserrat","游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
 
 $font_family_en : "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 
@@ -64,6 +64,7 @@ $font_family_en_robot: 'Roboto', sans-serif;
      text-decoration: none;
      text-align: center;
      background-color: $pink_02; /*ボタン色*/
+     border: 0;
      border-bottom: solid 6px #ec6c00; /*下線色*/
      border-radius: 5px; /*角丸*/
      margin: 0 auto;

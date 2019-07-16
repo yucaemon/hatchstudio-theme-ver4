@@ -6808,6 +6808,7 @@ select {
   text-align: center;
   background-color: #ff846a;
   /*ボタン色*/
+  border: 0;
   border-bottom: solid 6px #ec6c00;
   /*下線色*/
   border-radius: 5px;
