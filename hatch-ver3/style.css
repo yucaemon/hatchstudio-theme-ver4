@@ -7290,10 +7290,12 @@ body {
   width: 37%; }
 
 .background-draw {
-  display: flex;
   margin-top: auto; }
   .background-draw img {
-    width: 300px; }
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px; }
   .background-draw__left {
     margin-bottom: -3px; }
 

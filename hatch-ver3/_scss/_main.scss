@@ -250,10 +250,12 @@ body {
   width: 37%;
 }
 .background-draw{
-  display: flex;
   margin-top: auto;
   img {
     width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
   }
   &__left{
     margin-bottom: -3px;
