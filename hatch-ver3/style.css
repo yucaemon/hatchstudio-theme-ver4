@@ -6982,101 +6982,93 @@ figure:hover figcaption {
   top: 0;
   left: 0; }
 
-.header-bar__nav__list ul li {
-  text-align: center;
-  margin: 0;
-  padding: 20px 0; }
+/*
+.header-bar__nav__list ul li{
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+}
 
 .c-link {
-  transition: all .3s;
-  position: relative; }
-  .c-link:hover {
-    text-decoration: none; }
+	transition: all .3s;
+	position: relative;
+	&:hover {
+		text-decoration: none;
+	}
+}
 
 .c-link--bold {
-  overflow: hidden;
-  display: inline-block; }
-  .c-link--bold span {
-    position: relative;
-    display: inline-block;
-    transition: all .3s; }
-    .c-link--bold span:before {
-      position: absolute;
-      top: 100%;
-      left: 38%;
-      font-size: 10px;
-      content: "●";
-      color: #ffde8d;
-      transform: translate3d(0, 0, 0); }
-  .c-link--bold:hover span {
-    transform: translateY(-100%); }
+	overflow: hidden;
+	display: inline-block;
 
-.gnav {
-  display: flex;
-  justify-content: space-between; }
+	span {
+		position: relative;
+		display: inline-block;
+		transition: all .3s;
+		&:before {
+			position: absolute;
+			top: 100%;
+			left: 38%;
+			font-size: 10px;
+			content: "●";
+			color: #ffde8d;
+			transform: translate3d(0, 0, 0);
+		}
+	}
 
-.gnav a {
-  padding: 0 10px; }
+	&:hover {
+		span {
+			transform: translateY(-100%);
+		}
+	}
+}
+*/
+#gnav > ul {
+  display: table;
+  padding-left: 50px; }
 
-.gnav > li:hover .megamenu {
-  width: 100%;
+#gnav > ul > li {
+  display: table-cell;
+  margin-right: 2em; }
+
+#gnav > ul > li:hover {
+  color: #ad9b64;
+  background-color: #ffe198; }
+
+#gnav > ul > li:hover > a {
+  color: #ad9b64; }
+
+#gnav > ul > li:hover .menu {
   max-height: 9999px;
   opacity: 1; }
-  .gnav > li:hover .megamenu a.megamenu-inner-text {
-    color: #666; }
-  .gnav > li:hover .megamenu a.megamenu-inner-text:hover {
-    text-decoration: underline; }
 
-.megamenu {
-  background: #ffe4e4;
+#gnav > ul > li > a {
+  display: block;
+  padding: 21px 1em 21px;
+  transition: all .2s ease-in; }
+
+#gnav > ul .menu {
+  transition: all .2s ease-in;
   max-height: 0;
+  opacity: 0;
   overflow: hidden;
   width: 100%;
-  position: absolute;
-  top: 253px;
   left: 0;
-  transition: all .2s ease-in;
-  z-index: 999;
-  font-size: 13px; }
-
-.scrolled .megamenu {
+  text-align: center;
   position: absolute;
-  top: 70px;
-  left: 0; }
+  background-color: #ffe198;
+  z-index: 5000;
+  font-size: 0.9em; }
 
-.index .megamenu {
-  position: absolute;
-  top: 339px !important;
-  left: 0; }
-.index .scrolled .megamenu {
-  position: absolute;
-  top: 70px !important;
-  left: 0; }
+#gnav > ul .menu .menu_inner {
+  padding: 1em 0; }
 
-.pages .megamenu {
-  position: absolute;
-  top: 253px !important;
-  left: 0; }
-.pages .scrolled .megamenu {
-  position: absolute;
-  top: 70px !important;
-  left: 0; }
+#gnav > ul .menu .menu_inner li {
+  display: inline-block;
+  margin: 0 .5em; }
 
-.megamenu-inner {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1063px;
-  margin: 0 auto; }
-
-.megamenu-inner li {
-  width: calc( (100% / 5) );
-  padding: 0; }
-
-.megamenu-inner a {
-  border-left: none; }
-
-.megamenu-inner-img {
-  margin: 0 0 10px; }
+#gnav > ul .menu a {
+  color: #ad9b64; }
 
 .post-lists.article-list::after {
   content: "";
@@ -7264,7 +7256,7 @@ body {
   .header-bar .header-bar__inner {
     padding: 0 40px; }
   .header-bar__menu {
-    width: 56%; }
+    width: auto; }
 
 .scrolled {
   position: fixed;
@@ -9854,8 +9846,6 @@ related-article(関連記事)
 
   .header-bar .logo__title {
     display: none; }
-  .header-bar__menu {
-    width: 66%; }
 
   #PageTopBtn a {
     padding: 2px 0; }

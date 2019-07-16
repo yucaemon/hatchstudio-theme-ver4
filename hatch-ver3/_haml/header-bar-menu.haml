@@ -1,12 +1,12 @@
 .header-bar__menu
-  %nav.header-bar__nav.gnav-wrapper
-    %ul.header-bar__nav__list.gnav.main-wrapper
-      %li.header-bar__nav__item
-        %a.header-bar__nav__text
+  %nav#gnav
+    %ul
+      %li.toggle
+        %a
           %span.header-bar__nav__text--en
             BLOG
-        .megamenu
-          %ul.megamenu-inner.main-wrapper
+        .menu
+          %ul.menu_inner
             %li
               :plain
                 <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
@@ -49,16 +49,12 @@
                   <i class="far fa-arrow-alt-circle-right"></i>
                    シェアハウス
                 </a>
-        %a.header-bar__nav__text.c-link.c-link--bold
-          %span.header-bar__nav__text--jp
-            ブログ
-      %li.header-bar__nav__item
-        %a.header-bar__nav__text
+      %li.toggle
+        %a
           %span.header-bar__nav__text--en
             SVICE
-
-        .megamenu
-          %ul.megamenu-inner.main-wrapper
+        .menu
+          %ul.menu_inner
             %li
               :plain
                 <a href="<?php echo esc_url( home_url( '/web' ) ); ?>" class="megamenu-inner-text">
@@ -91,33 +87,20 @@
                   <i class="far fa-arrow-alt-circle-right"></i>
                   不動産サポート
                 </a>
-
-        %a.header-bar__nav__text.c-link.c-link--bold
-          %span.header-bar__nav__text--jp
-            サービス
-      %li.header-bar__nav__item
+      %li
         :plain
           <a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>" class="header-bar__nav__text">
             <span class="header-bar__nav__text--en">RECRUIT</span>
           </a>
-          <a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>" class="header-bar__nav__text c-link c-link--bold">
-            <span class="header-bar__nav__text--jp">採用</span>
-          </a>
 
-      %li.header-bar__nav__item
+      %li
         :plain
           <a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="header-bar__nav__text">
             <span class="header-bar__nav__text--en">ABOUT</span>
           </a>
-          <a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="header-bar__nav__text c-link c-link--bold">
-            <span class="header-bar__nav__text--jp">会社案内</span>
-          </a>
 
-      %li.header-bar__nav__item
+      %li
         :plain
           <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="header-bar__nav__text">
             <span class="header-bar__nav__text--en">CONTACT</span>
-          </a>
-          <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="header-bar__nav__text c-link c-link--bold">
-            <span class="header-bar__nav__text--jp">お問い合わせ</span>
           </a>

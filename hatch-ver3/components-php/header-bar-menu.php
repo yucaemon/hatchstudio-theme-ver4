@@ -1,14 +1,14 @@
 <div class='header-bar__menu'>
-<nav class='header-bar__nav gnav-wrapper'>
-<ul class='header-bar__nav__list gnav main-wrapper'>
-<li class='header-bar__nav__item'>
-<a class='header-bar__nav__text'>
+<nav id='gnav'>
+<ul>
+<li class='toggle'>
+<a>
 <span class='header-bar__nav__text--en'>
 BLOG
 </span>
 </a>
-<div class='megamenu'>
-<ul class='megamenu-inner main-wrapper'>
+<div class='menu'>
+<ul class='menu_inner'>
 <li>
 <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
   <i class="far fa-arrow-alt-circle-right"></i>
@@ -53,20 +53,15 @@ BLOG
 </li>
 </ul>
 </div>
-<a class='header-bar__nav__text c-link c-link--bold'>
-<span class='header-bar__nav__text--jp'>
-ブログ
-</span>
-</a>
 </li>
-<li class='header-bar__nav__item'>
-<a class='header-bar__nav__text'>
+<li class='toggle'>
+<a>
 <span class='header-bar__nav__text--en'>
 SVICE
 </span>
 </a>
-<div class='megamenu'>
-<ul class='megamenu-inner main-wrapper'>
+<div class='menu'>
+<ul class='menu_inner'>
 <li>
 <a href="<?php echo esc_url( home_url( '/web' ) ); ?>" class="megamenu-inner-text">
   <i class="far fa-arrow-alt-circle-right"></i>
@@ -99,34 +94,20 @@ SVICE
 </li>
 </ul>
 </div>
-<a class='header-bar__nav__text c-link c-link--bold'>
-<span class='header-bar__nav__text--jp'>
-サービス
-</span>
-</a>
 </li>
-<li class='header-bar__nav__item'>
+<li>
 <a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>" class="header-bar__nav__text">
   <span class="header-bar__nav__text--en">RECRUIT</span>
 </a>
-<a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>" class="header-bar__nav__text c-link c-link--bold">
-  <span class="header-bar__nav__text--jp">採用</span>
-</a>
 </li>
-<li class='header-bar__nav__item'>
+<li>
 <a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="header-bar__nav__text">
   <span class="header-bar__nav__text--en">ABOUT</span>
 </a>
-<a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="header-bar__nav__text c-link c-link--bold">
-  <span class="header-bar__nav__text--jp">会社案内</span>
-</a>
 </li>
-<li class='header-bar__nav__item'>
+<li>
 <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="header-bar__nav__text">
   <span class="header-bar__nav__text--en">CONTACT</span>
-</a>
-<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="header-bar__nav__text c-link c-link--bold">
-  <span class="header-bar__nav__text--jp">お問い合わせ</span>
 </a>
 </li>
 </ul>
