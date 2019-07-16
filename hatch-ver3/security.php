@@ -22,7 +22,7 @@ Hatchstudio incは、以下のとおり情報セキュリティ基本方針を�
 </div>
 </div>
 <div class='outer__inner'>
-<div class='articles__container__bottom flexbox--h-center'>
+<div class='articles__container__bottom flexbox--spacebetween'>
 <div class='bt-left'>
 <?php include('components-php/bt-news-lists.php'); ?>
 </div>
