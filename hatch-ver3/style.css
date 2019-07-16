@@ -7300,7 +7300,7 @@ body {
   display: flex;
   margin-top: auto; }
   .background-draw img {
-    width: 100%; }
+    width: 300px; }
   .background-draw__left {
     margin-bottom: -3px; }
 
