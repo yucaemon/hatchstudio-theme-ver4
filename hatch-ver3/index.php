@@ -15,6 +15,7 @@
   );
   $posts = get_posts( $args );
     if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
+
         <li class='eyecatch'>
           <?php
             $days = 7;  // NEWマークを表示する日数
@@ -70,8 +71,22 @@
     <?php query_posts('posts_per_page=5&offset=12' ); ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
     <?php if($countblock == 3 or $countblock == 8 or $countblock == 12) : ?>
-    <!-- ここに広告のコードor画像など !-->
+
+    <!-- 横長　ここに広告のコードor画像など --!>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="fluid"
+         data-ad-layout-key="-ee-2q+1s-8v+187"
+         data-ad-client="ca-pub-1574488309106788"
+         data-ad-slot="9890636659"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <!-- 横長　ここに広告のコードor画像など --!>
     <?php endif; ?>
+
         <li class='article-list__content flexbox eyecatch'>
           <div class='post-lists__img article-list__img'>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 )); ?></a>
@@ -106,9 +121,20 @@
 <div class='outer__inner__container flexbox--spacebetween'>
 <div class='middle-contain two-column-sp'>
 <ul class='post-lists article-list box-list'>
-  <?php query_posts('posts_per_page=6&offset=17' ); ?>
+  <?php query_posts('posts_per_page=5&offset=17' ); ?>
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
   <?php if($countblock == 3 or $countblock == 8 or $countblock == 12) : ?>
+  <!-- ここに広告のコードor画像など --!>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-format="fluid"
+       data-ad-layout-key="-6t+ed+2i-1n-4w"
+       data-ad-client="ca-pub-1574488309106788"
+       data-ad-slot="5472879496"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
   <!-- ここに広告のコードor画像など --!>
   <?php endif; ?>
         <li class='eyecatch'>

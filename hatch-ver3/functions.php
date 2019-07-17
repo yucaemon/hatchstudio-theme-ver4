@@ -182,6 +182,7 @@ function h2Func( $atts, $content = null ) {
 }
 add_shortcode('見出し2', 'h2Func');
 
+
 function h3Func( $atts, $content = null ) {
     return '<h3 class="headline-third">' . $content . '</h3>';
 }
@@ -408,7 +409,9 @@ function get_popular_args($range= "weekly", $limit = 8){
   return $args;
 }
 
-//h2の見出しに広告を挿入
+
+
+//h2の前にアドセンス広告ユニットを挿入するコード
 
 function ads_unit($content){
     if(!is_single()){
