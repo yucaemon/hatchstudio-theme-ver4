@@ -13,39 +13,48 @@
             ブログコンテンツ
           %ul.drawer-menu
             %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/category/fashion/">サンフランシスコ</a>
+              <a href="<?php bloginfo('url'); ?>/archives/category/sanfrancisco/">サンフランシスコ/バークレー</a>
             %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/category/gourmet/">ニューヨーク</a>
+              <a href="<?php bloginfo('url'); ?>/archives/category/newyork/">ニューヨーク</a>
             %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/category/lifestyle/">ポートランド</a>
+              <a href="<?php bloginfo('url'); ?>/archives/category/portland/">ポートランド</a>
             %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/category/cosmetics/">ハワイ</a>
-
+              <a href="<?php bloginfo('url'); ?>/archives/category/hawaii/">ハワイ</a>
+            %li.drawer-menu__li
+              <a href="<?php bloginfo('url'); ?>/archives/category/info/">お知らせ/募集</a>
+            %li.drawer-menu__li
+              <a href="<?php bloginfo('url'); ?>/archives/category/sharehouse/">シェアハウス</a>
           .drawer-nav__title
             %i.fa.fa-globe
             サービス
           %ul.drawer-menu
             %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/organic/">WEB/動画制作</a>
+              <a href="<?php echo esc_url( home_url( '/web' ) ); ?>">WEB/動画制作</a>
             %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/ethical/">コンテンツ制作</a>
+              <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>">コンテンツ制作</a>
             %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/fairtrade/">ゲストハウス</a>
+              <a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>">ゲストハウス</a>
             %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/local/">英語/中国語翻訳</a>
+              <a href="<?php echo esc_url( home_url( '/translate' ) ); ?>">英語/中国語翻訳</a>
+            %li.drawer-menu__li
+              <a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>">不動産サポート</a>
 
           .drawer-nav__title
             %i.fa.fa-building
             会社について
           %ul.drawer-menu
             %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/dresses/">会社概要</a>
+              <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">会社について</a>
             %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/accessories/">採用</a>
+              <a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>">採用</a>
             %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/tops/">プライバシーポリシー</a>
+              <a href="<?php echo esc_url( home_url( '/policy' ) ); ?>">プライバシーポリシー</a>
             %li.drawer-menu__li
-              <a href="<?php bloginfo('url'); ?>/tag/bottoms/">利用規約</a>
+              <a href="<?php echo esc_url( home_url( '/security' ) ); ?>">セキュリティー</a>
+            %li.drawer-menu__li
+              <a href="<?php echo esc_url( home_url( '/rule' ) ); ?>">利用規約</a>
+            %li.drawer-menu__li
+              <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">お問い合わせ</a>
 
     .search
       %btn.search-icon

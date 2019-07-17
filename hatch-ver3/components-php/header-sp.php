@@ -17,16 +17,22 @@
 </div>
 <ul class='drawer-menu'>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/category/fashion/">サンフランシスコ</a>
+<a href="<?php bloginfo('url'); ?>/archives/category/sanfrancisco/">サンフランシスコ/バークレー</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/category/gourmet/">ニューヨーク</a>
+<a href="<?php bloginfo('url'); ?>/archives/category/newyork/">ニューヨーク</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/category/lifestyle/">ポートランド</a>
+<a href="<?php bloginfo('url'); ?>/archives/category/portland/">ポートランド</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/category/cosmetics/">ハワイ</a>
+<a href="<?php bloginfo('url'); ?>/archives/category/hawaii/">ハワイ</a>
+</li>
+<li class='drawer-menu__li'>
+<a href="<?php bloginfo('url'); ?>/archives/category/info/">お知らせ/募集</a>
+</li>
+<li class='drawer-menu__li'>
+<a href="<?php bloginfo('url'); ?>/archives/category/sharehouse/">シェアハウス</a>
 </li>
 </ul>
 <div class='drawer-nav__title'>
@@ -35,16 +41,19 @@
 </div>
 <ul class='drawer-menu'>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/organic/">WEB/動画制作</a>
+<a href="<?php echo esc_url( home_url( '/web' ) ); ?>">WEB/動画制作</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/ethical/">コンテンツ制作</a>
+<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>">コンテンツ制作</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/fairtrade/">ゲストハウス</a>
+<a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>">ゲストハウス</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/local/">英語/中国語翻訳</a>
+<a href="<?php echo esc_url( home_url( '/translate' ) ); ?>">英語/中国語翻訳</a>
+</li>
+<li class='drawer-menu__li'>
+<a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>">不動産サポート</a>
 </li>
 </ul>
 <div class='drawer-nav__title'>
@@ -53,16 +62,22 @@
 </div>
 <ul class='drawer-menu'>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/dresses/">会社概要</a>
+<a href="<?php echo esc_url( home_url( '/about' ) ); ?>">会社について</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/accessories/">採用</a>
+<a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>">採用</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/tops/">プライバシーポリシー</a>
+<a href="<?php echo esc_url( home_url( '/policy' ) ); ?>">プライバシーポリシー</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/tag/bottoms/">利用規約</a>
+<a href="<?php echo esc_url( home_url( '/security' ) ); ?>">セキュリティー</a>
+</li>
+<li class='drawer-menu__li'>
+<a href="<?php echo esc_url( home_url( '/rule' ) ); ?>">利用規約</a>
+</li>
+<li class='drawer-menu__li'>
+<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">お問い合わせ</a>
 </li>
 </ul>
 </div>

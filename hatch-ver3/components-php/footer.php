@@ -10,39 +10,22 @@ BLOG
 <ul>
 <div class='footer__nimi-box'>
 <li>
-<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
-  サンフランシスコ
-</a>
+<a href="<?php bloginfo('url'); ?>/archives/category/sanfrancisco/">サンフランシスコ/バークレー</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
-   ニューヨーク
-</a>
+<a href="<?php bloginfo('url'); ?>/archives/category/newyork/">ニューヨーク</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
-   ポートランド
-</a>
+<a href="<?php bloginfo('url'); ?>/archives/category/portland/">ポートランド</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
-   ハワイ
-</a>
+<a href="<?php bloginfo('url'); ?>/archives/category/hawaii/">ハワイ</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
-   UCバークレー大学
-</a>
+<a href="<?php bloginfo('url'); ?>/archives/category/info/">お知らせ/募集</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
-   お知らせ/募集
-</a>
-</li>
-<li>
-<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
-   シェアハウス
-</a>
+<a href="<?php bloginfo('url'); ?>/archives/category/sharehouse/">シェアハウス</a>
 </li>
 </div>
 </ul>
@@ -58,7 +41,7 @@ OUR SERVICE
 <ul>
 <div class='footer__nimi-box'>
 <li>
-<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+<a href="<?php echo esc_url( home_url( '/web' ) ); ?>" class="megamenu-inner-text">
   WEB/動画制作
 </a>
 </li>
