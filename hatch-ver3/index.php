@@ -51,7 +51,7 @@
 </div>
 <div class='side-contain'>
 <div class='side-amazon-ad'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg">
+<a href="https://www.youtube.com/channel/UCKgUk8aEDuGjXKXPfMSd-gw?view_as=subscriber"><img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg"></a>
 </div>
 <?php include('components-php/lists-popular-total.php'); ?>
 </div>
