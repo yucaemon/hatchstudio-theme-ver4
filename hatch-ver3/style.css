@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
-Theme Name: annie
-Theme URI: https://wordpress.org/themes/annie/
+Theme Name: Hatchstudio ver3[2019/7/16 update]
+Theme URI: https://wordpress.org/themes/hatchstudio/
 Author: yuka
 Author URI: https://wordpress.org/
 Description: grooo 20117/08/28 ver1
@@ -9479,9 +9479,9 @@ category-page
         display: none; }
 
   /*
-  
+
   search-page(検索ページ)
-  
+
   *************************************************/
   .search-page .side-contain .news-list__container {
     padding: 0 20px; }
