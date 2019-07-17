@@ -329,9 +329,13 @@ body {
 }
 
 .eyecatch{
-position: relative;
-width: 40%;
+  position: relative;
+  width: 40%;
+  .eyechatchlabel~.eyechatchlabel {
+      display: none;
+  }
 }
+
 .eyechatchlabel{
   position: absolute;
   color: #fff;
