@@ -8125,7 +8125,8 @@ body {
   .single-page .detail-balloon-box__icon {
     padding-right: 6%; }
   .single-page .detail-balloon-box__txt {
-    width: 70%; }
+    width: 70%;
+    padding-right: 5px; }
 .single-page .affiliate-ad {
   margin: 0 auto;
   padding-bottom: 30px;
