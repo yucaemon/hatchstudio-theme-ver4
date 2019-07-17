@@ -7032,11 +7032,10 @@ figure:hover figcaption {
   margin-right: 2em; }
 
 #gnav > ul > li:hover {
-  color: #ad9b64;
-  background-color: #ffe198; }
+  background-color: #ffc9bc; }
 
 #gnav > ul > li:hover > a {
-  color: #ad9b64; }
+  color: #fff; }
 
 #gnav > ul > li:hover .menu {
   max-height: 9999px;
@@ -7054,11 +7053,11 @@ figure:hover figcaption {
   overflow: hidden;
   width: 100%;
   left: 0;
-  text-align: center;
   position: absolute;
-  background-color: #ffe198;
+  background-color: #ffc9bc;
   z-index: 5000;
-  font-size: 0.9em; }
+  font-size: 1em;
+  padding: 20px 40px; }
 
 #gnav > ul .menu .menu_inner {
   padding: 1em 0; }
@@ -7068,7 +7067,7 @@ figure:hover figcaption {
   margin: 0 .5em; }
 
 #gnav > ul .menu a {
-  color: #ad9b64; }
+  color: #fff; }
 
 .post-lists.article-list::after {
   content: "";
@@ -7176,7 +7175,7 @@ body {
   color: #fff;
   font-family: "Montserrat", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
 
-.category-icon {
+.category-icon a {
   padding: 3px 10px;
   border-radius: 5px;
   display: inline-block;
@@ -7184,7 +7183,7 @@ body {
   color: #fff;
   letter-spacing: 1px;
   font-size: 0.9em; }
-  .category-icon a {
+  .category-icon a a {
     color: #fff; }
 
 /*
@@ -7347,14 +7346,23 @@ body {
   padding: 5px 10px;
   font-size: 1.1em; }
 
-.eyechatchlabel.cook {
+.eyechatchlabel.sanfrancisco {
+  background-color: #bee4e6; }
+
+.eyechatchlabel.newyork {
+  background-color: #ffe198; }
+
+.eyechatchlabel.portland {
+  background-color: #b1d2b7; }
+
+.eyechatchlabel.hawaii {
   background-color: #f6cdc4; }
 
-.eyechatchlabel.sanfrancisco {
-  background-color: #ebd4a4; }
+.eyechatchlabel.info {
+  background-color: #c2b4cc; }
 
-.eyechatchlabel.ucberkeley {
-  background-color: #bee4e6; }
+.eyechatchlabel.sharehouse {
+  background-color: #ffc171; }
 
 /*
 
@@ -7793,11 +7801,11 @@ body {
   font-weight: bold; }
   .single-page__views i {
     color: #ff846a; }
-.single-page__tags {
+.single-page__tags a {
   /* line-height: 1; */
   border: solid #ff846a 1px;
   border-radius: 4px;
-  padding: 0 10px; }
+  padding: 5px 10px; }
 .single-page__sns-icons {
   width: auto; }
   .single-page__sns-icons .sns-icons__img {

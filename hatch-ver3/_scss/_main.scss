@@ -128,7 +128,7 @@ body {
   color: #fff;
   font-family: $font_family_en;
 }
-.category-icon{
+.category-icon a{
   padding: 3px 10px;
   border-radius: 5px;
   display: inline-block;
@@ -340,14 +340,24 @@ width: 40%;
   font-size: 1.1em;
 }
 //カテゴリー別にラベルの色を変える
-.eyechatchlabel.cook{
+
+.eyechatchlabel.sanfrancisco{
+  background-color: $blue_01;
+}
+.eyechatchlabel.newyork{
+  background-color: #ffe198;
+}
+.eyechatchlabel.portland{
+  background-color: #b1d2b7;
+}
+.eyechatchlabel.hawaii{
   background-color: $pink_01;
 }
-.eyechatchlabel.sanfrancisco{
-  background-color: $yellow_01;
+.eyechatchlabel.info{
+  background-color: #c2b4cc;
 }
-.eyechatchlabel.ucberkeley{
-  background-color: $blue_01;
+.eyechatchlabel.sharehouse{
+  background-color: #ffc171;
 }
 
 
@@ -374,7 +384,7 @@ width: 40%;
   top: 48%;
   width: 313px;
   margin-top: 30px;
-  
+
 }
 
 .side-contain {
@@ -935,11 +945,11 @@ width: 40%;
       color: $pink_02;
     }
   }
-  &__tags {
+  &__tags a{
     /* line-height: 1; */
     border: solid $pink_02 1px;
     border-radius: 4px;
-    padding: 0 10px;
+    padding: 5px 10px;
    }
   &__sns-icons{
     width: auto;

@@ -155,11 +155,11 @@ figure:hover figcaption {
   margin-right: 2em;
 }
 #gnav > ul > li:hover {
-  color: #ad9b64;
-  background-color:  #ffe198;
+  background-color:  #ffc9bc;
 }
+
 #gnav > ul > li:hover > a {
-  color: #ad9b64;
+  color: #fff;
 }
 #gnav > ul > li:hover .menu {
   max-height: 9999px;
@@ -177,11 +177,11 @@ figure:hover figcaption {
   overflow: hidden;
   width: 100%;
   left: 0;
-  text-align: center;
   position: absolute;
-	background-color: #ffe198;
+	background-color: #ffc9bc;
 	z-index: 5000;
-	font-size: 0.9em;
+	font-size: 1em;
+	padding: 20px 40px;
 }
 #gnav > ul .menu .menu_inner {
   padding: 1em 0;
@@ -191,12 +191,8 @@ figure:hover figcaption {
   margin: 0 .5em;
 }
 #gnav > ul .menu a {
-  color: #ad9b64;
+  color: #fff;
 }
-
-
-
-
 
   //一覧ページのflexboxの最後のboxを左寄せにする方法
 	.post-lists.article-list::after{
