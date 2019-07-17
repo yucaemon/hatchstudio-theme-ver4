@@ -417,13 +417,36 @@ function ads_unit($content){
 /* 設定 */
         $adsCode1=<<<EOC
 <!-- Adsense Code Start -->
-広告大
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- スクエア✖️2box -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1574488309106788"
+     data-ad-slot="7305955474"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 <!-- Adsense Code End -->
 EOC;
 
         $adsCode2=<<<EOC
 <!-- Adsense Code Start -->
-記事広告
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1574488309106788"
+     data-ad-slot="3657520358"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 <!-- Adsense Code End -->
 EOC;
         $dmt='<h2';

@@ -13,7 +13,8 @@ query_posts($args); ?>
 <?php query_posts('posts_per_page=21' ); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
 <?php if($countblock == 4 or $countblock == 5 or $countblock == 8 or $countblock == 9 or $countblock == 15 or $countblock == 17) : ?>
-//ここに広告のコードor画像など//
+<!-- ここに広告のコードor画像など --!>
+
 <?php endif; ?>
 
     <li class='eyecatch'>

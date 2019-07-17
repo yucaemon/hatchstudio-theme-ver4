@@ -69,7 +69,7 @@
                   <?php query_posts('posts_per_page=5&offset=12' ); ?>
                   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
                   <?php if($countblock == 3 or $countblock == 8 or $countblock == 12) : ?>
-                  //ここに広告のコードor画像など//
+                  <!-- ここに広告のコードor画像など !-->
                   <?php endif; ?>
                       <li class='article-list__content flexbox eyecatch'>
                         <div class='post-lists__img article-list__img'>
@@ -104,10 +104,10 @@
           .middle-contain.two-column-sp
             :plain
               <ul class='post-lists article-list box-list'>
-                <?php query_posts('posts_per_page=5&offset=17' ); ?>
+                <?php query_posts('posts_per_page=6&offset=17' ); ?>
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
                 <?php if($countblock == 3 or $countblock == 8 or $countblock == 12) : ?>
-                //ここに広告のコードor画像など//
+                <!-- ここに広告のコードor画像など --!>
                 <?php endif; ?>
                       <li class='eyecatch'>
                         <div class='post-lists__img article-list__img imgWrap'>
