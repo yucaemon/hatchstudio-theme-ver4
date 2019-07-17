@@ -43,7 +43,7 @@ Hatchstudio inc
 設立
 </td>
 <td>
-2019年 5月5日
+2019年 7月16日
 </td>
 </tr>
 <tr>

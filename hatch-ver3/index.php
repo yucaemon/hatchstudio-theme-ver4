@@ -57,7 +57,6 @@
 </div>
 </div>
 </div>
-<?php include('components-php/affiliate-ad-sp.php'); ?>
 <?php include('components-php/share-house-ad.php'); ?>
 </section>
 <section class='section second-section'>
