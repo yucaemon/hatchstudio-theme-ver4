@@ -38,10 +38,10 @@
 <div class='header-bar__inner flexbox--spacebetween'>
 <div class='header-bar__logo logo'>
 <div class='logo__img-h'>
-<a href="https://www.instagram.com/annie_jene/"><img src="<?php echo get_template_directory_uri(); ?>/images/eight-icon.svg"></a>
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/eight-icon.svg"></a>
 </div>
 <div class='logo__title'>
-アメリカ面白まがじん
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>">アメリカ面白まがじん</a>
 </div>
 <div class='search__box'>
 <div class='search__form'>
