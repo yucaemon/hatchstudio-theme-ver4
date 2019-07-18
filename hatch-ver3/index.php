@@ -51,6 +51,7 @@
 </ul>
 </div>
 <div class='side-contain'>
+<?php include('components-php/affiliate-ad-one.php'); ?>
 <div class='side-amazon-ad'>
 <a href="https://www.youtube.com/channel/UCKgUk8aEDuGjXKXPfMSd-gw?view_as=subscriber"><img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg"></a>
 </div>
@@ -69,41 +70,48 @@
 <div class='middle-contain two-column-sp'>
   <ul class='post-lists article-list'>
     <?php query_posts('posts_per_page=5&offset=12' ); ?>
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
-    <?php if($countblock == 3 or $countblock == 8 or $countblock == 12) : ?>
+    <?php
+    $ads_infeed = '3';//上から何番目に広告を設置するか
+    $ads_infeed_count = '1';
+    ?>
+    <?php while (have_posts()) : the_post(); ?>
+    <?php
+    if($ads_infeed_count == $ads_infeed){
+    ?>
+    <!-- ここにインフィード広告のコードを入れる -->
+    インフィード広告
 
-    <!-- 横長　ここに広告のコードor画像など --!>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- ページ右上固定ーディスプレイ広告BOX --!>
     <ins class="adsbygoogle"
          style="display:block"
-         data-ad-format="fluid"
-         data-ad-layout-key="-ee-2q+1s-8v+187"
          data-ad-client="ca-pub-1574488309106788"
-         data-ad-slot="9890636659"></ins>
+         data-ad-slot="1136450179"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 
-    <!-- 横長　ここに広告のコードor画像など --!>
-    <?php endif; ?>
-
-        <li class='article-list__content flexbox eyecatch'>
-          <div class='post-lists__img article-list__img'>
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 )); ?></a>
-          </div>
-          <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
-            <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
-          </p>
-          <div class='post-lists__text article-list__text'>
-            <h3 class='post-lists__title list-title'>
-              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            </h3>
-            <div class="category-icon"><?php the_category( '  ',' 　' ); ?></div>
-          </div>
-        </li>
-      <?php endwhile; endif;
-      wp_reset_postdata(); //クエリのリセット ?>
-
+    <?php
+    }
+    $ads_infeed_count++;
+    ?>
+    <!-- ここにタイトルなど表示させるコード -->
+    <li class='article-list__content flexbox eyecatch'>
+      <div class='post-lists__img article-list__img'>
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 )); ?></a>
+      </div>
+      <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
+        <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+      </p>
+      <div class='post-lists__text article-list__text'>
+        <h3 class='post-lists__title list-title'>
+          <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        </h3>
+        <div class="category-icon"><?php the_category( '  ',' 　' ); ?></div>
+      </div>
+    </li>
+    <?php endwhile; ?>
   </ul>
 </div>
 <div class='side-contain'>
