@@ -1,7 +1,7 @@
 <?php /** *  Template Name:  はっちんぐハウスPDXページ */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='house-page pages outer'>
+<div class='house-page pages'>
 <div class='house-page__share-house'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>

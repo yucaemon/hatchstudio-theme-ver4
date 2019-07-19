@@ -17,11 +17,10 @@
      data-ad-format="fluid"
      data-ad-layout-key="-fb+5w+4e-db+86"
      data-ad-client="ca-pub-1574488309106788"
-     data-ad-slot="8403414724"></ins>
+     data-ad-slot="7362947172"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
 <?php endif; ?>
   <!--表示する内容が入ります。-->
   <dd class="news-list__content flexbox">

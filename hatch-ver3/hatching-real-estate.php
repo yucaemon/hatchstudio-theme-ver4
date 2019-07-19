@@ -1,7 +1,7 @@
 <?php /** *  Template Name:  はっち不動産ページ */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='house-page pages outer'>
+<div class='house-page pages'>
 <div class='house-page__real-estate'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>

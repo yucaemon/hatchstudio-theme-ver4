@@ -7,6 +7,14 @@
 </div>
 </div>
 <div class='bottom-popular__body flexbox--spacebetween'>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:826px;height:600px"
+     data-ad-client="ca-pub-1574488309106788"
+     data-ad-slot="7469499208"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <ul class="post-lists article-list box-list">
 <?php $args = get_popular_args('monthly', '12');
 query_posts($args); ?>

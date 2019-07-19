@@ -5,6 +5,16 @@
       <i class="fas fa-fire"></i>
       トレンド記事
   .bottom-popular__body.flexbox--spacebetween
+    :plain
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:826px;height:600px"
+           data-ad-client="ca-pub-1574488309106788"
+           data-ad-slot="7469499208"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
     <ul class="post-lists article-list box-list">
     :plain
       <?php $args = get_popular_args('monthly', '12');
@@ -12,7 +22,7 @@
       <?php query_posts('posts_per_page=21' ); ?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
       <?php if($countblock == 4 or $countblock == 5 or $countblock == 8 or $countblock == 9 or $countblock == 15 or $countblock == 17) : ?>
-      
+
       <!-- ここに広告のコードor画像など --!>
 
       <?php endif; ?>

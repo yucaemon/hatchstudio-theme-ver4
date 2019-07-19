@@ -51,7 +51,7 @@
 </ul>
 </div>
 <div class='side-contain'>
-<?php include('components-php/affiliate-ad-one.php'); ?>
+<?php include('components-php/affiliate-ad-sky.php'); ?>
 <div class='side-amazon-ad'>
 <a href="https://www.youtube.com/channel/UCKgUk8aEDuGjXKXPfMSd-gw?view_as=subscriber"><img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg"></a>
 </div>
@@ -79,19 +79,7 @@
     if($ads_infeed_count == $ads_infeed){
     ?>
     <!-- ここにインフィード広告のコードを入れる -->
-    インフィード広告
-
-    <!-- ページ右上固定ーディスプレイ広告BOX --!>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-1574488309106788"
-         data-ad-slot="1136450179"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
+    <!-- ここにインフィード広告のコードを入れる -->
     <?php
     }
     $ads_infeed_count++;
@@ -129,21 +117,11 @@
 <div class='outer__inner__container flexbox--spacebetween'>
 <div class='middle-contain two-column-sp'>
 <ul class='post-lists article-list box-list'>
-  <?php query_posts('posts_per_page=5&offset=17' ); ?>
+  <?php query_posts('posts_per_page=9&offset=17' ); ?>
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
   <?php if($countblock == 3 or $countblock == 8 or $countblock == 12) : ?>
-  <!-- ここに広告のコードor画像など --!>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-format="fluid"
-       data-ad-layout-key="-6t+ed+2i-1n-4w"
-       data-ad-client="ca-pub-1574488309106788"
-       data-ad-slot="5472879496"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-  <!-- ここに広告のコードor画像など --!>
+  <!-- ここに広告のコードor画像など -->
+  <!-- ここに広告のコードor画像など -->
   <?php endif; ?>
         <li class='eyecatch'>
           <div class='post-lists__img article-list__img imgWrap'>

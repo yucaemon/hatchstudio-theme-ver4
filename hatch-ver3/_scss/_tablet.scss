@@ -173,6 +173,21 @@
       }
     }
   }
+.service-page{
+  &__web{
+    &__bg-img{
+      background-image: url(./images/service-web-bg.JPG);
+      padding-top: 38%;
+      background-position: 0 -356px;
+      }
+    }
+    &__translate{
+      &__bg-img{
+        padding-top: 36%;
+        background-position: 0px -470px;
+      }
+    }
+  }
 }
 
 @media (max-width:850px) {

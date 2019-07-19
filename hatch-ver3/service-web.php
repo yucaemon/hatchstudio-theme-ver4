@@ -1,7 +1,7 @@
 <?php /** *  Template Name:  WEB制作ページ */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='service-page pages outer'>
+<div class='service-page pages'>
 <div class='service-page__web'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>

@@ -66,7 +66,7 @@
 
                 <div class='post-lists__text article-list__text'>
                   <h3 class='post-lists__title list-title'>
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?>ttt</a>
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                   </h3>
                 </div>
               </li>

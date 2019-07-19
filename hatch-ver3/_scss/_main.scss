@@ -1655,25 +1655,30 @@ service-page/ web & translate & contens
   &__web{
     &__bg-img{
       background-image: url(./images/service-web-bg.JPG);
-      height: 446px;
+      width: 100%;
+      padding-top: 33%;
       background-size: cover;
-      background-position: 7px -675px;
+      background-repeat: no-repeat;
+      background-position: 0 -675px;
     }
   }
   &__translate{
     &__bg-img{
       background-image: url(./images/service-translate-bg.JPG);
-      height: 446px;
+      padding-top: 33%;
       background-size: cover;
-      background-position: 6px -645px;
+      background-repeat: no-repeat;
+      background-position: 0 -706px;
     }
   }
   &__contens{
     &__bg-img{
       background-image: url(./images/service-contens-bg.JPG);
-      height: 446px;
+      width: 100%;
+      padding-top: 40%;
       background-size: cover;
-      background-position: 6px -249px;
+      background-repeat: no-repeat;
+      background-position: 0 -160px;
     }
   }
 }
@@ -1754,17 +1759,21 @@ house-page/share-house＆real-estate
   &__share-house{
     &__bg-img{
       background-image: url(./images/hatching-house-pdx-bg.jpg);
-      height: 446px;
+      width: 100%;
+      padding-top: 44%;
       background-size: cover;
-      background-position: 2px -284px;
+      background-repeat: no-repeat;
+      background-position: 0 -213px;
     }
   }
   &__real-estate{
     &__bg-img{
       background-image: url(./images/hatching-real-estate-bg.jpg);
-      height: 446px;
+      width: 100%;
+      padding-top: 40%;
       background-size: cover;
-      background-position: 2px -127px;
+      background-repeat: no-repeat;
+      background-position: 0 -160px;
     }
   }
   &__body__detail {

@@ -1,7 +1,7 @@
 <?php /** *  Template Name: お問い合わせページ */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='contact-page pages outer'>
+<div class='contact-page pages'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
 <?php include('components-php/contact-form.php'); ?>
