@@ -9856,9 +9856,6 @@ related-article(関連記事)
 
 **************************************************/
 @media (min-width: 680px) and (max-width: 1050px) {
-  .outer {
-    width: 1050px; }
-
   /*YouTubeレスポンシブサイズ*/
   .youtube {
     position: relative;

@@ -26,8 +26,6 @@ Berkeley CA USA
 </p>
 </div>
 </div>
-</div>
-</div>
 <div class='table-info'>
 <table>
 <tr>
@@ -81,6 +79,8 @@ Webサイト&動画制作事業（デザイン/システム開発）
 </td>
 </tr>
 </table>
+</div>
+</div>
 </div>
 </div>
 <div class='outer__inner'>

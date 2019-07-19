@@ -51,7 +51,7 @@ BLOG
 <li class='toggle'>
 <a>
 <span class='header-bar__nav__text--en'>
-SVICE
+SERVICE
 </span>
 </a>
 <div class='menu'>
