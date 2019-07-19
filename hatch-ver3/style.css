@@ -7862,7 +7862,8 @@ body {
     display: block;
     line-height: 1.6em;
     color: #222; }
-  .single-page__entry-content .headline-second {
+  .single-page__entry-content .font-decoration-underline {
+    display: inline-block;
     width: 100%;
     font-size: 17px;
     font-size: 1.7rem;
@@ -7875,7 +7876,8 @@ body {
     line-height: 1;
     border-bottom: solid 3px #ffcf6e;
     padding: 20px 0; }
-  .single-page__entry-content .headline-third {
+  .single-page__entry-content .font-decoration-btn {
+    display: inline-block;
     width: 100%;
     font-size: 13px;
     font-size: 1.3rem;
@@ -7889,7 +7891,8 @@ body {
     background-color: #ffcf6e;
     border-radius: 5px;
     padding: 20px 20px; }
-  .single-page__entry-content .headline-fourth {
+  .single-page__entry-content .font-decoration-barline {
+    display: inline-block;
     width: 100%;
     font-size: 12px;
     font-size: 1.2rem;

@@ -170,7 +170,7 @@ add_filter('posts_groupby', 'custom_search_groupby');
 //見出しのショートコード
 function titleFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'element' => 'h2',
+        'element' => 'span',
         'class' => 'headline-default'
     ), $atts ) );
     return '<'.$element.' class="'.$class.'">' . $content . '</'.$element.'>';
@@ -178,21 +178,21 @@ function titleFunc( $atts, $content = null ) {
 add_shortcode('title', 'titleFunc');
 
 function h2Func( $atts, $content = null ) {
-    return '<h2 class="headline-second">' . $content . '</h2>';
+    return '<span class="font-decoration-underline">' . $content . '</span>';
 }
-add_shortcode('見出し2', 'h2Func');
+add_shortcode('タイトル下線', 'h2Func');
 
 
 function h3Func( $atts, $content = null ) {
-    return '<h3 class="headline-third">' . $content . '</h3>';
+    return '<span class="font-decoration-btn">' . $content . '</span>';
 }
-add_shortcode('見出し3', 'h3Func');
+add_shortcode('タイトル長方形', 'h3Func');
 
 
 function h4Func( $atts, $content = null ) {
-    return '<h4 class="headline-fourth">' . $content . '</h4>';
+    return '<span class="font-decoration-barline">' . $content . '</span>';
 }
-add_shortcode('見出し4', 'h4Func');
+add_shortcode('タイトル縦線', 'h4Func');
 
 //ユーチューブのショートコード
 function youtubeFunc( $atts, $content = null ) {

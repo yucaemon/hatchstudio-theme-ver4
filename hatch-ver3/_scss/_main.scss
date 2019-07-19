@@ -1006,18 +1006,21 @@ body {
       line-height: 1.6em;
       color: $font_color_head;
     }
-    .headline-second {
+    .font-decoration-underline {
+      display: inline-block;
       @include mainTitle(17,1);
       border-bottom: solid 3px $yellow_02;
       padding: 20px 0;
     }
-    .headline-third {
+    .font-decoration-btn {
+      display: inline-block;
       @include mainTitle(13,0.5);
       background-color: $yellow_02;
       border-radius: 5px;
       padding: 20px 20px;
     }
-    .headline-fourth {
+    .font-decoration-barline {
+      display: inline-block;
       @include mainTitle(12,1);
       padding: 10px 0 10px 20px;
       border-left: solid 6px $yellow_02;
