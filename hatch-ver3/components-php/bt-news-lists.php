@@ -11,6 +11,7 @@
 <?php if($countlists == 3 or $countlists == 6 or $countlists == 12) : ?>
 
 <!-- ここに広告のコードor画像など --!>
+<div class="google-ads google-ads--list">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block"
@@ -21,6 +22,7 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+</div>
 <?php endif; ?>
   <!--表示する内容が入ります。-->
   <dd class="news-list__content flexbox">

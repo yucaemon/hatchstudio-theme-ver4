@@ -1,4 +1,4 @@
-<div class='affiliate-ad-sp'>
+<div class='google-ads affiliate-ad-sp'>
 <!-- レンダリング（大）336 280　入れる -->
 　モバイル広告
 <!-- レンダリング（大）336 280　入れる -->

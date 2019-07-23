@@ -1,4 +1,4 @@
-<div class='affiliate-ad-one'>
+<div class='google-ads affiliate-ad-one'>
 <!-- ページ右上固定ーディスプレイ広告BOX  -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"

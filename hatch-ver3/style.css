@@ -7103,6 +7103,13 @@ a:hover img {
 iframe {
   margin-bottom: 20px; }
 
+.google-ads--side {
+  padding-bottom: 50px; }
+.google-ads--h2 {
+  padding-bottom: 20px; }
+.google-ads--list {
+  padding-bottom: 30px; }
+
 /*
 
 	layout

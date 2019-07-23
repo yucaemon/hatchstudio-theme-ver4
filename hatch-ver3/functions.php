@@ -421,17 +421,19 @@ function ads_unit($content){
         $adsCode1=<<<EOC
 <!-- Adsense Code Start -->
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- スクエア✖️2box -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1574488309106788"
-     data-ad-slot="7305955474"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="google-ads google-ads--h2">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- ディスプレイ広告-H2-記事広告 -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-1574488309106788"
+       data-ad-slot="5803072049"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
 
 <!-- Adsense Code End -->
 EOC;
@@ -439,16 +441,19 @@ EOC;
         $adsCode2=<<<EOC
 <!-- Adsense Code Start -->
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-1574488309106788"
-     data-ad-slot="3657520358"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="google-ads google-ads--h2">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- ディスプレイ広告-H2-記事広告 -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-1574488309106788"
+       data-ad-slot="5803072049"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
 
 <!-- Adsense Code End -->
 EOC;
