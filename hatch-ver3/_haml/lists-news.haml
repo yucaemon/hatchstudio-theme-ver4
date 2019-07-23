@@ -18,9 +18,6 @@
     :plain
       <?php query_posts('posts_per_page=6'); ?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countlists++; ?>
-      <?php if($countlists == 3 or $countlists == 6 or $countlists == 12) : ?>
-      //ここに広告のコードor画像など//
-      <?php endif; ?>
         <!--表示する内容が入ります。-->
         <dd class="news-list__content flexbox">
           <div class="eyecatch">

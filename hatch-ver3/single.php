@@ -69,6 +69,7 @@
 </div>
 <div class='side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
+<?php include('components-php/lists-news.php'); ?>
 <?php include('components-php/lists-category-total.php'); ?>
 <?php include('components-php/lists-popular-total.php'); ?>
 <?php include('components-php/keywords.php'); ?>
