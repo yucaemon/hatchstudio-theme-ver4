@@ -7119,6 +7119,9 @@ iframe {
   .outer__header {
     margin: 20px auto 0 auto; }
 
+.bottom-container {
+  width: 1260px; }
+
 body {
   margin: 0; }
 

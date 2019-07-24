@@ -8,12 +8,11 @@ CONTACT FORM
 </div>
 </div>
 <div class='outer__inner'>
-<form action='https://docs.google.com/forms/d/e/1FAIpQLScWcZ3TzAexAWFCokTMijAW8fB4dS_tcY17ikhwf7p-voj4EQ/viewform?usp=pp_url' class='contact-form__form'>
+<form action='https://docs.google.com/forms/d/e/1FAIpQLScWcZ3TzAexAWFCokTMijAW8fB4dS_tcY17ikhwf7p-voj4EQ/formResponse' class='contact-form__form'>
   <div class="form-group row">
     <label for="exampleFormControlSelect1" class="col-sm-3 col-form-label">ご相談内容</label>
     <div class="col-sm-4">
-      <select class="form-control selectpicker" name='entry.1253300886'>
-        
+      <select class="form-control selectpicker">
         <option>一つ選択してください ▼</option>
         <option data-value="WEB/動画制作ついて">WEB/動画制作ついて</option>
         <option data-value="コンテンツ制作/広告掲載について">コンテンツ制作/広告掲載について</option>

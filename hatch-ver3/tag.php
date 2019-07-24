@@ -12,12 +12,7 @@
 『 <?php echo get_the_archive_title(); ?> 』の関連記事一覧
 </h1>
 <ul class='post-lists article-list box-list flexbox--spacebetween'>
-
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
-  <?php if($countblock == 5 or $countblock == 8 or $countblock == 12) : ?>
-  //ここに広告のコードor画像など//
-  <?php endif; ?>
-
     <li class=''>
       <div class='post-lists__img article-list__img'>
         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
@@ -30,7 +25,19 @@
     </li>
   <?php endwhile; endif; ?>
 </ul>
-<?php include('components-php/affiliate-ad.php'); ?>
+<div class='google-ads'>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- スクエア✖️2box -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1574488309106788"
+     data-ad-slot="7305955474"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
 </div>
 <div class='side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
