@@ -6872,12 +6872,14 @@ select {
 .margin-center {
   margin: 0 auto; }
 
-.flexbox, .flexbox--h-center, .flexbox--h-bottom, .flexbox--v-center, .flexbox--v-bottom, .flexbox--spacebetween, .flexbox--spacearound, .flexbox--streach {
+.flexbox, .flexbox--start, .flexbox--h-center, .flexbox--h-bottom, .flexbox--v-center, .flexbox--v-bottom, .flexbox--spacebetween, .flexbox--spacearound, .flexbox--streach {
   display: flex;
   display: -webkit-flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap; }
+  .flexbox--start {
+    justify-content: start; }
   .flexbox--h-center {
     justify-content: center; }
   .flexbox--h-bottom {
@@ -7069,11 +7071,6 @@ figure:hover figcaption {
 #gnav > ul .menu a {
   color: #fff; }
 
-.post-lists.article-list::after {
-  content: "";
-  display: block;
-  width: 63%; }
-
 /*
 	common
   （モバイルとタブレット以外のサイズ）
@@ -7118,9 +7115,6 @@ iframe {
   width: 1260px; }
   .outer__header {
     margin: 20px auto 0 auto; }
-
-.bottom-container {
-  width: 1260px; }
 
 body {
   margin: 0; }
@@ -8715,9 +8709,12 @@ index
 .box-list li {
   height: 100%; }
 
+.article-list li + li {
+  padding-left: 27px; }
+
 .article-list li {
   padding-bottom: 2%;
-  width: 30%; }
+  width: 275px; }
 .article-list .newMark {
   padding: 8px 20px;
   letter-spacing: 3px; }
@@ -8759,11 +8756,6 @@ index.page
 *************************************************/
 .index .side-contain {
   width: 27%; }
-
-ul.post-lists.article-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
 
 .second-section .eyechatchlabel {
   display: none; }

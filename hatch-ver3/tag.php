@@ -11,18 +11,18 @@
 <h1 class='components-title'>
 『 <?php echo get_the_archive_title(); ?> 』の関連記事一覧
 </h1>
-<ul class='post-lists article-list box-list flexbox--spacebetween'>
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
-    <li class=''>
-      <div class='post-lists__img article-list__img'>
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
-      </div>
-      <div class='post-lists__text article-list__text'>
-        <h3 class='post-lists__title list-title'>
-          <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        </h3>
-      </div>
-    </li>
+<ul class='post-lists article-list box-list flexbox--start'>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
+  <li class=''>
+    <div class='post-lists__img article-list__img'>
+      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
+    </div>
+    <div class='post-lists__text article-list__text'>
+      <h3 class='post-lists__title list-title'>
+        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      </h3>
+    </div>
+  </li>
   <?php endwhile; endif; ?>
 </ul>
 <div class='google-ads'>

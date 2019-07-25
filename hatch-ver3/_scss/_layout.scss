@@ -6,6 +6,10 @@
 .flexbox{
 	@include flexbox(flex-start,flex-start);
 	flex-wrap: wrap;
+	&--start{
+		@extend .flexbox;
+		justify-content: start;
+	}
 	&--h-center{
 		@extend .flexbox;
 		justify-content: center;
@@ -192,11 +196,4 @@ figure:hover figcaption {
 }
 #gnav > ul .menu a {
   color: #fff;
-}
-
-  //一覧ページのflexboxの最後のboxを左寄せにする方法
-	.post-lists.article-list::after{
-  content:"";
-  display: block;
-  width: 63%;
 }

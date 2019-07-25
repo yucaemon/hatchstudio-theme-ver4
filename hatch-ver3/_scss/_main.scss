@@ -1958,10 +1958,13 @@ index
   .box-list li {
     height: 100%;
   }
+  .article-list li + li {
+    padding-left: 27px;
+  }
   .article-list {
     li {
       padding-bottom: 2%;
-      width: 30%;
+      width: 275px;
     }
     .newMark {
       padding: 8px 20px;
@@ -2010,14 +2013,6 @@ index.page
     width: 27%;
   }
 }
-
-ul.post-lists.article-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-
 
 .second-section{
   .eyechatchlabel{

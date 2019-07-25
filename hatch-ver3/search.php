@@ -44,7 +44,19 @@ while(have_posts()): the_post();
   </div>
 <?php endif; ?>
 </ul>
-<?php include('components-php/affiliate-ad.php'); ?>
+<div class='google-ads'>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- スクエア✖️2box -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1574488309106788"
+     data-ad-slot="7305955474"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
 </div>
 <div class='side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>

@@ -11,7 +11,7 @@
 <h1 class='components-title'>
 『 <?php echo get_the_archive_title(); ?> 』の関連記事一覧
 </h1>
-<ul class='post-lists article-list box-list flexbox--spacebetween'>
+<ul class='post-lists article-list box-list flexbox'>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
   <li class=''>
     <div class='post-lists__img article-list__img'>
@@ -38,7 +38,6 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-</ul>
 </div>
 <div class='side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
