@@ -20,7 +20,7 @@
         the_post();
     ?>
         <?php if( !$relatedpost_count ): /* 最初の記事の場合、ヘッダを付与 */ ?>
-            <ul class="post-lists article-list box-list">
+            <ul class="post-lists article-list box-list flexbox">
         <?php endif; ?>
 
                     <li class='eyecatch'>
