@@ -4,42 +4,32 @@
 </div>
 <div class='this-page__tags keywords flexbox'>
 <div class='tag'>
-<a>
-サンフランシスコ
+<a href="<?php bloginfo('url'); ?>/archives/category/sanfrancisco/">
+サンフランシスコ/バークレー
 </a>
 </div>
 <div class='tag'>
-<a>
-バークレー
-</a>
-</div>
-<div class='tag'>
-<a>
-UCバークレー大学
-</a>
-</div>
-<div class='tag'>
-<a>
-ポートランド
-</a>
-</div>
-<div class='tag'>
-<a>
+<a href="<?php bloginfo('url'); ?>/archives/category/newyork/">
 ニューヨーク
 </a>
 </div>
 <div class='tag'>
-<a>
+<a href="<?php bloginfo('url'); ?>/archives/category/portland/">
+ポートランド
+</a>
+</div>
+<div class='tag'>
+<a href="<?php bloginfo('url'); ?>/archives/category/hawaii/">
 ハワイ
 </a>
 </div>
 <div class='tag'>
-<a>
+<a href="<?php bloginfo('url'); ?>/archives/category/info/">
 お知らせ/募集
 </a>
 </div>
 <div class='tag'>
-<a>
+<a href="<?php bloginfo('url'); ?>/archives/category/sharehouse/">
 シェアハウス
 </a>
 </div>

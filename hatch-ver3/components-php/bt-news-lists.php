@@ -1,7 +1,7 @@
 <div class='news-list'>
 <div class='header-side'>
 <div class='header-side__title'>
-最新記事
+最新記事!
 <i class="fas fa-arrow-up"></i>
 </div>
 </div>
@@ -11,6 +11,7 @@
 <?php if($countlists == 3 or $countlists == 6 or $countlists == 12) : ?>
 
 <!-- ここに広告のコードor画像など --!>
+<br/>
 <div class="google-ads google-ads--list">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -23,6 +24,7 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
+
 <?php endif; ?>
   <!--表示する内容が入ります。-->
   <dd class="news-list__content flexbox">
