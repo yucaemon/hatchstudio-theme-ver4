@@ -902,6 +902,9 @@ body {
     width: 90%;
     margin: 0 auto;
   }
+  &__body{
+    width: 100%;
+  }
   &__header{
     padding-bottom: 15px;
     &--en {
@@ -923,11 +926,13 @@ body {
     }
   }
   &__pictures {
-    li{
-      margin-right: 3%;
-      width: 17%;
-      height: 14%;
-    }
+    width:100%;
+      li{
+        width: 190px
+      }
+      li + li{
+        margin-left: 3%;
+      }
     .our-service {
       &--img{
         width: 100%;
