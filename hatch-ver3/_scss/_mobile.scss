@@ -1151,15 +1151,9 @@ related-article(関連記事)
       &__pictures {
         width: 100%;
         margin: 0 auto;
-        justify-content: space-around;
-
-      li + li{
-        margin-left: 0;
-      }
       li {
       width: 200px;
-      padding-left:0;
-      margin-bottom: 25px;
+      padding:5px 15px 10px 15px;
       }
 
       .our-service--img{

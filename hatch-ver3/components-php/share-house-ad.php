@@ -1,5 +1,5 @@
 <section class='section ad-banner hatching-house zigzag zigzag-blue'>
-<div class='flexbox'>
+<div class='outer-inner flexbox'>
 <div class='hatching-house__header'>
 <div class='hatching-house__header--jp'>
 初渡米！女性一人旅でも安心なハウス

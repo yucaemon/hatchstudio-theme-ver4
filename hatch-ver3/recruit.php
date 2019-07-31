@@ -1,7 +1,7 @@
 <?php /** *  Template Name:  採用ページ */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='recruit-page pages outer'>
+<div class='pages recruit-page outer'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
 <div class='service-page__header'>
@@ -233,7 +233,6 @@ OPTビザサポート有
 </div>
 </div>
 </div>
-</div>
 <div class='outer__inner'>
 <div class='articles__container__bottom flexbox--spacebetween'>
 <div class='bt-left'>
@@ -244,9 +243,8 @@ OPTビザサポート有
 <?php include('components-php/bt-popular-month.php'); ?>
 </div>
 </div>
-</div>
-</body>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
+</div>
 <div class='bottom-container'>
 <?php include('components-php/annie-banner.php'); ?>
 <?php include('components-php/service.php'); ?>
@@ -255,3 +253,5 @@ OPTビザサポート有
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>
+</div>
+</body>

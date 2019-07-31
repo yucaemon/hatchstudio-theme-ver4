@@ -53,10 +53,14 @@ iframe {
 *************************************************/
 
 .outer {
-  width: 1260px;
+  width: 100%;
   &__header {
     margin: 20px auto 0 auto;
   }
+}
+.outer__inner{
+  width: 1260px;
+  margin: 0 auto;
 }
 
 .bottom-container{
@@ -925,13 +929,11 @@ body {
       width: 710px;
     }
   }
-  &__pictures {
+  &__pictures{
     width:100%;
       li{
-        width: 190px
-      }
-      li + li{
-        margin-left: 3%;
+        width: 190px;
+        padding: 10px;
       }
     .our-service {
       &--img{
@@ -1963,12 +1965,9 @@ index
   .box-list li {
     height: 100%;
   }
-  .article-list li + li {
-    padding-left: 27px;
-  }
   .article-list {
     li {
-      padding-bottom: 2%;
+      padding: 0 10px 10px 10px;
       width: 275px;
     }
     .newMark {

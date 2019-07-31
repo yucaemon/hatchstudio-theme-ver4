@@ -1,7 +1,7 @@
 <?php /** *  Template Name:  aboutページ */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='about-page pages outer'>
+<div class='pages about-page outer'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
 <div class='outer__inner'>
@@ -82,7 +82,6 @@ Webサイト&動画制作事業（デザイン/システム開発）
 </div>
 </div>
 </div>
-</div>
 <div class='outer__inner'>
 <div class='articles__container__bottom flexbox--spacebetween'>
 <div class='bt-left'>
@@ -94,7 +93,6 @@ Webサイト&動画制作事業（デザイン/システム開発）
 </div>
 </div>
 </div>
-</body>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
 <?php include('components-php/annie-banner.php'); ?>
@@ -104,3 +102,5 @@ Webサイト&動画制作事業（デザイン/システム開発）
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>
+</div>
+</body>

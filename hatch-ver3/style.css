@@ -7112,9 +7112,13 @@ iframe {
 	layout
 *************************************************/
 .outer {
-  width: 1260px; }
+  width: 100%; }
   .outer__header {
     margin: 20px auto 0 auto; }
+
+.outer__inner {
+  width: 1260px;
+  margin: 0 auto; }
 
 body {
   margin: 0; }
@@ -7780,9 +7784,8 @@ body {
   .our-service__pictures {
     width: 100%; }
     .our-service__pictures li {
-      width: 190px; }
-    .our-service__pictures li + li {
-      margin-left: 3%; }
+      width: 190px;
+      padding: 10px; }
     .our-service__pictures .our-service--img {
       width: 100%;
       height: 120px;
@@ -8713,11 +8716,8 @@ index
 .box-list li {
   height: 100%; }
 
-.article-list li + li {
-  padding-left: 27px; }
-
 .article-list li {
-  padding-bottom: 2%;
+  padding: 0 10px 10px 10px;
   width: 275px; }
 .article-list .newMark {
   padding: 8px 20px;
@@ -9708,14 +9708,10 @@ related-article(関連記事)
     width: 48%; }
   .our-service__pictures {
     width: 100%;
-    margin: 0 auto;
-    justify-content: space-around; }
-    .our-service__pictures li + li {
-      margin-left: 0; }
+    margin: 0 auto; }
     .our-service__pictures li {
       width: 200px;
-      padding-left: 0;
-      margin-bottom: 25px; }
+      padding: 5px 15px 10px 15px; }
     .our-service__pictures .our-service--img {
       height: 100px; }
       .our-service__pictures .our-service--img img {
