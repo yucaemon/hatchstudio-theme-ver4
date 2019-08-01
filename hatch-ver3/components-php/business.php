@@ -1,5 +1,5 @@
 <section class='section ad-banner business'>
-<div class='business__container'>
+<div class='outer__inner business__container'>
 <p class='business-txt'>
 広告掲載＆コラボ、記事広告のご依頼、ご相談はこちら。
 </p>

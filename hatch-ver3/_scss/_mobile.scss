@@ -3,6 +3,11 @@
 
   .outer {
     width: 100%;
+    min-width: initial;
+  }
+
+  .outer__inner{
+    width: 100%;
   }
   /*要素を消す*/
   html {
@@ -1126,7 +1131,7 @@ related-article(関連記事)
 /*components part*/
   .our-service{
       &__header {
-      padding: 15px 0;
+      padding: 15px;
       margin: 0 auto;
       }
       &__body{
@@ -1151,6 +1156,7 @@ related-article(関連記事)
       &__pictures {
         width: 100%;
         margin: 0 auto;
+        padding-bottom: 40px;
       li {
       width: 200px;
       padding:5px 15px 10px 15px;
@@ -1257,9 +1263,10 @@ related-article(関連記事)
       width: 100%;
     }
     .btn-round-white-02{
-      width: 100%;
+      width: auto;
       white-space: pre-wrap;
       display: flex;
+      margin: 0 auto;
     }
 
     .contact-form {
@@ -1353,11 +1360,9 @@ related-article(関連記事)
     .house-page__body__container + .house-page__body__container{
       border-top:none;
     }
-
     &__real-estate__bg-img{
       display: none;
     }
-
   }
 
 }

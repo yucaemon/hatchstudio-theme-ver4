@@ -1,5 +1,6 @@
 <section class='section ad-banner blogger'>
-<div class='blogger__container flexbox'>
+<div class='blogger__container outer__inner'>
+<div class='flexbox'>
 <div class='blogger__header flexbox--h-center'>
 <div class='blogger__header--img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/yman.svg">
@@ -119,6 +120,7 @@ hanter book
 </div>
 <div class='blogger__box__name'>
 YOU
+</div>
 </div>
 </div>
 </div>

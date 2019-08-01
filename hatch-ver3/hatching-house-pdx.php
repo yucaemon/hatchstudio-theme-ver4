@@ -1,7 +1,7 @@
 <?php /** *  Template Name:  はっちんぐハウスPDXページ */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='house-page pages'>
+<div class='house-page pages service-page'>
 <div class='house-page__share-house'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
@@ -131,8 +131,6 @@ HATCHING HOUSE
 </div>
 </div>
 <?php include('components-php/contact-form.php'); ?>
-</div>
-</body>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
 <?php include('components-php/annie-banner.php'); ?>
@@ -142,3 +140,5 @@ HATCHING HOUSE
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>
+</div>
+</body>

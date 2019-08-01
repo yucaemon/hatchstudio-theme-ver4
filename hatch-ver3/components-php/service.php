@@ -1,5 +1,5 @@
 <section class='section our-service'>
-<div class='our-service__container'>
+<div class='outer__inner our-service__container'>
 <div class='our-service__header flexbox'>
 <div class='our-service__txt flexbox'>
 <div class='our-service__header--en'>

@@ -7054,6 +7054,7 @@ figure:hover figcaption {
   opacity: 0;
   overflow: hidden;
   width: 100%;
+  min-width: 1260px;
   left: 0;
   position: absolute;
   background-color: #ffc9bc;
@@ -7112,22 +7113,21 @@ iframe {
 	layout
 *************************************************/
 .outer {
-  width: 100%; }
+  width: 100%;
+  min-width: 1260px; }
   .outer__header {
-    margin: 20px auto 0 auto; }
-
-.outer__inner {
-  width: 1260px;
-  margin: 0 auto; }
+    margin: 20px auto 0 auto;
+    padding: 0 40px; }
+  .outer__inner {
+    width: 1205px;
+    margin: 0 auto;
+    padding: 40px 0; }
+  .outer__foot {
+    width: 100%;
+    margin: 0 auto; }
 
 body {
   margin: 0; }
-
-.outer__inner {
-  padding-top: 50px; }
-
-.pages .outer__inner {
-  margin: 0 auto; }
 
 .header-sp {
   display: none; }
@@ -7296,7 +7296,7 @@ body {
   margin: 0 auto; }
 
 .header__pic--logo {
-  width: 37%; }
+  width: 430px; }
 
 .background-draw {
   margin-top: auto; }
@@ -7657,7 +7657,7 @@ body {
       width: 80px;
       padding-right: 20px; }
   .hatching-house__pictures li {
-    width: 30%;
+    width: 29%;
     height: 100%; }
   .hatching-house__pictures .hatching-house--img img {
     width: 100%;
@@ -7684,7 +7684,8 @@ body {
       object-fit: cover;
       display: block; }
   .annie .annie-content {
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 410px; }
   .annie .annie-header {
     text-align: center;
     padding-top: 15%; }
@@ -7784,7 +7785,7 @@ body {
   .our-service__pictures {
     width: 100%; }
     .our-service__pictures li {
-      width: 190px;
+      width: 207px;
       padding: 10px; }
     .our-service__pictures .our-service--img {
       width: 100%;
@@ -8310,8 +8311,7 @@ body {
 
 *************************************************/
 .pages .outer__inner {
-  width: 100%;
-  margin: 0 auto; }
+  width: 1100px; }
 .pages__container {
   width: 100%;
   margin: 0 auto 80px auto; }
@@ -8456,6 +8456,12 @@ body {
 service-page/ web & translate & contens
 
 *************************************************/
+.service-page #gnav > ul .menu {
+  min-width: inherit; }
+.service-page .outer__inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 60px; }
 .service-page__header {
   background-color: #ebd4a4;
   height: 130px;
@@ -8664,14 +8670,6 @@ bootstrap/comprnets
 index
 
 *************************************************/
-.outer__header {
-  padding: 0 40px; }
-.outer__inner {
-  padding: 40px; }
-.outer__foot {
-  width: 100%;
-  margin: 0 auto; }
-
 .middle-contain {
   width: 70%; }
 
@@ -8892,6 +8890,10 @@ category-page
 /* 	mobile settings windowサイズが680以下になった時の処理 */
 @media (max-width: 680px) {
   .outer {
+    width: 100%;
+    min-width: initial; }
+
+  .outer__inner {
     width: 100%; }
 
   /*要素を消す*/
@@ -9686,7 +9688,7 @@ related-article(関連記事)
 
   /*components part*/
   .our-service__header {
-    padding: 15px 0;
+    padding: 15px;
     margin: 0 auto; }
   .our-service__body {
     width: 100%; }
@@ -9708,7 +9710,8 @@ related-article(関連記事)
     width: 48%; }
   .our-service__pictures {
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-bottom: 40px; }
     .our-service__pictures li {
       width: 200px;
       padding: 5px 15px 10px 15px; }
@@ -9793,9 +9796,10 @@ related-article(関連記事)
   .pages__container {
     width: 100%; }
   .pages .btn-round-white-02 {
-    width: 100%;
+    width: auto;
     white-space: pre-wrap;
-    display: flex; }
+    display: flex;
+    margin: 0 auto; }
   .pages .contact-form .contact-form__img {
     display: none; }
   .pages .contact-form .notice-box {
@@ -9980,11 +9984,6 @@ related-article(関連記事)
     padding: 10px 5px; }
   .header-bar__logo .search__form {
     display: none; }
-  .header-bar__logo .header-bar__inner {
-    width: 15%; }
-
-  .header__pic--logo {
-    width: 46%; }
 
   .second-section .middle-contain .article-list__text .list-title {
     font-size: 0.9rem; }

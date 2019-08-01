@@ -1,6 +1,8 @@
 <footer class='footer'>
 <div class='outer__foot'>
-<div class='footer__content flexbox'>
+<div class='footer__content'>
+<div class='outer__inner'>
+<div class='flexbox'>
 <div class='footer__box page__links'>
 <dl>
 <dt class='footer__box__title'>
@@ -130,5 +132,7 @@ ABOUT
 </div>
 <div class='copyright'>
 © HATCHSTUDIO INC. All Rights Reserved.
+</div>
+</div>
 </div>
 </footer>

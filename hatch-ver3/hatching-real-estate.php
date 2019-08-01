@@ -1,7 +1,7 @@
 <?php /** *  Template Name:  はっち不動産ページ */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='house-page pages'>
+<div class='house-page pages service-page'>
 <div class='house-page__real-estate'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
@@ -289,8 +289,6 @@ walnut street
 </div>
 </section>
 <?php include('components-php/contact-form.php'); ?>
-</div>
-</body>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
 <?php include('components-php/annie-banner.php'); ?>
@@ -300,3 +298,5 @@ walnut street
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>
+</div>
+</body>

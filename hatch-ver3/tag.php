@@ -66,8 +66,6 @@
 </div>
 </div>
 </div>
-</div>
-</body>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
 <?php include('components-php/service.php'); ?>
@@ -76,3 +74,5 @@
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>
+</div>
+</body>

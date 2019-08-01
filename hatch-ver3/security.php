@@ -1,7 +1,7 @@
 <?php /** *  Template Name:  セキュリティーページ */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='pages policy-page pages outer'>
+<div class='policy-page pages outer'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
 <div class='outer__inner'>

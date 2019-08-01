@@ -41,8 +41,6 @@ WEBサイト翻訳
 </div>
 </div>
 <?php include('components-php/contact-form.php'); ?>
-</div>
-</body>
 <div class='bottom-container'>
 <?php include('components-php/annie-banner.php'); ?>
 <?php include('components-php/service.php'); ?>
@@ -51,3 +49,5 @@ WEBサイト翻訳
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>
+</div>
+</body>

@@ -1,111 +1,113 @@
 %footer.footer
   .outer__foot
-    .footer__content.flexbox
-      .footer__box.page__links
-        %dl
-          %dt.footer__box__title
-            BLOG
-          %dd.footer__box__lists
-            %ul
-              .footer__nimi-box
-                %li
-                  :plain
-                    <a href="<?php bloginfo('url'); ?>/archives/category/sanfrancisco/">サンフランシスコ/バークレー</a>
-                %li
-                  :plain
-                    <a href="<?php bloginfo('url'); ?>/archives/category/newyork/">ニューヨーク</a>
-                %li
-                  :plain
-                    <a href="<?php bloginfo('url'); ?>/archives/category/portland/">ポートランド</a>
-                %li
-                  :plain
-                    <a href="<?php bloginfo('url'); ?>/archives/category/hawaii/">ハワイ</a>
-                %li
-                  :plain
-                    <a href="<?php bloginfo('url'); ?>/archives/category/info/">お知らせ/募集</a>
-                %li
-                  :plain
-                    <a href="<?php bloginfo('url'); ?>/archives/category/sharehouse/">シェアハウス</a>
-      .footer__box.page__links
-        %dl
-          %dt.footer__box__title
-            OUR SERVICE
-          %dd.footer__box__lists
-            %ul
-              .footer__nimi-box
-                %li
-                  :plain
-                    <a href="<?php echo esc_url( home_url( '/web' ) ); ?>" class="megamenu-inner-text">
-                      WEB/動画制作
-                    </a>
-                %li
-                  :plain
-                    <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
-                      コンテンツ制作
-                    </a>
-                %li
-                  :plain
-                    <a href="<?php echo esc_url( home_url( '/translate' ) ); ?>" class="megamenu-inner-text">
-                      英語/中国翻訳
-                    </a>
-                %li
-                  :plain
-                    <a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>" class="megamenu-inner-text">
-                      ゲストハウス
-                    </a>
-                %li
-                  :plain
-                    <a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>" class="megamenu-inner-text">
-                      不動産サポート
-                    </a>
-      .footer__box.page__links
-        %dl
-          %dt.footer__box__title
-            ABOUT
-          %dd.footer__box__lists
-            %ul
-              .footer__nimi-box
-                %li
-                  :plain
-                    <a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="megamenu-inner-text">
-                      会社概要
-                    </a>
-                %li
-                  :plain
-                    <a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>" class="megamenu-inner-text">
-                      採用
-                    </a>
-                %li
-                  :plain
-                    <a href="<?php echo esc_url( home_url( '/rule' ) ); ?>" class="megamenu-inner-text">
-                      利用規約
-                    </a>
-                %li
-                  :plain
-                    <a href="<?php echo esc_url( home_url( '/policy' ) ); ?>" class="megamenu-inner-text">
-                      ポリシー
-                    </a>
-                %li
-                  :plain
-                    <a href="<?php echo esc_url( home_url( '/security' ) ); ?>" class="megamenu-inner-text">
-                     セキュリティー
-                    </a>
-                %li
-                  :plain
-                    <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="megamenu-inner-text">
-                      お問い合わせ
-                    </a>
+    .footer__content
+      .outer__inner
+        .flexbox
+          .footer__box.page__links
+            %dl
+              %dt.footer__box__title
+                BLOG
+              %dd.footer__box__lists
+                %ul
+                  .footer__nimi-box
+                    %li
+                      :plain
+                        <a href="<?php bloginfo('url'); ?>/archives/category/sanfrancisco/">サンフランシスコ/バークレー</a>
+                    %li
+                      :plain
+                        <a href="<?php bloginfo('url'); ?>/archives/category/newyork/">ニューヨーク</a>
+                    %li
+                      :plain
+                        <a href="<?php bloginfo('url'); ?>/archives/category/portland/">ポートランド</a>
+                    %li
+                      :plain
+                        <a href="<?php bloginfo('url'); ?>/archives/category/hawaii/">ハワイ</a>
+                    %li
+                      :plain
+                        <a href="<?php bloginfo('url'); ?>/archives/category/info/">お知らせ/募集</a>
+                    %li
+                      :plain
+                        <a href="<?php bloginfo('url'); ?>/archives/category/sharehouse/">シェアハウス</a>
+          .footer__box.page__links
+            %dl
+              %dt.footer__box__title
+                OUR SERVICE
+              %dd.footer__box__lists
+                %ul
+                  .footer__nimi-box
+                    %li
+                      :plain
+                        <a href="<?php echo esc_url( home_url( '/web' ) ); ?>" class="megamenu-inner-text">
+                          WEB/動画制作
+                        </a>
+                    %li
+                      :plain
+                        <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
+                          コンテンツ制作
+                        </a>
+                    %li
+                      :plain
+                        <a href="<?php echo esc_url( home_url( '/translate' ) ); ?>" class="megamenu-inner-text">
+                          英語/中国翻訳
+                        </a>
+                    %li
+                      :plain
+                        <a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>" class="megamenu-inner-text">
+                          ゲストハウス
+                        </a>
+                    %li
+                      :plain
+                        <a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>" class="megamenu-inner-text">
+                          不動産サポート
+                        </a>
+          .footer__box.page__links
+            %dl
+              %dt.footer__box__title
+                ABOUT
+              %dd.footer__box__lists
+                %ul
+                  .footer__nimi-box
+                    %li
+                      :plain
+                        <a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="megamenu-inner-text">
+                          会社概要
+                        </a>
+                    %li
+                      :plain
+                        <a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>" class="megamenu-inner-text">
+                          採用
+                        </a>
+                    %li
+                      :plain
+                        <a href="<?php echo esc_url( home_url( '/rule' ) ); ?>" class="megamenu-inner-text">
+                          利用規約
+                        </a>
+                    %li
+                      :plain
+                        <a href="<?php echo esc_url( home_url( '/policy' ) ); ?>" class="megamenu-inner-text">
+                          ポリシー
+                        </a>
+                    %li
+                      :plain
+                        <a href="<?php echo esc_url( home_url( '/security' ) ); ?>" class="megamenu-inner-text">
+                         セキュリティー
+                        </a>
+                    %li
+                      :plain
+                        <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="megamenu-inner-text">
+                          お問い合わせ
+                        </a>
 
-      .footer__box.footer__logo__box
-        .footer__logo__img
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-sky.svg" width="250"></a>
-        .footer__logo__txt
-          はっちすたじおは、アメリカから『ワクワクな体験』
-          をお届けするおもしろ情報まがじんサイトです。
+          .footer__box.footer__logo__box
+            .footer__logo__img
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-sky.svg" width="250"></a>
+            .footer__logo__txt
+              はっちすたじおは、アメリカから『ワクワクな体験』
+              をお届けするおもしろ情報まがじんサイトです。
 
-        .footer__sns-icons.flexbox--h-center
-          <a href="https://www.facebook.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon-sky.svg"></a>
-          <a href="https://twitter.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon-sky.svg"></a>
+            .footer__sns-icons.flexbox--h-center
+              <a href="https://www.facebook.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon-sky.svg"></a>
+              <a href="https://twitter.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon-sky.svg"></a>
 
-  .copyright
-    © HATCHSTUDIO INC. All Rights Reserved.
+      .copyright
+        © HATCHSTUDIO INC. All Rights Reserved.

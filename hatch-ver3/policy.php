@@ -1,7 +1,7 @@
 <?php /** *  Template Name:  ポリシーページ */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='pages policy-page pages outer'>
+<div class='policy-page pages outer'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
 <div class='outer__inner'>
@@ -123,8 +123,6 @@ Berkeley, California USA
 </div>
 </div>
 </div>
-</div>
-</body>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
 <?php include('components-php/annie-banner.php'); ?>
@@ -134,3 +132,5 @@ Berkeley, California USA
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>
+</div>
+</body>

@@ -54,13 +54,20 @@ iframe {
 
 .outer {
   width: 100%;
+  min-width: 1260px;
   &__header {
     margin: 20px auto 0 auto;
+    padding: 0 40px;
   }
-}
-.outer__inner{
-  width: 1260px;
-  margin: 0 auto;
+  &__inner{
+    width: 1205px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  &__foot {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .bottom-container{
@@ -71,16 +78,7 @@ body {
   margin: 0;
 }
 
-.outer__inner {
-  padding-top: 50px;
 
-}
-
-.pages {
-  .outer__inner {
-    margin: 0 auto;
-  }
-}
 .header-sp {
   display: none;
 }
@@ -269,7 +267,7 @@ body {
     margin: 0 auto;
 }
 .header__pic--logo{
-  width: 37%;
+  width: 430px;
 }
 .background-draw{
   margin-top: auto;
@@ -768,7 +766,7 @@ body {
   }
   &__pictures {
     li{
-      width: 30%;
+      width: 29%;
       height: 100%;
     }
     .hatching-house {
@@ -810,6 +808,7 @@ body {
   }
   .annie-content {
     margin: 0 auto;
+    width: 410px;
   }
   .annie-header{
     text-align: center;
@@ -932,7 +931,7 @@ body {
   &__pictures{
     width:100%;
       li{
-        width: 190px;
+        width: 207px;
         padding: 10px;
       }
     .our-service {
@@ -1478,10 +1477,10 @@ body {
 	pages
 
 *************************************************/
+
 .pages {
-  .outer__inner{
-    width: 100%;
-    margin: 0 auto;
+  .outer__inner {
+      width: 1100px;
   }
   &__container {
     width: 100%;
@@ -1649,6 +1648,14 @@ service-page/ web & translate & contens
 
 *************************************************/
 .service-page{
+  #gnav > ul .menu{
+    min-width: inherit;
+  }
+  .outer__inner{
+    width: 100%;
+    margin: 0 auto;
+    padding:40px 60px;
+  }
   &__header {
     background-color: $yellow_01;
     height: 130px;
@@ -1894,20 +1901,6 @@ bootstrap/comprnets
 index
 
 *************************************************/
-
-.outer {
-  &__header {
-    padding: 0 40px;
-  }
-  &__inner {
-    padding: 40px;
-  }
-  &__foot {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-}
 
 .middle-contain {
   width: 70%;

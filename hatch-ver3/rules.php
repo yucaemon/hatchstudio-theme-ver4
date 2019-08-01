@@ -1,7 +1,7 @@
 <?php /** *  Template Name:  利用規約 */ ?>
 <?php include('head.php'); ?>
 <body>
-<div class='pages rules-page'>
+<div class='pages rules-page outer'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
 <div class='outer__inner'>
