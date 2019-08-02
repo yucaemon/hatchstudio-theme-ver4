@@ -7804,6 +7804,16 @@ body {
       letter-spacing: 2px;
       text-align: center; }
 
+.author__img img {
+  width: 50px;
+  border: solid 1px #cccccc;
+  margin: 0 15px; }
+
+.wrote-models-lists__name {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-top: 7px; }
+
 /*
 
 	single.page
@@ -7835,9 +7845,6 @@ body {
     width: 312px; }
 .single-page__detail {
   align-items: center; }
-.single-page__author__img img {
-  width: 45px;
-  border: solid 1px #000000; }
 .single-page__post-info {
   align-items: center; }
 .single-page__dates {
@@ -8194,16 +8201,8 @@ body {
     letter-spacing: 1px;
     padding-right: 10px; }
   .single-page .wrote-models-lists__img {
-    padding-right: 17px; }
-    .single-page .wrote-models-lists__img img {
-      height: 45px !important;
-      width: 45px !important;
-      -webkit-border-radius: 50% !important;
-      -moz-border-radius: 50% !important;
-      border-radius: 50% !important;
-      -moz-background-clip: padding;
-      -webkit-background-clip: padding-box;
-      background-clip: padding-box; }
+    padding-right: 17px;
+    border-radius: 60px　 !important; }
   .single-page .wrote-models-lists .author-profile-sns {
     line-height: 5px;
     height: 24px;

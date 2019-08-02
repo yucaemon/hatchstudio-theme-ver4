@@ -3,6 +3,12 @@
 <div class='single-page outer'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
+<?php if ( have_posts() ) : ?>
+<?php while ( have_posts() ) : the_post(); ?>
+<?php the_content();?>
+<?php endwhile; ?>
+<?php else : ?>
+<?php endif; ?>
 <div class='outer__inner'>
 <div class='single__container'>
 <div class='single__container__body flexbox--spacebetween'>
@@ -43,8 +49,8 @@
 <div class='single-page__dates'>
 <?php the_time('Y/m/d'); ?>
 </div>
-<div class='single-page__author__img circle'>
-<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/popo.jpg"></a>
+<div class='author__img circle'>
+<?php echo get_avatar( get_the_author_id(), 50 ); ?>
 </div>
 </div>
 </div>

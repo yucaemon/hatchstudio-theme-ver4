@@ -9,10 +9,12 @@
 <div class='author__container__body flexbox--spacebetween'>
 <div class='middle-contain'>
 <h1 class='components-title'>
-<div class="wrote-models-lists__img">
-<?php echo get_avatar( get_the_author_id(), 100 ); ?>
+<div class="author__img circle">
+  <?php echo get_avatar( get_the_author_id(), 50 ); ?>
 </div>
-<div class="wrote-models-lists__name"><?php echo get_the_author(); ?></div>
+<div class="wrote-models-lists__name">
+  <?php echo get_the_author(); ?>
+</div>
 </h1>
 <ul class='post-lists article-list box-list flexbox--start'>
 <?php $author = get_query_var('author'); $paged = get_query_var('paged'); $posts = query_posts('posts_per_page=20&author=' . $author . '&paged=' . $paged); ?>
