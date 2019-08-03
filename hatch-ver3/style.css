@@ -8592,7 +8592,16 @@ house-page/share-house＆real-estate
   border: solid 1px #dadada;
   padding: 30px;
   margin-bottom: 33px;
-  background-color: #f9f9f9; }
+  background-color: #f9f9f9;
+  width: 30%;
+  font-size: 13px; }
+  .house-page__body__detail li, .service-page__list__detail li {
+    padding-bottom: 10px; }
+.house-page__body__notice {
+  text-align: start;
+  padding: 25px;
+  border: solid 1px #dedede;
+  margin-bottom: 40px; }
 
 /*
 

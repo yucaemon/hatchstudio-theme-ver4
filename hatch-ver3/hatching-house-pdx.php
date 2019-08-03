@@ -72,7 +72,7 @@ HATCHING HOUSE
 <h2 class='house-page__body__header'>
 宿泊費用とアメニティ・設備
 </h2>
-<div class='house-page__body__pics flexbox--spacebetween'>
+<div class='house-page__body__price flexbox--spacebetween'>
 <div class='house-page__body__img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-09.jpg">
 </div>
@@ -83,11 +83,70 @@ HATCHING HOUSE
 <img src="<?php echo get_template_directory_uri(); ?>/images/hatching-house-pdx-07.jpg">
 </div>
 </div>
+<div class='house-page__body__pics flexbox--spacebetween'>
+<div class='house-page__body__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/room-c.jpg">
+</div>
+<div class='house-page__body__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/room-b.jpg">
+</div>
+<div class='house-page__body__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/room-a.jpg">
+</div>
+</div>
 <div class='house-page__body__read'>
+<div class='flexbox--spacebetween'>
 <ul class='house-page__body__detail'>
 <li>
+６ヶ月以上滞在の場合 長期割適用 $450/１ヶ月
+</li>
+<li>
+2名様滞在の場合 1名様あたり $15/1泊
+</li>
+<li>
 <i class="fas fa-bed"></i>
-家具付き（個室大:キングサイズベット、個室(A):シングルサイズベット、個室（B):シングルサイズベット二つ）
+キングサイズベット&シングルサイズベット
+</li>
+<li>
+タンス＆クローゼット
+</li>
+<li>
+<i class="fas fa-tint"></i>
+洗濯機、乾燥機
+</li>
+<li>
+<i class="fas fa-mug-hot"></i>
+タオル、ドライヤー
+</li>
+<li>
+<i class="fas fa-smoking-ban"></i>
+禁煙(外の庭でのみ喫煙可能)
+</li>
+<li>
+<i class="fas fa-utensils"></i>
+共同キッチン
+</li>
+<li>
+<i class="fas fa-car"></i>
+オプション 送迎あり
+</li>
+<li>
+暖房&ファン
+</li>
+</ul>
+<ul class='house-page__body__detail'>
+<li>
+６ヶ月以上滞在の場合 長期割適用 $650/１ヶ月
+</li>
+<li>
+1名様のみ
+</li>
+<li>
+<i class="fas fa-bed"></i>
+キングサイズベット&シングルサイズベット
+</li>
+<li>
+タンス＆クローゼット
 </li>
 <li>
 <i class="fas fa-tint"></i>
@@ -110,8 +169,47 @@ HATCHING HOUSE
 オプション 送迎あり
 </li>
 </ul>
+<ul class='house-page__body__detail'>
+<li>
+６ヶ月以上滞在の場合 長期割適用 $800/１ヶ月
+</li>
+<li>
+2名様滞在の場合 1名様あたり $15/1泊
+</li>
+<li>
+<i class="fas fa-bed"></i>
+シングルサイズベット
+</li>
+<li>
+タンス＆クローゼット
+</li>
+<li>
+<i class="fas fa-tint"></i>
+洗濯機、乾燥機
+</li>
+<li>
+<i class="fas fa-mug-hot"></i>
+タオル、ドライヤー
+</li>
+<li>
+<i class="fas fa-smoking-ban"></i>
+禁煙(外の庭でのみ喫煙可能)
+</li>
+<li>
+<i class="fas fa-utensils"></i>
+共同キッチン
+</li>
+<li>
+<i class="fas fa-car"></i>
+オプション 送迎あり
+</li>
+</ul>
+</div>
+</div>
+<div class='house-page__body__notice'>
 <p>
-※写真イメージは、個室（大）のお部屋の写真になります。
+<i class="fas fa-exclamation-triangle"></i>
+注意書き
 </p>
 <p>
 ※写真イメージは、個室（大）お部屋には、プライベート用のシャワー、トイレがつきますが、個室(A)(B)のお部屋は、シャワー、トイレは共同になります。
