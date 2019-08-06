@@ -1774,6 +1774,9 @@ house-page/share-house＆real-estate
           padding-bottom: 50px;
         }
     }
+    .price-pic img{
+      padding-bottom: 0;
+    }
     &__header {
       padding: 40px;
       letter-spacing: 1px;
@@ -1785,6 +1788,30 @@ house-page/share-house＆real-estate
     &__read {
         padding-bottom: 50px;
         text-align: start;
+    }
+    &__box{
+      border: solid 1px #dadada;
+      padding: 30px;
+      margin-bottom: 33px;
+      background-color: #fff8f8;
+      width: 30%;
+      font-size: 13px;
+
+
+      li.lists__plice{
+        &--day {
+            font-weight: bold;
+            font-size: 36px;
+            text-align: center;
+            padding-bottom: 20px;
+            letter-spacing: 0.05em;
+        }
+        &--title{
+          padding: 0;
+          text-align: center;
+          font-size: 13px;
+        }
+      }
     }
   }
   &__share-house{
@@ -1812,19 +1839,31 @@ house-page/share-house＆real-estate
     padding: 30px;
     margin-bottom: 33px;
     background-color: #f9f9f9;
-    width: 30%;
+    width: 100%;
     font-size: 13px;
     li{
       padding-bottom:10px;
     }
+
   }
     &__body__notice{
       text-align: start;
       padding: 25px;
       border: solid 1px #dedede;
       margin-bottom: 40px;
+      .room-notice--title {
+      font-size: 19px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      }
+      .room-notice--txt {
+      font-size: 13px;
+      color: #929292;
+      padding-bottom: 30px;
+      }
+
     }
-}
+  }
 
 /*
 
