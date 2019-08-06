@@ -85,9 +85,10 @@ HATCHING HOUSE
 <div class='house-page__body__box'>
 <ul class='detail__lists lists__plice'>
 <li class='lists__plice--title'>
-お友達との節約旅行にぴったり♡
-<br>
-1F/cozy（コージー）/ROOM
+お友達との節約旅行におすすめ♡
+<div class='lists__plice--title--room-name'>
+1F/Cozy（コージー）/ROOM
+</div>
 </li>
 <li class='lists__plice--day'>
 $26/1泊
@@ -96,7 +97,7 @@ $26/1泊
 <ul class='detail__lists lists__facility'>
 <li>
 <i class="fas fa-bed"></i>
-シングルサイズベット&クイーンソファーベット
+シングルサイズベット&ダブルベット
 </li>
 <li>
 <i class="fas fa-bath"></i>
@@ -104,7 +105,7 @@ $26/1泊
 </li>
 <li>
 <i class="fas fa-user-plus"></i>
-追加料金$8で2名様まで宿泊可
+2名様の場合、1人あたり/$18で宿泊可能
 </li>
 <li>
 <i class="fas fa-award"></i>
@@ -115,9 +116,10 @@ $26/1泊
 <div class='house-page__body__box'>
 <ul class='detail__lists lists__plice'>
 <li class='lists__plice--title'>
-静かにゆったり♡女ひとり旅向け
-<br>
-2F/single (シングル)/ROOM
+静かにゆったり♡ひとり旅におすすめ
+<div class='lists__plice--title--room-name'>
+2F/Single (シングル)/ROOM
+</div>
 </li>
 <li class='lists__plice--day'>
 $34/1泊
@@ -145,9 +147,10 @@ $34/1泊
 <div class='house-page__body__box'>
 <ul class='detail__lists lists__plice'>
 <li class='lists__plice--title'>
-プライベートに過ごしたい♡カップル向き
-<br>
-2F/queen（クィーン）/ROOM
+プライベートに過ごしたい♡カップルおすすめ
+<div class='lists__plice--title--room-name'>
+2F/Queen（クィーン）/ROOM
+</div>
 </li>
 <li class='lists__plice--day'>
 $58/1泊
@@ -156,7 +159,7 @@ $58/1泊
 <ul class='detail__lists lists__facility'>
 <li>
 <i class="fas fa-bed"></i>
-ダブルサイズベット
+クィーンサイズベット
 </li>
 <li>
 <i class="fas fa-bath"></i>
@@ -164,7 +167,7 @@ $58/1泊
 </li>
 <li>
 <i class="fas fa-user-plus"></i>
-プラス$8で2名様まで宿泊可
+2名様の場合、1人あたり/$33で宿泊可能
 </li>
 <li>
 <i class="fas fa-award"></i>
@@ -266,10 +269,16 @@ WIFI（無料インターネット）
 お支払いは、お部屋に到着してから、基本的にアメリカドル現金でのみお願いしております。（他にVenmo,米銀行小切手、米ペイパルの支払い可能）
 </p>
 <p class='room-notice--title'>
-予約手続きについて
+ご予約手続きについて
 </p>
 <P class='room-notice--txt'>
-予約手続きについては、ご予約したい日にち、チェックイン希望時間を記入の上、以下の問い合わせフォームにて、ご連絡ください。
+予約手続きについては、ご予約したい日にち、チェックイン希望時間を記入の上、以下の問い合わせフォームにて、ご連絡ください。6月ー10月の観光シーズン中は、ご予約がすぐに埋まってしまうことがあるので早めのご予約をお願いしております。
+</P>
+<p class='room-notice--title'>
+すでに満室時のキャンセル待ちについて
+</p>
+<P class='room-notice--txt'>
+夏、秋の観光シーズン間は、3ヶ月先までご予約が埋まってしまうことが多いため、ご予約をお断り又は、キャンセル待ちとさせていただく事が多くなってしまっておりますので、早めのご予約をお勧めしています。又、キャンセル待ちを希望した場合、キャンセルが出次第すぐに優先してメールにてご連絡を差し上げております。
 </P>
 <p class='room-notice--title'>
 予約キャンセルついて

@@ -8552,8 +8552,6 @@ house-page/share-house＆real-estate
 .house-page__body__container {
   text-align: center;
   padding-bottom: 50px; }
-.house-page__body__container + .house-page__body__container {
-  border-top: solid 1px #d4d4d4; }
 .house-page__body__img {
   width: 30%;
   height: 255px; }
@@ -8583,16 +8581,20 @@ house-page/share-house＆real-estate
   background-color: #fff8f8;
   width: 30%;
   font-size: 13px; }
-  .house-page__body__box li.lists__plice--day {
+  .house-page__body__box .lists__plice--day {
     font-weight: bold;
     font-size: 36px;
     text-align: center;
     padding-bottom: 20px;
     letter-spacing: 0.05em; }
-  .house-page__body__box li.lists__plice--title {
+  .house-page__body__box .lists__plice--title {
     padding: 0;
     text-align: center;
     font-size: 13px; }
+    .house-page__body__box .lists__plice--title--room-name {
+      background-color: #fff;
+      padding: 7px 10px;
+      margin-top: 10px; }
 .house-page__share-house__bg-img {
   background-image: url(./images/hatching-house-pdx-bg.jpg);
   width: 100%;
