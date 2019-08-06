@@ -8,6 +8,7 @@
 
   .outer__inner{
     width: 100%;
+    padding: 20px 15px;
   }
   /*要素を消す*/
   html {
@@ -950,7 +951,7 @@ related-article(関連記事)
       .outer__inner {
       width: 100%;
       margin: 0 auto;
-      padding-top: 0;
+      padding: 20px 15px;
     }
 
 
@@ -1158,8 +1159,8 @@ related-article(関連記事)
         margin: 0 auto;
         padding-bottom: 40px;
       li {
-      width: 200px;
-      padding:5px 15px 10px 15px;
+        width: 47%;
+        padding:5px 15px 10px 15px;
       }
 
       .our-service--img{
@@ -1363,6 +1364,27 @@ related-article(関連記事)
     &__real-estate__bg-img{
       display: none;
     }
+    .house-page__body__box{
+      font-size: 6px;
+      padding: 10px 8px;
+    .lists__plice{
+      &--day {
+        font-size: 12px;
+        padding-bottom: 8px;
+        letter-spacing: 0.05em;
+      }
+      &--title{
+        font-size: 9px;
+        &--room-name{
+          font-size: 6px;
+          margin: 5px 0 9px 0;
+        }
+      }
+    }
+  }
+
+
+
   }
 
 }

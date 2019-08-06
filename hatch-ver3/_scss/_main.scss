@@ -783,7 +783,7 @@ body {
         font-weight: bold;
         letter-spacing: 0.10em;
         font-family: $font_family_jp;
-
+        text-align: center;
       }
     }
   }
@@ -808,7 +808,7 @@ body {
   }
   .annie-content {
     margin: 0 auto;
-    width: 410px;
+    //width: 410px;
   }
   .annie-header{
     text-align: center;
@@ -931,8 +931,9 @@ body {
   &__pictures{
     width:100%;
       li{
-        width: 207px;
-        padding: 10px;
+        margin-right: 3%;
+        width: 17%;
+        height: 14%;
       }
     .our-service {
       &--img{
@@ -1797,7 +1798,7 @@ house-page/share-house＆real-estate
       .lists__plice{
         &--day {
             font-weight: bold;
-            font-size: 36px;
+            font-size: 34px;
             text-align: center;
             padding-bottom: 20px;
             letter-spacing: 0.05em;
@@ -1809,7 +1810,7 @@ house-page/share-house＆real-estate
           &--room-name{
             background-color: #fff;
             padding: 7px 10px;
-            margin-top: 10px;
+            margin: 5px 0 17px 0;
           }
         }
       }

@@ -7668,7 +7668,8 @@ body {
     font-size: 1.1em;
     font-weight: bold;
     letter-spacing: 0.10em;
-    font-family: "Montserrat", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif; }
+    font-family: "Montserrat", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+    text-align: center; }
   .hatching-house__btn--img {
     width: 100px; }
 
@@ -7684,8 +7685,7 @@ body {
       object-fit: cover;
       display: block; }
   .annie .annie-content {
-    margin: 0 auto;
-    width: 410px; }
+    margin: 0 auto; }
   .annie .annie-header {
     text-align: center;
     padding-top: 15%; }
@@ -7785,8 +7785,9 @@ body {
   .our-service__pictures {
     width: 100%; }
     .our-service__pictures li {
-      width: 207px;
-      padding: 10px; }
+      margin-right: 3%;
+      width: 17%;
+      height: 14%; }
     .our-service__pictures .our-service--img {
       width: 100%;
       height: 120px;
@@ -8583,7 +8584,7 @@ house-page/share-house＆real-estate
   font-size: 13px; }
   .house-page__body__box .lists__plice--day {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 34px;
     text-align: center;
     padding-bottom: 20px;
     letter-spacing: 0.05em; }
@@ -8594,7 +8595,7 @@ house-page/share-house＆real-estate
     .house-page__body__box .lists__plice--title--room-name {
       background-color: #fff;
       padding: 7px 10px;
-      margin-top: 10px; }
+      margin: 5px 0 17px 0; }
 .house-page__share-house__bg-img {
   background-image: url(./images/hatching-house-pdx-bg.jpg);
   width: 100%;
@@ -8931,7 +8932,8 @@ category-page
     min-width: initial; }
 
   .outer__inner {
-    width: 100%; }
+    width: 100%;
+    padding: 20px 15px; }
 
   /*要素を消す*/
   html {
@@ -9609,7 +9611,7 @@ related-article(関連記事)
   .pages .outer__inner {
     width: 100%;
     margin: 0 auto;
-    padding-top: 0; }
+    padding: 20px 15px; }
   .pages__date-info {
     width: 100%; }
   .pages .notice-bar {
@@ -9750,7 +9752,7 @@ related-article(関連記事)
     margin: 0 auto;
     padding-bottom: 40px; }
     .our-service__pictures li {
-      width: 200px;
+      width: 47%;
       padding: 5px 15px 10px 15px; }
     .our-service__pictures .our-service--img {
       height: 100px; }
@@ -9899,7 +9901,19 @@ related-article(関連記事)
   .house-page .house-page__body__container + .house-page__body__container {
     border-top: none; }
   .house-page__real-estate__bg-img {
-    display: none; } }
+    display: none; }
+  .house-page .house-page__body__box {
+    font-size: 6px;
+    padding: 10px 8px; }
+    .house-page .house-page__body__box .lists__plice--day {
+      font-size: 12px;
+      padding-bottom: 8px;
+      letter-spacing: 0.05em; }
+    .house-page .house-page__body__box .lists__plice--title {
+      font-size: 9px; }
+      .house-page .house-page__body__box .lists__plice--title--room-name {
+        font-size: 6px;
+        margin: 5px 0 9px 0; } }
 /*
 
 	mobile settings windowサイズが1024以下- 680以上になった時の処理
@@ -10015,7 +10029,11 @@ related-article(関連記事)
     background-position: 0 -356px; }
   .service-page__translate__bg-img {
     padding-top: 36%;
-    background-position: 0px -470px; } }
+    background-position: 0px -470px; }
+  .service-page__pictures li {
+    width: 45%;
+    margin-right: 0;
+    margin-bottom: 25px; } }
 @media (max-width: 850px) {
   .header-bar .header-bar__nav__item {
     padding: 10px 5px; }

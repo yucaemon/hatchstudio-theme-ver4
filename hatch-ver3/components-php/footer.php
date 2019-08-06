@@ -124,8 +124,8 @@ ABOUT
 をお届けするおもしろ情報まがじんサイトです。
 </div>
 <div class='footer__sns-icons flexbox--h-center'>
-<a href="https://www.facebook.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon-sky.svg"></a>
-<a href="https://twitter.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon-sky.svg"></a>
+<a href="https://twitter.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon-sky.svg"></a>
+<a href="https://www.facebook.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-icon.svg"></a>
 </div>
 </div>
 </div>
