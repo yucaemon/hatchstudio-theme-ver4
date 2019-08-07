@@ -40,7 +40,7 @@ iframe {
     padding-bottom: 50px;
   }
   &--h2 {
-    padding-bottom: 20px;
+    padding: 60px 0;
   }
   &--list{
     padding-bottom:30px;
@@ -1018,7 +1018,7 @@ body {
     color: #9c9c9c;
   }
   &__head-title {
-    @include mainTitle(18,1.4);
+    @include mainTitle(20.1,1.4);
   }
   &__entry-content {
     @include fts(11, 11);
@@ -1039,9 +1039,10 @@ body {
     }
     .font-decoration-underline {
       display: inline-block;
-      @include mainTitle(17,1);
+      @include mainTitle(20,1);
       border-bottom: solid 3px $yellow_02;
       padding: 20px 0;
+      line-height: 1.4;
     }
     .font-decoration-btn {
       display: inline-block;
@@ -2011,7 +2012,7 @@ index
   .article-list {
     li {
       padding: 0 10px 10px 10px;
-      width: 275px;
+      width: 281px;
     }
     .newMark {
       padding: 8px 20px;

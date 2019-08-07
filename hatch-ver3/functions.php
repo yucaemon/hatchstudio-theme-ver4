@@ -458,7 +458,6 @@ EOC;
 <!-- Adsense Code End -->
 EOC;
         $dmt='<h2';
-        $pos1=array(1);
         $pos2=array(2,4,6,7);
 /* 設定END 以降は変更しない！ */
         $content = preg_replace('/<!--[\s\S]*?-->/s', '', $content);

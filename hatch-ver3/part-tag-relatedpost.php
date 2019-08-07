@@ -20,9 +20,8 @@
         the_post();
     ?>
         <?php if( !$relatedpost_count ): /* 最初の記事の場合、ヘッダを付与 */ ?>
-            <ul class="post-lists article-list box-list flexbox">
+          <ul class="post-lists article-list box-list flexbox">
         <?php endif; ?>
-
                     <li class='eyecatch'>
                       <div class='post-lists__img article-list__img imgWrap'>
                         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
