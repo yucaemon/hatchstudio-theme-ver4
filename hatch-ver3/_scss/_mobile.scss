@@ -667,15 +667,20 @@
     .detail-balloon-box{
       display: block;
       padding-left: 0;
+      &__icon{
+        margin: 0 auto;
+        width: 80px;
+      }
       &__txt{
         width: 100%;
+        margin-top: 20px;
       }
       &__read {
         width: auto;
-        padding: 30px 10px;
-        margin: 20px 0;
         background-color: #f7f7f7;
       }
+
+
     }
     .wrote-models-lists{
       display: block;
