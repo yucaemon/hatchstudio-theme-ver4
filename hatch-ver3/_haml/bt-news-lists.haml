@@ -5,7 +5,7 @@
       <i class="fas fa-arrow-up"></i>
   .news-list__container
     :plain
-      <?php query_posts('posts_per_page=4'); ?>
+      <?php query_posts('posts_per_page=5'); ?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countlists++; ?>
       <?php if($countlists == 3 or $countlists == 6 or $countlists == 12) : ?>
 

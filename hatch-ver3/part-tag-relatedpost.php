@@ -47,7 +47,7 @@
     if( $relatedpost_count ):   ?>
             </ul><!--id:related_post_wrap close-->
     <?php else : ?>
-    <ul class="post-lists article-list box-list">
+    <ul class="post-lists article-list box-list flexbox ">
         <?php
            $args = array(
           'posts_per_page' => 9,       //表示（取得）する記事の数
