@@ -7098,8 +7098,8 @@ a:hover img {
 ::-moz-selection {
   background: #ffe0e0; }
 
-iframe {
-  margin-bottom: 20px; }
+.youtube-container {
+  margin: 20px 0; }
 
 .google-ads--side {
   padding-bottom: 50px; }
@@ -7107,6 +7107,20 @@ iframe {
   padding: 60px 0; }
 .google-ads--list {
   padding-bottom: 30px; }
+
+.this-page {
+  padding-bottom: 30px; }
+  .this-page .tag {
+    margin-right: 12px; }
+  .this-page__tags a, .this-page .tag-cloud-link {
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: #ffede9;
+    color: #222;
+    letter-spacing: 1px;
+    font-size: 12px !important; }
 
 /*
 
@@ -7357,6 +7371,9 @@ body {
   top: 0px;
   padding: 5px 10px;
   font-size: 1.1em; }
+
+.eyechatchlabel.america {
+  background-color: #f2695d; }
 
 .eyechatchlabel.sanfrancisco {
   background-color: #bee4e6; }
@@ -7908,7 +7925,7 @@ body {
     font-weight: bold;
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
-    line-height: 0.5;
+    line-height: 1.5;
     background-color: #ffcf6e;
     border-radius: 5px;
     padding: 20px 20px; }
@@ -7929,8 +7946,8 @@ body {
   .single-page__entry-content img {
     padding: 30px 0;
     display: block;
-    max-width: 843px;
-    height: 500px;
+    width: 843px;
+    height: 650px;
     object-fit: cover; }
   .single-page__entry-content .detail-box01 {
     border: solid 1px #d4d4d4;
@@ -8105,19 +8122,22 @@ body {
       background-color: #98e8ec; }
     .single-page__entry-content .detail-author-box .web__btn__small {
       background-color: #ff846a; }
-.single-page .sourcelink, .single-page .photo-info {
+.single-page .sourcelink {
   font-size: 7px;
   font-size: 0.7rem;
   line-height: 1;
   color: #b5b5b5;
   padding-bottom: 20px; }
-  .single-page .sourcelink a, .single-page .photo-info a {
+  .single-page .sourcelink a {
     color: #b5b5b5; }
+.single-page .photo-info {
+  font-size: 1em;
+  color: #909090;
+  padding-bottom: 10px; }
 .single-page .external-link {
   padding: 20px;
   border: solid 1px #dadada;
-  margin-bottom: 20px;
-  color: #a7a7a7;
+  margin: 10px 0 20px 0;
   font-size: 17px; }
   .single-page .external-link i {
     padding-right: 10px; }
@@ -8132,7 +8152,8 @@ body {
     font-weight: 600;
     letter-spacing: .05em;
     line-height: 1.6;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    color: #f1a239; }
 .single-page .detail-balloon-box {
   width: 100%;
   padding: 25px 5px;
@@ -8156,6 +8177,16 @@ body {
     width: 80%;
     background-color: #f3f3f3;
     padding: 15px; }
+.single-page .postscript-info {
+  background-color: #efefef;
+  padding: 28px;
+  margin: 15px 0 20px 0;
+  color: #a5a5a5; }
+.single-page .emphasis {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
+  letter-spacing: 2px; }
 .single-page .affiliate-ad {
   margin: 0 auto;
   padding-bottom: 30px;
@@ -8226,19 +8257,6 @@ body {
     font-size: 13px;
     letter-spacing: 2px;
     color: #9c9c9c; }
-.single-page .this-page {
-  padding-bottom: 30px; }
-  .single-page .this-page .tag {
-    margin-right: 12px; }
-  .single-page .this-page__tags a, .single-page .this-page .tag-cloud-link {
-    padding: 8px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-bottom: 10px;
-    background-color: #ffede9;
-    color: #222;
-    letter-spacing: 1px;
-    font-size: 12px !important; }
 
 /*
 
@@ -8300,12 +8318,14 @@ body {
 	search page
 
 *************************************************/
-.search__not-find__body {
-  text-align: center; }
-  .search__not-find__body i.fa-exclamation-triangle {
-    font-size: 66px;
-    color: #6d6d6d;
-    margin-bottom: 30px; }
+.search__not-find {
+  width: 100%; }
+  .search__not-find__body {
+    text-align: center; }
+    .search__not-find__body i.fa-exclamation-triangle {
+      font-size: 66px;
+      color: #6d6d6d;
+      margin-bottom: 30px; }
 
 /*
 
@@ -8452,6 +8472,8 @@ body {
   .error-page .notfind__btn a {
     color: #fff;
     text-underline: none; }
+.error-page .bottom-popular {
+  width: 824px; }
 
 /*
 
@@ -8563,8 +8585,6 @@ house-page/share-house＆real-estate
     height: 100%;
     object-fit: cover;
     padding-bottom: 50px; }
-.house-page__body .price-pic img {
-  padding-bottom: 0; }
 .house-page__body__header {
   padding: 40px;
   letter-spacing: 1px;
@@ -8575,29 +8595,68 @@ house-page/share-house＆real-estate
   color: #222;
   text-align: center; }
 .house-page__body__read {
-  padding-bottom: 50px;
-  text-align: start; }
-.house-page__body__box {
+  text-align: start;
+  padding-bottom: 50px; }
+.house-page__body__detail, .service-page__list__detail {
   border: solid 1px #dadada;
   padding: 30px;
+  margin-bottom: 33px;
+  background-color: #f9f9f9;
+  width: 100%;
+  font-size: 13px;
+  text-align: start; }
+  .house-page__body__detail li, .service-page__list__detail li {
+    padding-bottom: 10px; }
+.house-page__body__facility {
+  border: solid 1px #dadada;
+  padding: 30px;
+  margin-bottom: 33px;
+  background-color: #f9f9f9;
+  width: 100%;
+  font-size: 13px;
+  text-align: start; }
+.house-page__body__room-notice {
+  text-align: start;
+  padding: 25px;
+  border: solid 1px #dedede;
+  margin-bottom: 40px; }
+  .house-page__body__room-notice .room-notice--title {
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 10px; }
+  .house-page__body__room-notice .room-notice--txt {
+    font-size: 13px;
+    color: #929292;
+    padding-bottom: 30px; }
+.house-page__body .room__detail {
+  border: solid 1px #dadada;
   margin-bottom: 33px;
   background-color: #fff8f8;
   width: 30%;
   font-size: 13px; }
-  .house-page__body__box .lists__plice--day {
-    font-weight: bold;
-    font-size: 34px;
-    text-align: center;
-    padding-bottom: 20px;
-    letter-spacing: 0.05em; }
-  .house-page__body__box .lists__plice--title {
-    padding: 0;
-    text-align: center;
-    font-size: 13px; }
-    .house-page__body__box .lists__plice--title--room-name {
+  .house-page__body .room__detail__img {
+    width: 100%;
+    height: 255px; }
+    .house-page__body .room__detail__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding-bottom: 50px; }
+  .house-page__body .room__detail__read {
+    padding: 0 34px 51px 34px;
+    text-align: inherit; }
+    .house-page__body .room__detail__read--roomname {
       background-color: #fff;
       padding: 7px 10px;
       margin: 5px 0 17px 0; }
+    .house-page__body .room__detail__read--day {
+      font-weight: bold;
+      font-size: 34px;
+      text-align: center;
+      padding-bottom: 20px;
+      letter-spacing: 0.05em; }
+  .house-page__body .room__detail__amenity {
+    text-align: start; }
 .house-page__share-house__bg-img {
   background-image: url(./images/hatching-house-pdx-bg.jpg);
   width: 100%;
@@ -8612,28 +8671,6 @@ house-page/share-house＆real-estate
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -160px; }
-.house-page__body__detail, .service-page__list__detail {
-  border: solid 1px #dadada;
-  padding: 30px;
-  margin-bottom: 33px;
-  background-color: #f9f9f9;
-  width: 100%;
-  font-size: 13px; }
-  .house-page__body__detail li, .service-page__list__detail li {
-    padding-bottom: 10px; }
-.house-page__body__notice {
-  text-align: start;
-  padding: 25px;
-  border: solid 1px #dedede;
-  margin-bottom: 40px; }
-  .house-page__body__notice .room-notice--title {
-    font-size: 19px;
-    font-weight: bold;
-    padding-bottom: 10px; }
-  .house-page__body__notice .room-notice--txt {
-    font-size: 13px;
-    color: #929292;
-    padding-bottom: 30px; }
 
 /*
 
@@ -8825,7 +8862,7 @@ single.page
   padding-bottom: 20px; }
 .single-page__eyecatch-img img {
   width: 100%;
-  height: 380px;
+  height: 500px;
   object-fit: cover; }
 .single-page__eyecatch-img {
   padding: 30px 0; }
@@ -9060,13 +9097,12 @@ category-page
     display: none; }
 
   /*YouTubeレスポンシブサイズ*/
-  .youtube {
+  .youtube-container {
     position: relative;
     max-width: 100%;
-    padding-top: 56.25%;
-    margin-bottom: 20px; }
+    padding-top: 56.25%; }
 
-  .youtube iframe {
+  .youtube-container iframe {
     position: absolute;
     top: 0;
     right: 0;
@@ -9875,6 +9911,10 @@ related-article(関連記事)
 
   .house-page__body__img {
     height: 175px; }
+  .house-page__body__room {
+    display: block; }
+  .house-page .room__detail {
+    width: 100%; }
   .house-page__share-house__bg-img {
     display: none; }
   .house-page__share-house-sp {
@@ -9905,19 +9945,7 @@ related-article(関連記事)
   .house-page .house-page__body__container + .house-page__body__container {
     border-top: none; }
   .house-page__real-estate__bg-img {
-    display: none; }
-  .house-page .house-page__body__box {
-    font-size: 6px;
-    padding: 10px 8px; }
-    .house-page .house-page__body__box .lists__plice--day {
-      font-size: 12px;
-      padding-bottom: 8px;
-      letter-spacing: 0.05em; }
-    .house-page .house-page__body__box .lists__plice--title {
-      font-size: 9px; }
-      .house-page .house-page__body__box .lists__plice--title--room-name {
-        font-size: 6px;
-        margin: 5px 0 9px 0; } }
+    display: none; } }
 /*
 
 	mobile settings windowサイズが1024以下- 680以上になった時の処理

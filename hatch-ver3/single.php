@@ -66,7 +66,7 @@
 <?php endif; ?>
 </div>
 <?php include('components-php/wrote-models-box.php'); ?>
-<?php include('components-php/affiliate-ad.php'); ?>
+<?php include('components-php/affiliate-ad-landscape.php'); ?>
 <?php include('components-php/article-sns-btns.php'); ?>
 <?php include('components-php/related-article.php'); ?>
 <?php include('components-php/this-page-tags.php'); ?>

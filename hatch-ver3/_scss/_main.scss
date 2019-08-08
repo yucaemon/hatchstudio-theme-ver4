@@ -31,8 +31,8 @@ a:hover img { opacity: 0.5 ;
   background: #ffe0e0;
 }
 
-iframe {
-    margin-bottom: 20px;
+.youtube-container {
+  margin: 20px 0;
 }
 
 .google-ads{
@@ -44,6 +44,23 @@ iframe {
   }
   &--list{
     padding-bottom:30px;
+  }
+}
+
+.this-page {
+  padding-bottom: 30px;
+  .tag {
+  margin-right: 12px;
+  }
+  &__tags a, .tag-cloud-link {
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: #ffede9;
+    color: $font_color_head;
+    letter-spacing: 1px;
+    font-size: 12px !important;
   }
 }
 
@@ -364,7 +381,9 @@ body {
   font-size: 1.1em;
 }
 //カテゴリー別にラベルの色を変える
-
+.eyechatchlabel.america{
+  background-color: #f2695d;
+}
 .eyechatchlabel.sanfrancisco{
   background-color: $blue_01;
 }
@@ -1046,7 +1065,7 @@ body {
     }
     .font-decoration-btn {
       display: inline-block;
-      @include mainTitle(13,0.5);
+      @include mainTitle(13,1.5);
       background-color: $yellow_02;
       border-radius: 5px;
       padding: 20px 20px;
@@ -1060,8 +1079,8 @@ body {
     img {
       padding: 30px 0;
       display: block;
-      max-width: 843px;
-      height: 500px;
+      width: 843px;
+      height: 650px;
       object-fit: cover;
     }
 
@@ -1236,13 +1255,14 @@ body {
     }
   }
   .photo-info {
-    @extend .sourcelink;
+    font-size: 1em;
+    color: #909090;
+    padding-bottom:10px;
   }
   .external-link {
     padding: 20px;
     border: solid 1px #dadada;
-    margin-bottom: 20px;
-    color: #a7a7a7;
+    margin:10px 0 20px 0;
     font-size: 17px;
     i{
       padding-right: 10px;
@@ -1250,6 +1270,7 @@ body {
     &__title {
       @include listsTitle(10,1.4);
       padding-bottom: 0;
+      color: #f1a239;
     }
   }
   .detail-balloon-box {
@@ -1279,6 +1300,18 @@ body {
       background-color: #f3f3f3;
       padding: 15px;
     }
+  }
+  .postscript-info {
+    background-color: #efefef;
+    padding: 28px;
+    margin: 15px 0 20px 0;
+    color: #a5a5a5;
+  }
+  .emphasis {
+      font-size: 30px;
+      font-weight: bold;
+      padding: 30px;
+      letter-spacing: 2px;
   }
   .affiliate-ad {
     margin: 0 auto;
@@ -1369,22 +1402,6 @@ body {
       color: #9c9c9c;
     }
   }
-  .this-page {
-    padding-bottom: 30px;
-    .tag {
-    margin-right: 12px;
-    }
-    &__tags a, .tag-cloud-link {
-      padding: 8px;
-      border-radius: 5px;
-      display: inline-block;
-      margin-bottom: 10px;
-      background-color: #ffede9;
-      color: $font_color_head;
-      letter-spacing: 1px;
-      font-size: 12px !important;
-    }
-  }
 }
 
 /*
@@ -1463,14 +1480,15 @@ body {
 
 *************************************************/
 .search__not-find{
-&__body{
-  text-align: center;
-  i.fa-exclamation-triangle{
-    font-size: 66px;
-    color: #6d6d6d;
-    margin-bottom: 30px;
+      width: 100%;
+  &__body{
+    text-align: center;
+    i.fa-exclamation-triangle{
+      font-size: 66px;
+      color: #6d6d6d;
+      margin-bottom: 30px;
+    }
   }
-}
 }
 
 /*
@@ -1641,6 +1659,9 @@ body {
       text-underline: none;
     }
   }
+  .bottom-popular {
+    width: 824px;
+  }
 }
 
 /*
@@ -1759,6 +1780,7 @@ house-page/share-house＆real-estate
     padding-left: 15px;
     }
   }
+
   &__body {
     &__container {
     text-align: center;
@@ -1767,15 +1789,12 @@ house-page/share-house＆real-estate
     &__img{
       width: 30%;
       height: 255px;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          padding-bottom: 50px;
-        }
-    }
-    .price-pic img{
-      padding-bottom: 0;
+      img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding-bottom: 50px;
+      }
     }
     &__header {
       padding: 40px;
@@ -1786,38 +1805,84 @@ house-page/share-house＆real-estate
       text-align: center;
     }
     &__read {
-        padding-bottom: 50px;
-        text-align: start;
+    text-align: start;
+    padding-bottom: 50px;
     }
-    &__box{
+    &__detail {
       border: solid 1px #dadada;
       padding: 30px;
+      margin-bottom: 33px;
+      background-color: #f9f9f9;
+      width: 100%;
+      font-size: 13px;
+      text-align: start;
+      li{
+        padding-bottom:10px;
+      }
+    }
+    &__facility{
+      border: solid 1px #dadada;
+      padding: 30px;
+      margin-bottom: 33px;
+      background-color: #f9f9f9;
+      width: 100%;
+      font-size: 13px;
+      text-align: start;
+    }
+    &__room-notice{
+      text-align: start;
+      padding: 25px;
+      border: solid 1px #dedede;
+      margin-bottom: 40px;
+      .room-notice--title {
+      font-size: 19px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      }
+      .room-notice--txt {
+      font-size: 13px;
+      color: #929292;
+      padding-bottom: 30px;
+      }
+    }
+    .room__detail{
+      border: solid 1px #dadada;
       margin-bottom: 33px;
       background-color: #fff8f8;
       width: 30%;
       font-size: 13px;
-
-      .lists__plice{
-        &--day {
-            font-weight: bold;
-            font-size: 34px;
-            text-align: center;
-            padding-bottom: 20px;
-            letter-spacing: 0.05em;
-        }
-        &--title{
-          padding: 0;
-          text-align: center;
-          font-size: 13px;
-          &--room-name{
+      &__img{
+        width: 100%;
+        height: 255px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding-bottom: 50px;
+          }
+      }
+      &__read{
+          padding: 0 34px 51px 34px;
+          text-align: inherit;
+          &--roomname{
             background-color: #fff;
             padding: 7px 10px;
             margin: 5px 0 17px 0;
           }
-        }
+          &--day {
+              font-weight: bold;
+              font-size: 34px;
+              text-align: center;
+              padding-bottom: 20px;
+              letter-spacing: 0.05em;
+          }
+      }
+      &__amenity{
+        text-align: start;
       }
     }
   }
+
   &__share-house{
     &__bg-img{
       background-image: url(./images/hatching-house-pdx-bg.jpg);
@@ -1838,36 +1903,7 @@ house-page/share-house＆real-estate
       background-position: 0 -160px;
     }
   }
-  &__body__detail {
-    border: solid 1px #dadada;
-    padding: 30px;
-    margin-bottom: 33px;
-    background-color: #f9f9f9;
-    width: 100%;
-    font-size: 13px;
-    li{
-      padding-bottom:10px;
-    }
-
-  }
-    &__body__notice{
-      text-align: start;
-      padding: 25px;
-      border: solid 1px #dedede;
-      margin-bottom: 40px;
-      .room-notice--title {
-      font-size: 19px;
-      font-weight: bold;
-      padding-bottom: 10px;
-      }
-      .room-notice--txt {
-      font-size: 13px;
-      color: #929292;
-      padding-bottom: 30px;
-      }
-
-    }
-  }
+}
 
 /*
 
@@ -2109,7 +2145,7 @@ single.page
 
   &__eyecatch-img img {
     width: 100%;
-    height: 380px;
+    height: 500px;
     object-fit: cover;
   }
 

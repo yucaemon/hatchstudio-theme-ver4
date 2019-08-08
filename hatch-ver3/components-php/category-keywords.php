@@ -4,6 +4,11 @@
 </div>
 <div class='this-page__tags keywords flexbox'>
 <div class='tag'>
+<a href="<?php bloginfo('url'); ?>/archives/category/america/">
+アメリカ知識
+</a>
+</div>
+<div class='tag'>
 <a href="<?php bloginfo('url'); ?>/archives/category/sanfrancisco/">
 サンフランシスコ/バークレー
 </a>

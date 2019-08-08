@@ -69,32 +69,27 @@ HATCHING HOUSE
 </div>
 </div>
 <div class='house-page__body__container'>
-<div class='house-page__body__pics flexbox--spacebetween'>
-<div class='house-page__body__img price-pic'>
+<div class='house-page__body__room flexbox--spacebetween'>
+<div class='room__detail'>
+<div class='room__detail__img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/room-c.jpg">
 </div>
-<div class='house-page__body__img price-pic'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/room-b.jpg">
-</div>
-<div class='house-page__body__img price-pic'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/room-a.jpg">
-</div>
-</div>
-<div class='house-page__body__read'>
-<div class='flexbox--spacebetween'>
-<div class='house-page__body__box'>
-<ul class='detail__lists lists__plice'>
-<li class='lists__plice--title'>
+<ul class='room__detail__read'>
+<li>
+<div class='room__detail__read--title'>
 お友達との節約旅行におすすめ♡
-<div class='lists__plice--title--room-name'>
+</div>
+<div class='room__detail__read--roomname'>
 1F/Cozy（コージー）/ROOM
 </div>
 </li>
-<li class='lists__plice--day'>
+<li>
+<div class='room__detail__read--day'>
 $26/1泊
+</div>
 </li>
-</ul>
-<ul class='detail__lists lists__facility'>
+<li>
+<ul class='room__detail__amenity'>
 <li>
 <i class="fas fa-bed"></i>
 シングルサイズベット&ダブルベット
@@ -112,20 +107,29 @@ $26/1泊
 長期割引あり(4ヵ月以上滞在 最大50%引)
 </li>
 </ul>
+</li>
+</ul>
 </div>
-<div class='house-page__body__box'>
-<ul class='detail__lists lists__plice'>
-<li class='lists__plice--title'>
+<div class='room__detail'>
+<div class='room__detail__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/room-b.jpg">
+</div>
+<ul class='room__detail__read'>
+<li>
+<div class='room__detail__read--title'>
 静かにゆったり♡ひとり旅におすすめ
-<div class='lists__plice--title--room-name'>
+</div>
+<div class='room__detail__read--roomname'>
 2F/Single (シングル) /ROOM
 </div>
 </li>
-<li class='lists__plice--day'>
+<li>
+<div class='room__detail__read--day'>
 $34/1泊
+</div>
 </li>
-</ul>
-<ul class='detail__lists lists__facility'>
+<li>
+<ul class='room__detail__amenity'>
 <li>
 <i class="fas fa-bed"></i>
 シングルサイズベット
@@ -143,20 +147,29 @@ $34/1泊
 長期割引あり(4ヵ月以上滞在 最大50%引)
 </li>
 </ul>
+</li>
+</ul>
 </div>
-<div class='house-page__body__box'>
-<ul class='detail__lists lists__plice'>
-<li class='lists__plice--title'>
+<div class='room__detail'>
+<div class='room__detail__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/room-a.jpg">
+</div>
+<ul class='room__detail__read'>
+<li>
+<div class='room__detail__read--title'>
 プライベート重視♡カップルおすすめ
-<div class='lists__plice--title--room-name'>
+</div>
+<div class='room__detail__read--roomname'>
 2F/Queen（クィーン）/ROOM
 </div>
 </li>
-<li class='lists__plice--day'>
+<li>
+<div class='room__detail__read--day'>
 $58/1泊
+</div>
 </li>
-</ul>
-<ul class='detail__lists lists__facility'>
+<li>
+<ul class='room__detail__amenity'>
 <li>
 <i class="fas fa-bed"></i>
 クィーンサイズベット
@@ -174,8 +187,11 @@ $58/1泊
 長期割引あり(4ヵ月以上滞在 最大50%引)
 </li>
 </ul>
+</li>
+</ul>
 </div>
-<div class='house-page__body__detail'>
+</div>
+<div class='house-page__body__facility'>
 <h2 class='house-page__body__header'>
 アメニティ・設備
 </h2>
@@ -244,9 +260,7 @@ WIFI（無料インターネット）
 </ul>
 </div>
 </div>
-</div>
-</div>
-<div class='house-page__body__notice room-notice'>
+<div class='house-page__body__room-notice'>
 <h2 class='house-page__body__header'>
 注意事項
 </h2>

@@ -162,11 +162,6 @@ add_filter('posts_where','custom_search_where');
 add_filter('posts_join', 'custom_search_join');
 add_filter('posts_groupby', 'custom_search_groupby');
 
-
-
-
-
-
 //見出しのショートコード
 function titleFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
@@ -201,19 +196,6 @@ function youtubeFunc( $atts, $content = null ) {
 add_shortcode('ユーチューブ', 'youtubeFunc');
 
 
-//boxのショートコード
-function box2Func( $atts, $content = null ) {
-    return '<div class="detail-box02 flexbox">' . $content . '</div>';
-}
-add_shortcode('画像入りbox2', 'box2Func');
-
-function box3Func( $atts, $content = null ) {
-    return '<div class="detail-box03 flexbox">' . $content . '</div>';
-}
-add_shortcode('商品box', 'box3Func');
-
-
-
 //出典のショートコード
 function sourceFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
@@ -223,11 +205,28 @@ function sourceFunc( $atts, $content = null ) {
 add_shortcode('出典', 'sourceFunc');
 
 
+//追記のショートコード
+function postscriptFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+    ), $atts ) );
+    return '<div class="postscript-info">' . $content . '</div>';
+}
+add_shortcode('追記', 'postscriptFunc');
+
+
+//強調のショートコード
+function emphasisFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+    ), $atts ) );
+    return '<div class="emphasis">' . $content . '</div>';
+}
+add_shortcode('強調', 'emphasisFunc');
+
 //写真説明のショートコード
 function photoinfoFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
     ), $atts ) );
-    return '<div class="photo-info">' . $content . '</div>';
+    return '<div class="photo-info">[ ' . $content . ' ]</div>';
 }
 add_shortcode('写真説明', 'photoinfoFunc');
 
@@ -243,6 +242,18 @@ function shopBoxFunc( $atts, $content = null ) {
     return '<div class="detail-box01"><div class="detail-box01__title">' . $name . '</div><div class="detail-box01__contain"><p><i class="fas fa-map-marker-alt"></i>' . $address . '</p><p><i class="fa fa-clock-o" aria-hidden="true"></i>' . $time . '</a></p><p><a href="' . $website . '" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>WEBサイト</a></p></div></div>';
 }
 add_shortcode('お店詳細', 'shopBoxFunc');
+
+
+//イベントのショートコード
+function eventBoxFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'name' => '不明',
+        'address' => '不明',
+        'website' => '不明'
+    ), $atts ) );
+    return '<div class="detail-box01"><div class="detail-box01__title">' . $name . '</div><div class="detail-box01__contain"><p><i class="fas fa-map-marker-alt"></i>' . $address . '</p><p><a href="' . $website . '" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>WEBサイト</a></p></div></div>';
+}
+add_shortcode('イベント', 'eventBoxFunc');
 
 
 //詳細テンプレのショートコード
@@ -310,46 +321,6 @@ function balloonFunc( $atts, $content = null ) {
     return '<div class="detail-balloon-box flexbox"><div class="detail-balloon-box__icon"><div class="detail-balloon-box__img"><img src="' . $img . '"/></div><div class="detail-balloon-box__title">' . $author_name . '</div></div><div class="detail-balloon-box__txt"><div class="detail-balloon-box__read">' . $read . '</div></div></div>';
 }
 add_shortcode('吹き出し', 'balloonFunc');
-
-
-
-//購入商品のショートコード
-function purchasableProductBoxFunc( $atts, $content = null ) {
-    extract( shortcode_atts( array(
-        'img' => '不明',
-        'product_name' => '不明',
-        'price' => '不明',
-        'brand' => '不明',
-        'brand_link' => '不明',
-        'read' => '不明',
-        'link' => '不明',
-        'shipping' => 'アメリカ発送のみ',
-        'purchasebtn' => '不明'
-
-    ), $atts ) );
-    return '<div class="detail-box03 flexbox"><div class="detail-box03__img"><img src="' . $img . '"/></div><div class="detail-box03__txt"><div class="detail-box03__title"><i class="fa fa-angle-right"></i>' . $product_name . '</div><div class="detail-box03__price">' . $price . '</div><div class="detail-box03__brand"><a href="' . $brand_link . '" target="_blank">' . $brand . ' <i class="fa fa-external-link"></i></a></div><div class="detail-box03__read">' . $read . '</div><div class="flexbox--spacebetween"><div class="detail-box03__shipping">' . $shipping . '</div><div class="detail-box03__similar-products"><i class="fa fa-arrow-right"></i><a href="' . $link . '" target="_blank"> 類似の商品をもっと探す</a></div></div><a href="' . $purchasebtn . '" target="_blank"><div class="detail-box03__btn big-btn  target="_blank">この商品を購入</div></a></div></div>';
-}
-add_shortcode('購入可能商品', 'purchasableProductBoxFunc');
-
-
-//希望商品のショートコード
-function productBoxFunc( $atts, $content = null ) {
-    extract( shortcode_atts( array(
-        'img' => '不明',
-        'product_name' => '不明',
-        'price' => '不明',
-        'brand' => '不明',
-        'brand_link' => '不明',
-        'read' => '不明',
-        'link' => '不明',
-        'shipping' => 'アメリカ発送のみ',
-        'purchasebtn' => '不明'
-
-    ), $atts ) );
-    return '<div class="detail-box03 flexbox"><div class="detail-box03__img"><img src="' . $img . '"/></div><div class="detail-box03__txt"><div class="detail-box03__title"><i class="fa fa-angle-right"></i>' . $product_name . '</div><div class="detail-box03__price">' . $price . '</div><div class="detail-box03__brand"><a href="' . $brand_link . '" target="_blank">' . $brand . ' <i class="fa fa-external-link"></i></a></div><div class="detail-box03__read">' . $read . '</div><div class="flexbox--spacebetween"><div class="detail-box03__shipping">' . $shipping . '</div><div class="detail-box03__similar-products"><i class="fa fa-arrow-right"></i><a href="' . $link . '" target="_blank"> 類似の商品をもっと探す</a></div></div><a class="detail-box03__btn big-btn href="' . $purchasebtn . '" target="_blank">♡この商品欲しい (1)</a></div></div>';
-}
-add_shortcode('希望商品', 'productBoxFunc');
-
 
 // ユーザープロフィールの項目の追加
 function set_user_meta($profile) {
@@ -458,7 +429,7 @@ EOC;
 <!-- Adsense Code End -->
 EOC;
         $dmt='<h2';
-        $pos2=array(2,4,6,7);
+        $pos2=array(1,3,5,7);
 /* 設定END 以降は変更しない！ */
         $content = preg_replace('/<!--[\s\S]*?-->/s', '', $content);
         $paragraphs=explode($dmt,$content);

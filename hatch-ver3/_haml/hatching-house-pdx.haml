@@ -54,128 +54,137 @@
 
               また、ゲストハウスから徒歩2分と13分のところにバス停があり、車がなくてもどこにでも行けて観光者にとっても便利です。ポートランドの交通機関は、とても発展しており、車内がとても綺麗で安全で、夜中12時まで走っています。女性一人でも安心して乗れます。
           .house-page__body__container
-            .house-page__body__pics.flexbox--spacebetween
-              .house-page__body__img.price-pic
-                <img src="<?php echo get_template_directory_uri(); ?>/images/room-c.jpg">
-              .house-page__body__img.price-pic
-                <img src="<?php echo get_template_directory_uri(); ?>/images/room-b.jpg">
-              .house-page__body__img.price-pic
-                <img src="<?php echo get_template_directory_uri(); ?>/images/room-a.jpg">
-            .house-page__body__read
-              .flexbox--spacebetween
-                .house-page__body__box
-                  %ul.detail__lists.lists__plice
-                    %li.lists__plice--title
+            .house-page__body__room.flexbox--spacebetween
+              .room__detail
+                .room__detail__img
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/room-c.jpg">
+                %ul.room__detail__read
+                  %li
+                    %div.room__detail__read--title
                       お友達との節約旅行におすすめ♡
-                      .lists__plice--title--room-name
-                        1F/Cozy（コージー）/ROOM
-                    %li.lists__plice--day
+                    %div.room__detail__read--roomname
+                      1F/Cozy（コージー）/ROOM
+                  %li
+                    %div.room__detail__read--day
                       $26/1泊
-                  %ul.detail__lists.lists__facility
-                    %li
-                      <i class="fas fa-bed"></i>
-                      シングルサイズベット&ダブルベット
-                    %li
-                      <i class="fas fa-bath"></i>
-                      共有シャワー、トイレ
-                    %li
-                      <i class="fas fa-user-plus"></i>
-                      2名様の場合、1人あたり/$18で宿泊可能
-                    %li
-                      <i class="fas fa-award"></i>
-                      長期割引あり(4ヵ月以上滞在 最大50%引)
-                .house-page__body__box
-                  %ul.detail__lists.lists__plice
-                    %li.lists__plice--title
+                  %li
+                    %ul.room__detail__amenity
+                      %li
+                        <i class="fas fa-bed"></i>
+                        シングルサイズベット&ダブルベット
+                      %li
+                        <i class="fas fa-bath"></i>
+                        共有シャワー、トイレ
+                      %li
+                        <i class="fas fa-user-plus"></i>
+                        2名様の場合、1人あたり/$18で宿泊可能
+                      %li
+                        <i class="fas fa-award"></i>
+                        長期割引あり(4ヵ月以上滞在 最大50%引)
+
+              .room__detail
+                .room__detail__img
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/room-b.jpg">
+                %ul.room__detail__read
+                  %li
+                    %div.room__detail__read--title
                       静かにゆったり♡ひとり旅におすすめ
-                      .lists__plice--title--room-name
-                        2F/Single (シングル) /ROOM
-                    %li.lists__plice--day
+                    %div.room__detail__read--roomname
+                      2F/Single (シングル) /ROOM
+                  %li
+                    %div.room__detail__read--day
                       $34/1泊
-                  %ul.detail__lists.lists__facility
-                    %li
-                      <i class="fas fa-bed"></i>
-                      シングルサイズベット
-                    %li
-                      <i class="fas fa-bath"></i>
-                      共有シャワー、トイレ
-                    %li
-                      <i class="fas fa-user-plus"></i>
-                      おひとりさまのみ
-                    %li
-                      <i class="fas fa-award"></i>
-                      長期割引あり(4ヵ月以上滞在 最大50%引)
-                .house-page__body__box
-                  %ul.detail__lists.lists__plice
-                    %li.lists__plice--title
+                  %li
+                    %ul.room__detail__amenity
+                      %li
+                        <i class="fas fa-bed"></i>
+                        シングルサイズベット
+                      %li
+                        <i class="fas fa-bath"></i>
+                        共有シャワー、トイレ
+                      %li
+                        <i class="fas fa-user-plus"></i>
+                        おひとりさまのみ
+                      %li
+                        <i class="fas fa-award"></i>
+                        長期割引あり(4ヵ月以上滞在 最大50%引)
+              .room__detail
+                .room__detail__img
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/room-a.jpg">
+                %ul.room__detail__read
+                  %li
+                    %div.room__detail__read--title
                       プライベート重視♡カップルおすすめ
-                      .lists__plice--title--room-name
-                        2F/Queen（クィーン）/ROOM
-                    %li.lists__plice--day
+                    %div.room__detail__read--roomname
+                      2F/Queen（クィーン）/ROOM
+                  %li
+                    %div.room__detail__read--day
                       $58/1泊
-                  %ul.detail__lists.lists__facility
-                    %li
-                      <i class="fas fa-bed"></i>
-                      クィーンサイズベット
-                    %li
-                      <i class="fas fa-bath"></i>
-                      プライベートトイレ＆バスルーム
-                    %li
-                      <i class="fas fa-user-plus"></i>
-                      2名様の場合、1人あたり/$33で宿泊可能
-                    %li
-                      <i class="fas fa-award"></i>
-                      長期割引あり(4ヵ月以上滞在 最大50%引)
-                .house-page__body__detail
-                  %h2.house-page__body__header
-                    アメニティ・設備
-                  .flexbox--spacebetween
-                    %ul
+                  %li
+                    %ul.room__detail__amenity
                       %li
-                        <i class="far fa-clock"></i>
-                        チェックイン: 1PM-10PM
+                        <i class="fas fa-bed"></i>
+                        クィーンサイズベット
                       %li
-                        <i class="fas fa-bell"></i>
-                        チェックアウト: 11AMまで
+                        <i class="fas fa-bath"></i>
+                        プライベートトイレ＆バスルーム
                       %li
-                        <i class="fas fa-suitcase"></i>
-                        荷物のお預かりOK (事前予約要）
+                        <i class="fas fa-user-plus"></i>
+                        2名様の場合、1人あたり/$33で宿泊可能
                       %li
-                        <i class="fas fa-money-bill"></i>
-                        当日ドル現金支払いのみ
-                      %li
-                        <i class="fas fa-ban"></i>
-                        当日キャンセル可
-                    %ul
-                      %li
-                        <i class="fas fa-wifi"></i>
-                        WIFI（無料インターネット）
-                      %li
-                        <i class="fas fa-tshirt"></i>
-                        クローゼット（ハンガー付）
-                      %li
-                        <i class="fas fa-shower"></i>
-                        タオル、ドライヤー、トイレットペーパー
-                      %li
-                        <i class="fas fa-tint"></i>
-                        洗濯機、乾燥機あり(洗剤は各自で用意)
-                      %li
-                        <i class="fas fa-utensils"></i>
-                        共同キッチン（お皿など調理器具、冷蔵庫スペース）
-                    %ul
-                      %li
-                        <i class="fas fa-smoking-ban"></i>
-                        禁煙 (外庭でのみ喫煙可)
-                      %li
-                        <i class="fas fa-wind"></i>
-                        エアコン暖房
-                      %li
-                        <i class="fas fa-parking"></i>
-                        無料路上駐車場
-                      %li
-                        <i class="fas fa-car"></i>
-                        オプション：有料送迎（事前予約要:1回$35）
-            .house-page__body__notice.room-notice
+                        <i class="fas fa-award"></i>
+                        長期割引あり(4ヵ月以上滞在 最大50%引)
+
+            .house-page__body__facility
+              %h2.house-page__body__header
+                アメニティ・設備
+              .flexbox--spacebetween
+                %ul
+                  %li
+                    <i class="far fa-clock"></i>
+                    チェックイン: 1PM-10PM
+                  %li
+                    <i class="fas fa-bell"></i>
+                    チェックアウト: 11AMまで
+                  %li
+                    <i class="fas fa-suitcase"></i>
+                    荷物のお預かりOK (事前予約要）
+                  %li
+                    <i class="fas fa-money-bill"></i>
+                    当日ドル現金支払いのみ
+                  %li
+                    <i class="fas fa-ban"></i>
+                    当日キャンセル可
+                %ul
+                  %li
+                    <i class="fas fa-wifi"></i>
+                    WIFI（無料インターネット）
+                  %li
+                    <i class="fas fa-tshirt"></i>
+                    クローゼット（ハンガー付）
+                  %li
+                    <i class="fas fa-shower"></i>
+                    タオル、ドライヤー、トイレットペーパー
+                  %li
+                    <i class="fas fa-tint"></i>
+                    洗濯機、乾燥機あり(洗剤は各自で用意)
+                  %li
+                    <i class="fas fa-utensils"></i>
+                    共同キッチン（お皿など調理器具、冷蔵庫スペース）
+                %ul
+                  %li
+                    <i class="fas fa-smoking-ban"></i>
+                    禁煙 (外庭でのみ喫煙可)
+                  %li
+                    <i class="fas fa-wind"></i>
+                    エアコン暖房
+                  %li
+                    <i class="fas fa-parking"></i>
+                    無料路上駐車場
+                  %li
+                    <i class="fas fa-car"></i>
+                    オプション：有料送迎（事前予約要:1回$35）
+            .house-page__body__room-notice
               %h2.house-page__body__header
                 注意事項
               %p.room-notice--title

@@ -40,23 +40,12 @@ while(have_posts()): the_post();
   <div class="search__not-find">
     <h1 class='components-title'><i class="fa fa-search"></i>『 <?php echo $search_query; ?> 』 に一致する情報は見つかりませんでした。</span></h1>
     <div class="search__not-find__body"><i class="fas fa-exclamation-triangle"></i></div>
-    <?php include('components-php/category-keywords.php'); ?>
   </div>
 <?php endif; ?>
 </ul>
-<div class='google-ads'>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- スクエア✖️2box -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1574488309106788"
-     data-ad-slot="7305955474"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+
+<?php include('components-php/category-keywords.php'); ?>
+<?php include('components-php/affiliate-ad-sky.php'); ?>
 </div>
 <div class='side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
