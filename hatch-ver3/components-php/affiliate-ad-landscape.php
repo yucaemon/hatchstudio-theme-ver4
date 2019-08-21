@@ -1,4 +1,4 @@
-<div class='google-ads affiliate-ad-landscape'>
+<div class='google-ads google-ads--landscape'>
 <!-- ページ右上固定ーディスプレイ広告BOX  -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 横長タイプ -->

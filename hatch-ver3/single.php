@@ -82,7 +82,7 @@
 <?php include('components-php/house-ad-side.php'); ?>
 <?php include('components-php/business-ad-side.php'); ?>
 <div class='side-amazon-ad'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg">
+<a href="<?php echo esc_url( home_url( '/archives/24020' ) ); ?>" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg"></a>
 </div>
 <div class='side-fixed-area'></div>
 </div>

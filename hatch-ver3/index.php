@@ -53,7 +53,7 @@
 <div class='side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
 <div class='side-amazon-ad'>
-<a href="https://www.youtube.com/channel/UCKgUk8aEDuGjXKXPfMSd-gw?view_as=subscriber"><img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg"></a>
+<a href="<?php echo esc_url( home_url( '/archives/24020' ) ); ?>" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg"></a>
 </div>
 <?php include('components-php/lists-popular-total.php'); ?>
 </div>
