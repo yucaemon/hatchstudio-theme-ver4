@@ -7107,6 +7107,8 @@ a:hover img {
   padding: 60px 0; }
 .google-ads--list {
   padding-bottom: 30px; }
+.google-ads .affiliate-ad-landscape {
+  padding-bottom: 30px; }
 
 .this-page {
   padding-bottom: 30px; }
@@ -7946,8 +7948,8 @@ body {
   .single-page__entry-content img {
     padding: 30px 0;
     display: block;
-    width: 843px;
-    height: 650px;
+    max-width: 843px;
+    height: auto;
     object-fit: cover; }
   .single-page__entry-content .detail-box01 {
     border: solid 1px #d4d4d4;

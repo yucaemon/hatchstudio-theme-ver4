@@ -45,6 +45,9 @@ a:hover img { opacity: 0.5 ;
   &--list{
     padding-bottom:30px;
   }
+  .affiliate-ad-landscape{
+    padding-bottom:30px;
+  }
 }
 
 .this-page {
@@ -1079,8 +1082,8 @@ body {
     img {
       padding: 30px 0;
       display: block;
-      width: 843px;
-      height: 650px;
+      max-width: 843px;
+      height: auto;
       object-fit: cover;
     }
 

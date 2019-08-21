@@ -6,7 +6,7 @@
      style="display:block"
      data-ad-client="ca-pub-1574488309106788"
      data-ad-slot="9149514011"
-     data-ad-format="auto"
+     data-ad-format="rectangle"
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
