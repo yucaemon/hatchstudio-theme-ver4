@@ -7942,8 +7942,8 @@ body {
     font-weight: bold;
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
-    line-height: 1;
-    padding: 10px 0 10px 20px;
+    line-height: 1.5;
+    padding-left: 20px;
     border-left: solid 6px #ffcf6e; }
   .single-page__entry-content img {
     padding: 30px 0;
@@ -9404,12 +9404,12 @@ category-page
     padding-bottom: 0; }
   .single-page__eyecatch-img img {
     width: 100%;
-    height: 240px;
+    height: 50%;
     padding: 20px 0 !important;
     object-fit: cover; }
   .single-page__entry-content img {
     width: 100%;
-    height: 230px;
+    height: auto;
     object-fit: cover; }
   .single-page__entry-content .detail-box02__txt {
     padding-top: 10px;

@@ -1075,8 +1075,8 @@ body {
     }
     .font-decoration-barline {
       display: inline-block;
-      @include mainTitle(12,1);
-      padding: 10px 0 10px 20px;
+      @include mainTitle(12,1.5);
+      padding-left:20px;
       border-left: solid 6px $yellow_02;
     }
     img {

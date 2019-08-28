@@ -3,7 +3,7 @@
     global $post_id;    //グローバル変数より投稿IDをゲット
     global $tags;       //グローバル変数よりタグ情報をゲット
     $relatedpost_count = 0; //関連記事を出力した数(カウンタ)
-    $relatedpost_max = 6;   //関連記事を出力する最大数
+    $relatedpost_max = 12;   //関連記事を出力する最大数
     $related_taglist = [];  //関連記事を出力する為のタグリスト
 
     //記事からタグを集める
