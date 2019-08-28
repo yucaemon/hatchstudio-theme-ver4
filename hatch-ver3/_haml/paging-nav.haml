@@ -11,7 +11,7 @@
     <?php
     if ( $nextpost ) { //前の記事が存在しているとき
     echo '<div class="paging-nav__content paging-nav__content-first"><a href="' . get_permalink($nextpost->ID) . '" title="'. get_the_title($nextpost->ID) . '" id="next" class="clearfix">
-    <div class="paging-nav__head flexbox"><div class="paging-nav__head__txt flexbox"><i class="fas fa-angle-left"></i><div class="next_title">前の記事へ</div></div></div>
+    <div class="paging-nav__head flexbox"><div class="paging-nav__head__txt flexbox"><i class="fas fa-angle-left"></i><div class="next_title">次の記事へ</div></div></div>
     <div class="paging-nav__body flexbox">
     <div class="paging-nav__body__img">' . get_the_post_thumbnail($nextpost->ID, array(100,100)) . '</div>
     <p class="paging-nav__body__read">'. get_the_title($nextpost->ID) . '</p>
