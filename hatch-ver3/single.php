@@ -1,5 +1,15 @@
 <?php include('head.php'); ?>
 <body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+ <script>(function(d, s, id) {
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) return;
+   js = d.createElement(s); js.id = id;
+   js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10&appId=419866574778905";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+<div class='outer index'>
 <div class='single-page outer'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
@@ -30,9 +40,12 @@
 <div class='single-page__detail flexbox--spacebetween'>
 <div class='single-page__sns-icons flexbox'>
 <div class='sns-icons__img'>
-<a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&t=<?php echo get_the_title(); ?>">
-<img src="<?php echo get_template_directory_uri(); ?>/images/share-facebook-icon.svg">
-</a>
+<?php
+  $share_url   = get_permalink();
+  $share_title = get_the_title();
+?>
+<a href="//www.facebook.com/sharer.php?src=bm&u=<?=$share_url?>&t=<?=$share_title?>" title="Facebookでシェア" onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=800,width=600');return false;">
+<img src="<?php echo get_template_directory_uri(); ?>/images/share-facebook-icon.svg"></a>
 </div>
 <div class='sns-icons__img'>
 <a class="btn--twitter" href="http://twitter.com/share?url=<?php the_permalink();?>&text=<?php echo get_the_title(); ?>&via=hatchstudioinc&tw_p=tweetbutton&related=hatchstudioinc">
