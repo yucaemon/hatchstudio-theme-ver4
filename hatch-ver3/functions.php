@@ -331,7 +331,7 @@ add_filter('user_contactmethods', 'set_user_meta', 10, 1);
 
 
 /**
- * jqueryを読み込む
+ * jqueryを読込
 **/
 
 add_action('wp_enqueue_scripts', 'my_enqueue_scripts');
