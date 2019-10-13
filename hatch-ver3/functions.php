@@ -310,7 +310,7 @@ function authorinfoFunc( $atts, $content = null ) {
 }
 add_shortcode('記者紹介', 'authorinfoFunc');
 
-//吹き出しのショートコード
+//吹き出しのショートコード-
 function balloonFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
         'img' => '不明',
