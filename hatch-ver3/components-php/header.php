@@ -26,7 +26,7 @@
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-bk.svg" width="250"></a>
 </div>
 <h1 class='sub-title'>
-<a href="<?php echo esc_url( home_url( '/' ) ); ?>">”ワクワク”な体験をお届け！アメリカ面白まがじん</a>
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>">”ワクワク”な体験をお届け！アメリカ面白まがじん。</a>
 </h1>
 </div>
 <div class='background-draw background-daw__right'>
