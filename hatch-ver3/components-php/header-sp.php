@@ -20,7 +20,7 @@
 <a href="https://hatchstudioinc.com/">サンフランシスコ</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="http://ucberkeley.hatchstudioinc.com/">サンバークレー</a>
+<a href="http://ucberkeley.hatchstudioinc.com/">バークレー</a>
 </li>
 <li class='drawer-menu__li'>
 <a href="http://newyork.hatchstudioinc.com/">ニューヨーク</a>
