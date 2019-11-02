@@ -19,7 +19,7 @@
 </div>
 <div class='logofind'>
 <div class='logo__img'>
-<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-bk.svg" width="250"></a>
+<a href="https://hatchstudioinc.com/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-bk.svg" width="250"></a>
 </div>
 </div>
 </header>
@@ -27,10 +27,10 @@
 <div class='header-bar__inner flexbox--spacebetween'>
 <div class='header-bar__logo logo'>
 <span class='logo__img-h'>
-<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/eight-icon.svg"></a>
+<a href="https://hatchstudioinc.com/"><img src="<?php echo get_template_directory_uri(); ?>/images/eight-icon.svg"></a>
 </span>
 <span class='logo__title'>
-<a href="<?php echo esc_url( home_url( '/' ) ); ?>">ホームへ戻る</a>
+<a href="https://hatchstudioinc.com/">ホームへ戻る</a>
 </span>
 <div class='search__box'>
 <div class='search__form'>

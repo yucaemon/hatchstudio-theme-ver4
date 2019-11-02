@@ -10,37 +10,43 @@ BLOG
 <div class='menu'>
 <ul class='menu_inner'>
 <li>
-<a href="<?php bloginfo('url'); ?>/archives/category/sanfrancisco/" class="megamenu-inner-text">
+<a href="https://hatchstudioinc.com/" class="megamenu-inner-text">
   <i class="far fa-arrow-alt-circle-right"></i>
-  サンフランシスコ/バークレー
+  サンフランシスコ
 </a>
 </li>
 <li>
-<a href="<?php bloginfo('url'); ?>/archives/category/newyork/" class="megamenu-inner-text">
+<a href="http://ucberkeley.hatchstudioinc.com/" class="megamenu-inner-text">
+  <i class="far fa-arrow-alt-circle-right"></i>
+  バークレー
+</a>
+</li>
+<li>
+<a href="http://newyork.hatchstudioinc.com/" class="megamenu-inner-text">
   <i class="far fa-arrow-alt-circle-right"></i>
    ニューヨーク
 </a>
 </li>
 <li>
-<a href="<?php bloginfo('url'); ?>/archives/category/portland/" class="megamenu-inner-text">
+<a href="https://hatchstudioinc.com/archives/category/portland" class="megamenu-inner-text">
   <i class="far fa-arrow-alt-circle-right"></i>
    ポートランド
 </a>
 </li>
 <li>
-<a href="<?php bloginfo('url'); ?>/archives/category/hawaii/" class="megamenu-inner-text">
+<a href="https://hatchstudioinc.com/archives/category/hawaii" class="megamenu-inner-text">
   <i class="far fa-arrow-alt-circle-right"></i>
    ハワイ
 </a>
 </li>
 <li>
-<a href="<?php bloginfo('url'); ?>/archives/category/info/" class="megamenu-inner-text">
+<a href="https://hatchstudioinc.com/archives/category/info" class="megamenu-inner-text">
   <i class="far fa-arrow-alt-circle-right"></i>
    お知らせ/募集
 </a>
 </li>
 <li>
-<a href="<?php bloginfo('url'); ?>/archives/category/sharehouse/" class="megamenu-inner-text">
+<a href="https://hatchstudioinc.com/archives/category/sharehouse" class="megamenu-inner-text">
   <i class="far fa-arrow-alt-circle-right"></i>
    シェアハウス
 </a>
