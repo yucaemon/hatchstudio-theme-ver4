@@ -8,7 +8,7 @@
 <div class='drawer-nav__container'>
 <div class='drawer-nav__title'>
 <i class='fa fa-home'>
-<a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME ホーム</a>
+<a href="https://hatchstudioinc.com/">HOME ホーム</a>
 </i>
 </div>
 <div class='drawer-nav__title'>
@@ -17,22 +17,25 @@
 </div>
 <ul class='drawer-menu'>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/archives/category/sanfrancisco/">サンフランシスコ/バークレー</a>
+<a href="https://hatchstudioinc.com/">サンフランシスコ</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/archives/category/newyork/">ニューヨーク</a>
+<a href="http://ucberkeley.hatchstudioinc.com/">サンバークレー</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/archives/category/portland/">ポートランド</a>
+<a href="http://newyork.hatchstudioinc.com/">ニューヨーク</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/archives/category/hawaii/">ハワイ</a>
+<a href="https://hatchstudioinc.com/archives/category/portland">ポートランド</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/archives/category/info/">お知らせ/募集</a>
+<a href="https://hatchstudioinc.com/archives/category/hawaii">ハワイ</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="<?php bloginfo('url'); ?>/archives/category/sharehouse/">シェアハウス</a>
+<a href="https://hatchstudioinc.com/archives/category/info">お知らせ/募集</a>
+</li>
+<li class='drawer-menu__li'>
+<a href="https://hatchstudioinc.com/archives/category/sharehouse">シェアハウス</a>
 </li>
 </ul>
 <div class='drawer-nav__title'>
