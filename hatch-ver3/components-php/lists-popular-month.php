@@ -9,7 +9,7 @@ POPULOR
 <i class="far fa-clock"></i>
 </div>
 <div class='header-side__txt--jp'>
-最新人気記事ランキング
+年間人気ランキング
 </div>
 </div>
 </dt>
