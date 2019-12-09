@@ -9,13 +9,14 @@ POPULOR
 <i class="far fa-clock"></i>
 </div>
 <div class='header-side__txt--jp'>
-月間人気ランキング
+最新人気記事ランキング
 </div>
 </div>
 </dt>
 <div class='news-list__container two-column-sp'>
 <?php
-$last_month = date('Y-m-d', strtotime('-10 months'));
+$last_month = date('Y-m-d', strtotime('-12 months'));
+/* 12ヶ月の中でアクセスが高い記事順リスト */
 $results = $wpdb->get_results("
   SELECT posts.ID, meta.meta_value FROM $wpdb->postmeta as meta
   join $wpdb->posts as posts on posts.ID = meta.post_id
@@ -48,7 +49,7 @@ $view_ordered_post_ids = array_keys( $average_views )
         <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
       </p>
     </div>
-    
+
     <div class="news-list__header">
       <p class="news-list__title"><a href="<?php echo get_permalink($this_post->ID); ?>"><?php echo $this_post->post_title; ?></a></p>
     </div>

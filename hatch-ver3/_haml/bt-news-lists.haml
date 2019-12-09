@@ -8,22 +8,6 @@
       <?php query_posts('posts_per_page=5'); ?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countlists++; ?>
       <?php if($countlists == 3 or $countlists == 6 or $countlists == 12) : ?>
-
-      <!-- ここに広告のコードor画像など --!>
-      <br/>
-      <div class="google-ads google-ads--list">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-format="fluid"
-           data-ad-layout-key="-fb+5w+4e-db+86"
-           data-ad-client="ca-pub-1574488309106788"
-           data-ad-slot="7362947172"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-      </div>
-
       <?php endif; ?>
         <!--表示する内容が入ります。-->
         <dd class="news-list__content flexbox">

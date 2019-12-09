@@ -162,8 +162,15 @@
       width: 100%;
       height: 100%;
   }
-  .bt-right{
+  .bt-left{
     display: none;
+  }
+
+  .articles__container__bottom .bt-right{
+    width:100%;
+    .post-lists.article-list li {
+    width: 50%;
+    }
   }
 
 
@@ -445,7 +452,7 @@
     display: flex;
     justify-content: space-between;
     li{
-      width: 46%;
+      width: 50%;
     }
   }
 

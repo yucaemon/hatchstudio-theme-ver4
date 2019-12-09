@@ -87,7 +87,10 @@
 <?php include('components-php/paging-nav.php'); ?>
 </div>
 <div class='side-contain'>
+<?php if (is_single(array('23360','23399'))) : ?>
+<?php else: ?>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
+<?php endif; ?>
 <?php include('components-php/lists-news.php'); ?>
 <?php include('components-php/lists-category-total.php'); ?>
 <?php include('components-php/keywords.php'); ?>
@@ -108,7 +111,6 @@
 <?php include('components-php/bt-news-lists.php'); ?>
 </div>
 <div class='bt-right'>
-<!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
 <?php include('components-php/bt-popular-month.php'); ?>
 </div>
 </div>

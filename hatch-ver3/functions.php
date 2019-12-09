@@ -385,7 +385,8 @@ function get_popular_args($range= "weekly", $limit = 8){
 //h2の前にアドセンス広告ユニットを挿入するコード
 
 function ads_unit($content){
-    if(!is_single()){
+    if(is_single(array('25907','25713'))){
+      //上のIDの記事はアドセンスの広告入れない
         return $content;
     }else{
 /* 設定 */
@@ -429,7 +430,7 @@ EOC;
 <!-- Adsense Code End -->
 EOC;
         $dmt='<h2';
-        $pos2=array(1,3,5,7,9,11,13,15,17,19,20);
+        $pos2=array(1,3,5,7,9);
 /* 設定END 以降は変更しない！ */
         $content = preg_replace('/<!--[\s\S]*?-->/s', '', $content);
         $paragraphs=explode($dmt,$content);

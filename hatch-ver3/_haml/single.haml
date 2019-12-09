@@ -75,7 +75,11 @@
             <?php include('components-php/category-keywords.php'); ?>
             <?php include('components-php/paging-nav.php'); ?>
           .side-contain
-            <?php include('components-php/affiliate-ad-sky.php'); ?>
+            :plain
+              <?php if (is_single(array('23360','23399'))) : ?>
+              <?php else: ?>
+              <?php include('components-php/affiliate-ad-sky.php'); ?>
+              <?php endif; ?>
             <?php include('components-php/lists-news.php'); ?>
             <?php include('components-php/lists-category-total.php'); ?>
             <?php include('components-php/keywords.php'); ?>
@@ -91,8 +95,8 @@
         .bt-left
           <?php include('components-php/bt-news-lists.php'); ?>
         .bt-right
-          <!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
           <?php include('components-php/bt-popular-month.php'); ?>
+
     <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
     .bottom-container
       <?php include('components-php/service.php'); ?>
