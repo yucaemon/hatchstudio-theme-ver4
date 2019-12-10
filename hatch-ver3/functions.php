@@ -385,7 +385,7 @@ function get_popular_args($range= "weekly", $limit = 8){
 //h2の前にアドセンス広告ユニットを挿入するコード
 
 function ads_unit($content){
-    if(is_single(array('25907','25713'))){
+    if(is_single(array('25907','25713','7586'))){
       //上のIDの記事はアドセンスの広告入れない
         return $content;
     }else{

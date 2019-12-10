@@ -6,7 +6,7 @@
 </div>
 </div>
 <div class='news-list__container'>
-<?php query_posts('posts_per_page=5'); ?>
+<?php query_posts('posts_per_page=7'); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countlists++; ?>
 <?php if($countlists == 3 or $countlists == 6 or $countlists == 12) : ?>
 <?php endif; ?>
