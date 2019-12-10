@@ -29,7 +29,7 @@ break ;
 query_posts(
 array(
 'cat' => $cat_id,
-'showposts' => 5,
+'showposts' => 11,
 'post__not_in' => array($post_id)
 )
 );
