@@ -26,7 +26,7 @@
         $view_ordered_post_ids = array_keys( $average_views )
         ?>
 
-        <?php foreach ( array_slice( $view_ordered_post_ids, 0, 5 ) as $this_post_index => $this_post_id ) {
+        <?php foreach ( array_slice( $view_ordered_post_ids, 0, 9 ) as $this_post_index => $this_post_id ) {
           $this_post_views = $average_views[$this_post_id];
           $this_post = get_post( $this_post_id );
         ?>

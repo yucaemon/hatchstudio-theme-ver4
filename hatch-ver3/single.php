@@ -87,7 +87,7 @@
 <?php include('components-php/paging-nav.php'); ?>
 </div>
 <div class='side-contain'>
-<?php if (is_single(array('23360','23399'))) : ?>
+<?php if (is_single(array('25907','25713'))) : ?>
 <?php else: ?>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
 <?php endif; ?>
