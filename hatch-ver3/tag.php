@@ -12,7 +12,8 @@
 『 <?php echo get_the_archive_title(); ?> 』の関連記事一覧
 </h1>
 <ul class='post-lists article-list box-list flexbox--start'>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
+<?php query_posts('posts_per_page=120'); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <li class=''>
     <div class='post-lists__img article-list__img'>
       <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
