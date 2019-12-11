@@ -12,8 +12,18 @@
 『 <?php echo get_the_archive_title(); ?> 』の関連記事一覧
 </h1>
 <ul class='post-lists article-list box-list flexbox--start'>
-<?php query_posts('posts_per_page=120'); ?>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php
+$tag_id = get_query_var('tag_id');
+if ( $tag_id ) {
+    $args = array(
+        'posts_per_page' => 270, // 表示件数の指定
+        'tag_id' => get_query_var('tag_id')
+    );
+}
+    $posts = get_posts( $args );
+    foreach ( $posts as $post ): // ループの開始
+setup_postdata( $post ); // 記事データの取得
+?>
   <li class=''>
     <div class='post-lists__img article-list__img'>
       <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
@@ -24,7 +34,10 @@
       </h3>
     </div>
   </li>
-  <?php endwhile; endif; ?>
+<?php
+endforeach; // ループの終了
+wp_reset_postdata(); // 直前のクエリを復元する
+?>
 </ul>
 <?php include('components-php/category-keywords.php'); ?>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
