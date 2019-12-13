@@ -79,7 +79,10 @@
 <?php endif; ?>
 </div>
 <?php include('components-php/wrote-models-box.php'); ?>
+<?php if (is_single(array('25907','25713','7586'))) : ?>
+<?php else: ?>
 <?php include('components-php/affiliate-ad-landscape.php'); ?>
+<?php endif; ?>
 <?php include('components-php/article-sns-btns.php'); ?>
 <?php include('components-php/related-article.php'); ?>
 <?php include('components-php/this-page-tags.php'); ?>
