@@ -1073,6 +1073,35 @@ body {
       border-radius: 5px;
       padding: 20px 20px;
     }
+    .title-boo{
+      padding: .8em .8em .8em 65px;
+      background: url(images/cmn_h2_neko.png) no-repeat top 7px left 10px,url(images/cmn_h2_bg.jpg) repeat!important;
+      margin: 80px 0 40px;
+      font-size: 24px;
+      font-weight: 700;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+    }
+
+    .producttitle-btn{
+     background-color: #ffe569e0;
+     border-radius: 5px;
+     border-bottom: none;
+     position: relative;
+     border: none;
+    }
+    .producttitle-btn:after{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 30px;
+    border: 10px solid transparent;
+    border-top: 10px solid #ffe569e0;;
+    width: 0;
+    height: 0;
+    }
+
     .font-decoration-barline {
       display: inline-block;
       @include mainTitle(12,1.5);
@@ -1206,6 +1235,47 @@ body {
         padding-right: 6px;
       }
     }
+    .productdetailbox{
+      width: 100%;
+      &__img img{
+        display: inline-block;
+        width: 300px;
+        text-align: center;
+        vertical-align: top;
+      }
+      &__lists{
+        @include fts(10, 10);
+        border-radius: 20px;
+        border: 3px solid #ffceca;
+        background: 0 0;
+        color: #f2695d;
+        width: 60%;
+        margin: 33px 0 33px 29px;
+        padding: 1.5em;
+        font-weight: 700;
+        &__list {
+          padding-bottom: 5px;
+          line-height: 1.5;
+        }
+      }
+    }
+  .productlistsbox{
+    border-top: 1px #ccc solid;
+    padding: 20px 0 0;
+    margin: 20px 0;
+    &__img img{
+      width: 200px;
+      height: 137px;
+      padding: 0;
+      padding-right: 15px;
+      object-fit: cover;
+    }
+    &__title {
+    padding-bottom: 0;
+    @include fts(13, 13);
+    text-decoration: underline;
+    }
+  }
 
     .detail-author-box{
       padding: 30px;
@@ -1288,6 +1358,11 @@ body {
       border-radius: 50%;
       padding: 0;
     }
+    &__boo__img img {
+      width: 80px;
+      height: 80px;
+      padding: 0;
+    }
     &__title {
       text-align: center;
       font-size: 11px;
@@ -1302,6 +1377,26 @@ body {
       width: 80%;
       background-color: #f3f3f3;
       padding: 15px;
+    }
+    &__boo{
+          background-color: #e1f2f3;
+          width: 80%;
+          padding: 20px;
+          position: relative;
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+    }
+    &__boo:before{
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #e0edff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
     }
   }
   .postscript-info {

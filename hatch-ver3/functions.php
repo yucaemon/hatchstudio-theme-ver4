@@ -275,7 +275,7 @@ function relatedLinksBoxFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="detail-box02 flexbox"><div class="detail-box02__img"><a href="' . $url . '" target="_blank"><img src="' . $img . '"/></a></div><div class="detail-box02__txt"><div class="detail-box02__sub-title">＞関連記事リンク</div><div class="detail-box02__title"><a href="' . $url . '" target="_blank">' . $title . '<i class="fa fa-external-link" aria-hidden="true"></i></a></div></div></div>';
+    return '<div class="detail-box02 flexbox"><div class="detail-box02__img"><a href="' . $url . '" target="_blank"><img src="' . $img . '"/></a></div><div class="detail-box02__txt"><div class="detail-box02__sub-title">＞関連記事リンク</div><div class="detail-box02__title"><a href="' . $url . '" target="_blank">' . $title . '</a></div></div></div>';
 }
 add_shortcode('関連リンク', 'relatedLinksBoxFunc');
 
@@ -321,6 +321,66 @@ function balloonFunc( $atts, $content = null ) {
     return '<div class="detail-balloon-box flexbox"><div class="detail-balloon-box__icon"><div class="detail-balloon-box__img"><img src="' . $img . '"/></div><div class="detail-balloon-box__title">' . $author_name . '</div></div><div class="detail-balloon-box__txt"><div class="detail-balloon-box__read">' . $read . '</div></div></div>';
 }
 add_shortcode('吹き出し', 'balloonFunc');
+
+
+//商品＆サービス紹介ページ
+//タイトルBOOのショートコード
+function titlebooFunc( $atts, $content = null ) {
+    return '<span class="font-decoration-btn title-boo">' . $content . '</span>';
+}
+add_shortcode('タイトルBOO', 'titlebooFunc');
+
+//吹き出しBOOのショートコード
+function balloonbooFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'img' => '不明',
+        'read' => '不明'
+
+    ), $atts ) );
+    return '<div class="detail-balloon-box flexbox"><div class="detail-balloon-box__icon"><div class="detail-balloon-box__boo__img"><img src="' . $img . '"/></div></div><div class="detail-balloon-box__boo"><div class="detail-balloon-box__read">' . $read . '</div></div></div>';
+}
+add_shortcode('吹き出しBOO', 'balloonbooFunc');
+
+//タイトル商品のショートコード
+function producttitleFunc( $atts, $content = null ) {
+    return '<span class="font-decoration-btn producttitle-btn">' . $content . '</span>';
+}
+add_shortcode('タイトル商品', 'producttitleFunc');
+
+
+
+//商品詳細のショートコード
+function productdetailboxFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'img' => '不明',
+        'listone' => '',
+        'listtwo' => '',
+        'listthree' => '',
+        'listfour' => '',
+        'listfive' => ''
+
+    ), $atts ) );
+    return '<div class="productdetailbox flexbox"><div class="productdetailbox__img"><img src="' . $img . '"/></div><ul class="productdetailbox__lists"><li class="productdetailbox__lists__list">' . $listone . '</li><li class="productdetailbox__lists__list">' . $listtwo . '</li><li class="productdetailbox__lists__list">' . $listthree . '</li><li class="productdetailbox__lists__list">' . $listfour . '</li><li class="productdetailbox__lists__list">' . $listfive . '</li></ul></div>';
+}
+add_shortcode('商品詳細', 'productdetailboxFunc');
+
+//商品リストのショートコード
+function productlistsboxFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'img' => '不明',
+        'url' => '不明',
+        'producttitle' => '不明',
+        'listone' => '',
+        'listtwo' => '',
+        'listthree' => ''
+
+    ), $atts ) );
+    return '<div class="productlistsbox flexbox"><div class="productlistsbox__img"><img src="' . $img . '"/></div><div><p class="productlistsbox__title"><a href="' . $url . '" target="_blank">' . $producttitle . '</a></p><ul class="productlistsbox__lists"><li class="productlistsbox__lists__list">・' . $listone . '</li><li class="productlistsbox__lists__list">・' . $listtwo . '</li><li class="productlistsbox__lists__list">・' . $listthree . '</li></ul></div></div>';
+}
+add_shortcode('商品リスト', 'productlistsboxFunc');
+
+
+
 
 // ユーザープロフィールの項目の追加
 function set_user_meta($profile) {
