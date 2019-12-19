@@ -1277,6 +1277,36 @@ body {
     }
   }
 
+  //ショートコードボタン
+  .shortcode__btn{
+    box-sizing: border-box;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+    margin-left: 10px;
+    display: inline-block;
+    width: 408px;
+    margin-top: 20px;
+    a{
+      color: #fff;
+    }
+  }
+  .btn-amazon {
+      background: #f29b35;
+  }
+  .btn-rakuten {
+    background: #bf0000;
+  }
+
+  .affiliate-btn{
+    text-align: center;
+    &__product{
+      background: #93d5e0;
+    }
+  }
+
     .detail-author-box{
       padding: 30px;
       @extend .detail-box02;

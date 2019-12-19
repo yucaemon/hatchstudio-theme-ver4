@@ -379,7 +379,52 @@ function productlistsboxFunc( $atts, $content = null ) {
 }
 add_shortcode('商品リスト', 'productlistsboxFunc');
 
+//詳細テーブルのショートコード
+function detailtableFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'thone' => '',
+        'thtwo' => '',
+        'ththree' => '',
+        'tdone' => '',
+        'tdtwo' => '',
+        'tdthree' => ''
 
+    ), $atts ) );
+    return '<table class="table table-bordered">
+    <tbody><hr><td>' . $thone . '</td><td>' . $tdone . '</td></hr><hr><td>' . $thone . '</td><td>' . $tdone . '</td></hr></tbody></table>';
+}
+add_shortcode('詳細テーブル', 'detailtableFunc');
+
+//アマゾンボタンのショートコード
+function amazonbtnFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'url' => '不明'
+
+    ), $atts ) );
+    return '<div class="shortcode__btn btn-amazon"><a href="' . $url . '" target="_blank">amazon</a></div>';
+}
+add_shortcode('アマゾンボタン', 'amazonbtnFunc');
+
+//楽天ボタンのショートコード
+function rakutenbtnFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'url' => '不明'
+
+    ), $atts ) );
+    return '<div class="shortcode__btn btn-rakuten"><a href="' . $url . '" target="_blank">楽天</a></div>';
+}
+add_shortcode('楽天ボタン', 'rakutenbtnFunc');
+
+//成果報酬アフィリエイト商品ボタンのショートコード
+function affiliatemarketingproductbtnFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'productname' => '不明',
+        'url' => '不明'
+
+    ), $atts ) );
+    return '<div class="affiliate-btn"><div class="shortcode__btn affiliate-btn__product"><a href="' . $url . '" target="_blank">' . $productname . 'の詳細を見る</a></div></div>';
+}
+add_shortcode('成果報酬アフィリエイト商品ボタン', 'affiliatemarketingproductbtnFunc');
 
 
 // ユーザープロフィールの項目の追加

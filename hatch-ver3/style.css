@@ -8147,6 +8147,27 @@ body {
       font-size: 1.3rem;
       line-height: 1;
       text-decoration: underline; }
+  .single-page__entry-content .shortcode__btn {
+    box-sizing: border-box;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+    margin-left: 10px;
+    display: inline-block;
+    width: 408px;
+    margin-top: 20px; }
+    .single-page__entry-content .shortcode__btn a {
+      color: #fff; }
+  .single-page__entry-content .btn-amazon {
+    background: #f29b35; }
+  .single-page__entry-content .btn-rakuten {
+    background: #bf0000; }
+  .single-page__entry-content .affiliate-btn {
+    text-align: center; }
+    .single-page__entry-content .affiliate-btn__product {
+      background: #93d5e0; }
   .single-page__entry-content .detail-author-box {
     padding: 30px; }
     .single-page__entry-content .detail-author-box__txt {
