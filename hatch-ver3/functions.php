@@ -352,7 +352,6 @@ add_shortcode('タイトル商品', 'producttitleFunc');
 //商品詳細のショートコード
 function productdetailboxFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'img' => '不明',
         'listone' => '',
         'listtwo' => '',
         'listthree' => '',
@@ -360,7 +359,7 @@ function productdetailboxFunc( $atts, $content = null ) {
         'listfive' => ''
 
     ), $atts ) );
-    return '<div class="productdetailbox flexbox"><div class="productdetailbox__img"><img src="' . $img . '"/></div><ul class="productdetailbox__lists"><li class="productdetailbox__lists__list">' . $listone . '</li><li class="productdetailbox__lists__list">' . $listtwo . '</li><li class="productdetailbox__lists__list">' . $listthree . '</li><li class="productdetailbox__lists__list">' . $listfour . '</li><li class="productdetailbox__lists__list">' . $listfive . '</li></ul></div>';
+    return '<ul class="productdetailbox__lists"><li class="productdetailbox__lists__list">・' . $listone . '</li><li class="productdetailbox__lists__list">・' . $listtwo . '</li><li class="productdetailbox__lists__list">・' . $listthree . '</li><li class="productdetailbox__lists__list">・' . $listfour . '</li><li class="productdetailbox__lists__list">・' . $listfive . '</li></ul>';
 }
 add_shortcode('商品詳細', 'productdetailboxFunc');
 
@@ -401,7 +400,7 @@ function amazonbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="shortcode__btn btn-amazon"><a href="' . $url . '" target="_blank">amazon</a></div>';
+    return '<div class="shortcode__btn btn-amazon"><a href="' . $url . '" target="_blank">amazon <i class="fa fa-chevron-circle-right"></i></a></div>';
 }
 add_shortcode('アマゾンボタン', 'amazonbtnFunc');
 
@@ -411,7 +410,7 @@ function rakutenbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="shortcode__btn btn-rakuten"><a href="' . $url . '" target="_blank">楽天</a></div>';
+    return '<div class="shortcode__btn btn-rakuten"><a href="' . $url . '" target="_blank">楽天 <i class="fa fa-chevron-circle-right"></i></a></div>';
 }
 add_shortcode('楽天ボタン', 'rakutenbtnFunc');
 
@@ -422,9 +421,37 @@ function affiliatemarketingproductbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="affiliate-btn"><div class="shortcode__btn affiliate-btn__product"><a href="' . $url . '" target="_blank">' . $productname . 'の詳細を見る</a></div></div>';
+    return '<div class="affiliate-btn"><div class="shortcode__btn affiliate-btn__product"><a href="' . $url . '" target="_blank">' . $productname . 'の詳細を見る <i class="fa fa-chevron-circle-right"></i></a></div></div>';
 }
 add_shortcode('成果報酬アフィリエイト商品ボタン', 'affiliatemarketingproductbtnFunc');
+
+//成果報酬アフィリエイトサービスボタンのショートコード
+function affiliatemarketingservicebtnFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'fronttxt' =>'',
+        'servicename' => '不明',
+        'btmtxt' =>'',
+        'url' => '不明'
+
+    ), $atts ) );
+    return '<div class="affiliate-btn"><div class="affiliate-btn__txt-top">' . $fronttxt . '</div><div class="shortcode__btn affiliate-btn__service"><a href="' . $url . '" target="_blank">' . $servicename . ' <i class="fa fa-chevron-circle-right"></i></a></div><div class="affiliate-btn__txt-btm">' . $btmtxt . '</div></div>';
+}
+add_shortcode('成果報酬アフィリエイトサービスボタン', 'affiliatemarketingservicebtnFunc');
+
+
+//クーポンボタンのショートコード
+function
+couponbtnFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'fronttxt' =>'',
+        'name' => '不明',
+        'btmtxt' =>'',
+        'url' => '不明'
+
+    ), $atts ) );
+    return '<div class="affiliate-btn"><div class="affiliate-btn__txt-top">' . $fronttxt . '</div><div class="shortcode__btn affiliate-btn__service affiliate-btn__service-coupon"><a href="' . $url . '" target="_blank">' . $name . ' <i class="fa fa-chevron-circle-right"></i></a></div><div class="affiliate-btn__txt-btm">' . $btmtxt . '</div></div>';
+}
+add_shortcode('クーポンリンクボタン', 'couponbtnFunc');
 
 
 // ユーザープロフィールの項目の追加

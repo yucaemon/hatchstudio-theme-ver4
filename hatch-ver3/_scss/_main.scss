@@ -1239,7 +1239,7 @@ body {
       width: 100%;
       &__img img{
         display: inline-block;
-        width: 300px;
+        //width: 300px;
         text-align: center;
         vertical-align: top;
       }
@@ -1249,7 +1249,7 @@ body {
         border: 3px solid #ffceca;
         background: 0 0;
         color: #f2695d;
-        width: 60%;
+        width: 63%;
         margin: 33px 0 33px 29px;
         padding: 1.5em;
         font-weight: 700;
@@ -1289,8 +1289,14 @@ body {
     display: inline-block;
     width: 408px;
     margin-top: 20px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.2), 0 2px 3px -2px rgba(0,0,0,.15);
+    background-color: #4575B4;
     a{
       color: #fff;
+    }
+    &__container-center{
+      display: flex;
+      justify-content: center;
     }
   }
   .btn-amazon {
@@ -1302,9 +1308,62 @@ body {
 
   .affiliate-btn{
     text-align: center;
+    margin-top: 35px;
     &__product{
       background: #93d5e0;
+      width: 100%;
     }
+    &__service{
+        width: 100%!important;
+        margin: .5em .5em .5em 0;
+        text-decoration: none;
+        display: inline-block;
+        padding: .4em 1.3em;
+        border-radius: 3px;
+        color: #fff;
+        font-weight: 700;
+      &-coupon{
+        background: #fbb468;
+      }
+    }
+    &__txt-top{
+      font-family: "Quicksand","Helvetica","Arial","Hiragino Kaku Gothic ProN","Hiragino Sans",YuGothic,"Yu Gothic","メイリオ",Meiryo,sans-serif;
+      display: inline-block;
+      position: relative;
+      padding: 0 25px;
+      color: #cccfd7;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: 1px;
+    }
+    &__txt-top:before {
+    left: 0;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+    }
+    &__txt-top:after {
+    right: 0;
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+    }
+    &__txt-top:before, &__txt-top:after {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #d8dae1;
+    content: "";
+   }
+   &__txt-btm{
+     display: inline-block;
+     vertical-align: middle;
+     font-size: 14px;
+     text-align: left;
+     padding-bottom: 4px;
+   }
   }
 
     .detail-author-box{
