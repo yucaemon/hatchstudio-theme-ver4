@@ -400,7 +400,7 @@ function amazonbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="shortcode__btn btn-amazon"><a href="' . $url . '" target="_blank">amazon <i class="fa fa-chevron-circle-right"></i></a></div>';
+    return '<div><a href="' . $url . '" class="btn-shine btn-fly btn-amazon shortcode-btn" target="_blank">amazon <i class="fa fa-chevron-circle-right"></i></a></div>';
 }
 add_shortcode('アマゾンボタン', 'amazonbtnFunc');
 
@@ -410,7 +410,7 @@ function rakutenbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="shortcode__btn btn-rakuten"><a href="' . $url . '" target="_blank">楽天 <i class="fa fa-chevron-circle-right"></i></a></div>';
+    return '<div><a href="' . $url . '" class="btn-shine shortcode-btn btn-rakuten btn-fly"target="_blank">楽天 <i class="fa fa-chevron-circle-right"></i></a></div>';
 }
 add_shortcode('楽天ボタン', 'rakutenbtnFunc');
 
@@ -421,7 +421,7 @@ function affiliatemarketingproductbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="affiliate-btn"><div class="shortcode__btn affiliate-btn__product"><a href="' . $url . '" target="_blank">' . $productname . 'の詳細を見る <i class="fa fa-chevron-circle-right"></i></a></div></div>';
+    return '<div class="affiliate-btn"><a href="' . $url . '"  class="btn-shine btn-fly shortcode-btn affiliate-btn__product " target="_blank">' . $productname . 'の詳細を見る <i class="fa fa-chevron-circle-right"></i></a></div>';
 }
 add_shortcode('成果報酬アフィリエイト商品ボタン', 'affiliatemarketingproductbtnFunc');
 
@@ -434,7 +434,7 @@ function affiliatemarketingservicebtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="affiliate-btn"><div class="affiliate-btn__txt-top">' . $fronttxt . '</div><div class="shortcode__btn affiliate-btn__service"><a href="' . $url . '" target="_blank">' . $servicename . ' <i class="fa fa-chevron-circle-right"></i></a></div><div class="affiliate-btn__txt-btm">' . $btmtxt . '</div></div>';
+    return '<div class="affiliate-btn"><div class="affiliate-btn__txt-top">' . $fronttxt . '</div><a href="' . $url . '" class="btn-shine btn-fly shortcode-btn affiliate-btn__service" target="_blank">' . $servicename . ' <i class="fa fa-chevron-circle-right"></i></a><div class="affiliate-btn__txt-btm">' . $btmtxt . '</div></div>';
 }
 add_shortcode('成果報酬アフィリエイトサービスボタン', 'affiliatemarketingservicebtnFunc');
 
@@ -449,7 +449,7 @@ couponbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="affiliate-btn"><div class="affiliate-btn__txt-top">' . $fronttxt . '</div><div class="shortcode__btn affiliate-btn__service affiliate-btn__service-coupon"><a href="' . $url . '" target="_blank">' . $name . ' <i class="fa fa-chevron-circle-right"></i></a></div><div class="affiliate-btn__txt-btm">' . $btmtxt . '</div></div>';
+    return '<div class="affiliate-btn"><div class="affiliate-btn__txt-top">' . $fronttxt . '</div><a href="' . $url . '" class="shortcode-btn affiliate-btn__service affiliate-btn__service-coupon btn-shine btn-fly" target="_blank">' . $name . ' <i class="fa fa-chevron-circle-right"></i></a><div class="affiliate-btn__txt-btm">' . $btmtxt . '</div></div>';
 }
 add_shortcode('クーポンリンクボタン', 'couponbtnFunc');
 
