@@ -374,7 +374,7 @@ function productlistsboxFunc( $atts, $content = null ) {
         'listthree' => ''
 
     ), $atts ) );
-    return '<div class="productlistsbox flexbox"><div class="productlistsbox__img"><img src="' . $img . '"/></div><div><p class="productlistsbox__title"><a href="' . $url . '" target="_blank">' . $producttitle . '</a></p><ul class="productlistsbox__lists"><li class="productlistsbox__lists__list">・' . $listone . '</li><li class="productlistsbox__lists__list">・' . $listtwo . '</li><li class="productlistsbox__lists__list">・' . $listthree . '</li></ul></div></div>';
+    return '<div class="productlistsbox flexbox"><div class="productlistsbox__img"><img src="' . $img . '"/></div><div class="productlistsbox__container"><p class="productlistsbox__title"><a href="' . $url . '" target="_blank">' . $producttitle . '</a></p><ul class="productlistsbox__lists"><li class="productlistsbox__lists__list">・' . $listone . '</li><li class="productlistsbox__lists__list">・' . $listtwo . '</li><li class="productlistsbox__lists__list">・' . $listthree . '</li></ul></div></div>';
 }
 add_shortcode('商品リスト', 'productlistsboxFunc');
 
@@ -390,7 +390,7 @@ function detailtableFunc( $atts, $content = null ) {
 
     ), $atts ) );
     return '<table class="table table-bordered">
-    <tbody><hr><td>' . $thone . '</td><td>' . $tdone . '</td></hr><hr><td>' . $thone . '</td><td>' . $tdone . '</td></hr></tbody></table>';
+    <tbody><hr><td>' . $thone . '</td><td>' . $tdone . '</td></hr></tbody></table>';
 }
 add_shortcode('詳細テーブル', 'detailtableFunc');
 
@@ -400,7 +400,7 @@ function amazonbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div><a href="' . $url . '" class="btn-shine btn-fly btn-amazon shortcode-btn" target="_blank">amazon <i class="fa fa-chevron-circle-right"></i></a></div>';
+    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine btn-fly btn-amazon shortcode-btn" target="_blank">amazon <i class="fa fa-chevron-circle-right"></i></a></div>';
 }
 add_shortcode('アマゾンボタン', 'amazonbtnFunc');
 
@@ -410,7 +410,7 @@ function rakutenbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div><a href="' . $url . '" class="btn-shine shortcode-btn btn-rakuten btn-fly"target="_blank">楽天 <i class="fa fa-chevron-circle-right"></i></a></div>';
+    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine shortcode-btn btn-rakuten btn-fly"target="_blank">楽天 <i class="fa fa-chevron-circle-right"></i></a></div>';
 }
 add_shortcode('楽天ボタン', 'rakutenbtnFunc');
 
