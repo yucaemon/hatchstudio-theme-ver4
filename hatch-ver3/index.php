@@ -52,8 +52,11 @@
 </div>
 <div class='side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
-<div class='side-amazon-ad'>
-<a href="<?php echo esc_url( home_url( '/archives/24020' ) ); ?>" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg"></a>
+<div class='side-coupon-ad'>
+<a href="<?php echo esc_url( home_url( '/archives/24020' ) ); ?>" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
+</div>
+<div class='side-ranking-ad'>
+<a href="<?php echo esc_url( home_url( '/archives/24020' ) ); ?>" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
 </div>
 <?php include('components-php/lists-popular-total.php'); ?>
 </div>

@@ -7403,14 +7403,26 @@ body {
 .side-amazon-ad {
   padding-bottom: 40px; }
 
+.side-coupon-ad {
+  padding-bottom: 15px; }
+
+.side-ranking-ad {
+  padding-bottom: 15px; }
+
 .side-fixed-content {
   position: fixed;
   top: 15%;
   width: 313px; }
 
+.side-fixed-content01 {
+  position: fixed;
+  top: 10%;
+  width: 313px;
+  margin-top: 30px; }
+
 .side-fixed-content02 {
   position: fixed;
-  top: 48%;
+  top: 32%;
   width: 313px;
   margin-top: 30px; }
 
@@ -7935,8 +7947,8 @@ body {
     border-radius: 5px;
     padding: 20px 20px; }
   .single-page__entry-content .title-boo {
-    padding: .8em .8em .8em 65px;
-    background: url(images/cmn_h2_neko.png) no-repeat top 7px left 10px, url(images/cmn_h2_bg.jpg) repeat !important;
+    padding: .8em .8em .8em 3.3em;
+    background: url(images/boo-bannar.png) no-repeat top 7px left 10px, url(images/cmn_h2_bg.jpg) repeat !important;
     margin: 80px 0 40px;
     font-size: 24px;
     font-weight: 700;
