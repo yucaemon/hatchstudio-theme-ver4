@@ -294,18 +294,18 @@ add_shortcode('外部リンク', 'externallinkFunc');
 //記者紹介のショートコード
 function authorinfoFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'img' => '不明',
-        'author_name' => '不明',
-        'read' => '不明',
-        'weblink' => '不明',
-        'facebooklink' => '不明',
-        'twitterlink' => '不明'
+        'img' => '',
+        'author_name' => '',
+        'read' => '',
+        'weblink' => '',
+        'instagramlink' => '',
+        'twitterlink' => ''
 
     ), $atts ) );
     return '<div class="detail-author-box"><div class="detail-author-box__txt"><div class="detail-author-box__title">' . $author_name . '</div><div class="detail-author-box__read">' . $read . '</div>
     <ul class="detail-author-box__sns flexbox">
     <li class="author-box__btn" target="_blank"><a href="' . $weblink . '" target="_blank"><div class="author-box__btn web__btn__small" target="_blank"><i class="fas fa-link"></i></div></a></li>
-    <li class="author-box__btn" target="_blank"><a href="' . $facebooklink . '" target="_blank"><div class="author-box__btn facebook__btn__small "target="_blank"><i class="fab fa-facebook-f"></i></div></a></li>
+    <li class="author-box__btn" target="_blank"><a href="' . $instagramlink . '" target="_blank"><div class="author-box__btn instagram__btn__small" target="_blank"><i class="fab fa-instagram"></i></div></a></li>
     <li class="author-box__btn" target="_blank"><a href="' . $twitterlink . '" target="_blank"><div class="author-box__btn twitter__btn__small" target="_blank"><i class="fab fa-twitter"></i></div></a></li></ul></div></div>';
 }
 add_shortcode('記者紹介', 'authorinfoFunc');

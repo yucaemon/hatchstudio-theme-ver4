@@ -1483,14 +1483,15 @@ body {
         padding: 10px 0;
         margin-right: 10px;
       }
-      .facebook__btn__small {
-        background-color: #3d9bff;
+      .instagram__btn__small {
+        background-color: $pink_02;
       }
+
       .twitter__btn__small {
         background-color: #98e8ec;
       }
       .web__btn__small {
-        background-color: $pink_02;
+        background-color: $yellow_01;
       }
     }
   }
