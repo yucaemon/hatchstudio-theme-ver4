@@ -15,7 +15,7 @@
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
   <link href="apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="favicon.ico" rel="shortcut icon">
+  <link rel=”shortcut icon”  type=”image/x-icon” href=”https://hatchstudioinc.com/wp-content/uploads/2020/01/cropped-Screen-Shot-2019-07-17-at-2.27.12-AM-1.png” />
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">

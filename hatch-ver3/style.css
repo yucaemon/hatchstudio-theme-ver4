@@ -7945,11 +7945,12 @@ body {
     line-height: 1.5;
     background-color: #ffcf6e;
     border-radius: 5px;
-    padding: 20px 20px; }
+    padding: 20px 20px;
+    margin: 20px 0; }
   .single-page__entry-content .title-boo {
     padding: .8em .8em .8em 3.3em;
     background: url(images/boo-bannar.png) no-repeat top 7px left 10px, url(images/cmn_h2_bg.jpg) repeat !important;
-    margin: 80px 0 40px;
+    margin: 20px 0;
     font-size: 24px;
     font-weight: 700;
     border-radius: 5px;
@@ -7983,7 +7984,8 @@ body {
     margin-bottom: 20px;
     line-height: 1.5;
     padding-left: 20px;
-    border-left: solid 6px #ffcf6e; }
+    border-left: solid 6px #ffcf6e;
+    margin: 20px 0; }
   .single-page__entry-content img {
     padding: 30px 0;
     display: block;
@@ -8125,7 +8127,8 @@ body {
   .single-page__entry-content .detail-box03 i.fa {
     padding-right: 6px; }
   .single-page__entry-content .productdetailbox {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 30px; }
     .single-page__entry-content .productdetailbox__img img {
       display: inline-block;
       text-align: center;
@@ -9635,9 +9638,11 @@ category-page
     padding: 20px 0 !important;
     object-fit: cover; }
   .single-page__entry-content img {
-    width: auto;
+    width: 100%;
     height: auto;
     object-fit: cover; }
+  .single-page__entry-content .productdetailbox img {
+    width: auto; }
   .single-page__entry-content .detail-box02__txt {
     padding-top: 10px;
     width: 50%; }
@@ -9680,6 +9685,14 @@ category-page
     .single-page__entry-content .detail-author-box__sns {
       justify-content: center;
       letter-spacing: -1em; }
+  .single-page__entry-content .affiliate-btn__txt-btm {
+    text-align: center; }
+  .single-page__entry-content .emphasis {
+    font-size: 19px;
+    background-color: #f3f3f3;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-weight: normal; }
   .single-page__entry-content .headline-third {
     line-height: 45px;
     padding: 0 0 0 2em;
