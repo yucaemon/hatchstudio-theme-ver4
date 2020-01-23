@@ -45,10 +45,10 @@ wp_reset_postdata(); // 直前のクエリを復元する
 <div class='side-contain'>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
 <div class='side-coupon-ad'>
-<a href="<?php echo esc_url( home_url( '/archives/28854' ) ); ?>" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
+<a href="https://hatchstudioinc.com/archives/28854" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
 </div>
 <div class='side-ranking-ad'>
-<a href="<?php echo esc_url( home_url( '/archives/28852' ) ); ?>" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
+<a href="https://hatchstudioinc.com/archives/28852" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
 </div>
 <?php include('components-php/lists-news.php'); ?>
 <?php include('components-php/keywords.php'); ?>
@@ -56,10 +56,10 @@ wp_reset_postdata(); // 直前のクエリを復元する
 <?php include('components-php/house-ad-side.php'); ?>
 <?php include('components-php/business-ad-side.php'); ?>
 <div class='side-coupon-ad'>
-<a href="<?php echo esc_url( home_url( '/archives/28854' ) ); ?>" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
+<a href="https://hatchstudioinc.com/archives/28854" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
 </div>
 <div class='side-ranking-ad'>
-<a href="<?php echo esc_url( home_url( '/archives/28852' ) ); ?>" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
+<a href="https://hatchstudioinc.com/archives/28852" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
 </div>
 <div class='side-fixed-area'></div>
 </div>
