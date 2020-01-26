@@ -56,7 +56,7 @@
 <a href="https://hatchstudioinc.com/archives/28854" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
 </div>
 <div class='side-ranking-ad'>
-<a href="https://hatchstudioinc.com/archives/28852" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
+<a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
 </div>
 <?php include('components-php/lists-popular-total.php'); ?>
 </div>

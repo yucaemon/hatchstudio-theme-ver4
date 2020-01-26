@@ -400,7 +400,7 @@ function amazonbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine btn-fly btn-amazon shortcode-btn" target="_blank">amazon <i class="fa fa-chevron-circle-right"></i></a></div>';
+    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine btn-fly btn-amazon shortcode-btn" target="_blank">amazon（アメリカ国内発送のみ） <i class="fa fa-chevron-circle-right"></i></a></div>';
 }
 add_shortcode('アマゾンボタン', 'amazonbtnFunc');
 
@@ -410,7 +410,7 @@ function rakutenbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine shortcode-btn btn-rakuten btn-fly"target="_blank">楽天 <i class="fa fa-chevron-circle-right"></i></a></div>';
+    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine shortcode-btn btn-rakuten btn-fly"target="_blank">楽天 (日本国内発送のみ) <i class="fa fa-chevron-circle-right"></i></a></div>';
 }
 add_shortcode('楽天ボタン', 'rakutenbtnFunc');
 
