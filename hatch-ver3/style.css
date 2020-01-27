@@ -7079,7 +7079,8 @@ figure:hover figcaption {
 *************************************************/
 body {
   line-height: 1.75;
-  color: #545b63; }
+  color: #545b63;
+  -webkit-appearance: none; }
 
 a {
   text-decoration: none;
