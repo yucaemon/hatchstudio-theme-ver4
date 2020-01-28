@@ -7079,8 +7079,7 @@ figure:hover figcaption {
 *************************************************/
 body {
   line-height: 1.75;
-  color: #545b63;
-  -webkit-appearance: none; }
+  color: #545b63; }
 
 a {
   text-decoration: none;
@@ -9197,7 +9196,6 @@ category-page
 
 /* 	mobile settings windowサイズが680以下になった時の処理 */
 @media (max-width: 680px) {
-  　-webkit-appearance: none;
   .outer {
     width: 100%;
     min-width: initial; }
