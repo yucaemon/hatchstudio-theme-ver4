@@ -6,7 +6,6 @@
   <title>はっちすたじお｜アメリカ面白まがじん</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-　<meta name="robots" content="noindex" />
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <title><?php wp_title('|', true, 'right'); ?><?php  bloginfo('name'); ?></title>
 
