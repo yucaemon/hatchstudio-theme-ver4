@@ -8894,6 +8894,13 @@ house-page/share-house＆real-estate
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -213px; }
+.house-page__share-house__bg-img-hawaii {
+  background-image: url(./images/guest-house-hawaii/hatching-house-hawaii-bg.jpg);
+  width: 100%;
+  padding-top: 44%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -200px; }
 .house-page__real-estate__bg-img {
   background-image: url(./images/hatching-real-estate-bg.jpg);
   width: 100%;
