@@ -582,15 +582,22 @@
       padding: 20px 0 !important;
       object-fit: cover;
     }
-    &__entry-content {
-      img {
+    &__entry-content{
+      img{
         width: 100%;
         height: auto;
         object-fit: cover;
       }
+    }
+    .productdetailbox{
+      img{
+        width: initial;
+      }
+    }
+    &__entry-content {
       .productdetailbox{
         img {
-          width: auto;
+          max-width: 250px;
         }
       }
       .detail-box02__txt {

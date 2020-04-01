@@ -9648,8 +9648,10 @@ category-page
     width: 100%;
     height: auto;
     object-fit: cover; }
+  .single-page .productdetailbox img {
+    width: initial; }
   .single-page__entry-content .productdetailbox img {
-    width: auto; }
+    max-width: 250px; }
   .single-page__entry-content .detail-box02__txt {
     padding-top: 10px;
     width: 50%; }
