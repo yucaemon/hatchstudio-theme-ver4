@@ -394,15 +394,25 @@ function detailtableFunc( $atts, $content = null ) {
 }
 add_shortcode('詳細テーブル', 'detailtableFunc');
 
-//アマゾンボタンのショートコード
+//アマゾンボタンUSAのショートコード
 function amazonbtnFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine btn-fly btn-amazon shortcode-btn" target="_blank">amazon（アメリカ国内発送のみ） <i class="fa fa-chevron-circle-right"></i></a></div>';
+    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine btn-fly btn-amazon shortcode-btn" target="_blank">amazonアメリカ（アメリカ発送） <i class="fa fa-chevron-circle-right"></i></a></div>';
 }
 add_shortcode('アマゾンボタン', 'amazonbtnFunc');
+
+//アマゾンボタン日本のショートコード
+function japanamazonbtnFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'url' => '不明'
+
+    ), $atts ) );
+    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine btn-fly btn-amazon btn-amazon-jan shortcode-btn" target="_blank">amazon日本（日本発送）<i class="fa fa-chevron-circle-right"></i></a></div>';
+}
+add_shortcode('アマゾンボタン日本', 'japanamazonbtnFunc');
 
 //楽天ボタンのショートコード
 function rakutenbtnFunc( $atts, $content = null ) {
