@@ -400,19 +400,9 @@ function amazonbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine btn-fly btn-amazon shortcode-btn" target="_blank">amazonアメリカ（アメリカ発送） <i class="fa fa-chevron-circle-right"></i></a></div>';
+    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine btn-fly btn-amazon shortcode-btn" target="_blank">amazon(アメリカ)で商品を詳しく見る <i class="fa fa-chevron-circle-right"></i></a></div>';
 }
 add_shortcode('アマゾンボタン', 'amazonbtnFunc');
-
-//アマゾンボタン日本のショートコード
-function japanamazonbtnFunc( $atts, $content = null ) {
-    extract( shortcode_atts( array(
-        'url' => '不明'
-
-    ), $atts ) );
-    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine btn-fly btn-amazon btn-amazon-jan shortcode-btn" target="_blank">amazon日本（日本発送）<i class="fa fa-chevron-circle-right"></i></a></div>';
-}
-add_shortcode('アマゾンボタン日本', 'japanamazonbtnFunc');
 
 //楽天ボタンのショートコード
 function rakutenbtnFunc( $atts, $content = null ) {
@@ -420,9 +410,20 @@ function rakutenbtnFunc( $atts, $content = null ) {
         'url' => '不明'
 
     ), $atts ) );
-    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine shortcode-btn btn-rakuten btn-fly"target="_blank">楽天 (日本国内発送のみ) <i class="fa fa-chevron-circle-right"></i></a></div>';
+    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine shortcode-btn btn-rakuten btn-fly"target="_blank">楽天(日本)で商品を詳しく見る <i class="fa fa-chevron-circle-right"></i></a></div>';
 }
 add_shortcode('楽天ボタン', 'rakutenbtnFunc');
+
+
+//日本ボタンのショートコード
+function japanbtnFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'url' => '不明'
+
+    ), $atts ) );
+    return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine shortcode-btn btn-amazon-jan btn-fly"target="_blank">amazon(日本)で商品を詳しく見る  <i class="fa fa-chevron-circle-right"></i></a></div>';
+}
+add_shortcode('日本アマゾンボタン', 'japanbtnFunc');
 
 //成果報酬アフィリエイト商品ボタンのショートコード
 function affiliatemarketingproductbtnFunc( $atts, $content = null ) {
