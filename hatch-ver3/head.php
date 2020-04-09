@@ -30,6 +30,9 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52447507-1"></script>
+  <!-- Google Analytics　自動広告 -->
+  <script data-ad-client="ca-pub-1574488309106788" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
