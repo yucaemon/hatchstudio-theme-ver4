@@ -89,7 +89,8 @@ Webサイト&動画制作事業（デザイン/システム開発）
 </div>
 <div class='bt-right'>
 <!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
-<?php include('components-php/bt-popular-month.php'); ?>
+<!-- ?php include('components-php/bt-popular-month.php'); ? -->
+<?php include('components-php/bt-recommend.php'); ?>
 </div>
 </div>
 </div>

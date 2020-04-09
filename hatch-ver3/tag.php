@@ -72,7 +72,8 @@ wp_reset_postdata(); // 直前のクエリを復元する
 </div>
 <div class='bt-right'>
 <!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
-<?php include('components-php/bt-popular-month.php'); ?>
+<!-- ?php include('components-php/bt-popular-month.php'); ? -->
+<?php include('components-php/bt-recommend.php'); ?>
 </div>
 </div>
 </div>
