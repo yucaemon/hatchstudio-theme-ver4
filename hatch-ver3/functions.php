@@ -204,6 +204,15 @@ function sourceFunc( $atts, $content = null ) {
 }
 add_shortcode('出典', 'sourceFunc');
 
+//出典リンクのショートコード（※リンクを追加）
+function linksourceFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'text' => '',
+        'link' => ''
+    ), $atts ) );
+    return '<div class="sourcelink">出典 <a href="' . $link . '" target="_blank">' . $text . '</a></div>';
+}
+add_shortcode('出典リンク', 'linksourceFunc');
 
 //追記のショートコード
 function postscriptFunc( $atts, $content = null ) {
