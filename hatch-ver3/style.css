@@ -7374,6 +7374,9 @@ body {
   padding: 5px 10px;
   font-size: 1.1em; }
 
+.eyechatchlabel.recommend {
+  background-color: #ffce61; }
+
 .eyechatchlabel.america {
   background-color: #f2695d; }
 
