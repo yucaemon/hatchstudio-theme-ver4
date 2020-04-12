@@ -363,6 +363,18 @@ function productdetailboxFunc( $atts, $content = null ) {
 }
 add_shortcode('商品詳細', 'productdetailboxFunc');
 
+//商品詳細のショートコード（リスト３）
+function listthreeproductdetailboxFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'listone' => '',
+        'listtwo' => '',
+        'listthree' => ''
+
+    ), $atts ) );
+    return '<ul class="productdetailbox__lists"><li class="productdetailbox__lists__list">・' . $listone . '</li><li class="productdetailbox__lists__list">・' . $listtwo . '</li><li class="productdetailbox__lists__list">・' . $listthree . '</li></ul>';
+}
+add_shortcode('リスト3商品詳細', 'listthreeproductdetailboxFunc');
+
 //商品リストのショートコード
 function productlistsboxFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
