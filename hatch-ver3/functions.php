@@ -470,6 +470,12 @@ function affiliatemarketingservicebtnFunc( $atts, $content = null ) {
 }
 add_shortcode('成果報酬アフィリエイトサービスボタン', 'affiliatemarketingservicebtnFunc');
 
+//広告リンクなしの成果報酬アフィリエイトサービスボタンのショートコード
+function nolinkaffiliatemarketingservicebtnFunc( $atts, $content = null ) {
+    return '<div class="affiliate-btn"><div class="btn-shine btn-fly shortcode-btn affiliate-btn__service" target="_blank">' . $content . ' </div></div>';
+}
+add_shortcode('ボタン装飾', 'nolinkaffiliatemarketingservicebtnFunc');
+
 
 //クーポンボタンのショートコード
 function

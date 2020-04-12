@@ -1418,6 +1418,10 @@ body {
       &-coupon{
         background: #fbb468;
       }
+      img{
+          padding: 0;
+          display: none;
+      }
     }
     &__txt-top{
       font-family: "Quicksand","Helvetica","Arial","Hiragino Kaku Gothic ProN","Hiragino Sans",YuGothic,"Yu Gothic","メイリオ",Meiryo,sans-serif;

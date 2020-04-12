@@ -590,8 +590,8 @@
       }
     }
     .productdetailbox{
-      img{
-        width: initial;
+       > img{
+        display: none;
       }
     }
     &__entry-content {
@@ -664,8 +664,13 @@
           letter-spacing: -1em;
         }
       }
-      .affiliate-btn__txt-btm{
-        text-align: center;
+      .affiliate-btn{
+        &__txt-btm{
+          text-align: center;
+        }
+        img{
+　　　　　　display: none;
+        }
       }
       .emphasis{
         font-size: 19px;
