@@ -9652,10 +9652,13 @@ category-page
     height: 300px;
     padding: 20px 0 !important;
     object-fit: cover; }
-  .single-page__entry-content img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; }
+  .single-page__entry-content {
+    font-size: 0.900em;
+    line-height: 1.6em; }
+    .single-page__entry-content img {
+      width: 100%;
+      height: auto;
+      object-fit: cover; }
   .single-page .productdetailbox > img {
     display: none; }
   .single-page__entry-content .productdetailbox img {
