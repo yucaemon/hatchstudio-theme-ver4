@@ -9260,6 +9260,12 @@ category-page
   .header-bar {
     display: none; }
 
+  .list-category-total {
+    display: none; }
+
+  .hide-ad-sp {
+    display: none; }
+
   .header-side__img--sp {
     padding: 20px 20px;
     margin: 0 auto; }
@@ -9654,7 +9660,7 @@ category-page
     object-fit: cover; }
   .single-page__entry-content {
     font-size: 0.900em;
-    line-height: 1.6em; }
+    line-height: 1.7em; }
     .single-page__entry-content img {
       width: 100%;
       height: auto;

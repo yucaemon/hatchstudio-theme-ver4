@@ -94,10 +94,10 @@
 <?php else: ?>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
 <?php endif; ?>
-<div class='side-coupon-ad'>
+<div class='side-coupon-ad hide-ad-sp'>
 <a href="https://hatchstudioinc.com/archives/28854" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
 </div>
-<div class='side-ranking-ad'>
+<div class='side-ranking-ad hide-ad-sp'>
 <a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
 </div>
 <?php include('components-php/lists-category-total.php'); ?>

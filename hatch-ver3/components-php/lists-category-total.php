@@ -1,4 +1,4 @@
-<dl class='news-list'>
+<dl class='news-list list-category-total'>
 <dt>
 <div class='header-side__img--sp'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/category-popular.svg">
