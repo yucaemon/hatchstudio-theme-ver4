@@ -14,6 +14,7 @@ POPULOR
 </div>
 </dt>
 <div class='news-list__container two-column-sp'>
+<div class='post-lists article-list'>
 <?php
 $last_month = date('Y-m-d', strtotime('-12 months'));
 /* 12ヶ月の中でアクセスが高い記事順リスト */
@@ -57,5 +58,6 @@ $view_ordered_post_ids = array_keys( $average_views )
 
 
 <?php } ?>
+</div>
 </div>
 </dl>

@@ -23,13 +23,10 @@ $results = $wpdb->get_results("
   AND posts.post_type = 'post'
   order by cast( meta.meta_value as signed) desc limit 8;
   ", ARRAY_N);
-
   $average_views = array();
-
   foreach ($results as $result) {
   $average_views[$result[0]] = $result[1];
   }
-
   $view_ordered_post_ids = array_keys( $average_views )
   ?>
 

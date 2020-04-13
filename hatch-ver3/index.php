@@ -119,7 +119,7 @@
 <div class='outer__inner'>
 <div class='outer__inner__container flexbox--spacebetween'>
 <div class='middle-contain two-column-sp'>
-<ul class='post-lists article-list box-list  flexbox'>
+<ul class='post-lists article-list box-list flexbox'>
   <?php query_posts('posts_per_page=9&offset=17' ); ?>
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $countblock++; ?>
   <?php if($countblock == 3 or $countblock == 8 or $countblock == 12) : ?>

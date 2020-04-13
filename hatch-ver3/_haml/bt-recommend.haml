@@ -1,16 +1,16 @@
-.bottom-popular.two-column-sp
+.bottom-popular
   .header-side
     .header-side__title
       おすすめ記事
       <i class="fas fa-fire"></i>
       人気ランキング
-  .bottom-popular__body.flexbox--spacebetween
+  .bottom-popular__body
     :plain
-      <ul class='post-lists article-list box-list  flexbox'>
+      <ul class='post-lists article-list box-list flexbox'>
         <?php
         $posts = get_posts(array(
         'posts_per_page' => 9, // 表示件数
-        'category' => '788' //
+        'category' => '630' // テスト環境おすすめID630
         ));
         ?>
         <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>

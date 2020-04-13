@@ -1,4 +1,4 @@
-<div class='bottom-popular two-column-sp'>
+<div class='bottom-popular'>
 <div class='header-side'>
 <div class='header-side__title'>
 おすすめ記事
@@ -6,12 +6,12 @@
 人気ランキング
 </div>
 </div>
-<div class='bottom-popular__body flexbox--spacebetween'>
-<ul class='post-lists article-list box-list  flexbox'>
+<div class='bottom-popular__body'>
+<ul class='post-lists article-list box-list flexbox'>
   <?php
   $posts = get_posts(array(
   'posts_per_page' => 9, // 表示件数
-  'category' => '788' //
+  'category' => '630' // テスト環境おすすめID630
   ));
   ?>
   <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
