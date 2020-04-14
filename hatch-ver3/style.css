@@ -8232,7 +8232,6 @@ body {
     text-align: center;
     display: inline-block;
     width: 100%;
-    margin-top: 20px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 2px 3px -2px rgba(0, 0, 0, 0.15);
     background-color: #4575B4; }
     .single-page__entry-content .shortcode-btn a {
