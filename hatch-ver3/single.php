@@ -58,9 +58,12 @@
 </div>
 </div>
 <div class='single-page__post-info flexbox'>
-<div class='single-page__dates'>
-<?php the_time('Y/m/d'); ?>
-</div>
+<div class='single-page__dates'></div>
+<?php if (get_the_modified_date('Y.m.d') != get_the_time('Y.m.d')) : ?>
+更新日：<time datetime="<?php the_modified_date('Y-m-d') ?>"><?php the_modified_date('Y.m.d') ?></time>
+<?php else:?>
+公開日：<time datetime="<?php the_time('Y-m-d');?>"><?php the_time('Y.m.d');?></time>
+<?php endif; ?>
 <div class='author__img circle'>
 <?php echo get_avatar( get_the_author_id(), 50 ); ?>
 </div>
