@@ -70,7 +70,7 @@
 </div>
 </div>
 <div class='single-page__eyecatch-img'>
-<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+<?php the_post_thumbnail(); ?>
 </div>
 <div class='single-page__entry-content'>
 <?php if ( have_posts() ) : ?>
