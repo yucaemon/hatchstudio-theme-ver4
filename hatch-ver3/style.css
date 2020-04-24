@@ -9648,18 +9648,21 @@ category-page
     width: 100%; }
     .single-page .middle-contain .article-sns-btns {
       display: none; }
-    .single-page .middle-contain .single-page__detail {
+    .single-page .middle-contain .single-page__detail .author__img.circle {
       display: none; }
+    .single-page .middle-contain .single-page__detail .single-page__dates {
+      padding-right: 0; }
   .single-page .side-contain {
     width: 100%; }
   .single-page__head-title {
     padding-top: 23px;
     padding-bottom: 0; }
-  .single-page__eyecatch-img img {
-    width: 100%;
-    height: 300px;
-    padding: 20px 0 !important;
-    object-fit: cover; }
+  .single-page__eyecatch-img {
+    padding: 10px 0; }
+    .single-page__eyecatch-img img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover; }
   .single-page__entry-content {
     font-size: 0.900em;
     line-height: 1.7em; }
@@ -9749,7 +9752,9 @@ category-page
     font-size: 1em;
     padding-left: 75px; }
   .single-page .shortcode-btn {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 0.9em; }
   .single-page .shortcode__btn {
     width: 100%;
     padding: 0; }
