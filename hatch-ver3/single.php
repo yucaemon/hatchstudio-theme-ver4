@@ -25,7 +25,7 @@
 <h1 class='single-page__head-title'>
 <?php the_title_attribute(); ?>
 </h1>
-<div class='google-ad'></div>
+<div class='google-ad'>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- H1タイトル下の広告 -->
 <ins class="adsbygoogle"
@@ -37,6 +37,7 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+</div>
 <div class='flexbox'>
 <div class='single-page__views'>
 <i class="fas fa-heart"></i>
