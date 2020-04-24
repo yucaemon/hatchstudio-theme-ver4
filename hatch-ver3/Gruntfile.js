@@ -71,6 +71,7 @@ module.exports = function (grunt) {
                     'components-php/lists-popular-total.php': '_haml/lists-popular-total.haml',
                     'components-php/lists-popular-month.php': '_haml/lists-popular-month.haml',
                     'components-php/lists-news.php': '_haml/lists-news.haml',
+                    'components-php/bt-news-lists.php': '_haml/bt-news-lists.haml',
                     'components-php/bt-popular-month.php': '_haml/bt-popular-month.haml',
                     'components-php/bt-popular-month.php': '_haml/bt-popular-month.haml',
                     'components-php/bt-recommend.php': '_haml/bt-recommend.haml',
