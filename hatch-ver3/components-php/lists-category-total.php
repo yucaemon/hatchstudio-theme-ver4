@@ -21,6 +21,10 @@ CATEGORY
 </dt>
 <div class='news-list__container two-column-sp'>
 <?php
+$ads_infeed = array(4,7); //何番目に表示したいか
+$ads_infeed_count = '1';
+?>
+<?php
 $post_id = get_the_ID();
 foreach((get_the_category()) as $cat) {
 $cat_id = $cat->cat_ID ;
@@ -36,15 +40,32 @@ array(
 if(have_posts()) :
 ?>
 <?php while (have_posts()) : the_post(); ?>
-
   <!--表示する内容が入ります。-->
+  <?php
+  $ads_disp = in_array($ads_infeed_count, $ads_infeed);
+  if($ads_disp){
+  ?>
+  <!-- ここにインフィード広告のコードを入れる -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-format="fluid"
+       data-ad-layout-key="-hm+j-1j-ah+pk"
+       data-ad-client="ca-pub-1574488309106788"
+       data-ad-slot="2489469068"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <?php
+  }
+  $ads_infeed_count++;
+  ?>
   <dd class="news-list__content flexbox">
     <div class="eyecatch">
       <div class="news-list__thumb-img">
         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
       </div>
     </div>
-
     <div class="news-list__header">
       <p class="news-list__title">
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -52,7 +73,6 @@ if(have_posts()) :
     </div>
   </dd>
   <!--表示する内容ここまで-->
-
 <?php endwhile; ?>
 <?php endif; ?>
 <?php wp_reset_query(); ?>
