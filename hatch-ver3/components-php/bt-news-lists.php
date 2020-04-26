@@ -7,7 +7,6 @@
 </div>
 <div class='news-list__container'>
 <?php query_posts('posts_per_page=7'); ?>
-
 <?php
 $ads_infeed = array(3,5,8); //何番目に表示したいか
 $ads_infeed_count = '1';
@@ -18,11 +17,11 @@ $ads_infeed_count = '1';
 <!--表示する内容が入ります。-->
 <?php if (is_single(array('25907','25713','7586'))) : ?>
 <?php else: ?>
-  <dd class="news-list__content google-ads">
     <?php
     $ads_disp = in_array($ads_infeed_count, $ads_infeed);
     if($ads_disp){
     ?>
+    <dd class="news-list__content google-ads">
     <!-- ここにインフィード広告のコードを入れる -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle"
@@ -34,11 +33,11 @@ $ads_infeed_count = '1';
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+    </dd>
     <?php
     }
     $ads_infeed_count++;
     ?>
-    </dd>
   <?php endif; ?>
   <dd class="news-list__content flexbox">
     <div class="eyecatch">
