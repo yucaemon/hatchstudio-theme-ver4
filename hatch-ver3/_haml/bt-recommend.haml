@@ -10,7 +10,7 @@
         <?php
         $posts = get_posts(array(
         'posts_per_page' => 9, // 表示件数
-        'category' => '788' // テスト環境おすすめID630-本番ID788
+        'category' => '630' // テスト環境おすすめID630-本番ID788
         ));
         ?>
         <?php
@@ -24,21 +24,22 @@
           if($ads_disp){
           ?>
           <!-- ここにインフィード広告のコードを入れる -->
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-format="fluid"
-               data-ad-layout-key="-7l+f1-1g-4q+e1"
-               data-ad-client="ca-pub-1574488309106788"
-               data-ad-slot="3447327512"></ins>
-          <script>
-               (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-          <?php
-          }
-          $ads_infeed_count++;
-          ?>
-
+          <li class='eyecatch'>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-format="fluid"
+                 data-ad-layout-key="-7l+f1-1g-4q+e1"
+                 data-ad-client="ca-pub-1574488309106788"
+                 data-ad-slot="3447327512"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <?php
+            }
+            $ads_infeed_count++;
+            ?>
+          </li>
           <li class='eyecatch'>
             <div class='post-lists__img article-list__img imgWrap'><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
             <div class="post-lists__text article-list__text"><p class="post-lists__title list-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p></div>
