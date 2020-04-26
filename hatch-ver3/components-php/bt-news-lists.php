@@ -26,11 +26,11 @@ $ads_infeed_count = '1';
     <!-- ここにインフィード広告のコードを入れる -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle"
-         style="display:block; text-align:center;"
-         data-ad-layout="in-article"
+         style="display:block"
          data-ad-format="fluid"
+         data-ad-layout-key="-hm+j-1j-ah+pk"
          data-ad-client="ca-pub-1574488309106788"
-         data-ad-slot="2119656172"></ins>
+         data-ad-slot="2947799918"></ins>
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
