@@ -1,6 +1,6 @@
 <div  class="related-article">
 <?php
-    $ads_infeed = array(1,4,9);
+    $ads_infeed = array(1,4,9,12);
     //何番目に表示したいか
     $ads_infeed_count = '1';
     global $post_id;    //グローバル変数より投稿IDをゲット
@@ -25,11 +25,9 @@
     //一致する記事が見つかった場合繰り返す
         the_post();
     ?>
-    
     <?php if( !$relatedpost_count ): /* 最初の記事の場合、ヘッダを付与 */ ?>
     <ul class="post-lists article-list box-list flexbox">
     <?php endif; ?>
-
       <?php
         $ads_disp = in_array($ads_infeed_count, $ads_infeed);
         if($ads_disp){
@@ -60,7 +58,7 @@
         </p>
         <div class='post-lists__text article-list__text'>
           <h3 class='post-lists__title list-title'>
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?>tt0</a>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
           </h3>
         </div>
       </li>
