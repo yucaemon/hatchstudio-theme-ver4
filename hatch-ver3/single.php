@@ -28,6 +28,8 @@
 <div class='google-ad'>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- H1タイトル下の広告 -->
+<?php if (is_single(array('25907','25713','7586'))) : ?>
+<?php else: ?>
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-1574488309106788"
@@ -37,6 +39,7 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+<?php endif; ?>
 </div>
 <div class='flexbox'>
 <div class='single-page__views'>
