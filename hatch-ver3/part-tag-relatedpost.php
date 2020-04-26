@@ -1,5 +1,8 @@
 <div  class="related-article">
 <?php
+    $ads_infeed = array(1,4,9);
+    //何番目に表示したいか
+    $ads_infeed_count = '1';
     global $post_id;    //グローバル変数より投稿IDをゲット
     global $tags;       //グローバル変数よりタグ情報をゲット
     $relatedpost_count = 0; //関連記事を出力した数(カウンタ)
@@ -22,22 +25,45 @@
     //一致する記事が見つかった場合繰り返す
         the_post();
     ?>
-        <?php if( !$relatedpost_count ): /* 最初の記事の場合、ヘッダを付与 */ ?>
-        <ul class="post-lists article-list box-list flexbox">
-        <?php endif; ?>
-          <li class='eyecatch'>
-            <div class='post-lists__img article-list__img imgWrap'>
-              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
-            </div>
-            <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
-              <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
-            </p>
-            <div class='post-lists__text article-list__text'>
-              <h3 class='post-lists__title list-title'>
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?>tt0</a>
-              </h3>
-            </div>
-          </li>
+    
+    <?php if( !$relatedpost_count ): /* 最初の記事の場合、ヘッダを付与 */ ?>
+    <ul class="post-lists article-list box-list flexbox">
+    <?php endif; ?>
+
+      <?php
+        $ads_disp = in_array($ads_infeed_count, $ads_infeed);
+        if($ads_disp){
+      ?>
+      <!-- ここにインフィード広告のコードを入れる -->
+      <li class='eyecatch'>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-1574488309106788"
+             data-ad-slot="8640547089"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </li>
+      <?php
+      }
+      $ads_infeed_count++;
+      ?>
+      <li class='eyecatch'>
+        <div class='post-lists__img article-list__img imgWrap'>
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
+        </div>
+        <p class="eyechatchlabel <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
+          <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+        </p>
+        <div class='post-lists__text article-list__text'>
+          <h3 class='post-lists__title list-title'>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?>tt0</a>
+          </h3>
+        </div>
+      </li>
 
     <?php
         $relatedpost_count++;   //記事を出力した数を加算
@@ -50,7 +76,8 @@
     <?php else : ?>
     <ul class="post-lists article-list box-list flexbox ">
         <?php
-          $ads_infeed = array(1,4,9); //何番目に表示したいか
+          $ads_infeed = array(1,4,9);
+          //何番目に表示したいか
           $ads_infeed_count = '1';
         ?>
         <?php
