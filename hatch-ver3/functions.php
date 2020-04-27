@@ -89,6 +89,13 @@ add_filter( 'get_the_archive_title', function ($title) {
 
 });
 
+//記事本文からnoopener noreferrerを削除する(noreferrerが入ってるとアフィリ報酬が無効になるため)
+function remove_noopener_and_noreferrer_demo($the_content){
+$the_content = str_replace(' rel="nofollow noopener noreferrer"', ' rel="nofollow noopener"', $the_content);
+$the_content = str_replace(' rel="noopener noreferrer"', ' rel="noopener"', $the_content);
+return $the_content;
+}
+add_filter('the_content', 'remove_noopener_and_noreferrer_demo', 9999);
 
 // 固定ページを検索結果から除外
 
