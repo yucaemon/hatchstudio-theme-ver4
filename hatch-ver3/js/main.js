@@ -4,6 +4,8 @@
 
 jQuery(document).ready(function($) {
 
+   var adsbygoogle=(adsbygoogle = window.adsbygoogle || []);
+   $(".adsbygoogle").each(function() { adsbygoogle.push(this) });
 
 //ヘッダーの固定
 
