@@ -9214,6 +9214,10 @@ category-page
 
 /* 	mobile settings windowサイズが680以下になった時の処理 */
 @media (max-width: 680px) {
+  .adslot_1 {
+    width: 250px;
+    height: 90px; }
+
   .outer {
     width: 100%;
     min-width: initial; }
