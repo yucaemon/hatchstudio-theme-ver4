@@ -92,7 +92,7 @@
             if($ads_disp){
           ?>
           <!-- ここにインフィード広告のコードを入れる -->
-          <li class='eyecatch'>
+          <li class='eyecatch ad-sen'>
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
             <ins class="adsbygoogle adslot_1"
