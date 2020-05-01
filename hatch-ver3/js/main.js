@@ -30,7 +30,11 @@ jQuery(document).ready(function($) {
 //サイドバーの広告固定
     $(window).on('load scroll', function(){
         // 要素を固定させる位置を取得
-        var fixed = $('.side-fixed-area').offset().top -200;
+        if ( $('#hoge').length ) {
+          $('#hoge').offset().top;
+          var fixed = $('.side-fixed-area').offset().top -200;
+        }
+
         // 要素を解除する位置
         var footer = $('.articles__container__bottom').offset().top -520;
         // 以下の条件分岐で使用する位置の状態を取得

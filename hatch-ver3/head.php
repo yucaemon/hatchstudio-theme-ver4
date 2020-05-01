@@ -38,10 +38,4 @@
 
     gtag('config', 'UA-52447507-1');
   </script>
-　<script>
-    $("document").ready(function(){
-         var adsbygoogle=(adsbygoogle = window.adsbygoogle || []);
-         $(".adsbygoogle").each(function() { adsbygoogle.push(this) });
-    });
-  </script>
 </head>
