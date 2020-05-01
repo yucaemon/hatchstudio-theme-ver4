@@ -29,7 +29,11 @@
       <li class='eyecatch'>
       <!-- ここにインフィード広告のコードを入れる -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <ins class="adslot_1"
+      <style type="text/css">
+      .adslot_1 {
+      @media (max-width:680px) { .adslot_1 { width: 260px; height: 90px; } }
+      </style>
+      <ins class="adsbygoogle adslot_1"
            style="display:block; text-align:center;"
            data-ad-layout="in-article"
            data-ad-format="fluid"

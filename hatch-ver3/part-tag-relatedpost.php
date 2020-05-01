@@ -92,10 +92,13 @@
             if($ads_disp){
           ?>
           <!-- ここにインフィード広告のコードを入れる -->
-          <li class='eyecatch ad-sen'>
+          <li class='eyecatch'>
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-            <ins class="adsbygoogle adslot_1"
+            <style type="text/css">
+            .adslot_2 {
+            @media (max-width:680px) { .adslot_2 { width: 260px; height: 90px; } }
+            </style>
+            <ins class="adsbygoogle adslot_2"
                  style="display:block; text-align:center;"
                  data-ad-layout="in-article"
                  data-ad-format="fluid"

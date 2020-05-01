@@ -1,18 +1,9 @@
 /* 	mobile settings windowサイズが680以下になった時の処理 */
 @media (max-width:680px) {
-  .adslot_1 {
-    width: 250px;
-    height: 90px;
-  }
-  .eyecatch.ad-sen{
-    width: 250px;
-  }
-  
   .outer {
     width: 100%;
     min-width: initial;
   }
-
   .outer__inner{
     width: 100%;
     padding: 20px 15px;
