@@ -26,8 +26,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 
-
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52447507-1"></script>
   <!-- Google Analytics　自動広告 -->
@@ -40,5 +38,10 @@
 
     gtag('config', 'UA-52447507-1');
   </script>
-
+　<script>
+    $("document").ready(function(){
+         var adsbygoogle=(adsbygoogle = window.adsbygoogle || []);
+         $(".adsbygoogle").each(function() { adsbygoogle.push(this) });
+    });
+  </script>
 </head>
