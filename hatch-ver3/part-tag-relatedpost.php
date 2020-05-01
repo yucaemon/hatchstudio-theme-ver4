@@ -94,14 +94,16 @@
           <!-- ここにインフィード広告のコードを入れる -->
           <li class='eyecatch'>
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <ins class="adsbygoogle"
+            <ins class="adsbygoogletest"
                  style="display:block; text-align:center;"
                  data-ad-layout="in-article"
                  data-ad-format="fluid"
                  data-ad-client="ca-pub-1574488309106788"
                  data-ad-slot="8640547089"></ins>
             <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
+              var element = document.getElementsByClassName("adsbygoogle")[0];
+              while (element.firstChild) element.removeChild(element.firstChild);
+              (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
           </li>
           <?php
