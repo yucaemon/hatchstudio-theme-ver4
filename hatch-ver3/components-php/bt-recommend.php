@@ -31,7 +31,7 @@
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <style type="text/css">
       .adslot_1 { width: 100%; height: 100px; }
-      @media (max-width:680px) { .adslot_1 { width: 167px; height: 60px; } }
+      @media (max-width:680px) { .adslot_1 { width: 300px; height: 60px; } }
       }
       </style>
       <ins class="adsbygoogle adslot_1"

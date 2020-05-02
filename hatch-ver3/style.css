@@ -9366,7 +9366,7 @@ category-page
   .articles__container__bottom .bt-right {
     width: 100%; }
     .articles__container__bottom .bt-right .post-lists.article-list li {
-      width: 167px; }
+      width: 50%; }
 
   .footer-sp {
     display: block; }
