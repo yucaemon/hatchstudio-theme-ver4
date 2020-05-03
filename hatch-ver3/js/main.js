@@ -4,9 +4,6 @@
 
 jQuery(document).ready(function($) {
 
-   var adsbygoogle=(adsbygoogle = window.adsbygoogle || []);
-   $(".adsbygoogle").each(function() { adsbygoogle.push(this) });
-
 //ヘッダーの固定
 
     // masthead scroll
@@ -30,10 +27,7 @@ jQuery(document).ready(function($) {
 //サイドバーの広告固定
     $(window).on('load scroll', function(){
         // 要素を固定させる位置を取得
-        if ( $('#hoge').length ) {
-          $('#hoge').offset().top;
           var fixed = $('.side-fixed-area').offset().top -200;
-        }
 
         // 要素を解除する位置
         var footer = $('.articles__container__bottom').offset().top -520;
