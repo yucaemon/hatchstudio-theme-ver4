@@ -250,10 +250,10 @@ add_shortcode('写真説明', 'photoinfoFunc');
 //お店詳細のショートコード
 function shopBoxFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'name' => '不明',
-        'time' => '不明',
-        'address' => '不明',
-        'website' => '不明'
+        'name' => '',
+        'time' => '',
+        'address' => '',
+        'website' => ''
     ), $atts ) );
     return '<div class="detail-box01"><div class="detail-box01__title">' . $name . '</div><div class="detail-box01__contain"><p><i class="fas fa-map-marker-alt"></i>' . $address . '</p><p><i class="fa fa-clock-o" aria-hidden="true"></i>' . $time . '</a></p><p><a href="' . $website . '" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>WEBサイト</a></p></div></div>';
 }
@@ -263,9 +263,9 @@ add_shortcode('お店詳細', 'shopBoxFunc');
 //イベントのショートコード
 function eventBoxFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'name' => '不明',
-        'address' => '不明',
-        'website' => '不明'
+        'name' => '',
+        'address' => '',
+        'website' => ''
     ), $atts ) );
     return '<div class="detail-box01"><div class="detail-box01__title">' . $name . '</div><div class="detail-box01__contain"><p><i class="fas fa-map-marker-alt"></i>' . $address . '</p><p><a href="' . $website . '" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>WEBサイト</a></p></div></div>';
 }
@@ -275,8 +275,8 @@ add_shortcode('イベント', 'eventBoxFunc');
 //詳細テンプレのショートコード
 function detailBoxFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'title' => '不明',
-        'detail' => '不明'
+        'title' => '',
+        'detail' => ''
     ), $atts ) );
     return '<div class="detail-box01"><div class="detail-box01__title">' . $title . '</div><div class="detail-box01__contain"><p>' . $detail . '</p></div></div>';
 }
@@ -286,9 +286,9 @@ add_shortcode('詳細テンプレ', 'detailBoxFunc');
 //関連リンクのショートコード
 function relatedLinksBoxFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'title' => '不明',
-        'img' => '不明',
-        'url' => '不明'
+        'title' => '',
+        'img' => '',
+        'url' => ''
 
     ), $atts ) );
     return '<div class="detail-box02 flexbox"><div class="detail-box02__img"><a href="' . $url . '" target="_blank"><img src="' . $img . '"/></a></div><div class="detail-box02__txt"><div class="detail-box02__sub-title">＞関連記事リンク</div><div class="detail-box02__title"><a href="' . $url . '" target="_blank">' . $title . '</a></div></div></div>';
@@ -299,8 +299,8 @@ add_shortcode('関連リンク', 'relatedLinksBoxFunc');
 //外部リンクのショートコード
 function externallinkFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-       'txt' => '不明',
-       'url' => '不明'
+       'txt' => '',
+       'url' => ''
     ), $atts ) );
     return '<div class="external-link"><a href="' . $url . '" target="_blank"><div class="external-link__title"><i class="fas fa-external-link-alt"></i>' . $txt . '</div></a></div>';
 }
@@ -329,9 +329,9 @@ add_shortcode('記者紹介', 'authorinfoFunc');
 //吹き出しのショートコード-
 function balloonFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'img' => '不明',
-        'author_name' => '不明',
-        'read' => '不明'
+        'img' => '',
+        'author_name' => '',
+        'read' => ''
 
     ), $atts ) );
     return '<div class="detail-balloon-box flexbox"><div class="detail-balloon-box__icon"><div class="detail-balloon-box__img"><img src="' . $img . '"/></div><div class="detail-balloon-box__title">' . $author_name . '</div></div><div class="detail-balloon-box__txt"><div class="detail-balloon-box__read">' . $read . '</div></div></div>';
@@ -349,8 +349,8 @@ add_shortcode('タイトルBOO', 'titlebooFunc');
 //吹き出しBOOのショートコード
 function balloonbooFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'img' => '不明',
-        'read' => '不明'
+        'img' => '',
+        'read' => ''
 
     ), $atts ) );
     return '<div class="detail-balloon-box flexbox"><div class="detail-balloon-box__icon"><div class="detail-balloon-box__boo__img"><img src="' . $img . '"/></div></div><div class="detail-balloon-box__boo"><div class="detail-balloon-box__read">' . $read . '</div></div></div>';
@@ -394,9 +394,9 @@ add_shortcode('リスト3商品詳細', 'listthreeproductdetailboxFunc');
 //商品リストのショートコード
 function productlistsboxFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'img' => '不明',
-        'url' => '不明',
-        'producttitle' => '不明',
+        'img' => '',
+        'url' => '',
+        'producttitle' => '',
         'listone' => '',
         'listtwo' => '',
         'listthree' => ''
@@ -425,7 +425,7 @@ add_shortcode('詳細テーブル', 'detailtableFunc');
 //アマゾンボタンUSAのショートコード
 function amazonbtnFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'url' => '不明'
+        'url' => ''
 
     ), $atts ) );
     return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine btn-fly btn-amazon shortcode-btn" target="_blank">amazon(アメリカ)で商品を詳しく見る <i class="fa fa-chevron-circle-right"></i></a></div>';
@@ -435,7 +435,7 @@ add_shortcode('アマゾンボタン', 'amazonbtnFunc');
 //楽天ボタンのショートコード
 function rakutenbtnFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'url' => '不明'
+        'url' => ''
 
     ), $atts ) );
     return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine shortcode-btn btn-rakuten btn-fly"target="_blank">楽天(日本)で商品を詳しく見る <i class="fa fa-chevron-circle-right"></i></a></div>';
@@ -446,7 +446,7 @@ add_shortcode('楽天ボタン', 'rakutenbtnFunc');
 //日本ボタンのショートコード
 function japanbtnFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'url' => '不明'
+        'url' => ''
 
     ), $atts ) );
     return '<div class="shortcode__btn"><a href="' . $url . '" class="btn-shine shortcode-btn btn-amazon-jan btn-fly"target="_blank">amazon(日本)で商品を詳しく見る  <i class="fa fa-chevron-circle-right"></i></a></div>';
@@ -456,8 +456,8 @@ add_shortcode('日本アマゾンボタン', 'japanbtnFunc');
 //成果報酬アフィリエイト商品ボタンのショートコード
 function affiliatemarketingproductbtnFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
-        'productname' => '不明',
-        'url' => '不明'
+        'productname' => '',
+        'url' => ''
 
     ), $atts ) );
     return '<div class="affiliate-btn"><a href="' . $url . '"  class="btn-shine btn-fly shortcode-btn affiliate-btn__product " target="_blank">' . $productname . 'の詳細を見る <i class="fa fa-chevron-circle-right"></i></a></div>';
@@ -468,9 +468,9 @@ add_shortcode('成果報酬アフィリエイト商品ボタン', 'affiliatemark
 function affiliatemarketingservicebtnFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
         'fronttxt' =>'',
-        'servicename' => '不明',
+        'servicename' => '',
         'btmtxt' =>'',
-        'url' => '不明'
+        'url' => ''
 
     ), $atts ) );
     return '<div class="affiliate-btn"><div class="affiliate-btn__txt-top">' . $fronttxt . '</div><a href="' . $url . '" class="btn-shine btn-fly shortcode-btn affiliate-btn__service" target="_blank">' . $servicename . ' <i class="fa fa-chevron-circle-right"></i></a><div class="affiliate-btn__txt-btm">' . $btmtxt . '</div></div>';
@@ -489,9 +489,9 @@ function
 couponbtnFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
         'fronttxt' =>'',
-        'name' => '不明',
+        'name' => '',
         'btmtxt' =>'',
-        'url' => '不明'
+        'url' => ''
 
     ), $atts ) );
     return '<div class="affiliate-btn"><div class="affiliate-btn__txt-top">' . $fronttxt . '</div><a href="' . $url . '" class="shortcode-btn affiliate-btn__service affiliate-btn__service-coupon btn-shine btn-fly" target="_blank">' . $name . ' <i class="fa fa-chevron-circle-right"></i></a><div class="affiliate-btn__txt-btm">' . $btmtxt . '</div></div>';
