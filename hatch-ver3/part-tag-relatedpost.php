@@ -73,11 +73,11 @@
     </ul><!--id:related_post_wrap close-->
     <?php else : ?>
     <ul class="post-lists article-list box-list flexbox ">
-        <?php
-          $ads_infeed = array(1,4,9);
+        <!-- ?php
+          //$ads_infeed = array(1,4,9);
           //何番目に表示したいか
-          $ads_infeed_count = '1';
-        ?>
+          //$ads_infeed_count = '1';
+        ? -->
         <?php
            $args = array(
           'posts_per_page' => 9,
@@ -87,36 +87,6 @@
         );
         $posts = get_posts( $args );
           if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
-          <?php
-            $ads_disp = in_array($ads_infeed_count, $ads_infeed);
-            if($ads_disp){
-          ?>
-          <!-- ここにインフィード広告のコードを入れる -->
-          <li class='eyecatch'>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <style type="text/css">
-            .adslot_2 { width: 100%; height: 100px; }
-            @media (max-width:680px) { .adslot_2 { width: 468px; height: 60px; } }
-            }
-            </style>
-            <ins class="adsbygoogle adslot_2"
-                 style="display:block; text-align:center;"
-                 data-ad-layout="in-article"
-                 data-ad-format="fluid"
-                 data-ad-client="ca-pub-1574488309106788"
-                 data-ad-slot="8640547089"></ins>
-            <script>
-            window.onload = function() {
-              var element = document.getElementsByClassName("adsbygoogle")[0];
-              while (element.firstChild) element.removeChild(element.firstChild);
-              (adsbygoogle = window.adsbygoogle || []).push({});
-             }
-            </script>
-          </li>
-          <?php
-          }
-          $ads_infeed_count++;
-          ?>
           <li class='eyecatch'>
             <div class='post-lists__img article-list__img imgWrap'>
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>

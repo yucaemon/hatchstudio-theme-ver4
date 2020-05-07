@@ -11,24 +11,24 @@
   <?php
   $posts = get_posts(array(
   'posts_per_page' => 9, // 表示件数
-  'category' => '788' // テスト環境おすすめID630-本番ID788
+  'category' => '630' // テスト環境おすすめID630-本番ID788
   ));
   ?>
-  <?php
+  <!-- ?php
   $ads_infeed = array(1,5,9); //何番目に表示したいか
   $ads_infeed_count = '1';
-  ?>
+  ? -->
   <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
     <!--表示する内容が入ります。-->
-    <?php if (is_single(array('25907','25713','7586'))) : ?>
-    <?php else: ?>
-      <?php
+    <!-- ?php if (is_single(array('25907','25713','7586'))) : ? -->
+    <!-- ?php else: ? -->
+      <!-- ?php
       $ads_disp = in_array($ads_infeed_count, $ads_infeed);
       if($ads_disp){
-      ?>
-      <li class='eyecatch'>
+      ? -->
+      <!-- li class='eyecatch' -->
       <!-- ここにインフィード広告のコードを入れる -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <style type="text/css">
       .adslot_1 { width: 100%; height: 100px; }
       @media (max-width:680px) { .adslot_1 { width: 167px; height: 60px; } }
@@ -40,19 +40,19 @@
            data-ad-format="fluid"
            data-ad-client="ca-pub-1574488309106788"
            data-ad-slot="2119656172"></ins>
-      <script>
+      <!-- script>
         window.onload = function() {
           var element = document.getElementsByClassName("adsbygoogle")[0];
           while (element.firstChild) element.removeChild(element.firstChild);
           (adsbygoogle = window.adsbygoogle || []).push({});
          }
-      </script>
-      </li>
-      <?php
+      </script -->
+      <!-- /li -->
+      <!-- ?php
       }
       $ads_infeed_count++;
-      ?>
-    <?php endif; ?>
+      ? -->
+    <!-- ?php endif; ? -->
     <li class='eyecatch'>
       <div class='post-lists__img article-list__img imgWrap'><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
       <div class="post-lists__text article-list__text"><p class="post-lists__title list-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p></div>
