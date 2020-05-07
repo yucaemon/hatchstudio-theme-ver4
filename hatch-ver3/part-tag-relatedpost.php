@@ -1,6 +1,6 @@
 <div  class="related-article">
 <?php
-    $ads_infeed = array(1,4,9,12);
+    //$ads_infeed = array(1,4,9,12);
     //何番目に表示したいか
     $ads_infeed_count = '1';
     global $post_id;    //グローバル変数より投稿IDをゲット
@@ -28,12 +28,12 @@
     <?php if( !$relatedpost_count ): /* 最初の記事の場合、ヘッダを付与 */ ?>
     <ul class="post-lists article-list box-list flexbox">
     <?php endif; ?>
-      <?php
+      <!--?php
         $ads_disp = in_array($ads_infeed_count, $ads_infeed);
         if($ads_disp){
-      ?>
+      ? -->
       <!-- ここにインフィード広告のコードを入れる -->
-      <li class='eyecatch'>
+      <!--li class='eyecatch'>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <ins class="adsbygoogle"
              style="display:block; text-align:center;"
@@ -44,11 +44,11 @@
         <script>
              (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-      </li>
-      <?php
+      </li -->
+      <!--?php
       }
       $ads_infeed_count++;
-      ?>
+      ?-->
       <li class='eyecatch'>
         <div class='post-lists__img article-list__img imgWrap'>
           <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
