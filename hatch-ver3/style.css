@@ -7998,9 +7998,6 @@ body {
     max-width: 843px;
     height: auto;
     object-fit: cover; }
-  .single-page__entry-content .empty-container {
-    content: '';
-    width: 30%; }
   .single-page__entry-content .detail-box01 {
     border: solid 1px #d4d4d4;
     font-size: 10px;
@@ -8785,6 +8782,9 @@ service-page/ web & translate & contens
 house-page/share-house＆real-estate
 
 *************************************************/
+.house-page .empty-container {
+  content: '';
+  width: 30%; }
 .house-page__share-house-sp {
   display: none; }
 .house-page__header {
