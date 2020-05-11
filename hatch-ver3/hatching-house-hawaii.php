@@ -77,22 +77,22 @@ HAWAII HOUSE
 <ul class='room__detail__read'>
 <li>
 <div class='room__detail__read--title'>
-静かにゆったり♡ひとり旅におすすめ
+静かにゆったり♡お友達との旅におすすめ
 </div>
 <div class='room__detail__read--roomname'>
-Cozy（コージー）/ROOM
+2F(A)ROOM
 </div>
 </li>
 <li>
 <div class='room__detail__read--day'>
-$60/1泊
+$78/1泊
 </div>
 </li>
 <li>
 <ul class='room__detail__amenity'>
 <li>
 <i class="fas fa-bed"></i>
-シングルサイズベット
+クィーンサイズベット
 </li>
 <li>
 <i class="fas fa-bath"></i>
@@ -100,7 +100,7 @@ $60/1泊
 </li>
 <li>
 <i class="fas fa-user-plus"></i>
-おひとりさまのみ
+プラス1名様追加可能 $15 (２名様まで)
 </li>
 </ul>
 </li>
@@ -116,19 +116,19 @@ $60/1泊
 プライベート重視♡カップルおすすめ
 </div>
 <div class='room__detail__read--roomname'>
-2F/Queen（クィーン）/ROOM
+2F/(B)ROOM
 </div>
 </li>
 <li>
 <div class='room__detail__read--day'>
-$68/1泊
+$78/1泊
 </div>
 </li>
 <li>
 <ul class='room__detail__amenity'>
 <li>
 <i class="fas fa-bed"></i>
-クイーンサイズベット
+クィーンサイズベット
 </li>
 <li>
 <i class="fas fa-bath"></i>
@@ -136,56 +136,13 @@ $68/1泊
 </li>
 <li>
 <i class="fas fa-user-plus"></i>
-お1人様料金です
+プラス1名様追加可能 $15 (２名様まで)
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<div class='room__detail'>
-<div class='room__detail__img'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/guest-house-hawaii/hatching-house-hawaii-room-a.jpg">
-</div>
-<ul class='room__detail__read'>
-<li>
-<div class='room__detail__read--title'>
-女性ひとり旅でマイペースに旅をしたい方
-</div>
-<div class='room__detail__read--roomname'>
-リトリートツワー
-</div>
-</li>
-<li>
-<div class='room__detail__read--day'>
-$65/1プラン
-</div>
-</li>
-<li>
-<ul class='room__detail__amenity'>
-<li>
-<i class="fas fa-star"></i>
-満点の夜空の星空見に行こう♪プラン
-</li>
-<li>
-<i class="fas fa-star"></i>
-ヒロからコナ観光しに行こう♪プラン
-</li>
-<li>
-<i class="fas fa-star"></i>
-ヒロの人気のスポットに行こう♪プラン
-</li>
-<li>
-<i class="fas fa-star"></i>
-乗馬を体験しに行こう♪プラン
-</li>
-<li>
-<i class="fas fa-user-plus"></i>
-お1人様/料金（プランは選べます） お2人様より$15追加
-</li>
-</ul>
-</li>
-</ul>
-</div>
+<div class='empty-container'></div>
 </div>
 <div class='house-page__body__facility'>
 <h2 class='house-page__body__header'>
@@ -242,20 +199,12 @@ WIFI（無料インターネット）
 禁煙 (外庭でのみ喫煙可)
 </li>
 <li>
-<i class="fas fa-wind"></i>
-エアコン暖房
-</li>
-<li>
 <i class="fas fa-parking"></i>
-無料路上駐車場
+駐車場あり
 </li>
 <li>
 <i class="fas fa-car"></i>
 オプション：有料送迎（事前予約要:1回$35）
-</li>
-<li>
-<i class="fas fa-tree"></i>
-庭の果物（バナナ＆パイナップル＆オレンジ）無料
 </li>
 </ul>
 </div>

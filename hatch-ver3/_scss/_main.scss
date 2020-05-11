@@ -1138,7 +1138,6 @@ body {
       height: auto;
       object-fit: cover;
     }
-
     .detail-box01 {
       border: solid 1px $border_color;
       @include fts(10, 10);
@@ -2076,7 +2075,6 @@ house-page/share-house＆real-estate
     padding-left: 15px;
     }
   }
-
   &__body {
     &__container {
     text-align: center;
@@ -2115,6 +2113,10 @@ house-page/share-house＆real-estate
       li{
         padding-bottom:10px;
       }
+    }
+    .empty-container {
+        content: '';
+        width: 30%;
     }
     &__facility{
       border: solid 1px #dadada;
