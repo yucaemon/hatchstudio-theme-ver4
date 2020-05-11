@@ -7998,6 +7998,9 @@ body {
     max-width: 843px;
     height: auto;
     object-fit: cover; }
+  .single-page__entry-content .empty-container {
+    content: '';
+    width: 30%; }
   .single-page__entry-content .detail-box01 {
     border: solid 1px #d4d4d4;
     font-size: 10px;
@@ -8851,9 +8854,6 @@ house-page/share-house＆real-estate
   text-align: start; }
   .house-page__body__detail li, .service-page__list__detail li {
     padding-bottom: 10px; }
-.house-page__body .empty-container {
-  content: '';
-  width: 30%; }
 .house-page__body__facility {
   border: solid 1px #dadada;
   padding: 30px;
