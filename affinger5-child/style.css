@@ -1,0 +1,832 @@
+/*
+Theme Name: WING-AFFINGER5 Child
+Template: affinger5
+Description: ver20180831以上対応
+Version: 20180831
+*/
+/*
+
+	index.page
+
+*************************************************/
+
+
+/*
+
+	single.page
+
+*************************************************/
+/*ショートカット*/
+   .font-decoration-btn {
+    display: inline-block;
+    width: 100%;
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 1;
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    color: #222;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    background-color: #ffcf6e;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin: 20px 0; }
+   .title-boo {
+    padding: .8em .8em .8em 3.3em;
+    background: url(images/boo-bannar.png) no-repeat top 7px left 10px, url(images/cmn_h2_bg.jpg) repeat !important;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    color: #fff; }
+   .producttitle-btn {
+    background-color: #ffe569e0;
+    border-radius: 5px;
+    border-bottom: none;
+    position: relative;
+    border: none; }
+   .producttitle-btn:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 30px;
+    border: 10px solid transparent;
+    border-top: 10px solid #ffe569e0;
+    width: 0;
+    height: 0; }
+   .font-decoration-barline {
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    color: #222;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding-left: 20px;
+    border-left: solid 6px #ffcf6e;
+    margin: 20px 0; }
+   img {
+    padding: 30px 0;
+    display: block;
+    max-width: 843px;
+    height: auto;
+    object-fit: cover; }
+   .detail-box01 {
+    border: solid 1px #d4d4d4;
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 20px;
+    margin: 30px 0; }
+     .detail-box01__title {
+      font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+      color: #222;
+      word-wrap: break-word;
+      font-size: 11px;
+      font-size: 1.1rem;
+      line-height: 1;
+      line-height: 1.4;
+      font-weight: 600;
+      letter-spacing: .05em;
+      line-height: 1.6;
+      margin-bottom: 20px; }
+     .detail-box01__contain p {
+      letter-spacing: 1.2px;
+      font-size: 8px;
+      font-size: 0.8rem;
+      line-height: 1;
+      color: #9c9c9c;
+      padding-bottom: 1%;
+      line-height: 1.5; }
+       .detail-box01__contain p i {
+        font-size: 9px;
+        font-size: 0.9rem;
+        line-height: 1;
+        padding-right: 10px; }
+       .detail-box01__contain p a {
+        font-size: 8px;
+        font-size: 0.8rem;
+        line-height: 1;
+        color: #9c9c9c; }
+   .detail-box02,  .detail-box03,  .detail-author-box {
+    border: solid 1px #d4d4d4;
+    margin: 30px 0; }
+     .detail-box02 a,  .detail-box03 a,  .detail-author-box a {
+      color: #333; }
+     .detail-box02__img {
+      width: 21%;
+      padding-right: 15px;
+      height: 105px; }
+     .detail-box02__txt {
+      width: 75%; }
+       .detail-box02__txt p {
+        color: #dcdcdc;
+        font-size: 7px;
+        font-size: 0.7rem;
+        line-height: 1.71429;
+        padding-bottom: 0; }
+     .detail-box02__sub-title {
+      font-size: 0.7em;
+      color: #9c9c9c; }
+     .detail-box02__title {
+      font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+      color: #222;
+      word-wrap: break-word;
+      font-size: 11px;
+      font-size: 1.1rem;
+      line-height: 1;
+      line-height: 1.4;
+      font-weight: 600;
+      letter-spacing: .05em;
+      line-height: 1.6;
+      padding: 7px 0; }
+     .detail-box02 img,  .detail-box03 img,  .detail-author-box img {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+   .detail-box03 a {
+    color: #f5f2f2; }
+   .detail-box03__img {
+    width: 40%; }
+   .detail-box03__txt {
+    width: 45%;
+    padding: 35px 48px 0 48px; }
+   .detail-box03__title,  .detail-box03__price {
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+    color: #222;
+    word-wrap: break-word;
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 1;
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: .05em;
+    line-height: 1.6;
+    padding-bottom: 20px; }
+   .detail-box03__price {
+    font-size: 8px;
+    font-size: 0.8rem;
+    line-height: 1;
+    padding-bottom: 15px; }
+   .detail-box03__brand {
+    font-size: 8px;
+    font-size: 0.8rem;
+    line-height: 1;
+    padding-bottom: 12px;
+    letter-spacing: 0.8px; }
+    .detail-box03__brand a {
+      color: #f2716e; }
+   .detail-box03__read {
+    font-size: 7px;
+    font-size: 0.7rem;
+    line-height: 1;
+    color: #9c9c9c;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    padding: 5px 0 20px 0; }
+   .detail-box03__shipping {
+    font-size: 8px;
+    font-size: 0.8rem;
+    line-height: 1;
+    padding-bottom: 15px; }
+   .detail-box03__similar-products {
+    font-size: 8px;
+    font-size: 0.8rem;
+    line-height: 1;
+    color: #9c9c9c;
+    margin-bottom: 17px; }
+     .detail-box03__similar-products a {
+      color: #9c9c9c; }
+   .detail-box03__btn-subtxt {
+    font-size: 0.7rem;
+    line-height: 1;
+    padding-top: 14px;
+    color: #9c9c9c; }
+   .detail-box03 i.fa {
+    padding-right: 6px; }
+   .productdetailbox {
+    width: 100%;
+    margin-bottom: 30px; }
+     .productdetailbox__img img {
+      display: inline-block;
+      text-align: center;
+      vertical-align: top; }
+     .productdetailbox__lists {
+      font-size: 10px;
+      font-size: 1rem;
+      line-height: 1;
+      border-radius: 20px;
+      border: 3px solid #ffceca;
+      background: 0 0;
+      color: #f2695d;
+      width: 63%;
+      margin: 33px 0 33px 29px;
+      padding: 1.5em;
+      font-weight: 700; }
+       .productdetailbox__lists__list {
+        padding-bottom: 5px;
+        line-height: 1.5; }
+   .productlistsbox {
+    border-top: 1px #ccc solid;
+    padding: 20px 0 0;
+    margin: 20px 0; }
+     .productlistsbox__img img {
+      width: 200px;
+      height: 137px;
+      padding: 0;
+      padding-right: 15px;
+      object-fit: cover; }
+     .productlistsbox__title {
+      padding-bottom: 0;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1;
+      text-decoration: underline; }
+   .btn-fly {
+    transition: all 0.3s ease 0s; }
+   .btn-fly:hover {
+    box-shadow: 0 7px 19px rgba(0, 0, 0, 0.2), 0 2px 3px -2px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.1875em); }
+   .btn-shine {
+    color: #fff;
+    background-color: #c9171e;
+    /*背景色の変更*/
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: normal;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 14px 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; }
+   .btn-shine:hover {
+    color: #fff; }
+   .btn-shine:before {
+    /*光るアニメーション用*/
+    animation: shine 5s ease-in-out infinite;
+    /*数字を変更することで光る間隔が変更*/
+    background-color: #fff;
+    content: " ";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: -180px;
+    transform: rotate(45deg);
+    width: 30px; }
+@keyframes shine {
+  0% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0; }
+  80% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0.5; }
+  81% {
+    transform: scale(4) rotate(45deg);
+    opacity: 1; }
+  100% {
+    transform: scale(50) rotate(45deg);
+    opacity: 0; } }
+   .shortcode__btn {
+    width: 50%;
+    padding: 0 10px; }
+   .shortcode__btn__container-center .shortcode__btn {
+    width: 51% !important;
+    margin: 0 auto; }
+   .shortcode-btn {
+    box-sizing: border-box;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 2px 3px -2px rgba(0, 0, 0, 0.15);
+    background-color: #4575B4; }
+     .shortcode-btn a {
+      color: #fff; }
+     .shortcode-btn__container-center {
+      display: flex;
+      justify-content: center; }
+   .btn-amazon {
+    background: #f29b35; }
+   .btn-rakuten {
+    background: #bf0000; }
+   .btn-amazon-jan {
+    background: #f31333; }
+   .affiliate-btn {
+    text-align: center;
+    margin-top: 35px; }
+    .affiliate-btn__product {
+      background: #93d5e0;
+      width: 100%; }
+    .affiliate-btn__service {
+      width: 100% !important;
+      margin: .5em .5em .5em 0;
+      text-decoration: none;
+      display: inline-block;
+      padding: .4em 1.3em;
+      border-radius: 3px;
+      color: #fff;
+      font-weight: 700; }
+     .affiliate-btn__service-coupon {
+        background: #fbb468; }
+     .affiliate-btn__service img {
+        padding: 0;
+        display: none; }
+     .affiliate-btn__txt-top {
+      font-family: "Quicksand","Helvetica","Arial","Hiragino Kaku Gothic ProN","Hiragino Sans",YuGothic,"Yu Gothic","メイリオ",Meiryo,sans-serif;
+      display: inline-block;
+      position: relative;
+      padding: 0 25px;
+      color: #cccfd7;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: 1px; }
+     .affiliate-btn__txt-top:before {
+      left: 0;
+      -webkit-transform: rotate(50deg);
+      transform: rotate(50deg); }
+     .affiliate-btn__txt-top:after {
+      right: 0;
+      -webkit-transform: rotate(-50deg);
+      transform: rotate(-50deg); }
+     .affiliate-btn__txt-top:before, .affiliate-btn__txt-top:after {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: #d8dae1;
+      content: ""; }
+     .affiliate-btn__txt-btm {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      text-align: left;
+      padding-bottom: 4px; }
+   .detail-author-box {
+    padding: 30px; }
+     .detail-author-box__txt {
+      width: 100%;
+      font-size: 16px;
+      line-height: 1.4; }
+     .detail-author-box__title {
+      font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+      color: #222;
+      word-wrap: break-word;
+      font-size: 10px;
+      font-size: 1rem;
+      line-height: 1;
+      line-height: 1.4;
+      font-weight: 600;
+      letter-spacing: .05em;
+      line-height: 1.6;
+      padding-bottom: 10px; }
+     .detail-author-box__read {
+      color: #b5b5b5;
+      font-size: 13px;
+      padding-bottom: 15px; }
+     .detail-author-box__sns {
+      align-items: center; }
+     .detail-author-box i {
+      font-size: 20px;
+      color: #fff; }
+     .detail-author-box .author-box__btn {
+      width: 120px;
+      border-radius: 3px;
+      text-align: center;
+      padding: 10px 0;
+      margin-right: 10px; }
+     .detail-author-box .instagram__btn__small {
+      background-color: #ff846a; }
+     .detail-author-box .twitter__btn__small {
+      background-color: #98e8ec; }
+     .detail-author-box .web__btn__small {
+      background-color: #ebd4a4; }
+ .sourcelink {
+  font-size: 7px;
+  font-size: 0.7rem;
+  line-height: 1;
+  color: #b5b5b5;
+  padding-bottom: 20px; }
+   .sourcelink a {
+    color: #b5b5b5; }
+ .photo-info {
+  font-size: 1em;
+  color: #909090;
+  padding-bottom: 10px; }
+ .external-link {
+  padding: 20px;
+  border: solid 1px #dadada;
+  margin: 10px 0 20px 0;
+  font-size: 17px; }
+   .external-link i {
+    padding-right: 10px; }
+   .external-link__title {
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+    color: #222;
+    word-wrap: break-word;
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 1;
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: .05em;
+    line-height: 1.6;
+    padding-bottom: 0;
+    color: #f1a239; }
+ .detail-balloon-box {
+  width: 100%;
+  padding: 25px 5px;
+  align-items: center; }
+   .detail-balloon-box__img img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: solid 2px #ffcf6e;
+    border-radius: 50%;
+    padding: 0; }
+   .detail-balloon-box__boo__img img {
+    width: 80px;
+    height: 80px;
+    padding: 0; }
+   .detail-balloon-box__title {
+    text-align: center;
+    font-size: 11px;
+    width: 80px;
+    line-height: 1.2;
+    padding-top: 7px; }
+   .detail-balloon-box__icon {
+    padding-right: 30px; }
+   .detail-balloon-box__txt {
+    width: 80%;
+    background-color: #f3f3f3;
+    padding: 15px; }
+   .detail-balloon-box__boo {
+    background-color: #e1f2f3;
+    width: 80%;
+    padding: 20px;
+    position: relative;
+    border-radius: 15px;
+    -webkit-border-radius: 15px; }
+   .detail-balloon-box__boo:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #e0edff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; }
+ .postscript-info {
+  background-color: #efefef;
+  padding: 28px;
+  margin: 15px 0 20px 0;
+  color: #a5a5a5; }
+ .emphasis {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
+  letter-spacing: 2px; }
+ .affiliate-ad {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  width: 750px; }
+ .paging-nav {
+  width: auto;
+  background-color: #f6cdc4; }
+   .paging-nav__container {
+    padding: 20px; }
+   .paging-nav__content {
+    width: 50%; }
+   .paging-nav__head {
+    padding-bottom: 10px;
+    line-height: 3; }
+     .paging-nav__head__txt .next_title {
+      padding: 0 15px; }
+     .paging-nav__head i {
+      background-color: #ff846a;
+      color: #fff;
+      font-size: 37px;
+      padding: 6px 9px; }
+   .paging-nav__body__img {
+    width: 28%; }
+     .paging-nav__body__img img {
+      width: 100%;
+      height: 75px;
+      object-fit: cover; }
+   .paging-nav__body__read {
+    width: 66%;
+    font-size: 11px;
+    padding: 0 10px;
+    font-weight: bold; }
+ .wrote-models-lists {
+  padding: 30px 0;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4; }
+   .wrote-models-lists__header {
+    font-size: 8px;
+    font-size: 0.8rem;
+    line-height: 1;
+    color: #9c9c9c;
+    letter-spacing: 1px;
+    padding-right: 10px; }
+   .wrote-models-lists__img {
+    padding-right: 17px;
+    border-radius: 60px　 !important; }
+   .wrote-models-lists .author-profile-sns {
+    line-height: 5px;
+    height: 24px;
+    vertical-align: middle;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #ffede9;
+    color: #ffede9;
+    letter-spacing: 1px;
+    font-size: 15px; }
+     .wrote-models-lists .author-profile-sns a {
+      color: #ffa5a5;
+      font-size: 10px;
+      padding: 10px; }
+   .wrote-models-lists__name {
+    padding-right: 15px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #9c9c9c; }
+
+
+/*media Queries スマートフォンとタブレットサイズ（959px以下）で適応したいCSS - スマホ・タブレット
+---------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 959px) {
+
+
+	/*-- ここまで --*/
+}
+
+/*media Queries タブレットサイズ（600px～959px）のみで適応したいCSS -タブレットのみ
+---------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+
+
+	/*-- ここまで --*/
+}
+
+/*media Queries タブレット（600px）以上で適応したいCSS -タブレット・PC
+---------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+
+
+	/*-- ここまで --*/
+}
+
+/*media Queries PCサイズ（960px）以上で適応したいCSS - PCのみ
+---------------------------------------------------------------------------------------------------*/
+
+/*
+	トップページ
+*************************************************/
+
+@media print, screen and (min-width: 960px) {
+.front-page .kanren {
+	    display: flex;
+	    width: 1200px !important;
+	    margin: 0 auto;
+	    justify-content: space-between;
+			flex-wrap: wrap;
+	}
+.front-page	#content {
+      max-width: 100% !important;
+  }
+.front-page	main{
+		padding: 0 !important;
+	}
+.front-page	.kanren dd {
+    padding-left: 0;
+}
+.front-page .kanren dl {
+    width: 203px;
+}
+.front-page .kanren dt {
+	float: initial;
+	width: 100%;
+	object-fit: cover;
+}
+
+.front-page .kanren dt img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.front-page .main_hogoneko_contents.pc {
+    height: 100px;
+    background-color: #f3d4e5;
+}
+
+/*
+	メニューバー
+*************************************************/
+  #gnav > ul {
+    display: table;
+    padding-left: 50px; }
+
+  #gnav > ul > li {
+    display: table-cell;
+    margin-right: 2em; }
+
+  #gnav > ul > li:hover {
+    background-color: #ffc9bc; }
+
+  #gnav > ul > li:hover > a {
+    color: #fff; }
+
+  #gnav > ul > li:hover .menu {
+    max-height: 9999px;
+    opacity: 1; }
+
+  #gnav > ul > li > a {
+    display: block;
+    padding: 21px 1em 21px;
+    transition: all .2s ease-in; }
+
+  #gnav > ul .menu {
+    transition: all .2s ease-in;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    width: 100%;
+    min-width: 1260px;
+    left: 0;
+    position: absolute;
+    background-color: #ffc9bc;
+    z-index: 5000;
+    font-size: 1em;
+    padding: 0 40px; }
+
+  #gnav > ul .menu .menu_inner {
+    padding: 1em 0; }
+
+  #gnav > ul .menu .menu_inner li {
+    display: inline-block;
+    margin: 0 .5em; }
+
+  #gnav > ul .menu a {
+    color: #fff; }
+
+  #st-header {
+      max-width: initial !important;
+     }
+  #st-headerbox .st-header-content {
+         padding: 0 !important;
+     }
+
+.header-bar {
+  width: 100%;
+  height: 70px;
+  background: #f9b19d;
+}
+.header-bar .header-bar__inner {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .header-bar__menu {
+    width: auto; }
+
+.scrolled {
+  position: fixed;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+
+  /*
+  	ヘッダー
+  *************************************************/
+  .outer__header.header {
+    margin: 20px auto 0 auto;
+    padding: 0 40px;
+  }
+  .sns-icons {
+    width: 300px;
+    display: flex;
+  }
+  .sns-icons__icon {
+    width: 43px;
+    padding-right: 10px;
+  }
+  .header__pic {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo__img img {
+    margin: auto;
+}
+  .sub-title {
+    font-size: 8px;
+    font-size: 0.8rem;
+    line-height: 1.125;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+    color: #737373;
+    letter-spacing: 1px;
+    padding-bottom: 16%;
+  }
+  .sub-title a {
+      text-decoration: none;
+      color: #222;
+  }
+  .logo__img img {
+      width: 50%;
+  }
+  .header__pic--logo{
+    width: 430px;
+    padding-bottom: 60px;
+  }
+  .background-draw img{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .background-draw {
+    margin-top: auto;
+  }
+  .background-draw__left {
+    margin-bottom: -3px;
+  }
+
+  /*
+  	メニューバー
+  *************************************************/
+
+  .header-bar__logo {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    height: 71px;
+    display: table; }
+
+  .header-bar .logo__img-h {
+    display: table-cell;
+    vertical-align: middle; }
+    .header-bar .logo__img-h img {
+      width: 26px; }
+  .header-bar .logo__title {
+    padding: 0 10px;
+    display: table-cell;
+    vertical-align: middle; }
+    .header-bar .logo__title a {
+      color: #fff; }
+  .header-bar .header-bar__nav__list {
+    display: flex; }
+  .header-bar__nav__item {
+    padding: 10px 16px; }
+    .header-bar__nav__item a {
+      display: block; }
+  .header-bar__nav__text {
+    text-align: center;
+    font-size: 11px;
+    color: #fff; }
+  .header-bar__nav__text--en {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Montserrat", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
+  .header-bar__nav__text--jp {
+    color: #fff !important; }
+
+
+
+
+/*media Queries スマホサイズ（599px）以下で適応したいCSS - スマホのみ
+---------------------------------------------------------------------------------------------------*/
+@media print, screen and (max-width: 599px) {
+
+	/*-- ここまで --*/
+}
