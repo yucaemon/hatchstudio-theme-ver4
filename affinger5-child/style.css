@@ -611,6 +611,9 @@ Version: 20180831
 *************************************************/
 
 @media print, screen and (min-width: 960px) {
+  .tate-kanren .kanren {
+    width: 494px !important;
+  }
 .front-page .kanren {
 	    display: flex;
 	    width: 1200px !important;
@@ -645,6 +648,8 @@ Version: 20180831
     height: 100px;
     background-color: #f3d4e5;
 }
+
+
 
 /*
 	メニューバー
