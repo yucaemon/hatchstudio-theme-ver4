@@ -17,13 +17,10 @@
 </div>
 <ul class='drawer-menu'>
 <li class='drawer-menu__li'>
-<a href="https://hatchstudioinc.com/">サンフランシスコ</a>
+<a href="https://hatchstudioinc.com/archives/category/sanfrancisco">サンフランシスコ</a>
 </li>
 <li class='drawer-menu__li'>
-<a href="http://ucberkeley.hatchstudioinc.com/">バークレー</a>
-</li>
-<li class='drawer-menu__li'>
-<a href="http://newyork.hatchstudioinc.com/">ニューヨーク</a>
+<a href="https://hatchstudioinc.com/archives/category/newyork">ニューヨーク</a>
 </li>
 <li class='drawer-menu__li'>
 <a href="https://hatchstudioinc.com/archives/category/portland">ポートランド</a>
@@ -39,36 +36,12 @@
 </li>
 </ul>
 <div class='drawer-nav__title'>
-<i class='fa fa-globe'></i>
-サービス
-</div>
-<ul class='drawer-menu'>
-<li class='drawer-menu__li'>
-<a href="<?php echo esc_url( home_url( '/web' ) ); ?>">WEB/動画制作</a>
-</li>
-<li class='drawer-menu__li'>
-<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>">コンテンツ制作</a>
-</li>
-<li class='drawer-menu__li'>
-<a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>">ゲストハウス</a>
-</li>
-<li class='drawer-menu__li'>
-<a href="<?php echo esc_url( home_url( '/translate' ) ); ?>">英語/中国語翻訳</a>
-</li>
-<li class='drawer-menu__li'>
-<a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>">不動産サポート</a>
-</li>
-</ul>
-<div class='drawer-nav__title'>
 <i class='fa fa-building'></i>
-会社について
+サイトについて
 </div>
 <ul class='drawer-menu'>
 <li class='drawer-menu__li'>
-<a href="<?php echo esc_url( home_url( '/about' ) ); ?>">会社について</a>
-</li>
-<li class='drawer-menu__li'>
-<a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>">採用</a>
+<a href="<?php echo esc_url( home_url( '/about' ) ); ?>">サイトについて</a>
 </li>
 <li class='drawer-menu__li'>
 <a href="<?php echo esc_url( home_url( '/policy' ) ); ?>">プライバシーポリシー</a>

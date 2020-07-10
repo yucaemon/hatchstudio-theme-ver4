@@ -12,7 +12,7 @@
                   .footer__nimi-box
                     %li
                       :plain
-                        <a href="<?php bloginfo('url'); ?>/archives/category/sanfrancisco/">サンフランシスコ/バークレー</a>
+                        <a href="<?php bloginfo('url'); ?>/category/sanfrancisco/">サンフランシスコ</a>
                     %li
                       :plain
                         <a href="<?php bloginfo('url'); ?>/archives/category/newyork/">ニューヨーク</a>
@@ -22,12 +22,6 @@
                     %li
                       :plain
                         <a href="<?php bloginfo('url'); ?>/archives/category/hawaii/">ハワイ</a>
-                    %li
-                      :plain
-                        <a href="<?php bloginfo('url'); ?>/archives/category/info/">お知らせ/募集</a>
-                    %li
-                      :plain
-                        <a href="<?php bloginfo('url'); ?>/archives/category/sharehouse/">シェアハウス</a>
           .footer__box.page__links
             %dl
               %dt.footer__box__title
@@ -37,25 +31,31 @@
                   .footer__nimi-box
                     %li
                       :plain
+                        <a href="<?php bloginfo('url'); ?>/archives/category/info/">お知らせ/募集</a>
+                    %li
+                      :plain
+                        <a href="<?php bloginfo('url'); ?>/archives/category/sharehouse/">シェアハウス</a>
+                    -#%li
+                      :plain
                         <a href="<?php echo esc_url( home_url( '/web' ) ); ?>" class="megamenu-inner-text">
                           WEB/動画制作
                         </a>
-                    %li
+                    -#%li
                       :plain
                         <a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
                           コンテンツ制作
                         </a>
-                    %li
+                    -#%li
                       :plain
                         <a href="<?php echo esc_url( home_url( '/translate' ) ); ?>" class="megamenu-inner-text">
                           英語/中国翻訳
                         </a>
-                    %li
+                    -#%li
                       :plain
                         <a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>" class="megamenu-inner-text">
                           ゲストハウス
                         </a>
-                    %li
+                    -#%li
                       :plain
                         <a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>" class="megamenu-inner-text">
                           不動産サポート
@@ -70,9 +70,9 @@
                     %li
                       :plain
                         <a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="megamenu-inner-text">
-                          会社概要
+                          サイトについて
                         </a>
-                    %li
+                    -#%li
                       :plain
                         <a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>" class="megamenu-inner-text">
                           採用

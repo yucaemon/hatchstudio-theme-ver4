@@ -117,7 +117,7 @@
 </section>
 <?php include('components-php/affiliate-ad-sp.php'); ?>
 <?php include('components-php/sponsor-blogger.php'); ?>
-<?php include('components-php/business.php'); ?>
+<!-- /<?php include('components-php/business.php'); ?> -->
 <section class='section third-section'>
 <div class='outer__inner'>
 <div class='outer__inner__container flexbox--spacebetween'>
@@ -156,10 +156,10 @@
 </section>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
-<?php include('components-php/annie-banner.php'); ?>
-<?php include('components-php/service.php'); ?>
-<?php include('components-php/business-sp.php'); ?>
-<?php include('components-php/annie-sp.php'); ?>
+<!-- /<?php include('components-php/annie-banner.php'); ?> -->
+<!-- /<?php include('components-php/service.php'); ?> -->
+<!-- /<?php include('components-php/business-sp.php'); ?> -->
+<!-- /<?php include('components-php/annie-sp.php'); ?> -->
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>

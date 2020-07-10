@@ -44,10 +44,10 @@ WEB/動画制作
 <?php include('components-php/contact-form.php'); ?>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
-<?php include('components-php/annie-banner.php'); ?>
-<?php include('components-php/service.php'); ?>
-<?php include('components-php/business-sp.php'); ?>
-<?php include('components-php/annie-sp.php'); ?>
+<!-- /<?php include('components-php/annie-banner.php'); ?> -->
+<!-- /<?php include('components-php/service.php'); ?> -->
+<!-- /<?php include('components-php/business-sp.php'); ?> -->
+<!-- /<?php include('components-php/annie-sp.php'); ?> -->
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>

@@ -8,7 +8,7 @@
 <div class='pages__container'>
 <div class='mission'>
 <h1 class='pages__header'>
-アメリカから『ワクワクな未知なる世界』をいっぱいお届けしたい。
+!アメリカから『ワクワクな未知なる世界』をいっぱいお届けしたい。
 </h1>
 <p class='pages__read'>
 はっちすたじおは、アメリカで暮らす人たちが、分け隔てなく自由に出会えて、遊べる場所があったらいいな。というただの好奇心から始まりました。バークレーという土地で生まれ、全米の多くの学生さんたちが関わり、次なる新しい人たちがもっと自由に遊べるようにといろんな情報を届けてくれました。
@@ -26,60 +26,6 @@ Berkeley CA USA
 </p>
 </div>
 </div>
-<div class='table-info'>
-<table>
-<tr>
-<td>
-会社名
-</td>
-<td>
-Hatchstudio inc
-</td>
-</tr>
-<tr>
-<td>
-設立
-</td>
-<td>
-2019年 7月16日
-</td>
-</tr>
-<tr>
-<td>
-現所在地
-</td>
-<td>
-Portland USA
-</td>
-</tr>
-<tr>
-<td>
-最高経営責任者
-</td>
-<td>
-Yuca Suzuki
-</td>
-</tr>
-<tr>
-<td>
-業務内容
-</td>
-<td>
-自社メディア運用事業
-<br>
-Webサイト&動画制作事業（デザイン/システム開発）
-<br>
-コンテンツ制作事業（企画/マーケティング/広告）
-<br>
-ゲストハウス＆シェアハウス「はっちんぐはうす」運営
-<br>
-翻訳事業（英語/中国）
-<br>
-不動産仲介サポート事業
-</td>
-</tr>
-</table>
-</div>
 </div>
 </div>
 <div class='outer__inner'>
@@ -96,10 +42,10 @@ Webサイト&動画制作事業（デザイン/システム開発）
 </div>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
-<?php include('components-php/annie-banner.php'); ?>
-<?php include('components-php/service.php'); ?>
-<?php include('components-php/business-sp.php'); ?>
-<?php include('components-php/annie-sp.php'); ?>
+<!-- /<?php include('components-php/annie-banner.php'); ?> -->
+<!-- /<?php include('components-php/service.php'); ?> -->
+<!-- /<?php include('components-php/business-sp.php'); ?> -->
+<!-- /<?php include('components-php/annie-sp.php'); ?> -->
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>

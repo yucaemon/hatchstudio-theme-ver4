@@ -12,7 +12,7 @@ BLOG
 <ul>
 <div class='footer__nimi-box'>
 <li>
-<a href="<?php bloginfo('url'); ?>/archives/category/sanfrancisco/">サンフランシスコ/バークレー</a>
+<a href="<?php bloginfo('url'); ?>/category/sanfrancisco/">サンフランシスコ</a>
 </li>
 <li>
 <a href="<?php bloginfo('url'); ?>/archives/category/newyork/">ニューヨーク</a>
@@ -22,12 +22,6 @@ BLOG
 </li>
 <li>
 <a href="<?php bloginfo('url'); ?>/archives/category/hawaii/">ハワイ</a>
-</li>
-<li>
-<a href="<?php bloginfo('url'); ?>/archives/category/info/">お知らせ/募集</a>
-</li>
-<li>
-<a href="<?php bloginfo('url'); ?>/archives/category/sharehouse/">シェアハウス</a>
 </li>
 </div>
 </ul>
@@ -43,29 +37,10 @@ OUR SERVICE
 <ul>
 <div class='footer__nimi-box'>
 <li>
-<a href="<?php echo esc_url( home_url( '/web' ) ); ?>" class="megamenu-inner-text">
-  WEB/動画制作
-</a>
+<a href="<?php bloginfo('url'); ?>/archives/category/info/">お知らせ/募集</a>
 </li>
 <li>
-<a href="<?php echo esc_url( home_url( '/contents' ) ); ?>" class="megamenu-inner-text">
-  コンテンツ制作
-</a>
-</li>
-<li>
-<a href="<?php echo esc_url( home_url( '/translate' ) ); ?>" class="megamenu-inner-text">
-  英語/中国翻訳
-</a>
-</li>
-<li>
-<a href="<?php echo esc_url( home_url( '/guest-house' ) ); ?>" class="megamenu-inner-text">
-  ゲストハウス
-</a>
-</li>
-<li>
-<a href="<?php echo esc_url( home_url( '/real-estate' ) ); ?>" class="megamenu-inner-text">
-  不動産サポート
-</a>
+<a href="<?php bloginfo('url'); ?>/archives/category/sharehouse/">シェアハウス</a>
 </li>
 </div>
 </ul>
@@ -82,12 +57,7 @@ ABOUT
 <div class='footer__nimi-box'>
 <li>
 <a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="megamenu-inner-text">
-  会社概要
-</a>
-</li>
-<li>
-<a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>" class="megamenu-inner-text">
-  採用
+  サイトについて
 </a>
 </li>
 <li>

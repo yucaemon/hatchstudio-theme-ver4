@@ -124,7 +124,7 @@
 </div>
 <?php include('components-php/lists-category-total.php'); ?>
 <?php include('components-php/keywords.php'); ?>
-<?php include('components-php/annie-ad-side.php'); ?>
+<!-- /<?php include('components-php/annie-ad-side.php'); ?> -->
 <?php include('components-php/house-ad-side.php'); ?>
 <div class='side-ranking-ad'>
 <a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
@@ -152,9 +152,9 @@
 </div>
 <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
 <div class='bottom-container'>
-<?php include('components-php/service.php'); ?>
-<?php include('components-php/business-sp.php'); ?>
-<?php include('components-php/annie-banner.php'); ?>
+<!-- /<?php include('components-php/service.php'); ?> -->
+<!-- /<?php include('components-php/business-sp.php'); ?> -->
+<!-- /<?php include('components-php/annie-banner.php'); ?> -->
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>

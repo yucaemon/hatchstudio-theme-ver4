@@ -13,11 +13,9 @@
             ブログコンテンツ
           %ul.drawer-menu
             %li.drawer-menu__li
-              <a href="https://hatchstudioinc.com/">サンフランシスコ</a>
+              <a href="https://hatchstudioinc.com/archives/category/sanfrancisco">サンフランシスコ</a>
             %li.drawer-menu__li
-              <a href="http://ucberkeley.hatchstudioinc.com/">バークレー</a>
-            %li.drawer-menu__li
-              <a href="http://newyork.hatchstudioinc.com/">ニューヨーク</a>
+              <a href="https://hatchstudioinc.com/archives/category/newyork">ニューヨーク</a>
             %li.drawer-menu__li
               <a href="https://hatchstudioinc.com/archives/category/portland">ポートランド</a>
             %li.drawer-menu__li
@@ -26,10 +24,10 @@
               <a href="https://hatchstudioinc.com/archives/category/info">お知らせ/募集</a>
             %li.drawer-menu__li
               <a href="https://hatchstudioinc.com/archives/category/sharehouse">シェアハウス</a>
-          .drawer-nav__title
+          -#.drawer-nav__title
             %i.fa.fa-globe
             サービス
-          %ul.drawer-menu
+          -#%ul.drawer-menu
             %li.drawer-menu__li
               <a href="<?php echo esc_url( home_url( '/web' ) ); ?>">WEB/動画制作</a>
             %li.drawer-menu__li
@@ -43,11 +41,11 @@
 
           .drawer-nav__title
             %i.fa.fa-building
-            会社について
+            サイトについて
           %ul.drawer-menu
             %li.drawer-menu__li
-              <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">会社について</a>
-            %li.drawer-menu__li
+              <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">サイトについて</a>
+            -#%li.drawer-menu__li
               <a href="<?php echo esc_url( home_url( '/recruit' ) ); ?>">採用</a>
             %li.drawer-menu__li
               <a href="<?php echo esc_url( home_url( '/policy' ) ); ?>">プライバシーポリシー</a>
