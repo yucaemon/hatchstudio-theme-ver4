@@ -3,6 +3,25 @@ if ( !defined( 'ABSPATH' ) ) {
 exit;
 }
 
+// パン屑リスト作成
+function breadcrumb() {
+	if ( !is_home() ) {
+		// ホームのリンクタグ作成
+		echo '<div class="breadcrumb"><a href="'. get_option('home'). '">ホーム</a>';
+		if ( is_category() || is_single() ) {
+      echo " > ";
+      the_category(' > ');
+			if ( is_single() ) {
+      the_title(' > ');
+			}
+		} elseif ( is_page() ) {
+      echo " > ";
+			the_title();
+		}
+	}
+}
+add_shortcode("pankuzu", "breadcrumb");
+
 //出典のショートコード
 function sourceFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(

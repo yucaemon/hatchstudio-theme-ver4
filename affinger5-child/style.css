@@ -4,11 +4,23 @@ Template: affinger5
 Description: ver20180831以上対応
 Version: 20180831
 */
+
+
+.scro {
+  position: fixed;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+
 /*
 
 	index.page
 
 *************************************************/
+body {
+-webkit-font-smoothing: antialiased;
+}
 
 
 /*
@@ -16,6 +28,14 @@ Version: 20180831
 	single.page
 
 *************************************************/
+
+  #content {
+            max-width: 1224px !important;
+  }
+  .main {
+      border: none !important;
+  }
+
 /*ショートカット*/
    .font-decoration-btn {
     display: inline-block;
@@ -603,6 +623,16 @@ Version: 20180831
 	/*-- ここまで --*/
 }
 
+
+/*
+	基礎
+*************************************************/
+
+.flexbox--spacebetween {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*media Queries PCサイズ（960px）以上で適応したいCSS - PCのみ
 ---------------------------------------------------------------------------------------------------*/
 
@@ -611,15 +641,16 @@ Version: 20180831
 *************************************************/
 
 @media print, screen and (min-width: 960px) {
-  .tate-kanren .kanren {
-    width: 494px !important;
-  }
-.front-page .kanren {
+
+.front-page .containerbox-inner {
+    padding: 0 40px;
+}
+.post-flexbox .kanren {
 	    display: flex;
-	    width: 1200px !important;
 	    margin: 0 auto;
 	    justify-content: space-between;
 			flex-wrap: wrap;
+      padding-right: 40px;
 	}
 .front-page	#content {
       max-width: 100% !important;
@@ -631,7 +662,7 @@ Version: 20180831
     padding-left: 0;
 }
 .front-page .kanren dl {
-    width: 203px;
+  width: 262px;
 }
 .front-page .kanren dt {
 	float: initial;
@@ -640,42 +671,92 @@ Version: 20180831
 }
 
 .front-page .kanren dt img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 .front-page .main_hogoneko_contents.pc {
     height: 100px;
     background-color: #f3d4e5;
 }
 
+.st-catgroup {
+    font-size: 15px;
+    margin: 0 0 5px;
+    padding: 5px;
+}
+.catname {
+    background: #ffdb6f;
+    color: #ffffff;
+}
 
+/*
+	ヘッダーサーチボックス
+*************************************************/
+.search__box #searchsubmit {
+  display: none; }
+.search__box form#searchform {
+  margin: 10px; }
+  .search__box form#searchform #s {
+    border: solid 1px #ff846a;
+    padding: 11px 24px 10px 24px;
+    border-radius: 9px;
+    font-size: 13px;
+    background-repeat: no-repeat;
+    background-image: url(./images/search-icon-pk.svg);
+    background-position: 11px center;
+    background-size: 21px;
+    padding-left: 44px; }
+    .search__box form#searchform #s input {
+      width: 190px !important;
+      vertical-align: top !important;
+      margin: 0 !important;
+      height: 100% !important;
+      box-sizing: border-box !important;
+      background-color: transparent !important; }
 
+/*
+	パンくず
+*************************************************/
+.breadcrumb {
+    background-color: #eceeef;
+    padding: 10px 40px;
+}
 /*
 	メニューバー
 *************************************************/
+
   #gnav > ul {
     display: table;
-    padding-left: 50px; }
+    margin: 0;
+    padding: 0;
+   }
 
   #gnav > ul > li {
     display: table-cell;
-    margin-right: 2em; }
+    line-height: 58px;
+ }
 
   #gnav > ul > li:hover {
     background-color: #ffc9bc; }
 
   #gnav > ul > li:hover > a {
-    color: #fff; }
+    color: #fff;
+
+    }
 
   #gnav > ul > li:hover .menu {
     max-height: 9999px;
     opacity: 1; }
-
+  #gnav > ul > li  {
+    padding: 0;
+    height: 36px;
+    transition: all .2s ease-in; }
   #gnav > ul > li > a {
     display: block;
-    padding: 21px 1em 21px;
-    transition: all .2s ease-in; }
+    margin:0;
+    padding: 0;
+  }
 
   #gnav > ul .menu {
     transition: all .2s ease-in;
@@ -683,20 +764,26 @@ Version: 20180831
     opacity: 0;
     overflow: hidden;
     width: 100%;
-    min-width: 1260px;
+    /* min-width: 1260px; */
     left: 0;
     position: absolute;
     background-color: #ffc9bc;
-    z-index: 5000;
+    /* z-index: 5000; */
     font-size: 1em;
-    padding: 0 40px; }
+  }
 
   #gnav > ul .menu .menu_inner {
-    padding: 1em 0; }
+    padding-left: 30px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  }
 
   #gnav > ul .menu .menu_inner li {
     display: inline-block;
-    margin: 0 .5em; }
+    margin: 0;
+    line-height: 12px;
+    padding: 10px;
+   }
 
   #gnav > ul .menu a {
     color: #fff; }
@@ -710,14 +797,9 @@ Version: 20180831
 
 .header-bar {
   width: 100%;
-  height: 70px;
   background: #f9b19d;
 }
-.header-bar .header-bar__inner {
-    padding: 0 40px;
-    display: flex;
-    justify-content: space-around;
-  }
+
   .header-bar__menu {
     width: auto; }
 
@@ -727,6 +809,15 @@ Version: 20180831
   top: 0;
   left: 0;
   z-index: 1000; }
+
+.scrolledd {
+  position: fixed;
+  padding: 79px;
+  width: 299px;
+  top: 0;
+  left: 922px;
+  z-index: 1000;
+}
 
   /*
   	ヘッダー
@@ -742,6 +833,9 @@ Version: 20180831
   .sns-icons__icon {
     width: 43px;
     padding-right: 10px;
+  }
+  .sns-icons__icon img {
+   padding: 0;
   }
   .header__pic {
     width: auto;
@@ -790,19 +884,45 @@ Version: 20180831
   /*
   	メニューバー
   *************************************************/
+  div#search-3 {
+      padding: 0 !important;
+  }
+  .post #search {
+      margin-bottom: 0 !important;
+  }
+  .search__box form#searchform{
+    margin: 0;
+  }
+  .header-bar .search__box form#searchform{
+    margin: 8px 0;
+  }
+  .header-bar .search__box{
+    display:none;
+  }
+  .header-bar__inner {
+      padding: 0 40px;
+          height: 60px;
+  }
 
+  .header-bar {
+    line-height: 60px;
+  }
   .header-bar__logo {
     color: #fff;
     font-size: 14px;
     letter-spacing: 0.5px;
-    height: 71px;
-    display: table; }
+    display: table;
+    line-height: 60px;
+  }
 
   .header-bar .logo__img-h {
     display: table-cell;
-    vertical-align: middle; }
+    vertical-align: middle;
+   }
     .header-bar .logo__img-h img {
-      width: 26px; }
+      width: 26px;
+      padding: 0;
+    }
   .header-bar .logo__title {
     padding: 0 10px;
     display: table-cell;
@@ -820,15 +940,172 @@ Version: 20180831
     font-size: 11px;
     color: #fff; }
   .header-bar__nav__text--en {
+    padding: 15px;
     color: #fff;
-    font-size: 15px;
+    font-size: 17px;
     font-family: "Montserrat", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
   .header-bar__nav__text--jp {
     color: #fff !important; }
 
+/*
+	はっちんぐはうす
+*************************************************/
+.hatching-house {
+  background-color: #bee4e6;
+  padding: 30px 40px;
+  height: 100%;
+  margin-bottom: 3%; }
+  .hatching-house__header {
+    padding-bottom: 40px;
+    padding-right: 25px; }
+    .hatching-house__header--jp {
+      color: #87b2bd;
+      font-size: 22px;
+      letter-spacing: 3px;
+      padding-bottom: 17px; }
+    .hatching-house__header--en {
+      align-items: center; }
+    .hatching-house__header--txt {
+      width: 710px; }
+    .hatching-house__header--icon {
+      width: 80px;
+      padding-right: 20px; }
+  .hatching-house__pictures li {
+    width: 29%;
+    height: 100%; }
+  .hatching-house__pictures .hatching-house--img img {
+    width: 100%;
+    display: block; }
+  .hatching-house__pictures .hatching-house--txt {
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.10em;
+    font-family: "Montserrat", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+    text-align: center; }
+
+  .hatching-house__btn--img {
+    width: 100px; }
+    zigzag::after {
+      height: 20px;
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%; }
 
 
+    .outer__inner {
+        width: 1205px;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+    .zigzag::before {
+      top: -20px;
+      background: linear-gradient(45deg, #fff 10px, transparent 0), linear-gradient(315deg, #fff 10px, transparent 0);
+      background-size: 20px 20px; }
 
+    .zigzag-blue {
+      position: relative;
+      background: #bee4e6; }
+
+    .zigzag-blue::after {
+      bottom: -20px;
+      background: linear-gradient(135deg, #bee4e6 10px, transparent 0), linear-gradient(225deg, #bee4e6 10px, transparent 0);
+      background-size: 20px 20px; }
+
+/*
+	ブロガー
+*************************************************/
+      .blogger {
+        background-color: #ffe198;
+        height: auto; }
+        .blogger__body {
+          width: 100%; }
+        .blogger__header {
+          width: 100%;
+          margin: 0 auto;
+          padding-bottom: 4%; }
+          .blogger__header--txt {
+            text-align: center;
+            font-size: 2.3em;
+            color: #fff;
+            padding: 40px 0;
+            font-weight: bold;
+            letter-spacing: 3px; }
+          .blogger__header--img {
+            width: 9%;
+            margin-right: 3%; }
+        .blogger__box {
+          text-align: center;
+          width: 13%;
+          padding-bottom: 3%; }
+          .blogger__box img {
+            width: 100%; }
+        .blogger__box__img.circle {
+          width: 57%;
+          margin: 0 auto;
+          display: block; }
+        .blogger__container {
+          padding: 40px 40px; }
+        .blogger__box__name {
+          font-size: 0.9em;
+          font-family: "Montserrat", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif; }
+/*
+投稿/シングルページ
+*************************************************/
+
+main {
+    border: none !important;
+}
+
+.header__pic--logo {
+    padding-bottom: 45px;
+}
+.single .logo__img img {
+  width: 37%;
+}
+.single .sns-search-box{
+  //display: none;
+}
+.single .background-draw img {
+    display: none;
+}
+
+.single .sns li a {
+    background: #ffdd78 !important;
+}
+
+/*
+固定ページ
+*************************************************/
+
+.page .entry-title{
+  color: #808080 !important;
+  text-align: center;
+  padding-top: 0!important;
+  padding: 41px!important;
+  margin-bottom: 50px !important;
+}
+.page .blogbox {
+  display: none;
+}
+.page .author {
+  display: none;
+}
+.page h2.pages__header {
+  background: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: #a5a5a5;
+}
+
+.page h2.pages__header-about {
+  background: #fff7e0;
+  font-size: 20px;
+  text-align: center;
+  color: #696969;
+}
 /*media Queries スマホサイズ（599px）以下で適応したいCSS - スマホのみ
 ---------------------------------------------------------------------------------------------------*/
 @media print, screen and (max-width: 599px) {
