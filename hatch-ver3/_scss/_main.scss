@@ -3,15 +3,13 @@
   （モバイルとタブレット以外のサイズ）
 
 *************************************************/
-
 body{
   line-height: 1.75;
   color: #545b63;
 }
 
 a {
-  text-decoration: none;
-  color: $font-color_head;
+  color: #333;
 }
 
 a:hover{
@@ -1018,6 +1016,9 @@ body {
 
 *************************************************/
 .single-page {
+  img[width="1"] {
+   display: none;
+  }
   &__container {
     width: 1200px;
   }
@@ -2440,7 +2441,29 @@ single.page
 
 
 .single-page {
-
+  .link-div {
+  a {
+    color: #337ab7;
+    font-weight: bold;
+    border: solid 1px #dedede;
+    padding: 14px 64px;
+  }
+  margin-bottom:30px;
+  }
+  .dotbox-div {
+    a{
+      color: #337ab7;
+      font-weight: bold;
+    }
+    background-color: #f8f9ff;
+    border: dashed 1px #4865b2;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    li {
+    margin-bottom: 10px;
+    text-align: left;
+    }
+}
   .header{
     .logo__img {
       padding-bottom: 20px;

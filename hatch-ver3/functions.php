@@ -229,6 +229,23 @@ function postscriptFunc( $atts, $content = null ) {
 }
 add_shortcode('追記', 'postscriptFunc');
 
+//リンク囲いのショートコード
+function linkdivFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+    ), $atts ) );
+    return '<div class="link-div">' . $content . '</div>';
+}
+add_shortcode('リンク囲い', 'linkdivFunc');
+
+//点線BOXのショートコード
+function dotboxFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+    ), $atts ) );
+    return '<div class="dotbox-div">' . $content . '</div>';
+}
+add_shortcode('点線box', 'dotboxFunc');
+
+
 
 //強調のショートコード
 function emphasisFunc( $atts, $content = null ) {
