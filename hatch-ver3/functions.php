@@ -343,6 +343,17 @@ function authorinfoFunc( $atts, $content = null ) {
 }
 add_shortcode('記者紹介', 'authorinfoFunc');
 
+//記者紹介リンクなしのショートコード
+function nolinkAuthorinfoFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'img' => '',
+        'author_name' => '',
+        'read' => ''
+    ), $atts ) );
+    return '<div class="detail-author-box"><div class="detail-author-box__txt"><div class="detail-author-box__title">' . $author_name . '</div><div class="detail-author-box__read">' . $read . '</div></div></div>';
+}
+add_shortcode('記者紹介リンクなし', 'nolinkAuthorinfoFunc');
+
 //吹き出しのショートコード-
 function balloonFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
