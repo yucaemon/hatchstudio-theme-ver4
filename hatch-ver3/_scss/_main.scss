@@ -2442,13 +2442,14 @@ single.page
 
 .single-page {
   .link-div {
+    border: solid 1px #dedede;
+    padding: 14px 64px;
+    margin-bottom:30px;
   a {
     color: #337ab7;
     font-weight: bold;
-    border: solid 1px #dedede;
-    padding: 14px 64px;
   }
-  margin-bottom:30px;
+
   }
   .dotbox-div {
     a{

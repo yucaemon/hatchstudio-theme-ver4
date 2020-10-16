@@ -559,9 +559,16 @@
     }
 
   }
-
   /*シングルページ*/
   .single-page {
+    .link-div{
+      padding: 10px;
+      margin-bottom: 0;
+      a {
+      color: #337ab7 !important;
+      font-weight: bold;
+      }
+    }
     .middle-contain {
       width: 100%;
       .article-sns-btns {

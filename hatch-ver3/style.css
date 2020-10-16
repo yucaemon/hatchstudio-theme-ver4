@@ -9102,12 +9102,12 @@ single.page
 
 *************************************************/
 .single-page .link-div {
+  border: solid 1px #dedede;
+  padding: 14px 64px;
   margin-bottom: 30px; }
   .single-page .link-div a {
     color: #337ab7;
-    font-weight: bold;
-    border: solid 1px #dedede;
-    padding: 14px 64px; }
+    font-weight: bold; }
 .single-page .dotbox-div {
   background-color: #f8f9ff;
   border: dashed 1px #4865b2;
@@ -9657,6 +9657,12 @@ category-page
             padding: 0 5px; }
 
   /*シングルページ*/
+  .single-page .link-div {
+    padding: 10px;
+    margin-bottom: 0; }
+    .single-page .link-div a {
+      color: #337ab7 !important;
+      font-weight: bold; }
   .single-page .middle-contain {
     width: 100%; }
     .single-page .middle-contain .article-sns-btns {
