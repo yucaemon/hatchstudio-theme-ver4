@@ -115,6 +115,7 @@
 <?php endif; ?>
 </div>
 <?php include('components-php/wrote-models-box.php'); ?>
+<div class='google-ad'>
 <?php if (is_single(array('25907','25713','7586'))) : ?>
 <?php else: ?>
 <!-- 20/21/20以前のgoogle広告↓↓↓↓↓↓↓↓ -->
@@ -131,6 +132,7 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <?php endif; ?>
+</div>
 <?php include('components-php/article-sns-btns.php'); ?>
 <?php include('components-php/related-article.php'); ?>
 <?php include('components-php/this-page-tags.php'); ?>
@@ -153,7 +155,6 @@
 </div>
 <?php include('components-php/lists-category-total.php'); ?>
 <?php include('components-php/keywords.php'); ?>
-<!-- /<?php include('components-php/annie-ad-side.php'); ?> -->
 <?php include('components-php/house-ad-side.php'); ?>
 <div class='side-ranking-ad'>
 <a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
