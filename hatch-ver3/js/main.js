@@ -36,20 +36,20 @@ jQuery(document).ready(function($) {
         var footerArea = windowScrollTop > footer;
         var beforeFixedArea = windowScrollTop < fixed;
         var fixedArea = windowScrollTop > fixed;
+        //f( footerArea || beforeFixedArea ) {
+            //$('.side-job-ad').removeClass('side-fixed-content01');
+        //} else if ( fixedArea ) {
+            //$('.side-job-ad').addClass('side-fixed-content01');
+        //}
         if( footerArea || beforeFixedArea ) {
-            $('.side-job-ad').removeClass('side-fixed-content01');
+            $('.side-ranking-ad').removeClass('side-fixed-content01');
         } else if ( fixedArea ) {
-            $('.side-job-ad').addClass('side-fixed-content01');
+            $('.side-ranking-ad').addClass('side-fixed-content01');
         }
         if( footerArea || beforeFixedArea ) {
-            $('.side-ranking-ad').removeClass('side-fixed-content02');
+            $('.side-rakuten-ad').removeClass('side-fixed-content02');
         } else if ( fixedArea ) {
-            $('.side-ranking-ad').addClass('side-fixed-content02');
-        }        
-        if( footerArea || beforeFixedArea ) {
-            $('.side-coupon-ad').removeClass('side-fixed-content03');
-        } else if ( fixedArea ) {
-            $('.side-coupon-ad').addClass('side-fixed-content03');
+            $('.side-rakuten-ad').addClass('side-fixed-content02');
         }
 
     });
