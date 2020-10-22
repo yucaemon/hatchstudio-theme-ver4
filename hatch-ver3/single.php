@@ -88,7 +88,6 @@
 <div class='single-page__eyecatch-img'>
 <?php the_post_thumbnail(); ?>
 </div>
-<div class='google-ad'>
 <!-- 検索リンクキーワード広告 -->
 <?php if (is_single(array('25907','25713','7586'))) : ?>
 <?php else: ?>
@@ -104,7 +103,6 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <?php endif; ?>
-</div>
 <div class='single-page__entry-content'>
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
