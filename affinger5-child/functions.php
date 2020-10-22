@@ -22,6 +22,40 @@ function breadcrumb() {
 }
 add_shortcode("pankuzu", "breadcrumb");
 
+//見出しのショートコード
+function titleFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'element' => 'span',
+        'class' => 'headline-default'
+    ), $atts ) );
+    return '<'.$element.' class="'.$class.'">' . $content . '</'.$element.'>';
+}
+add_shortcode('title', 'titleFunc');
+
+function h2Func( $atts, $content = null ) {
+    return '<span class="font-decoration-underline">' . $content . '</span>';
+}
+add_shortcode('タイトル下線', 'h2Func');
+
+
+function h3Func( $atts, $content = null ) {
+    return '<span class="font-decoration-btn">' . $content . '</span>';
+}
+add_shortcode('タイトル長方形', 'h3Func');
+
+
+function h4Func( $atts, $content = null ) {
+    return '<span class="font-decoration-barline">' . $content . '</span>';
+}
+add_shortcode('タイトル縦線', 'h4Func');
+
+//ユーチューブのショートコード
+function youtubeFunc( $atts, $content = null ) {
+    return '<div class="youtube-container">' . $content . '</div>';
+}
+add_shortcode('ユーチューブ', 'youtubeFunc');
+
+
 //出典のショートコード
 function sourceFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
@@ -47,6 +81,23 @@ function postscriptFunc( $atts, $content = null ) {
     return '<div class="postscript-info">' . $content . '</div>';
 }
 add_shortcode('追記', 'postscriptFunc');
+
+//リンク囲いのショートコード
+function linkdivFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+    ), $atts ) );
+    return '<div class="link-div">' . $content . '</div>';
+}
+add_shortcode('リンク囲い', 'linkdivFunc');
+
+//点線BOXのショートコード
+function dotboxFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+    ), $atts ) );
+    return '<div class="dotbox-div">' . $content . '</div>';
+}
+add_shortcode('点線box', 'dotboxFunc');
+
 
 
 //強調のショートコード
@@ -144,6 +195,17 @@ function authorinfoFunc( $atts, $content = null ) {
     <li class="author-box__btn" target="_blank"><a href="' . $twitterlink . '" target="_blank"><div class="author-box__btn twitter__btn__small" target="_blank"><i class="fab fa-twitter"></i></div></a></li></ul></div></div>';
 }
 add_shortcode('記者紹介', 'authorinfoFunc');
+
+//記者紹介リンクなしのショートコード
+function nolinkAuthorinfoFunc( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'img' => '',
+        'author_name' => '',
+        'read' => ''
+    ), $atts ) );
+    return '<div class="detail-author-box"><div class="detail-author-box__txt"><div class="detail-author-box__title">' . $author_name . '</div><div class="detail-author-box__read">' . $read . '</div></div></div>';
+}
+add_shortcode('記者紹介リンクなし', 'nolinkAuthorinfoFunc');
 
 //吹き出しのショートコード-
 function balloonFunc( $atts, $content = null ) {

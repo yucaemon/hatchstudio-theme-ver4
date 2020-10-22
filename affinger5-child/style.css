@@ -13,6 +13,9 @@ Version: 20180831
   left: 0;
   z-index: 1000; }
 
+  .flexbox {
+      display: flex;
+  }
 /*
 
 	index.page
@@ -28,18 +31,61 @@ body {
 	single.page
 
 *************************************************/
-
   #content {
             max-width: 1224px !important;
   }
   .main {
       border: none !important;
   }
-
 /*ショートカット*/
-   .font-decoration-btn {
-    display: inline-block;
-    width: 100%;
+/* H2 */
+  .h2modoki, .post h2:not(.st-css-no){
+    background:none !important;
+    border: none !important;
+    margin: 0;
+    padding: 0;
+  }
+  .h3modoki, .post h3:not(.st-css-no){
+    all: initial !important;
+    margin: 0;
+    padding: 0;
+  }
+  .h3modoki:after, .post h3:not(.st-css-no){
+    all: initial !important;
+  }
+  .font-decoration-underline {
+    border-bottom: solid 3px #ffcf6e;
+    color: #222;
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
+  .link-div {
+  border: solid 1px #dedede;
+  padding: 14px 64px;
+  margin-bottom: 30px;
+  background-color: #f3f7ff;
+  }
+  .link-div a {
+    color: #337ab7;
+    font-weight: bold;
+  }
+ .dotbox-div {
+  background-color: #f8f9ff;
+  border: dashed 1px #4865b2;
+  margin-bottom: 30px;
+  }
+ .dotbox-div a {
+    color: #337ab7;
+    font-weight: bold;
+  }
+  .dotbox-div li {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .font-decoration-btn {
+    display: block;
+    width: auto;
     font-size: 13px;
     font-size: 1.3rem;
     line-height: 1;
@@ -53,7 +99,8 @@ body {
     border-radius: 5px;
     padding: 20px 20px;
     margin: 20px 0; }
-   .title-boo {
+  .title-boo {
+    width: auto;
     padding: .8em .8em .8em 3.3em;
     background: url(images/boo-bannar.png) no-repeat top 7px left 10px, url(images/cmn_h2_bg.jpg) repeat !important;
     margin: 20px 0;
@@ -62,12 +109,6 @@ body {
     border-radius: 5px;
     border: none;
     color: #fff; }
-   .producttitle-btn {
-    background-color: #ffe569e0;
-    border-radius: 5px;
-    border-bottom: none;
-    position: relative;
-    border: none; }
    .producttitle-btn:after {
     position: absolute;
     content: '';
