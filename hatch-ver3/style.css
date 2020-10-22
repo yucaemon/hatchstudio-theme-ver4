@@ -7405,6 +7405,10 @@ body {
 	side
 
 *************************************************/
+.side-rakuten-ad {
+  margin-left: 7px;
+  padding-top: 25px; }
+
 .side-fixed-content {
   position: fixed;
   top: 15%;
