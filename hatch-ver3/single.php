@@ -88,6 +88,21 @@
 <div class='single-page__eyecatch-img'>
 <?php the_post_thumbnail(); ?>
 </div>
+<!-- 検索リンクキーワード広告 -->
+<?php if (is_single(array('25907','25713','7586'))) : ?>
+<?php else: ?>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- リンク検索キーワード広告 -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-1574488309106788"
+       data-ad-slot="2646761361"
+       data-ad-format="link"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+<?php endif; ?>
 <div class='single-page__entry-content'>
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
