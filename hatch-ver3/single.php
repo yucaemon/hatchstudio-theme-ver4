@@ -103,8 +103,6 @@
   <script>
        (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
 <?php endif; ?>
 </div>
 <div class='single-page__entry-content'>
