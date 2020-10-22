@@ -97,7 +97,7 @@
        style="display:block"
        data-ad-client="ca-pub-1574488309106788"
        data-ad-slot="2646761361"
-       data-ad-format="link"
+       data-ad-format="auto"
        data-full-width-responsive="true"></ins>
   <script>
        (adsbygoogle = window.adsbygoogle || []).push({});
