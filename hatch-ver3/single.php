@@ -96,7 +96,7 @@
   <ins class="adsbygoogle"
        style="display:block"
        data-ad-client="ca-pub-1574488309106788"
-       data-ad-slot="2646761361"
+       data-ad-slot="8294607318"
        data-ad-format="link"
        data-full-width-responsive="true"></ins>
   <script>
