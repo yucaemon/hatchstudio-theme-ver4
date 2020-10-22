@@ -1068,7 +1068,7 @@ body {
     @include fts(11, 11);
     word-wrap: break-word;
     padding-bottom: 25px;
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
     display: block;
     line-height: 1.6em;
     color: $font_color_head;
