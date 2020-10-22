@@ -117,7 +117,19 @@
 <?php include('components-php/wrote-models-box.php'); ?>
 <?php if (is_single(array('25907','25713','7586'))) : ?>
 <?php else: ?>
-<?php include('components-php/affiliate-ad-landscape.php'); ?>
+<!-- 20/21/20以前のgoogle広告↓↓↓↓↓↓↓↓ -->
+<!-- ?php include('components-php/affiliate-ad-landscape.php'); ? -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージ スカイスクレイパー！(リンク検索広告) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1574488309106788"
+     data-ad-slot="2908696842"
+     data-ad-format="link"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <?php endif; ?>
 <?php include('components-php/article-sns-btns.php'); ?>
 <?php include('components-php/related-article.php'); ?>
