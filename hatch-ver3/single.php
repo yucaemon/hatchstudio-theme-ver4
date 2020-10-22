@@ -92,7 +92,7 @@
 <?php if (is_single(array('25907','25713','7586'))) : ?>
 <?php else: ?>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- ラージ スカイスクレイパー！(リンク検索広告) -->
+<!-- ラージ スカイスクレイパー！ -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-1574488309106788"
