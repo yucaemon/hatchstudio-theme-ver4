@@ -9689,8 +9689,9 @@ category-page
       height: 300px;
       object-fit: cover; }
   .single-page__entry-content {
-    font-size: 0.900em;
-    line-height: 1.7em; }
+    font-size: 16px;
+    font-family: "Rounded Mplus 1c",-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Hiragino Kaku Gothic ProN,"メイリオ",meiryo,sans-serif;
+    line-height: 26px; }
     .single-page__entry-content img {
       width: 100%;
       height: auto;
