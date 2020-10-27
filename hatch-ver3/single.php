@@ -149,7 +149,7 @@
 <div class='side-job-ad'>
 <a href="https://hatchstudioinc.com/archives/28793" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/remote-job-banner.svg"></a>
 </div>
-<div class='side-amazon-ad hide-ad-sp'>
+<div class='side-amazon-ad'>
 <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ur1&category=amazonsale&banner=0YJD2D3K0ZTSRW1PTVR2&f=ifr&linkID=97648997a4138d59fc8de4d35180795d&t=hatch0891-22&tracking_id=hatch0891-22" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 </div>
 <div class='side-amazon-ad hide-ad-pc'>

@@ -7410,7 +7410,8 @@ body {
 
 .side-amazon-ad {
   margin-left: 12px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  padding-bottom: 30px; }
 
 .side-fixed-content {
   position: fixed;
@@ -10188,9 +10189,6 @@ related-article(関連記事)
         width: 100%; }
         .articles__container__bottom .bt-left .news-list__title {
           width: 100%; }
-
-  .side-amazon-ad {
-    display: none; }
 
   .pages .mission {
     padding: 0; }
