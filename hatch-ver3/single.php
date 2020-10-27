@@ -119,21 +119,6 @@
 <?php endif; ?>
 <?php include('components-php/article-sns-btns.php'); ?>
 <?php include('components-php/related-article.php'); ?>
-<!-- 検索リンクキーワード広告 -->
-<?php if (is_single(array('25907','25713','7586'))) : ?>
-<?php else: ?>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- ラージ スカイスクレイパー！(リンク検索広告) -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1574488309106788"
-     data-ad-slot="2908696842"
-     data-ad-format="link"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<?php endif; ?>
 <?php include('components-php/this-page-tags.php'); ?>
 <?php include('components-php/category-keywords.php'); ?>
 <?php include('components-php/paging-nav.php'); ?>
@@ -161,12 +146,12 @@
 <div class='side-job-ad'>
 <a href="https://hatchstudioinc.com/archives/28793" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/remote-job-banner.svg"></a>
 </div>
-<!-- div class='side-coupon-ad'>
+<div class='side-coupon-ad'>
 <a href="https://hatchstudioinc.com/archives/28854" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
-</div -->
-<div class='side-rakuten-ad'>
-<a href="https://hb.afl.rakuten.co.jp/hsc/1d679915.93b74819.1d6798f5.4d1ecf9b/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiI1OCIsImJhbiI6IjkyODQ5NSIsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hsb/1d679915.93b74819.1d6798f5.4d1ecf9b/?me_id=1&me_adv_id=928495&t=pict" border="0" style="margin:2px" alt="" title=""></a>
 </div>
+<!-- div class='side-rakuten-ad'>
+<a href="https://hb.afl.rakuten.co.jp/hsc/1d679915.93b74819.1d6798f5.4d1ecf9b/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiI1OCIsImJhbiI6IjkyODQ5NSIsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hsb/1d679915.93b74819.1d6798f5.4d1ecf9b/?me_id=1&me_adv_id=928495&t=pict" border="0" style="margin:2px" alt="" title=""></a>
+</div -->
 <div class='side-fixed-area'></div>
 </div>
 </div>

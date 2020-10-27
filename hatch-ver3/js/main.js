@@ -47,9 +47,9 @@ jQuery(document).ready(function($) {
             $('.side-ranking-ad').addClass('side-fixed-content01');
         }
         if( footerArea || beforeFixedArea ) {
-            $('.side-rakuten-ad').removeClass('side-fixed-content02');
+            $('.side-job-ad').removeClass('side-fixed-content02');
         } else if ( fixedArea ) {
-            $('.side-rakuten-ad').addClass('side-fixed-content02');
+            $('.side-job-ad').addClass('side-fixed-content02');
         }
 
     });
