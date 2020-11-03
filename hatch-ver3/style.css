@@ -9114,6 +9114,8 @@ single.page
   padding: 14px 64px;
   margin-bottom: 30px;
   background-color: #f3f7ff; }
+  .single-page .link-div img {
+    padding: 0; }
   .single-page .link-div a {
     color: #337ab7;
     font-weight: bold; }
