@@ -9115,6 +9115,8 @@ single.page
   margin-bottom: 30px;
   background-color: #f3f7ff; }
   .single-page .link-div img {
+    margin-top: 0;
+    width: auto;
     padding: 0; }
   .single-page .link-div a {
     color: #337ab7;
@@ -9675,6 +9677,8 @@ category-page
       color: #337ab7 !important;
       font-weight: bold;
       font-size: 17px; }
+    .single-page .link-div .link-div img {
+      width: auto; }
   .single-page .middle-contain {
     width: 100%; }
     .single-page .middle-contain .article-sns-btns {
