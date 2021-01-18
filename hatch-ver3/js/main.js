@@ -42,9 +42,9 @@ jQuery(document).ready(function($) {
             //$('.side-job-ad').addClass('side-fixed-content01');
         //}
         if( footerArea || beforeFixedArea ) {
-            $('.side-ranking-ad').removeClass('side-fixed-content01');
+            $('.side-job-ad').removeClass('side-fixed-content01');
         } else if ( fixedArea ) {
-            $('.side-ranking-ad').addClass('side-fixed-content01');
+            $('.side-job-ad').addClass('side-fixed-content01');
         }
         if( footerArea || beforeFixedArea ) {
             $('.side-amazon-ad').removeClass('side-fixed-content02');
