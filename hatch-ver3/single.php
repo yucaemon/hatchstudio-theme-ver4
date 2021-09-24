@@ -27,7 +27,7 @@
 </h1>
 <div class='google-ad'>
 <!-- H1タイトル下の広告 -->
-<?php if (is_single(array('25907','25713','7586','22342','22994'))) : ?>
+<?php if (is_single(array('25907','25713','7586','22342','22994','46618'))) : ?>
 <?php else: ?>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -89,7 +89,7 @@
 <?php the_post_thumbnail(); ?>
 </div>
 <!-- 検索リンクキーワード広告 -->
-<?php if (is_single(array('25907','25713','7586','22342','22994'))) : ?>
+<?php if (is_single(array('25907','25713','7586','22342','22994','46618'))) : ?>
 <?php else: ?>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- ラージ スカイスクレイパー！(リンク検索広告) -->
@@ -113,7 +113,7 @@
 <?php endif; ?>
 </div>
 <?php include('components-php/wrote-models-box.php'); ?>
-<?php if (is_single(array('25907','25713','7586','22342','22994'))) : ?>
+<?php if (is_single(array('25907','25713','7586','22342','22994','46618'))) : ?>
 <?php else: ?>
 <?php include('components-php/affiliate-ad-landscape.php'); ?>
 <?php endif; ?>
@@ -124,7 +124,7 @@
 <?php include('components-php/paging-nav.php'); ?>
 </div>
 <div class='side-contain'>
-<?php if (is_single(array('25907','25713','7586','22342','22994'))) : ?>
+<?php if (is_single(array('25907','25713','7586','22342','22994','46618'))) : ?>
 <?php else: ?>
 <?php include('components-php/affiliate-ad-sky.php'); ?>
 <?php endif; ?>
