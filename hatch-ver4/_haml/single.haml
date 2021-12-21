@@ -1,0 +1,145 @@
+<?php include('head.php'); ?>
+%body
+  :plain
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+     <script>(function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10&appId=419866574778905";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));</script>
+    <div class='outer index'>
+  .single-page.outer
+    <?php include('components-php/header02.php'); ?>
+    <?php include('components-php/header-sp.php'); ?>
+    <?php if ( have_posts() ) : ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+    <?php endwhile; ?>
+    <?php else : ?>
+    <?php endif; ?>
+    .outer__inner
+      .single__container
+        .single__container__body.flexbox--spacebetween
+          .middle-contain
+            %h1.single-page__head-title
+              <?php the_title_attribute(); ?>
+            .google-ad
+              :plain
+                <!-- H1タイトル下の広告 -->
+                <?php if (is_single(array('25907','25713','7586'))) : ?>
+                <?php else: ?>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-1574488309106788"
+                     data-ad-slot="8294607318"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <?php endif; ?>
+            .flexbox
+              .single-page__views
+                <i class="fas fa-heart"></i>
+                :plain
+                  <?php if(function_exists('the_views')) {
+                    the_views();
+                  } ?>
+              .single-page__tags
+                <?php the_category( '  ',' 　' ); ?>
+                <?php $slug_name = basename(get_permalink()); ?>
+            .single-page__detail.flexbox--spacebetween
+              .single-page__sns-icons.flexbox
+                .sns-icons__img
+                  :plain
+                    <?php
+                      $share_url   = get_permalink();
+                      $share_title = get_the_title();
+                    ?>
+                    <a href="//www.facebook.com/sharer.php?src=bm&u=<?=$share_url?>&t=<?=$share_title?>" title="Facebookでシェア" onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=800,width=600');return false;">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/share-facebook-icon.svg"></a>
+                .sns-icons__img
+                  <a class="btn--twitter" href="http://twitter.com/share?url=<?php the_permalink();?>&text=<?php echo get_the_title(); ?>&via=hatchstudioinc&tw_p=tweetbutton&related=hatchstudioinc">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/share-twitter-icon.svg"></a>
+                .sns-icons__img
+                  <a class="btn--pocket" href="http://getpocket.com/edit?url=<?php the_permalink();?>&title=<?php echo get_the_title;?>">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/share-pokect-icon.svg">
+                  </a>
+              .single-page__post-info.flexbox
+                .single-page__dates
+                :plain
+                  <?php if (get_the_modified_date('Y.m.d') != get_the_time('Y.m.d')) : ?>
+                  更新日：<time datetime="<?php the_modified_date('Y-m-d') ?>"><?php the_modified_date('Y.m.d') ?></time>
+                  <?php else:?>
+                  公開日：<time datetime="<?php the_time('Y-m-d');?>"><?php the_time('Y.m.d');?></time>
+                  <?php endif; ?>
+                .author__img.circle
+                  <?php echo get_avatar( get_the_author_id(), 50 ); ?>
+            .single-page__eyecatch-img
+              <?php the_post_thumbnail(); ?>
+            .single-page__entry-content
+              <?php if ( have_posts() ) : ?>
+              <?php while ( have_posts() ) : the_post(); ?>
+              <?php remove_filter ('the_content', 'wpautop'); ?>　
+              <?php the_content();?>
+              <?php endwhile; ?>
+              <?php else : ?>
+              <?php endif; ?>
+            <?php include('components-php/wrote-models-box.php'); ?>
+            :plain
+              <?php if (is_single(array('25907','25713','7586'))) : ?>
+              <?php else: ?>
+              <?php include('components-php/affiliate-ad-landscape.php'); ?>
+              <?php endif; ?>
+            <?php include('components-php/article-sns-btns.php'); ?>
+            <?php include('components-php/related-article.php'); ?>
+            <?php include('components-php/this-page-tags.php'); ?>
+            <?php include('components-php/category-keywords.php'); ?>
+            <?php include('components-php/paging-nav.php'); ?>
+          .side-contain
+            :plain
+              <?php if (is_single(array('25907','25713','7586'))) : ?>
+              <?php else: ?>
+              <?php include('components-php/affiliate-ad-sky.php'); ?>
+              <?php endif; ?>
+            .side-ranking-ad.hide-ad-sp
+              <a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
+            .side-job-ad.hide-ad-sp
+              <a href="https://hatchstudioinc.com/archives/28793" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/remote-job-banner.svg"></a>
+            .side-coupon-ad.hide-ad-sp
+              <a href="https://hatchstudioinc.com/archives/28854" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
+
+            <?php include('components-php/lists-category-total.php'); ?>
+            <?php include('components-php/keywords.php'); ?>
+            //<?php include('components-php/annie-ad-side.php'); ?>
+            <?php include('components-php/house-ad-side.php'); ?>
+            -#
+              <?php include('components-php/business-ad-side.php'); ?>
+            .side-ranking-ad
+              <a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
+            .side-job-ad
+              <a href="https://hatchstudioinc.com/archives/28793" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/remote-job-banner.svg"></a>
+            .side-coupon-ad
+              <a href="https://hatchstudioinc.com/archives/28854" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
+            -#
+              .side-amazon-ad
+                <a href="<?php echo esc_url( home_url( '/archives/24020' ) ); ?>" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg"></a>
+            .side-fixed-area
+
+    .outer__inner
+      .articles__container__bottom.flexbox--spacebetween
+        .bt-left
+          <?php include('components-php/bt-news-lists.php'); ?>
+        .bt-right
+          <?php include('components-php/bt-recommend.php'); ?>
+
+    <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
+    .bottom-container
+      //<?php include('components-php/service.php'); ?>
+      //<?php include('components-php/business-sp.php'); ?>
+      //<?php include('components-php/annie-banner.php'); ?>
+      <?php include('components-php/footer.php'); ?>
+      <?php include('components-php/footer-sp.php'); ?>

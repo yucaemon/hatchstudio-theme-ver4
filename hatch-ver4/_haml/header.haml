@@ -1,0 +1,33 @@
+%header.outer__header.header
+  .flexbox--spacebetween
+    .sns-icons.flexbox
+      .sns-icons__icon
+        <a href="https://www.facebook.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-icon.svg"></a>
+      .sns-icons__icon
+        <a href="https://twitter.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon.svg"></a>
+      .sns-icons__icon
+        <a href="https://www.instagram.com/annie_jene/"><img src="<?php echo get_template_directory_uri(); ?>/images/instgram-icon.svg"></a>
+    .search__box
+      .search__form
+        <?php get_search_form(); ?>
+  .header__pic.flexbox--spacebetween
+    .background-draw.background-draw__left
+      <img src="<?php echo get_template_directory_uri(); ?>/images/header-img-left.svg">
+    .header__pic--logo
+      .logo__img
+        <a href="https://hatchstudioinc.com/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-bk.svg" width="250"></a>
+      %h1.sub-title
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">”ワクワク”な体験をお届け！アメリカ面白まがじん。</a>
+    .background-draw.background-daw__right
+      <img src="<?php echo get_template_directory_uri(); ?>/images/header-img-right.svg">
+.header-bar
+  .header-bar__inner.flexbox--spacebetween
+    .header-bar__logo.logo
+      .logo__img-h
+        <a href="https://hatchstudioinc.com/"><img src="<?php echo get_template_directory_uri(); ?>/images/eight-icon.svg"></a>
+      .logo__title
+        <a href="https://hatchstudioinc.com/">アメリカ面白まがじん</a>
+      .search__box
+        .search__form
+          <?php get_search_form(); ?>
+    <?php include('header-bar-menu.php'); ?>

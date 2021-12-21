@@ -1,0 +1,143 @@
+// ページ全体の横幅
+$base_width: 1170px; // PC
+$tab_width: 680px; // タブレット
+$sp_width: 480px;  // スマホ
+
+
+// 要素の基本下マージン
+$base_margin: 30px;
+
+// メインカラー（ベースカラー）
+$main_color: #f2716e;
+
+// サブカラー
+$sub_color: #ffede9;
+
+
+// ベーステキストカラー
+$font_color: #333;
+// 見出しテキストカラー
+$font_color_head: #222;
+
+// サブテキストカラー
+$font_sub_color: #dcdcdc;
+$font_sub_glay_color: #9c9c9c;
+
+
+// borderカラー
+$border_color: #d4d4d4;
+
+
+
+// ベースリンクカラー
+$link_color: #f2716e;
+
+
+// サブベースカラー
+$yellow_01: #ebd4a4;
+$yellow_02: #ffcf6e;
+$White_01: #fff;
+$blue_01:#bee4e6;
+$pink_01:#f6cdc4;
+$pink_02:#ff846a;
+
+
+// font-family
+$font_family_jp : "Montserrat","游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+
+$font_family_en : "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+
+$font_family_en_robot: 'Roboto', sans-serif;
+
+
+// google-font
+@import url('https://fonts.googleapis.com/css?family=Dosis:700');
+
+
+//ボタンエフェクトスタイル
+.button-pink-01{
+     display:block;
+     width: 250px;
+     height:70px;
+     line-height: 65px;
+     color: #FFF;
+     text-decoration: none;
+     text-align: center;
+     background-color: $pink_02; /*ボタン色*/
+     border: 0;
+     border-bottom: solid 6px #ec6c00; /*下線色*/
+     border-radius: 5px; /*角丸*/
+     margin: 0 auto;
+}
+.button-pink-01:hover{
+     background-color: #fdc33a;/*ボタン色*/
+     border-bottom: solid 6px #f39800; /*下線色*/
+}
+.button-pink-01:active {
+     margin-top: 6px;
+     border-bottom: none;
+}
+
+
+
+.btn-round-white-02{
+    background : #FFFFFF;
+    padding:10px 20px;
+    font-size: 14px;
+    background : rgba(255, 255, 255, 1);
+    border-style : Solid;
+    border-color: #5f5f5f;
+    border-color : rgba(16, 16, 15, 1);
+    border-radius : 12px;
+    -moz-border-radius : 12px;
+    -webkit-border-radius : 12px;
+    box-shadow: 3px 3px #bbbbbb;
+
+      a{
+        text-decoration: none;
+        color: $font-color_head;
+      }
+      a:hover{
+        color: $font-color_head;
+      }
+}
+
+.btn-round-white-02:hover{
+     box-shadow: 3px 3px #828282;
+
+}
+.btn-round-white-02:active {
+     margin-top: 3px;
+     box-shadow: none;
+}
+
+//bootstrap修正
+
+.card-box-container {
+  .card-box-header{
+   padding-bottom: 14px;
+   color: #9e9e9e;}
+
+
+  .card-box-body{
+   li{
+     width: 320px;
+     border: solid 1px #dcdcdc;
+     padding: 20px;
+     border-radius: 6px;
+     margin-bottom: 30px;
+   }
+
+   h3 {
+      margin: 0 20px 20px 20px;
+      border-bottom: solid 1px #c7c7c7;
+      padding-bottom: 15px;
+      font-size: 22px;
+   }
+   p {
+    margin: 4px 20px;
+    color: #a0a0a0;
+    font-size: 14px;
+    }
+ }
+}

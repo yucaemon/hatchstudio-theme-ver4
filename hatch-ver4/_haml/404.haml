@@ -1,0 +1,34 @@
+<?php /** *  Template Name:  404ページ */ ?>
+<?php include('head.php'); ?>
+%body
+  .error-page.pages.outer
+    <?php include('components-php/header02.php'); ?>
+    <?php include('components-php/header-sp.php'); ?>
+    .outer__inner
+      .pages__container
+        .notfind__header
+          .notfind__header__img
+            <img src="<?php echo get_template_directory_uri(); ?>/images/404-txt.svg">
+          %p.notfind__header__txt
+            お探しのページが見つかりませんでした
+        .notfind__body__img
+          <img src="<?php echo get_template_directory_uri(); ?>/images/404-img.svg">
+        %button.notfind__btn.button-pink-01
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップページへ戻る</a>
+
+    .outer__inner
+      .articles__container__bottom.flexbox--spacebetween
+        .bt-left
+          <?php include('components-php/bt-news-lists.php'); ?>
+        .bt-right
+          <!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
+          <!-- ?php include('components-php/bt-popular-month.php'); ? -->
+          <?php include('components-php/bt-recommend.php'); ?>
+    <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
+    .bottom-container
+      //<?php include('components-php/annie-banner.php'); ?>
+      //<?php include('components-php/service.php'); ?>
+      //<?php include('components-php/business-sp.php'); ?>
+      //<?php include('components-php/annie-sp.php'); ?>
+      <?php include('components-php/footer.php'); ?>
+      <?php include('components-php/footer-sp.php'); ?>

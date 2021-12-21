@@ -1,0 +1,230 @@
+/*
+
+	mobile settings windowサイズが1024以下- 680以上になった時の処理
+
+**************************************************/
+
+@media (min-width: 680px) and (max-width: 1050px){
+
+  /*YouTubeレスポンシブサイズ*/
+  .youtube {
+      position: relative;
+      max-width: 100%;
+      padding-top: 56.25%;
+      margin-bottom: 20px;
+  }
+  .youtube iframe {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+  .header__pic{
+    .background-draw img {
+      display: none;
+    }
+    &--logo{
+      //width: 37%;
+      .sub-title{
+        font-size: 0.65rem;
+      }
+    }
+  }
+  .header-bar{
+    .logo__title{
+      display: none;
+    }
+  }
+
+  #PageTopBtn a {
+    padding: 2px 0;
+  }
+
+  .eyechatchlabel{
+    font-size: 0.5em;
+  }
+  .middle-contain{
+     .article-list__text .list-title{
+      font-size: 0.9rem;
+    }
+  }
+  .side-contain {
+    .header-side__txt--jp{
+      display: none;
+     }
+    .news-list{
+    &__title{
+      font-size: 0.6rem;
+      }
+    span.views{
+      font-size: 0.3em;
+      }
+    }
+    .keywords .tag-cloud-link{
+      font-size: 0.68em !important;
+    }
+  }
+
+  .hatching-house{
+     &__btn--img{
+       display: none;
+    }
+    &__pictures{
+      .hatching-house--txt{
+        font-size: 0.9em;
+      }
+    }
+    &__header--txt{
+        width: 550px;
+    }
+  }
+  .second-section{
+    .middle-contain{
+       .article-list__text{
+         .list-title{
+           font-size: 1.1rem;
+         }
+         .category-icon{
+           font-size: 0.7em;
+         }
+      }
+    }
+  }
+  .blogger{
+    &__header--txt{
+      font-size: 1.7em;
+      padding:0;
+    }
+    &__header--img{
+      display: none;
+    }
+    &__box__name{
+      font-size: 0.7em;
+    }
+
+  }
+  .annie {
+    height: 200px;
+    &-img {
+      width: 50%;
+    }
+    .annie-header{
+        padding-top: 5%;
+        &-main {
+        font-size: 1.6em;
+        }
+        &-txt {
+        font-size: 0.7em;
+        }
+    }
+  }
+  .our-service__pictures{
+    .our-service{
+      &--txt{
+      font-size: 0.70em;
+      }
+    }
+    figcaption {
+      font-size: 0.7em;
+      padding-top: 24%;
+    }
+  }
+
+  .footer{
+    &__content {
+      .footer__box{
+          font-size: 0.7em;
+        &__title{
+          font-size: 1.3em;
+        }
+      }
+      .footer__logo__box{
+        width: 34%;
+      }
+    }
+  }
+  .side-fixed-content02{
+    width: 24%;
+  }
+  .annie-ad-side{
+    display: none;
+  }
+  .house-ad-side{
+    display: none;
+  }
+  .side-fixed-content {
+    position: fixed;
+    top: 15%;
+    width: 24%;
+  }
+  .business-ad-side{
+    .business-content{
+      padding: 15px;
+      .business-header-txt{
+        font-size: 1em;
+      }
+    }
+  }
+.service-page{
+  &__web{
+    &__bg-img{
+      background-image: url(./images/service-web-bg.JPG);
+      padding-top: 38%;
+      background-position: 0 -356px;
+      }
+    }
+    &__translate{
+      &__bg-img{
+        padding-top: 36%;
+        background-position: 0px -470px;
+      }
+    }
+    &__pictures li {
+     width: 45%;
+     margin-right: 0;
+     margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width:850px) {
+  .header-bar{
+    .header-bar__nav__item {
+      padding: 10px 5px;
+    }
+     &__logo{
+      .search__form{
+        display: none;
+      }
+    }
+  }
+  .second-section{
+    .middle-contain{
+       .article-list__text{
+         .list-title{
+          font-size: 0.9rem;
+          }
+          .category-icon{
+            font-size: 0.6em;
+          }
+      }
+    }
+    .header-side__txt--jp{
+      display: none;
+     }
+  }
+  .blogger{
+    &__header--img{
+      display: none;
+    }
+  }
+  .our-service__pictures{
+    .our-service{
+      &--txt{
+      font-size: 0.5em;
+      }
+    }
+  }
+}

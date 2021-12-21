@@ -1,0 +1,200 @@
+.margin-center{
+	margin: 0 auto;
+
+}
+
+.flexbox{
+	@include flexbox(flex-start,flex-start);
+	flex-wrap: wrap;
+	&--start{
+		@extend .flexbox;
+		justify-content: start;
+	}
+	&--h-center{
+		@extend .flexbox;
+		justify-content: center;
+	}
+	&--h-bottom{
+		@extend .flexbox;
+		justify-content: flex-end;
+	}
+	&--v-center{
+		@extend .flexbox;
+		align-items: center;
+	}
+	&--v-bottom{
+		@extend .flexbox;
+		align-items: flex-end;
+	}
+	&--spacebetween{
+		@extend .flexbox;
+		justify-content: space-between;
+	}
+	&--spacearound{
+		@extend .flexbox;
+		justify-content: space-around;
+	}
+	&--streach{
+		@extend .flexbox;
+		align-items: stretch;
+	}
+}
+
+
+.floating{
+	@include clearfix;
+	&__photo{
+		&--left{
+			float: left;
+			margin: 0 30px 30px 0px;
+		}
+		&--right{
+			float: right;
+			margin: 0 0 30px 30px;
+		}
+	}
+	&__text{
+		p{
+			@include fts(16,30);
+			strong{font-weight: bold;}
+		}
+		p+p{
+			margin-top: 30px;
+		}
+	}
+}
+
+
+
+@for $i from 1 through 15 {
+  .column-#{$i} {
+    width : (63*$i)+(20*$i)-20+px;
+  }
+}
+
+//画像にマウスオーバーすると上から画像全体に被るようにマスク
+
+figure {
+	position: relative;
+	overflow: hidden;
+	//width: 300px;
+}
+figcaption {
+	position: absolute;
+	top: -100%;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+	-webkit-transition: .3s;
+	transition: .3s;
+	opacity: 1;
+	color: #fff;
+	text-align: center;
+	padding-top: 27%;
+
+}
+figure:hover figcaption {
+	top: 0;
+	left: 0;
+}
+
+
+
+//くるっと回るナビゲーションのフォーバーCSS処理
+
+/*
+.header-bar__nav__list ul li{
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+}
+
+.c-link {
+	transition: all .3s;
+	position: relative;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.c-link--bold {
+	overflow: hidden;
+	display: inline-block;
+
+	span {
+		position: relative;
+		display: inline-block;
+		transition: all .3s;
+		&:before {
+			position: absolute;
+			top: 100%;
+			left: 38%;
+			font-size: 10px;
+			content: "●";
+			color: #ffde8d;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	&:hover {
+		span {
+			transform: translateY(-100%);
+		}
+	}
+}
+*/
+
+//マウスオーバー拡大
+
+
+//メガメニュー
+#gnav > ul {
+  display: table;
+  padding-left: 50px;
+}
+#gnav > ul > li {
+  display: table-cell;
+  margin-right: 2em;
+}
+#gnav > ul > li:hover {
+  background-color:  #ffc9bc;
+}
+
+#gnav > ul > li:hover > a {
+  color: #fff;
+}
+#gnav > ul > li:hover .menu {
+  max-height: 9999px;
+  opacity: 1;
+}
+#gnav > ul > li > a {
+  display: block;
+  padding: 21px 1em 21px;
+  transition: all .2s ease-in;
+}
+#gnav > ul .menu {
+  transition: all .2s ease-in;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+	min-width: 1260px;
+  left: 0;
+  position: absolute;
+	background-color: #ffc9bc;
+	z-index: 5000;
+	font-size: 1em;
+	padding: 0 40px;
+}
+#gnav > ul .menu .menu_inner {
+  padding: 1em 0;
+}
+#gnav > ul .menu .menu_inner li {
+  display: inline-block;
+  margin: 0 .5em;
+}
+#gnav > ul .menu a {
+  color: #fff;
+}

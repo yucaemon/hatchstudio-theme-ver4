@@ -1,0 +1,13 @@
+.keywords
+  .header-side.flexbox
+    .header-side__img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-left.svg">
+    .header-side__txt--en
+      KEYWORDS
+      <i class="fas fa-tag"></i>
+    .header-side__txt--jp
+      トレンドタグ
+    .header-side__img
+      <img src="<?php echo get_template_directory_uri(); ?>/images/font-deco-right.svg">
+  .keywords__content.flexbox
+    <?php wp_tag_cloud( 'smallest=11&largest=11&number=20' ); ?>

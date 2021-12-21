@@ -1,0 +1,30 @@
+%header.outer__header.header02
+  .flexbox--spacebetween
+    .sns-icons.flexbox
+      .sns-icons__icon
+        <a href="https://www.facebook.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-icon.svg"></a>
+      .sns-icons__icon
+        <a href="https://twitter.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon.svg"></a>
+      .sns-icons__icon
+        <a href="https://www.instagram.com/annie_jene/"><img src="<?php echo get_template_directory_uri(); ?>/images/instgram-icon.svg"></a>
+    .search__box
+      .search__form
+        <?php get_search_form(); ?>
+  .logofind
+    .logo__img
+      <a href="https://hatchstudioinc.com/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-bk.svg" width="250"></a>
+
+.header-bar
+  .header-bar__inner.flexbox--spacebetween
+    .header-bar__logo.logo
+      %span.logo__img-h
+        <a href="https://hatchstudioinc.com/"><img src="<?php echo get_template_directory_uri(); ?>/images/eight-icon.svg"></a>
+      %span.logo__title
+        <a href="https://hatchstudioinc.com/">ホームへ戻る</a>
+      .search__box
+        .search__form
+          <?php get_search_form(); ?>
+    <?php include('header-bar-menu.php'); ?>
+
+.breadcrumb-container
+  <?php include('breadcrumb.php'); ?>
