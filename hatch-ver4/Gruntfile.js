@@ -41,6 +41,7 @@ module.exports = function (grunt) {
                     'components-php/header.php': '_haml/header.haml',
                     'components-php/header02.php': '_haml/header02.haml',
                     'components-php/footer.php': '_haml/footer.haml',
+                    'components-php/profile.php': '_haml/profile.haml',
                     'components-php/keywords.php': '_haml/keywords.haml',
                     'components-php/keywords-category.php': '_haml/keywords-category.haml',
                     'components-php/recommend-list.php': '_haml/recommend-list.haml',
