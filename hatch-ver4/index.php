@@ -5,12 +5,12 @@
 <?php include('components-php/header-sp.php'); ?>
 <section class='section first-section'>
 <div class='outer__inner'>
-<div class='outer__inner__container flexbox--spacebetween'>
+<div class='outer__inner__container flexbox--v-center'>
 <div class='middle-contain two-column-sp'>
 <ul class='post-lists article-list box-list  flexbox'>
   <?php
      $args = array(
-    'posts_per_page' => 12,                //表示（取得）する記事の数
+    'posts_per_page' => 24,                //表示（取得）する記事の数
     'post_type' => 'post'    //投稿タイプの指定
   );
   $posts = get_posts( $args );
@@ -51,7 +51,7 @@
 </ul>
 </div>
 <div class='side-contain'>
-<?php include('components-php/affiliate-ad-sky.php'); ?>
+<?php include('components-php/profile.php'); ?>
 <div class='side-ranking-ad'>
 <a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
 </div>

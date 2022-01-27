@@ -448,6 +448,30 @@ body {
 }
 
 .side-contain {
+  .profile{
+    .profile-txt{
+      .profile-txt__header{
+         font-weight: bold;
+         padding-bottom: 10px;
+      }
+      .profile-txt__body{
+        font-size: 12px;
+        padding-bottom: 20px;
+        color: #898787;
+      }
+    }
+    .profile-sns-box{
+      width: 100%;
+      height: 70px;
+      background-color: #fff298;
+      margin-bottom: 20px;
+      .profile-sns-box-img{
+          .sns-icons{
+            width: 133px;
+          }
+      }
+    }
+  }
   .keywords {
     &__content {
       margin-bottom: 20px;
@@ -455,9 +479,6 @@ body {
       width: 100%;
     }
   }
-
-
-
   .recommend-list {
     dd + dd {
       padding-top: 18px;

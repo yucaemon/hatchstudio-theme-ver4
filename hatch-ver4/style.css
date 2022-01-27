@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: はっちすたじお Ver4
+Theme Name: annie
 Theme URI: https://wordpress.org/themes/annie/
 Author: yuka
 Author URI: https://wordpress.org/
@@ -26,7 +26,6 @@ html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
-  
 
 body {
   margin: 0; }
@@ -7431,6 +7430,20 @@ body {
   width: 313px;
   margin-top: 30px; }
 
+.side-contain .profile .profile-txt .profile-txt__header {
+  font-weight: bold;
+  padding-bottom: 10px; }
+.side-contain .profile .profile-txt .profile-txt__body {
+  font-size: 12px;
+  padding-bottom: 20px;
+  color: #898787; }
+.side-contain .profile .profile-sns-box {
+  width: 100%;
+  height: 70px;
+  background-color: #fff298;
+  margin-bottom: 20px; }
+  .side-contain .profile .profile-sns-box .profile-sns-box-img .sns-icons {
+    width: 133px; }
 .side-contain .keywords__content {
   margin-bottom: 20px;
   margin: 0 auto;
@@ -9922,9 +9935,9 @@ category-page
     width: 50%; }
 
   /*
-
+  
   search-page(検索ページ)
-
+  
   *************************************************/
   .search-page .side-contain .news-list__container {
     padding: 0 20px; }
