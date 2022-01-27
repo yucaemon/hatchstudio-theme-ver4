@@ -38,4 +38,5 @@
 
     gtag('config', 'UA-52447507-1');
   </script>
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </head>
