@@ -13,7 +13,7 @@
 </div>
 <div class='profile-sns-box'>
 <div class='profile-sns-box-img'>
-<div class='sns-icons'>
+<div class='sns-icons flexbox'>
 <div class='sns-icons__icon'>
 <a href="https://www.facebook.com/hatchstudioinc"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-icon.svg"></a>
 </div>

@@ -420,11 +420,7 @@ body {
 .hide-ad-pc{
   display: none;
 }
-.side-amazon-ad {
-    margin-left: 12px;
-    padding-top: 25px;
-    padding-bottom: 30px;
-}
+
 .side-fixed-content{
   position: fixed;
   top: 15%;
@@ -444,10 +440,13 @@ body {
   top: 32%;
   width: 313px;
   margin-top: 30px;
-
 }
 
-.side-contain {
+.side-contain{
+  .side-ad{
+    padding-bottom:15px;
+  }
+
   .profile{
     .profile-txt{
       .profile-txt__header{
@@ -465,9 +464,15 @@ body {
       height: 70px;
       background-color: #fff298;
       margin-bottom: 20px;
+      position: relative;
       .profile-sns-box-img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
           .sns-icons{
-            width: 133px;
+            width: 139px;
+            padding: 0 5px;
           }
       }
     }
@@ -771,7 +776,7 @@ body {
 
 /*
 
-	index.page
+	使い回しコンポーネント
 
 *************************************************/
 
@@ -780,112 +785,12 @@ body {
     margin: 0 auto 30px auto;
 }
 
-.section{
-  //padding-bottom:50px;
-}
-
-
-.second-section {
-  .middle-contain .article-list li {
-    width:auto;
-  }
-  .middle-contain .article-list__text {
-    word-wrap: break-word;
-    width: 500px;
-    padding-left: 20px;
-  }
-}
-
-.hatching-house{
-  background-color: #bee4e6;
-  padding:30px 40px;
-  height: 100%;
-  margin-bottom: 3%;
-  &__header{
-    padding-bottom: 40px;
-    padding-right: 25px;
-    &--jp {
-      color: #87b2bd;
-      font-size: 22px;
-      letter-spacing: 3px;
-      padding-bottom: 17px;
-    }
-    &--en {
-      align-items: center;
-    }
-    &--txt {
-      width: 710px;
-    }
-    &--icon {
-      width: 80px;
-      padding-right: 20px;
-    }
-  }
-  &__pictures {
-    li{
-      width: 29%;
-      height: 100%;
-    }
-    .hatching-house {
-      &--img{
-        img{
-          width: 100%;
-          display: block;
-        }
-      }
-      &--txt {
-        background-color: #fff;
-        padding:  10px 20px;
-        font-size: 1.1em;
-        font-weight: bold;
-        letter-spacing: 0.10em;
-        font-family: $font_family_jp;
-        text-align: center;
-      }
-    }
-  }
-  &__btn {
-    &--img {
-      width: 100px;
-    }
-  }
-}
-.annie {
-  background-color: $pink_01;
-  height: 330px;
-  &-img{
-    width: 58%;
-    height: 100%;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-  }
-  .annie-content {
-    margin: 0 auto;
-    //width: 410px;
-  }
-  .annie-header{
-    text-align: center;
-    padding-top: 15%;
-  }
-  &-header-main {
-    font-size: 36px;
-    color: #fff;
-  }
-  &-header-sub {
-    letter-spacing: 3px;
-    padding-bottom: 10px;
-  }
-  &-header-txt {
-    font-size: 14px;
-    padding-bottom: 20px;
-    color: #fff;
-    letter-spacing: 3px;
-  }
-}
+.featured-contens {
+  background-color: #ffecda;
+  &__box--img {
+    width: 20%;
+   }
+ }
 
 .blogger {
   background-color: #ffe198;
@@ -1979,259 +1884,6 @@ body {
 
 /*
 
-service-page/ web & translate & contens
-
-*************************************************/
-.service-page{
-  #gnav > ul .menu{
-    min-width: inherit;
-  }
-  .outer__inner{
-    width: 100%;
-    margin: 0 auto;
-    padding:40px 60px;
-  }
-  &__header {
-    background-color: $yellow_01;
-    height: 130px;
-    padding-left: 40px;
-    @include fts(20, 20);
-    letter-spacing: 1px;
-    line-height: 4.4;
-    color: $White_01;
-  }
-    &__list {
-      padding-bottom: 30px;
-      &__detail{
-        @extend.house-page__body__detail
-      }
-    }
-    &__list__header {
-      @include fts(16, 16);
-      letter-spacing: 1px;
-      border-bottom: solid 1px $border_color;
-      padding: 10px 0;
-      margin-bottom: 20px;
-      font-family: $font_family_jp;
-      color:$font-color_head;
-    }
-    &__list__body {
-      color: $font_sub_glay_color;
-      letter-spacing: 2px;
-      margin-bottom: 30px;
-    }
-  &__web{
-    &__bg-img{
-      background-image: url(./images/service-web-bg.JPG);
-      width: 100%;
-      padding-top: 33%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 0 -675px;
-    }
-  }
-  &__translate{
-    &__bg-img{
-      background-image: url(./images/service-translate-bg.JPG);
-      padding-top: 33%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 0 -706px;
-    }
-  }
-  &__contens{
-    &__bg-img{
-      background-image: url(./images/service-contens-bg.JPG);
-      width: 100%;
-      padding-top: 40%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 0 -160px;
-    }
-  }
-}
-
-/*
-
-house-page/share-house＆real-estate
-
-*************************************************/
-.house-page{
-  .empty-container {
-      content: '';
-      width: 30%;
-  }
-
-  &__share-house-sp{
-    display: none;
-  }
-  &__header {
-    background-color: $blue_01;
-    @include fts(20, 20);
-    letter-spacing: 1px;
-    padding: 30px 0 30px 40px;
-    color: $White_01;
-    &--jp {
-      line-height: 1.7;
-      @include fts(12, 12);
-      color: #607071;
-      margin-bottom: 5px;
-      font-family: $font_family_jp;
-    }
-    &--en {
-      @include fts(30, 30);
-      line-height: 1;
-      font-family: $font_family_en;
-    }
-    .sub-txt{
-      width: 73px;
-      font-size: 17px;
-      border: solid #bdbdbd 0.5px;
-      padding: 7px;
-      vertical-align: middle;
-      background-color: #fff;
-      text-align: center;
-      color: #ff846a;
-    }
-    .main-txt {
-    font-size: 3rem;
-    padding-left: 15px;
-    }
-  }
-  &__body {
-    &__container {
-    text-align: center;
-    padding-bottom: 50px;
-    }
-    &__img{
-      width: 30%;
-      height: 255px;
-      img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      padding-bottom: 50px;
-      }
-    }
-    &__header {
-      padding: 40px;
-      letter-spacing: 1px;
-      @include fts(18, 18);
-      font-family: $font_family_jp;
-      color:$font-color_head;
-      text-align: center;
-    }
-    &__read {
-    text-align: start;
-    padding-bottom: 50px;
-    }
-    &__detail {
-      border: solid 1px #dadada;
-      padding: 30px;
-      margin-bottom: 33px;
-      background-color: #f9f9f9;
-      width: 100%;
-      font-size: 13px;
-      text-align: start;
-      li{
-        padding-bottom:10px;
-      }
-    }
-    &__facility{
-      border: solid 1px #dadada;
-      padding: 30px;
-      margin-bottom: 33px;
-      background-color: #f9f9f9;
-      width: 100%;
-      font-size: 13px;
-      text-align: start;
-    }
-    &__room-notice{
-      text-align: start;
-      padding: 25px;
-      border: solid 1px #dedede;
-      margin-bottom: 40px;
-      .room-notice--title {
-      font-size: 19px;
-      font-weight: bold;
-      padding-bottom: 10px;
-      }
-      .room-notice--txt {
-      font-size: 13px;
-      color: #929292;
-      padding-bottom: 30px;
-      }
-    }
-    .room__detail{
-      border: solid 1px #dadada;
-      margin-bottom: 33px;
-      background-color: #fff8f8;
-      width: 30%;
-      font-size: 13px;
-      &__img{
-        width: 100%;
-        height: 255px;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            padding-bottom: 50px;
-          }
-      }
-      &__read{
-          padding: 0 34px 51px 34px;
-          text-align: inherit;
-          &--roomname{
-            background-color: #fff;
-            padding: 7px 10px;
-            margin: 5px 0 17px 0;
-          }
-          &--day {
-              font-weight: bold;
-              font-size: 34px;
-              text-align: center;
-              padding-bottom: 20px;
-              letter-spacing: 0.05em;
-          }
-      }
-      &__amenity{
-        text-align: start;
-      }
-    }
-  }
-
-  &__share-house{
-    &__bg-img{
-      background-image: url(./images/hatching-house-pdx-bg.jpg);
-      width: 100%;
-      padding-top: 44%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 0 -213px;
-    }
-    &__bg-img-hawaii{
-      background-image: url(./images/guest-house-hawaii/hatching-house-hawaii-bg.jpg);
-      width: 100%;
-      padding-top: 44%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 0 -200px;
-    }
-  }
-  &__real-estate{
-    &__bg-img{
-      background-image: url(./images/hatching-real-estate-bg.jpg);
-      width: 100%;
-      padding-top: 40%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 0 -160px;
-    }
-  }
-}
-
-/*
-
 contact-form/comprnets
 
 *************************************************/
@@ -2364,7 +2016,11 @@ index
 
   .middle-contain {
       width: 70%;
-  }
+      .btn-img--toallpage {
+      width: 28%;
+      margin: 0 auto;
+      margin-top: 23px;
+      }
   .bg-thumb-img {
     margin-bottom: 30px;
   }
@@ -2404,6 +2060,7 @@ index
       }
     }
   }
+}
 
 
 
@@ -2423,7 +2080,6 @@ index.page
     width: 27%;
   }
 }
-
 .second-section{
   .eyechatchlabel{
     display: none;
@@ -2445,8 +2101,6 @@ index.page
     }
   }
 }
-
-
 
 
 /*
@@ -2565,7 +2219,12 @@ category-page
    parts
 *************************************************/
 
-  .news-list {
+  .news-list{
+    &__img{
+      width: 50%;
+      margin: 0 auto;
+      padding: 15px;
+    }
     .eyechatchlabel{
       display: none;
     }

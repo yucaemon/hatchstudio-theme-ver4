@@ -7408,11 +7408,6 @@ body {
 .hide-ad-pc {
   display: none; }
 
-.side-amazon-ad {
-  margin-left: 12px;
-  padding-top: 25px;
-  padding-bottom: 30px; }
-
 .side-fixed-content {
   position: fixed;
   top: 15%;
@@ -7430,6 +7425,8 @@ body {
   width: 313px;
   margin-top: 30px; }
 
+.side-contain .side-ad {
+  padding-bottom: 15px; }
 .side-contain .profile .profile-txt .profile-txt__header {
   font-weight: bold;
   padding-bottom: 10px; }
@@ -7441,9 +7438,16 @@ body {
   width: 100%;
   height: 70px;
   background-color: #fff298;
-  margin-bottom: 20px; }
-  .side-contain .profile .profile-sns-box .profile-sns-box-img .sns-icons {
-    width: 133px; }
+  margin-bottom: 20px;
+  position: relative; }
+  .side-contain .profile .profile-sns-box .profile-sns-box-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); }
+    .side-contain .profile .profile-sns-box .profile-sns-box-img .sns-icons {
+      width: 139px;
+      padding: 0 5px; }
 .side-contain .keywords__content {
   margin-bottom: 20px;
   margin: 0 auto;
@@ -7671,84 +7675,17 @@ body {
 
 /*
 
-	index.page
+	使い回しコンポーネント
 
 *************************************************/
 .affiliate-ad-one {
   width: 336px;
   margin: 0 auto 30px auto; }
 
-.second-section .middle-contain .article-list li {
-  width: auto; }
-.second-section .middle-contain .article-list__text {
-  word-wrap: break-word;
-  width: 500px;
-  padding-left: 20px; }
-
-.hatching-house {
-  background-color: #bee4e6;
-  padding: 30px 40px;
-  height: 100%;
-  margin-bottom: 3%; }
-  .hatching-house__header {
-    padding-bottom: 40px;
-    padding-right: 25px; }
-    .hatching-house__header--jp {
-      color: #87b2bd;
-      font-size: 22px;
-      letter-spacing: 3px;
-      padding-bottom: 17px; }
-    .hatching-house__header--en {
-      align-items: center; }
-    .hatching-house__header--txt {
-      width: 710px; }
-    .hatching-house__header--icon {
-      width: 80px;
-      padding-right: 20px; }
-  .hatching-house__pictures li {
-    width: 29%;
-    height: 100%; }
-  .hatching-house__pictures .hatching-house--img img {
-    width: 100%;
-    display: block; }
-  .hatching-house__pictures .hatching-house--txt {
-    background-color: #fff;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    font-weight: bold;
-    letter-spacing: 0.10em;
-    font-family: "Montserrat", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
-    text-align: center; }
-  .hatching-house__btn--img {
-    width: 100px; }
-
-.annie {
-  background-color: #f6cdc4;
-  height: 330px; }
-  .annie-img {
-    width: 58%;
-    height: 100%; }
-    .annie-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block; }
-  .annie .annie-content {
-    margin: 0 auto; }
-  .annie .annie-header {
-    text-align: center;
-    padding-top: 15%; }
-  .annie-header-main {
-    font-size: 36px;
-    color: #fff; }
-  .annie-header-sub {
-    letter-spacing: 3px;
-    padding-bottom: 10px; }
-  .annie-header-txt {
-    font-size: 14px;
-    padding-bottom: 20px;
-    color: #fff;
-    letter-spacing: 3px; }
+.featured-contens {
+  background-color: #ffecda; }
+  .featured-contens__box--img {
+    width: 20%; }
 
 .blogger {
   background-color: #ffe198;
@@ -8735,213 +8672,6 @@ body {
 
 /*
 
-service-page/ web & translate & contens
-
-*************************************************/
-.service-page #gnav > ul .menu {
-  min-width: inherit; }
-.service-page .outer__inner {
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px 60px; }
-.service-page__header {
-  background-color: #ebd4a4;
-  height: 130px;
-  padding-left: 40px;
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 1;
-  letter-spacing: 1px;
-  line-height: 4.4;
-  color: #fff; }
-.service-page__list {
-  padding-bottom: 30px; }
-.service-page__list__header {
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 1;
-  letter-spacing: 1px;
-  border-bottom: solid 1px #d4d4d4;
-  padding: 10px 0;
-  margin-bottom: 20px;
-  font-family: "Montserrat", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
-  color: #222; }
-.service-page__list__body {
-  color: #9c9c9c;
-  letter-spacing: 2px;
-  margin-bottom: 30px; }
-.service-page__web__bg-img {
-  background-image: url(./images/service-web-bg.JPG);
-  width: 100%;
-  padding-top: 33%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 -675px; }
-.service-page__translate__bg-img {
-  background-image: url(./images/service-translate-bg.JPG);
-  padding-top: 33%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 -706px; }
-.service-page__contens__bg-img {
-  background-image: url(./images/service-contens-bg.JPG);
-  width: 100%;
-  padding-top: 40%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 -160px; }
-
-/*
-
-house-page/share-house＆real-estate
-
-*************************************************/
-.house-page .empty-container {
-  content: '';
-  width: 30%; }
-.house-page__share-house-sp {
-  display: none; }
-.house-page__header {
-  background-color: #bee4e6;
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 1;
-  letter-spacing: 1px;
-  padding: 30px 0 30px 40px;
-  color: #fff; }
-  .house-page__header--jp {
-    line-height: 1.7;
-    font-size: 12px;
-    font-size: 1.2rem;
-    line-height: 1;
-    color: #607071;
-    margin-bottom: 5px;
-    font-family: "Montserrat", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif; }
-  .house-page__header--en {
-    font-size: 30px;
-    font-size: 3rem;
-    line-height: 1;
-    line-height: 1;
-    font-family: "Montserrat", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
-  .house-page__header .sub-txt {
-    width: 73px;
-    font-size: 17px;
-    border: solid #bdbdbd 0.5px;
-    padding: 7px;
-    vertical-align: middle;
-    background-color: #fff;
-    text-align: center;
-    color: #ff846a; }
-  .house-page__header .main-txt {
-    font-size: 3rem;
-    padding-left: 15px; }
-.house-page__body__container {
-  text-align: center;
-  padding-bottom: 50px; }
-.house-page__body__img {
-  width: 30%;
-  height: 255px; }
-  .house-page__body__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    padding-bottom: 50px; }
-.house-page__body__header {
-  padding: 40px;
-  letter-spacing: 1px;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 1;
-  font-family: "Montserrat", "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
-  color: #222;
-  text-align: center; }
-.house-page__body__read {
-  text-align: start;
-  padding-bottom: 50px; }
-.house-page__body__detail, .service-page__list__detail {
-  border: solid 1px #dadada;
-  padding: 30px;
-  margin-bottom: 33px;
-  background-color: #f9f9f9;
-  width: 100%;
-  font-size: 13px;
-  text-align: start; }
-  .house-page__body__detail li, .service-page__list__detail li {
-    padding-bottom: 10px; }
-.house-page__body__facility {
-  border: solid 1px #dadada;
-  padding: 30px;
-  margin-bottom: 33px;
-  background-color: #f9f9f9;
-  width: 100%;
-  font-size: 13px;
-  text-align: start; }
-.house-page__body__room-notice {
-  text-align: start;
-  padding: 25px;
-  border: solid 1px #dedede;
-  margin-bottom: 40px; }
-  .house-page__body__room-notice .room-notice--title {
-    font-size: 19px;
-    font-weight: bold;
-    padding-bottom: 10px; }
-  .house-page__body__room-notice .room-notice--txt {
-    font-size: 13px;
-    color: #929292;
-    padding-bottom: 30px; }
-.house-page__body .room__detail {
-  border: solid 1px #dadada;
-  margin-bottom: 33px;
-  background-color: #fff8f8;
-  width: 30%;
-  font-size: 13px; }
-  .house-page__body .room__detail__img {
-    width: 100%;
-    height: 255px; }
-    .house-page__body .room__detail__img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      padding-bottom: 50px; }
-  .house-page__body .room__detail__read {
-    padding: 0 34px 51px 34px;
-    text-align: inherit; }
-    .house-page__body .room__detail__read--roomname {
-      background-color: #fff;
-      padding: 7px 10px;
-      margin: 5px 0 17px 0; }
-    .house-page__body .room__detail__read--day {
-      font-weight: bold;
-      font-size: 34px;
-      text-align: center;
-      padding-bottom: 20px;
-      letter-spacing: 0.05em; }
-  .house-page__body .room__detail__amenity {
-    text-align: start; }
-.house-page__share-house__bg-img {
-  background-image: url(./images/hatching-house-pdx-bg.jpg);
-  width: 100%;
-  padding-top: 44%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 -213px; }
-.house-page__share-house__bg-img-hawaii {
-  background-image: url(./images/guest-house-hawaii/hatching-house-hawaii-bg.jpg);
-  width: 100%;
-  padding-top: 44%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 -200px; }
-.house-page__real-estate__bg-img {
-  background-image: url(./images/hatching-real-estate-bg.jpg);
-  width: 100%;
-  padding-top: 40%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 -160px; }
-
-/*
-
 contact-form/comprnets
 
 *************************************************/
@@ -9052,49 +8782,50 @@ index
 
 .middle-contain {
   width: 70%; }
-
-.bg-thumb-img {
-  margin-bottom: 30px; }
-
-.box-list li {
-  height: 100%; }
-
-.article-list li {
-  padding: 0 10px 10px 10px;
-  width: 281px; }
-.article-list .newMark {
-  padding: 8px 20px;
-  letter-spacing: 3px; }
-.article-list__img img {
-  width: 100%;
-  height: 175px;
-  object-fit: cover; }
-.article-list__text .list-title {
-  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
-  color: #222;
-  word-wrap: break-word;
-  font-size: 11px;
-  font-size: 1.1rem;
-  line-height: 1;
-  line-height: 11;
-  font-weight: 600;
-  letter-spacing: .05em;
-  line-height: 1.6;
-  padding-bottom: 10px; }
-.article-list__text .icons .icons__tag {
-  background-color: #f2716e;
-  margin-right: 10px;
-  color: #fff;
-  font-size: 3px;
-  font-size: 0.3rem;
-  line-height: 1;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  padding: 4px 7px; }
+  .middle-contain .btn-img--toallpage {
+    width: 28%;
+    margin: 0 auto;
+    margin-top: 23px; }
+  .middle-contain .bg-thumb-img {
+    margin-bottom: 30px; }
+  .middle-contain .box-list li {
+    height: 100%; }
+  .middle-contain .article-list li {
+    padding: 0 10px 10px 10px;
+    width: 281px; }
+  .middle-contain .article-list .newMark {
+    padding: 8px 20px;
+    letter-spacing: 3px; }
+  .middle-contain .article-list__img img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover; }
+  .middle-contain .article-list__text .list-title {
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+    color: #222;
+    word-wrap: break-word;
+    font-size: 11px;
+    font-size: 1.1rem;
+    line-height: 1;
+    line-height: 11;
+    font-weight: 600;
+    letter-spacing: .05em;
+    line-height: 1.6;
+    padding-bottom: 10px; }
+  .middle-contain .article-list__text .icons .icons__tag {
+    background-color: #f2716e;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 3px;
+    font-size: 0.3rem;
+    line-height: 1;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding: 4px 7px; }
 
 /*
 
@@ -9199,6 +8930,10 @@ category-page
 
    parts
 *************************************************/
+.news-list__img {
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px; }
 .news-list .eyechatchlabel {
   display: none; }
 .news-list__thumb-img {

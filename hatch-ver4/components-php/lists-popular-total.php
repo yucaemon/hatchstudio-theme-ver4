@@ -1,16 +1,7 @@
 <dl class='news-list'>
 <dt>
-<div class='header-side__img--sp'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/popular-baner.svg">
-</div>
-<div class='header-side flexbox'>
-<div class='header-side__txt--en'>
-POPULOR
-<i class="fas fa-crown"></i>
-</div>
-<div class='header-side__txt--jp'>
-総合ランキング
-</div>
+<div class='news-list__img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/side__ranking-txt.svg">
 </div>
 </dt>
 <div class='news-list__container two-column-sp'>
@@ -21,7 +12,7 @@ $results = $wpdb->get_results("
   WHERE meta.meta_key = 'views'
   AND posts.post_status = 'publish'
   AND posts.post_type = 'post'
-  order by cast( meta.meta_value as signed) desc limit 8;
+  order by cast( meta.meta_value as signed) desc limit 5;
   ", ARRAY_N);
   $average_views = array();
   foreach ($results as $result) {
