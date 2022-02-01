@@ -58,6 +58,7 @@ module.exports = function (grunt) {
                     'components-php/header-sp.php': '_haml/header-sp.haml',
                     'components-php/footer-sp.php': '_haml/footer-sp.haml',
                     'components-php/featured-contens.php': '_haml/featured-contens.haml',
+                    'components-php/area-contens.php': '_haml/area-contens.haml',                  
                     'components-php/sponsor-blogger.php': '_haml/sponsor-blogger.haml',
                     'components-php/contact-form.php': '_haml/contact-form.haml',
                     'components-php/header-bar-menu.php': '_haml/header-bar-menu.haml',

@@ -7683,9 +7683,46 @@ body {
   margin: 0 auto 30px auto; }
 
 .featured-contens {
-  background-color: #ffecda; }
+  background-color: #ffecda;
+  margin-bottom: 50px; }
   .featured-contens__box--img {
     width: 20%; }
+
+.qar-contens {
+  background-color: #ffecda;
+  margin-bottom: 20px; }
+  .qar-contens__box__txt {
+    padding-right: 50px; }
+    .qar-contens__box__txt--mid {
+      font-size: 30px;
+      color: #f9a694;
+      font-weight: bold;
+      padding-bottom: 5px; }
+    .qar-contens__box__txt--img-top {
+      width: 38%; }
+    .qar-contens__box__txt--img-btm {
+      width: 100%; }
+  .qar-contens__box__character {
+    width: 200px; }
+  .qar-contens__box__btn {
+    padding-top: 88px; }
+
+.area-contens__img {
+  width: 20%; }
+.area-contens__box__container {
+  width: 24%; }
+.area-contens__box__container + .area-contens__box__container {
+  margin-left: 16px; }
+.area-contens .header-side {
+  padding-bottom: 0px; }
+  .area-contens .header-side__title {
+    background-color: #ffbe5cb8;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold; }
+.area-contens .news-list {
+  background-color: #ffead5;
+  padding: 20px; }
 
 .blogger {
   background-color: #ffe198;

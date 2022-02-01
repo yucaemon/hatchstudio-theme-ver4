@@ -787,10 +787,65 @@ body {
 
 .featured-contens {
   background-color: #ffecda;
+  margin-bottom:50px;
   &__box--img {
     width: 20%;
    }
  }
+
+ .qar-contens{
+  background-color: #ffecda;
+  margin-bottom:20px;
+  &__box__txt{
+    padding-right: 50px;
+    &--mid{
+      font-size: 30px;
+      color: #f9a694;
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
+    &--img{
+      &-top{
+        width: 38%;
+      }
+      &-btm{
+        width: 100%;
+      }
+    }
+  }
+  &__box__character{
+    width: 200px;
+  }
+  &__box__btn{
+    padding-top: 88px;
+  }
+}
+
+.area-contens{
+  &__img {
+    width: 20%;
+  }
+  &__box__container{
+      width: 24%;
+  }
+  &__box__container + &__box__container{
+    margin-left: 16px;
+  }
+  .header-side{
+    padding-bottom: 0px;
+    &__title{
+      background-color: #ffbe5cb8;
+      padding: 16px;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+  .news-list{
+    background-color: #ffead5;
+    padding: 20px;
+  }
+
+}
 
 .blogger {
   background-color: #ffe198;

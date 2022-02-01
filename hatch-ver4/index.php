@@ -67,6 +67,7 @@
 </div>
 <?php include('components-php/featured-contens.php'); ?>
 <?php include('components-php/Q&A-banner.php'); ?>
+<?php include('components-php/area-contens.php'); ?>
 <?php include('components-php/affiliate-ad-sp.php'); ?>
 <?php include('components-php/sponsor-blogger.php'); ?>
 </section>

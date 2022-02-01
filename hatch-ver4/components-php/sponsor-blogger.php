@@ -12,7 +12,7 @@
 <div class='blogger__body flexbox--spacearound'>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/popo.jpg">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/popo.jpg"></a>
 </div>
 <div class='blogger__box__name'>
 365日おいしいものだけ
@@ -20,7 +20,7 @@
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/yuno.jpg">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/yuno.jpg"></a>
 </div>
 <div class='blogger__box__name'>
 ゾニーとキッズ☆アメリカ4コマ物語☆
@@ -28,7 +28,7 @@
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/theuslife.jpg">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/theuslife.jpg"></a>
 </div>
 <div class='blogger__box__name'>
 THE US LIFE
@@ -36,7 +36,7 @@ THE US LIFE
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/panera.jpg">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/panera.jpg"></a>
 </div>
 <div class='blogger__box__name'>
 Happy California Life♪
@@ -44,7 +44,7 @@ Happy California Life♪
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/kaodebi.jpg">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/kaodebi.jpg"></a>
 </div>
 <div class='blogger__box__name'>
 バークレーからこんにちは。
@@ -52,7 +52,7 @@ Happy California Life♪
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/yuko.jpg">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/yuko.jpg"></a>
 </div>
 <div class='blogger__box__name'>
 アメリカ国際結婚バツイチアラサー
@@ -60,7 +60,7 @@ Happy California Life♪
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/motto.jpg">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/motto.jpg"></a>
 </div>
 <div class='blogger__box__name'>
 もっとサンフランシスコ
@@ -68,7 +68,7 @@ Happy California Life♪
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/takagi.jpg">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/takagi.jpg"></a>
 </div>
 <div class='blogger__box__name'>
 世界中で暮らす。
@@ -76,7 +76,7 @@ Happy California Life♪
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/miki.png">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/miki.png"></a>
 </div>
 <div class='blogger__box__name'>
 アラサー女子のシリコンバレー奮闘記
@@ -84,7 +84,7 @@ Happy California Life♪
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/freerider.jpg">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/freerider.jpg"></a>
 </div>
 <div class='blogger__box__name'>
 フリーライダー(YOUTUBER)
@@ -92,7 +92,7 @@ Happy California Life♪
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/EF.jpg">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/EF.jpg"></a>
 </div>
 <div class='blogger__box__name'>
 EF エデュケーション
@@ -100,7 +100,7 @@ EF エデュケーション
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/theintern.jpg">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/theintern.jpg"></a>
 </div>
 <div class='blogger__box__name'>
 The Intern
@@ -108,18 +108,10 @@ The Intern
 </div>
 <div class='blogger__box'>
 <div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/hanterbook.png">
+<a href="https://anniejene.com//"><img src="<?php echo get_template_directory_uri(); ?>/images/hanterbook.png"></a>
 </div>
 <div class='blogger__box__name'>
 hanter book
-</div>
-</div>
-<div class='blogger__box'>
-<div class='blogger__box__img circle'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/you.png">
-</div>
-<div class='blogger__box__name'>
-YOU
 </div>
 </div>
 </div>
