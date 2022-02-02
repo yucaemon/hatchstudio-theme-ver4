@@ -42,14 +42,14 @@ jQuery(document).ready(function($) {
             //$('.side-job-ad').addClass('side-fixed-content01');
         //}
         if( footerArea || beforeFixedArea ) {
-            $('.side-job-ad').removeClass('side-fixed-content01');
+            $('.side-ad-work').removeClass('side-fixed-content01');
         } else if ( fixedArea ) {
-            $('.side-job-ad').addClass('side-fixed-content01');
+            $('.side-ad-work').addClass('side-fixed-content01');
         }
         if( footerArea || beforeFixedArea ) {
-            $('.side-amazon-ad').removeClass('side-fixed-content02');
+            $('.side-ad-private').removeClass('side-fixed-content02');
         } else if ( fixedArea ) {
-            $('.side-amazon-ad').addClass('side-fixed-content02');
+            $('.side-ad-private').addClass('side-fixed-content02');
         }
 
     });
