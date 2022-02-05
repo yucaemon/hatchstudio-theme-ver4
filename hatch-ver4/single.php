@@ -42,12 +42,6 @@
 <?php endif; ?>
 </div>
 <div class='flexbox'>
-<div class='single-page__views'>
-<i class="fas fa-heart"></i>
-<?php if(function_exists('the_views')) {
-  the_views();
-} ?>
-</div>
 <div class='single-page__tags'>
 <?php the_category( '  ',' 　' ); ?>
 <?php $slug_name = basename(get_permalink()); ?>
@@ -74,12 +68,10 @@
 </div>
 </div>
 <div class='single-page__post-info flexbox'>
-<div class='single-page__dates'></div>
-<?php if (get_the_modified_date('Y.m.d') != get_the_time('Y.m.d')) : ?>
-更新日：<time datetime="<?php the_modified_date('Y-m-d') ?>"><?php the_modified_date('Y.m.d') ?></time>
-<?php else:?>
+<div class='single-page__dates'>
 公開日：<time datetime="<?php the_time('Y-m-d');?>"><?php the_time('Y.m.d');?></time>
-<?php endif; ?>
+更新日：<time datetime="<?php the_modified_date('Y-m-d') ?>"><?php the_modified_date('Y.m.d') ?></time>
+</div>
 <div class='author__img circle'>
 <?php echo get_avatar( get_the_author_id(), 50 ); ?>
 </div>
@@ -106,7 +98,8 @@
 <?php include('components-php/related-article.php'); ?>
 <?php include('components-php/this-page-tags.php'); ?>
 <?php include('components-php/category-keywords.php'); ?>
-<?php include('components-php/paging-nav.php'); ?>
+<?php include('components-php/featured-contens-small.php'); ?>
+<?php include('components-php/Q&A-banner-small.php'); ?>
 </div>
 <div class='side-contain'>
 <?php include('components-php/profile.php'); ?>

@@ -1,4 +1,4 @@
-<div class='single-page__post-down__sns-icons flexbox--spacebetween'>
+<div class='single-page__post-down__sns-icons flexbox'>
 <div class='sns-icons__img'>
 <?php
   $share_url   = get_permalink();

@@ -1,7 +1,7 @@
 <div class='news-list'>
 <div class='header-side'>
 <div class='header-side__title'>
-最新記事!
+最新記事
 <i class="fas fa-arrow-up"></i>
 </div>
 </div>

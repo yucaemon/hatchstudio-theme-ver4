@@ -785,41 +785,63 @@ body {
     margin: 0 auto 30px auto;
 }
 
-.featured-contens {
-  background-color: #ffecda;
-  margin-bottom:50px;
-  &__box--img {
-    width: 20%;
-   }
- }
-
- .qar-contens{
-  background-color: #ffecda;
-  margin-bottom:20px;
-  &__box__txt{
-    padding-right: 50px;
-    &--mid{
-      font-size: 30px;
-      color: #f9a694;
-      font-weight: bold;
-      padding-bottom: 5px;
-    }
+.featured-contens{
+  &__box{
+    background-color: #ffecda;
+    margin-bottom:50px;
+    &--img {
+      width: 20%;
+     }
+  }
+  &__box-small{
+    padding: 36px 46px;
     &--img{
-      &-top{
-        width: 38%;
-      }
-      &-btm{
-        width: 100%;
-      }
-    }
-  }
-  &__box__character{
-    width: 200px;
-  }
-  &__box__btn{
-    padding-top: 88px;
+      width: 335px;
+      padding-bottom:10px;
+     }
   }
 }
+ .qar-contens{
+   background-color: #ffecda;
+  }
+
+  .qar-contens__box{
+      background-color: #ffecda;
+      margin-bottom:20px;
+    &-small{
+      padding: 40px;
+      .qar-contens__box__btn {
+        padding-top: 10px;
+      }
+      .qar-contens__box__txt{
+        width: 59%;
+      }
+    }
+    &__character{
+      width: 200px;
+    }
+    &__btn{
+      padding-top: 88px;
+    }
+    &__txt{
+      padding-right: 50px;
+      &--mid{
+        font-size: 30px;
+        color: #f9a694;
+        font-weight: bold;
+        padding-bottom: 5px;
+      }
+      &--img{
+        &-top{
+          width: 38%;
+        }
+        &-btm{
+          width: 100%;
+        }
+      }
+    }
+  }
+
 
 .area-contens{
   &__img {
@@ -977,7 +999,7 @@ body {
 .author__img img {
   width: 50px;
   border: solid 1px #cccccc;
-  margin: 0 15px;
+  margin-left: 6px;
 }
 
 .wrote-models-lists__name{
@@ -1020,11 +1042,14 @@ body {
     }
   }
   &__post-down__sns-icons {
-    padding-bottom: 50px;
-    width: 100%;
+    padding-bottom: 76px;
+    width: 76%;
     margin: 0 auto;
     img {
       width: 312px;
+    }
+    .sns-icons__img + .sns-icons__img {
+        margin-left: 10px;
     }
   }
   &__detail{
@@ -1034,8 +1059,11 @@ body {
     align-items: center;
   }
   &__dates {
-    padding-right: 10px;
+    font-size: 13px;
     color: #9c9c9c;
+    time{
+      padding-right: 8px;
+    }
   }
   &__head-title {
     @include mainTitle(20.1,1.4);

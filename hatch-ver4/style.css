@@ -7682,15 +7682,33 @@ body {
   width: 336px;
   margin: 0 auto 30px auto; }
 
-.featured-contens {
+.featured-contens__box {
   background-color: #ffecda;
   margin-bottom: 50px; }
   .featured-contens__box--img {
     width: 20%; }
+.featured-contens__box-small {
+  padding: 36px 46px; }
+  .featured-contens__box-small--img {
+    width: 335px;
+    padding-bottom: 10px; }
 
 .qar-contens {
+  background-color: #ffecda; }
+
+.qar-contens__box {
   background-color: #ffecda;
   margin-bottom: 20px; }
+  .qar-contens__box-small {
+    padding: 40px; }
+    .qar-contens__box-small .qar-contens__box__btn {
+      padding-top: 10px; }
+    .qar-contens__box-small .qar-contens__box__txt {
+      width: 59%; }
+  .qar-contens__box__character {
+    width: 200px; }
+  .qar-contens__box__btn {
+    padding-top: 88px; }
   .qar-contens__box__txt {
     padding-right: 50px; }
     .qar-contens__box__txt--mid {
@@ -7702,10 +7720,6 @@ body {
       width: 38%; }
     .qar-contens__box__txt--img-btm {
       width: 100%; }
-  .qar-contens__box__character {
-    width: 200px; }
-  .qar-contens__box__btn {
-    padding-top: 88px; }
 
 .area-contens__img {
   width: 20%; }
@@ -7831,7 +7845,7 @@ body {
 .author__img img {
   width: 50px;
   border: solid 1px #cccccc;
-  margin: 0 15px; }
+  margin-left: 6px; }
 
 .wrote-models-lists__name {
   font-size: 12px;
@@ -7864,18 +7878,22 @@ body {
     width: 100px;
     padding: 10px 10px 0 0; }
 .single-page__post-down__sns-icons {
-  padding-bottom: 50px;
-  width: 100%;
+  padding-bottom: 76px;
+  width: 76%;
   margin: 0 auto; }
   .single-page__post-down__sns-icons img {
     width: 312px; }
+  .single-page__post-down__sns-icons .sns-icons__img + .sns-icons__img {
+    margin-left: 10px; }
 .single-page__detail {
   align-items: center; }
 .single-page__post-info {
   align-items: center; }
 .single-page__dates {
-  padding-right: 10px;
+  font-size: 13px;
   color: #9c9c9c; }
+  .single-page__dates time {
+    padding-right: 8px; }
 .single-page__head-title {
   width: 100%;
   font-size: 20.1px;

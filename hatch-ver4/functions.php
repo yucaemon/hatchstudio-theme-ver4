@@ -299,7 +299,6 @@ function detailBoxFunc( $atts, $content = null ) {
 }
 add_shortcode('詳細テンプレ', 'detailBoxFunc');
 
-
 //関連リンクのショートコード
 function relatedLinksBoxFunc( $atts, $content = null ) {
     extract( shortcode_atts( array(
