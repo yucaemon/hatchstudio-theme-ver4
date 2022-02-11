@@ -1878,6 +1878,28 @@ body {
 
 /*
 
+	featured-page page
+
+*************************************************/
+.fuatured-page{
+  &__title-bar{
+     background-color: #ffedb5;
+      .title-barbox{
+        align-items: center;
+          ＆-txt{
+            font-size: 37px;
+            font-weight: bold;
+        }
+      }
+      .title-barbox-img {
+        width: 218px;
+      }
+  }
+}
+
+
+/*
+
 	about page
 
 *************************************************/

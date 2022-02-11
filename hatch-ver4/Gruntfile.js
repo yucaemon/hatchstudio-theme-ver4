@@ -80,6 +80,7 @@ module.exports = function (grunt) {
                     'components-php/lists-category-total.php': '_haml/lists-category-total.haml',
                     'components-php/Q&A-banner.php': '_haml/Q&A-banner.haml',
                     'components-php/Q&A-banner-small.php': '_haml/Q&A-banner-small.haml',
+                    'featured-page.php': '_haml/featured-page.haml',
                     'index.php': '_haml/index.haml',
                     'single.php': '_haml/single.haml',
                     'archive.php': '_haml/archive.haml',

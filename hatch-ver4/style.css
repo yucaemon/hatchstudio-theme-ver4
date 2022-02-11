@@ -8655,6 +8655,21 @@ body {
 
 /*
 
+	featured-page page
+
+*************************************************/
+.fuatured-page__title-bar {
+  background-color: #ffedb5; }
+  .fuatured-page__title-bar .title-barbox {
+    align-items: center; }
+    .fuatured-page__title-bar .title-barbox ＆-txt {
+      font-size: 37px;
+      font-weight: bold; }
+  .fuatured-page__title-bar .title-barbox-img {
+    width: 218px; }
+
+/*
+
 	about page
 
 *************************************************/
