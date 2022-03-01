@@ -15,15 +15,32 @@
 </div>
 </div>
 </div>
-<div class='fuatured-page__ranking ranking__boxs flexbox'>
+<div class='fuatured-page__ranking'>
+<div class='ranking__boxs flexbox--spacearound'>
 <div class='ranking__box'>
+<div class='ranking__box-icon'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking01.svg">
 </div>
-<div class='ranking__box'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking02.svg">
+<div class='ranking__box-pic'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+</div>
 </div>
 <div class='ranking__box'>
+<div class='ranking__box-icon'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking02.svg">
+</div>
+<div class='ranking__box-pic'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img02.svg">
+</div>
+</div>
+<div class='ranking__box'>
+<div class='ranking__box-icon'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking03.svg">
+</div>
+<div class='ranking__box-pic'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img03.svg">
+</div>
+</div>
 </div>
 </div>
 </div>

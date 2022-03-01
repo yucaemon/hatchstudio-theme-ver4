@@ -8662,11 +8662,21 @@ body {
   background-color: #ffedb5; }
   .fuatured-page__title-bar .title-barbox {
     align-items: center; }
-    .fuatured-page__title-bar .title-barbox ＆-txt {
+    .fuatured-page__title-bar .title-barbox-txt {
       font-size: 37px;
       font-weight: bold; }
   .fuatured-page__title-bar .title-barbox-img {
     width: 218px; }
+.fuatured-page__ranking {
+  background-color: #ffeddc;
+  padding: 10px; }
+  .fuatured-page__ranking .ranking__boxs {
+    width: 520px;
+    margin: 0 auto; }
+    .fuatured-page__ranking .ranking__boxs .ranking__box {
+      width: 60px; }
+    .fuatured-page__ranking .ranking__boxs .ranking__box-icon {
+      width: 54px; }
 
 /*
 
