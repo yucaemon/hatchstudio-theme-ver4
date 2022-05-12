@@ -1878,7 +1878,7 @@ body {
 
 /*
 
-	featured-page page
+	featured-page page(メインタグ専門ページ)
 
 *************************************************/
 .fuatured-page{
@@ -1887,28 +1887,51 @@ body {
       .title-barbox{
         align-items: center;
         &-txt{
-          font-size: 37px;
+          font-size: 30px;
           font-weight: bold;
+          color: #272727;
+          padding-right: 19px;
         }
       }
       .title-barbox-img {
-        width: 218px;
+        width: 125px;
       }
   }
 
   &__ranking{
     background-color: #ffeddc;
-    padding: 10px;
+    padding: 41px;
     .ranking__boxs{
-      width: 520px;
+      //width: 520px;
       margin: 0 auto;
       .ranking__box{
-        width: 60px;
+        width: 217px;
+        padding: 0 13px;
       }
-      .ranking__box-icon {
-        width: 54px;
+      .ranking__box-icon{
+        width: 29%;
+        margin: 0 auto;
+      }
+      .ranking__box-pic{
+          border: 9px solid #ffffff;
+          margin-bottom: 10px;
+        img {
+          display: block;
+          height: 116px;
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+      .ranking__box-txt {
+        font-size: 14px;
+        font-weight: bold;
       }
    }
+  }
+  .main-tag-article{
+    .middle-contain{
+      width: 100%;
+    }
   }
 }
 
@@ -2090,6 +2113,7 @@ index
 .middle-contain {
   width: 70%;
 }
+
 .side-contain{
   width: 27%;
 }

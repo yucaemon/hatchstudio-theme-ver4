@@ -6895,6 +6895,16 @@ select {
   .flexbox--streach {
     align-items: stretch; }
 
+.four-col-last-left .post-lists::before {
+  content: "";
+  display: block;
+  width: 23%;
+  order: 1; }
+.four-col-last-left .post-lists::after {
+  content: "";
+  display: block;
+  width: 23%; }
+
 .floating {
   zoom: 1; }
   .floating:after {
@@ -7392,7 +7402,7 @@ body {
   background-color: #b1d2b7; }
 
 .eyechatchlabel.hawaii {
-  background-color: #f6cdc4; }
+  background-color: #ffeddc; }
 
 .eyechatchlabel.info {
   background-color: #c2b4cc; }
@@ -7513,7 +7523,7 @@ body {
 .annie-ad-side .annie-content {
   margin: 0 auto 40px 0;
   text-align: center;
-  background-color: #f6cdc4;
+  background-color: #ffeddc;
   padding: 25px 24px; }
 .annie-ad-side .annie-header-main {
   font-size: 24px;
@@ -7659,11 +7669,11 @@ body {
 
 .zigzag-pink {
   position: relative;
-  background: #f6cdc4; }
+  background: #ffeddc; }
 
 .zigzag-pink::after {
   bottom: -20px;
-  background: linear-gradient(135deg, #f6cdc4 10px, transparent 0), linear-gradient(225deg, #f6cdc4 10px, transparent 0);
+  background: linear-gradient(135deg, #ffeddc 10px, transparent 0), linear-gradient(225deg, #ffeddc 10px, transparent 0);
   background-size: 20px 20px; }
 
 .circle img {
@@ -8439,7 +8449,7 @@ body {
   width: 750px; }
 .single-page .paging-nav {
   width: auto;
-  background-color: #f6cdc4; }
+  background-color: #ffeddc; }
   .single-page .paging-nav__container {
     padding: 20px; }
   .single-page .paging-nav__content {
@@ -8655,7 +8665,7 @@ body {
 
 /*
 
-	featured-page page
+	featured-page page(メインタグ専門ページ)
 
 *************************************************/
 .fuatured-page__title-bar {
@@ -8663,20 +8673,36 @@ body {
   .fuatured-page__title-bar .title-barbox {
     align-items: center; }
     .fuatured-page__title-bar .title-barbox-txt {
-      font-size: 37px;
-      font-weight: bold; }
+      font-size: 30px;
+      font-weight: bold;
+      color: #272727;
+      padding-right: 19px; }
   .fuatured-page__title-bar .title-barbox-img {
-    width: 218px; }
+    width: 125px; }
 .fuatured-page__ranking {
   background-color: #ffeddc;
-  padding: 10px; }
+  padding: 41px; }
   .fuatured-page__ranking .ranking__boxs {
-    width: 520px;
     margin: 0 auto; }
     .fuatured-page__ranking .ranking__boxs .ranking__box {
-      width: 60px; }
+      width: 217px;
+      padding: 0 13px; }
     .fuatured-page__ranking .ranking__boxs .ranking__box-icon {
-      width: 54px; }
+      width: 29%;
+      margin: 0 auto; }
+    .fuatured-page__ranking .ranking__boxs .ranking__box-pic {
+      border: 9px solid #ffffff;
+      margin-bottom: 10px; }
+      .fuatured-page__ranking .ranking__boxs .ranking__box-pic img {
+        display: block;
+        height: 116px;
+        object-fit: cover;
+        width: 100%; }
+    .fuatured-page__ranking .ranking__boxs .ranking__box-txt {
+      font-size: 14px;
+      font-weight: bold; }
+.fuatured-page .main-tag-article .middle-contain {
+  width: 100%; }
 
 /*
 
@@ -8762,7 +8788,7 @@ contact-form/comprnets
     text-align: center;
     padding-bottom: 50px; }
   .contact-form__header {
-    background-color: #f6cdc4;
+    background-color: #ffeddc;
     height: 144px;
     padding-left: 40px;
     font-size: 20px;

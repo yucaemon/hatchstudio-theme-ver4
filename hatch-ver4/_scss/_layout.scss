@@ -39,6 +39,19 @@
 		align-items: stretch;
 	}
 }
+.four-col-last-left{
+	.post-lists::before{
+	  content:"";
+	  display: block;
+	  width:23%;
+	  order:1;
+	}
+	.post-lists::after{
+	  content:"";
+	  display: block;
+	  width:23%;
+	}
+}
 
 
 .floating{
