@@ -1,23 +1,23 @@
 <?php /** *  Template Name:  featuredページ */ ?>
 <?php include('head.php'); ?>
-<body>
-<div class='fuatured-page'>
+<body class='fuatured-page'>
 <div class='pages outer'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
-<div class='pages__container'>
-<div class='fuatured-page__title-bar'>
-<div class='outer__inner title-barbox flexbox--h-center'>
-<div class='title-barbox-txt'>
+<div class='pages__container__title'>
+<div class='outer__inner'>
+<div class='title-bar flexbox--h-center'>
+<div class='title-bar-txt'>
 アメリカーンなものを食う
 </div>
-<div class='title-barbox-img'>
+<div class='title-bar-img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__bad-food.svg">
 </div>
 </div>
 </div>
-<div class='fuatured-page__ranking zigzag zigzag-pink'>
-<div class='ranking__boxs flexbox--h-center'>
+</div>
+<div class='pages__container__ranking zigzag zigzag-pink'>
+<div class='outer__inner ranking__boxs flexbox--h-center'>
 <div class='ranking__box'>
 <div class='ranking__box-icon'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking01.svg">
@@ -53,11 +53,12 @@
 </div>
 </div>
 </div>
+<div class='pages__container__tag-related-article'>
+<div class='outer__inner tag-related-article'>
+<div class='tag-related-article-title'>
+『アメリカカ〜ンなモノを食う。』新着記事一覧
 </div>
-</div>
-<div class='outer__inner main-tag-article'>
-<div class='outer__inner__container'>
-<div class='middle-contain two-column-sp four-col-last-left'>
+<div class='tag-related-article-body two-column-sp four-col-last-left'>
 <ul class='article-list post-lists flexbox--spacebetween'>
   <?php
      $args = array(
@@ -100,10 +101,66 @@
     <?php endif;
     wp_reset_postdata(); //クエリのリセット ?>
 </ul>
+<div class='btn-img--toallpage'>
+<a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/toallpage-btn.svg"></a>
 </div>
 </div>
 </div>
-<div class='outer__inner'></div>
+</div>
+<div class='pages__container__tag-pickup-article'>
+<div class='outer__inner tag-pickup-article__boxs flexbox--spacearound'>
+<div class='tag-pickup-article__box'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+<div class='cat-label'>
+アメリカのスーパー
+</div>
+</div>
+<div class='tag-pickup-article__box'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+<div class='cat-label'>
+潜入
+</div>
+</div>
+<div class='tag-pickup-article__box'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+<div class='cat-label'>
+食い比べ
+</div>
+</div>
+<div class='tag-pickup-article__box'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+<div class='cat-label'>
+トレジョ
+</div>
+</div>
+<div class='tag-pickup-article__box'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+<div class='cat-label'>
+レシピ
+</div>
+</div>
+<div class='tag-pickup-article__box'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+<div class='cat-label'>
+珍もの＆まずいもの検証
+</div>
+</div>
+<div class='tag-pickup-article__box'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+<div class='cat-label'>
+流行り
+</div>
+</div>
+<div class='tag-pickup-article__box'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+<div class='cat-label'></div>
+</div>
+<div class='tag-pickup-article__box'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+<div class='cat-label'></div>
+</div>
+</div>
+</div>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
 </div>

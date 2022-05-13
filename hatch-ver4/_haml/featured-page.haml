@@ -1,43 +1,44 @@
 <?php /** *  Template Name:  featuredページ */ ?>
 <?php include('head.php'); ?>
-%body
-  .fuatured-page
-    .pages.outer
-      <?php include('components-php/header02.php'); ?>
-      <?php include('components-php/header-sp.php'); ?>
-      .pages__container
-        .fuatured-page__title-bar
-          .outer__inner.title-barbox.flexbox--h-center
-            .title-barbox-txt
-              アメリカーンなものを食う
-            .title-barbox-img
-              <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__bad-food.svg">
-        .fuatured-page__ranking.zigzag.zigzag-pink
-          .ranking__boxs.flexbox--h-center
-            .ranking__box
-              .ranking__box-icon
-                <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking01.svg">
-              .ranking__box-pic
-                <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
-              .ranking__box-txt
-                テキストテキストテキストテキストテキストテキストテキストテキスト
-            .ranking__box
-              .ranking__box-icon
-                <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking02.svg">
-              .ranking__box-pic
-                <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img02.svg">
-              .ranking__box-txt
-                テキストテキストテキストテキストテキストテキストテキストテキスト
-            .ranking__box
-              .ranking__box-icon
-                <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking03.svg">
-              .ranking__box-pic
-                <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img03.svg">
-              .ranking__box-txt
-                テキストテキストテキストテキストテキストテキストテキストテキスト
-    .outer__inner.main-tag-article
-      .outer__inner__container
-        .middle-contain.two-column-sp.four-col-last-left
+%body.fuatured-page
+  .pages.outer
+    <?php include('components-php/header02.php'); ?>
+    <?php include('components-php/header-sp.php'); ?>
+    .pages__container__title
+      .outer__inner
+        .title-bar.flexbox--h-center
+          .title-bar-txt
+            アメリカーンなものを食う
+          .title-bar-img
+            <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__bad-food.svg">
+    .pages__container__ranking.zigzag.zigzag-pink
+      .outer__inner.ranking__boxs.flexbox--h-center
+        .ranking__box
+          .ranking__box-icon
+            <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking01.svg">
+          .ranking__box-pic
+            <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+          .ranking__box-txt
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+        .ranking__box
+          .ranking__box-icon
+            <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking02.svg">
+          .ranking__box-pic
+            <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img02.svg">
+          .ranking__box-txt
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+        .ranking__box
+          .ranking__box-icon
+            <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking03.svg">
+          .ranking__box-pic
+            <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img03.svg">
+          .ranking__box-txt
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+    .pages__container__tag-related-article
+      .outer__inner.tag-related-article
+        .tag-related-article-title
+          『アメリカカ〜ンなモノを食う。』新着記事一覧
+        .tag-related-article-body.two-column-sp.four-col-last-left
           :plain
             <ul class='article-list post-lists flexbox--spacebetween'>
               <?php
@@ -81,7 +82,43 @@
                 <?php endif;
                 wp_reset_postdata(); //クエリのリセット ?>
             </ul>
-
-    .outer__inner
+          .btn-img--toallpage
+            <a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/toallpage-btn.svg"></a>
+    .pages__container__tag-pickup-article
+      .outer__inner.tag-pickup-article__boxs.flexbox--spacearound
+        .tag-pickup-article__box
+          <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+          .cat-label
+            アメリカのスーパー
+        .tag-pickup-article__box
+          <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+          .cat-label
+            潜入
+        .tag-pickup-article__box
+          <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+          .cat-label
+            食い比べ
+        .tag-pickup-article__box
+          <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+          .cat-label
+            トレジョ
+        .tag-pickup-article__box
+          <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+          .cat-label
+            レシピ
+        .tag-pickup-article__box
+          <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+          .cat-label
+            珍もの＆まずいもの検証
+        .tag-pickup-article__box
+          <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+          .cat-label
+            流行り
+        .tag-pickup-article__box
+          <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+          .cat-label
+        .tag-pickup-article__box
+          <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
+          .cat-label                     
     <?php include('components-php/footer.php'); ?>
     <?php include('components-php/footer-sp.php'); ?>
