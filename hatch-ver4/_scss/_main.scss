@@ -675,6 +675,15 @@ body {
   background: linear-gradient(135deg, $pink_01 10px, transparent 0), linear-gradient(225deg, $pink_01 10px, transparent 0);
   background-size: 20px 20px;
 }
+.zigzag-yellow {
+  position: relative;
+  background: $yellow_01;
+}
+.zigzag-yellow::after {
+  bottom: -20px;
+  background: linear-gradient(135deg, $yellow_01 10px, transparent 0), linear-gradient(225deg, $pink_01 10px, transparent 0);
+  background-size: 20px 20px;
+}
 
 .circle img{
   border-radius: 50%;
@@ -719,7 +728,6 @@ body {
 
   .qar-contens__box{
       background-color: $pink_01;
-      margin-bottom:20px;
     &-small{
       padding: 40px;
       .qar-contens__box__btn {
@@ -1861,6 +1869,7 @@ body {
     }
   }
   .pages__container__tag-pickup-article{
+       margin-bottom: 100px;
        background-color: $yellow_01;
       .tag-pickup-article__box{
         width: 337px;
