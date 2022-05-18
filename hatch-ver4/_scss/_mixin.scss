@@ -135,6 +135,16 @@
       line-height: 1.6;
 }
 
+@mixin pageTitle($fontsize,$line-hight) {
+	    @include font-jp;
+			color: $font-color_head;
+			word-wrap: break-word;
+			@include fts($fontsize,$fontsize);
+			line-height: $line-hight;
+			font-weight: 600;
+      letter-spacing: .05em;
+      line-height: 1.6;
+}
 
 /*
 

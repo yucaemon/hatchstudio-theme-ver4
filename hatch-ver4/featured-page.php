@@ -6,8 +6,8 @@
 <?php include('components-php/header-sp.php'); ?>
 <div class='pages__container__title'>
 <div class='outer__inner'>
-<div class='title-bar flexbox--h-center'>
-<div class='title-bar-txt'>
+<div class='title-bar text-centering-pearent flexbox--h-center'>
+<div class='title-bar-txt text-centering-child'>
 アメリカーンなものを食う
 </div>
 <div class='title-bar-img'>
@@ -16,13 +16,13 @@
 </div>
 </div>
 </div>
-<div class='pages__container__ranking zigzag zigzag-pink'>
+<div class='section pages__container__ranking zigzag zigzag-pink'>
 <div class='outer__inner ranking__boxs flexbox--h-center'>
 <div class='ranking__box'>
 <div class='ranking__box-icon'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking01.svg">
 </div>
-<div class='ranking__box-pic'>
+<div class='ranking__box-pic pic-frame-white'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
 </div>
 <div class='ranking__box-txt'>
@@ -33,7 +33,7 @@
 <div class='ranking__box-icon'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking02.svg">
 </div>
-<div class='ranking__box-pic'>
+<div class='ranking__box-pic pic-frame-white'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img02.svg">
 </div>
 <div class='ranking__box-txt'>
@@ -44,7 +44,7 @@
 <div class='ranking__box-icon'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking03.svg">
 </div>
-<div class='ranking__box-pic'>
+<div class='ranking__box-pic pic-frame-white'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img03.svg">
 </div>
 <div class='ranking__box-txt'>
@@ -53,7 +53,7 @@
 </div>
 </div>
 </div>
-<div class='pages__container__tag-related-article'>
+<div class='section pages__container__tag-related-article'>
 <div class='outer__inner tag-related-article'>
 <div class='tag-related-article-title'>
 『アメリカカ〜ンなモノを食う。』新着記事一覧
@@ -107,7 +107,7 @@
 </div>
 </div>
 </div>
-<div class='pages__container__tag-pickup-article zigzag zigzag-yellow'>
+<div class='section pages__container__tag-pickup-article zigzag zigzag-yellow'>
 <div class='outer__inner tag-pickup-article__boxs flexbox--spacearound'>
 <div class='tag-pickup-article__box'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
