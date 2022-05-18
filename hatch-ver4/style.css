@@ -6966,6 +6966,45 @@ select {
     object-fit: cover;
     width: 100%; }
 
+.btn {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  color: #fff; }
+
+.btn:hover,
+a .btn :hover {
+  opacity: 0.5;
+  color: #fff; }
+
+.btn--orange,
+a .btn--orange {
+  background-color: #f8bb86; }
+
+.btn--pink,
+a .btn--pink {
+  background-color: #f1c2b7; }
+
+.btn--yellow,
+a .btn--yellow {
+  background-color: #ffcf6e; }
+
+.btn-copy {
+  color: #333;
+  font-size: 0.7rem;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 0.2em;
+  text-align: center;
+  text-shadow: 1px 2px 3px #e4e4e4; }
+
+.btn-copy:before {
+  margin-right: 0.7rem;
+  content: '＼'; }
+
+.btn-copy:after {
+  margin-left: 0.7rem;
+  content: '／'; }
+
 #gnav > ul {
   display: table;
   padding-left: 50px; }
@@ -7566,6 +7605,9 @@ body {
 	使い回しコンポーネント
 
 *************************************************/
+.original-btn {
+  text-align: center; }
+
 .affiliate-ad-one {
   width: 336px;
   margin: 0 auto 30px auto; }
@@ -8541,11 +8583,6 @@ body {
 
 /*
 
-	pageの共通のパーツ部分
-
-*************************************************/
-/*
-
 
 	featured-page page
 
@@ -8627,15 +8664,60 @@ category-page
   padding-right: 25px; }
 .category-page .pages__container__title .title-bar-img {
   width: 60px; }
-.category-page .pages__container__category-article {
+
+.pages__container__category-article {
   background-color: #ffedb5;
   margin-bottom: 50px; }
-  .category-page .pages__container__category-article .category-box ul.article-list.post-lists li {
+  .pages__container__category-article .category-box ul.article-list.post-lists li {
     width: 250px; }
-  .category-page .pages__container__category-article .category-box ul.article-list.post-lists img {
+  .pages__container__category-article .category-box ul.article-list.post-lists img {
     height: 142px; }
-  .category-page .pages__container__category-article .category-box ul.article-list.post-lists li + li {
+  .pages__container__category-article .category-box ul.article-list.post-lists li + li {
     padding-left: 20px; }
+
+/*
+
+area-page
+
+*************************************************/
+.area-page .pages__container__title .title-bar {
+  margin: auto; }
+  .area-page .pages__container__title .title-bar-txt {
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+    color: #222;
+    word-wrap: break-word;
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1;
+    line-height: 15;
+    font-weight: 600;
+    letter-spacing: .05em;
+    line-height: 1.6;
+    padding: 0 25px; }
+    .area-page .pages__container__title .title-bar-txt-img {
+      margin: 0 auto;
+      width: 50px; }
+  .area-page .pages__container__title .title-bar-img {
+    width: 100px; }
+.area-page .area-top-post__box-txt-pic {
+  margin: 0 auto;
+  width: 40px;
+  padding-bottom: 5px; }
+.area-page .area-top-post__box-txt-p {
+  margin: 0 auto;
+  width: 500px;
+  padding-left: 50px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+  color: #222;
+  word-wrap: break-word;
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 1;
+  line-height: 10;
+  font-weight: 600;
+  letter-spacing: .05em;
+  line-height: 1.6;
+  padding-bottom: 22px; }
 
 /*
 

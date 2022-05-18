@@ -77,6 +77,51 @@ vertical-align: middle;
 	}
 }
 
+//ボタン
+.btn{
+	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+	color: #fff;
+}
+.btn:hover,
+a .btn :hover {
+	opacity: 0.5 ;
+	color: #fff;
+}
+
+.btn--orange,
+a .btn--orange{
+  background-color: #f8bb86;
+}
+
+.btn--pink,
+a .btn--pink {
+  background-color: $pink_02;
+}
+
+.btn--yellow,
+a .btn--yellow {
+  background-color: $yellow_02;
+}
+
+.btn-copy {
+	color: #333;
+	font-size: 0.7rem;
+	font-weight: bold;
+	position: relative;
+	margin-bottom: 0.2em;
+	text-align: center;
+	text-shadow: 1px 2px 3px #e4e4e4;
+}
+.btn-copy:before {
+  margin-right: 0.7rem;
+  content: '＼';
+}
+.btn-copy:after {
+  margin-left: 0.7rem;
+  content: '／';
+}
+
 
 
 //メガメニュー

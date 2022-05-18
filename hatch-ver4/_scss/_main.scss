@@ -699,6 +699,9 @@ body {
 	使い回しコンポーネント
 
 *************************************************/
+.original-btn{
+  text-align: center;
+}
 
 .affiliate-ad-one {
     width: 336px;
@@ -1795,11 +1798,7 @@ body {
     padding:50px 0;
   }
 }
-/*
 
-	pageの共通のパーツ部分
-
-*************************************************/
 /*
 
 
@@ -1887,14 +1886,15 @@ category-page
 
 *************************************************/
 .category-page{
-  .pages__container__title{
-    .title-bar{
-      &-txt{
-        @include pageTitle(15,15);
-        padding-right: 25px;
-      }
-      &-img {
-        width: 60px;
+    .pages__container__title{
+      .title-bar{
+        &-txt{
+          @include pageTitle(15,15);
+          padding-right: 25px;
+        }
+        &-img {
+          width: 60px;
+        }
       }
     }
   }
@@ -1915,6 +1915,46 @@ category-page
       }
     }
   }
+
+/*
+
+area-page
+
+*************************************************/
+.area-page{
+  .pages__container__title{
+    .title-bar{
+      margin: auto;
+      &-txt{
+        @include pageTitle(15,15);
+        padding:0 25px;
+        &-img{
+          margin: 0 auto;
+          width: 50px;
+        }
+      }
+      &-img {
+        width: 100px;
+      }
+    }
+  }
+  .area-top-post__box-txt{
+    &-pic{
+      margin: 0 auto;
+      width: 40px;
+      padding-bottom: 5px;
+    }
+    &-p{
+      margin: 0 auto;
+      width: 500px;
+      padding-left: 50px;
+      @include pageTitle(10,10);
+      padding-bottom: 22px;
+    }
+  }
+
+
+
 }
 
 /*

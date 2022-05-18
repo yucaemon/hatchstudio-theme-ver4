@@ -81,6 +81,7 @@ module.exports = function (grunt) {
                     'components-php/Q&A-banner.php': '_haml/Q&A-banner.haml',
                     'components-php/Q&A-banner-small.php': '_haml/Q&A-banner-small.haml',
                     'featured-page.php': '_haml/featured-page.haml',
+                    'area-page.php': '_haml/area-page.haml',
                     'index.php': '_haml/index.haml',
                     'single.php': '_haml/single.haml',
                     'archive.php': '_haml/archive.haml',
