@@ -1902,10 +1902,15 @@ category-page
     background-color: $yellow_01;
     margin-bottom: 50px;
     .category-box{
-      ul.article-list.post-lists li {
+      ul.article-list.post-lists{
+        li {
           width: 250px;
+        }
         img{
           height: 142px;
+        }
+        li + li{
+          padding-left: 20px;
         }
       }
     }

@@ -8632,8 +8632,10 @@ category-page
   margin-bottom: 50px; }
   .category-page .pages__container__category-article .category-box ul.article-list.post-lists li {
     width: 250px; }
-    .category-page .pages__container__category-article .category-box ul.article-list.post-lists li img {
-      height: 142px; }
+  .category-page .pages__container__category-article .category-box ul.article-list.post-lists img {
+    height: 142px; }
+  .category-page .pages__container__category-article .category-box ul.article-list.post-lists li + li {
+    padding-left: 20px; }
 
 /*
 

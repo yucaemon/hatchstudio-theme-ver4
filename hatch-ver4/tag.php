@@ -1,17 +1,26 @@
-<?php /** *  Template Name: カテゴリーページ */ ?>
+<?php /** *  Template Name: タグ一覧ページ */ ?>
 <?php include('head.php'); ?>
-<body>
-<div class='category-page category outer'>
+<?php include('head.php'); ?>
+<body class='category-page'>
+<div class='pages outer'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
+<div class='pages__container__title'>
 <div class='outer__inner'>
-<div class='category__container'>
-<div class='category__container__body flexbox--spacebetween'>
-<div class='middle-contain'>
-<h1 class='components-title'>
-『 <?php echo get_the_archive_title(); ?> 』の関連記事一覧
-</h1>
-<ul class='post-lists article-list box-list flexbox--start'>
+<div class='title-bar text-centering-pearent flexbox--h-center'>
+<div class='title-bar-txt text-centering-child'>
+『<?php echo get_the_archive_title(); ?> 』の関連記事一覧
+</div>
+<div class='title-bar-img'>
+<img src="<?php echo get_template_directory_uri(); ?>/images/category-page__flower-person.svg">
+</div>
+</div>
+</div>
+</div>
+<div class='section pages__container__category-article zigzag zigzag-yellow'>
+<div class='outer__inner category-boxs flexbox--h-center'>
+<div class='category-box two-column-sp four-col-last-left'>
+<ul class='article-list post-lists flexbox--spacebetween'>
 <?php
 $tag_id = get_query_var('tag_id');
 if ( $tag_id ) {
@@ -24,8 +33,8 @@ if ( $tag_id ) {
     foreach ( $posts as $post ): // ループの開始
 setup_postdata( $post ); // 記事データの取得
 ?>
-  <li class=''>
-    <div class='post-lists__img article-list__img'>
+  <li class='eyecatch'>
+    <div class='post-lists__img article-list__img pic-frame-white'>
       <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
     </div>
     <div class='post-lists__text article-list__text'>
@@ -38,35 +47,6 @@ setup_postdata( $post ); // 記事データの取得
 endforeach; // ループの終了
 wp_reset_postdata(); // 直前のクエリを復元する
 ?>
-</ul>
-<?php include('components-php/category-keywords.php'); ?>
-<?php include('components-php/affiliate-ad-sky.php'); ?>
-</div>
-<div class='side-contain'>
-<?php include('components-php/affiliate-ad-sky.php'); ?>
-<div class='side-ranking-ad'>
-<a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
-</div>
-<div class='side-job-ad'>
-<a href="https://hatchstudioinc.com/archives/28793" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/remote-job-banner.svg"></a>
-</div>
-<div class='side-coupon-ad'>
-<a href="https://hatchstudioinc.com/archives/28854" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
-</div>
-<?php include('components-php/lists-news.php'); ?>
-<?php include('components-php/keywords.php'); ?>
-<!-- /<?php include('components-php/annie-ad-side.php'); ?> -->
-<?php include('components-php/house-ad-side.php'); ?>
-<div class='side-ranking-ad'>
-<a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
-</div>
-<div class='side-job-ad'>
-<a href="https://hatchstudioinc.com/archives/28793" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/remote-job-banner.svg"></a>
-</div>
-<div class='side-coupon-ad'>
-<a href="https://hatchstudioinc.com/archives/28854" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
-</div>
-<div class='side-fixed-area'></div>
 </div>
 </div>
 </div>
@@ -77,19 +57,12 @@ wp_reset_postdata(); // 直前のクエリを復元する
 <?php include('components-php/bt-news-lists.php'); ?>
 </div>
 <div class='bt-right'>
-<!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
-<!-- ?php include('components-php/bt-popular-month.php'); ? -->
 <?php include('components-php/bt-recommend.php'); ?>
 </div>
 </div>
 </div>
-<p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
-<div class='bottom-container'>
-<!-- /<?php include('components-php/service.php'); ?> -->
-<!-- /<?php include('components-php/business-sp.php'); ?> -->
-<!-- /<?php include('components-php/annie-banner.php'); ?> -->
+<?php include('components-php/featured-contens.php'); ?>
+<?php include('components-php/Q&A-banner.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
-</div>
-</div>
 </body>

@@ -1,86 +1,55 @@
-<?php /** *  Template Name: カテゴリーページ */ ?>
+<?php /** *  Template Name: タグ一覧ページ */ ?>
 <?php include('head.php'); ?>
-
-%body
-  .category-page.category.outer
+<?php include('head.php'); ?>
+%body.category-page
+  .pages.outer
     <?php include('components-php/header02.php'); ?>
     <?php include('components-php/header-sp.php'); ?>
-    .outer__inner
-      .category__container
-        .category__container__body.flexbox--spacebetween
-          .middle-contain
-            %h1.components-title
-              『 <?php echo get_the_archive_title(); ?> 』の関連記事一覧
-            %ul.post-lists.article-list.box-list.flexbox--start
-              :plain
-                <?php
-                $tag_id = get_query_var('tag_id');
-                if ( $tag_id ) {
-                    $args = array(
-                        'posts_per_page' => 270, // 表示件数の指定
-                        'tag_id' => get_query_var('tag_id')
-                    );
-                }
-                    $posts = get_posts( $args );
-                    foreach ( $posts as $post ): // ループの開始
-                setup_postdata( $post ); // 記事データの取得
-                ?>
-                  <li class=''>
-                    <div class='post-lists__img article-list__img'>
-                      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
-                    </div>
-                    <div class='post-lists__text article-list__text'>
-                      <h3 class='post-lists__title list-title'>
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                      </h3>
-                    </div>
-                  </li>
-              <?php
-              endforeach; // ループの終了
-              wp_reset_postdata(); // 直前のクエリを復元する
-              ?>
-            :plain
-              <?php include('components-php/category-keywords.php'); ?>
-              <?php include('components-php/affiliate-ad-sky.php'); ?>
-
-          .side-contain
-            <?php include('components-php/affiliate-ad-sky.php'); ?>
-            .side-ranking-ad
-              <a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
-            .side-job-ad
-              <a href="https://hatchstudioinc.com/archives/28793" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/remote-job-banner.svg"></a>
-            .side-coupon-ad
-              <a href="https://hatchstudioinc.com/archives/28854" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
-            <?php include('components-php/lists-news.php'); ?>
-            <?php include('components-php/keywords.php'); ?>
-            //<?php include('components-php/annie-ad-side.php'); ?>
-            <?php include('components-php/house-ad-side.php'); ?>
-            -#
-              <?php include('components-php/business-ad-side.php'); ?>
-            .side-ranking-ad
-              <a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/ranking-banner.svg"></a>
-            .side-job-ad
-              <a href="https://hatchstudioinc.com/archives/28793" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/remote-job-banner.svg"></a>
-            .side-coupon-ad
-              <a href="https://hatchstudioinc.com/archives/28854" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/coupon-banner.svg"></a>
-            -#
-              .side-amazon-ad
-                <img src="<?php echo get_template_directory_uri(); ?>/images/amazon-ad.svg">
-            .side-fixed-area
-
-    .outer__inner
-      .articles__container__bottom.flexbox--spacebetween
-        .bt-left
-          <?php include('components-php/bt-news-lists.php'); ?>
-        .bt-right
-          <!-- ?php include('components-php/affiliate-ad-article.php'); ? -->
-          <!-- ?php include('components-php/bt-popular-month.php'); ? -->
-          <?php include('components-php/bt-recommend.php'); ?>
-
-    <p id="PageTopBtn"><a href="#wrap">TOPへ</a></p>
-    .bottom-container
-      //<?php include('components-php/service.php'); ?>
-      //<?php include('components-php/business-sp.php'); ?>
-      //<?php include('components-php/annie-banner.php'); ?>
-      <?php include('components-php/footer.php'); ?>
-      <?php include('components-php/footer-sp.php'); ?>
+    .pages__container__title
+      .outer__inner
+        .title-bar.text-centering-pearent.flexbox--h-center
+          .title-bar-txt.text-centering-child
+            『<?php echo get_the_archive_title(); ?> 』の関連記事一覧
+          .title-bar-img
+            <img src="<?php echo get_template_directory_uri(); ?>/images/category-page__flower-person.svg">
+    .section.pages__container__category-article.zigzag.zigzag-yellow
+      .outer__inner.category-boxs.flexbox--h-center
+        .category-box.two-column-sp.four-col-last-left
+          :plain
+            <ul class='article-list post-lists flexbox--spacebetween'>
+            <?php
+            $tag_id = get_query_var('tag_id');
+            if ( $tag_id ) {
+                $args = array(
+                    'posts_per_page' => 270, // 表示件数の指定
+                    'tag_id' => get_query_var('tag_id')
+                );
+            }
+                $posts = get_posts( $args );
+                foreach ( $posts as $post ): // ループの開始
+            setup_postdata( $post ); // 記事データの取得
+            ?>
+              <li class='eyecatch'>
+                <div class='post-lists__img article-list__img pic-frame-white'>
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
+                </div>
+                <div class='post-lists__text article-list__text'>
+                  <h3 class='post-lists__title list-title'>
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                  </h3>
+                </div>
+              </li>
+          <?php
+          endforeach; // ループの終了
+          wp_reset_postdata(); // 直前のクエリを復元する
+          ?>
+  .outer__inner
+    .articles__container__bottom.flexbox--spacebetween
+      .bt-left
+        <?php include('components-php/bt-news-lists.php'); ?>
+      .bt-right
+        <?php include('components-php/bt-recommend.php'); ?>
+  <?php include('components-php/featured-contens.php'); ?>
+  <?php include('components-php/Q&A-banner.php'); ?>
+  <?php include('components-php/footer.php'); ?>
+  <?php include('components-php/footer-sp.php'); ?>
