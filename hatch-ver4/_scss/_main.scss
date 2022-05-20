@@ -659,6 +659,7 @@ body {
 .zigzag-blue {
   position: relative;
   background: $blue_02;
+  margin-bottom: 100px;
 }
 .zigzag-blue::after {
   bottom: -20px;
@@ -668,6 +669,8 @@ body {
 .zigzag-pink {
   position: relative;
   background: $pink_01;
+  margin-bottom: 100px;
+
 }
 .zigzag-pink::after {
   bottom: -20px;
@@ -677,6 +680,7 @@ body {
 .zigzag-yellow {
   position: relative;
   background: $yellow_01;
+  margin-bottom: 100px;
 }
 .zigzag-yellow::after {
   bottom: -20px;
@@ -1897,6 +1901,11 @@ category-page
         }
       }
     }
+    ul.article-list.post-lists{
+      li + li{
+        padding-left: 20px;
+      }
+    }
   }
   .pages__container__category-article{
     background-color: $yellow_01;
@@ -1908,9 +1917,6 @@ category-page
         }
         img{
           height: 142px;
-        }
-        li + li{
-          padding-left: 20px;
         }
       }
     }
@@ -2382,6 +2388,7 @@ recomend-list-part
       display: none;
     }
     &__thumb-img {
+      width: 99px;
       padding-right: 3px;
       img {
         width: 100%;

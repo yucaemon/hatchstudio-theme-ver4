@@ -39,9 +39,11 @@
 <div class='btn-copy'>
 一番人気
 </div>
-<a class='btn btn--orange'>
+<div class='btn btn--orange'>
+<a href='http://google.co.jp'>
 記事を読む
 </a>
+</div>
 </div>
 </div>
 </div>
@@ -94,17 +96,20 @@
 </ul>
 <div class='original-btn'>
 <div class='btn-copy'>
-全部見る
+記事を全部読む
 </div>
-<a class='btn btn--yellow'>
+<div class='btn btn--yellow'>
+<a href='http://google.co.jp'>
 ポートランドの記事を読む
 </a>
 </div>
 </div>
 </div>
 </div>
+</div>
+</div>
+<?php include('components-php/area-contens.php'); ?>
 <?php include('components-php/Q&A-banner.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
-</div>
 </body>

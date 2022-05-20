@@ -6966,29 +6966,25 @@ select {
     object-fit: cover;
     width: 100%; }
 
-.btn {
+.original-btn .btn {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); }
+.original-btn .btn:hover,
+.original-btn .btn a:hover {
+  opacity: 0.5; }
+.original-btn .btn--orange,
+.original-btn .btn--orange a {
+  background-color: #f8bb86;
   color: #fff; }
-
-.btn:hover,
-a .btn :hover {
-  opacity: 0.5;
+.original-btn .btn--pink,
+.original-btn .btn--pink a {
+  background-color: #f1c2b7;
   color: #fff; }
-
-.btn--orange,
-a .btn--orange {
-  background-color: #f8bb86; }
-
-.btn--pink,
-a .btn--pink {
-  background-color: #f1c2b7; }
-
-.btn--yellow,
-a .btn--yellow {
-  background-color: #ffcf6e; }
-
-.btn-copy {
+.original-btn .btn--yellow,
+.original-btn .btn--yellow a {
+  background-color: #ffcf6e;
+  color: #fff; }
+.original-btn .btn-copy {
   color: #333;
   font-size: 0.7rem;
   font-weight: bold;
@@ -6996,12 +6992,10 @@ a .btn--yellow {
   margin-bottom: 0.2em;
   text-align: center;
   text-shadow: 1px 2px 3px #e4e4e4; }
-
-.btn-copy:before {
+.original-btn .btn-copy:before {
   margin-right: 0.7rem;
   content: '＼'; }
-
-.btn-copy:after {
+.original-btn .btn-copy:after {
   margin-left: 0.7rem;
   content: '／'; }
 
@@ -7568,7 +7562,8 @@ body {
 
 .zigzag-blue {
   position: relative;
-  background: #57bac5; }
+  background: #57bac5;
+  margin-bottom: 100px; }
 
 .zigzag-blue::after {
   bottom: -20px;
@@ -7577,7 +7572,8 @@ body {
 
 .zigzag-pink {
   position: relative;
-  background: #ffecda; }
+  background: #ffecda;
+  margin-bottom: 100px; }
 
 .zigzag-pink::after {
   bottom: -20px;
@@ -7586,7 +7582,8 @@ body {
 
 .zigzag-yellow {
   position: relative;
-  background: #ffedb5; }
+  background: #ffedb5;
+  margin-bottom: 100px; }
 
 .zigzag-yellow::after {
   bottom: -20px;
@@ -8664,6 +8661,8 @@ category-page
   padding-right: 25px; }
 .category-page .pages__container__title .title-bar-img {
   width: 60px; }
+.category-page ul.article-list.post-lists li + li {
+  padding-left: 20px; }
 
 .pages__container__category-article {
   background-color: #ffedb5;
@@ -8672,8 +8671,6 @@ category-page
     width: 250px; }
   .pages__container__category-article .category-box ul.article-list.post-lists img {
     height: 142px; }
-  .pages__container__category-article .category-box ul.article-list.post-lists li + li {
-    padding-left: 20px; }
 
 /*
 
@@ -9050,6 +9047,7 @@ recomend-list-part
 .news-list .eyechatchlabel {
   display: none; }
 .news-list__thumb-img {
+  width: 99px;
   padding-right: 3px; }
   .news-list__thumb-img img {
     width: 100%;

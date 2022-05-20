@@ -28,8 +28,9 @@
             .original-btn
               .btn-copy
                 一番人気
-              %a.btn.btn--orange
-                記事を読む
+              .btn.btn--orange
+                %a{ :href => 'http://google.co.jp' }
+                  記事を読む
     .section.pages__container__category-article.zigzag.zigzag-yellow
       .outer__inner.category-boxs.flexbox--h-center
         .category-box.two-column-sp.four-col-last-left
@@ -78,10 +79,11 @@
             </ul>
           .original-btn
             .btn-copy
-              全部見る
-            %a.btn.btn--yellow
-              ポートランドの記事を読む
-
-    <?php include('components-php/Q&A-banner.php'); ?>
-    <?php include('components-php/footer.php'); ?>
-    <?php include('components-php/footer-sp.php'); ?>
+              記事を全部読む
+            .btn.btn--yellow
+              %a{ :href => 'http://google.co.jp' }
+                ポートランドの記事を読む
+  <?php include('components-php/area-contens.php'); ?>
+  <?php include('components-php/Q&A-banner.php'); ?>
+  <?php include('components-php/footer.php'); ?>
+  <?php include('components-php/footer-sp.php'); ?>
