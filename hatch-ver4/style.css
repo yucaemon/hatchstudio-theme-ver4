@@ -8667,10 +8667,12 @@ category-page
 .pages__container__category-article {
   background-color: #ffedb5;
   margin-bottom: 50px; }
-  .pages__container__category-article .category-box ul.article-list.post-lists li {
-    width: 250px; }
-  .pages__container__category-article .category-box ul.article-list.post-lists img {
-    height: 142px; }
+  .pages__container__category-article .category-box ul.article-list.post-lists {
+    padding-bottom: 45px; }
+    .pages__container__category-article .category-box ul.article-list.post-lists li {
+      width: 250px; }
+    .pages__container__category-article .category-box ul.article-list.post-lists img {
+      height: 142px; }
 
 /*
 
