@@ -8849,6 +8849,24 @@ contact-form/comprnets
 
 /*
 
+Q&Aページ
+
+*************************************************/
+.qa-page .outer__inner {
+  width: 1100px;
+  padding-left: 255px;
+  padding-top: 80px;
+  padding-bottom: 0; }
+.qa-page .contact-form__form__notice-box.notice-box {
+  text-align: center; }
+.qa-page .contact-form__form {
+  padding-top: 0;
+  padding-right: 105px; }
+.qa-page .button-pink-01 {
+  margin-top: 57px; }
+
+/*
+
 bootstrap/comprnets
 
 *************************************************/

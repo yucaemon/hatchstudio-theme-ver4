@@ -85,6 +85,7 @@ module.exports = function (grunt) {
                     'index.php': '_haml/index.haml',
                     'single.php': '_haml/single.haml',
                     'archive.php': '_haml/archive.haml',
+                    'Q&A.php': '_haml/Q&A.haml',
                     'about.php': '_haml/about.haml',
                     'policy.php': '_haml/policy.haml',
                     'rules.php': '_haml/rules.haml',
