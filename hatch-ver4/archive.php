@@ -107,60 +107,7 @@
 </div>
 </div>
 </div>
-<div class='pages__container__tag-pickup-article zigzag zigzag-yellow'>
-<div class='outer__inner tag-pickup-article__boxs flexbox--spacearound'>
-<div class='tag-pickup-article__box'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
-<div class='cat-label'>
-アメリカのスーパー
-</div>
-</div>
-<div class='tag-pickup-article__box'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
-<div class='cat-label'>
-潜入
-</div>
-</div>
-<div class='tag-pickup-article__box'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
-<div class='cat-label'>
-食い比べ
-</div>
-</div>
-<div class='tag-pickup-article__box'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
-<div class='cat-label'>
-トレジョ
-</div>
-</div>
-<div class='tag-pickup-article__box'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
-<div class='cat-label'>
-レシピ
-</div>
-</div>
-<div class='tag-pickup-article__box'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
-<div class='cat-label'>
-珍もの＆まずいもの検証
-</div>
-</div>
-<div class='tag-pickup-article__box'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
-<div class='cat-label'>
-流行り
-</div>
-</div>
-<div class='tag-pickup-article__box'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
-<div class='cat-label'></div>
-</div>
-<div class='tag-pickup-article__box'>
-<img src="<?php echo get_template_directory_uri(); ?>/images/featured-page__rinking-img01.svg">
-<div class='cat-label'></div>
-</div>
-</div>
-</div>
+<?php include('components-php/featured-contens.php'); ?>
 <?php include('components-php/Q&A-banner.php'); ?>
 <?php include('components-php/footer.php'); ?>
 <?php include('components-php/footer-sp.php'); ?>
