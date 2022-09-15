@@ -4,10 +4,10 @@
   .qa-page.contact-page.pages.outer
     <?php include('components-php/header02.php'); ?>
     <?php include('components-php/header-sp.php'); ?>
-    .qar-contens.zigzag.zigzag-pink
+    .form-contens.zigzag.zigzag-pink
       .outer__inner
         .qar-contens__box.flexbox--h-center
-          .qar-contens__box__txt.flexbox--h-center
+          .qar-contens__box__txt
             .qar-contens__box__txt--img-top
               <img src="<?php echo get_template_directory_uri(); ?>/images/qar-contens__qar-boo.svg">
             .qar-contens__box__txt--mid
@@ -16,41 +16,31 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/qar-contens__qar-txt.svg">
           .qar-contens__box__character
             <img src="<?php echo get_template_directory_uri(); ?>/images/qar-contens__qar-img.svg">
-          %form.contact-form__form{action:"https://docs.google.com/forms/d/e/1FAIpQLScWcZ3TzAexAWFCokTMijAW8fB4dS_tcY17ikhwf7p-voj4EQ/viewform?usp=pp_url"}
-            :plain
-                <div class="form-group row">
-                  <label for="exampleFormControlSelect1" class="col-sm-3 col-form-label">ご相談内容</label>
-                  <div class="col-sm-4">
-                    <select class="form-control selectpicker">
-                      <option>一つ選択してください ▼</option>
-                      <option data-value="WEB/動画制作ついて">WEB/動画制作ついて</option>
-                      <option data-value="コンテンツ制作/広告掲載について">コンテンツ制作/広告掲載について</option>
-                      <option data-value="通訳/翻訳サービスについて">通訳/翻訳サービスについて</option>
-                      <option data-value="宿泊ゲストハウスPDX(ポートランド)について">宿泊ゲストハウスPDX(ポートランド)について</option>
-                      <option data-value="SFバークレー不動産サポートについて">SFバークレー不動産サポートについて</option>
-                       <option data-value="その他">その他</option>
-                    </select>
-                  </div>
-                </div>
-            .form-group.row
-              %label{for: "staticEmail", class:"col-sm-3 col-form-label"}
-                ペンネーム
-              .col-sm-6
-                %input{ name: "entry.113712413", class:"form-control form-control-lg"}
-            .form-group.row
-              %label{for: "email", class:"col-sm-3 col-form-label"}
-                メールアドレス
-              .col-sm-6
-                %input{name: "entry.1029886822", class:"form-control form-control-lg"}
-            .form-group.row
-              %label{for: "consultation", class:"col-sm-3 col-form-label"}
-                記事で書いて欲しい質問内容
-              .col-sm-6
-                %textarea{class: "form-control", name: "entry.986471514", id:"exampleFormControlTextarea1", rows:"5"}
-            .notice-box__header
-              ご注意: 採用した質問のみご返信をさせていただきます。
-            %button.button-pink-01
-              お問い合わせを送信する
+        %form.contact-form__form{action:"https://docs.google.com/forms/d/e/1FAIpQLScWcZ3TzAexAWFCokTMijAW8fB4dS_tcY17ikhwf7p-voj4EQ/viewform?usp=pp_url"}
+          .form-group.row
+            %label{for: "staticEmail", class:"col-sm-3 col-form-label"}
+              名前
+            .col-sm-6
+              %input{ name: "entry.113712413", class:"form-control form-control-lg"}
+          .form-group.row
+            %label{for: "email", class:"col-sm-3 col-form-label"}
+              メルアド
+            .col-sm-6
+              %input{name: "entry.1029886822", class:"form-control form-control-lg"}
+          .form-group.row
+            %label{for: "email", class:"col-sm-3 col-form-label"}
+              パスワード
+            .col-sm-6
+              %input{name: "entry.1029886822", class:"form-control form-control-lg"}
+          .form-group.row
+            %label{for: "consultation", class:"col-sm-3 col-form-label"}
+              記事で書いて欲しい質問内容
+            .col-sm-6
+              %textarea{class: "form-control", name: "entry.986471514", id:"exampleFormControlTextarea1", rows:"5"}
+          .notice-box__header
+            ご注意: 採用した質問のみご返信をさせていただきます。
+          %button.button-pink-01
+            お問い合わせを送信する
     .outer__inner.qar-past-article
       .qar-past-article__title
         今までの相談の記事を読む。

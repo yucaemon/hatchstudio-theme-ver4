@@ -4,19 +4,22 @@
 <div class='pages outer'>
 <?php include('components-php/header02.php'); ?>
 <?php include('components-php/header-sp.php'); ?>
-<div class='pages__container__title zigzag zigzag-yellow'>
-<div class='outer__inner'>
-<div class='title-bar flexbox--h-center'>
+<div class='pages__container__title'>
+<div class='outer__inner flexbox--h-center'>
+<div class='title-bar'>
 <div class='title-bar-txt'>
 超プライベートな話
+</div>
+<div class='title-sub'>
+メンバー限定
+</div>
 </div>
 <div class='title-bar-img'>
 <img src="<?php echo get_template_directory_uri(); ?>/images/private-page-person.jpg">
 </div>
 </div>
-</div>
 <hr>
-<div class='pages__container__body zigzag zigzag-yellow'>
+<div class='pages__container__body'>
 <div class='pages__container__tag-related-article'>
 <div class='outer__inner tag-related-article'>
 <div class='tag-related-article-body two-column-sp four-col-last-left'>
@@ -39,8 +42,6 @@
               echo '<div class="newMark eyechatchlabel">NEW</div>';
             }
           ?>
-
-
           <div class='post-lists__img article-list__img pic-frame-white imgWrap'>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 230, 230 ) ); ?></a>
           </div>
@@ -64,10 +65,70 @@
 </ul>
 </div>
 </div>
-<div class='btn-img--toallpage'>
-<a href="https://hatchstudioinc.com/archives/24020" class=""><img src="<?php echo get_template_directory_uri(); ?>/images/toallpage-btn.svg"></a>
+<div class='original-btn'>
+<div class='btn-copy'>
+記事を全部読む
+</div>
+<div class='btn btn--yellow'>
+<a href='http://google.co.jp'>
+相談の記事の一覧
+</a>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div class='form-contens zigzag zigzag-pink'>
+<div class='outer__inner'>
+<div class='form-contens__txt'>
+メンバー登録
+</div>
+<form action='https://docs.google.com/forms/d/e/1FAIpQLScWcZ3TzAexAWFCokTMijAW8fB4dS_tcY17ikhwf7p-voj4EQ/viewform?usp=pp_url' class='contact-form__form'>
+  <div class="form-group row">
+    <label for="exampleFormControlSelect1" class="col-sm-3 col-form-label">ご相談内容</label>
+    <div class="col-sm-4">
+      <select class="form-control selectpicker">
+        <option>一つ選択してください ▼</option>
+        <option data-value="WEB/動画制作ついて">WEB/動画制作ついて</option>
+        <option data-value="コンテンツ制作/広告掲載について">コンテンツ制作/広告掲載について</option>
+        <option data-value="通訳/翻訳サービスについて">通訳/翻訳サービスについて</option>
+        <option data-value="宿泊ゲストハウスPDX(ポートランド)について">宿泊ゲストハウスPDX(ポートランド)について</option>
+        <option data-value="SFバークレー不動産サポートについて">SFバークレー不動産サポートについて</option>
+         <option data-value="その他">その他</option>
+      </select>
+    </div>
+  </div>
+<div class='form-group row'>
+<label class='col-sm-3 col-form-label' for='staticEmail'>
+ペンネーム
+</label>
+<div class='col-sm-6'>
+<input class='form-control form-control-lg' name='entry.113712413'>
+</div>
+</div>
+<div class='form-group row'>
+<label class='col-sm-3 col-form-label' for='email'>
+メールアドレス
+</label>
+<div class='col-sm-6'>
+<input class='form-control form-control-lg' name='entry.1029886822'>
+</div>
+</div>
+<div class='form-group row'>
+<label class='col-sm-3 col-form-label' for='consultation'>
+記事で書いて欲しい質問内容
+</label>
+<div class='col-sm-6'>
+<textarea class='form-control' id='exampleFormControlTextarea1' name='entry.986471514' rows='5'></textarea>
+</div>
+</div>
+<div class='notice-box__header'>
+ご注意: 採用した質問のみご返信をさせていただきます。
+</div>
+<button class='button-pink-01'>
+お問い合わせを送信する
+</button>
+</form>
 </div>
 </div>
 <div class='outer__inner'>

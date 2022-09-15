@@ -729,21 +729,24 @@ body {
      }
   }
 }
+
+/*
+
+	使い回し
+
+*************************************************/
+
+/*
+
+	Q&Aバナー
+
+*************************************************/
  .qar-contens{
    background-color: $pink_01;
   }
 
   .qar-contens__box{
       background-color: $pink_01;
-    &-small{
-      padding: 40px;
-      .qar-contens__box__btn {
-        padding-top: 10px;
-      }
-      .qar-contens__box__txt{
-        width: 59%;
-      }
-    }
     &__character{
       width: 200px;
     }
@@ -761,6 +764,7 @@ body {
       &--img{
         &-top{
           width: 38%;
+          margin: 0 auto;
         }
         &-btm{
           width: 100%;
@@ -768,6 +772,8 @@ body {
       }
     }
   }
+
+
 
 
 .area-contens{
@@ -1844,6 +1850,7 @@ body {
   }
 
   .pages__container__tag-related-article{
+    padding-bottom: 50px;
     .tag-related-article{
       &-title{
         font-size: 25px;
@@ -1902,6 +1909,19 @@ hr::before {
 	top: -36px;
 	padding: 0 20px;
 	background-color: $yellow_02;
+}
+.title-bar-txt {
+    padding-bottom: 10px;
+}
+.title-sub {
+    background-color: #fff;
+    padding: 0px 11px;
+    width: 119px;
+    margin: 0 auto;
+}
+
+.form__box__txt--mid {
+    padding-top: 46px;
 }
 
 /*
@@ -2145,17 +2165,41 @@ contact-form/comprnets
 
 /*
 
+グーグルフォーム
+
+*************************************************/
+
+.contact-form__form {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.form-contens{
+  &__txt{
+      font-size: 30px;
+      color: $pink_02;
+      font-weight: bold;
+      text-align: center;
+    }
+    &__btn{
+      padding-top: 88px;
+    }
+}
+
+
+
+
+/*
+
 Q&Aページ
 
 *************************************************/
 .qa-page{
-  .qar-contens {
-      //padding-left: 132px;
-      //padding-top: 80px;
-  }
-  .contact-form__form {
-    width: 900px;
-    text-align: center;
+  .form-contens__box{
+    &__character{
+    width: 200px;
+    margin-left: 20px;
+    }
   }
   .button-pink-01 {
     margin-top: 57px;
@@ -2171,6 +2215,15 @@ Q&Aページ
     padding-bottom: 30px;
   }
 }
+
+
+/*
+
+メンバー登録ページ
+
+*************************************************/
+
+
 
 /*
 

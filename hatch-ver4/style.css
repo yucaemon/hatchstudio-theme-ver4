@@ -7621,17 +7621,21 @@ body {
     width: 335px;
     padding-bottom: 10px; }
 
+/*
+
+	使い回し
+
+*************************************************/
+/*
+
+	Q&Aバナー
+
+*************************************************/
 .qar-contens {
   background-color: #ffecda; }
 
 .qar-contens__box {
   background-color: #ffecda; }
-  .qar-contens__box-small {
-    padding: 40px; }
-    .qar-contens__box-small .qar-contens__box__btn {
-      padding-top: 10px; }
-    .qar-contens__box-small .qar-contens__box__txt {
-      width: 59%; }
   .qar-contens__box__character {
     width: 200px; }
   .qar-contens__box__btn {
@@ -7644,7 +7648,8 @@ body {
       font-weight: bold;
       padding-bottom: 5px; }
     .qar-contens__box__txt--img-top {
-      width: 38%; }
+      width: 38%;
+      margin: 0 auto; }
     .qar-contens__box__txt--img-btm {
       width: 100%; }
 
@@ -8616,16 +8621,18 @@ body {
     .fuatured-page .pages__container__ranking .ranking__boxs .ranking__box-txt {
       font-size: 14px;
       font-weight: bold; }
-.fuatured-page .pages__container__tag-related-article .tag-related-article-title {
-  font-size: 25px;
-  font-weight: bold;
-  padding-bottom: 32px; }
-.fuatured-page .pages__container__tag-related-article .tag-related-article-body {
-  width: 100%; }
-  .fuatured-page .pages__container__tag-related-article .tag-related-article-body .article-list li {
-    width: 231px; }
-    .fuatured-page .pages__container__tag-related-article .tag-related-article-body .article-list li img {
-      height: 150px; }
+.fuatured-page .pages__container__tag-related-article {
+  padding-bottom: 50px; }
+  .fuatured-page .pages__container__tag-related-article .tag-related-article-title {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 32px; }
+  .fuatured-page .pages__container__tag-related-article .tag-related-article-body {
+    width: 100%; }
+    .fuatured-page .pages__container__tag-related-article .tag-related-article-body .article-list li {
+      width: 231px; }
+      .fuatured-page .pages__container__tag-related-article .tag-related-article-body .article-list li img {
+        height: 150px; }
 .fuatured-page .pages__container__tag-pickup-article {
   background-color: #ffedb5; }
   .fuatured-page .pages__container__tag-pickup-article .tag-pickup-article__box {
@@ -8661,6 +8668,18 @@ hr::before {
   top: -36px;
   padding: 0 20px;
   background-color: #ffcf6e; }
+
+.title-bar-txt {
+  padding-bottom: 10px; }
+
+.title-sub {
+  background-color: #fff;
+  padding: 0px 11px;
+  width: 119px;
+  margin: 0 auto; }
+
+.form__box__txt--mid {
+  padding-top: 46px; }
 
 /*
 
@@ -8875,12 +8894,29 @@ contact-form/comprnets
 
 /*
 
+グーグルフォーム
+
+*************************************************/
+.contact-form__form {
+  width: 900px;
+  margin: 0 auto; }
+
+.form-contens__txt {
+  font-size: 30px;
+  color: #f1c2b7;
+  font-weight: bold;
+  text-align: center; }
+.form-contens__btn {
+  padding-top: 88px; }
+
+/*
+
 Q&Aページ
 
 *************************************************/
-.qa-page .contact-form__form {
-  width: 900px;
-  text-align: center; }
+.qa-page .form-contens__box__character {
+  width: 200px;
+  margin-left: 20px; }
 .qa-page .button-pink-01 {
   margin-top: 57px; }
 .qa-page .qar-past-article__title {
@@ -8893,6 +8929,11 @@ Q&Aページ
   text-decoration-thickness: 4px;
   padding-bottom: 30px; }
 
+/*
+
+メンバー登録ページ
+
+*************************************************/
 /*
 
 bootstrap/comprnets
