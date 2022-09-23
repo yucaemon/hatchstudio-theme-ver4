@@ -149,3 +149,39 @@ Version: 20210719
 #st-headerbox .st-header-content {
     padding: 0 !important;
 }
+
+/*トップページ：記事一覧カード：既存の設定の上書き*/
+
+.kanren.shortcode-kanren {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap !important;
+    padding: 0;
+}
+.st-cardstyle .kanren dt img {
+    width: 100%!important;
+    height: 191px;
+    object-fit: cover;
+}
+
+.st-cardstyle br{
+    display: none !important;
+}
+
+.st-cardstyle .kanren dl {
+    width: 256px !important;
+    padding: 0;
+}
+
+.kanren:not(.st-cardbox) dd {
+  padding: 10px 5px !important;
+}
+
+.st-cardstyle .kanren dl, .st-cardstyle .kanren.st-cardbox dl:last-child {
+  border: none;
+}
+
+.kanren-t{
+    width: 100% !important;
+    padding: 0 !important;
+}
