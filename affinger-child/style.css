@@ -73,6 +73,37 @@ Version: 20210719
   .flexbox--streach {
     align-items: stretch; }
 
+
+/*
+
+ボタン
+
+*************************************************/
+
+.btn-round-white-02 {
+  background: #FFFFFF;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: white;
+  border-style: Solid;
+  border-color: #5f5f5f;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  box-shadow: 3px 3px #bbbbbb; }
+  .btn-round-white-02 a {
+    text-decoration: none;
+    color: #222; }
+  .btn-round-white-02 a:hover {
+    color: #222; }
+
+.btn-round-white-02:hover {
+  box-shadow: 3px 3px #828282; }
+
+.btn-round-white-02:active {
+  margin-top: 3px;
+  box-shadow: none; }
+
 /*
 
 	ヘッダー
@@ -150,38 +181,125 @@ Version: 20210719
     padding: 0 !important;
 }
 
-/*トップページ：記事一覧カード：既存の設定の上書き*/
+/*トップページ：レイアウト　*/
 
-.kanren.shortcode-kanren {
+.colum1 main{ /*一旦、全ての余白を取る*/
+    margin: 0;
+    padding: 0;
+}
+
+.outer__inner {
+  margin: 0 auto;
+  padding: 30px 70px;
+}
+
+/*
+
+カードスタイル&関連記事の共通設定
+
+*************************************************/
+.st-cardstyle .kanren dl, .st-cardstyle .kanren.st-cardbox dl:last-child{
+  border: none;
+}
+.st-cardstyle .kanren dl {
+    padding: 0;
+}
+.kanren:not(.st-cardbox) dd {
+  padding: 10px 5px !important;
+}
+.kanren-t{
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.kanren br{
+    display: none !important;
+}
+
+
+
+/*トップページ：記事一覧&カードの横並び設定：既存の設定の上書き*/
+.row-box-article .kanren.shortcode-kanren {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap !important;
     padding: 0;
 }
-.st-cardstyle .kanren dt img {
+.row-box-article  .st-cardstyle .kanren dt img {
     width: 100%!important;
     height: 191px;
     object-fit: cover;
 }
 
-.st-cardstyle br{
-    display: none !important;
-}
-
-.st-cardstyle .kanren dl {
+.row-box-article .st-cardstyle .kanren dl {
     width: 256px !important;
-    padding: 0;
 }
 
-.kanren:not(.st-cardbox) dd {
-  padding: 10px 5px !important;
+.btn-img--toallpage {
+    width: 28%;
+    margin: 0 auto;
+    margin-top: 23px;
 }
 
-.st-cardstyle .kanren dl, .st-cardstyle .kanren.st-cardbox dl:last-child {
-  border: none;
+/*トップページ：featured-contensバナー*/
+.featured-contens__box {
+  background-color: #ffecda;
+ }
+  .featured-contens__box--img {
+    width: 20%; }
+.featured-contens__box-small {
+  padding: 36px 46px; }
+  .featured-contens__box-small--img {
+    width: 335px;
+    padding-bottom: 10px; }
+
+
+/*トップページ：BOOのお悩み相談バナー：*/
+.qar-contens {
+  background-color: #ffecda; }
+.qar-contens__box {
+  background-color: #ffecda; }
+  .qar-contens__box__character {
+    width: 200px; }
+  .qar-contens__box__btn {
+    padding-top: 70px; }
+  .qar-contens__box__txt {
+    padding-right: 50px; }
+    .qar-contens__box__txt--mid {
+      font-size: 30px;
+      color: #f9a694;
+      font-weight: bold;
+      padding-bottom: 5px; }
+    .qar-contens__box__txt--img-top {
+      width: 38%;
+      margin: 0 auto; }
+    .qar-contens__box__txt--img-btm {
+      width: 100%; }
+
+/*トップページ：今まで住んだところ：*/
+.area-list-container > img{
+    width: 23%;
+    padding-bottom: 10px;
 }
 
-.kanren-t{
-    width: 100% !important;
-    padding: 0 !important;
+.area-list + .area-list{
+     margin-left: 33px;
+ }
+
+.area-list-title {
+  background: #ffbe5cb8;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.area-list-body {
+    width: 214px;
+    background-color: #ffead5;
+    padding: 0 33px;
+}
+.area-list-body .kanren:not(.st-cardbox) dd {
+   background-color: #ffead5;
 }
