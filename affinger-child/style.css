@@ -181,7 +181,7 @@ Version: 20210719
     padding: 0 !important;
 }
 
-/*トップページ：レイアウト　*/
+/*トップページ：基本初期設定　*/
 
 .colum1 main{ /*一旦、全ての余白を取る*/
     margin: 0;
@@ -191,6 +191,14 @@ Version: 20210719
 .outer__inner {
   margin: 0 auto;
   padding: 30px 70px;
+}
+
+section {
+    margin-bottom: 0;
+}
+
+br {
+    display: none;
 }
 
 /*
@@ -210,10 +218,6 @@ Version: 20210719
 .kanren-t{
     width: 100% !important;
     padding: 0 !important;
-}
-
-.kanren br{
-    display: none !important;
 }
 
 
@@ -303,3 +307,119 @@ Version: 20210719
 .area-list-body .kanren:not(.st-cardbox) dd {
    background-color: #ffead5;
 }
+
+/*トップページ： ブロガー：*/
+.blogger {
+  background-color: #ffe198;
+}
+.blogger__header {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 4%;
+}
+
+.blogger__header--txt {
+  text-align: center;
+  font-size: 2.3em;
+  color: #fff;
+  padding: 40px 0;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.blogger__header--img {
+  width: 9%;
+  margin-right: 3%;
+}
+.blogger__box {
+  text-align: center;
+  width: 13%;
+  padding-bottom: 3%;
+}
+.blogger__box img {
+  width: 100%;
+}
+.circle img {
+    border-radius: 50%;
+}
+.blogger__box__img.circle {
+  width: 57%;
+  margin: 0 auto;
+  display: block;
+}
+.blogger__container {
+  padding: 40px 40px;
+}
+.blogger__box__name {
+  font-size: 0.9em;
+}
+
+/*トップページ：サイド： プロフィール：*/
+.st-author-profile-avatar img {
+  width: 89% !important;
+  height: auto !important;
+  margin: 0 !important;
+}
+p.st-author-description {
+  font-size: 12px;
+  padding-bottom: 20px;
+  color: #898787;
+  line-height: 1.6;
+  letter-spacing: 0.7px;
+  text-align: left;
+}
+/*トップページ：サイド */
+.side{
+  padding: 10px 20px 10px;
+}
+.side img{
+  width: 100%;
+}
+
+/*トップページ：プロフィール下SNSアイコン：*/
+ul.profile-sns{
+    background-color: #fff298;
+    height: 65px;
+    vertical-align: middle;
+    line-height: 4;
+    margin: 0 auto 21px auto!important;
+}
+.sns .facebook a {
+    background: #f9b19d;
+}
+.sns .twitter a{
+    background: #a1dbde;
+}
+.home .st-author-profile-content, .st-author-profile-content{
+  padding:0 !important;
+}
+.st-author-box .st-author-profile-content{
+  padding:0;
+}
+
+/*トップページ：サイド： おすすめ記事：*/
+.kanren dl {
+    border: none;
+}
+
+.side .kanren:not(.st-cardbox) dt img{
+    width: 114px !important;
+    height: 83px !important;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.side .kanren:not(.st-cardbox) dt {
+    width: auto;
+}
+.side .kanren .clearfix dd h5:not([class^="is-style-st-heading-custom-"]):not([class*=" is-style-st-heading-custom-"]):not(.st-css-no2) a {
+    font-size: 13px;
+    line-height: 26px;
+}
+
+.pop-box{
+  padding: 20px 0 !important;
+}
+.kanren:not(.st-cardbox) dd {
+  padding: 0 !important; */
+}
+
+/*フッダー*/
