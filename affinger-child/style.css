@@ -200,6 +200,9 @@ section {
 br {
     display: none;
 }
+.top-wbox-u > * { /*フッダーの上の余白を取る*/
+    margin-bottom: 0;
+}
 
 /*
 
@@ -423,3 +426,35 @@ ul.profile-sns{
 }
 
 /*フッダー*/
+/*フッダーのロゴとキャッチフレーズを消す*/
+.footerlogo {
+    display: none;
+}
+.footer-description{
+    display: none;
+}
+#footer a {
+    color: #57bac5 !important;
+}
+#footer ul{
+    list-style-type: none;
+    padding-left:0;
+}
+
+#footer-wrapper {
+    padding: 60px 28px;
+}
+#footer-wrapper .textwidget.custom-html-widget {
+    display: flex;
+    color: #57bac5 !important;
+}
+#footer-wrapper dt.footer__box__title {
+    font-size: 21px;
+    padding-bottom: 21px;
+}
+
+
+
+#footer-wrapper .footer__box.page__links {
+    padding: 0 63px;
+}
