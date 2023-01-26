@@ -11,7 +11,7 @@
 <img src="<?php echo get_template_directory_uri(); ?>/images/404-txt.svg">
 </div>
 <p class='notfind__header__txt'>
-お探しのページが見つかりませんでした!
+お探しのページが見つかりませんでした
 </p>
 </div>
 <div class='notfind__body__img'>
