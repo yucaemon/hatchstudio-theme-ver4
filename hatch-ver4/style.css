@@ -7635,13 +7635,16 @@ body {
   background-color: #ffecda; }
 
 .qar-contens__box {
-  background-color: #ffecda; }
+  background-color: #ffecda;
+  padding: 40px; }
   .qar-contens__box__character {
-    width: 200px; }
+    width: 200px;
+    padding-top: 27px; }
   .qar-contens__box__btn {
-    padding-top: 88px; }
+    padding-top: 20px; }
   .qar-contens__box__txt {
-    padding-right: 50px; }
+    padding-right: 50px;
+    width: 535px; }
     .qar-contens__box__txt--mid {
       font-size: 30px;
       color: #f9a694;

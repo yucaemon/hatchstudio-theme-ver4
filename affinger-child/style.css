@@ -495,3 +495,33 @@ ul.profile-sns{
   .single-page .featured-contens__box {
     padding: 30px 30px;
 }
+
+/*
+
+	Q&Aバナー
+
+*************************************************/
+.qar-contens {
+  background-color: #ffecda; }
+
+.qar-contens__box {
+  background-color: #ffecda;
+  padding: 40px; }
+  .qar-contens__box__character {
+    width: 200px;
+    padding-top: 27px; }
+  .qar-contens__box__btn {
+    padding-top: 20px; }
+  .qar-contens__box__txt {
+    padding-right: 50px;
+    width: 535px; }
+    .qar-contens__box__txt--mid {
+      font-size: 30px;
+      color: #f9a694;
+      font-weight: bold;
+      padding-bottom: 5px; }
+    .qar-contens__box__txt--img-top {
+      width: 38%;
+      margin: 0 auto; }
+    .qar-contens__box__txt--img-btm {
+      width: 100%; }
