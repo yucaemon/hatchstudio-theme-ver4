@@ -29,6 +29,7 @@ jQuery(document).ready(function($) {
         // 要素を固定させる位置を取得
           var fixed = $('.side-fixed-area').offset().top -200;
 
+
         // 要素を解除する位置
         var footer = $('.articles__container__bottom').offset().top -520;
         // 以下の条件分岐で使用する位置の状態を取得
@@ -36,11 +37,6 @@ jQuery(document).ready(function($) {
         var footerArea = windowScrollTop > footer;
         var beforeFixedArea = windowScrollTop < fixed;
         var fixedArea = windowScrollTop > fixed;
-        //f( footerArea || beforeFixedArea ) {
-            //$('.side-job-ad').removeClass('side-fixed-content01');
-        //} else if ( fixedArea ) {
-            //$('.side-job-ad').addClass('side-fixed-content01');
-        //}
         if( footerArea || beforeFixedArea ) {
             $('.side-job-ad').removeClass('side-fixed-content01');
         } else if ( fixedArea ) {

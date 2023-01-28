@@ -8,6 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <title><?php wp_title('|', true, 'right'); ?><?php  bloginfo('name'); ?></title>
+
+  <?php wp_head(); ?>
+
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css"/ >
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
@@ -22,7 +25,6 @@
   <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52447507-1"></script>
   <!-- Google Analytics　自動広告 -->
@@ -36,5 +38,4 @@
     gtag('config', 'UA-52447507-1');
   </script>
   <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
-  <?php wp_head(); ?>
 </head>
