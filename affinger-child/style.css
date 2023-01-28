@@ -525,3 +525,13 @@ ul.profile-sns{
       margin: 0 auto; }
     .qar-contens__box__txt--img-btm {
       width: 100%; }
+
+/*
+
+	シングルページ記事下『新着記事』＆『おすすめ記事』レイアウト
+
+*************************************************/
+
+#st-header-under-widgets-box {
+    display: flex;
+}
