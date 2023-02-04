@@ -458,6 +458,15 @@ ul.profile-sns{
 #footer-wrapper .footer__box.page__links {
     padding: 0 63px;
 }
+/*投稿ページ：レイアウト：*/
+.single-post #content{
+      padding: 0 70px;
+}
+
+.single-post main {
+  width: 70%;
+  padding: 0;
+}
 
 /*投稿ページ：下： 関連記事：*/
 /*投稿ページ：下： ウェジット投稿記事の下に一括表示のタイトルのレイアウト修正：*/
@@ -532,6 +541,64 @@ ul.profile-sns{
 
 *************************************************/
 
-#st-header-under-widgets-box {
+	/*シングルページ記事下『新着記事』のレイアウト修正*/
+#st-footer-under-widgets-box-wrap{
+    padding: 0 70px;
+}
+#st-header-under-widgets-box{
     display: flex;
+}
+
+#st-header-under-widgets-box #newentry_widget-4 {
+    padding-right: 30px;
+    width: 35%;
+}
+
+#st-header-under-widgets-box .kanren dt img {
+  width: 165px;
+  height: 100px;
+  object-fit: cover;
+}
+
+#st-header-under-widgets-box .kanren dt {
+    padding-right: 18px;
+    width: auto;
+    text-align: left;
+}
+
+#st-header-under-widgets-box .kanren-t {
+    text-align: left;
+}
+
+	/*シングルページ記事下『おすすめ記事』のレイアウト修正*/
+
+#st-header-under-widgets-box #custom_html-13 .p-entry-t {
+    display: none;
+}
+
+#st-header-under-widgets-box #custom_html-13 .kanren{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#st-header-under-widgets-box #custom_html-13 .kanren dt {
+    float: none;
+    padding: 0;
+}
+#st-header-under-widgets-box #custom_html-13 .kanren dl {
+    border: none;
+    text-align: left;
+    word-break: normal;
+    width: 213px;
+    padding-right: 12px;
+}
+#st-header-under-widgets-box #custom_html-13 .poprank-no {
+    display: none;
+}
+
+#st-header-under-widgets-box #custom_html-13 .kanren dt img {
+    width: 100%;
+    height: 163px;
+    object-fit: cover;
 }
