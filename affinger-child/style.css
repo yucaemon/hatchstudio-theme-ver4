@@ -552,7 +552,7 @@ ul.profile-sns{
 
 #st-header-under-widgets-box #newentry_widget-4 {
     padding-right: 30px;
-    width: 35%;
+    width:30%;
 }
 
 #st-header-under-widgets-box .kanren dt img {
@@ -573,6 +573,11 @@ ul.profile-sns{
 
 	/*シングルページ記事下『おすすめ記事』のレイアウト修正*/
 
+
+#st-header-under-widgets-box #custom_html-13{
+    width: 85%;
+}
+
 #st-header-under-widgets-box #custom_html-13 .p-entry-t {
     display: none;
 }
@@ -580,6 +585,7 @@ ul.profile-sns{
 #st-header-under-widgets-box #custom_html-13 .kanren{
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     border: none;
     margin: 0;
@@ -594,7 +600,7 @@ ul.profile-sns{
     border: none;
     text-align: left;
     word-break: normal;
-    width: 213px;
+    width: 223px;
     padding-right: 12px;
 }
 #st-header-under-widgets-box #custom_html-13 .poprank-no {
