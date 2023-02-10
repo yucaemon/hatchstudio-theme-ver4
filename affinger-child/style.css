@@ -471,6 +471,7 @@ ul.profile-sns{
 
 /*投稿ページ：下： 関連記事：*/
 /*投稿ページ：下： ウェジット投稿記事の下に一括表示のタイトルのレイアウト修正：*/
+
 .st-widgets-box h3,.st-widgets-title{
     background: #ffede9 !important;
     color: #737373 !important;
@@ -479,8 +480,9 @@ ul.profile-sns{
 }
 
 /*投稿ページ：下： 関連記事のレイアウト修正：*/
+
 .yarpp-thumbnail {
-    width: 282px !important;
+    width: 274px !important;
     height: 270px!important;
     margin: 5px !important;
     border: none !important;
@@ -497,7 +499,6 @@ ul.profile-sns{
 }
 
 /*投稿ページ：下： featured-contensのレイアウト修正：*/
-
   .single-page .featured-contens__box--img {
     width: 44%;
     padding: 13px 0;
@@ -600,7 +601,7 @@ ul.profile-sns{
     border: none;
     text-align: left;
     word-break: normal;
-    width: 223px;
+    width: 284px;
     padding-right: 12px;
 }
 #st-header-under-widgets-box #custom_html-13 .poprank-no {
