@@ -267,7 +267,7 @@ br {
 .qar-contens__box {
   background-color: #ffecda; }
   .qar-contens__box__character {
-    width: 200px; }
+    width: 25%; }
   .qar-contens__box__btn {
     padding-top: 70px; }
   .qar-contens__box__txt {
@@ -499,6 +499,7 @@ ul.profile-sns{
 }
 
 /*投稿ページ：下： featured-contensのレイアウト修正：*/
+
   .single-page .featured-contens__box--img {
     width: 44%;
     padding: 13px 0;
@@ -519,13 +520,13 @@ ul.profile-sns{
   background-color: #ffecda;
   padding: 40px; }
   .qar-contens__box__character {
-    width: 200px;
+    width: 33%;
     padding-top: 27px; }
   .qar-contens__box__btn {
     padding-top: 20px; }
   .qar-contens__box__txt {
     padding-right: 50px;
-    width: 520px; }
+    width: 55%; }
     .qar-contens__box__txt--mid {
       font-size: 30px;
       color: #f9a694;
@@ -601,7 +602,7 @@ ul.profile-sns{
     border: none;
     text-align: left;
     word-break: normal;
-    width: 284px;
+    width: 30%;
     padding-right: 12px;
 }
 #st-header-under-widgets-box #custom_html-13 .poprank-no {
@@ -616,4 +617,14 @@ ul.profile-sns{
 
 #st-header-under-widgets-box .st-widgets-title {
       padding: 10px 0;
+}
+
+/*
+
+	カテゴリー一覧ページのレイアウト
+
+*************************************************/
+
+.category #side{
+  display: none;
 }
