@@ -625,6 +625,94 @@ ul.profile-sns{
 
 *************************************************/
 
+.zigzag-pink {
+    position: relative;
+    background: #ffecda;
+    margin-bottom: 100px;
+}
+.zigzag-pink::after {
+    bottom: -20px;
+    background: linear-gradient(135deg, #ffecda 10px, transparent 0), linear-gradient(225deg, #ffecda 10px, transparent 0);
+    background-size: 20px 20px;
+}
+.zigzag::after {
+    height: 20px;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
 .category #side{
   display: none;
+}
+.category main {
+    margin-right: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.category h1.entry-title {
+    text-align: center;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+
+.pages__container__title .title-bar {
+  margin: auto; }
+.pages__container__title .title-bar-txt {
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+    color: #222;
+    word-wrap: break-word;
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1;
+    line-height: 15;
+    font-weight: 600;
+    letter-spacing: .05em;
+    line-height: 1.6;
+    padding: 0 25px; }
+    .area-page .pages__container__title .title-bar-txt-img {
+      margin: 0 auto;
+      width: 50px; }
+.pages__container__title .title-bar-img {
+    width: 100px; }
+.area-top-post__box-txt-pic {
+  margin: 0 auto;
+  width: 40px;
+  padding-bottom: 5px; }
+.area-top-post__box-txt-p {
+  margin: 0 auto;
+  width: 500px;
+  padding-left: 50px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+  color: #222;
+  word-wrap: break-word;
+ }
+
+.pic-frame-white img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+.pic-frame-white {
+    border: 9px solid #ffffff;
+    margin-bottom: 10px;
+}
+
+.category h1.entry-title{
+  margin-bottom:0;
+  padding: 0;
+}
+
+.category #nocopy::before{
+  content: url(./images/area-page__lamp.svg);
+  width: 50px;
+  display: inline-block;
+  padding: 0 18px 20px;
+}
+#nocopy {
+    text-align: center;
 }
