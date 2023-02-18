@@ -763,3 +763,13 @@ ul.profile-sns{
 .featured-contens__box--img {
   width: 20%;
 }
+
+.bottom-articles {
+}
+.new-articles {
+  width: 270px;
+  padding-right: 30px;
+}
+.osusume-articles {
+    width: 926px;
+}
