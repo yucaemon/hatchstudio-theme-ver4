@@ -97,6 +97,10 @@ Version: 20210719
       margin-bottom: 100px;
   }
 
+  img:not(.size-st_header_slider), video, object{
+        max-width: 100%;
+  }
+
 /*
 
 ボタン
@@ -238,9 +242,8 @@ br {
 .st-cardstyle .kanren dl {
     padding: 0;
 }
-.kanren:not(.st-cardbox) dd {
-  padding: 10px 5px !important;
-}
+
+
 .kanren-t{
     width: 100% !important;
     padding: 0 !important;
@@ -650,23 +653,23 @@ ul.profile-sns{
 .category .cat-itiran {
     background-color: #ffedb5;
 }
-.category .kanren:not(.st-cardbox) {
+.category .cat-itiran .kanren:not(.st-cardbox) {
     display: flex;
     width: 1100px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
-.category dl{
+.category .cat-itiran .kanren dl{
   width: 246px;
   margin-right: 29px;
 }
-.category .kanren:not(.st-cardbox) dt {
+.category .cat-itiran .kanren:not(.st-cardbox) dt {
    width: 100%;
    float:none;
    border: 9px solid #ffffff;
    margin-bottom: 10px;
 }
-.category .kanren:not(.st-cardbox) dt img {
+.category .cat-itiran .kanren:not(.st-cardbox) dt img {
   width: 100%;
   height: 166px;
   object-fit: cover;
@@ -702,9 +705,8 @@ ul.profile-sns{
   display: none;
 }
 
-.new-articles .kanren:not(.st-cardbox) {
-    display:block;
-}
+
+
 
 
 	/*フッダー上の『新着記事』のレイアウト修正*/
@@ -712,23 +714,29 @@ ul.profile-sns{
     padding: 0 70px;
 }
 
-
 #st-header-under-widgets-box .new-articles {
     padding-right: 30px;
     width:30%;
 }
 
-#st-header-under-widgets-box .kanren dt img {
-  width: 165px;
+#st-footer-under-widgets-box-wrap .new-articles .kanren:not(.st-cardbox) {
+    display:block;
+}
+
+#st-header-under-widgets-box .new-articles .kanren dt {
+    padding-right: 10px;
+    width: 160px;
+}
+
+#st-header-under-widgets-box .new-articles .kanren dt img {
+  width: 100%;
   height: 100px;
   object-fit: cover;
 }
 
-#st-header-under-widgets-box .kanren dt {
-    padding-right: 18px;
-    width: auto;
-    text-align: left;
-}
+
+
+
 
 #st-header-under-widgets-box .kanren-t {
     text-align: left;
@@ -747,7 +755,7 @@ ul.profile-sns{
 #st-header-under-widgets-box .osusume-articles .kanren{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     border: none;
     margin: 0;
@@ -755,15 +763,15 @@ ul.profile-sns{
 }
 
 #st-header-under-widgets-box .osusume-articles .kanren dt {
-    float: none;
-    padding: 0;
+  width: auto;
+  float:none;
 }
+
 #st-header-under-widgets-box .osusume-articles .kanren dl {
     border: none;
     text-align: left;
     word-break: normal;
-    width: 30%;
-    padding-right: 12px;
+    width: 32%;
 }
 #st-header-under-widgets-box .osusume-articles .poprank-no {
     display: none;
