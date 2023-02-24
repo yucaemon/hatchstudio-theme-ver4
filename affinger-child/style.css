@@ -377,7 +377,6 @@ br {
 }
 .blogger__container {
   padding: 40px 40px;
-  margin-bottom: 50px;
 }
 .blogger__box__name {
   font-size: 0.9em;
@@ -696,29 +695,31 @@ ul.profile-sns{
     width: 926px;
 }
 
-/* フッダー上の『最新記事一覧』＆『おすすめ一覧』のレイアウト */
-.osusume-articles {
-    width: 900px;
+/* ウェジットフッダー上『最新記事一覧』＆『おすすめ一覧』のレイアウト */
+
+#custom_html-15{
+  padding: 0 70px;
 }
 
-.osusume-articles .p-entry-t{
+#st-footer-under-widgets-box-wrap #st-header-under-widgets-box {
+	padding: 0px 0 0px;
+}
+
+/* ウェジットフッダー上コンテンツを表示しない場所 */
+.home #st-footer-under-widgets-box-wrap{
+  display: none;
+}
+.single #st-footer-under-widgets-box-wrap #text-11{
   display: none;
 }
 
 
 
-
-
 	/*フッダー上の『新着記事』のレイアウト修正*/
-#st-footer-under-widgets-box-wrap{
-    padding: 0 70px;
-}
-
 #st-header-under-widgets-box .new-articles {
     padding-right: 30px;
     width:30%;
 }
-
 #st-footer-under-widgets-box-wrap .new-articles .kanren:not(.st-cardbox) {
     display:block;
 }
@@ -734,15 +735,20 @@ ul.profile-sns{
   object-fit: cover;
 }
 
-
-
-
-
-#st-header-under-widgets-box .kanren-t {
+ .kanren-t {
     text-align: left;
 }
 
 	/*フッダー上の『おすすめ記事』のレイアウト修正*/
+
+#st-header-under-widgets-box .osusume-articles {
+      width: 900px;
+}
+
+#st-header-under-widgets-box .osusume-articles .p-entry-t{
+    display: none;
+}
+
 
 #st-header-under-widgets-box .osusume-articles{
     width: 65%;
