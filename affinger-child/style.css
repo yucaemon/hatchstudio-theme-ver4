@@ -701,10 +701,6 @@ ul.profile-sns{
   padding: 0 70px;
 }
 
-#st-footer-under-widgets-box-wrap #st-header-under-widgets-box {
-	padding: 0px 0 0px;
-}
-
 /* ウェジットフッダー上コンテンツを表示しない場所 */
 .home #st-footer-under-widgets-box-wrap{
   display: none;
@@ -713,7 +709,10 @@ ul.profile-sns{
   display: none;
 }
 
-
+/* カテゴリーページのウェジットフッダー上の余白を削除 */
+.category #st-footer-under-widgets-box-wrap #st-header-under-widgets-box {
+    padding: 0;
+}
 
 	/*フッダー上の『新着記事』のレイアウト修正*/
 #st-header-under-widgets-box .new-articles {
