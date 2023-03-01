@@ -383,6 +383,12 @@ br {
 }
 
 /*トップページ：サイド： プロフィール：*/
+
+/*サイドを消すページ*/
+.page #side, .category #side, .tag #side{
+  display: none;
+}
+
 .st-author-profile-avatar img {
   width: 89% !important;
   height: auto !important;
@@ -573,18 +579,16 @@ ul.profile-sns{
 
 *************************************************/
 
+.category #st-header{
+  display: none;
+}
+
 /* 一段（一位の記事）レイアウト */
 .category .entry-content {
     margin-bottom: 70px;
 }
 
-.category #side, .category #st-header{
-  display: none;
-}
 
-.category #st-footer-under-widgets-box-wrap {
-    /*display: none;*/
-}
 .category main {
     margin-right: 0;
     margin: 0;
@@ -800,10 +804,6 @@ ul.profile-sns{
     padding: 0;
 }
 
-.tag #side{
-  display: none;
-}
-
 .tag h1.entry-title {
     text-align: center;
     background-color: #fff !important;
@@ -837,3 +837,5 @@ ul.profile-sns{
   height: 190px;
   object-fit: cover;
 }
+
+/*固定ページ（アメリカーんなものを食う）一覧のレイアウト修正*/
