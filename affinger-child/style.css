@@ -709,8 +709,8 @@ ul.profile-sns{
   display: none;
 }
 
-/* カテゴリーページのウェジットフッダー上の余白を削除 */
-.category #st-footer-under-widgets-box-wrap #st-header-under-widgets-box {
+/* タグ＆カテゴリーページのウェジットフッダー上の余白を削除 */
+.archive #st-footer-under-widgets-box-wrap #st-header-under-widgets-box {
     padding: 0;
 }
 
@@ -806,6 +806,7 @@ ul.profile-sns{
 
 .tag h1.entry-title {
     text-align: center;
+    background-color: #fff !important;
 }
 
 .tag article {
@@ -816,12 +817,12 @@ ul.profile-sns{
 
 .tag article .kanren:not(.st-cardbox) {
   display: flex;
-  width: 1100px;
+  width: 1206px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 .tag article .kanren dl{
-  width: 246px;
+  width: 272px;
   margin-right: 29px;
 }
 .tag article .kanren:not(.st-cardbox) dt {
@@ -831,8 +832,8 @@ ul.profile-sns{
    margin-bottom: 10px;
 }
 
-.tag .cat-itiran .kanren:not(.st-cardbox) dt img {
+.tag main .kanren:not(.st-cardbox) dt img {
   width: 100%;
-  height: 166px;
+  height: 190px;
   object-fit: cover;
 }
