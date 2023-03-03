@@ -383,12 +383,6 @@ br {
 }
 
 /*トップページ：サイド： プロフィール：*/
-
-/*サイドを消すページ*/
-.page #side, .category #side, .tag #side{
-  display: none;
-}
-
 .st-author-profile-avatar img {
   width: 89% !important;
   height: auto !important;
@@ -588,20 +582,6 @@ ul.profile-sns{
     margin-bottom: 70px;
 }
 
-
-.category main {
-    margin-right: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-.category h1.entry-title {
-    text-align: center;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-}
-
 .category #nocopy {
     text-align: center;
     margin-top: 30px;
@@ -796,16 +776,30 @@ ul.profile-sns{
       padding: 10px 0;
 }
 
-/*タグページ一覧のレイアウト修正*/
+/*タグ&カテゴリー＆固定ページの共通レイアウト修正*/
 
-.tag main {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
+/*サイドを消すページ*/
+.not-front-page:not(.sinle) #side{
+  display: none;
+
 }
 
+/*幅を広げる*/
+.not-front-page:not(.sinle) main{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*文字をセンターにする*/
+.not-front-page:not(.sinle) h1.entry-title{
+  text-align: center;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/*タグページ一覧のレイアウト修正*/
 .tag h1.entry-title {
-    text-align: center;
     background-color: #fff !important;
 }
 
@@ -839,3 +833,22 @@ ul.profile-sns{
 }
 
 /*固定ページ（アメリカーんなものを食う）一覧のレイアウト修正*/
+
+.page #wrapper:not(.colum1) #content-w, header + #content-w {
+    padding-top: 0;
+}
+
+.page h1.entry-title{
+  background-color: #ffedb5 !important;
+  line-height: 130px !important;
+}
+
+/*固定ページ（アメリカーんなものを食うページだけ）一覧のレイアウト修正*/
+.post-33700 .entry-title::after {
+    content: url(./images/featured-page/featured-page__bad-food.svg);
+    width: 176px;
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    right: 335px;
+}
