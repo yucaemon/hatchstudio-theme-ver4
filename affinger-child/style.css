@@ -852,3 +852,17 @@ ul.profile-sns{
     position: absolute;
     right: 335px;
 }
+
+.page .pages__container__area-top-post{
+  margin: 0 auto;
+}
+.page .area-top-post__box {
+    width: 315px;
+}
+.page .area-top-post__box-pic{
+  width: 270px;
+}
+.page .pic-frame-white img {
+    width: 100%;
+    height: 171px;
+}
