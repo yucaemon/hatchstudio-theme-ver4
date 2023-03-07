@@ -856,12 +856,31 @@ ul.profile-sns{
 .page .pages__container__area-top-post{
   margin: 0 auto;
 }
+.page .area-top-post__boxs{
+  width: 1000px;
+}
+
 .page .area-top-post__box {
-    width: 315px;
+    width: 30%;
 }
 .page .area-top-post__box-pic{
-  width: 270px;
+  width: 100%;
 }
+
+.page .area-top-post__box-pic img {
+  width: 100%;
+  height: 145px;
+}
+
+.page .area-top-post__box-txt {
+    padding-top: 0;
+}
+
+.area-top-post__box-txt-p{
+   width: 100%;
+   padding: 0;
+}
+
 .page .pic-frame-white img {
     width: 100%;
     height: 171px;
