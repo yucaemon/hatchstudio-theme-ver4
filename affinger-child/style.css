@@ -779,20 +779,20 @@ ul.profile-sns{
 /*タグ&カテゴリー＆固定ページの共通レイアウト修正*/
 
 /*サイドを消すページ*/
-.not-front-page:not(.sinle) #side{
+.not-front-page:not(.single) #side{
   display: none;
-
 }
 
+
 /*幅を広げる*/
-.not-front-page:not(.sinle) main{
+.not-front-page:not(.single) main{
   max-width: 100%;
   margin: 0 auto;
   padding: 0;
 }
 
 /*文字をセンターにする*/
-.not-front-page:not(.sinle) h1.entry-title{
+.not-front-page:not(.single) h1.entry-title{
   text-align: center;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
