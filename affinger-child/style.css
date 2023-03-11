@@ -885,3 +885,30 @@ ul.profile-sns{
     width: 100%;
     height: 145px;
 }
+
+/*タグ記事一覧　List Category Posts（プラグイン）レイアウト編集*/
+
+ul#lcp_instance_0 {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul#lcp_instance_0{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+ul#lcp_instance_0 li {
+  width: 255px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+ul#lcp_instance_0 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
