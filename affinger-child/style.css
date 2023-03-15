@@ -888,6 +888,13 @@ ul.profile-sns{
 
 /*タグ記事一覧　List Category Posts（プラグイン）レイアウト編集*/
 
+.lcp_catlist--title{
+    padding: 61px 0 0 0 !important;
+    font-size: 25px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+}
+
 ul#lcp_instance_0 {
     width: 1180px;
     margin: 0 auto;
