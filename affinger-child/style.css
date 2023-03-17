@@ -886,7 +886,7 @@ ul.profile-sns{
     height: 145px;
 }
 
-/*タグ記事一覧　List Category Posts（プラグイン）レイアウト編集*/
+/*タグ記事一覧（２段目）　List Category Posts（プラグイン）レイアウト編集*/
 
 .lcp_catlist--title{
     padding: 61px 0 0 0 !important;
@@ -933,4 +933,10 @@ ul#lcp_instance_0::after{
   content:"";
   display: block;
   width:46%;
+}
+
+/*タグの種類（３段目）*/
+.container-tag {
+  background-color: #ffedb5 !important;
+  line-height: 130px !important;
 }
