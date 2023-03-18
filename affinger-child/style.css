@@ -853,6 +853,10 @@ ul.profile-sns{
     right: 335px;
 }
 
+.page .blogbox{
+  display: none;
+}
+
 .page .pages__container__area-top-post{
   margin: 0 auto;
 }
@@ -939,4 +943,29 @@ ul#lcp_instance_0::after{
 .container-tag {
   background-color: #ffedb5 !important;
   line-height: 130px !important;
+  margin-bottom: 50px;
+}
+
+.container-tag__box{
+  width: 1180px;
+  padding-top: 40px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.container-tag__pic{
+  position: relative;
+}
+.container-tag__pic-obi{
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.container-tag__box .container-tag__pic {
+    width: 255px;
+}
+.container-tag__pic img{
+    width: 100%;
 }
