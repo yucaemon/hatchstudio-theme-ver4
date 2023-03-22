@@ -183,6 +183,13 @@ Version: 20210719
   padding-bottom: 60px;
   text-align: center;
 }
+
+.header__pic--logo .lamp__icon{
+  width: 42px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+
 .background-draw img{
   width: 300px;
   display: block;
@@ -607,7 +614,9 @@ ul.profile-sns{
   line-height: 1.6;
  }
  .area-top-post__box-txt {
-     padding-top: 26px;
+    padding-top: 26px;
+    width: 400px;
+    margin-left: 20px;
  }
 
 .pic-frame-white img {
@@ -631,6 +640,7 @@ ul.profile-sns{
   display: block;
   margin: 0 auto;
 }
+
 
 /* 二段（記事の一覧）のレイアウト */
 .category .cat-itiran {
@@ -845,6 +855,15 @@ ul.profile-sns{
 
 /*固定ページ（アメリカーんなものを食うページだけ）一覧のレイアウト修正*/
 .post-33700 .entry-title::after {
+    content: url(./images/featured-page/featured-page__bad-food.svg);
+    width: 176px;
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    right: 335px;
+}
+
+.post-33761 .entry-title::after {
     content: url(./images/featured-page/featured-page__bad-food.svg);
     width: 176px;
     display: inline-block;
