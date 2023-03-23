@@ -988,3 +988,36 @@ ul#lcp_instance_0::after{
 .container-tag__pic img{
     width: 100%;
 }
+
+/*固定ページ（プライベートページ）一覧のレイアウト修正*/
+.page .st-eyecatch-under{
+  display: none;
+}
+
+.private-obi {
+    background-color: #ffd668;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.post-33773 .entry-title::after,.post-33773 .entry-title::before{
+    content: url(./images/private-page/private-page__mark.jpg);
+    width: 176px;
+    padding:0 10px;
+}
+
+.post-33773 .entry-content > div{
+      margin-bottom: 0;
+}
+
+.private__container__articles{
+    background-color: #ffedb5 !important;
+}
+.private__container__articles ul#lcp_instance_0{
+  margin: 0 auto;
+}
+.private__container__articles ul#lcp_instance_0 img{    border: 9px solid #ffffff;
+    margin-bottom: 10px;
+}
