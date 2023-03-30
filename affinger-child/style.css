@@ -1022,3 +1022,25 @@ ul#lcp_instance_0::after{
 .private__container__articles ul#lcp_instance_0 img{    border: 9px solid #ffffff;
     margin-bottom: 10px;
 }
+
+/*固定ページ（限定ページ）一覧のレイアウト修正*/
+
+#wpmem_restricted_msg p {
+    display: none;
+}
+
+.wpmem-need-login{
+  background-color: #ffed9a;
+  padding: 31px;
+  margin-top: 35px;
+  font-size: 16px;
+}
+
+#wpmem_reg {
+    background-color: #fff7d9;
+    width: 100%;
+}
+
+#wpmem_login fieldset, #wpmem_reg fieldset{
+  margin: 0 !important;
+}
