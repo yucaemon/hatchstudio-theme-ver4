@@ -1025,6 +1025,15 @@ ul#lcp_instance_0::after{
 
 /*固定ページ（限定ページ）一覧のレイアウト修正*/
 
+#wpmem_login legend, #wpmem_reg legend {
+    background-color: #ede2ad6e;
+    padding: 38px;
+    width: 94% !important;
+}
+#wpmem_reg .button_div {
+    text-align: center !important;
+}
+
 #wpmem_restricted_msg p {
     display: none;
 }
@@ -1033,14 +1042,25 @@ ul#lcp_instance_0::after{
   background-color: #ffed9a;
   padding: 31px;
   margin-top: 35px;
-  font-size: 16px;
+  font-size: 19px;
+  text-align: center;
 }
 
-#wpmem_reg {
-    background-color: #fff7d9;
-    width: 100%;
+#wpmem_login, #wpmem_reg {
+      width: 100% !important;
+      background-color: #fff7d9;
+}
+
+.wpmem-need-login {
+    margin-bottom: 0 !important;
 }
 
 #wpmem_login fieldset, #wpmem_reg fieldset{
-  margin: 0 !important;
+  margin:0 !important;
+  padding: 0 60px !important;
+}
+
+#wpmem_login, #wpmem_msg, #wpmem_reg, .wpmem_msg {
+    width: 100% !important;
+    padding: 45px 0 !important;
 }
