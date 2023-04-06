@@ -1064,3 +1064,15 @@ ul#lcp_instance_0::after{
     width: 100% !important;
     padding: 45px 0 !important;
 }
+
+/*固定ページ（質問ページ）一覧のレイアウト修正*/
+
+.page-id-33824 .page h1.entry-title{
+
+}
+
+.lcp_catlist--title{
+  text-decoration: underline;
+  text-decoration-color: #ffecda;
+  text-underline-offset: 15px;
+}
