@@ -501,7 +501,7 @@ ul.profile-sns{
   padding: 0;
 }
 
-/*投稿ページ：下： 関連記事：*/
+
 /*投稿ページ：下： ウェジット投稿記事の下に一括表示のタイトルのレイアウト修正：*/
 
 .st-widgets-box h3,.st-widgets-title{
@@ -514,7 +514,7 @@ ul.profile-sns{
 /*投稿ページ：下： 関連記事のレイアウト修正：*/
 
 .yarpp-thumbnail {
-    width: 274px !important;
+    width: 268px !important;
     height: 270px!important;
     margin: 5px !important;
     border: none !important;
@@ -539,6 +539,15 @@ ul.profile-sns{
   .single-page .featured-contens__box {
     padding: 30px 30px;
 }
+
+/*投稿ページ：下： tag cloudのレイアウト修正：*/
+
+.tagcloud a:hover{
+  color: rgb(0 0 0);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 
 /*
 
@@ -1102,7 +1111,7 @@ ul#lcp_instance_0::after{
 }
 
 .contact-form button:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 
