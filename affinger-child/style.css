@@ -1137,3 +1137,63 @@ ul#lcp_instance_0::after{
       line-height: 1;
       line-height: 3;
       font-family: "Montserrat", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
+
+/*
+
+404ページ
+
+*************************************************/
+
+.error404 #content-w{
+  margin: 0 auto;
+  padding: 40px 0 !important;
+}
+
+.error404 .entry-title{
+    font-size: 47px !important;
+    color: #adadad !important;
+}
+
+.error404 .textwidget.custom-html-widget{
+    text-align: center;
+}
+
+.error404  img{
+    width: 265px;
+    padding-bottom: 25px;
+}
+
+.error404 #search-4{
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+
+.button-pink-01 {
+  display: block;
+  width: 232px;
+  height: 50px;
+  line-height: 48px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ff846a;
+  /*ボタン色*/
+  border: 0;
+  border-bottom: solid 6px #ec6c00;
+  /*下線色*/
+  border-radius: 5px;
+  /*角丸*/
+  margin: 0 auto; }
+
+.button-pink-01 a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.button-pink-01:hover {
+  background-color: #fdc33a;
+  /*ボタン色*/
+  border-bottom: solid 6px #f39800;
+  /*下線色*/ }
