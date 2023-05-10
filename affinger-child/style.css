@@ -131,6 +131,34 @@ Version: 20210719
   margin-top: 3px;
   box-shadow: none; }
 
+.button-pink-01 {
+  display: block;
+  width: 232px;
+  height: 50px;
+  line-height: 48px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ff846a;
+  /*ボタン色*/
+  border: 0;
+  border-bottom: solid 6px #ec6c00;
+  /*下線色*/
+  border-radius: 5px;
+  /*角丸*/
+  margin: 0 auto; }
+
+.button-pink-01 a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.button-pink-01:hover {
+  background-color: #fdc33a;
+  /*ボタン色*/
+  border-bottom: solid 6px #f39800;
+  /*下線色*/ }
+
 /*
 
 	ヘッダー
@@ -1168,32 +1196,18 @@ ul#lcp_instance_0::after{
     margin: 0 auto;
 }
 
+  /*
 
+  検索結果ページ
 
-.button-pink-01 {
-  display: block;
-  width: 232px;
-  height: 50px;
-  line-height: 48px;
-  color: #FFF;
-  text-decoration: none;
-  text-align: center;
-  background-color: #ff846a;
-  /*ボタン色*/
-  border: 0;
-  border-bottom: solid 6px #ec6c00;
-  /*下線色*/
-  border-radius: 5px;
-  /*角丸*/
-  margin: 0 auto; }
-
-.button-pink-01 a {
-  color: #FFF;
-  text-decoration: none;
+  *************************************************/
+.search-results .kanren{
+  margin: 0 auto;
+  width: 1300px;
+  display: flex;
+  justify-content: space-around;
 }
-
-.button-pink-01:hover {
-  background-color: #fdc33a;
-  /*ボタン色*/
-  border-bottom: solid 6px #f39800;
-  /*下線色*/ }
+.search-results .kanren dl {
+    border: none;
+    width: 100px;
+}
