@@ -486,7 +486,7 @@ ul.profile-sns{
   padding: 20px 0 !important;
 }
 .kanren:not(.st-cardbox) dd {
-  padding: 0 !important; */
+  padding: 0 !important; 
 }
 
 /*フッダー*/
@@ -719,8 +719,6 @@ ul.profile-sns{
   width: 20%;
 }
 
-.bottom-articles {
-}
 .new-articles {
   width: 270px;
   padding-right: 30px;
